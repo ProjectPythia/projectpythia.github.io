@@ -22,10 +22,10 @@ jobs:
 
       - name: Build
         run: |
-          make dirhtml
+          make -j4 html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/dirhtml
+          publish_dir: ./_build/html
