@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; Pythia Portal  documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../">
+  
+  
+  <h1 class="site-logo" id="site-title">Pythia Portal  documentation</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../galleries/">
+   Galleries
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../galleries/notebook-gallery/">
+     Notebook Gallery
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/gallery-constructor.ipynb.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/NCAR/pythia-portal"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/NCAR/pythia-portal/issues/new?title=Issue%20on%20page%20%2Fgallery-constructor.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/NCAR/pythia-portal/edit/master/./gallery-constructor.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/NCAR/pythia-portal/master?urlpath=lab/tree/./gallery-constructor.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com//github/NCAR/pythia-portal/blob/master/./gallery-constructor.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="simple nav section-nav flex-column">
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">dataclasses</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
+<span class="kn">from</span> <span class="nn">textwrap</span> <span class="kn">import</span> <span class="n">dedent</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.image</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">yaml</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">descriptions</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Sed metus purus, tempus sed orci non, efficitur volutpat enim. Aliquam purus erat, laoreet eu dui ut, posuere pretium ex. Integer et pellentesque nulla. Nunc ultricies lorem diam, sit amet ultricies lorem maximus eu. Sed eleifend iaculis ornare. Pellentesque dignissim quam in nisi mattis luctus ac at ex. Etiam vitae enim ut arcu condimentum interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non magna sed tellus facilisis semper non consectetur est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit lectus enim, eu rutrum mi mollis non. Curabitur eu cursus dolor.</span>
+
+<span class="s2">Pellentesque ultrices leo vitae venenatis dignissim. Pellentesque vel ullamcorper lorem, ut fermentum orci. Curabitur bibendum varius tellus vitae auctor. Nullam sem lacus, vulputate quis arcu ac, laoreet sollicitudin velit. Proin lectus tortor, efficitur rutrum faucibus eget, eleifend eu velit. Vestibulum vel faucibus leo. In nec hendrerit dui. Aenean et venenatis risus. Curabitur quis posuere nunc. Nulla nec egestas massa. Sed eget aliquam turpis. Aenean consequat tellus non dolor accumsan, vitae pellentesque lacus posuere. Sed sed felis a turpis vestibulum pretium ac nec est. Proin semper erat dolor, eget elementum lorem convallis vel. Aliquam ante arcu, convallis ac velit aliquam, lacinia lobortis ex. Suspendisse metus sem, malesuada ac massa a, dignissim porta lectus.</span>
+
+<span class="s2">Vestibulum id vestibulum diam, eu sollicitudin nunc. Mauris in varius velit. Maecenas lacus tortor, ultrices eget arcu non, ultrices ullamcorper nisl. Morbi auctor purus hendrerit leo tincidunt gravida. Ut a dignissim nisl. Proin ac venenatis eros, eget pharetra velit. Etiam dapibus nulla vitae aliquet varius. Vivamus eget mattis purus, eu bibendum ante. Ut efficitur orci elementum ligula facilisis tempus. Nulla at est eu nulla accumsan bibendum a sit amet enim. Aenean vestibulum et neque id tincidunt.</span>
+
+<span class="s2">Aliquam erat volutpat. Etiam pulvinar erat id metus sodales, convallis vehicula leo molestie. In in consectetur augue, ut venenatis mauris. Morbi in massa volutpat, consequat ligula vel, hendrerit erat. Aliquam eget magna dictum, molestie nibh in, accumsan diam. Suspendisse sed varius tortor. Nam consectetur ultricies velit sit amet iaculis.</span>
+
+<span class="s2">Vivamus tincidunt quam eget erat maximus maximus ut pulvinar diam. In libero magna, consequat ac malesuada quis, dignissim in mi. Phasellus placerat massa sed justo volutpat scelerisque. Mauris ultrices consectetur sodales. Nulla ut feugiat urna. Morbi feugiat ipsum sit amet consequat porttitor. Proin nec ultricies elit.</span>
+
+<span class="s2">Nulla at finibus sem. Nullam pharetra sem eget tempor molestie. Maecenas ac diam eu arcu euismod venenatis. Cras iaculis efficitur leo vitae iaculis. Ut in pretium magna. Sed vestibulum vestibulum mi eget pharetra. Mauris quis sapien eget neque aliquet cursus. Vivamus gravida felis risus. Proin efficitur quis ex quis eleifend. Nam ut felis a eros blandit vulputate vitae sed tortor. Phasellus interdum maximus purus, et porta tortor sollicitudin vitae. Praesent a mauris sollicitudin, viverra tortor ac, consequat lacus. Etiam scelerisque est erat, sed elementum eros aliquet sed.</span>
+
+<span class="s2">In dapibus sit amet lectus at fermentum. Nullam aliquam justo arcu, ut lobortis risus porttitor eget. Vivamus eu mauris quis ex hendrerit facilisis. Aliquam ac arcu nunc. Vivamus maximus ex vitae ultricies iaculis. Vivamus ornare sodales tellus nec vulputate. In nibh lorem, lobortis vitae nibh a, egestas dignissim ante.</span>
+
+<span class="s2">Cras commodo magna ac leo vestibulum, vitae porttitor dui faucibus. Vestibulum vel semper erat. Ut facilisis massa tortor, eu sodales tortor pulvinar in. Cras congue, eros nec sagittis varius, orci diam interdum ligula, eget pulvinar erat purus ut mauris. Etiam fermentum congue maximus. Maecenas sed fringilla ex. Nunc quis euismod nibh. Curabitur viverra quam vel pretium tristique. Nam eu sem id quam sollicitudin blandit eget vel sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum nec libero ut velit dignissim feugiat. Integer eleifend arcu fermentum mi ullamcorper dignissim. Aenean posuere arcu eget viverra varius. Morbi ut elit vitae sapien tempus porttitor. In sed convallis sem, sed semper sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+<span class="s2">Mauris auctor malesuada lectus, in dignissim nisi imperdiet ut. Duis lacinia libero tellus, sed tempor erat blandit in. Sed nisl orci, ultricies quis leo id, mattis euismod magna. Duis luctus, nibh id cursus lobortis, tellus risus rutrum est, vitae hendrerit ex turpis in nibh. Sed lobortis nisl ut dolor aliquet, at aliquet orci cursus. Cras vitae justo ullamcorper, fringilla quam vel, sollicitudin augue. In vitae porttitor ex. Vivamus ac nunc elit. Aenean sed ultricies ipsum. Curabitur tristique auctor libero, sed pulvinar felis ornare sed. Duis volutpat mauris vitae eros varius faucibus. Integer posuere rhoncus faucibus. Aliquam fringilla placerat eros nec sollicitudin.</span>
+
+<span class="s2">Quisque efficitur felis arcu, ultricies aliquet turpis maximus ut. Cras quis pulvinar velit. Vestibulum pretium pretium felis, ut consectetur eros iaculis eu. Cras massa nisi, varius eu ante eget, interdum condimentum massa. Maecenas imperdiet tristique sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras gravida orci at mi pretium consectetur. Pellentesque eget eleifend neque, eget tempor dui. Mauris sit amet pretium justo, nec condimentum nibh. Duis tristique est lorem. Nulla ut tincidunt neque. Aenean rhoncus ultrices lorem, sed elementum massa sollicitudin vel.</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+    <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DOC_SRC</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">absolute</span><span class="p">()</span>
+<span class="n">default_img_loc</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;_static/sphinx-logo.png&#39;</span>
+<span class="n">thumbnail_dir</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;_build/thumbnails&#39;</span>
+<span class="n">thumbnail_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">create_thumbnail</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">275</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">275</span><span class="p">,</span> <span class="n">cx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">cy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">border</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Overwrites `infile` with a new file of the given size&quot;&quot;&quot;</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+    <span class="n">rows</span><span class="p">,</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">size</span> <span class="o">==</span> <span class="n">cols</span><span class="p">:</span>
+        <span class="n">xslice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+        <span class="n">ymin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">cx</span> <span class="o">*</span> <span class="n">rows</span> <span class="o">-</span> <span class="n">size</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">rows</span> <span class="o">-</span> <span class="n">size</span><span class="p">)</span>
+        <span class="n">yslice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymin</span> <span class="o">+</span> <span class="n">size</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">yslice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+        <span class="n">xmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">cx</span> <span class="o">*</span> <span class="n">cols</span> <span class="o">-</span> <span class="n">size</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">cols</span> <span class="o">-</span> <span class="n">size</span><span class="p">)</span>
+        <span class="n">xslice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmin</span> <span class="o">+</span> <span class="n">size</span><span class="p">)</span>
+    <span class="n">thumb</span> <span class="o">=</span> <span class="n">im</span><span class="p">[</span><span class="n">yslice</span><span class="p">,</span> <span class="n">xslice</span><span class="p">]</span>
+    <span class="n">thumb</span><span class="p">[:</span><span class="n">border</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">thumb</span><span class="p">[</span><span class="o">-</span><span class="n">border</span><span class="p">:,</span> <span class="p">:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">thumb</span><span class="p">[:,</span> <span class="p">:</span><span class="n">border</span><span class="p">,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">thumb</span><span class="p">[:,</span> <span class="o">-</span><span class="n">border</span><span class="p">:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">dpi</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">width</span> <span class="o">/</span> <span class="n">dpi</span><span class="p">,</span> <span class="n">height</span> <span class="o">/</span> <span class="n">dpi</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">xticks</span><span class="o">=</span><span class="p">[],</span> <span class="n">yticks</span><span class="o">=</span><span class="p">[])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">thumb</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">resample</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;bilinear&#39;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">fig</span>
+
+
+<span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">NotebookInfo</span><span class="p">:</span>
+    <span class="n">filepath</span><span class="p">:</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span>
+    <span class="n">default_img_loc</span><span class="p">:</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span> <span class="o">=</span> <span class="n">default_img_loc</span>
+    <span class="n">thumbnail_dir</span><span class="p">:</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span> <span class="o">=</span> <span class="n">thumbnail_dir</span>
+
+    <span class="k">def</span> <span class="nf">__post_init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">png_path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">thumbnail_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="o">.</span><span class="n">stem</span><span class="si">}</span><span class="s1">.png&#39;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="p">)</span> <span class="k">as</span> <span class="n">fid</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">json_source</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">fid</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">gen_preview</span><span class="p">()</span>
+        <span class="n">relative_to_dir</span> <span class="o">=</span> <span class="n">DOC_SRC</span>
+
+        <span class="n">nb_id</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;../</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">relative_to_dir</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="o">.</span><span class="n">stem</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;thumbnail&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;../</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">png_path</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">relative_to_dir</span><span class="p">)</span><span class="o">.</span><span class="n">as_posix</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;notebook&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;../</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">relative_to_dir</span><span class="p">)</span><span class="o">.</span><span class="n">as_posix</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_title</span><span class="p">(),</span>
+            <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">nb_id</span><span class="si">}</span><span class="s1">.html&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="n">nb_id</span><span class="p">,</span>
+            <span class="s1">&#39;tags&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;notebooks&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parts</span><span class="p">[:]),</span>
+            <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">descriptions</span><span class="p">)[:</span><span class="mi">200</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+        <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">gen_preview</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">preview</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_preview_pic</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">preview</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">png_path</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">buff</span><span class="p">:</span>
+                <span class="n">buff</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">preview</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">default_img_loc</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">png_path</span><span class="p">)</span>
+
+        <span class="n">create_thumbnail</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">png_path</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">extract_preview_pic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Use the last image in the notebook as preview pic&quot;&quot;&quot;</span>
+        <span class="n">pic</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">json_source</span><span class="p">[</span><span class="s1">&#39;cells&#39;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">output</span> <span class="ow">in</span> <span class="n">cell</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;outputs&#39;</span><span class="p">,</span> <span class="p">[]):</span>
+                <span class="k">if</span> <span class="s1">&#39;image/png&#39;</span> <span class="ow">in</span> <span class="n">output</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="p">[]):</span>
+                    <span class="n">pic</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;image/png&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">pic</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">pic</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">extract_title</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">json_source</span><span class="p">[</span><span class="s1">&#39;cells&#39;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">cell</span><span class="p">[</span><span class="s1">&#39;cell_type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;markdown&#39;</span><span class="p">:</span>
+                <span class="n">rows</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">cell</span><span class="p">[</span><span class="s1">&#39;source&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+                <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;# &#39;</span><span class="p">):</span>
+                        <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">filepath</span><span class="o">.</span><span class="n">stem</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">build_gallery</span><span class="p">():</span>
+    <span class="n">notebooks_path</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;notebooks&#39;</span>
+    <span class="n">notebooks</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
+        <span class="p">[</span>
+            <span class="n">notebook</span>
+            <span class="k">for</span> <span class="n">notebook</span> <span class="ow">in</span> <span class="n">notebooks_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;**/*.ipynb&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s1">&#39;checkpoint&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">notebook</span><span class="o">.</span><span class="n">name</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="n">NotebookInfo</span><span class="p">(</span><span class="n">note</span><span class="p">)</span><span class="o">.</span><span class="n">info</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notebooks</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">])</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;galleries/ notebook-gallery.yaml&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fid</span><span class="p">:</span>
+        <span class="n">yaml</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">entries</span><span class="p">,</span> <span class="n">fid</span><span class="p">)</span>
+
+    <span class="n">panels_body</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span><span class="se">\</span>
+<span class="s2">        ---</span>
+<span class="s2">        :img-top: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;thumbnail&quot;</span><span class="p">]</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">        +++</span>
+<span class="s2">        **</span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">**</span>
+<span class="s2">        </span>
+<span class="s2">        </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">][:</span><span class="mi">50</span><span class="p">]</span><span class="si">}</span><span class="s2"> ...</span>
+
+<span class="s2">        </span><span class="se">{{</span><span class="s2">link-badge</span><span class="se">}}</span><span class="s2">`</span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span><span class="si">}</span><span class="s2">,&quot;rendered-notebook&quot;,cls=badge-secondary text-white float-left p-2 mr-1,tooltip=</span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="si">}</span><span class="s2">`</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+
+        <span class="n">panels_body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="n">panels_body</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">panels_body</span><span class="p">)</span>
+
+    <span class="n">gallery_content</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&#39;&#39;# Notebook Gallery</span>
+<span class="s1">````</span><span class="se">{{</span><span class="s1">panels</span><span class="se">}}</span><span class="s1"></span>
+<span class="s1">:container: full-width</span>
+<span class="s1">:column: text-left col-6 col-lg-4</span>
+<span class="s1">:card: +my-2</span>
+<span class="s1">:img-top-cls: w-75 m-auto p-2</span>
+<span class="s1">:body: d-none</span>
+
+<span class="si">{</span><span class="n">dedent</span><span class="p">(</span><span class="n">panels_body</span><span class="p">)</span><span class="si">}</span><span class="s1"></span>
+<span class="s1">````</span>
+<span class="s1">&#39;&#39;&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;galleries/notebook-gallery.md&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fid</span><span class="p">:</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">gallery_content</span><span class="p">)</span>
+
+
+<span class="n">build_gallery</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Project Pythia Developers & Contributors<br/>
+        
+            &copy; Copyright 2020-2020.<br/>
+          Last updated on Dec 08, 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
