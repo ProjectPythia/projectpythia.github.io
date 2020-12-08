@@ -1,0 +1,329 @@
+- description:
+    Vivamus tincidunt quam eget erat maximus maximus ut pulvinar diam.
+    In libero magna, consequat ac malesuada quis, dignissim in mi. Phasellus placerat
+    massa sed justo volutpat scelerisque. Mauris ultric
+  id: notebooks/pangeo-gallery/physical-oceanography/02_along_track
+  notebook: notebooks/pangeo-gallery/physical-oceanography/02_along_track.ipynb
+  tags:
+    - pangeo-gallery
+    - physical-oceanography
+  thumbnail: _build/thumbnails/02_along_track.png
+  title: Along Track Altimetry Analysis
+  url: notebooks/pangeo-gallery/physical-oceanography/02_along_track.html
+- description:
+    Mauris auctor malesuada lectus, in dignissim nisi imperdiet ut. Duis
+    lacinia libero tellus, sed tempor erat blandit in. Sed nisl orci, ultricies quis
+    leo id, mattis euismod magna. Duis luctus, nibh id
+  id: notebooks/earthcube2020/ec20_abernathey_etal/cloud_storage
+  notebook: notebooks/earthcube2020/ec20_abernathey_etal/cloud_storage.ipynb
+  tags:
+    - earthcube2020
+    - ec20_abernathey_etal
+  thumbnail: _build/thumbnails/cloud_storage.png
+  title: Big Arrays, Fast- Profiling Cloud Storage Read Throughput
+  url: notebooks/earthcube2020/ec20_abernathey_etal/cloud_storage.html
+- description:
+    Quisque efficitur felis arcu, ultricies aliquet turpis maximus ut.
+    Cras quis pulvinar velit. Vestibulum pretium pretium felis, ut consectetur eros
+    iaculis eu. Cras massa nisi, varius eu ante eget, int
+  id: notebooks/pangeo-gallery/cmip6/precip_frequency_change
+  notebook: notebooks/pangeo-gallery/cmip6/precip_frequency_change.ipynb
+  tags:
+    - pangeo-gallery
+    - cmip6
+  thumbnail: _build/thumbnails/precip_frequency_change.png
+  title: CMIP6 Precipitation Frequency Analysis
+  url: notebooks/pangeo-gallery/cmip6/precip_frequency_change.html
+- description:
+    Aliquam erat volutpat. Etiam pulvinar erat id metus sodales, convallis
+    vehicula leo molestie. In in consectetur augue, ut venenatis mauris. Morbi in
+    massa volutpat, consequat ligula vel, hendrerit era
+  id: notebooks/pangeo-data/pangeo-tutorial-gallery/dask
+  notebook: notebooks/pangeo-data/pangeo-tutorial-gallery/dask.ipynb
+  tags:
+    - pangeo-data
+    - pangeo-tutorial-gallery
+  thumbnail: _build/thumbnails/dask.png
+  title: Dask Tutorial
+  url: notebooks/pangeo-data/pangeo-tutorial-gallery/dask.html
+- description:
+    Vestibulum id vestibulum diam, eu sollicitudin nunc. Mauris in varius
+    velit. Maecenas lacus tortor, ultrices eget arcu non, ultrices ullamcorper nisl.
+    Morbi auctor purus hendrerit leo tincidunt gravid
+  id: notebooks/rsignell-usgs/esip-gallery/05_ERDDAP_access
+  notebook: notebooks/rsignell-usgs/esip-gallery/05_ERDDAP_access.ipynb
+  tags:
+    - rsignell-usgs
+    - esip-gallery
+  thumbnail: _build/thumbnails/05_ERDDAP_access.png
+  title: ERDDAP Access
+  url: notebooks/rsignell-usgs/esip-gallery/05_ERDDAP_access.html
+- description:
+    Pellentesque ultrices leo vitae venenatis dignissim. Pellentesque vel
+    ullamcorper lorem, ut fermentum orci. Curabitur bibendum varius tellus vitae auctor.
+    Nullam sem lacus, vulputate quis arcu ac, lao
+  id: notebooks/NCAR/cesm-lens-aws/notebooks/EnhancedIntakeCatalogDemo
+  notebook: notebooks/NCAR/cesm-lens-aws/notebooks/EnhancedIntakeCatalogDemo.ipynb
+  tags:
+    - NCAR
+    - cesm-lens-aws
+    - notebooks
+  thumbnail: _build/thumbnails/EnhancedIntakeCatalogDemo.png
+  title: Enhanced Intake-ESM Catalog Demo
+  url: notebooks/NCAR/cesm-lens-aws/notebooks/EnhancedIntakeCatalogDemo.html
+- description:
+    Pellentesque ultrices leo vitae venenatis dignissim. Pellentesque vel
+    ullamcorper lorem, ut fermentum orci. Curabitur bibendum varius tellus vitae auctor.
+    Nullam sem lacus, vulputate quis arcu ac, lao
+  id: notebooks/pangeo-gallery/cmip6/ECS_Gregory_method
+  notebook: notebooks/pangeo-gallery/cmip6/ECS_Gregory_method.ipynb
+  tags:
+    - pangeo-gallery
+    - cmip6
+  thumbnail: _build/thumbnails/ECS_Gregory_method.png
+  title: Estimating Equilibrium Climate Sensitivity (ECS) in CMIP6 models
+  url: notebooks/pangeo-gallery/cmip6/ECS_Gregory_method.html
+- description:
+    'Nulla at finibus sem. Nullam pharetra sem eget tempor molestie. Maecenas
+    ac diam eu arcu euismod venenatis. Cras iaculis efficitur leo vitae iaculis. Ut
+    in pretium magna. Sed vestibulum vestibulum mi '
+  id: notebooks/pangeo-data/pangeo-tutorial-gallery/geopandas
+  notebook: notebooks/pangeo-data/pangeo-tutorial-gallery/geopandas.ipynb
+  tags:
+    - pangeo-data
+    - pangeo-tutorial-gallery
+  thumbnail: _build/thumbnails/geopandas.png
+  title: Geopandas Tutorial
+  url: notebooks/pangeo-data/pangeo-tutorial-gallery/geopandas.html
+- description:
+    Aliquam erat volutpat. Etiam pulvinar erat id metus sodales, convallis
+    vehicula leo molestie. In in consectetur augue, ut venenatis mauris. Morbi in
+    massa volutpat, consequat ligula vel, hendrerit era
+  id: notebooks/pangeo-gallery/cmip6/global_mean_surface_temp
+  notebook: notebooks/pangeo-gallery/cmip6/global_mean_surface_temp.ipynb
+  tags:
+    - pangeo-gallery
+    - cmip6
+  thumbnail: _build/thumbnails/global_mean_surface_temp.png
+  title: Global Mean Surface Temperature
+  url: notebooks/pangeo-gallery/cmip6/global_mean_surface_temp.html
+- description:
+    Vestibulum id vestibulum diam, eu sollicitudin nunc. Mauris in varius
+    velit. Maecenas lacus tortor, ultrices eget arcu non, ultrices ullamcorper nisl.
+    Morbi auctor purus hendrerit leo tincidunt gravid
+  id: notebooks/rsignell-usgs/esip-gallery/04_WaveWatch3
+  notebook: notebooks/rsignell-usgs/esip-gallery/04_WaveWatch3.ipynb
+  tags:
+    - rsignell-usgs
+    - esip-gallery
+  thumbnail: _build/thumbnails/04_WaveWatch3.png
+  title: Global WaveWatch III
+  url: notebooks/rsignell-usgs/esip-gallery/04_WaveWatch3.html
+- description: '
+
+    Sed metus purus, tempus sed orci non, efficitur volutpat enim. Aliquam purus erat,
+    laoreet eu dui ut, posuere pretium ex. Integer et pellentesque nulla. Nunc ultricies
+    lorem diam, sit amet ultricies '
+  id: notebooks/pangeo-gallery/cmip6/basic_search_and_load
+  notebook: notebooks/pangeo-gallery/cmip6/basic_search_and_load.ipynb
+  tags:
+    - pangeo-gallery
+    - cmip6
+  thumbnail: _build/thumbnails/basic_search_and_load.png
+  title: Google Cloud CMIP6 Public Data- Basic Python Example
+  url: notebooks/pangeo-gallery/cmip6/basic_search_and_load.html
+- description:
+    'Nulla at finibus sem. Nullam pharetra sem eget tempor molestie. Maecenas
+    ac diam eu arcu euismod venenatis. Cras iaculis efficitur leo vitae iaculis. Ut
+    in pretium magna. Sed vestibulum vestibulum mi '
+  id: notebooks/rsignell-usgs/esip-gallery/03_HRRR_Dashboard
+  notebook: notebooks/rsignell-usgs/esip-gallery/03_HRRR_Dashboard.ipynb
+  tags:
+    - rsignell-usgs
+    - esip-gallery
+  thumbnail: _build/thumbnails/03_HRRR_Dashboard.png
+  title: HRRR Dashboard
+  url: notebooks/rsignell-usgs/esip-gallery/03_HRRR_Dashboard.html
+- description:
+    Vestibulum id vestibulum diam, eu sollicitudin nunc. Mauris in varius
+    velit. Maecenas lacus tortor, ultrices eget arcu non, ultrices ullamcorper nisl.
+    Morbi auctor purus hendrerit leo tincidunt gravid
+  id: notebooks/rsignell-usgs/esip-gallery/01_hurricane_ike_water_levels
+  notebook: notebooks/rsignell-usgs/esip-gallery/01_hurricane_ike_water_levels.ipynb
+  tags:
+    - rsignell-usgs
+    - esip-gallery
+  thumbnail: _build/thumbnails/01_hurricane_ike_water_levels.png
+  title: Hurricane Ike Maximum Water Levels
+  url: notebooks/rsignell-usgs/esip-gallery/01_hurricane_ike_water_levels.html
+- description:
+    Cras commodo magna ac leo vestibulum, vitae porttitor dui faucibus.
+    Vestibulum vel semper erat. Ut facilisis massa tortor, eu sodales tortor pulvinar
+    in. Cras congue, eros nec sagittis varius, orci di
+  id: notebooks/pangeo-data/pangeo-tutorial-gallery/intake
+  notebook: notebooks/pangeo-data/pangeo-tutorial-gallery/intake.ipynb
+  tags:
+    - pangeo-data
+    - pangeo-tutorial-gallery
+  thumbnail: _build/thumbnails/intake.png
+  title: Intake Tutorial
+  url: notebooks/pangeo-data/pangeo-tutorial-gallery/intake.html
+- description:
+    Vivamus tincidunt quam eget erat maximus maximus ut pulvinar diam.
+    In libero magna, consequat ac malesuada quis, dignissim in mi. Phasellus placerat
+    massa sed justo volutpat scelerisque. Mauris ultric
+  id: notebooks/pangeo-data/landsat-8-tutorial-gallery/landsat8
+  notebook: notebooks/pangeo-data/landsat-8-tutorial-gallery/landsat8.ipynb
+  tags:
+    - pangeo-data
+    - landsat-8-tutorial-gallery
+  thumbnail: _build/thumbnails/landsat8.png
+  title: Landsat-8 on AWS
+  url: notebooks/pangeo-data/landsat-8-tutorial-gallery/landsat8.html
+- description: '
+
+    Sed metus purus, tempus sed orci non, efficitur volutpat enim. Aliquam purus erat,
+    laoreet eu dui ut, posuere pretium ex. Integer et pellentesque nulla. Nunc ultricies
+    lorem diam, sit amet ultricies '
+  id: notebooks/pangeo-gallery/cmip6/intake_ESM_example
+  notebook: notebooks/pangeo-gallery/cmip6/intake_ESM_example.ipynb
+  tags:
+    - pangeo-gallery
+    - cmip6
+  thumbnail: _build/thumbnails/intake_ESM_example.png
+  title: Load CMIP6 Data with Intake ESM
+  url: notebooks/pangeo-gallery/cmip6/intake_ESM_example.html
+- description:
+    In dapibus sit amet lectus at fermentum. Nullam aliquam justo arcu,
+    ut lobortis risus porttitor eget. Vivamus eu mauris quis ex hendrerit facilisis.
+    Aliquam ac arcu nunc. Vivamus maximus ex vitae ultr
+  id: notebooks/pangeo-gallery/physical-oceanography/04_eccov4
+  notebook: notebooks/pangeo-gallery/physical-oceanography/04_eccov4.ipynb
+  tags:
+    - pangeo-gallery
+    - physical-oceanography
+  thumbnail: _build/thumbnails/04_eccov4.png
+  title: MITgcm ECCOv4 Example
+  url: notebooks/pangeo-gallery/physical-oceanography/04_eccov4.html
+- description:
+    Vivamus tincidunt quam eget erat maximus maximus ut pulvinar diam.
+    In libero magna, consequat ac malesuada quis, dignissim in mi. Phasellus placerat
+    massa sed justo volutpat scelerisque. Mauris ultric
+  id: notebooks/pangeo-gallery/physical-oceanography/03_cesm_MOM6
+  notebook: notebooks/pangeo-gallery/physical-oceanography/03_cesm_MOM6.ipynb
+  tags:
+    - pangeo-gallery
+    - physical-oceanography
+  thumbnail: _build/thumbnails/03_cesm_MOM6.png
+  title: MOM6/CESM Ocean Model Analysis
+  url: notebooks/pangeo-gallery/physical-oceanography/03_cesm_MOM6.html
+- description:
+    Quisque efficitur felis arcu, ultricies aliquet turpis maximus ut.
+    Cras quis pulvinar velit. Vestibulum pretium pretium felis, ut consectetur eros
+    iaculis eu. Cras massa nisi, varius eu ante eget, int
+  id: notebooks/rsignell-usgs/esip-gallery/02_National_Water_Model
+  notebook: notebooks/rsignell-usgs/esip-gallery/02_National_Water_Model.ipynb
+  tags:
+    - rsignell-usgs
+    - esip-gallery
+  thumbnail: _build/thumbnails/02_National_Water_Model.png
+  title: National Water Model
+  url: notebooks/rsignell-usgs/esip-gallery/02_National_Water_Model.html
+- description:
+    Vivamus tincidunt quam eget erat maximus maximus ut pulvinar diam.
+    In libero magna, consequat ac malesuada quis, dignissim in mi. Phasellus placerat
+    massa sed justo volutpat scelerisque. Mauris ultric
+  id: notebooks/NCAR/cesm-lens-aws/notebooks/kay-et-al-2015.v3
+  notebook: notebooks/NCAR/cesm-lens-aws/notebooks/kay-et-al-2015.v3.ipynb
+  tags:
+    - NCAR
+    - cesm-lens-aws
+    - notebooks
+  thumbnail: _build/thumbnails/kay-et-al-2015.v3.png
+  title: Reproducing Key Figures from Kay et al. (2015) Paper
+  url: notebooks/NCAR/cesm-lens-aws/notebooks/kay-et-al-2015.v3.html
+- description:
+    Pellentesque ultrices leo vitae venenatis dignissim. Pellentesque vel
+    ullamcorper lorem, ut fermentum orci. Curabitur bibendum varius tellus vitae auctor.
+    Nullam sem lacus, vulputate quis arcu ac, lao
+  id: notebooks/pangeo-gallery/physical-oceanography/01_sea-surface-height
+  notebook: notebooks/pangeo-gallery/physical-oceanography/01_sea-surface-height.ipynb
+  tags:
+    - pangeo-gallery
+    - physical-oceanography
+  thumbnail: _build/thumbnails/01_sea-surface-height.png
+  title: Sea Surface Altimetry Data Analysis
+  url: notebooks/pangeo-gallery/physical-oceanography/01_sea-surface-height.html
+- description:
+    Vestibulum id vestibulum diam, eu sollicitudin nunc. Mauris in varius
+    velit. Maecenas lacus tortor, ultrices eget arcu non, ultrices ullamcorper nisl.
+    Morbi auctor purus hendrerit leo tincidunt gravid
+  id: notebooks/pangeo-gallery/cmip6/search_and_load_with_esgf_opendap
+  notebook: notebooks/pangeo-gallery/cmip6/search_and_load_with_esgf_opendap.ipynb
+  tags:
+    - pangeo-gallery
+    - cmip6
+  thumbnail: _build/thumbnails/search_and_load_with_esgf_opendap.png
+  title: Search and Load CMIP6 Data via ESGF / OPeNDAP
+  url: notebooks/pangeo-gallery/cmip6/search_and_load_with_esgf_opendap.html
+- description:
+    Mauris auctor malesuada lectus, in dignissim nisi imperdiet ut. Duis
+    lacinia libero tellus, sed tempor erat blandit in. Sed nisl orci, ultricies quis
+    leo id, mattis euismod magna. Duis luctus, nibh id
+  id: notebooks/pangeo-gallery/example-gallery/02_example-dask
+  notebook: notebooks/pangeo-gallery/example-gallery/02_example-dask.ipynb
+  tags:
+    - pangeo-gallery
+    - example-gallery
+  thumbnail: _build/thumbnails/02_example-dask.png
+  title: Test Dask Gateway
+  url: notebooks/pangeo-gallery/example-gallery/02_example-dask.html
+- description:
+    Vestibulum id vestibulum diam, eu sollicitudin nunc. Mauris in varius
+    velit. Maecenas lacus tortor, ultrices eget arcu non, ultrices ullamcorper nisl.
+    Morbi auctor purus hendrerit leo tincidunt gravid
+  id: notebooks/pangeo-gallery/example-gallery/01_example-notebook
+  notebook: notebooks/pangeo-gallery/example-gallery/01_example-notebook.ipynb
+  tags:
+    - pangeo-gallery
+    - example-gallery
+  thumbnail: _build/thumbnails/01_example-notebook.png
+  title: Test Pangeo Gallery 1
+  url: notebooks/pangeo-gallery/example-gallery/01_example-notebook.html
+- description:
+    Quisque efficitur felis arcu, ultricies aliquet turpis maximus ut.
+    Cras quis pulvinar velit. Vestibulum pretium pretium felis, ut consectetur eros
+    iaculis eu. Cras massa nisi, varius eu ante eget, int
+  id: notebooks/xgcm/xgcm-examples/01_example-notebook
+  notebook: notebooks/xgcm/xgcm-examples/01_example-notebook.ipynb
+  tags:
+    - xgcm
+    - xgcm-examples
+  thumbnail: _build/thumbnails/01_example-notebook.png
+  title: Test Pangeo Gallery 1
+  url: notebooks/xgcm/xgcm-examples/01_example-notebook.html
+- description: '
+
+    Sed metus purus, tempus sed orci non, efficitur volutpat enim. Aliquam purus erat,
+    laoreet eu dui ut, posuere pretium ex. Integer et pellentesque nulla. Nunc ultricies
+    lorem diam, sit amet ultricies '
+  id: notebooks/TomAugspurger/pangeo-dask-gateway/using-dask-gateway
+  notebook: notebooks/TomAugspurger/pangeo-dask-gateway/using-dask-gateway.ipynb
+  tags:
+    - TomAugspurger
+    - pangeo-dask-gateway
+  thumbnail: _build/thumbnails/using-dask-gateway.png
+  title: Using Dask Gateway
+  url: notebooks/TomAugspurger/pangeo-dask-gateway/using-dask-gateway.html
+- description:
+    Quisque efficitur felis arcu, ultricies aliquet turpis maximus ut.
+    Cras quis pulvinar velit. Vestibulum pretium pretium felis, ut consectetur eros
+    iaculis eu. Cras massa nisi, varius eu ante eget, int
+  id: notebooks/pangeo-data/pangeo-tutorial-gallery/xarray
+  notebook: notebooks/pangeo-data/pangeo-tutorial-gallery/xarray.ipynb
+  tags:
+    - pangeo-data
+    - pangeo-tutorial-gallery
+  thumbnail: _build/thumbnails/xarray.png
+  title: Xarray Tutorial
+  url: notebooks/pangeo-data/pangeo-tutorial-gallery/xarray.html

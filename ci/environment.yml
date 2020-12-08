@@ -1,0 +1,11 @@
+name: pythia
+channels:
+  - conda-forge
+dependencies:
+  - myst-nb
+  - sphinx-panels
+  - pydata-sphinx-theme
+  - jupyterlab
+  - sphinx-autobuild
+  - matplotlib
+  - sphinx-book-theme

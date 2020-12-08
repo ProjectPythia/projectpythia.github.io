@@ -1,1 +1,1 @@
-# pythia-portal
+# Project Pythia
