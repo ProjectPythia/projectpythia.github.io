@@ -3,7 +3,11 @@
 
 import datetime
 import os
+import pathlib
 import sys
+from textwrap import dedent
+
+import yaml
 
 sys.path.insert(0, os.path.abspath(os.path.join('sphinxext')))
 project = 'Pythia Portal'
@@ -36,6 +40,15 @@ exclude_patterns = [
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
+# html_favicon = '_static/favicon.ico'
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+html_logo = '_static/NSF_4-Color_bitmap_Logo.png'
+html_title = 'Project Pythia'
+
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
     'path_to_docs': './',
@@ -47,21 +60,12 @@ html_theme_options = {
         # "jupyterhub_url": "https://datahub.berkeley.edu",  # For testing
         'colab_url': 'https://colab.research.google.com/',
         'notebook_interface': 'jupyterlab',
-        'thebe': True,
+        'thebe': False,
     },
-    'use_edit_page_button': True,
-    'use_issues_button': True,
-    'use_repository_button': True,
+    'use_edit_page_button': False,
+    'use_issues_button': False,
+    'use_repository_button': False,
 }
-copybutton_selector = 'div:not(.output) > div.highlight pre'
-
-# html_favicon = '_static/favicon.ico'
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-# html_extra_path = ['feed.xml']
 
 
 # Panels config
@@ -74,3 +78,38 @@ jupyter_execute_notebooks = 'off'
 
 
 # -- Custom scripts ----------------------------------------------------------
+with open('communications.yaml') as fid:
+    communications = yaml.safe_load(fid)
+
+# Build the gallery file
+panels_body = []
+for item in communications:
+    if not item.get('thumbnail'):
+        item['thumbnail'] = '_static/ebp-logo.png'
+    cls = 'badge-secondary text-white float-left p-2 mr-1'
+
+    panels_body.append(
+        f"""\
+    ---
+    :img-top: {item["thumbnail"]}
+    +++
+    **{item["name"]}**
+
+    {{link-badge}}`{item["url"]},"website",{cls},tooltip={item["name"].replace(",", "")}`
+    """
+    )
+panels_body = '\n'.join(panels_body)
+
+panels = f"""
+# Communication Channels Gallery
+````{{panels}}
+:container: full-width
+:column: text-center col-6 col-lg-4
+:card: +my-2
+:img-top-cls: w-75 m-auto p-2
+:body: d-none
+{dedent(panels_body)}
+````
+"""
+
+pathlib.Path('communications.md').write_text(panels)
