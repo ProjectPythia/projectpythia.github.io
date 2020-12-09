@@ -2,9 +2,10 @@
 
 ```{toctree}
 ---
-maxdepth: 2
+maxdepth: 1
 ---
 
-galleries/index.md
+notebooks_gallery/index.md
+communications.md
 
 ```

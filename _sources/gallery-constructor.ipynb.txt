@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -54,13 +54,13 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 37,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [],
    "source": [
     "DOC_SRC = pathlib.Path(\".\").absolute()\n",
     "default_img_loc = DOC_SRC / '_static/sphinx-logo.png'\n",
-    "thumbnail_dir = DOC_SRC / '_build/thumbnails'\n",
+    "thumbnail_dir = DOC_SRC / '_static/thumbnails'\n",
     "thumbnail_dir.mkdir(parents=True, exist_ok=True)\n",
     "\n",
     "\n",
@@ -150,11 +150,7 @@
     "def build_gallery():\n",
     "    notebooks_path = DOC_SRC / 'notebooks'\n",
     "    notebooks = sorted(\n",
-    "        [\n",
-    "            notebook\n",
-    "            for notebook in notebooks_path.glob('**/*.ipynb')\n",
-    "            if 'checkpoint' not in notebook.name\n",
-    "        ]\n",
+    "        [notebook for notebook in notebooks_path.glob('**/*.ipynb') if 'checkpoint' not in notebook.name]\n",
     "    )\n",
     "    entries = [NotebookInfo(note).info for note in notebooks]\n",
     "    df = pd.DataFrame(entries).sort_values(by=['title'])\n",

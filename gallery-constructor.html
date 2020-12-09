@@ -76,19 +76,15 @@
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="galleries/index.html">
-   Galleries
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks_gallery/index.html">
+   Notebooks Gallery
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="galleries/notebook-gallery.html">
-     Notebook Gallery
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="communications.html">
+   Communication Channels Gallery
+  </a>
  </li>
 </ul>
 
@@ -266,7 +262,7 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DOC_SRC</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">absolute</span><span class="p">()</span>
 <span class="n">default_img_loc</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;_static/sphinx-logo.png&#39;</span>
-<span class="n">thumbnail_dir</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;_build/thumbnails&#39;</span>
+<span class="n">thumbnail_dir</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;_static/thumbnails&#39;</span>
 <span class="n">thumbnail_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 
@@ -356,11 +352,7 @@
 <span class="k">def</span> <span class="nf">build_gallery</span><span class="p">():</span>
     <span class="n">notebooks_path</span> <span class="o">=</span> <span class="n">DOC_SRC</span> <span class="o">/</span> <span class="s1">&#39;notebooks&#39;</span>
     <span class="n">notebooks</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
-        <span class="p">[</span>
-            <span class="n">notebook</span>
-            <span class="k">for</span> <span class="n">notebook</span> <span class="ow">in</span> <span class="n">notebooks_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;**/*.ipynb&#39;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="s1">&#39;checkpoint&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">notebook</span><span class="o">.</span><span class="n">name</span>
-        <span class="p">]</span>
+        <span class="p">[</span><span class="n">notebook</span> <span class="k">for</span> <span class="n">notebook</span> <span class="ow">in</span> <span class="n">notebooks_path</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;**/*.ipynb&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="s1">&#39;checkpoint&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">notebook</span><span class="o">.</span><span class="n">name</span><span class="p">]</span>
     <span class="p">)</span>
     <span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="n">NotebookInfo</span><span class="p">(</span><span class="n">note</span><span class="p">)</span><span class="o">.</span><span class="n">info</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notebooks</span><span class="p">]</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">])</span>
@@ -424,7 +416,7 @@
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2020.<br/>
-          Last updated on Dec 08, 2020.<br/>
+          Last updated on Dec 09, 2020.<br/>
       </p>
     </div>
   </footer>
