@@ -1,6 +1,6 @@
 # Communication Channels Gallery
 
-```{panels}
+````{panels}
 :container: full-width
 :column: text-left col-6 col-lg-4
 :card: +my-2
@@ -14,7 +14,11 @@
 A Discourse forum for all things happening in the Pangeo community
 
 
-{link-badge}`https://discourse.pangeo.io/,"link",badge-secondary text-white float-left p-2 mr-1,tooltip=Pangeo Discourse Forum`
+```{link-button} https://discourse.pangeo.io/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block stretched-link
+```
 
 categories: {badge}`forum,badge-primary badge-pill`
 {badge}`chat,badge-primary badge-pill`
@@ -27,7 +31,11 @@ categories: {badge}`forum,badge-primary badge-pill`
 A Discourse forum for all things happening in the Pangeo community
 
 
-{link-badge}`https://gitter.im/pangeo-data/Lobby,"link",badge-secondary text-white float-left p-2 mr-1,tooltip=Pangeo Gitter Room`
+```{link-button} https://gitter.im/pangeo-data/Lobby
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block stretched-link
+```
 
 categories: {badge}`chat,badge-primary badge-pill`
 
@@ -39,7 +47,11 @@ categories: {badge}`chat,badge-primary badge-pill`
 Pangeo website + discussion of general issues related to the project.
 
 
-{link-badge}`https://github.com/pangeo-data/pangeo,"link",badge-secondary text-white float-left p-2 mr-1,tooltip=Pangeo GitHub main repository`
+```{link-button} https://github.com/pangeo-data/pangeo
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block stretched-link
+```
 
 categories: {badge}`github,badge-primary badge-pill`
 
@@ -51,7 +63,11 @@ categories: {badge}`github,badge-primary badge-pill`
 A place to connect with other members of xarray community.
 
 
-{link-badge}`https://github.com/pydata/xarray/discussions,"link",badge-secondary text-white float-left p-2 mr-1,tooltip=xarray Discussions Page`
+```{link-button} https://github.com/pydata/xarray/discussions
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block stretched-link
+```
 
 categories: {badge}`github,badge-primary badge-pill`
 {badge}`forum,badge-primary badge-pill`
@@ -65,8 +81,12 @@ This is a place for the jupyter community to interact with one another,
 share stories of their work, ask for help, and give help to others.
 
 
-{link-badge}`https://discourse.jupyter.org/,"link",badge-secondary text-white float-left p-2 mr-1,tooltip=Jupyter Discourse Forum`
+```{link-button} https://discourse.jupyter.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block stretched-link
+```
 
 categories: {badge}`forum,badge-primary badge-pill`
 
-```
+````

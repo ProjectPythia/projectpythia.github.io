@@ -88,7 +88,6 @@ for item in communications:
         item['thumbnail'] = '_static/ebp-logo.png'
     tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
     tags = '\n'.join(tags)
-    cls = 'badge-secondary text-white float-left p-2 mr-1'
 
     panels_body.append(
         f"""\
@@ -99,7 +98,11 @@ for item in communications:
 
 {item['description']}
 
-{{link-badge}}`{item["url"]},"link",{cls},tooltip={item["name"].replace(",", "")}`
+```{{link-button}} {item["url"]}
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block stretched-link
+```
 
 categories: {tags}
 """
