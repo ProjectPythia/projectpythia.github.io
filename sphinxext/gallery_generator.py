@@ -6,16 +6,22 @@ import dataclasses
 import json
 import os
 import pathlib
+import random
 import shutil
+from textwrap import dedent
 
 import matplotlib.image
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
 
+with open('lorem_ipsum.txt') as fid:
+    descriptions = fid.read().split('\n\n')
+
+
 DOC_SRC = pathlib.Path(os.path.dirname(os.path.abspath(__file__))).parent
-default_img_loc = DOC_SRC / '_static/placeholder.png'
-thumbnail_dir = DOC_SRC / '_build/thumbnails'
+default_img_loc = DOC_SRC / '_static/sphinx-logo.png'
+thumbnail_dir = DOC_SRC / '_static/thumbnails'
 thumbnail_dir.mkdir(parents=True, exist_ok=True)
 
 
@@ -49,8 +55,9 @@ def create_thumbnail(infile, width=275, height=275, cx=0.5, cy=0.5, border=4):
 @dataclasses.dataclass
 class NotebookInfo:
     filepath: pathlib.Path
-    default_img_loc: pathlib.Path = default_img_loc
-    thumbnail_dir: pathlib.Path = thumbnail_dir
+    default_img_loc: pathlib.Path
+    thumbnail_dir: pathlib.Path
+    src_dir: pathlib.Path
 
     def __post_init__(self):
         self.thumbnail_dir.mkdir(parents=True, exist_ok=True)
@@ -59,14 +66,14 @@ class NotebookInfo:
             self.json_source = json.load(fid)
             self.gen_preview()
 
-        nb_id = f'{self.filepath.relative_to(DOC_SRC).parent}/{self.filepath.stem}'
+        nb_id = f'{self.filepath.relative_to(self.src_dir).parent}/{self.filepath.stem}'
         self.info = {
-            'thumbnail': self.png_path.relative_to(DOC_SRC).as_posix(),
-            'notebook': self.filepath.relative_to(DOC_SRC).as_posix(),
+            'thumbnail': f'../{self.png_path.relative_to(self.src_dir).as_posix()}',
+            'notebook': f'../{self.filepath.relative_to(self.src_dir).as_posix()}',
             'title': self.extract_title(),
-            'url': f'{nb_id}.html',
+            'url': f'../{nb_id}.html',
             'id': nb_id,
-            'tags': list(self.filepath.relative_to(DOC_SRC / 'notebooks').parent.parts[:]),
+            'description': random.choice(descriptions)[:200].strip(),
         }
 
     def gen_preview(self):
@@ -100,55 +107,62 @@ class NotebookInfo:
         return self.filepath.stem.replace('_', ' ').replace(':', '-')
 
 
-def build_gallery():
-    notebooks_path = DOC_SRC / 'notebooks'
-    notebooks = sorted(
-        [
-            notebook
-            for notebook in notebooks_path.glob('**/*.ipynb')
-            if 'checkpoint' not in notebook.name
+def build_gallery(srcdir, gallery, contains_notebooks):
+    src_dir = pathlib.Path(srcdir)
+    os.chdir(srcdir)
+    target_dir = src_dir / f'{gallery}_gallery'
+    image_dir = target_dir / '_thumbnails'
+    image_dir.mkdir(parents=True, exist_ok=True)
+
+    if contains_notebooks:
+        notebooks_path = src_dir / 'notebooks'
+        notebooks = sorted(
+            [notebook for notebook in notebooks_path.glob('**/*.ipynb') if 'checkpoint' not in notebook.name]
+        )
+        entries = [
+            NotebookInfo(note, default_img_loc=default_img_loc, thumbnail_dir=image_dir, src_dir=src_dir).info
+            for note in notebooks
         ]
-    )
-    entries = [NotebookInfo(note).info for note in notebooks]
-    df = pd.DataFrame(entries).sort_values(by=['title'])
-    df.to_csv(DOC_SRC / 'gallery.csv', index=False)
-    entries = df.to_dict(orient='records')
-    with open(DOC_SRC / 'gallery.yaml', 'w') as fid:
-        yaml.dump(entries, fid)
+        df = pd.DataFrame(entries).sort_values(by=['title'])
+        entries = df.to_dict(orient='records')
+        with open(target_dir / f'{gallery}_gallery.yaml', 'w') as fid:
+            yaml.dump(entries, fid)
 
-    s = []
-    for entry in entries:
-        badges = [f'{{badge}}`{badge},badge-primary`' for badge in entry['tags']]
-        badges = '\n'.join(badges)
-        x = f"""
----
-:img-top: {entry['thumbnail']}
-```{{link-button}} {entry['id']}
-:type: ref
-:text: {entry['title']}
-:classes: btn-outline-primary btn-block stretched-link
-```
-+++++++
+        panels_body = []
+        for entry in entries:
+            x = f"""\
+            ---
+            :img-top: {entry["thumbnail"]}
+            +++
+            **{entry['title']}**
 
-{badges}
-"""
+            {entry['description'][:50]} ...
 
-        s.append(x)
+            {{link-badge}}`{entry["url"]},"rendered-notebook",cls=badge-secondary text-white float-left p-2 mr-1`
+            """
 
-    s = ' '.join(s)
+            panels_body.append(x)
 
-    gallery_content = f'''# Gallery
+        panels_body = '\n'.join(panels_body)
+
+        gallery_content = f'''# {gallery.capitalize()} Gallery
 ````{{panels}}
-:img-top-cls: pl-5 pr-5
-{s}
+:container: full-width
+:column: text-left col-6 col-lg-4
+:card: +my-2
+:img-top-cls: w-75 m-auto p-2
+:body: d-none
+
+{dedent(panels_body)}
 ````
 '''
-    with open(DOC_SRC / 'notebook-gallery.md', 'w') as fid:
-        fid.write(gallery_content)
+        with open(target_dir / 'index.md', 'w') as fid:
+            fid.write(dedent(gallery_content))
 
 
 def main(app):
-    build_gallery()
+    for gallery in [('notebooks', True)]:
+        build_gallery(app.builder.srcdir, gallery[0], gallery[1])
 
 
 def setup(app):

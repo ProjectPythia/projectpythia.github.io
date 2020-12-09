@@ -12,7 +12,7 @@ author = 'Project Pythia Developers & Contributors'
 html_last_updated_fmt = '%b %d, %Y'
 
 
-extensions = ['myst_nb', 'sphinx_panels']
+extensions = ['myst_nb', 'sphinx_panels', 'gallery_generator']
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -52,7 +52,6 @@ html_theme_options = {
     'use_edit_page_button': True,
     'use_issues_button': True,
     'use_repository_button': True,
-    'use_download_button': True,
 }
 copybutton_selector = 'div:not(.output) > div.highlight pre'
 
@@ -72,3 +71,6 @@ panels_add_bootstrap_css = False
 myst_admonition_enable = True
 myst_deflist_enable = True
 jupyter_execute_notebooks = 'off'
+
+
+# -- Custom scripts ----------------------------------------------------------

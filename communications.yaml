@@ -1,0 +1,24 @@
+- name: Pangeo Discourse Forum
+  url: https://discourse.pangeo.io/
+  thumbnail: _static/pangeo_simple_logo.png
+  tags:
+    - forum
+    - chat
+  description: |
+    A Discourse forum for all things happening in the Pangeo community
+
+- name: Pangeo Gitter Room
+  url: https://gitter.im/pangeo-data/Lobby
+  thumbnail: _static/pangeo_simple_logo.png
+  tags:
+    - chat
+  description: |
+    A Discourse forum for all things happening in the Pangeo community
+
+- name: Pangeo GitHub main repository
+  url: https://github.com/pangeo-data/pangeo
+  thumbnail: _static/pangeo_simple_logo.png
+  tags:
+    - github
+  description: |
+    Pangeo website + discussion of general issues related to the project.
