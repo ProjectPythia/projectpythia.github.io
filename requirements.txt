@@ -1,3 +1,6 @@
 myst-nb
 sphinx-book-theme
 sphinx-panels
+matplotlib
+pandas
+pyyaml
