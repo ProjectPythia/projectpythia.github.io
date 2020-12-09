@@ -86,17 +86,23 @@ panels_body = []
 for item in communications:
     if not item.get('thumbnail'):
         item['thumbnail'] = '_static/ebp-logo.png'
+    tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
+    tags = '\n'.join(tags)
     cls = 'badge-secondary text-white float-left p-2 mr-1'
 
     panels_body.append(
         f"""\
-    ---
-    :img-top: {item["thumbnail"]}
-    +++
-    **{item["name"]}**
+---
+:img-top: {item["thumbnail"]}
++++
+**{item["name"]}**
 
-    {{link-badge}}`{item["url"]},"website",{cls},tooltip={item["name"].replace(",", "")}`
-    """
+{item['description']}
+
+{{link-badge}}`{item["url"]},"link",{cls},tooltip={item["name"].replace(",", "")}`
+
+categories: {tags}
+"""
     )
 panels_body = '\n'.join(panels_body)
 
@@ -104,7 +110,7 @@ panels = f"""
 # Communication Channels Gallery
 ````{{panels}}
 :container: full-width
-:column: text-center col-6 col-lg-4
+:column: text-left col-6 col-lg-4
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
