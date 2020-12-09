@@ -9,3 +9,4 @@ dependencies:
   - sphinx-autobuild
   - matplotlib
   - sphinx-book-theme
+  - pandas
