@@ -419,9 +419,7 @@
     }
    ],
    "source": [
-    "cat = col.search(\n",
-    "    experiment_id=['historical', 'ssp585'], table_id='Oyr', variable_id='o2', grid_label='gn'\n",
-    ")\n",
+    "cat = col.search(experiment_id=['historical', 'ssp585'], table_id='Oyr', variable_id='o2', grid_label='gn')\n",
     "cat.df"
    ]
   },

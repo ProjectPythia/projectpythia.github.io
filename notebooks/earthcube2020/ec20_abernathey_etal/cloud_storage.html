@@ -8751,9 +8751,7 @@ We also keep track of some other metadata about our testing conditions.</p>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
     <span class="n">client</span><span class="o">.</span><span class="n">wait_for_workers</span><span class="p">(</span><span class="n">nworkers</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">nworkers</span><span class="p">)</span>
-    <span class="k">with</span> <span class="n">diag_timer</span><span class="o">.</span><span class="n">time</span><span class="p">(</span>
-        <span class="n">nthreads</span><span class="o">=</span><span class="n">total_nthreads</span><span class="p">(),</span> <span class="n">ncores</span><span class="o">=</span><span class="n">total_ncores</span><span class="p">(),</span> <span class="n">nworkers</span><span class="o">=</span><span class="n">total_workers</span><span class="p">(),</span> <span class="o">**</span><span class="n">diag_kwargs</span>
-    <span class="p">):</span>
+    <span class="k">with</span> <span class="n">diag_timer</span><span class="o">.</span><span class="n">time</span><span class="p">(</span><span class="n">nthreads</span><span class="o">=</span><span class="n">total_nthreads</span><span class="p">(),</span> <span class="n">ncores</span><span class="o">=</span><span class="n">total_ncores</span><span class="p">(),</span> <span class="n">nworkers</span><span class="o">=</span><span class="n">total_workers</span><span class="p">(),</span> <span class="o">**</span><span class="n">diag_kwargs</span><span class="p">):</span>
 
         <span class="n">future</span> <span class="o">=</span> <span class="n">dsa</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">null_store</span><span class="p">,</span> <span class="n">lock</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">compute</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
         <span class="n">dask</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">future</span><span class="p">,</span> <span class="n">retries</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -9573,7 +9571,7 @@ notebook)</p></li>
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2020.<br/>
-          Last updated on Dec 10, 2020.<br/>
+          Last updated on Dec 16, 2020.<br/>
       </p>
     </div>
   </footer>

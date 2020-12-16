@@ -482,9 +482,7 @@
     }
    ],
    "source": [
-    "df_ta = df.query(\n",
-    "    \"activity_id=='CMIP' & table_id == 'Amon' & variable_id == 'tas' & experiment_id == 'historical'\"\n",
-    ")\n",
+    "df_ta = df.query(\"activity_id=='CMIP' & table_id == 'Amon' & variable_id == 'tas' & experiment_id == 'historical'\")\n",
     "df_ta"
    ]
   },

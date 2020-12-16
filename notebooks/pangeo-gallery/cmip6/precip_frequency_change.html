@@ -480,9 +480,7 @@ Name: zstore, dtype: int64
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Load 3hr precip data for given source and expt ids</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">uri</span> <span class="o">=</span> <span class="n">df_3hr_pr</span><span class="p">[</span>
-        <span class="p">(</span><span class="n">df_3hr_pr</span><span class="o">.</span><span class="n">source_id</span> <span class="o">==</span> <span class="n">source_id</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_3hr_pr</span><span class="o">.</span><span class="n">experiment_id</span> <span class="o">==</span> <span class="n">expt_id</span><span class="p">)</span>
-    <span class="p">]</span><span class="o">.</span><span class="n">zstore</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">uri</span> <span class="o">=</span> <span class="n">df_3hr_pr</span><span class="p">[(</span><span class="n">df_3hr_pr</span><span class="o">.</span><span class="n">source_id</span> <span class="o">==</span> <span class="n">source_id</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_3hr_pr</span><span class="o">.</span><span class="n">experiment_id</span> <span class="o">==</span> <span class="n">expt_id</span><span class="p">)]</span><span class="o">.</span><span class="n">zstore</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_zarr</span><span class="p">(</span><span class="n">fsspec</span><span class="o">.</span><span class="n">get_mapper</span><span class="p">(</span><span class="n">uri</span><span class="p">),</span> <span class="n">consolidated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ds</span>
@@ -551,9 +549,7 @@ Name: zstore, dtype: int64
 <span class="sd">    Visualize the output</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">pr_hist_diff</span> <span class="o">=</span> <span class="n">pr_hist</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">experiment_id</span><span class="o">=</span><span class="s1">&#39;ssp585&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">pr_hist</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">experiment_id</span><span class="o">=</span><span class="s1">&#39;historical&#39;</span><span class="p">)</span>
-    <span class="n">pr_hist</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">experiment_id</span><span class="o">=</span><span class="s1">&#39;historical&#39;</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span>
-        <span class="n">xscale</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;0.5&#39;</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">21</span>
-    <span class="p">)</span>
+    <span class="n">pr_hist</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">experiment_id</span><span class="o">=</span><span class="s1">&#39;historical&#39;</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">xscale</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;0.5&#39;</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">21</span><span class="p">)</span>
     <span class="n">pr_hist_diff</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xscale</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">21</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -603,7 +599,7 @@ Name: zstore, dtype: int64
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2020.<br/>
-          Last updated on Dec 10, 2020.<br/>
+          Last updated on Dec 16, 2020.<br/>
       </p>
     </div>
   </footer>

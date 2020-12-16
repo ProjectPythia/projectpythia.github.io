@@ -849,10 +849,7 @@ We use some <a class="reference external" href="https://docs.dask.org/en/latest/
 
 <span class="k">def</span> <span class="nf">open_dsets</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Open datasets from cloud storage and return xarray dataset.&quot;&quot;&quot;</span>
-    <span class="n">dsets</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">xr</span><span class="o">.</span><span class="n">open_zarr</span><span class="p">(</span><span class="n">fsspec</span><span class="o">.</span><span class="n">get_mapper</span><span class="p">(</span><span class="n">ds_url</span><span class="p">),</span> <span class="n">consolidated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">drop_all_bounds</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">ds_url</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">zstore</span>
-    <span class="p">]</span>
+    <span class="n">dsets</span> <span class="o">=</span> <span class="p">[</span><span class="n">xr</span><span class="o">.</span><span class="n">open_zarr</span><span class="p">(</span><span class="n">fsspec</span><span class="o">.</span><span class="n">get_mapper</span><span class="p">(</span><span class="n">ds_url</span><span class="p">),</span> <span class="n">consolidated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">drop_all_bounds</span><span class="p">)</span> <span class="k">for</span> <span class="n">ds_url</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">zstore</span><span class="p">]</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">dsets</span><span class="p">,</span> <span class="n">join</span><span class="o">=</span><span class="s1">&#39;exact&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">ds</span>
@@ -1691,8 +1688,7 @@ This is the most complex cell in the notebook. A lot is happening here.</p>
     <span class="c1"># workaround for</span>
     <span class="c1"># https://github.com/pydata/xarray/issues/2237#issuecomment-620961663</span>
     <span class="n">dsets_ann_mean</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">v</span><span class="p">[</span><span class="n">expt</span><span class="p">]</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">global_mean</span><span class="p">)</span><span class="o">.</span><span class="n">swap_dims</span><span class="p">({</span><span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">coarsen</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">expt</span> <span class="ow">in</span> <span class="n">expts</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">expt</span><span class="p">]</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">global_mean</span><span class="p">)</span><span class="o">.</span><span class="n">swap_dims</span><span class="p">({</span><span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">coarsen</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">for</span> <span class="n">expt</span> <span class="ow">in</span> <span class="n">expts</span>
     <span class="p">]</span>
 
     <span class="c1"># align everything with the 4xCO2 experiment</span>
@@ -3240,7 +3236,7 @@ Data variables:
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2020.<br/>
-          Last updated on Dec 10, 2020.<br/>
+          Last updated on Dec 16, 2020.<br/>
       </p>
     </div>
   </footer>

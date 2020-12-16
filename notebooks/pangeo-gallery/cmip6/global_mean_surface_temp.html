@@ -623,9 +623,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expt_da</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span>
-    <span class="n">expts</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s1">&#39;experiment_id&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;experiment_id&#39;</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;experiment_id&#39;</span><span class="p">:</span> <span class="n">expts</span><span class="p">}</span>
-<span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expt_da</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">expts</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s1">&#39;experiment_id&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;experiment_id&#39;</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;experiment_id&#39;</span><span class="p">:</span> <span class="n">expts</span><span class="p">})</span>
 
 <span class="n">dsets_aligned</span> <span class="o">=</span> <span class="p">{}</span>
 
@@ -641,8 +639,7 @@
     <span class="c1"># workaround for</span>
     <span class="c1"># https://github.com/pydata/xarray/issues/2237#issuecomment-620961663</span>
     <span class="n">dsets_ann_mean</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">v</span><span class="p">[</span><span class="n">expt</span><span class="p">]</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">global_mean</span><span class="p">)</span><span class="o">.</span><span class="n">swap_dims</span><span class="p">({</span><span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">coarsen</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">expt</span> <span class="ow">in</span> <span class="n">expts</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">expt</span><span class="p">]</span><span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">global_mean</span><span class="p">)</span><span class="o">.</span><span class="n">swap_dims</span><span class="p">({</span><span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;year&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">coarsen</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">for</span> <span class="n">expt</span> <span class="ow">in</span> <span class="n">expts</span>
     <span class="p">]</span>
 
     <span class="c1"># align everything with the 4xCO2 experiment</span>
@@ -3167,9 +3164,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">source_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">dsets_aligned_</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="n">source_da</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span>
-    <span class="n">source_ids</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s1">&#39;source_id&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;source_id&#39;</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;source_id&#39;</span><span class="p">:</span> <span class="n">source_ids</span><span class="p">}</span>
-<span class="p">)</span>
+<span class="n">source_da</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">DataArray</span><span class="p">(</span><span class="n">source_ids</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s1">&#39;source_id&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;source_id&#39;</span><span class="p">,</span> <span class="n">coords</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;source_id&#39;</span><span class="p">:</span> <span class="n">source_ids</span><span class="p">})</span>
 
 <span class="n">big_ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">ds</span><span class="o">.</span><span class="n">reset_coords</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">dsets_aligned_</span><span class="o">.</span><span class="n">values</span><span class="p">()],</span> <span class="n">dim</span><span class="o">=</span><span class="n">source_da</span><span class="p">)</span>
 
@@ -3707,7 +3702,7 @@ Data variables:
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2020.<br/>
-          Last updated on Dec 10, 2020.<br/>
+          Last updated on Dec 16, 2020.<br/>
       </p>
     </div>
   </footer>

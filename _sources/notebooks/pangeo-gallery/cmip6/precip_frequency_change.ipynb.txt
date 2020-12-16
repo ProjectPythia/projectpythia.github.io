@@ -404,9 +404,7 @@
     "    \"\"\"\n",
     "    Load 3hr precip data for given source and expt ids\n",
     "    \"\"\"\n",
-    "    uri = df_3hr_pr[\n",
-    "        (df_3hr_pr.source_id == source_id) & (df_3hr_pr.experiment_id == expt_id)\n",
-    "    ].zstore.values[0]\n",
+    "    uri = df_3hr_pr[(df_3hr_pr.source_id == source_id) & (df_3hr_pr.experiment_id == expt_id)].zstore.values[0]\n",
     "\n",
     "    ds = xr.open_zarr(fsspec.get_mapper(uri), consolidated=True)\n",
     "    return ds"
@@ -517,9 +515,7 @@
     "    Visualize the output\n",
     "    \"\"\"\n",
     "    pr_hist_diff = pr_hist.sel(experiment_id='ssp585') - pr_hist.sel(experiment_id='historical')\n",
-    "    pr_hist.sel(experiment_id='historical')[:, 1:].plot.contour(\n",
-    "        xscale='log', colors='0.5', levels=21\n",
-    "    )\n",
+    "    pr_hist.sel(experiment_id='historical')[:, 1:].plot.contour(xscale='log', colors='0.5', levels=21)\n",
     "    pr_hist_diff[:, 1:].plot.contourf(xscale='log', vmax=vmax, levels=21)"
    ]
   },
