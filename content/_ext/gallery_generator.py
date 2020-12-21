@@ -20,7 +20,7 @@ with open('lorem_ipsum.txt') as fid:
 
 
 DOC_SRC = pathlib.Path(os.path.dirname(os.path.abspath(__file__))).parent
-default_img_loc = DOC_SRC / '_static/sphinx-logo.png'
+default_img_loc = DOC_SRC / '_static/images/sphinx-logo.png'
 thumbnail_dir = DOC_SRC / '_static/thumbnails'
 thumbnail_dir.mkdir(parents=True, exist_ok=True)
 
