@@ -47,7 +47,7 @@ html_title = 'Project Pythia'
 
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    'home_page_in_toc': True,
+    # 'home_page_in_toc': True,
     'path_to_docs': './',
     'search_bar_text': 'Search this site...',
     'repository_url': 'https://github.com/NCAR/pythia-portal',
