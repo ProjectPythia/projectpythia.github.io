@@ -1,0 +1,2241 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Intake-ESM Catalog Demo &#8212; Project Pythia</title>
+    
+  <link rel="stylesheet" href="../../../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../../../index.html">
+  
+  <img src="../../../../_static/NSF_4-Color_bitmap_Logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Project Pythia</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../index.html">
+   A community educational resource for geoscientists
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Galleries
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../notebooks_gallery/index.html">
+   Notebooks Gallery
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../pages/communications.html">
+   Communication Channels Gallery
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../pages/about.html">
+   About
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../pages/people.html">
+   Project Pythia core team
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../../_sources/notebooks/NCAR/cesm-lens-aws/notebooks/EnhancedIntakeCatalogDemo.ipynb.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/NCAR/pythia-portal/master?urlpath=lab/tree/./notebooks/NCAR/cesm-lens-aws/notebooks/EnhancedIntakeCatalogDemo.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com//github/NCAR/pythia-portal/blob/master/./notebooks/NCAR/cesm-lens-aws/notebooks/EnhancedIntakeCatalogDemo.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#set-up-environment">
+   Set up environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inspect-original-intake-esm-catalog">
+   Inspect original intake-esm catalog
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finding-data">
+   Finding Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-problem">
+   The Problem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enhanced-intake-esm-catalog">
+   Enhanced Intake-ESM Catalog
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#long-names">
+     Long names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#substring-matches">
+     Substring matches
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-attributes">
+     Other attributes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spatiotemporal-filtering">
+     Spatiotemporal filtering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-do">
+     TO DO
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="enhanced-intake-esm-catalog-demo">
+<h1>Enhanced Intake-ESM Catalog Demo<a class="headerlink" href="#enhanced-intake-esm-catalog-demo" title="Permalink to this headline">¶</a></h1>
+<p>This Jupyter Notebook compares the original Intake-ESM Catalog with an enhanced catalog that includes additional attributes. Both catalogs are an inventory of the NCAR Community Earth System Model (CESM)
+Large Ensemble (LENS) data hosted on AWS S3 (<a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a>).</p>
+<p><a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/notebooks/tutorial.html">Intake-esm Documentation</a></p>
+<div class="section" id="set-up-environment">
+<h2>Set up environment<a class="headerlink" href="#set-up-environment" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pprint</span>
+
+<span class="kn">import</span> <span class="nn">intake</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Not used here:</span>
+<span class="c1">###import numpy as np</span>
+<span class="c1">###import xarray as xr</span>
+<span class="c1"># Allow multiple lines per cell to be displayed without print (default is just last line)</span>
+<span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="kn">import</span> <span class="n">InteractiveShell</span>
+
+<span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
+<span class="c1"># Enable more explicit control of DataFrame display (e.g., to omit annoying line numbers)</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="inspect-original-intake-esm-catalog">
+<h2>Inspect original intake-esm catalog<a class="headerlink" href="#inspect-original-intake-esm-catalog" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Open original collection description file</span>
+<span class="n">cat_url_orig</span> <span class="o">=</span> <span class="s1">&#39;https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.json&#39;</span>
+<span class="n">coll_orig</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_esm_datastore</span><span class="p">(</span><span class="n">cat_url_orig</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">coll_orig</span><span class="o">.</span><span class="n">esmcol_data</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">])</span>  <span class="c1"># Description of collection</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Catalog file:&quot;</span><span class="p">,</span> <span class="n">coll_orig</span><span class="o">.</span><span class="n">esmcol_data</span><span class="p">[</span><span class="s1">&#39;catalog_file&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coll_orig</span><span class="p">)</span>  <span class="c1"># Summary of collection structure</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is an ESM collection for CESM1 Large Ensemble Zarr dataset publicly available on Amazon S3 (us-west-2 region)
+Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv
+&lt;aws-cesm1-le catalog with 56 dataset(s) from 409 asset(s)&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show expanded version of collection structure with details</span>
+<span class="n">uniques_orig</span> <span class="o">=</span> <span class="n">coll_orig</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;component&quot;</span><span class="p">,</span> <span class="s2">&quot;frequency&quot;</span><span class="p">,</span> <span class="s2">&quot;experiment&quot;</span><span class="p">,</span> <span class="s2">&quot;variable&quot;</span><span class="p">])</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">uniques_orig</span><span class="p">,</span> <span class="n">compact</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;component&#39;: {&#39;count&#39;: 5, &#39;values&#39;: [&#39;atm&#39;, &#39;ice_nh&#39;, &#39;ice_sh&#39;, &#39;lnd&#39;, &#39;ocn&#39;]},
+ &#39;experiment&#39;: {&#39;count&#39;: 4, &#39;values&#39;: [&#39;20C&#39;, &#39;CTRL&#39;, &#39;HIST&#39;, &#39;RCP85&#39;]},
+ &#39;frequency&#39;: {&#39;count&#39;: 6,
+               &#39;values&#39;: [&#39;daily&#39;, &#39;hourly6-1990-2005&#39;, &#39;hourly6-2026-2035&#39;,
+                          &#39;hourly6-2071-2080&#39;, &#39;monthly&#39;, &#39;static&#39;]},
+ &#39;variable&#39;: {&#39;count&#39;: 65,
+              &#39;values&#39;: [&#39;DIC&#39;, &#39;DOC&#39;, &#39;FLNS&#39;, &#39;FLNSC&#39;, &#39;FLUT&#39;, &#39;FSNO&#39;, &#39;FSNS&#39;,
+                         &#39;FSNSC&#39;, &#39;FSNTOA&#39;, &#39;FW&#39;, &#39;H2OSNO&#39;, &#39;HMXL&#39;, &#39;ICEFRAC&#39;,
+                         &#39;LHFLX&#39;, &#39;O2&#39;, &#39;PD&#39;, &#39;PRECC&#39;, &#39;PRECL&#39;, &#39;PRECSC&#39;,
+                         &#39;PRECSL&#39;, &#39;PSL&#39;, &#39;Q&#39;, &#39;QFLUX&#39;, &#39;QRUNOFF&#39;, &#39;QSW_HBL&#39;,
+                         &#39;QSW_HTP&#39;, &#39;RAIN&#39;, &#39;RESID_S&#39;, &#39;SALT&#39;, &#39;SFWF&#39;,
+                         &#39;SFWF_WRST&#39;, &#39;SHF&#39;, &#39;SHFLX&#39;, &#39;SHF_QSW&#39;, &#39;SNOW&#39;,
+                         &#39;SOILLIQ&#39;, &#39;SOILWATER_10CM&#39;, &#39;SSH&#39;, &#39;SST&#39;, &#39;T&#39;, &#39;TAUX&#39;,
+                         &#39;TAUX2&#39;, &#39;TAUY&#39;, &#39;TAUY2&#39;, &#39;TEMP&#39;, &#39;TMQ&#39;, &#39;TREFHT&#39;,
+                         &#39;TREFHTMN&#39;, &#39;TREFHTMX&#39;, &#39;TS&#39;, &#39;U&#39;, &#39;UES&#39;, &#39;UET&#39;,
+                         &#39;UVEL&#39;, &#39;VNS&#39;, &#39;VNT&#39;, &#39;VVEL&#39;, &#39;WTS&#39;, &#39;WTT&#39;, &#39;WVEL&#39;,
+                         &#39;Z3&#39;, &#39;aice&#39;, &#39;aice_d&#39;, &#39;hi&#39;, &#39;hi_d&#39;]}}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show the first few lines of the catalog. There are as many lines as there are paths.</span>
+<span class="c1"># The order is the same as that of the CSV catalog file listed in the JSON description file.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Catalog file:&quot;</span><span class="p">,</span> <span class="n">coll_orig</span><span class="o">.</span><span class="n">esmcol_data</span><span class="p">[</span><span class="s1">&#39;catalog_file&#39;</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">coll_orig</span><span class="o">.</span><span class="n">df</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le.csv
+</pre></div>
+</div>
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>path</th>
+      <th>variable_long_name</th>
+      <th>dim_per_tstep</th>
+      <th>start</th>
+      <th>end</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLNSC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNSC.zarr</td>
+      <td>clearsky net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLUT</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLUT.zarr</td>
+      <td>upwelling longwave flux at top of model</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FSNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNS.zarr</td>
+      <td>net solar flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FSNSC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNSC.zarr</td>
+      <td>clearsky net solar flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FSNTOA</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FSNTOA.zarr</td>
+      <td>net solar flux at top of atmosphere</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>ICEFRAC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-ICEFRAC.zarr</td>
+      <td>fraction of sfc area covered by sea-ice</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>LHFLX</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-LHFLX.zarr</td>
+      <td>surface latent heat flux</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>PRECL</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECL.zarr</td>
+      <td>large-scale (stable) precipitation rate (liq + ice)</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>PRECSC</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-PRECSC.zarr</td>
+      <td>convective snow rate (water equivalent)</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> <em>First few lines of the original Intake-ESM Catalog showing the model component, the temporal frequency, the experiment, the abbreviated variable name, and the AWS S3 path for each Zarr store.</em></p>
+</div>
+<div class="section" id="finding-data">
+<h2>Finding Data<a class="headerlink" href="#finding-data" title="Permalink to this headline">¶</a></h2>
+<p>If you happen to know the meaning of the variable names, you can find what data are available for that variable. For example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter the catalog to find available data for one variable</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">coll_orig</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">variable</span><span class="o">=</span><span class="s1">&#39;FLNS&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">df</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>path</th>
+      <th>variable_long_name</th>
+      <th>dim_per_tstep</th>
+      <th>start</th>
+      <th>end</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-01 12:00:00</td>
+      <td>2005-12-30 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>CTRL</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-CTRL-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>0402-01-01 12:00:00</td>
+      <td>2200-12-31 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>HIST</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-HIST-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>1.0</td>
+      <td>1850-01-01 00:00:00</td>
+      <td>1919-12-31 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2006-01-01 12:00:00</td>
+      <td>2100-12-31 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>hourly6-1990-2005</td>
+      <td>20C</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/hourly6-1990-2005/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1990-01-01 00:00:00</td>
+      <td>2006-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>hourly6-2026-2035</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/hourly6-2026-2035/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2026-01-01 00:00:00</td>
+      <td>2036-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>hourly6-2071-2080</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/hourly6-2071-2080/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2071-01-01 00:00:00</td>
+      <td>2081-01-01 00:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>1920-01-16 12:00:00</td>
+      <td>2005-12-16 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>0400-01-16 12:00:00</td>
+      <td>2200-12-16 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>HIST</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>1.0</td>
+      <td>1850-01-16 12:00:00</td>
+      <td>1919-12-16 12:00:00</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2006-01-16 12:00:00</td>
+      <td>2100-12-16 12:00:00</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> <em>All available Zarr stores for the “FLNS” data.</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Narrow the filter to specific frequency and expiriment</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">coll_orig</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">variable</span><span class="o">=</span><span class="s1">&#39;FLNS&#39;</span><span class="p">,</span> <span class="n">frequency</span><span class="o">=</span><span class="s1">&#39;daily&#39;</span><span class="p">,</span> <span class="n">experiment</span><span class="o">=</span><span class="s1">&#39;RCP85&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">df</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>path</th>
+      <th>variable_long_name</th>
+      <th>dim_per_tstep</th>
+      <th>start</th>
+      <th>end</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>daily</td>
+      <td>RCP85</td>
+      <td>FLNS</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr</td>
+      <td>net longwave flux at surface</td>
+      <td>2.0</td>
+      <td>2006-01-01 12:00:00</td>
+      <td>2100-12-31 12:00:00</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> <em>The single Zarr store for daily “FLNS” data from “RCP85” experiment.</em></p>
+</div>
+<div class="section" id="the-problem">
+<h2>The Problem<a class="headerlink" href="#the-problem" title="Permalink to this headline">¶</a></h2>
+<p>Do all potential users know that “FLNS” is a CESM-specific abbreviation for “Net longwave flux at surface”? How would a novice user find out, other than by finding separate documentation, or by opening a Zarr store in the hopes that the long name might be recorded there? How do we address the fact that every climate model code seems to have a different, non-standard name for all the variables, thus making multi-source research needlessly difficult?</p>
+</div>
+<div class="section" id="enhanced-intake-esm-catalog">
+<h2>Enhanced Intake-ESM Catalog<a class="headerlink" href="#enhanced-intake-esm-catalog" title="Permalink to this headline">¶</a></h2>
+<p>By adding additional columns to the Intake-ESM catalog, we should be able to improve semantic interoperability and provide potentially useful information to the users.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Open enhanced collection description file</span>
+<span class="n">cat_url</span> <span class="o">=</span> <span class="s1">&#39;https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le-enhanced.json&#39;</span>
+<span class="n">coll</span> <span class="o">=</span> <span class="n">intake</span><span class="o">.</span><span class="n">open_esm_datastore</span><span class="p">(</span><span class="n">cat_url</span><span class="p">)</span>
+<span class="n">coll</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><p><strong>aws-cesm1-le catalog with 27 dataset(s) from 365 asset(s)</strong>:</p> <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>unique</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>component</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>frequency</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>experiment</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>variable</th>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>long_name</th>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td>365</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">coll</span><span class="o">.</span><span class="n">esmcol_data</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">])</span>  <span class="c1"># Description of collection</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Catalog file:&quot;</span><span class="p">,</span> <span class="n">coll</span><span class="o">.</span><span class="n">esmcol_data</span><span class="p">[</span><span class="s1">&#39;catalog_file&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coll</span><span class="p">)</span>  <span class="c1"># Summary of collection structure</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is an inventory of the Community Earth System Model (CESM) Large Ensemble (LENS) dataset in Zarr format publicly available on Amazon S3 (https://doi.org/10.26024/wt24-5j82)
+Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le-enhanced.csv
+&lt;aws-cesm1-le catalog with 27 dataset(s) from 365 asset(s)&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="long-names">
+<h3>Long names<a class="headerlink" href="#long-names" title="Permalink to this headline">¶</a></h3>
+<p>In the summary above, note the addition of additional elements: long_name, start, end, and dim.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show the first few lines of the enhanced catalog.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Catalog file:&quot;</span><span class="p">,</span> <span class="n">coll</span><span class="o">.</span><span class="n">esmcol_data</span><span class="p">[</span><span class="s1">&#39;catalog_file&#39;</span><span class="p">])</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">coll</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-cesm1-le-enhanced.csv
+</pre></div>
+</div>
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>start</th>
+      <th>end</th>
+      <th>variable</th>
+      <th>long_name</th>
+      <th>path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>HIST</td>
+      <td>1850-01</td>
+      <td>1919-12</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>daily</td>
+      <td>20C</td>
+      <td>1920-01-01</td>
+      <td>2005-12-31</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-20C-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-RCP85-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>daily</td>
+      <td>RCP85</td>
+      <td>2006-01-01</td>
+      <td>2100-12-31</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/daily/cesmLE-RCP85-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>CTRL_AMIP</td>
+      <td>0001-01</td>
+      <td>2600-12</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_AMIP-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>CTRL_SLAB_OCN</td>
+      <td>0001-01</td>
+      <td>1000-12</td>
+      <td>FLNS</td>
+      <td>Net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-CTRL_SLAB_OCN-FLNS.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>HIST</td>
+      <td>1850-01</td>
+      <td>1919-12</td>
+      <td>FLNSC</td>
+      <td>Clearsky net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-HIST-FLNSC.zarr</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>FLNSC</td>
+      <td>Clearsky net longwave flux at surface</td>
+      <td>s3://ncar-cesm-lens/atm/monthly/cesmLE-20C-FLNSC.zarr</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> <em>First few lines of the enhanced catalog, listing of the same information as the original catalog as well as the long name of each variable and an indication of whether each variable is 2D or 3D.</em></p>
+<p><strong>ISSUE:</strong> <em>The long names are <strong>not</strong> CF Standard Names, but rather are those documented at http://www.cgd.ucar.edu/ccr/strandwg/CESM-CAM5-BGC_LENS_fields.html. For interoperability, the long_name column should be replaced by a cf_name column and possibly an attribute column to disambiguate if needed.</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># List all available variables by Long Name, sorted alphabetically</span>
+<span class="n">uniques</span> <span class="o">=</span> <span class="n">coll</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;long_name&#39;</span><span class="p">])</span>
+<span class="n">nameList</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">uniques</span><span class="p">[</span><span class="s1">&#39;long_name&#39;</span><span class="p">][</span><span class="s1">&#39;values&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">nameList</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># note *list to unpack each item for print function</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Clearsky net longwave flux at surface
+Clearsky net solar flux at surface
+Convective precipitation rate (liq + ice)
+Convective snow rate (water equivalent)
+Dissolved Inorganic Carbon
+Dissolved Organic Carbon
+Dissolved Oxygen
+Fraction of sfc area covered by sea-ice
+Free-Surface Residual Heat Flux
+Free-Surface Residual Salt Flux
+Freshwater Flux
+Geopotential Height (above sea level)
+Geopotential Z at 500 mbar pressure surface
+Heat Flux across top face
+Heat Flux in grid-x direction
+Heat Flux in grid-y direction
+Horizontal total wind speed average at the surface
+Internal Ocean Heat Flux Due to Ice Formation
+Large-scale (stable) precipitation rate (liq + ice)
+Large-scale (stable) snow rate (water equivalent)
+Lowest model level zonal wind
+Maximum (convective and large-scale) precipitation rate (liq+ice)
+Maximum reference height temperature over output period
+Meridional wind
+Minimum reference height temperature over output period
+Mixed-Layer Depth
+Net longwave flux at surface
+Net solar flux at surface
+Net solar flux at top of atmosphere
+Potential Density Ref to Surface
+Potential Temperature
+Reference height humidity
+Reference height temperature
+Salinity
+Salt Flux across top face
+Salt Flux in grid-x direction
+Salt Flux in grid-y direction
+Sea Surface Height
+Sea level pressure
+Solar Short-Wave Heat Flux
+Solar Short-Wave Heat Flux in boundary layer
+Solar Short-Wave Heat Flux in top layer
+Specific Humidity at 850 mbar pressure surface
+Specific humidity
+Surface latent heat flux
+Surface pressure
+Surface sensible heat flux
+Surface temperature (radiative)
+Temperature
+Total (convective and large-scale) precipitation rate (liq + ice)
+Total (vertically integrated) precipitable water
+Total Surface Heat Flux including short-wave
+Upwelling longwave flux at top of model
+Velocity in grid-x direction
+Velocity in grid-y direction
+Vertical Velocity
+Virtual Salt Flux due to weak restoring
+Virtual Salt Flux in FW Flux formulation
+Wind stress (squared) in grid-x direction
+Wind stress (squared) in grid-y direction
+Wind stress in grid-x direction
+Wind stress in grid-y direction
+Zonal wind
+atmospheric rain
+atmospheric snow
+fraction of ground covered by snow
+grid cellmean ice thickness
+grid cellmean ice thickness (daily)
+grid cellmean ice thickness (monthly)
+ice area, aggregate (daily)
+ice area, aggregate (monthly)
+snow depth (liquid water)
+soil liquid water (vegetated landunits only)
+soil liquid water + ice in top 10cm of soil (veg landunits only)
+total liquid runoff (does not include QSNWCPICE)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show all available data for a specific variable based on long name</span>
+<span class="n">myName</span> <span class="o">=</span> <span class="s1">&#39;Salinity&#39;</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">coll</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">long_name</span><span class="o">=</span><span class="n">myName</span><span class="p">)</span><span class="o">.</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>start</th>
+      <th>end</th>
+      <th>variable</th>
+      <th>long_name</th>
+      <th>path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> <em>All available data in this catalog for selected variable</em></p>
+</div>
+<div class="section" id="substring-matches">
+<h3>Substring matches<a class="headerlink" href="#substring-matches" title="Permalink to this headline">¶</a></h3>
+<p><strong>ISSUE:</strong> The current version of intake-esm search() function requires an exact
+full-string case-sensitive match of the long_name.
+(This has been reported as an issue at https://github.com/NCAR/cesm-lens-aws/issues/48)</p>
+<p>Demonstrate a work-around: find all variables with a particular substring in the long name</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">myTerm</span> <span class="o">=</span> <span class="s1">&#39;Wind&#39;</span>
+<span class="n">myTerm</span> <span class="o">=</span> <span class="n">myTerm</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>  <span class="c1"># search regardless of case</span>
+<span class="n">partials</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">nameList</span> <span class="k">if</span> <span class="n">myTerm</span> <span class="ow">in</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;All datasets with name containing </span><span class="si">{</span><span class="n">myTerm</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">partials</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>All datasets with name containing wind:
+Horizontal total wind speed average at the surface
+Lowest model level zonal wind
+Meridional wind
+Wind stress (squared) in grid-x direction
+Wind stress (squared) in grid-y direction
+Wind stress in grid-x direction
+Wind stress in grid-y direction
+Zonal wind
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display full table for each match (could be lengthy if many matches)</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">partials</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">coll</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">long_name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;component&#39;</span><span class="p">,</span> <span class="s1">&#39;dim&#39;</span><span class="p">,</span> <span class="s1">&#39;experiment&#39;</span><span class="p">,</span> <span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="s1">&#39;long_name&#39;</span><span class="p">]]</span>
+    <span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+    <span class="c1">###df.head(1) #show only first entry in each group for compactness</span>
+    <span class="c1"># Note: It is also possible to hide column(s) instead of specifying desired columns</span>
+    <span class="c1">###coll.search(long_name=name).df.drop(columns=[&#39;path&#39;])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>20C</td>
+      <td>WSPDSRFAV</td>
+      <td>Horizontal total wind speed average at the surface</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>RCP85</td>
+      <td>WSPDSRFAV</td>
+      <td>Horizontal total wind speed average at the surface</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>20C</td>
+      <td>UBOT</td>
+      <td>Lowest model level zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>2D</td>
+      <td>RCP85</td>
+      <td>UBOT</td>
+      <td>Lowest model level zonal wind</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>HIST</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>20C</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>20C</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>RCP85</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>RCP85</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>RCP85</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>CTRL</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>CTRL_AMIP</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>CTRL_SLAB_OCN</td>
+      <td>V</td>
+      <td>Meridional wind</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>20C</td>
+      <td>TAUX2</td>
+      <td>Wind stress (squared) in grid-x direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>RCP85</td>
+      <td>TAUX2</td>
+      <td>Wind stress (squared) in grid-x direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>CTRL</td>
+      <td>TAUX2</td>
+      <td>Wind stress (squared) in grid-x direction</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>20C</td>
+      <td>TAUY2</td>
+      <td>Wind stress (squared) in grid-y direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>RCP85</td>
+      <td>TAUY2</td>
+      <td>Wind stress (squared) in grid-y direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>CTRL</td>
+      <td>TAUY2</td>
+      <td>Wind stress (squared) in grid-y direction</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>20C</td>
+      <td>TAUX</td>
+      <td>Wind stress in grid-x direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>RCP85</td>
+      <td>TAUX</td>
+      <td>Wind stress in grid-x direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>CTRL</td>
+      <td>TAUX</td>
+      <td>Wind stress in grid-x direction</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>20C</td>
+      <td>TAUY</td>
+      <td>Wind stress in grid-y direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>RCP85</td>
+      <td>TAUY</td>
+      <td>Wind stress in grid-y direction</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>2D</td>
+      <td>CTRL</td>
+      <td>TAUY</td>
+      <td>Wind stress in grid-y direction</td>
+    </tr>
+  </tbody>
+</table></div><div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>experiment</th>
+      <th>variable</th>
+      <th>long_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>HIST</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>20C</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>20C</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>RCP85</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>RCP85</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>RCP85</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>CTRL</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>CTRL_AMIP</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+    <tr>
+      <td>atm</td>
+      <td>3D</td>
+      <td>CTRL_SLAB_OCN</td>
+      <td>U</td>
+      <td>Zonal wind</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table(s):</strong> <em>Information about all matching datasets</em></p>
+<p><strong>ISSUE:</strong> The case-insensitive substring matching is not integrated into intake-esm, so it is not clear
+whether resulting search results can be passed directly to Xarray to read data.</p>
+</div>
+<div class="section" id="other-attributes">
+<h3>Other attributes<a class="headerlink" href="#other-attributes" title="Permalink to this headline">¶</a></h3>
+<p>Other columns in the enhanced catalog may be useful. For example, the dimensionality column enables us to list all data from the ocean component that is 3D.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">coll</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;3D&quot;</span><span class="p">,</span> <span class="n">component</span><span class="o">=</span><span class="s2">&quot;ocn&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">df</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>start</th>
+      <th>end</th>
+      <th>variable</th>
+      <th>long_name</th>
+      <th>path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>DIC</td>
+      <td>Dissolved Inorganic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DIC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>DIC</td>
+      <td>Dissolved Inorganic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DIC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>DIC</td>
+      <td>Dissolved Inorganic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-DIC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>DOC</td>
+      <td>Dissolved Organic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-DOC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>DOC</td>
+      <td>Dissolved Organic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DOC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>DOC</td>
+      <td>Dissolved Organic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-DOC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>O2</td>
+      <td>Dissolved Oxygen</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-O2.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>O2</td>
+      <td>Dissolved Oxygen</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-O2.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>O2</td>
+      <td>Dissolved Oxygen</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-O2.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>PD</td>
+      <td>Potential Density Ref to Surface</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-PD.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>PD</td>
+      <td>Potential Density Ref to Surface</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-PD.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>PD</td>
+      <td>Potential Density Ref to Surface</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-PD.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-SALT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-SALT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>TEMP</td>
+      <td>Potential Temperature</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-TEMP.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>TEMP</td>
+      <td>Potential Temperature</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TEMP.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>TEMP</td>
+      <td>Potential Temperature</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-TEMP.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>UES</td>
+      <td>Salt Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UES.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>UES</td>
+      <td>Salt Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UES.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>UES</td>
+      <td>Salt Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UES.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>UET</td>
+      <td>Heat Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UET.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>UET</td>
+      <td>Heat Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UET.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>UET</td>
+      <td>Heat Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UET.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>UVEL</td>
+      <td>Velocity in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-UVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>UVEL</td>
+      <td>Velocity in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>UVEL</td>
+      <td>Velocity in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-UVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>VNS</td>
+      <td>Salt Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VNS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>VNS</td>
+      <td>Salt Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>VNS</td>
+      <td>Salt Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VNS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>VNT</td>
+      <td>Heat Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VNT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>VNT</td>
+      <td>Heat Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>VNT</td>
+      <td>Heat Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VNT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>VVEL</td>
+      <td>Velocity in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-VVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>VVEL</td>
+      <td>Velocity in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>VVEL</td>
+      <td>Velocity in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-VVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>WTS</td>
+      <td>Salt Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WTS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>WTS</td>
+      <td>Salt Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>WTS</td>
+      <td>Salt Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WTS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>WTT</td>
+      <td>Heat Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WTT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>WTT</td>
+      <td>Heat Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>WTT</td>
+      <td>Heat Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WTT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>20C</td>
+      <td>1920-01</td>
+      <td>2005-12</td>
+      <td>WVEL</td>
+      <td>Vertical Velocity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-20C-WVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>WVEL</td>
+      <td>Vertical Velocity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>CTRL</td>
+      <td>0400-01</td>
+      <td>2200-12</td>
+      <td>WVEL</td>
+      <td>Vertical Velocity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-CTRL-WVEL.zarr</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> <em>List of all 3D ocean datasets</em></p>
+</div>
+<div class="section" id="spatiotemporal-filtering">
+<h3>Spatiotemporal filtering<a class="headerlink" href="#spatiotemporal-filtering" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>If there were both regional and global data available (e.g., LENS and NA-CORDEX data for the same variable, both listed in same catalog), some type of coverage indicator (or columns for bounding box edges) could be listed.</p></li>
+<li><p>Temporal extent in LENS is conveyed by the experiment (HIST, 20C, etc) but this is imprecise and requires external documentation. We have added start/end columns to the catalog, but intake-esm currently does not have built-in functionality to filter based on time.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We can do a simple search that exactly matches a temporal value</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">coll</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="s2">&quot;3D&quot;</span><span class="p">,</span> <span class="n">component</span><span class="o">=</span><span class="s2">&quot;ocn&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;2100-12&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">df</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>component</th>
+      <th>dim</th>
+      <th>frequency</th>
+      <th>experiment</th>
+      <th>start</th>
+      <th>end</th>
+      <th>variable</th>
+      <th>long_name</th>
+      <th>path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>DIC</td>
+      <td>Dissolved Inorganic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DIC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>DOC</td>
+      <td>Dissolved Organic Carbon</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-DOC.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>O2</td>
+      <td>Dissolved Oxygen</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-O2.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>PD</td>
+      <td>Potential Density Ref to Surface</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-PD.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>SALT</td>
+      <td>Salinity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-SALT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>TEMP</td>
+      <td>Potential Temperature</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-TEMP.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>UES</td>
+      <td>Salt Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UES.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>UET</td>
+      <td>Heat Flux in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UET.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>UVEL</td>
+      <td>Velocity in grid-x direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-UVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>VNS</td>
+      <td>Salt Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>VNT</td>
+      <td>Heat Flux in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VNT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>VVEL</td>
+      <td>Velocity in grid-y direction</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-VVEL.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>WTS</td>
+      <td>Salt Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTS.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>WTT</td>
+      <td>Heat Flux across top face</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WTT.zarr</td>
+    </tr>
+    <tr>
+      <td>ocn</td>
+      <td>3D</td>
+      <td>monthly</td>
+      <td>RCP85</td>
+      <td>2006-01</td>
+      <td>2100-12</td>
+      <td>WVEL</td>
+      <td>Vertical Velocity</td>
+      <td>s3://ncar-cesm-lens/ocn/monthly/cesmLE-RCP85-WVEL.zarr</td>
+    </tr>
+  </tbody>
+</table></div></div>
+</div>
+<p><strong>Table:</strong> *List of all 3D ocean datasets with an end month of 2100 December. Note that because intake-esm currently requires an exact match this search would not find daily data with an end date of 2100 Dec 31.</p>
+</div>
+<div class="section" id="to-do">
+<h3>TO DO<a class="headerlink" href="#to-do" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add substring search capability to intake-esm.</p></li>
+<li><p>Add simple temporal search capability to intake-esm.</p></li>
+<li><p>Consider adding spatial attributes (and appropriate intake-esm support) once we have some regional data available.</p></li>
+<li><p>Have some tables in this demo only list only variable and long name rather than every single frequency and experiment.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Project Pythia Developers & Contributors<br/>
+        
+            &copy; Copyright 2020-2020.<br/>
+          Last updated on Dec 21, 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
