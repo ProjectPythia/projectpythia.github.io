@@ -29,19 +29,18 @@ of Albany, and funded by NSF EarthCube award #2026899
 ---
 hidden: True
 maxdepth: 1
-caption: Galleries
 ---
-notebooks_gallery/index.md
-pages/communications.md
-
+pages/about.md
+pages/people.md
 ```
 
 ```{toctree}
 ---
 hidden: True
 maxdepth: 1
-caption: References
+caption: Galleries
 ---
-pages/about.md
-pages/people.md
+notebooks_gallery/index.md
+pages/communications.md
+
 ```
