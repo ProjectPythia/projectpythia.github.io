@@ -25,10 +25,9 @@ of Albany, and funded by NSF EarthCube award #2026899
 
 ![Partners](_static/images/PartnersLogo.png)
 
-## Galleries
-
 ```{toctree}
 ---
+hidden: True
 maxdepth: 1
 caption: Galleries
 ---
@@ -39,6 +38,7 @@ pages/communications.md
 
 ```{toctree}
 ---
+hidden: True
 maxdepth: 1
 caption: References
 ---
