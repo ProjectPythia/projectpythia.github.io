@@ -131,4 +131,5 @@ dmypy.json
 *.DS_Store
 _build/
 _thumbnails/
+communications.md
 notebooks_gallery/

@@ -23,7 +23,7 @@ numerical scientific data.
 Project Pythia is a community effort led by NCAR and the University
 of Albany, and funded by NSF EarthCube award #2026899
 
-![Partners](_static/PartnersLogo.png)
+![Partners](_static/images/PartnersLogo.png)
 
 ## Galleries
 
@@ -33,7 +33,7 @@ maxdepth: 1
 caption: Galleries
 ---
 notebooks_gallery/index.md
-communications.md
+pages/communications.md
 
 ```
 
@@ -42,6 +42,6 @@ communications.md
 maxdepth: 1
 caption: References
 ---
-about.md
-people.md
+pages/about.md
+pages/people.md
 ```

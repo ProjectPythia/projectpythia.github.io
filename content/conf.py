@@ -9,15 +9,13 @@ from textwrap import dedent
 
 import yaml
 
-sys.path.insert(0, os.path.abspath(os.path.join('sphinxext')))
+sys.path.insert(0, os.path.abspath(os.path.join('_ext')))
 project = 'Pythia Portal'
 copyright = f'2020-{datetime.datetime.now().year}'
 author = 'Project Pythia Developers & Contributors'
 html_last_updated_fmt = '%b %d, %Y'
 
-
 extensions = ['myst_nb', 'sphinx_panels', 'gallery_generator']
-
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -34,23 +32,22 @@ exclude_patterns = [
     '**.ipynb_checkpoints',
 ]
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-# html_favicon = '_static/favicon.ico'
-
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_logo = '_static/NSF_4-Color_bitmap_Logo.png'
+html_logo = '_static/images/NSF_4-Color_bitmap_Logo.png'
 html_title = 'Project Pythia'
+# html_favicon = '_static/favicon.ico'
 
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
+    'home_page_in_toc': True,
     'path_to_docs': './',
     'search_bar_text': 'Search this site...',
     'repository_url': 'https://github.com/NCAR/pythia-portal',
@@ -67,7 +64,6 @@ html_theme_options = {
     'use_repository_button': False,
 }
 
-
 # Panels config
 panels_add_bootstrap_css = False
 
@@ -76,8 +72,8 @@ myst_admonition_enable = True
 myst_deflist_enable = True
 jupyter_execute_notebooks = 'off'
 
-
 # -- Custom scripts ----------------------------------------------------------
+
 with open('communications.yaml') as fid:
     communications = yaml.safe_load(fid)
 
@@ -85,7 +81,8 @@ with open('communications.yaml') as fid:
 panels_body = []
 for item in communications:
     if not item.get('thumbnail'):
-        item['thumbnail'] = '_static/ebp-logo.png'
+        item['thumbnail'] = '_static/images/ebp-logo.png'
+    item['thumbnail'] = f"../{item['thumbnail']}"
     tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
     tags = '\n'.join(tags)
 
@@ -121,4 +118,4 @@ panels = f"""
 ````
 """
 
-pathlib.Path('communications.md').write_text(panels)
+pathlib.Path('pages/communications.md').write_text(panels)
