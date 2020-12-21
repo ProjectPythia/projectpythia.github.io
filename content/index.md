@@ -1,4 +1,4 @@
-# A community educational resource for geoscientists
+# Project Pythia: _A Community Educational Resource for Geoscientists_
 
 Scientists working in a multitude of disciplines rely heavily on
 computing technologies for their research. Numerical simulations
@@ -21,7 +21,7 @@ Ecosystem and Cloud Computing to make sense of huge volumes of
 numerical scientific data.
 
 Project Pythia is a community effort led by NCAR and the University
-of Albany, and funded by NSF EarthCube award #2026899
+of Albany, and funded by NSF EarthCube award #2026899.
 
 ![Partners](_static/images/PartnersLogo.png)
 
