@@ -1,6 +1,6 @@
 # Contributor's Guide
 
-Project Pythia is an open community, and all contributions are welcome following our [Code of Conduct](https://github.com/ProjectPythia/projectpythia.github.io/blob/main/CODEOFCONDUCT.md).
+Project Pythia is an open community, and all contributions are welcome following our [Code of Conduct](code_of_conduct.md).
 
 The source code for the Pythia Portal is [publicly hosted on github](https://github.com/ProjectPythia/projectpythia.github.io).
 Contributions to open issues and new Pull Requests are welcome at any time.
