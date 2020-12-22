@@ -32,6 +32,7 @@ maxdepth: 1
 ---
 pages/about.md
 pages/people.md
+pages/contributors.md
 ```
 
 ```{toctree}
