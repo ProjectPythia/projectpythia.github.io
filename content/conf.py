@@ -5,6 +5,7 @@ import datetime
 import os
 import pathlib
 import sys
+import shutil
 from textwrap import dedent
 
 import yaml
@@ -72,7 +73,14 @@ myst_admonition_enable = True
 myst_deflist_enable = True
 jupyter_execute_notebooks = 'off'
 
-# -- Custom scripts ----------------------------------------------------------
+# CUSTOM SCRIPTS =============================================================
+
+# Copy root files into content pages -----------------------------------------
+
+shutil.copyfile('../CODEOFCONDUCT.md', 'pages/code_of_conduct.md')
+shutil.copyfile('../CONTRIBUTING.md', 'pages/contributing.md')
+
+# Build Communication Channel Gallery ----------------------------------------
 
 with open('communications.yaml') as fid:
     communications = yaml.safe_load(fid)
