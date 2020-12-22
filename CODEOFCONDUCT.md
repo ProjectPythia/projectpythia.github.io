@@ -1,6 +1,6 @@
 # OUR PLEDGE
 
-We, as contributors, creators, stewards, and maintainers (participants), of [Enter project name] pledge to make participation in our software, system or hardware project and community a safe, productive, welcoming and inclusive experience for everyone. All participants are required to abide by this Code of Conduct. This includes respectful treatment of everyone regardless of age, body size, disability, ethnicity, gender identity or expression, level of experience, nationality, political affiliation, veteran status, pregnancy, genetic information, physical appearance, race, religion, or sexual orientation, as well as any other characteristic protected under applicable US federal or state law.
+We, as contributors, creators, stewards, and maintainers (participants), of Project Pythia pledge to make participation in our software, system or hardware project and community a safe, productive, welcoming and inclusive experience for everyone. All participants are required to abide by this Code of Conduct. This includes respectful treatment of everyone regardless of age, body size, disability, ethnicity, gender identity or expression, level of experience, nationality, political affiliation, veteran status, pregnancy, genetic information, physical appearance, race, religion, or sexual orientation, as well as any other characteristic protected under applicable US federal or state law.
 
 # OUR STANDARDS
 
