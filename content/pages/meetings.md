@@ -1,2 +1,14 @@
 # Meeting Schedule & Notes
 
+## Weekly Working Group Meetings
+
+Project Pythia holds weekly public meetings every ??? at ??? on [Zoom](???).
+These meetings are open to anyone who wishes to participate.  These meetings alternate focus
+between the two Project Pythia Working Groups on Infrastructure and Education.
+We publish the [Infrastructure Working Group (IWG) meeting notes here](https://docs.google.com/document/d/e/2PACX-1vQN5YFkZtCZPKVk2Rte2xoHuiqJuYz1KpynsSKmeCLwP-4glUsGuCPJbITwB4OJc8dOhUpHAMacdx59/pub) and the [Education Working Group (EWG) meeting notes here](https://docs.google.com/document/d/e/2PACX-1vTHJKdeWfQBbkrGt8RsSVKJHy5uAQumD40_hRXhRKDGpLO-4ACBlMdQNyR-ap-Q19Zwdq2m5yUk_mZk/pub).
+
+## Meeting Calendar
+
+A Google Calendar has been created with these recurring meeting times.
+
+???
