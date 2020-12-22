@@ -21,7 +21,8 @@ Ecosystem and Cloud Computing to make sense of huge volumes of
 numerical scientific data.
 
 Project Pythia is a community effort led by NCAR and the University
-of Albany, and funded by NSF EarthCube award #2026899.
+of Albany, and funded by NSF EarthCube awards \#2026899 (NCAR) and
+\#2026863 (University of Albany).
 
 ![Partners](_static/images/PartnersLogo.png)
 
