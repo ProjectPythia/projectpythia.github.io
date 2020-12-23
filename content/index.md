@@ -1,4 +1,33 @@
-# Project Pythia: _A Community Educational Resource for Geoscientists_
+# Project Pythia
+````{margin}
+**Our Collaborators:**
+
+```{figure} _static/images/NCAR-contemp-logo-blue.svg
+:name: NCAR
+```
+
+```{figure} _static/images/Unidata_logo_horizontal.png
+:name: Unidata
+```
+
+```{figure} _static/images/UAlbany-A2-logo-purple-gold.png
+:name: UAlbany
+```
+
+---
+
+**Funding from the NSF**
+
+Project Pythia is a community effort led by NCAR and the University
+of Albany, and funded by NSF EarthCube awards \#2026899 and \#2026863.
+
+```{image} _static/images/NSF_4-Color_vector_logo.svg
+:name: NSF
+:height: 75px
+:align: left
+```
+````
+**_A Community Educational Resource for Geoscientists_**
 
 Scientists working in a multitude of disciplines rely heavily on
 computing technologies for their research. Numerical simulations
@@ -20,11 +49,15 @@ scientists to more effectively use both the Scientific Python
 Ecosystem and Cloud Computing to make sense of huge volumes of
 numerical scientific data.
 
+<<<<<<< HEAD
 Project Pythia is a community effort led by NCAR and the University
 of Albany, and funded by NSF EarthCube awards \#2026899 (NCAR) and
 \#2026863 (University of Albany).
 
 ![Partners](_static/images/PartnersLogo.png)
+=======
+<!-- ![Partners](_static/images/PartnersLogo.png) -->
+>>>>>>> logos
 
 ```{toctree}
 ---
