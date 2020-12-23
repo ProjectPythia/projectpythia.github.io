@@ -3,14 +3,14 @@
 ## Project Administrators
 
 Project Pythia is adminstrated by the Principal Investigators of the
-NSF EarthCube awards \#2026899 (UCAR) and \#2026863 (University of Albany).
+NSF EarthCube awards \#2026899 (UCAR) and \#2026863 (University at Albany).
 
 - John Clyne (NCAR) [[@clyne](https://github.com/clyne)]
 - Matthew C. Long (NCAR) [[@matt-long](https://github.com/matt-long)]
 - Ryan May (Unidata) [[@dopplershift](https://github.com/dopplershift)]
 - Kevin Paul (NCAR) [[@kmpaul](https://github.com/kmpaul)]
-- Brian E. J. Rose (University of Albany) [[@brian-rose](https://github.com/brian-rose])]
-- Kevin Tyle (University of Albany) [[@ktyle](https://github.com/ktyle)]
+- Brian E. J. Rose (University at Albany) [[@brian-rose](https://github.com/brian-rose])]
+- Kevin Tyle (University at Albany) [[@ktyle](https://github.com/ktyle)]
 
 ## Project Members
 
