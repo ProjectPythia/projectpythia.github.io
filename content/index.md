@@ -21,9 +21,10 @@
 Project Pythia is a community effort led by NCAR and the University
 at Albany, and funded by NSF EarthCube awards \#2026899 and \#2026863.
 
-```{figure} _static/images/NSF_4-Color_vector_logo.svg
+```{image} _static/images/NSF_4-Color_vector_Logo.svg
 :name: NSF
 :height: 75px
+:align: left
 ```
 ````
 **_A Community Educational Resource for Geoscientists_**
