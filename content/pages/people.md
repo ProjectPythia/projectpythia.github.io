@@ -9,7 +9,7 @@ NSF EarthCube awards \#2026899 (UCAR) and \#2026863 (University at Albany).
 - Matthew C. Long (NCAR) [[@matt-long](https://github.com/matt-long)]
 - Ryan May (Unidata) [[@dopplershift](https://github.com/dopplershift)]
 - Kevin Paul (NCAR) [[@kmpaul](https://github.com/kmpaul)]
-- Brian E. J. Rose (University at Albany) [[@brian-rose](https://github.com/brian-rose])]
+- Brian E. J. Rose (University at Albany) [[@brian-rose](https://github.com/brian-rose)]
 - Kevin Tyle (University at Albany) [[@ktyle](https://github.com/ktyle)]
 
 ## Project Members
