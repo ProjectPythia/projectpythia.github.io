@@ -15,7 +15,7 @@ NSF EarthCube awards \#2026899 (UCAR) and \#2026863 (University at Albany).
 ## Project Members
 
 In addition to the administration provided by the Principal Investigators,
-a great deal of ongoing work is being conducted and lead by:
+a great deal of ongoing work is being conducted and led by:
 
 - Anderson Banihirwe (NCAR) [[@andersy005](https://github.com/andersy005)]
 - Drew Camron (Unidata) [[@dcamron](https://github.com/dcamron)]
@@ -24,6 +24,6 @@ a great deal of ongoing work is being conducted and lead by:
 
 ## Project Contributors
 
-Anyone can contribute and participate in Project Pythia!  Please see our
+Anyone can contribute to and participate in Project Pythia!  Please see our
 [Contributor's Guide](contributing.md) for details on how *you* can get
 involved!
