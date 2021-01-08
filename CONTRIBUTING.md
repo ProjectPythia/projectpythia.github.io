@@ -24,7 +24,7 @@ use [conda](https://docs.conda.io/) to set up a build environment with all depen
 - In your favorite terminal, navigate to the `content` directory of the source repository
 - Use [conda](https://docs.conda.io/) to set up a build environment:
 ```
-conda env create -f ci/environment.yml
+conda env create -f ../ci/environment.yml
 conda activate pythia
 ```
 - Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):

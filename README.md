@@ -11,7 +11,7 @@ use [conda](https://docs.conda.io/) to set up a build environment with all depen
 First, make a local clone of this source repository on your machine.
 Then, from the `content` directory of the source repository, do this:
 ```
-conda env create -f ci/environment.yml
+conda env create -f ../ci/environment.yml
 conda activate pythia
 ```
 
