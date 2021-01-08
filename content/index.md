@@ -63,7 +63,7 @@ pages/contributing.md
 pages/code_of_conduct.md
 ```
 
-```{toctree}
+<!-- ```{toctree}
 ---
 hidden: True
 maxdepth: 1
@@ -72,4 +72,4 @@ caption: Galleries
 notebooks_gallery/index.md
 pages/communications.md
 
-```
+``` -->
