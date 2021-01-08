@@ -180,6 +180,25 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions-for-building-the-portal-site">
+   Instructions for building the portal site
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -189,6 +208,8 @@
                 
   <div class="section" id="contributor-s-guide">
 <h1>Contributor’s Guide<a class="headerlink" href="#contributor-s-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>Project Pythia is an open community, and all contributions are welcome following our <a class="reference internal" href="code_of_conduct.html"><span class="doc std std-doc">Code of Conduct</span></a>.</p>
 <p>The source code for the Pythia Portal is <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io">publicly hosted on github</a>.
 Contributions to open issues and new Pull Requests are welcome at any time.
@@ -196,6 +217,45 @@ Detailed instructions for new users will be posted here in the near future.</p>
 <p>In the mean time, if you have links to some open educational content that you would like to include in the portal,
 feel free to <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io/issues">open an issue on github</a>
 or contact any member of the <a class="reference internal" href="people.html"><span class="doc std std-doc">Project Pythia core team</span></a> directly.</p>
+</div>
+<div class="section" id="instructions-for-building-the-portal-site">
+<h2>Instructions for building the portal site<a class="headerlink" href="#instructions-for-building-the-portal-site" title="Permalink to this headline">¶</a></h2>
+<p>The portal site is built with <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a>.</p>
+<p>To build and view the site locally (e.g. for testing new content),
+use <a class="reference external" href="https://docs.conda.io/">conda</a> to set up a build environment with all dependencies:</p>
+<ul class="simple">
+<li><p>Fork the <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io">source repository</a> on GitHub</p></li>
+<li><p>Make a local clone of the repository on your machine</p></li>
+<li><p>In your favorite terminal, navigate to the <code class="docutils literal notranslate"><span class="pre">content</span></code> directory of the source repository</p></li>
+<li><p>Use <a class="reference external" href="https://docs.conda.io/">conda</a> to set up a build environment:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="o">../</span><span class="n">ci</span><span class="o">/</span><span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">pythia</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Build the site locally using Sphinx (which you just installed in the <code class="docutils literal notranslate"><span class="pre">pythia</span></code> environment, along with all necessary dependencies):</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The newly rendered site is now available in <code class="docutils literal notranslate"><span class="pre">content/_build/html/index.html</span></code>.
+Open with your web browser, or from the terminal:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">open</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>When you’re done, you can deactivate the dedicated build environment with</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">deactivate</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>You can re-activate the <code class="docutils literal notranslate"><span class="pre">pythia</span></code> conda environment at any time with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">pythia</span></code>.</p></li>
+</ul>
+</div>
 </div>
 
 
