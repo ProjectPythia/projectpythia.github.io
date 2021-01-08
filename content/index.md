@@ -61,6 +61,7 @@ pages/people.md
 pages/meetings.md
 pages/contributing.md
 pages/code_of_conduct.md
+pages/links.md
 ```
 
 <!-- ```{toctree}
