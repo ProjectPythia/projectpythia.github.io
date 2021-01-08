@@ -64,7 +64,8 @@ pages/code_of_conduct.md
 pages/links.md
 ```
 
-<!-- ```{toctree}
+<!-- Don't display sample notebook gallery yet
+```{toctree}
 ---
 hidden: True
 maxdepth: 1
@@ -73,4 +74,5 @@ caption: Galleries
 notebooks_gallery/index.md
 pages/communications.md
 
-``` -->
+``` 
+-->
