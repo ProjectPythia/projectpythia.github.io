@@ -1,6 +1,6 @@
 # Link to External Resources
 
-The members of Project Pythia approve of these resources on Python specific topics.
+Project Pythia find the links below to be useful resources on a variety of Python specific topics.
 
 ## Introductory/Basics
 | Topic | Self-Paced Tutorials | Example Notebook Galleries |
