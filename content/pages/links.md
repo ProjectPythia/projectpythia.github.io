@@ -1,4 +1,4 @@
-# Link to External Resources
+# Links to External Resources
 
 Project Pythia find the links below to be useful resources on a variety of Python specific topics.
 
