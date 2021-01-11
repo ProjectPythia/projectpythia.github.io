@@ -61,8 +61,10 @@ pages/people.md
 pages/meetings.md
 pages/contributing.md
 pages/code_of_conduct.md
+pages/links.md
 ```
 
+<!-- Don't display sample notebook gallery yet
 ```{toctree}
 ---
 hidden: True
@@ -72,4 +74,5 @@ caption: Galleries
 notebooks_gallery/index.md
 pages/communications.md
 
-```
+``` 
+-->
