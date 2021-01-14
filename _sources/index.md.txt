@@ -61,6 +61,7 @@ pages/people.md
 pages/meetings.md
 pages/contributing.md
 pages/code_of_conduct.md
+pages/discussion.md
 pages/links.md
 ```
 
@@ -74,5 +75,5 @@ caption: Galleries
 notebooks_gallery/index.md
 pages/communications.md
 
-``` 
+```
 -->
