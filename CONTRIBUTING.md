@@ -18,12 +18,25 @@ For questions or anything else you would like to share with the [Project Pythia 
 
 The portal site is built with [Sphinx](https://www.sphinx-doc.org/).
 
-To build and view the site locally (e.g. for testing new content),
-use [conda](https://docs.conda.io/) to set up a build environment with all dependencies:
+When testing new content is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. You can also build it locally on your machine.
+
+### To view the Read the Docs autobuild
+
+Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythis - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click, "Show all checks" for this to be displayed.
+
+![Checks](../_static/images/ReadtheDocsAutobuild.png)
+
+### To build and view the site locally
 
 - Fork the [source repository](https://github.com/ProjectPythia/projectpythia.github.io) on GitHub
 - Make a local clone of the repository on your machine
+```
+git clone git@github.com:USERNAME/projectpythia.github.io.git
+```
 - In your favorite terminal, navigate to the `content` directory of the source repository
+```
+cd projectpythia.github.io/content
+```
 - Use [conda](https://docs.conda.io/) to set up a build environment:
 ```
 conda env create -f ../ci/environment.yml
