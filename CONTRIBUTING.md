@@ -32,6 +32,8 @@ Once a Pull Request has passed all tests, including the Read the Docs build, you
 - Make a local clone of the repository on your machine
   ``` bash
   git clone git@github.com:USERNAME/projectpythia.github.io.git
+  # or 
+  git clone https://github.com/USERNAME/projectpythia.github.io.git
   ```
 - In your favorite terminal, navigate to the `content` directory of the source repository
   ```bash
