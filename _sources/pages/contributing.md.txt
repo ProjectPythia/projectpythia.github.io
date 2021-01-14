@@ -12,6 +12,8 @@ In the mean time, if you have links to some open educational content that you wo
 feel free to [open an issue on github](https://github.com/ProjectPythia/projectpythia.github.io/issues)
 or contact any member of the [Project Pythia core team](people) directly.
 
+For questions or anything else you would like to share with the [Project Pythia Team](people.md), please reach out to us on our [GitHub Discussions page](https://github.com/ProjectPythia/projectpythia.github.io/discussions).
+
 ## Instructions for building the portal site
 
 The portal site is built with [Sphinx](https://www.sphinx-doc.org/).
