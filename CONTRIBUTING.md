@@ -22,7 +22,7 @@ When testing new content is important to build and view the site. Read the Docs 
 
 ### To view the Read the Docs autobuild
 
-Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythis - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click, "Show all checks" for this to be displayed.
+Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythis - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click "Show all checks" for this to be displayed.)
 
 ![Checks](../_static/images/ReadtheDocsAutobuild.png)
 
@@ -30,29 +30,29 @@ Once a Pull Request has passed all tests, including the Read the Docs build, you
 
 - Fork the [source repository](https://github.com/ProjectPythia/projectpythia.github.io) on GitHub
 - Make a local clone of the repository on your machine
-```
-git clone git@github.com:USERNAME/projectpythia.github.io.git
-```
+  ``` bash
+  git clone git@github.com:USERNAME/projectpythia.github.io.git
+  ```
 - In your favorite terminal, navigate to the `content` directory of the source repository
-```
-cd projectpythia.github.io/content
-```
+  ```bash
+  cd projectpythia.github.io/content
+  ```
 - Use [conda](https://docs.conda.io/) to set up a build environment:
-```
-conda env create -f ../ci/environment.yml
-conda activate pythia
-```
+  ``` bash
+  conda env create -f ../ci/environment.yml
+  conda activate pythia
+  ```
 - Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
-```
-make html
-```
+  ``` bash
+  make html
+  ```
 - The newly rendered site is now available in `content/_build/html/index.html`.
 Open with your web browser, or from the terminal:
-```
-open _build/html/index.html
-```
+  ``` bash
+  open _build/html/index.html
+  ```
 - When you're done, you can deactivate the dedicated build environment with
-```
-conda deactivate
-```
+  ``` bash
+  conda deactivate
+  ```
 - You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
