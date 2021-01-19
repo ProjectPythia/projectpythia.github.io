@@ -4,8 +4,6 @@ Pythia is a community educational resource for helping students, scientists,
 and educators learn how to analyze and visualize geosciences data using
 the Scientifc Python Ecosystem.
 
-<iframe src="https://drive.google.com/file/d/1JfBDF978grhcdIKcRgpPUYD84tX2R9OL/preview" width="640" height="480"></iframe>
-
 ## Project Pythia Goals
 
 1. _The Pythia Portal:_ A searchable online portal that
@@ -52,3 +50,9 @@ Project Pythia will offer a full gamut of training materials:
 - Sample data
 - Tutorials (interactive and pre-recorded)
 - Communication forums
+
+## AMS 2021 Project Pytia Presentation
+
+Watch this recorded video from AMS 2021 to learn more about Project Pythia!
+
+<iframe src="https://drive.google.com/file/d/1JfBDF978grhcdIKcRgpPUYD84tX2R9OL/preview" width="640" height="480"></iframe>
