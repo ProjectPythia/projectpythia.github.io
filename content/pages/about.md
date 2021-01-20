@@ -55,4 +55,4 @@ Project Pythia will offer a full gamut of training materials:
 
 Watch this recorded video from AMS 2021 to learn more about Project Pythia!
 
-<iframe src="https://drive.google.com/file/d/1JfBDF978grhcdIKcRgpPUYD84tX2R9OL/preview" width="640" height="480"></iframe>
+<iframe src="https://www.youtube.com/embed/_UxlrwB_evo" width="640" height="480"></iframe>
