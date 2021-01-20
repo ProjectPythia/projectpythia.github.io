@@ -2,7 +2,7 @@ name: pythia
 channels:
   - conda-forge
 dependencies:
-  - myst-nb
+  - myst-nb==0.10.1
   - sphinx-panels
   - pydata-sphinx-theme
   - jupyterlab
