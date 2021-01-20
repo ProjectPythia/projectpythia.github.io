@@ -51,7 +51,7 @@ Project Pythia will offer a full gamut of training materials:
 - Tutorials (interactive and pre-recorded)
 - Communication forums
 
-## AMS 2021 Project Pytia Presentation
+## AMS 2021 Project Pythia Presentation
 
 Watch this recorded video from AMS 2021 to learn more about Project Pythia!
 
