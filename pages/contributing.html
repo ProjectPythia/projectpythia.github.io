@@ -192,6 +192,18 @@
   <a class="reference internal nav-link" href="#instructions-for-building-the-portal-site">
    Instructions for building the portal site
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-view-the-read-the-docs-autobuild">
+     To view the Read the Docs autobuild
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#to-build-and-view-the-site-locally">
+     To build and view the site locally
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -220,40 +232,53 @@ or contact any member of the <a class="reference internal" href="people.html"><s
 <div class="section" id="instructions-for-building-the-portal-site">
 <h2>Instructions for building the portal site<a class="headerlink" href="#instructions-for-building-the-portal-site" title="Permalink to this headline">¶</a></h2>
 <p>The portal site is built with <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a>.</p>
-<p>To build and view the site locally (e.g. for testing new content),
-use <a class="reference external" href="https://docs.conda.io/">conda</a> to set up a build environment with all dependencies:</p>
-<ul class="simple">
+<p>When testing new content is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. You can also build it locally on your machine.</p>
+<div class="section" id="to-view-the-read-the-docs-autobuild">
+<h3>To view the Read the Docs autobuild<a class="headerlink" href="#to-view-the-read-the-docs-autobuild" title="Permalink to this headline">¶</a></h3>
+<p>Once a Pull Request has passed all tests, including the Read the Docs build, you can click “Details” of the check that says, “docs/readthedocs.org:projectpythia - Read the Docs build succeeded!” to launch a new tab with a build of the Project Pythia site. (You may have to click “Show all checks” for this to be displayed.)</p>
+<p><img alt="Checks" src="../_images/ReadtheDocsAutobuild.png" /></p>
+</div>
+<div class="section" id="to-build-and-view-the-site-locally">
+<h3>To build and view the site locally<a class="headerlink" href="#to-build-and-view-the-site-locally" title="Permalink to this headline">¶</a></h3>
+<ul>
 <li><p>Fork the <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io">source repository</a> on GitHub</p></li>
-<li><p>Make a local clone of the repository on your machine</p></li>
-<li><p>In your favorite terminal, navigate to the <code class="docutils literal notranslate"><span class="pre">content</span></code> directory of the source repository</p></li>
-<li><p>Use <a class="reference external" href="https://docs.conda.io/">conda</a> to set up a build environment:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="o">../</span><span class="n">ci</span><span class="o">/</span><span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">pythia</span>
+<li><p>Make a local clone of the repository on your machine</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:USERNAME/projectpythia.github.io.git
+<span class="c1"># or </span>
+git clone https://github.com/USERNAME/projectpythia.github.io.git
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Build the site locally using Sphinx (which you just installed in the <code class="docutils literal notranslate"><span class="pre">pythia</span></code> environment, along with all necessary dependencies):</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</li>
+<li><p>In your favorite terminal, navigate to the <code class="docutils literal notranslate"><span class="pre">content</span></code> directory of the source repository</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> projectpythia.github.io/content
 </pre></div>
 </div>
-<ul class="simple">
+</li>
+<li><p>Use <a class="reference external" href="https://docs.conda.io/">conda</a> to set up a build environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda env create -f ../ci/environment.yml
+conda activate pythia
+</pre></div>
+</div>
+</li>
+<li><p>Build the site locally using Sphinx (which you just installed in the <code class="docutils literal notranslate"><span class="pre">pythia</span></code> environment, along with all necessary dependencies):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make html
+</pre></div>
+</div>
+</li>
 <li><p>The newly rendered site is now available in <code class="docutils literal notranslate"><span class="pre">content/_build/html/index.html</span></code>.
-Open with your web browser, or from the terminal:</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">open</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+Open with your web browser, or from the terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open _build/html/index.html
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>When you’re done, you can deactivate the dedicated build environment with</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">deactivate</span>
+</li>
+<li><p>When you’re done, you can deactivate the dedicated build environment with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda deactivate
 </pre></div>
 </div>
-<ul class="simple">
+</li>
 <li><p>You can re-activate the <code class="docutils literal notranslate"><span class="pre">pythia</span></code> conda environment at any time with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">pythia</span></code>.</p></li>
 </ul>
+</div>
 </div>
 </div>
 
