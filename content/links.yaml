@@ -1,35 +1,50 @@
-- name: Xdev "Your First" Python Tutorial
-  url: https://discourse.pangeo.io/
-  thumbnail: _static/images/
+- title: "Your First" Python Tutorial
+  url: https://ncar.github.io/python-tutorial/index.html
+  description: |
+    A tutorial for getting started with Python aimed at scientists with experience in at least one other coding language. Designed to teach you Python, not package specific syntax.
+  authors:
+    - name: Xdev Team
+      email: xdev@ucar.edu
+      url: https://ncar.github.io/xdev/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: 
   tags:
     - basics
     - videos
-  description: |
-    A tutorial for getting started with Python aimed at scientists with experience in at least one other coding language. Designed to teach you Python, not package specific syntax.
 
-- name: Unidata Python Training
+- title: Unidata Python Training
   url: https://unidata.github.io/python-training/python/intro-to-python/
-  thumbnail: _static/images/
-  tags:
-    - basics
   description: |
     Introduction to Python for Atmospheric Science & Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
-
-- name: Unidata Python Workshop - Jupyter Notebooks Introduction
+  authors:
+    - affiliation: Unidata
+      affiliation_url: https://www.unidata.ucar.edu/ 
+  thumbnail: 
+  tags:
+    - basics
+ 
+- title: Python Workshop - Jupyter Notebooks Introduction
   url: https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
-  thumbnail: _static/images/
+  description: |
+    Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
+  authors:
+    - affiliation: Unidata
+      affiliation_url: https://www.unidata.ucar.edu/
+  thumbnail: 
   tags:
     - basics
     - jupyter
-  description: |
-    Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
 
-- name: Ryan Abernathy & Kerry Key - An Introduction to Earth and Environmental Data Science
+- title: An Introduction to Earth and Environmental Data Science
   url: https://earth-env-data-science.github.io/intro/
-  thumbnail: _static/images/
-  tags:
-    - course
   description: |
     This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
-
-
+  authors:
+    - name: Ryan Abernathey
+      affiliation: Lamont-Doherty Earth Observatory
+    - name: Kerry Key
+      affiliation: Lamont-Doherty Earth Observatory
+  thumbnail:
+  tags:
+    - course

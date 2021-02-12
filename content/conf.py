@@ -16,7 +16,7 @@ copyright = f'2020-{datetime.datetime.now().year}'
 author = 'Project Pythia Developers & Contributors'
 html_last_updated_fmt = '%b %d, %Y'
 
-extensions = ['myst_nb', 'sphinx_panels', 'gallery_generator']
+extensions = ['myst_nb', 'sphinx_panels', 'nb_gallery_generator', 'yaml_gallery_generator']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
