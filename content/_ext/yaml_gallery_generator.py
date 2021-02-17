@@ -25,7 +25,7 @@ def build_from_yaml(filename, display_name):
 +++
 **{item["title"]}**
 
-{item['authors']}
+{authors}
 
 {item['description']}
 
