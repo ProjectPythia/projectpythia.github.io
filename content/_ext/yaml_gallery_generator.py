@@ -15,7 +15,11 @@ def build_from_yaml(filename, display_name):
         tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
         tags = '\n'.join(tags)
 
-        authors = [f'Created by: {a.get("name", "anonymous")}' for a in item['authors']]
+        authors = [a.get("name", "anonymous") for a in item['authors']]
+        if len(authors) == 1:
+            authors = f'Created by: {authors[0]}'
+        elif len(authors) == 2:
+            authors = f'Created by: {authors[0]} and {authors[1]}'
 
         print(authors)
         panels_body.append(
