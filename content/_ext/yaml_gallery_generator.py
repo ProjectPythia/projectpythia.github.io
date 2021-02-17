@@ -4,7 +4,6 @@ def build_from_yaml(filename, display_name):
 
     with open(f'{filename}.yaml') as fid:
         items = yaml.safe_load(fid)
-        print(items)
 
     # Build the gallery file
     panels_body = []
@@ -13,9 +12,10 @@ def build_from_yaml(filename, display_name):
             item['thumbnail'] = '../_static/images/ebp-logo.png'
         tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
         tags = '\n'.join(tags)
-        
+
         authors = [f'Created by: {a.get("name", "anonymous")}' for a in item['authors']]
 
+        print(authors)
         panels_body.append(
             f"""\
 ---
