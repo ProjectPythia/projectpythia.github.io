@@ -38,7 +38,7 @@ def build_from_yaml(filename, display_name):
 ```{{link-button}} {item["url"]}
 :type: url
 :text: Visit Website
-:classes: btn-outline-primary btn-block stretched-link
+:classes: btn-outline-primary btn-block
 ```
 
 categories: {tags}
