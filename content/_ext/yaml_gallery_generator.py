@@ -30,8 +30,8 @@ def build_from_yaml(filename, display_name):
 **{item["title"]}**
 
 {authors}
-
-```{{dropdown}} See Description:
+. 
+```{{dropdown}} {item['description'][0:100]} ... <br> See Full Description:
 {item['description']}
 ```
 
