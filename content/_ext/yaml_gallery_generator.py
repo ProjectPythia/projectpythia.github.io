@@ -31,7 +31,9 @@ def build_from_yaml(filename, display_name):
 
 {authors}
 
+```{{dropdown}} See Description:
 {item['description']}
+```
 
 ```{{link-button}} {item["url"]}
 :type: url
