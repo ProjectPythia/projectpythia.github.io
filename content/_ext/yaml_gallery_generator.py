@@ -50,7 +50,7 @@ def build_from_yaml(filename, display_name):
 {affiliation_str}
 
 {affiliation_url_str}
-. 
+ 
 ```{{dropdown}} {item['description'][0:100]} ... <br> **See Full Description:**
 {item['description']}
 ```
