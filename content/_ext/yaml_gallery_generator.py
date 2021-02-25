@@ -16,12 +16,26 @@ def build_from_yaml(filename, display_name):
         tags = '\n'.join(tags)
 
         authors = [a.get("name", "anonymous") for a in item['authors']]
-        if len(authors) == 1:
-            authors = f'Created by: {authors[0]}'
-        elif len(authors) == 2:
-            authors = f'Created by: {authors[0]} and {authors[1]}'
 
-        print(authors)
+        if len(authors) == 1:
+            authors_str = f'Created by: {authors[0]}'
+        elif len(authors) == 2:
+            authors_str = f'Created by: {authors[0]} and {authors[1]}'
+        print('authors if statement')
+
+        print('one to email')
+        email = [a.get("email", None) for a in item['authors']][0]
+        email_str = '' if email == None else f'Email: {email}'
+
+        print('affiliation')
+        affiliation = [a.get("affiliation", None) for a in item['authors']][0]
+        affiliation_str = '' if affiliation == None else f'Affiliation: {affiliation}'
+
+        print('url')
+        affiliation_url = [a.get("affiliation_url", None) for a in item['authors']][0]
+        affiliation_url_str = '' if affiliation_url == None else f'{affiliation} Site: {affiliation_url}'
+
+
         panels_body.append(
             f"""\
 ---
@@ -29,9 +43,15 @@ def build_from_yaml(filename, display_name):
 +++
 **{item["title"]}**
 
-{authors}
+{authors_str}
+
+{email_str}
+
+{affiliation_str}
+
+{affiliation_url_str}
 . 
-```{{dropdown}} {item['description'][0:100]} ... <br> See Full Description:
+```{{dropdown}} {item['description'][0:100]} ... <br> **See Full Description:**
 {item['description']}
 ```
 
