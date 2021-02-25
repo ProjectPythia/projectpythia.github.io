@@ -8,7 +8,7 @@
       url: https://ncar.github.io/xdev/
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: 
+  thumbnail: ../_static/thumbnails/Xdev.png
   tags:
     - basics
     - videos
@@ -20,7 +20,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/ 
-  thumbnail: 
+  thumbnail: ../_static/thumbnails/Unidata.png
   tags:
     - basics
  
@@ -31,13 +31,13 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: 
+  thumbnail: ../_static/thumbnails/Unidata.png
   tags:
     - basics
     - jupyter
 
 - title: An Introduction to Earth and Environmental Data Science
-  url: https://earth-env-data-science.github.io/intro/
+  url: https://earth-env-data-science.github.io/intro
   description: |
     This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
   authors:
@@ -45,6 +45,6 @@
       affiliation: Lamont-Doherty Earth Observatory
     - name: Kerry Key
       affiliation: Lamont-Doherty Earth Observatory
-  thumbnail:
+  thumbnail: ../_static/thumbnails/earth_env_data_science.png
   tags:
     - course

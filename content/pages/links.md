@@ -7,7 +7,7 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: ../_static/thumbnails/Xdev.png
 +++
 **Your First Python Tutorial**
 
@@ -34,7 +34,7 @@ categories: {badge}`basics,badge-primary badge-pill`
 {badge}`videos,badge-primary badge-pill`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: ../_static/thumbnails/Unidata.png
 +++
 **Unidata Python Training**
 
@@ -60,7 +60,7 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 categories: {badge}`basics,badge-primary badge-pill`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: ../_static/thumbnails/Unidata.png
 +++
 **Python Workshop - Jupyter Notebooks Introduction**
 
@@ -87,7 +87,7 @@ categories: {badge}`basics,badge-primary badge-pill`
 {badge}`jupyter,badge-primary badge-pill`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: ../_static/thumbnails/earth_env_data_science.png
 +++
 **An Introduction to Earth and Environmental Data Science**
 
@@ -104,7 +104,7 @@ This book grew out of a course developed at Columbia University called Research 
 
 ```
 
-```{link-button} https://earth-env-data-science.github.io/intro/
+```{link-button} https://earth-env-data-science.github.io/intro
 :type: url
 :text: Visit Website
 :classes: btn-outline-primary btn-block
