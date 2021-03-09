@@ -490,6 +490,8 @@
   url: https://pandas.pydata.org/
   description: |
     Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+  authors:
+    - name: Pandas Development Team
   thumbnail: ../_static/thumnails/pandas.png
   tags:
     - pandas
@@ -521,6 +523,8 @@
   url: https://rasterio.readthedocs.io
   description: |
     Geographic information systems use GeoTIFF and other formats to organize and store gridded raster datasets such as satellite imagery and terrain models. Rasterio reads and writes these formats and provides a Python API based on Numpy N-dimensional arrays and GeoJSON.
+  authors:
+    - name: MapBox
   thumbnail:
   tags:
     - rasterio
@@ -530,6 +534,8 @@
   url: https://rasterio.readthedocs.io/en/latest/quickstart.html
   description: |
     This document explains how to use Rasterio to read existing files and to create new files. Some advanced topics are glossed over to be covered in more detail elsewhere in Rasterio’s documentation.
+  authors:
+    - name: MapBox
   thumbnail: ../_static/thumnails/rasterio-tutorial.png
   tags:
     - rasterio
