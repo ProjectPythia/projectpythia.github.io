@@ -21,20 +21,15 @@ def build_from_yaml(filename, display_name):
             authors_str = f'Created by: {authors[0]}'
         elif len(authors) == 2:
             authors_str = f'Created by: {authors[0]} and {authors[1]}'
-        print('authors if statement')
 
-        print('one to email')
         email = [a.get("email", None) for a in item['authors']][0]
         email_str = '' if email == None else f'Email: {email}'
 
-        print('affiliation')
         affiliation = [a.get("affiliation", None) for a in item['authors']][0]
         affiliation_str = '' if affiliation == None else f'Affiliation: {affiliation}'
 
-        print('url')
         affiliation_url = [a.get("affiliation_url", None) for a in item['authors']][0]
         affiliation_url_str = '' if affiliation_url == None else f'{affiliation} Site: {affiliation_url}'
-
 
         panels_body.append(
             f"""\
