@@ -31,7 +31,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnailPhilip Austins/Unidata.png
+  thumbnail: ../_static/thumbnail/Unidata.png
   tags:
     - basics
     - jupyter
@@ -468,7 +468,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumnails/Unidata.png
+  thumbnail: ../_static/thumbnails/Unidata.png
   tags:
     - numpy
     - tutorial
@@ -481,7 +481,7 @@
     - name: A. Chabot-LeClerc
       affiliation: Enthought
       affiliation_url: https://www.enthought.com/
-  thumbnail: ../_static/thumnails/Enthought.png
+  thumbnail: ../_static/thumbnails/Enthought.png
   tags:
     - numpy
     - video
@@ -492,7 +492,7 @@
     Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
   authors:
     - name: Pandas Development Team
-  thumbnail: ../_static/thumnails/pandas.png
+  thumbnail: ../_static/thumbnails/pandas.png
   tags:
     - pandas
     - documentation
@@ -503,7 +503,7 @@
     Tutorial for getting started with pandas.
   authors:
     - name: Pandas Development Team
-  thumbnail: ../_static/thumnails/pandas.png
+  thumbnail: ../_static/thumbnails/pandas.png
   tags:
     - pandas
     - tutorials
@@ -514,7 +514,7 @@
     A gallery of example pandas functionality.
   authors:
     - name: Pandas Development Team
-  thumbnail: ../_static/thumnails/pandas.png
+  thumbnail: ../_static/thumbnails/pandas.png
   tags:
     - pandas
     - gallery
@@ -536,7 +536,7 @@
     This document explains how to use Rasterio to read existing files and to create new files. Some advanced topics are glossed over to be covered in more detail elsewhere in Rasterio’s documentation.
   authors:
     - name: MapBox
-  thumbnail: ../_static/thumnails/rasterio-tutorial.png
+  thumbnail: ../_static/thumbnails/rasterio-tutorial.png
   tags:
     - rasterio
     - tutorial
@@ -549,7 +549,7 @@
     - name: Siphon Contributors
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumnails/siphon.png
+  thumbnail: ../_static/thumbnails/siphon.png
   tags:
     - siphon
     - documentation
@@ -561,7 +561,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumnails/siphon.png
+  thumbnail: ../_static/thumbnails/siphon.png
   tags:
     - siphon
     - tutorial
@@ -574,7 +574,7 @@
     - name: Siphon Contributors
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumnails/siphon.png
+  thumbnail: ../_static/thumbnails/siphon.png
   tags:
     - siphon
     - gallery
@@ -613,7 +613,7 @@
     Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
   authors:
     - name: Xarray Developers
-  thumbnail: ../_static/thumnails/xarray.png
+  thumbnail: ../_static/thumbnails/xarray.png
   tags:
     - xarray
     - documentation
@@ -625,7 +625,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumnails/xarray.png
+  thumbnail: ../_static/thumbnails/xarray.png
   tags:
     - xarray
     - tutorial
@@ -636,7 +636,7 @@
     A collection of tutorials provided by the Xarray developers.
   authors:
     - name: Xarray Developers
-  thumbnail: ../_static/thumnails/xarray.png
+  thumbnail: ../_static/thumbnails/xarray.png
   tags:
     - xarray
     - tutorial
