@@ -31,7 +31,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnail/Unidata.png
+  thumbnail: ../_static/thumbnails/Unidata.png
   tags:
     - basics
     - jupyter
