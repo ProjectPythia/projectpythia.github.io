@@ -56,7 +56,7 @@ def build_from_yaml(filename, display_name):
 :classes: btn-outline-primary btn-block
 ```
 
-categories: {tags}
+{tags}
 """
         )
     panels_body = '\n'.join(panels_body)
