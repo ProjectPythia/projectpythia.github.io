@@ -21,6 +21,7 @@ a great deal of ongoing work is being conducted and led by:
 - Drew Camron (Unidata) [[@dcamron](https://github.com/dcamron)]
 - Orhan Eroglu (NCAR) [[@erogluorhan](https://github.com/erogluorhan)]
 - Julia Kent (NCAR) [[@jukent](https://github.com/jukent)]
+- Max Grover (NCAR) [[@mgrover1](https://github.com/mgrover1)]
 
 ## Project Contributors
 
