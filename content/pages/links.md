@@ -60,7 +60,7 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 {badge}`basics,badge-primary badge-pill`
 
 ---
-:img-top: ../_static/thumbnail/Unidata.png
+:img-top: ../_static/thumbnails/Unidata.png
 +++
 **Unidata Python Workshop - Jupyter Notebooks Introduction**
 
