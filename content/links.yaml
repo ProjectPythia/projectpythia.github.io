@@ -50,7 +50,8 @@
       affiliation: Lamont-Doherty Earth Observatory
   thumbnail: ../_static/thumbnails/earth_env_data_science.png
   tags:
-    - course
+    formats:
+      - course
 
 - title: The Climate Laboratory
   url: https://brian-rose.github.io/ClimateLaboratoryBook/home
@@ -62,8 +63,9 @@
       affiliation: University of Albany
   thumbnail: ../_static/thumbnails/climlablogo.png
   tags:
-    - course
-    - book
+    formats:
+      - course
+      - book
 
 - title: Earth Analytics Python Course
   url: https://www.earthdatascience.org/courses/earth-analytics-python/
@@ -75,7 +77,8 @@
       affiliation: University of Colorado Boulder
   thumbnail: ../_static/thumbnails/earth-lab-logo.png
   tags:
-    - course
+    formats:
+      - course
 
 - title: Earth Data Science
   url: https://www.earthdatascience.org/
@@ -86,7 +89,8 @@
       affiliation: University of Colorado Boulder
   thumbnail: ../_static/thumbnails/earth-lab-logo.png
   tags:
-    - course
+    formats:
+      - course
 
 - title: Geohackweek 2019
   url: https://geohackweek.github.io/
@@ -98,7 +102,8 @@
       affiliation: University of Washington
   thumbnail: ../_static/thumbnails/eScience_Logo_HR.png
   tags:
-    - course
+    formats:
+      - course
 
 - title: Research Software Engineering with Python
   url: https://merely-useful.github.io/py-rse/
@@ -108,7 +113,8 @@
     - name: Damien Irving, et al.
   thumbnail:
   tags:
-    - course
+    formats:
+      - course
 
 - title: Data Analysis with Python- Zero to Pandas
   url: https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas
@@ -119,7 +125,8 @@
       url: https://www.jovian.ai/
   thumbnail: ../_static/thumbnails/zero-to-pandas.png
   tags:
-    - course
+    formats:
+      - course
 
 - title: MTH271- Mathematical Computing with Data
   url: http://web.pdx.edu/~gjay/teaching/mth271_2020/html/_CONTENTS.html
@@ -131,7 +138,8 @@
       affiliation: Portland State University
   thumbnail: ../_static/thumbnails/portland-state.png
   tags:
-    - course
+    formats:
+      - course
 
 - title: ATSC301- Atmospheric Radiation and Remote Sensing
   url: https://clouds.eos.ubc.ca/~phil/courses/atsc301/
@@ -143,8 +151,10 @@
       affiliation: University of British Columbia
   thumbnail: ../_static/thumbnails/british-columbia.jpg
   tags:
-    - course
-    - remote sensing
+    formats:
+      - course
+    domains:
+      - remote sensing
 
 - title: Introduction to Geospatial Concepts
   url: https://datacarpentry.org/organization-geospatial/
@@ -155,7 +165,8 @@
       url: https://carpentries.org/
   thumbnail: ../_static/thumbnails/DC_logo_vision.png
   tags:
-    - course
+    format:
+      - course
 
 - title: Dani Arribas-Bel Course Repositories
   url: http://darribas.org/materials.html
@@ -167,8 +178,10 @@
       affiliation_url: https://www.liverpool.ac.uk/geography-and-planning/
   thumbnail:
   tags:
-    - course
-    - data science
+    format:
+      - course
+    domains:
+      - data science
 
 - title: Cartopy Documentation
   url: https://scitools.org.uk/cartopy/docs/latest/
@@ -178,8 +191,10 @@
     - name: UK Met Office
   thumbnail: ../_static/thumbnails/cartopy.png
   tags:
-    - cartopy
-    - documentation
+    packages:
+      - cartopy
+    formats:
+      - documentation
 
 - title: Cartopy Gallery
   url: https://scitools.org.uk/cartopy/docs/latest/gallery/index.html
@@ -189,8 +204,10 @@
     - name: UK Met Office
   thumbnail: ../_static/thumbnails/cartopy.png
   tags:
-    - cartopy
-    - gallery
+    packages:
+      - cartopy
+    formats:
+      - gallery
 
 - title: Contextily Documentation
   url: https://contextily.readthedocs.io
@@ -200,9 +217,11 @@
     - name: Dani Arribas-Bel & Contexily Contributors
   thumbnail:
   tags:
-    - contextily
-    - documentation
-    - gallery
+    packages:
+      - contextily
+    formats:
+      - documentation
+      - gallery
 
 - title: Contextily Tutorial
   url: https://contextily.readthedocs.io/en/latest/intro_guide.html
@@ -212,8 +231,10 @@
     - name: Dani Arribas-Bel & Contexily Contributors
   thumbnail:
   tags:
-    - contextily
-    - tutorial
+    packages:
+      - contextily
+    format:
+      - tutorial
 
 - title: Dask
   url: https://dask.org
@@ -223,8 +244,10 @@
     - name: Dask core developers
   thumbnail: ../_static/thumbnails/dask.png
   tags:
-    - dask
-    - documentation
+    packages:
+      - dask
+    formats:
+      - documentation
 
 - title: Dask Tutorial
   url: https://tutorial.dask.org/
@@ -234,8 +257,10 @@
     - name: Dask Developers
   thumbnail: ../_static/thumbnails/dask.png
   tags:
-    - dask
-    - tutorial
+    packages:
+      - dask
+    formats:
+      - tutorial
 
 - title: GeoCAT Tutorial
   url: https://geocat-comp.readthedocs.io/en/latest/examples.html
@@ -248,8 +273,10 @@
       affiliation_url: https://ncar.ucar.edu/
   thumbnail: ../_static/thumbnails/geocat.png
   tags:
-    - geocat
-    - tutorial
+    packages:
+      - geocat-comp
+    formats:
+      - tutorial
 
 - title: GeoCAT Gallery
   url: https://geocat-examples.readthedocs.io/
@@ -262,8 +289,11 @@
       affiliation_url: https://ncar.ucar.edu/
   thumbnail: ../_static/thumbnails/geocat.png
   tags:
-    - geocat
-    - gallery
+    packages:
+      - geocat-comp
+      - geocat-viz
+    formats:
+      - gallery
 
 - title: GeoPandas Documentation
   url: https://geopandas.org
@@ -273,8 +303,10 @@
     - name: GeoPandas developers
   thumbnail: ../_static/thumbnails/geopandas_icon.png
   tags:
-    - geopandas
-    - documentation
+    packages:
+      - geopandas
+    formats:
+      - documentation
 
 - title: GeoPandas Gallery
   url: https://geopandas.org/gallery/index.html
@@ -284,8 +316,10 @@
     - name: GeoPandas developers
   thumbnail: ../_static/thumbnails/geopandas_icon.png
   tags:
-    - geopandas
-    - gallery
+    packages:
+      - geopandas
+    formats:
+      - gallery
     
 
 - title: hvPlot
@@ -297,8 +331,10 @@
       url: https://holoviz.org/
   thumbnail: ../_static/thumbnails/hvplot-wm.png
   tags:
-    - hvPlot
-    - documentation
+    packages:
+      - hvPlot
+    formats:
+      - documentation
 
 - title: hvPlot Tutorial
   url: https://hvplot.holoviz.org/user_guide/index.html
@@ -309,8 +345,10 @@
       url: https://holoviz.org/
   thumbnail: ../_static/thumbnails/hvplot-wm.png
   tags:
-    - hvPlot
-    - tutorial
+    packages:
+      - hvPlot
+    formats:
+      - tutorial
 
 - title: hvPlot Gallery
   url: https://hvplot.holoviz.org/reference/index.html
@@ -321,8 +359,10 @@
       url: https://holoviz.org/
   thumbnail: ../_static/thumbnails/hvplot-wm.png
   tags:
-    - hvPlot
-    - gallery
+    packages:
+      - hvPlot
+    formats:
+      - gallery
 
 - title: Ipyleaflet
   url: https://ipyleaflet.readthedocs.io
@@ -332,8 +372,10 @@
     - name: The Jupyter development team
   thumbnail:
   tags:
-    - ipyleaflet
-    - documentation
+    packages:
+      - ipyleaflet
+    formats:
+      - documentation
 
 - title: Matplotlib
   url: https://matplotlib.org/
@@ -343,8 +385,10 @@
     - name: the Matplotlib development team
   thumbnail: ../_static/thumbnails/matplotlib-tutorial.png
   tags:
-    - matplotlib
-    - documentation
+    packages:
+      - matplotlib
+    formats:
+      - documentation
 
 - title: Matplotlib Tutorial
   url: https://matplotlib.org/stable/tutorials/index.html
@@ -354,8 +398,10 @@
     - name: the Matplotlib development team
   thumbnail: ../_static/thumbnails/matplotlib-tutorial.png
   tags:
-    - matplotlib
-    - tutorial
+    packages:
+      - matplotlib
+    formats:
+      - tutorial
 
 - title: Matplotlib Gallery
   url: https://matplotlib.org/stable/gallery/index.html
@@ -365,8 +411,10 @@
     - name: the Matplotlib development team
   thumbnail: ../_static/thumbnails/matplotlib-tutorial.png
   tags:
-    - matplotlib
-    - gallery
+    packages:
+      - matplotlib
+    formats:
+      - gallery
 
 - title: MetPy
   url: https://unidata.github.io/MetPy/latest/index.html
@@ -378,8 +426,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/metpy.jpg
   tags:
-    - metpy
-    - documentation
+    packages:
+      - metpy
+    formats:
+      - documentation
 
 - title: MetPy Tutorial
   url: https://unidata.github.io/MetPy/latest/tutorials/index.html
@@ -391,8 +441,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/metpy.jpg
   tags:
-    - metpy
-    - tutorial
+    packages:
+      - metpy
+    formats:
+      - tutorial
 
 - title: Unidata Python Workshop- MetPy
   url: https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/
@@ -403,8 +455,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/Unidata.png
   tags:
-    - metpy
-    - tutorial
+    packages:
+      - metpy
+    formats:
+      - tutorial
 
 - title: MetPy Gallery
   url: https://unidata.github.io/MetPy/latest/examples/index.html
@@ -416,8 +470,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/metpy.jpg
   tags:
-    - metpy
-    - gallery
+    packages:
+      - metpy
+    formats:
+      - gallery
 
 - title: Unidata Gallery
   url: https://unidata.github.io/python-training/gallery/gallery-home/
@@ -428,8 +484,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/Unidata.png
   tags:
-    - plotting
-    - gallery
+    domains:
+      - atmospheric science
+    formats:
+      - gallery
 
 - title: Unidata MetPy Mondays
   url: https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO
@@ -440,8 +498,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/metpy-mondays.jpeg
   tags:
-    - metpy
-    - video
+    packages:
+      - metpy
+    formats:
+      - video
 
 - title: Numpy
   url: https://numpy.org
@@ -451,8 +511,10 @@
     - name: NumPy
   thumbnail: ../_static/thumbnails/numpy.png
   tags:
-    - numpy
-    - documentation
+    packages:
+      - numpy
+    formats:
+      - documentation
 
 - title: Numpy Tutorials
   url: https://numpy.org/learn/
@@ -462,7 +524,8 @@
     - name: NumPy
   thumbnail: ../_static/thumbnails/numpy.png
   tags:
-    - numpy
+    packages:
+      - numpy
     
 - title: Unidata Numpy Workshop
   url: https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
@@ -473,8 +536,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/Unidata.png
   tags:
-    - numpy
-    - tutorial
+    packages:
+      - numpy
+    formats:
+      - tutorial
 
 - title: Intro to Numerical Computing with NumPy
   url: https://youtu.be/ZB7BZMhfPgk
@@ -499,8 +564,10 @@
     - name: Pandas Development Team
   thumbnail: ../_static/thumbnails/pandas.png
   tags:
-    - pandas
-    - documentation
+    packages:
+      - pandas
+    formats:
+      - documentation
 
 - title: Pandas Tutorials
   url: https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
@@ -510,8 +577,10 @@
     - name: Pandas Development Team
   thumbnail: ../_static/thumbnails/pandas.png
   tags:
-    - pandas
-    - tutorials
+    packages:
+      - pandas
+    formats:
+      - tutorials
 
 - title: Pandas Gallery
   url: https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
@@ -521,8 +590,10 @@
     - name: Pandas Development Team
   thumbnail: ../_static/thumbnails/pandas.png
   tags:
-    - pandas
-    - gallery
+    packages:
+      - pandas
+    formats:
+      - gallery
 
 - title: Rasterio
   url: https://rasterio.readthedocs.io
@@ -532,8 +603,10 @@
     - name: MapBox
   thumbnail:
   tags:
-    - rasterio
-    - documentation
+    packages:
+      - rasterio
+    formats:
+      - documentation
 
 - title: Rasterio Tutorial
   url: https://rasterio.readthedocs.io/en/latest/quickstart.html
@@ -543,8 +616,10 @@
     - name: MapBox
   thumbnail: ../_static/thumbnails/rasterio-tutorial.png
   tags:
-    - rasterio
-    - tutorial
+    packages:
+      - rasterio
+    formats:
+      - tutorial
 
 - title: Siphon
   url: https://unidata.github.io/siphon
@@ -556,8 +631,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/siphon.png
   tags:
-    - siphon
-    - documentation
+    packages:
+      - siphon
+    formats:
+      - documentation
 
 - title: Siphon Tutorial
   url: https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/
@@ -568,8 +645,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/siphon.png
   tags:
-    - siphon
-    - tutorial
+    packages:
+      - siphon
+    formats:
+      - tutorial
 
 - title: Siphon Gallery
   url: https://unidata.github.io/siphon/latest/examples/index.html
@@ -581,8 +660,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/siphon.png
   tags:
-    - siphon
-    - gallery
+    packages:
+      - siphon
+    formats:
+      - gallery
 
 - title: WRF-Python
   url: https://wrf-python.readthedocs.io
@@ -593,8 +674,10 @@
       affiliation_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
-    - wrf-python
-    - documentation
+    packages:
+      - wrf-python
+    formats:
+      - documentation
 
 - title: WRF-Python Gallery
   url: https://wrf-python.readthedocs.io/en/latest/plot.html
@@ -605,8 +688,10 @@
       affiliation_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
-    - wrf-python
-    - gallery
+    packages:
+      - wrf-python
+    formats:
+      - gallery
 
 - title: Xarray
   url: http://xarray.pydata.org/
@@ -620,8 +705,10 @@
     - name: Xarray Developers
   thumbnail: ../_static/thumbnails/xarray.png
   tags:
-    - xarray
-    - documentation
+    packages:
+      - xarray
+    formats:
+      - documentation
 
 - title: Unidata Xarray Workshop
   url: https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/
@@ -632,8 +719,10 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/xarray.png
   tags:
-    - xarray
-    - tutorial
+    packages:
+      - xarray
+    formats:
+      - tutorial
 
 - title: Xarray Tutorial
   url: https://xarray-contrib.github.io/xarray-tutorial/
@@ -643,5 +732,7 @@
     - name: Xarray Developers
   thumbnail: ../_static/thumbnails/xarray.png
   tags:
-    - xarray
-    - tutorial
+    packages:
+      - xarray
+    formats:
+      - tutorial
