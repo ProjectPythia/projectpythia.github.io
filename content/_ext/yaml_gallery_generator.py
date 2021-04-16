@@ -2,10 +2,26 @@ import yaml
 from textwrap import dedent
 import pathlib
 
-def build_from_yaml(filename, display_name):
+def tag_in_item(item, tag_str):
+    if tag_str is None:
+        return True
+    all_tags = []
+    for k, e in item["tags"].items():
+        all_tags.extend(e)
+    return tag_str in all_tags
 
-    with open(f'{filename}.yaml') as fid:
-        items = yaml.safe_load(fid)
+
+def generate_tag_set(all_items):
+
+    tag_set = set()
+    for item in all_items:
+        for k, e in item["tags"].items():
+            for t in e:
+                tag_set.add(t)
+    return tag_set
+
+
+def build_from_items(items, filename, display_name):
 
     # Build the gallery file
     panels_body = []
@@ -63,6 +79,17 @@ def build_from_yaml(filename, display_name):
 
     panels = f"""
 # {display_name} Gallery
+
+<div>
+  <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#packages">Packages</button>
+  <div id="packages" class="collapse">
+    <a href="#">Pure Python</a>
+    <a href="#">Numpy</a>
+    <a href="#">Jupyter</a>
+  </div>
+</div>
+
+
 ````{{panels}}
 :container: full-width
 :column: text-left col-6 col-lg-4
@@ -76,9 +103,28 @@ def build_from_yaml(filename, display_name):
     pathlib.Path(f'pages/{filename}.md').write_text(panels)
 
 
+
 def main(app):
-    for yaml_file, display_name in [('links', 'External Links')]:
-        build_from_yaml(yaml_file, display_name)
+
+    with open('links.yaml') as fid:
+        all_items = yaml.safe_load(fid)
+
+    build_from_items(all_items, 'links', 'External Links')
+
+    tag_set = generate_tag_set(all_items)
+    
+
+    for tag in tag_set:
+
+        items=[]
+        for item in all_items:
+            if tag_in_item(item, tag):
+                items.append(item)
+
+        build_from_items(items, 'links/{tag}', 'External Links - "{tag}"')
+        
+        
+
 
 
 def setup(app):

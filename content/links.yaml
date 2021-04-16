@@ -10,8 +10,10 @@
       affiliation_url: https://ncar.ucar.edu/
   thumbnail: ../_static/thumbnails/Xdev.png
   tags:
-    - basics
-    - videos
+    packages:
+      - pure python
+    formats:
+       - videos
 
 - title: Unidata Python Training
   url: https://unidata.github.io/python-training/python/intro-to-python/
@@ -22,7 +24,8 @@
       affiliation_url: https://www.unidata.ucar.edu/ 
   thumbnail: ../_static/thumbnails/Unidata.png
   tags:
-    - basics
+    formats:
+      -course
  
 - title: Unidata Python Workshop - Jupyter Notebooks Introduction
   url: https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
@@ -33,8 +36,8 @@
       affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: ../_static/thumbnails/Unidata.png
   tags:
-    - basics
-    - jupyter
+    packages:
+      - jupyter
 
 - title: An Introduction to Earth and Environmental Data Science
   url: https://earth-env-data-science.github.io/intro
@@ -483,8 +486,10 @@
       affiliation_url: https://www.enthought.com/
   thumbnail: ../_static/thumbnails/Enthought.png
   tags:
-    - numpy
-    - video
+    packags:
+      - numpy
+    format:
+      - video
 
 - title: Pandas
   url: https://pandas.pydata.org/

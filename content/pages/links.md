@@ -1,5 +1,16 @@
 
 # External Links Gallery
+
+<div>
+  <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#packages">Packages</button>
+  <div id="packages" class="collapse">
+    <a href="#">Pure Python</a>
+    <a href="#">Numpy</a>
+    <a href="#">Jupyter</a>
+  </div>
+</div>
+
+
 ````{panels}
 :container: full-width
 :column: text-left col-6 col-lg-4
@@ -30,8 +41,8 @@ A tutorial for getting started with Python aimed at scientists with experience i
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`basics,badge-primary badge-pill`
-{badge}`videos,badge-primary badge-pill`
+{badge}`packages,badge-primary badge-pill`
+{badge}`formats,badge-primary badge-pill`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -57,7 +68,7 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`basics,badge-primary badge-pill`
+{badge}`formats,badge-primary badge-pill`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -83,8 +94,7 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`basics,badge-primary badge-pill`
-{badge}`jupyter,badge-primary badge-pill`
+{badge}`packages,badge-primary badge-pill`
 
 ---
 :img-top: ../_static/thumbnails/earth_env_data_science.png
@@ -1109,8 +1119,8 @@ NumPy provides Python with a powerful array processing library and an elegant sy
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`numpy,badge-primary badge-pill`
-{badge}`video,badge-primary badge-pill`
+{badge}`packags,badge-primary badge-pill`
+{badge}`format,badge-primary badge-pill`
 
 ---
 :img-top: ../_static/thumbnails/pandas.png
