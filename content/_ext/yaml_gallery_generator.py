@@ -6,7 +6,7 @@ def tag_in_item(item, tag_str):
     if tag_str is None:
         return True
     all_tags = []
-    for k, e in item["tags"].items():
+    for k, e in item['tags'].items():
         all_tags.extend(e)
     return tag_str in all_tags
 
@@ -15,7 +15,7 @@ def generate_tag_set(all_items):
 
     tag_set = set()
     for item in all_items:
-        for k, e in item["tags"].items():
+        for k, e in item['tags'].items():
             for t in e:
                 tag_set.add(t)
     return tag_set
@@ -28,7 +28,13 @@ def build_from_items(items, filename, display_name):
     for item in items:
         if not item.get('thumbnail'):
             item['thumbnail'] = '../_static/images/ebp-logo.png'
-        tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
+
+        tag_set = set()
+        for k, e in item['tags'].items()
+                for t in e:
+                    tag_set.add(t)
+
+        tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in tag_Set]
         tags = '\n'.join(tags)
 
         authors = [a.get("name", "anonymous") for a in item['authors']]
