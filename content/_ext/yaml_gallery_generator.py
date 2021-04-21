@@ -50,6 +50,7 @@ def generate_tag_menu(all_items, tag_key):
             </div>
         </div>
         """
+    return menu_html
 
 
 def build_from_items(items, filename, display_name):
