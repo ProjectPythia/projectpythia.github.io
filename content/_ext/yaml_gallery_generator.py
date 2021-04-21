@@ -35,15 +35,21 @@ def generate_tag_menu_set(all_items, tag_key):
     return tag_menu_set
 
 
-def generate_tag_menus(tag_key):
-    <div>
-        <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#{tag_key}">{tag_key}.upper()</button>
-        <div id="{tag_key}" class="collapse">
-            <a href="#">Pure Python</a>
-            <a href="#">Numpy</a>
-            <a href="#">Jupyter</a>
+def generate_tag_menu(all_items, tag_key):
+
+    tag_menu_set = generate_tag_menu_set(all_items, tag_key)
+    hrefs = ''
+    for tag in tag_menu_set:
+        hrefs = hrefs + f'<a href="#">{tag.upper()}</a> \n' 
+
+    menu_html = f"""/
+        <div>
+            <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#{tag_key}">{tag_key.upper()}</button>
+            <div id="{tag_key}" class="collapse">
+                {hrefs}
+            </div>
         </div>
-    </div>
+        """
 
 
 def build_from_items(items, filename, display_name):
