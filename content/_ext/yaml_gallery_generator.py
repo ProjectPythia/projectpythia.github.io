@@ -40,7 +40,7 @@ def generate_tag_menu(all_items, tag_key):
     tag_menu_set = generate_tag_menu_set(all_items, tag_key)
     hrefs = ''
     for tag in tag_menu_set:
-        hrefs = hrefs + f'<a href="#">{tag.upper()}</a> \n' 
+        hrefs = hrefs + f'<a href="#">links/{tag.upper()}</a> \n' 
 
     menu_html = f"""/
         <div>
