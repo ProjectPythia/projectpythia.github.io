@@ -2,6 +2,9 @@ import yaml
 from textwrap import dedent
 import pathlib
 
+tag_keys = ['packages`, `formats`, `domains`]
+
+
 def tag_in_item(item, tag_str):
     if tag_str is None:
         return True
@@ -19,6 +22,28 @@ def generate_tag_set(all_items):
             for t in e:
                 tag_set.add(t)
     return tag_set
+
+
+def generate_tag_menu_set(all_items, tag_key):
+
+    tag_menu_set = set()
+    for item in all_items:
+        for k, e in item['tags'].items():
+            if k == tag_key:
+                for t in e:
+                    tag_menu_set.add(t)
+    return tag_menu_set
+
+
+def generate_tag_menus(tag_key):
+    <div>
+        <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#{tag_key}">{tag_key}.upper()</button>
+        <div id="{tag_key}" class="collapse">
+            <a href="#">Pure Python</a>
+            <a href="#">Numpy</a>
+            <a href="#">Jupyter</a>
+        </div>
+    </div>
 
 
 def build_from_items(items, filename, display_name):
@@ -85,6 +110,7 @@ def build_from_items(items, filename, display_name):
 
     panels = f"""
 # {display_name} Gallery
+
 
 <div>
   <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#packages">Packages</button>
