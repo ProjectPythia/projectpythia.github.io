@@ -2,8 +2,6 @@ import yaml
 from textwrap import dedent
 import pathlib
 
-tag_keys = ['packages`, `formats`, `domains`]
-
 
 def tag_in_item(item, tag_str):
     if tag_str is None:
@@ -14,46 +12,47 @@ def tag_in_item(item, tag_str):
     return tag_str in all_tags
 
 
-def generate_tag_set(all_items):
+def generate_tag_set(all_items, tag_key=None):
 
     tag_set = set()
     for item in all_items:
         for k, e in item['tags'].items():
+            if tag_key and k != tag_key:
+                continue            
             for t in e:
                 tag_set.add(t)
+
     return tag_set
 
 
-def generate_tag_menu_set(all_items, tag_key):
-
-    tag_menu_set = set()
-    for item in all_items:
-        for k, e in item['tags'].items():
-            if k == tag_key:
-                for t in e:
-                    tag_menu_set.add(t)
-    return tag_menu_set
+def sort_tags(tag_set):
+    
+    tag_list = list(tag_set)
+    tag_list.sort()
+    return tag_list
 
 
 def generate_tag_menu(all_items, tag_key):
 
-    tag_menu_set = generate_tag_menu_set(all_items, tag_key)
-    hrefs = ''
-    for tag in tag_menu_set:
-        hrefs = hrefs + f'<a href="#">links/{tag.upper()}</a> \n' 
+    tag_set = generate_tag_set(all_items, tag_key)
+    tag_list = sort_tags(tag_set)
 
-    menu_html = f"""/
-        <div>
-            <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#{tag_key}">{tag_key.upper()}</button>
-            <div id="{tag_key}" class="collapse">
-                {hrefs}
-            </div>
-        </div>
-        """
+    hrefs = ''
+    for tag in tag_list:
+        hrefs = hrefs + f'<a class="dropdown-item" href="links/{tag}.html">{tag.title()}</a> \n' 
+
+    menu_html = f"""
+<div class="dropdown">
+<button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#{tag_key}" aria-haspopup="true">{tag_key.title()}</button>
+<div id="{tag_key}" class="collapse dropdown-menu">
+{hrefs}
+</div>
+</div>
+"""
     return menu_html
 
 
-def build_from_items(items, filename, display_name):
+def build_from_items(items, filename, display_name, menu_html):
 
     # Build the gallery file
     panels_body = []
@@ -62,11 +61,12 @@ def build_from_items(items, filename, display_name):
             item['thumbnail'] = '../_static/images/ebp-logo.png'
 
         tag_set = set()
-        for k, e in item['tags'].items()
-                for t in e:
-                    tag_set.add(t)
+        for k, e in item['tags'].items():
+            for t in e:
+                tag_set.add(t)
 
-        tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in tag_Set]
+        tag_list = sort_tags(tag_set)
+        tags = [f'{{link-badge}}`"/links/{tag}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
         authors = [a.get("name", "anonymous") for a in item['authors']]
@@ -118,16 +118,7 @@ def build_from_items(items, filename, display_name):
     panels = f"""
 # {display_name} Gallery
 
-
-<div>
-  <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#packages">Packages</button>
-  <div id="packages" class="collapse">
-    <a href="#">Pure Python</a>
-    <a href="#">Numpy</a>
-    <a href="#">Jupyter</a>
-  </div>
-</div>
-
+{menu_html}
 
 ````{{panels}}
 :container: full-width
@@ -148,10 +139,13 @@ def main(app):
     with open('links.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
-    build_from_items(all_items, 'links', 'External Links')
+    menu_html=''
+    for tag_key in ['packages', 'formats', 'domains']:
+        menu_html = menu_html + generate_tag_menu(all_items, tag_key) + '\n'
+    
+    build_from_items(all_items, 'links', 'External Links', menu_html)
 
     tag_set = generate_tag_set(all_items)
-    
 
     for tag in tag_set:
 
@@ -160,10 +154,7 @@ def main(app):
             if tag_in_item(item, tag):
                 items.append(item)
 
-        build_from_items(items, 'links/{tag}', 'External Links - "{tag}"')
-        
-        
-
+        build_from_items(items, f'links/{tag}', f'External Links - "{tag}"', menu_html)
 
 
 def setup(app):

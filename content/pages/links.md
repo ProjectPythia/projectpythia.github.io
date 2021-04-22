@@ -1,14 +1,57 @@
 
 # External Links Gallery
 
-<div>
-  <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#packages">Packages</button>
-  <div id="packages" class="collapse">
-    <a href="#">Pure Python</a>
-    <a href="#">Numpy</a>
-    <a href="#">Jupyter</a>
-  </div>
+
+<div class="dropdown">
+<button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#packages" aria-haspopup="true">Packages</button>
+<div id="packages" class="collapse dropdown-menu">
+<a class="dropdown-item" href="links/cartopy.html">Cartopy</a> 
+<a class="dropdown-item" href="links/contextily.html">Contextily</a> 
+<a class="dropdown-item" href="links/dask.html">Dask</a> 
+<a class="dropdown-item" href="links/geocat-comp.html">Geocat-Comp</a> 
+<a class="dropdown-item" href="links/geocat-viz.html">Geocat-Viz</a> 
+<a class="dropdown-item" href="links/geopandas.html">Geopandas</a> 
+<a class="dropdown-item" href="links/hvPlot.html">Hvplot</a> 
+<a class="dropdown-item" href="links/ipyleaflet.html">Ipyleaflet</a> 
+<a class="dropdown-item" href="links/jupyter.html">Jupyter</a> 
+<a class="dropdown-item" href="links/matplotlib.html">Matplotlib</a> 
+<a class="dropdown-item" href="links/metpy.html">Metpy</a> 
+<a class="dropdown-item" href="links/numpy.html">Numpy</a> 
+<a class="dropdown-item" href="links/pandas.html">Pandas</a> 
+<a class="dropdown-item" href="links/pure python.html">Pure Python</a> 
+<a class="dropdown-item" href="links/rasterio.html">Rasterio</a> 
+<a class="dropdown-item" href="links/siphon.html">Siphon</a> 
+<a class="dropdown-item" href="links/wrf-python.html">Wrf-Python</a> 
+<a class="dropdown-item" href="links/xarray.html">Xarray</a> 
+
 </div>
+</div>
+
+
+<div class="dropdown">
+<button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#formats" aria-haspopup="true">Formats</button>
+<div id="formats" class="collapse dropdown-menu">
+<a class="dropdown-item" href="links/book.html">Book</a> 
+<a class="dropdown-item" href="links/course.html">Course</a> 
+<a class="dropdown-item" href="links/documentation.html">Documentation</a> 
+<a class="dropdown-item" href="links/gallery.html">Gallery</a> 
+<a class="dropdown-item" href="links/tutorial.html">Tutorial</a> 
+<a class="dropdown-item" href="links/video.html">Video</a> 
+
+</div>
+</div>
+
+
+<div class="dropdown">
+<button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
+<div id="domains" class="collapse dropdown-menu">
+<a class="dropdown-item" href="links/atmospheric science.html">Atmospheric Science</a> 
+<a class="dropdown-item" href="links/data science.html">Data Science</a> 
+<a class="dropdown-item" href="links/remote sensing.html">Remote Sensing</a> 
+
+</div>
+</div>
+
 
 
 ````{panels}
@@ -41,8 +84,8 @@ A tutorial for getting started with Python aimed at scientists with experience i
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`packages,badge-primary badge-pill`
-{badge}`formats,badge-primary badge-pill`
+{link-badge}`"/links/pure python.html",pure python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -68,7 +111,7 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`formats,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -94,7 +137,7 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`packages,badge-primary badge-pill`
+{link-badge}`"/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/earth_env_data_science.png
@@ -120,7 +163,7 @@ This book grew out of a course developed at Columbia University called Research 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/climlablogo.png
@@ -146,8 +189,8 @@ A hands on approach to climate physics and climate modeling. This JupyterBook se
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
-{badge}`book,badge-primary badge-pill`
+{link-badge}`"/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/earth-lab-logo.png
@@ -173,7 +216,7 @@ Earth analytics is an intermediate, multidisciplinary course that addresses majo
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/earth-lab-logo.png
@@ -199,7 +242,7 @@ This site contains open, tutorials and course materials covering topics includin
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/eScience_Logo_HR.png
@@ -225,7 +268,7 @@ Geohackweek is a 5-day hackweek to be held at the University of Washington eScie
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -251,7 +294,7 @@ We believe every researcher should know how to write short programs that clean a
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/zero-to-pandas.png
@@ -277,7 +320,7 @@ Created by: Jovian.ai
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/portland-state.png
@@ -303,7 +346,7 @@ In this course, we will have multiple occasions to procure, analyze, and visuali
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/british-columbia.jpg
@@ -329,8 +372,8 @@ This course teaches radiation and remote sensing, but also covers: how to write 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
-{badge}`remote sensing,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/remote sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/DC_logo_vision.png
@@ -356,7 +399,7 @@ The goal of this lesson is to provide an introduction to core geospatial data co
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -383,8 +426,8 @@ A collection of courework repositories for various data science classes taught b
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`course,badge-primary badge-pill`
-{badge}`data science,badge-primary badge-pill`
+{link-badge}`"/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/data science.html",data science,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/cartopy.png
@@ -410,8 +453,8 @@ Cartopy is a Python package designed for geospatial data processing in order to 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`cartopy,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/cartopy.png
@@ -437,8 +480,8 @@ Visual examples demonstrating some of the functionality of Cartopy, particularly
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`cartopy,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -464,9 +507,9 @@ contextily is a small Python 3 (3.6 and above) package to retrieve tile maps fro
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`contextily,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -492,8 +535,8 @@ Welcome to the taster guide for contextily, the package for contextual tiles in 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`contextily,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/dask.png
@@ -519,8 +562,8 @@ Dask provides advanced parallelism for analytics, enabling performance at scale 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`dask,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/dask.png
@@ -546,8 +589,8 @@ Dask is a parallel computing library that scales the existing Python ecosystem. 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`dask,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/geocat.png
@@ -573,8 +616,8 @@ The examples below show GeoCAT-comp functions being utilized in real-world use c
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`geocat,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/geocat.png
@@ -601,8 +644,9 @@ A gallery of plotting examples from GeoCat.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`geocat,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/geopandas_icon.png
@@ -628,8 +672,8 @@ GeoPandas is an open source project to make working with geospatial data in pyth
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`geopandas,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/geopandas_icon.png
@@ -655,8 +699,8 @@ Examples that show off the functionality in GeoPandas. They highlight many of th
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`geopandas,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/hvplot-wm.png
@@ -682,8 +726,8 @@ hvPlot provides a high-level plotting API built on HoloViews that provides a gen
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`hvPlot,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/hvplot-wm.png
@@ -709,8 +753,8 @@ The user guide provides a detailed introduction to the API and features of hvPlo
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`hvPlot,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/hvplot-wm.png
@@ -737,8 +781,8 @@ Incomplete Reference Gallery containing some small examples of different plot ty
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`hvPlot,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -765,8 +809,8 @@ Interactive maps in the Jupyter notebook.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`ipyleaflet,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/matplotlib-tutorial.png
@@ -792,8 +836,8 @@ Matplotlib is a comprehensive library for creating static, animated, and interac
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`matplotlib,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/matplotlib-tutorial.png
@@ -819,8 +863,8 @@ This page contains more in-depth guides for using Matplotlib. It is broken up in
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`matplotlib,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/matplotlib-tutorial.png
@@ -847,8 +891,8 @@ This gallery contains examples of the many things you can do with Matplotlib.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`matplotlib,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/metpy.jpg
@@ -874,8 +918,8 @@ MetPy is a collection of tools in Python for reading, visualizing, and performin
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`metpy,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/metpy.jpg
@@ -901,8 +945,8 @@ This collection of tutorials (under development) demonstrates the use of MetPy t
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`metpy,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -928,8 +972,8 @@ MetPy is a modern meteorological open-source toolkit for Python. It is a maintai
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`metpy,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/metpy.jpg
@@ -956,8 +1000,8 @@ Examples of using a variety of MetPy’s functionality together.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`metpy,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -983,8 +1027,8 @@ Check out detailed examples for atmospheric science and meteorology, from data a
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`plotting,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/atmospheric science.html",atmospheric science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/metpy-mondays.jpeg
@@ -1010,8 +1054,8 @@ A weekly video series showing how to use MetPy or other Python libraries to solv
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`metpy,badge-primary badge-pill`
-{badge}`video,badge-primary badge-pill`
+{link-badge}`"/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/numpy.png
@@ -1038,8 +1082,8 @@ The fundamental package for scientific computing with Python.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`numpy,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/numpy.png
@@ -1066,7 +1110,7 @@ A curated collection of external resources teaching numpy from beginner to advan
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`numpy,badge-primary badge-pill`
+{link-badge}`"/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/Unidata.png
@@ -1092,8 +1136,8 @@ Unidata Numpy tutorial that covers how to create an array of ‘data’, perform
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`numpy,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/Enthought.png
@@ -1119,8 +1163,8 @@ NumPy provides Python with a powerful array processing library and an elegant sy
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`packags,badge-primary badge-pill`
-{badge}`format,badge-primary badge-pill`
+{link-badge}`"/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/pandas.png
@@ -1146,8 +1190,8 @@ Pandas is a fast, powerful, flexible and easy to use open source data analysis a
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`pandas,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/pandas.png
@@ -1174,8 +1218,8 @@ Tutorial for getting started with pandas.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`pandas,badge-primary badge-pill`
-{badge}`tutorials,badge-primary badge-pill`
+{link-badge}`"/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/pandas.png
@@ -1202,8 +1246,8 @@ A gallery of example pandas functionality.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`pandas,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -1229,8 +1273,8 @@ Geographic information systems use GeoTIFF and other formats to organize and sto
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`rasterio,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/rasterio-tutorial.png
@@ -1256,8 +1300,8 @@ This document explains how to use Rasterio to read existing files and to create 
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`rasterio,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/siphon.png
@@ -1283,8 +1327,8 @@ Siphon is a collection of Python utilities for downloading data from remote data
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`siphon,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/siphon.png
@@ -1310,8 +1354,8 @@ An overview on Siphon from the Unidata Python Workshop that: uses Siphon to acce
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`siphon,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/siphon.png
@@ -1338,8 +1382,8 @@ Examples of using Siphon’s functionality.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`siphon,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -1365,8 +1409,8 @@ A collection of diagnostic and interpolation routines for use with output from t
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`wrf-python,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/images/ebp-logo.png
@@ -1392,8 +1436,8 @@ Examples of how wrf-python can be used to make plots with matplotlib (with basem
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`wrf-python,badge-primary badge-pill`
-{badge}`gallery,badge-primary badge-pill`
+{link-badge}`"/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/xarray.png
@@ -1423,8 +1467,8 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`xarray,badge-primary badge-pill`
-{badge}`documentation,badge-primary badge-pill`
+{link-badge}`"/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/xarray.png
@@ -1450,8 +1494,8 @@ An introduction to Xarray through the Unidata Python Workshop that asks, "What i
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`xarray,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/xarray.png
@@ -1478,7 +1522,7 @@ A collection of tutorials provided by the Xarray developers.
 :classes: btn-outline-primary btn-block
 ```
 
-{badge}`xarray,badge-primary badge-pill`
-{badge}`tutorial,badge-primary badge-pill`
+{link-badge}`"/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ````
