@@ -39,7 +39,7 @@ def generate_tag_menu(all_items, tag_key):
 
     hrefs = ''
     for tag in tag_list:
-        hrefs = hrefs + f'<a class="dropdown-item" href="https://projectpythia.org/pages/links/{tag}.html">{tag.title()}</a> \n' 
+        hrefs = hrefs + f'<a class="dropdown-item" href="https://projectpythia.org/pages/links/{tag.replace(' ', '-')}.html">{tag.title()}</a> \n' 
 
     menu_html = f"""
 <div class="dropdown">
@@ -154,7 +154,7 @@ def main(app):
             if tag_in_item(item, tag):
                 items.append(item)
 
-        build_from_items(items, f'links/{tag}', f'External Links - "{tag}"', menu_html)
+        build_from_items(items, f'links/{tag.replace(' ', '-')}', f'External Links - "{tag}"', menu_html)
 
 
 def setup(app):
