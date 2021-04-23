@@ -39,7 +39,7 @@ def generate_tag_menu(all_items, tag_key):
 
     hrefs = ''
     for tag in tag_list:
-        hrefs = hrefs + f'<a class="dropdown-item" href="links/{tag}.html">{tag.title()}</a> \n' 
+        hrefs = hrefs + f'<a class="dropdown-item" href="https://projectpythia.org/pages/links/{tag}.html">{tag.title()}</a> \n' 
 
     menu_html = f"""
 <div class="dropdown">
