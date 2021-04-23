@@ -5,24 +5,24 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#packages" aria-haspopup="true">Packages</button>
 <div id="packages" class="collapse dropdown-menu">
-<a class="dropdown-item" href="links/cartopy.html">Cartopy</a> 
-<a class="dropdown-item" href="links/contextily.html">Contextily</a> 
-<a class="dropdown-item" href="links/dask.html">Dask</a> 
-<a class="dropdown-item" href="links/geocat-comp.html">Geocat-Comp</a> 
-<a class="dropdown-item" href="links/geocat-viz.html">Geocat-Viz</a> 
-<a class="dropdown-item" href="links/geopandas.html">Geopandas</a> 
-<a class="dropdown-item" href="links/hvPlot.html">Hvplot</a> 
-<a class="dropdown-item" href="links/ipyleaflet.html">Ipyleaflet</a> 
-<a class="dropdown-item" href="links/jupyter.html">Jupyter</a> 
-<a class="dropdown-item" href="links/matplotlib.html">Matplotlib</a> 
-<a class="dropdown-item" href="links/metpy.html">Metpy</a> 
-<a class="dropdown-item" href="links/numpy.html">Numpy</a> 
-<a class="dropdown-item" href="links/pandas.html">Pandas</a> 
-<a class="dropdown-item" href="links/pure python.html">Pure Python</a> 
-<a class="dropdown-item" href="links/rasterio.html">Rasterio</a> 
-<a class="dropdown-item" href="links/siphon.html">Siphon</a> 
-<a class="dropdown-item" href="links/wrf-python.html">Wrf-Python</a> 
-<a class="dropdown-item" href="links/xarray.html">Xarray</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/cartopy.html">Cartopy</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/contextily.html">Contextily</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/dask.html">Dask</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/geocat-comp.html">Geocat-Comp</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/geocat-viz.html">Geocat-Viz</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/geopandas.html">Geopandas</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/hvPlot.html">Hvplot</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/ipyleaflet.html">Ipyleaflet</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/jupyter.html">Jupyter</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/matplotlib.html">Matplotlib</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/metpy.html">Metpy</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/numpy.html">Numpy</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/pandas.html">Pandas</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/pure python.html">Pure Python</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/rasterio.html">Rasterio</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/siphon.html">Siphon</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/wrf-python.html">Wrf-Python</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/xarray.html">Xarray</a> 
 
 </div>
 </div>
@@ -31,12 +31,12 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#formats" aria-haspopup="true">Formats</button>
 <div id="formats" class="collapse dropdown-menu">
-<a class="dropdown-item" href="links/book.html">Book</a> 
-<a class="dropdown-item" href="links/course.html">Course</a> 
-<a class="dropdown-item" href="links/documentation.html">Documentation</a> 
-<a class="dropdown-item" href="links/gallery.html">Gallery</a> 
-<a class="dropdown-item" href="links/tutorial.html">Tutorial</a> 
-<a class="dropdown-item" href="links/video.html">Video</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/book.html">Book</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/course.html">Course</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/documentation.html">Documentation</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/gallery.html">Gallery</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/tutorial.html">Tutorial</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/video.html">Video</a> 
 
 </div>
 </div>
@@ -45,9 +45,9 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
 <div id="domains" class="collapse dropdown-menu">
-<a class="dropdown-item" href="links/atmospheric science.html">Atmospheric Science</a> 
-<a class="dropdown-item" href="links/data science.html">Data Science</a> 
-<a class="dropdown-item" href="links/remote sensing.html">Remote Sensing</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/atmospheric science.html">Atmospheric Science</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/data science.html">Data Science</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/remote sensing.html">Remote Sensing</a> 
 
 </div>
 </div>

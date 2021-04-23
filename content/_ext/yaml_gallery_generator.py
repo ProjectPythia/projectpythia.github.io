@@ -66,7 +66,7 @@ def build_from_items(items, filename, display_name, menu_html):
                 tag_set.add(t)
 
         tag_list = sort_tags(tag_set)
-        tags = [f'{{link-badge}}`"/links/{tag}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
+        tags = [f'{{link-badge}}`"https://projectpythia.org/pages/links/{tag}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
         authors = [a.get("name", "anonymous") for a in item['authors']]
