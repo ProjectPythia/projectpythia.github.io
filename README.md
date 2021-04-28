@@ -23,3 +23,5 @@ and view the built site in your web browser with
 ```
 open _build/html/index.html
 ```
+
+You can find more details in the [Contributor's Guide](https://projectpythia.org/pages/contributing.html).
