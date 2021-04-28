@@ -18,7 +18,7 @@
 <a class="dropdown-item" href="https://projectpythia.org/pages/links/metpy.html">Metpy</a> 
 <a class="dropdown-item" href="https://projectpythia.org/pages/links/numpy.html">Numpy</a> 
 <a class="dropdown-item" href="https://projectpythia.org/pages/links/pandas.html">Pandas</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/pure python.html">Pure Python</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/pure-python.html">Pure Python</a> 
 <a class="dropdown-item" href="https://projectpythia.org/pages/links/rasterio.html">Rasterio</a> 
 <a class="dropdown-item" href="https://projectpythia.org/pages/links/siphon.html">Siphon</a> 
 <a class="dropdown-item" href="https://projectpythia.org/pages/links/wrf-python.html">Wrf-Python</a> 
@@ -45,9 +45,9 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
 <div id="domains" class="collapse dropdown-menu">
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/atmospheric science.html">Atmospheric Science</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/data science.html">Data Science</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/remote sensing.html">Remote Sensing</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/atmospheric-science.html">Atmospheric Science</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/data-science.html">Data Science</a> 
+<a class="dropdown-item" href="https://projectpythia.org/pages/links/remote-sensing.html">Remote Sensing</a> 
 
 </div>
 </div>
@@ -61,7 +61,7 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 ---
-:img-top: ../_static/thumbnails/Xdev.png
+:img-top: /content/_static/thumbnails/Xdev.png
 +++
 **Your First Python Tutorial**
 
@@ -84,11 +84,11 @@ A tutorial for getting started with Python aimed at scientists with experience i
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/pure python.html",pure python,cls=badge-primary badge-pill text-light`
+{link-badge}`"https://projectpythia.org/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
 {link-badge}`"https://projectpythia.org/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: content/_static/thumbnails/Unidata.png
+:img-top: /content/_static/thumbnails/Unidata.png
 +++
 **Unidata Python Training**
 
@@ -114,7 +114,7 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 {link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Unidata.png
+:img-top: /content/_static/thumbnails/Unidata.png
 +++
 **Unidata Python Workshop - Jupyter Notebooks Introduction**
 
@@ -140,7 +140,7 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 {link-badge}`"https://projectpythia.org/pages/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/earth_env_data_science.png
+:img-top: /content/_build/_static/thumbnails/earth_env_data_science.png
 +++
 **An Introduction to Earth and Environmental Data Science**
 
@@ -373,7 +373,7 @@ This course teaches radiation and remote sensing, but also covers: how to write 
 ```
 
 {link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/remote sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
+{link-badge}`"https://projectpythia.org/pages/links/remote-sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/DC_logo_vision.png
@@ -427,7 +427,7 @@ A collection of courework repositories for various data science classes taught b
 ```
 
 {link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/data science.html",data science,cls=badge-primary badge-pill text-light`
+{link-badge}`"https://projectpythia.org/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: ../_static/thumbnails/cartopy.png
@@ -1027,7 +1027,7 @@ Check out detailed examples for atmospheric science and meteorology, from data a
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/atmospheric science.html",atmospheric science,cls=badge-primary badge-pill text-light`
+{link-badge}`"https://projectpythia.org/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
 {link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---

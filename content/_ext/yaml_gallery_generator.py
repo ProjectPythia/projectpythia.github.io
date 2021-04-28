@@ -39,7 +39,7 @@ def generate_tag_menu(all_items, tag_key):
 
     hrefs = ''
     for tag in tag_list:
-        hrefs = hrefs + f'<a class="dropdown-item" href="https://projectpythia.org/pages/links/{tag.replace(' ', '-')}.html">{tag.title()}</a> \n' 
+        hrefs = hrefs + f'<a class="dropdown-item" href="https://projectpythia.org/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' 
 
     menu_html = f"""
 <div class="dropdown">
@@ -52,16 +52,14 @@ def generate_tag_menu(all_items, tag_key):
     return menu_html
 
 
-def build_from_items(items, filename, display_name, menu_html, flt=None):
+def build_from_items(items, filename, display_name, menu_html):
 
     # Build the gallery file
     panels_body = []
     for item in items:
         if not item.get('thumbnail'):
             item['thumbnail'] = '../_static/images/ebp-logo.png'
-        if flt == True:
-            item['thumbnail'] = '../' + item['thumbnail']
-
+        print(item['thumbnail'])
 
         tag_set = set()
         for k, e in item['tags'].items():
@@ -69,7 +67,7 @@ def build_from_items(items, filename, display_name, menu_html, flt=None):
                 tag_set.add(t)
 
         tag_list = sort_tags(tag_set)
-        tags = [f'{{link-badge}}`"https://projectpythia.org/pages/links/{tag}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
+        tags = [f'{{link-badge}}`"https://projectpythia.org/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
         authors = [a.get("name", "anonymous") for a in item['authors']]
@@ -119,7 +117,7 @@ def build_from_items(items, filename, display_name, menu_html, flt=None):
     panels_body = '\n'.join(panels_body)
 
     panels = f"""
-# {display_name} Gallery
+# {display_name}
 
 {menu_html}
 
@@ -146,7 +144,8 @@ def main(app):
     for tag_key in ['packages', 'formats', 'domains']:
         menu_html = menu_html + generate_tag_menu(all_items, tag_key) + '\n'
     
-    build_from_items(all_items, 'links', 'External Links', menu_html)
+    build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
+    print('main gallery done')
 
     tag_set = generate_tag_set(all_items)
 
@@ -157,7 +156,7 @@ def main(app):
             if tag_in_item(item, tag):
                 items.append(item)
 
-        build_from_items(items, f'links/{tag.replace(' ', '-')}', f'External Links - "{tag}"', menu_html, flt=True)
+        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html)
 
 
 def setup(app):

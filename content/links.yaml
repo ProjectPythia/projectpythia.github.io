@@ -8,7 +8,7 @@
       url: https://ncar.github.io/xdev/
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: ../_static/thumbnails/Xdev.png
+  thumbnail: /content/_static/thumbnails/Xdev.png
   tags:
     packages:
       - pure python
@@ -22,7 +22,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/ 
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /content/_static/thumbnails/Unidata.png
   tags:
     formats:
       - course
@@ -34,7 +34,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /content/_static/thumbnails/Unidata.png
   tags:
     packages:
       - jupyter
@@ -48,7 +48,7 @@
       affiliation: Lamont-Doherty Earth Observatory
     - name: Kerry Key
       affiliation: Lamont-Doherty Earth Observatory
-  thumbnail: ../_static/thumbnails/earth_env_data_science.png
+  thumbnail: /content/_build/_static/thumbnails/earth_env_data_science.png
   tags:
     formats:
       - course
