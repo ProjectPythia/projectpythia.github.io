@@ -61,7 +61,7 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 ---
-:img-top: /content/_static/thumbnails/Xdev.png
+:img-top: ../_static/thumbnails/Xdev.png
 +++
 **Your First Python Tutorial**
 
@@ -88,7 +88,7 @@ A tutorial for getting started with Python aimed at scientists with experience i
 {link-badge}`"https://projectpythia.org/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: /content/_static/thumbnails/Unidata.png
+:img-top: ../_static/thumbnails/Unidata.png
 +++
 **Unidata Python Training**
 
@@ -114,7 +114,7 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 {link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: /content/_static/thumbnails/Unidata.png
+:img-top: ../_static/thumbnails/Unidata.png
 +++
 **Unidata Python Workshop - Jupyter Notebooks Introduction**
 
@@ -140,7 +140,7 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 {link-badge}`"https://projectpythia.org/pages/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: /content/_build/_static/thumbnails/earth_env_data_science.png
+:img-top: ../_static/thumbnails/earth_env_data_science.png
 +++
 **An Introduction to Earth and Environmental Data Science**
 

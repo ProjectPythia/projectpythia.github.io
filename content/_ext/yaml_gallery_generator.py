@@ -52,14 +52,15 @@ def generate_tag_menu(all_items, tag_key):
     return menu_html
 
 
-def build_from_items(items, filename, display_name, menu_html):
+def build_from_items(items, filename, display_name, menu_html, flt=None):
 
     # Build the gallery file
     panels_body = []
     for item in items:
         if not item.get('thumbnail'):
             item['thumbnail'] = '../_static/images/ebp-logo.png'
-        print(item['thumbnail'])
+        thumbnail = '../' + item['thumbnail'] if flt else item['thumbnail']
+        print(thumbnail)
 
         tag_set = set()
         for k, e in item['tags'].items():
@@ -89,7 +90,7 @@ def build_from_items(items, filename, display_name, menu_html):
         panels_body.append(
             f"""\
 ---
-:img-top: {item["thumbnail"]}
+:img-top: {thumbnail}
 +++
 **{item["title"]}**
 
@@ -156,7 +157,7 @@ def main(app):
             if tag_in_item(item, tag):
                 items.append(item)
 
-        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html)
+        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html, flt=True)
 
 
 def setup(app):
