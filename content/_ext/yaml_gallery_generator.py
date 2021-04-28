@@ -60,7 +60,6 @@ def build_from_items(items, filename, display_name, menu_html, flt=None):
         if not item.get('thumbnail'):
             item['thumbnail'] = '../_static/images/ebp-logo.png'
         thumbnail = '../' + item['thumbnail'] if flt else item['thumbnail']
-        print(thumbnail)
 
         tag_set = set()
         for k, e in item['tags'].items():
@@ -146,7 +145,6 @@ def main(app):
         menu_html = menu_html + generate_tag_menu(all_items, tag_key) + '\n'
     
     build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
-    print('main gallery done')
 
     tag_set = generate_tag_set(all_items)
 
