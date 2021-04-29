@@ -4,10 +4,8 @@ channels:
   - nodefaults
 dependencies:
   - myst-nb==0.10.1
-  - sphinx-panels
-  - pydata-sphinx-theme
-  - jupyterlab
-  - sphinx-autobuild
-  - matplotlib
   - sphinx-book-theme
+  - sphinx-panels
+  - matplotlib
   - pandas
+  - pyyaml
