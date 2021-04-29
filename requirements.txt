@@ -1,6 +1,0 @@
-myst-nb==0.10.1
-sphinx-book-theme
-sphinx-panels
-matplotlib
-pandas
-pyyaml
