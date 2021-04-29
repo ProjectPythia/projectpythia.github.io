@@ -1,6 +1,7 @@
 name: pythia
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   - myst-nb==0.10.1
   - sphinx-panels
