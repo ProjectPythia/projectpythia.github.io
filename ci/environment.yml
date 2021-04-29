@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - myst-nb==0.10.1
+  - myst-nb==0.12.3
   - sphinx-book-theme
   - sphinx-panels
   - matplotlib
