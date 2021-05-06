@@ -12,6 +12,19 @@ def tag_in_item(item, tag_str):
     return tag_str in all_tags
 
 
+def generate_tag_keys(all_items):
+
+    key_set = set()
+    for item in all_items:
+        for k, e in item['tags'].items():
+            key_set.add(k)
+    
+    key_list = list(key_set)
+    key_list.sort()
+
+    return key_list
+
+
 def generate_tag_set(all_items, tag_key=None):
 
     tag_set = set()
@@ -140,12 +153,11 @@ def main(app):
     with open('links.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
+    key_list = generate_tag_keys(all_items)
     menu_html='<div class="d-flex flex-row">' + '\n'
-    for tag_key in ['packages', 'formats', 'domains']:
+    for tag_key in key_list:
         menu_html += generate_tag_menu(all_items, tag_key) + '\n'
     menu_html += '</div>' + '\n'
-
-    #javascript
     menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     
     build_from_items(all_items, 'links', 'External Links Gallery', menu_html)

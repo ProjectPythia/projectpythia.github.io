@@ -165,7 +165,7 @@
       url: https://carpentries.org/
   thumbnail: /_static/thumbnails/DC_logo_vision.png
   tags:
-    format:
+    formats:
       - course
 
 - title: Dani Arribas-Bel Course Repositories
@@ -178,7 +178,7 @@
       affiliation_url: https://www.liverpool.ac.uk/geography-and-planning/
   thumbnail:
   tags:
-    format:
+    formats:
       - course
     domains:
       - data science
@@ -233,7 +233,7 @@
   tags:
     packages:
       - contextily
-    format:
+    formats:
       - tutorial
 
 - title: Dask
@@ -551,9 +551,9 @@
       affiliation_url: https://www.enthought.com/
   thumbnail: /_static/thumbnails/Enthought.png
   tags:
-    packags:
+    packages:
       - numpy
-    format:
+    formats:
       - video
 
 - title: Pandas
