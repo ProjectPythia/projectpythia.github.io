@@ -24,6 +24,7 @@ jobs:
 
       - name: Build
         run: |
+          conda env list
           cd content
           make -j4 html
 
