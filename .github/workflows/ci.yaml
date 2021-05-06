@@ -8,6 +8,9 @@ on:
 jobs:
   deploy-site:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
     steps:
       - uses: actions/checkout@v2
 
@@ -24,6 +27,7 @@ jobs:
 
       - name: Build
         run: |
+          conda env list
           cd content
           make -j4 html
 
