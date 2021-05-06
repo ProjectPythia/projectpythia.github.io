@@ -8,7 +8,7 @@
       url: https://ncar.github.io/xdev/
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: ../_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/Xdev.png
   tags:
     packages:
       - pure python
@@ -22,7 +22,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/ 
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/Unidata.png
   tags:
     formats:
       - course
@@ -34,7 +34,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/Unidata.png
   tags:
     packages:
       - jupyter
@@ -48,7 +48,7 @@
       affiliation: Lamont-Doherty Earth Observatory
     - name: Kerry Key
       affiliation: Lamont-Doherty Earth Observatory
-  thumbnail: ../_static/thumbnails/earth_env_data_science.png
+  thumbnail: /_static/thumbnails/earth_env_data_science.png
   tags:
     formats:
       - course
@@ -61,7 +61,7 @@
     - name: Brian Rose
       url: http://www.atmos.albany.edu/facstaff/brose/
       affiliation: University of Albany
-  thumbnail: ../_static/thumbnails/climlablogo.png
+  thumbnail: /_static/thumbnails/climlablogo.png
   tags:
     formats:
       - course
@@ -75,7 +75,7 @@
     - name: Earth Lab
       url: https://www.earthdatascience.org/
       affiliation: University of Colorado Boulder
-  thumbnail: ../_static/thumbnails/earth-lab-logo.png
+  thumbnail: /_static/thumbnails/earth-lab-logo.png
   tags:
     formats:
       - course
@@ -87,7 +87,7 @@
   authors:
     - name: Earth Lab
       affiliation: University of Colorado Boulder
-  thumbnail: ../_static/thumbnails/earth-lab-logo.png
+  thumbnail: /_static/thumbnails/earth-lab-logo.png
   tags:
     formats:
       - course
@@ -100,7 +100,7 @@
     - name: eScience Institute
       url: https://escience.washington.edu/
       affiliation: University of Washington
-  thumbnail: ../_static/thumbnails/eScience_Logo_HR.png
+  thumbnail: /_static/thumbnails/eScience_Logo_HR.png
   tags:
     formats:
       - course
@@ -123,7 +123,7 @@
   authors:
     - name: Jovian.ai
       url: https://www.jovian.ai/
-  thumbnail: ../_static/thumbnails/zero-to-pandas.png
+  thumbnail: /_static/thumbnails/zero-to-pandas.png
   tags:
     formats:
       - course
@@ -136,7 +136,7 @@
     - name: Jay Gopalakrishnan
       url: http://web.pdx.edu/~gjay/
       affiliation: Portland State University
-  thumbnail: ../_static/thumbnails/portland-state.png
+  thumbnail: /_static/thumbnails/portland-state.png
   tags:
     formats:
       - course
@@ -149,7 +149,7 @@
     - name: Philip Austin
       email: paustin@eos.ubc.ca
       affiliation: University of British Columbia
-  thumbnail: ../_static/thumbnails/british-columbia.jpg
+  thumbnail: /_static/thumbnails/british-columbia.jpg
   tags:
     formats:
       - course
@@ -163,7 +163,7 @@
   authors:
     - name: The Carpentries
       url: https://carpentries.org/
-  thumbnail: ../_static/thumbnails/DC_logo_vision.png
+  thumbnail: /_static/thumbnails/DC_logo_vision.png
   tags:
     format:
       - course
@@ -189,7 +189,7 @@
     Cartopy is a Python package designed for geospatial data processing in order to produce maps and other geospatial data analyses.
   authors:
     - name: UK Met Office
-  thumbnail: ../_static/thumbnails/cartopy.png
+  thumbnail: /_static/thumbnails/cartopy.png
   tags:
     packages:
       - cartopy
@@ -202,7 +202,7 @@
     Visual examples demonstrating some of the functionality of Cartopy, particularly its matplotlib interface.
   authors:
     - name: UK Met Office
-  thumbnail: ../_static/thumbnails/cartopy.png
+  thumbnail: /_static/thumbnails/cartopy.png
   tags:
     packages:
       - cartopy
@@ -242,7 +242,7 @@
     Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love.
   authors:
     - name: Dask core developers
-  thumbnail: ../_static/thumbnails/dask.png
+  thumbnail: /_static/thumbnails/dask.png
   tags:
     packages:
       - dask
@@ -255,7 +255,7 @@
     Dask is a parallel computing library that scales the existing Python ecosystem. This tutorial will introduce Dask and parallel data analysis more generally.
   authors:
     - name: Dask Developers
-  thumbnail: ../_static/thumbnails/dask.png
+  thumbnail: /_static/thumbnails/dask.png
   tags:
     packages:
       - dask
@@ -271,7 +271,7 @@
       url: https://geocat.ucar.edu/
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: ../_static/thumbnails/geocat.png
+  thumbnail: /_static/thumbnails/geocat.png
   tags:
     packages:
       - geocat-comp
@@ -287,7 +287,7 @@
       url: https://geocat.ucar.edu/
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: ../_static/thumbnails/geocat.png
+  thumbnail: /_static/thumbnails/geocat.png
   tags:
     packages:
       - geocat-comp
@@ -301,7 +301,7 @@
     GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
   authors:
     - name: GeoPandas developers
-  thumbnail: ../_static/thumbnails/geopandas_icon.png
+  thumbnail: /_static/thumbnails/geopandas_icon.png
   tags:
     packages:
       - geopandas
@@ -314,7 +314,7 @@
     Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
   authors:
     - name: GeoPandas developers
-  thumbnail: ../_static/thumbnails/geopandas_icon.png
+  thumbnail: /_static/thumbnails/geopandas_icon.png
   tags:
     packages:
       - geopandas
@@ -329,7 +329,7 @@
   authors:
     - name: HoloViz developers
       url: https://holoviz.org/
-  thumbnail: ../_static/thumbnails/hvplot-wm.png
+  thumbnail: /_static/thumbnails/hvplot-wm.png
   tags:
     packages:
       - hvPlot
@@ -343,7 +343,7 @@
   authors:
     - name: HoloViz developers
       url: https://holoviz.org/
-  thumbnail: ../_static/thumbnails/hvplot-wm.png
+  thumbnail: /_static/thumbnails/hvplot-wm.png
   tags:
     packages:
       - hvPlot
@@ -357,7 +357,7 @@
   authors:
     - name: HoloViz developers
       url: https://holoviz.org/
-  thumbnail: ../_static/thumbnails/hvplot-wm.png
+  thumbnail: /_static/thumbnails/hvplot-wm.png
   tags:
     packages:
       - hvPlot
@@ -383,7 +383,7 @@
     Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
   authors:
     - name: the Matplotlib development team
-  thumbnail: ../_static/thumbnails/matplotlib-tutorial.png
+  thumbnail: /_static/thumbnails/matplotlib-tutorial.png
   tags:
     packages:
       - matplotlib
@@ -396,7 +396,7 @@
     This page contains more in-depth guides for using Matplotlib. It is broken up into beginner, intermediate, and advanced sections, as well as sections covering specific topics.
   authors:
     - name: the Matplotlib development team
-  thumbnail: ../_static/thumbnails/matplotlib-tutorial.png
+  thumbnail: /_static/thumbnails/matplotlib-tutorial.png
   tags:
     packages:
       - matplotlib
@@ -409,7 +409,7 @@
     This gallery contains examples of the many things you can do with Matplotlib.
   authors:
     - name: the Matplotlib development team
-  thumbnail: ../_static/thumbnails/matplotlib-tutorial.png
+  thumbnail: /_static/thumbnails/matplotlib-tutorial.png
   tags:
     packages:
       - matplotlib
@@ -424,7 +424,7 @@
     - name: MetPy developers
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/metpy.jpg
+  thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
       - metpy
@@ -439,7 +439,7 @@
     - name: MetPy developers
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/metpy.jpg
+  thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
       - metpy
@@ -453,7 +453,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/Unidata.png
   tags:
     packages:
       - metpy
@@ -468,7 +468,7 @@
     - name: MetPy Developers
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/metpy.jpg
+  thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
       - metpy
@@ -482,7 +482,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/Unidata.png
   tags:
     domains:
       - atmospheric science
@@ -496,7 +496,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/metpy-mondays.jpeg
+  thumbnail: /_static/thumbnails/metpy-mondays.jpeg
   tags:
     packages:
       - metpy
@@ -509,7 +509,7 @@
     The fundamental package for scientific computing with Python.
   authors:
     - name: NumPy
-  thumbnail: ../_static/thumbnails/numpy.png
+  thumbnail: /_static/thumbnails/numpy.png
   tags:
     packages:
       - numpy
@@ -522,7 +522,7 @@
     A curated collection of external resources teaching numpy from beginner to advanced uses.
   authors:
     - name: NumPy
-  thumbnail: ../_static/thumbnails/numpy.png
+  thumbnail: /_static/thumbnails/numpy.png
   tags:
     packages:
       - numpy
@@ -534,7 +534,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/Unidata.png
   tags:
     packages:
       - numpy
@@ -549,7 +549,7 @@
     - name: A. Chabot-LeClerc
       affiliation: Enthought
       affiliation_url: https://www.enthought.com/
-  thumbnail: ../_static/thumbnails/Enthought.png
+  thumbnail: /_static/thumbnails/Enthought.png
   tags:
     packags:
       - numpy
@@ -562,7 +562,7 @@
     Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
   authors:
     - name: Pandas Development Team
-  thumbnail: ../_static/thumbnails/pandas.png
+  thumbnail: /_static/thumbnails/pandas.png
   tags:
     packages:
       - pandas
@@ -575,7 +575,7 @@
     Tutorial for getting started with pandas.
   authors:
     - name: Pandas Development Team
-  thumbnail: ../_static/thumbnails/pandas.png
+  thumbnail: /_static/thumbnails/pandas.png
   tags:
     packages:
       - pandas
@@ -588,7 +588,7 @@
     A gallery of example pandas functionality.
   authors:
     - name: Pandas Development Team
-  thumbnail: ../_static/thumbnails/pandas.png
+  thumbnail: /_static/thumbnails/pandas.png
   tags:
     packages:
       - pandas
@@ -614,7 +614,7 @@
     This document explains how to use Rasterio to read existing files and to create new files. Some advanced topics are glossed over to be covered in more detail elsewhere in Rasterio’s documentation.
   authors:
     - name: MapBox
-  thumbnail: ../_static/thumbnails/rasterio-tutorial.png
+  thumbnail: /_static/thumbnails/rasterio-tutorial.png
   tags:
     packages:
       - rasterio
@@ -629,7 +629,7 @@
     - name: Siphon Contributors
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/siphon.png
+  thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
       - siphon
@@ -643,7 +643,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/siphon.png
+  thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
       - siphon
@@ -658,7 +658,7 @@
     - name: Siphon Contributors
       affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/siphon.png
+  thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
       - siphon
@@ -703,7 +703,7 @@
     Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
   authors:
     - name: Xarray Developers
-  thumbnail: ../_static/thumbnails/xarray.png
+  thumbnail: /_static/thumbnails/xarray.png
   tags:
     packages:
       - xarray
@@ -717,7 +717,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: ../_static/thumbnails/xarray.png
+  thumbnail: /_static/thumbnails/xarray.png
   tags:
     packages:
       - xarray
@@ -730,7 +730,7 @@
     A collection of tutorials provided by the Xarray developers.
   authors:
     - name: Xarray Developers
-  thumbnail: ../_static/thumbnails/xarray.png
+  thumbnail: /_static/thumbnails/xarray.png
   tags:
     packages:
       - xarray

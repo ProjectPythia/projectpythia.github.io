@@ -5,24 +5,24 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#packages" aria-haspopup="true">Packages</button>
 <div id="packages" class="collapse dropdown-menu">
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/cartopy.html">Cartopy</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/contextily.html">Contextily</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/dask.html">Dask</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/geocat-comp.html">Geocat-Comp</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/geocat-viz.html">Geocat-Viz</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/geopandas.html">Geopandas</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/hvPlot.html">Hvplot</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/ipyleaflet.html">Ipyleaflet</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/jupyter.html">Jupyter</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/matplotlib.html">Matplotlib</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/metpy.html">Metpy</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/numpy.html">Numpy</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/pandas.html">Pandas</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/pure-python.html">Pure Python</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/rasterio.html">Rasterio</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/siphon.html">Siphon</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/wrf-python.html">Wrf-Python</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/xarray.html">Xarray</a> 
+<a class="dropdown-item" href="/pages/links/cartopy.html">Cartopy</a> 
+<a class="dropdown-item" href="/pages/links/contextily.html">Contextily</a> 
+<a class="dropdown-item" href="/pages/links/dask.html">Dask</a> 
+<a class="dropdown-item" href="/pages/links/geocat-comp.html">Geocat-Comp</a> 
+<a class="dropdown-item" href="/pages/links/geocat-viz.html">Geocat-Viz</a> 
+<a class="dropdown-item" href="/pages/links/geopandas.html">Geopandas</a> 
+<a class="dropdown-item" href="/pages/links/hvPlot.html">Hvplot</a> 
+<a class="dropdown-item" href="/pages/links/ipyleaflet.html">Ipyleaflet</a> 
+<a class="dropdown-item" href="/pages/links/jupyter.html">Jupyter</a> 
+<a class="dropdown-item" href="/pages/links/matplotlib.html">Matplotlib</a> 
+<a class="dropdown-item" href="/pages/links/metpy.html">Metpy</a> 
+<a class="dropdown-item" href="/pages/links/numpy.html">Numpy</a> 
+<a class="dropdown-item" href="/pages/links/pandas.html">Pandas</a> 
+<a class="dropdown-item" href="/pages/links/pure-python.html">Pure Python</a> 
+<a class="dropdown-item" href="/pages/links/rasterio.html">Rasterio</a> 
+<a class="dropdown-item" href="/pages/links/siphon.html">Siphon</a> 
+<a class="dropdown-item" href="/pages/links/wrf-python.html">Wrf-Python</a> 
+<a class="dropdown-item" href="/pages/links/xarray.html">Xarray</a> 
 
 </div>
 </div>
@@ -31,12 +31,12 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#formats" aria-haspopup="true">Formats</button>
 <div id="formats" class="collapse dropdown-menu">
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/book.html">Book</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/course.html">Course</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/documentation.html">Documentation</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/gallery.html">Gallery</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/tutorial.html">Tutorial</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/video.html">Video</a> 
+<a class="dropdown-item" href="/pages/links/book.html">Book</a> 
+<a class="dropdown-item" href="/pages/links/course.html">Course</a> 
+<a class="dropdown-item" href="/pages/links/documentation.html">Documentation</a> 
+<a class="dropdown-item" href="/pages/links/gallery.html">Gallery</a> 
+<a class="dropdown-item" href="/pages/links/tutorial.html">Tutorial</a> 
+<a class="dropdown-item" href="/pages/links/video.html">Video</a> 
 
 </div>
 </div>
@@ -45,9 +45,9 @@
 <div class="dropdown">
 <button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
 <div id="domains" class="collapse dropdown-menu">
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/atmospheric-science.html">Atmospheric Science</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/data-science.html">Data Science</a> 
-<a class="dropdown-item" href="https://projectpythia.org/pages/links/remote-sensing.html">Remote Sensing</a> 
+<a class="dropdown-item" href="/pages/links/atmospheric-science.html">Atmospheric Science</a> 
+<a class="dropdown-item" href="/pages/links/data-science.html">Data Science</a> 
+<a class="dropdown-item" href="/pages/links/remote-sensing.html">Remote Sensing</a> 
 
 </div>
 </div>
@@ -61,7 +61,7 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 ---
-:img-top: ../_static/thumbnails/Xdev.png
+:img-top: /_static/thumbnails/Xdev.png
 +++
 **Your First Python Tutorial**
 
@@ -84,11 +84,11 @@ A tutorial for getting started with Python aimed at scientists with experience i
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Unidata.png
+:img-top: /_static/thumbnails/Unidata.png
 +++
 **Unidata Python Training**
 
@@ -111,10 +111,10 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Unidata.png
+:img-top: /_static/thumbnails/Unidata.png
 +++
 **Unidata Python Workshop - Jupyter Notebooks Introduction**
 
@@ -137,10 +137,10 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/earth_env_data_science.png
+:img-top: /_static/thumbnails/earth_env_data_science.png
 +++
 **An Introduction to Earth and Environmental Data Science**
 
@@ -163,10 +163,10 @@ This book grew out of a course developed at Columbia University called Research 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/climlablogo.png
+:img-top: /_static/thumbnails/climlablogo.png
 +++
 **The Climate Laboratory**
 
@@ -189,11 +189,11 @@ A hands on approach to climate physics and climate modeling. This JupyterBook se
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/earth-lab-logo.png
+:img-top: /_static/thumbnails/earth-lab-logo.png
 +++
 **Earth Analytics Python Course**
 
@@ -216,10 +216,10 @@ Earth analytics is an intermediate, multidisciplinary course that addresses majo
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/earth-lab-logo.png
+:img-top: /_static/thumbnails/earth-lab-logo.png
 +++
 **Earth Data Science**
 
@@ -242,10 +242,10 @@ This site contains open, tutorials and course materials covering topics includin
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/eScience_Logo_HR.png
+:img-top: /_static/thumbnails/eScience_Logo_HR.png
 +++
 **Geohackweek 2019**
 
@@ -268,10 +268,10 @@ Geohackweek is a 5-day hackweek to be held at the University of Washington eScie
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **Research Software Engineering with Python**
 
@@ -294,10 +294,10 @@ We believe every researcher should know how to write short programs that clean a
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/zero-to-pandas.png
+:img-top: /_static/thumbnails/zero-to-pandas.png
 +++
 **Data Analysis with Python- Zero to Pandas**
 
@@ -320,10 +320,10 @@ Created by: Jovian.ai
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/portland-state.png
+:img-top: /_static/thumbnails/portland-state.png
 +++
 **MTH271- Mathematical Computing with Data**
 
@@ -346,10 +346,10 @@ In this course, we will have multiple occasions to procure, analyze, and visuali
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/british-columbia.jpg
+:img-top: /_static/thumbnails/british-columbia.jpg
 +++
 **ATSC301- Atmospheric Radiation and Remote Sensing**
 
@@ -372,11 +372,11 @@ This course teaches radiation and remote sensing, but also covers: how to write 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/remote-sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/remote-sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/DC_logo_vision.png
+:img-top: /_static/thumbnails/DC_logo_vision.png
 +++
 **Introduction to Geospatial Concepts**
 
@@ -399,10 +399,10 @@ The goal of this lesson is to provide an introduction to core geospatial data co
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **Dani Arribas-Bel Course Repositories**
 
@@ -426,11 +426,11 @@ A collection of courework repositories for various data science classes taught b
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/cartopy.png
+:img-top: /_static/thumbnails/cartopy.png
 +++
 **Cartopy Documentation**
 
@@ -453,11 +453,11 @@ Cartopy is a Python package designed for geospatial data processing in order to 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/cartopy.png
+:img-top: /_static/thumbnails/cartopy.png
 +++
 **Cartopy Gallery**
 
@@ -480,11 +480,11 @@ Visual examples demonstrating some of the functionality of Cartopy, particularly
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **Contextily Documentation**
 
@@ -507,12 +507,12 @@ contextily is a small Python 3 (3.6 and above) package to retrieve tile maps fro
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **Contextily Tutorial**
 
@@ -535,11 +535,11 @@ Welcome to the taster guide for contextily, the package for contextual tiles in 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/dask.png
+:img-top: /_static/thumbnails/dask.png
 +++
 **Dask**
 
@@ -562,11 +562,11 @@ Dask provides advanced parallelism for analytics, enabling performance at scale 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/dask.png
+:img-top: /_static/thumbnails/dask.png
 +++
 **Dask Tutorial**
 
@@ -589,11 +589,11 @@ Dask is a parallel computing library that scales the existing Python ecosystem. 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/geocat.png
+:img-top: /_static/thumbnails/geocat.png
 +++
 **GeoCAT Tutorial**
 
@@ -616,11 +616,11 @@ The examples below show GeoCAT-comp functions being utilized in real-world use c
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/geocat.png
+:img-top: /_static/thumbnails/geocat.png
 +++
 **GeoCAT Gallery**
 
@@ -644,12 +644,12 @@ A gallery of plotting examples from GeoCat.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/geopandas_icon.png
+:img-top: /_static/thumbnails/geopandas_icon.png
 +++
 **GeoPandas Documentation**
 
@@ -672,11 +672,11 @@ GeoPandas is an open source project to make working with geospatial data in pyth
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/geopandas_icon.png
+:img-top: /_static/thumbnails/geopandas_icon.png
 +++
 **GeoPandas Gallery**
 
@@ -699,11 +699,11 @@ Examples that show off the functionality in GeoPandas. They highlight many of th
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/hvplot-wm.png
+:img-top: /_static/thumbnails/hvplot-wm.png
 +++
 **hvPlot**
 
@@ -726,11 +726,11 @@ hvPlot provides a high-level plotting API built on HoloViews that provides a gen
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/hvplot-wm.png
+:img-top: /_static/thumbnails/hvplot-wm.png
 +++
 **hvPlot Tutorial**
 
@@ -753,11 +753,11 @@ The user guide provides a detailed introduction to the API and features of hvPlo
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/hvplot-wm.png
+:img-top: /_static/thumbnails/hvplot-wm.png
 +++
 **hvPlot Gallery**
 
@@ -781,11 +781,11 @@ Incomplete Reference Gallery containing some small examples of different plot ty
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **Ipyleaflet**
 
@@ -809,11 +809,11 @@ Interactive maps in the Jupyter notebook.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/matplotlib-tutorial.png
+:img-top: /_static/thumbnails/matplotlib-tutorial.png
 +++
 **Matplotlib**
 
@@ -836,11 +836,11 @@ Matplotlib is a comprehensive library for creating static, animated, and interac
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/matplotlib-tutorial.png
+:img-top: /_static/thumbnails/matplotlib-tutorial.png
 +++
 **Matplotlib Tutorial**
 
@@ -863,11 +863,11 @@ This page contains more in-depth guides for using Matplotlib. It is broken up in
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/matplotlib-tutorial.png
+:img-top: /_static/thumbnails/matplotlib-tutorial.png
 +++
 **Matplotlib Gallery**
 
@@ -891,11 +891,11 @@ This gallery contains examples of the many things you can do with Matplotlib.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/metpy.jpg
+:img-top: /_static/thumbnails/metpy.jpg
 +++
 **MetPy**
 
@@ -918,11 +918,11 @@ MetPy is a collection of tools in Python for reading, visualizing, and performin
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/metpy.jpg
+:img-top: /_static/thumbnails/metpy.jpg
 +++
 **MetPy Tutorial**
 
@@ -945,11 +945,11 @@ This collection of tutorials (under development) demonstrates the use of MetPy t
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Unidata.png
+:img-top: /_static/thumbnails/Unidata.png
 +++
 **Unidata Python Workshop- MetPy**
 
@@ -972,11 +972,11 @@ MetPy is a modern meteorological open-source toolkit for Python. It is a maintai
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/metpy.jpg
+:img-top: /_static/thumbnails/metpy.jpg
 +++
 **MetPy Gallery**
 
@@ -1000,11 +1000,11 @@ Examples of using a variety of MetPy’s functionality together.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Unidata.png
+:img-top: /_static/thumbnails/Unidata.png
 +++
 **Unidata Gallery**
 
@@ -1027,11 +1027,11 @@ Check out detailed examples for atmospheric science and meteorology, from data a
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/metpy-mondays.jpeg
+:img-top: /_static/thumbnails/metpy-mondays.jpeg
 +++
 **Unidata MetPy Mondays**
 
@@ -1054,11 +1054,11 @@ A weekly video series showing how to use MetPy or other Python libraries to solv
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/numpy.png
+:img-top: /_static/thumbnails/numpy.png
 +++
 **Numpy**
 
@@ -1082,11 +1082,11 @@ The fundamental package for scientific computing with Python.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/numpy.png
+:img-top: /_static/thumbnails/numpy.png
 +++
 **Numpy Tutorials**
 
@@ -1110,10 +1110,10 @@ A curated collection of external resources teaching numpy from beginner to advan
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Unidata.png
+:img-top: /_static/thumbnails/Unidata.png
 +++
 **Unidata Numpy Workshop**
 
@@ -1136,11 +1136,11 @@ Unidata Numpy tutorial that covers how to create an array of ‘data’, perform
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/Enthought.png
+:img-top: /_static/thumbnails/Enthought.png
 +++
 **Intro to Numerical Computing with NumPy**
 
@@ -1163,11 +1163,11 @@ NumPy provides Python with a powerful array processing library and an elegant sy
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/pandas.png
+:img-top: /_static/thumbnails/pandas.png
 +++
 **Pandas**
 
@@ -1190,11 +1190,11 @@ Pandas is a fast, powerful, flexible and easy to use open source data analysis a
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/pandas.png
+:img-top: /_static/thumbnails/pandas.png
 +++
 **Pandas Tutorials**
 
@@ -1218,11 +1218,11 @@ Tutorial for getting started with pandas.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/pandas.png
+:img-top: /_static/thumbnails/pandas.png
 +++
 **Pandas Gallery**
 
@@ -1246,11 +1246,11 @@ A gallery of example pandas functionality.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **Rasterio**
 
@@ -1273,11 +1273,11 @@ Geographic information systems use GeoTIFF and other formats to organize and sto
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/rasterio-tutorial.png
+:img-top: /_static/thumbnails/rasterio-tutorial.png
 +++
 **Rasterio Tutorial**
 
@@ -1300,11 +1300,11 @@ This document explains how to use Rasterio to read existing files and to create 
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/siphon.png
+:img-top: /_static/thumbnails/siphon.png
 +++
 **Siphon**
 
@@ -1327,11 +1327,11 @@ Siphon is a collection of Python utilities for downloading data from remote data
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/siphon.png
+:img-top: /_static/thumbnails/siphon.png
 +++
 **Siphon Tutorial**
 
@@ -1354,11 +1354,11 @@ An overview on Siphon from the Unidata Python Workshop that: uses Siphon to acce
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/siphon.png
+:img-top: /_static/thumbnails/siphon.png
 +++
 **Siphon Gallery**
 
@@ -1382,11 +1382,11 @@ Examples of using Siphon’s functionality.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **WRF-Python**
 
@@ -1409,11 +1409,11 @@ A collection of diagnostic and interpolation routines for use with output from t
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/images/ebp-logo.png
+:img-top: /_static/images/ebp-logo.png
 +++
 **WRF-Python Gallery**
 
@@ -1436,11 +1436,11 @@ Examples of how wrf-python can be used to make plots with matplotlib (with basem
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/xarray.png
+:img-top: /_static/thumbnails/xarray.png
 +++
 **Xarray**
 
@@ -1467,11 +1467,11 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/xarray.png
+:img-top: /_static/thumbnails/xarray.png
 +++
 **Unidata Xarray Workshop**
 
@@ -1494,11 +1494,11 @@ An introduction to Xarray through the Unidata Python Workshop that asks, "What i
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ---
-:img-top: ../_static/thumbnails/xarray.png
+:img-top: /_static/thumbnails/xarray.png
 +++
 **Xarray Tutorial**
 
@@ -1522,7 +1522,7 @@ A collection of tutorials provided by the Xarray developers.
 :classes: btn-outline-primary btn-block
 ```
 
-{link-badge}`"https://projectpythia.org/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
-{link-badge}`"https://projectpythia.org/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ````

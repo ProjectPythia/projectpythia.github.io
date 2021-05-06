@@ -39,7 +39,7 @@ def generate_tag_menu(all_items, tag_key):
 
     hrefs = ''
     for tag in tag_list:
-        hrefs = hrefs + f'<a class="dropdown-item" href="https://projectpythia.org/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' 
+        hrefs = hrefs + f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' 
 
     menu_html = f"""
 <div class="dropdown">
@@ -52,14 +52,14 @@ def generate_tag_menu(all_items, tag_key):
     return menu_html
 
 
-def build_from_items(items, filename, display_name, menu_html, flt=None):
+def build_from_items(items, filename, display_name, menu_html):
 
     # Build the gallery file
     panels_body = []
     for item in items:
         if not item.get('thumbnail'):
-            item['thumbnail'] = '../_static/images/ebp-logo.png'
-        thumbnail = '../' + item['thumbnail'] if flt else item['thumbnail']
+            item['thumbnail'] = '/_static/images/ebp-logo.png'
+        thumbnail = item['thumbnail']
 
         tag_set = set()
         for k, e in item['tags'].items():
@@ -67,7 +67,7 @@ def build_from_items(items, filename, display_name, menu_html, flt=None):
                 tag_set.add(t)
 
         tag_list = sort_tags(tag_set)
-        tags = [f'{{link-badge}}`"https://projectpythia.org/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
+        tags = [f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
         authors = [a.get("name", "anonymous") for a in item['authors']]
@@ -155,7 +155,7 @@ def main(app):
             if tag_in_item(item, tag):
                 items.append(item)
 
-        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html, flt=True)
+        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html)
 
 
 def setup(app):
