@@ -56,7 +56,7 @@
 - title: The Climate Laboratory
   url: https://brian-rose.github.io/ClimateLaboratoryBook/home
   description: |
-    A hands on approach to climate physics and climate modeling. This JupyterBook serves as a course textbook at the University of Albany. It is self-reproducing, free and open, interactive, and is a living document.
+    A hands on approach to climate physics and climate modeling. Fundamental climate processes are introduced through interactive and reproducible Python-based modeling exercises.  This JupyterBook serves as a course textbook at the University of Albany.
   authors:
     - name: Brian Rose
       url: http://www.atmos.albany.edu/facstaff/brose/
