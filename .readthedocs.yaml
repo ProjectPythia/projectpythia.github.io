@@ -8,4 +8,5 @@ conda:
   environment: ci/environment.yml
 
 sphinx:
+  configuration: content/conf.py
   fail_on_warning: false
