@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>MITgcm ECCOv4 Example</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -57,14 +61,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -73,18 +77,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
-      
-      <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../pages/about.html">
    About Project Pythia
@@ -127,7 +131,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -177,12 +180,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -213,11 +216,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#load-the-data">
    Load the data
@@ -267,7 +271,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -276,7 +281,7 @@
         
               <div>
                 
-  <div class="section" id="mitgcm-eccov4-example">
+  <section id="mitgcm-eccov4-example">
 <h1>MITgcm ECCOv4 Example<a class="headerlink" href="#mitgcm-eccov4-example" title="Permalink to this headline">¶</a></h1>
 <p>This Jupyter notebook demonstrates how to use <a class="reference external" href="http://xarray.pydata.org/en/latest/">xarray</a> and <a class="reference external" href="http://xgcm.readthedocs.org">xgcm</a> to analyze data from the <a class="reference external" href="https://ecco.jpl.nasa.gov/products/latest/">ECCO v4r3</a> ocean state estimate.</p>
 <p>First we import our standard python packages:</p>
@@ -291,7 +296,7 @@
 </div>
 </div>
 </div>
-<div class="section" id="load-the-data">
+<section id="load-the-data">
 <h2>Load the data<a class="headerlink" href="#load-the-data" title="Permalink to this headline">¶</a></h2>
 <p>The ECCOv4r3 data was converted from its raw MDS (.data / .meta file) format to zarr format, using the <a class="reference external" href="http://xmitgcm.readthedocs.io">xmitgcm</a> package. <a class="reference external" href="http://zarr.readthedocs.io">Zarr</a> is a powerful data storage format that can be thought of as an alternative to HDF. In contrast to HDF, zarr works very well with cloud object storage. Zarr is currently useable in python, java, C++, and julia. It is likely that zarr will form the basis of the next major version of the netCDF library.</p>
 <p>If you’re curious, here are some resources to learn more about zarr:</p>
@@ -15160,10 +15165,10 @@ Data variables:
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="visualizing-data">
+</section>
+<section id="visualizing-data">
 <h2>Visualizing Data<a class="headerlink" href="#visualizing-data" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="a-direct-plot">
+<section id="a-direct-plot">
 <h3>A Direct Plot<a class="headerlink" href="#a-direct-plot" title="Permalink to this headline">¶</a></h3>
 <p>Let’s try to visualize something simple: the <code class="docutils literal notranslate"><span class="pre">Depth</span></code> variable. Here is how the data are stored:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Depth      (face, j, i) float32 dask.array&lt;shape=(13, 90, 90), chunksize=(13, 90, 90)&gt;
@@ -15184,8 +15189,8 @@ Data variables:
 </div>
 </div>
 <p>This view is not the most useful. It reflects how the data is arranged logically, rather than geographically.</p>
-</div>
-<div class="section" id="a-pretty-map">
+</section>
+<section id="a-pretty-map">
 <h3>A Pretty Map<a class="headerlink" href="#a-pretty-map" title="Permalink to this headline">¶</a></h3>
 <p>To make plotting easier, we can define a quick function to plot the data in a more geographically friendly way. Eventually these plotting functions may be provided by the gcmplots package: <a class="reference external" href="https://github.com/xecco/gcmplots">https://github.com/xecco/gcmplots</a>. For now, it is easy enough to roll our own.</p>
 <div class="cell docutils container">
@@ -15285,9 +15290,9 @@ Data variables:
 </div>
 </div>
 <p>We can use this with any 2D cell-centered LLC variable.</p>
-</div>
-</div>
-<div class="section" id="selecting-data">
+</section>
+</section>
+<section id="selecting-data">
 <h2>Selecting data<a class="headerlink" href="#selecting-data" title="Permalink to this headline">¶</a></h2>
 <p>The entire ECCOv4e3 dataset is contained in a single <code class="docutils literal notranslate"><span class="pre">Xarray.Dataset</span></code> object. How do we find a view specific pieces of data? This is handled by Xarray’s <a class="reference external" href="http://xarray.pydata.org/en/latest/indexing.html">indexing and selecting functions</a>. To get the SST from January 2000, we do this:</p>
 <div class="cell docutils container">
@@ -15745,8 +15750,8 @@ Attributes:
 <img alt="../../../_images/04_eccov4_14_2.png" src="../../../_images/04_eccov4_14_2.png" />
 </div>
 </div>
-</div>
-<div class="section" id="do-some-calculations">
+</section>
+<section id="do-some-calculations">
 <h2>Do some Calculations<a class="headerlink" href="#do-some-calculations" title="Permalink to this headline">¶</a></h2>
 <p>Now let’s start doing something besides just plotting the existing data. For example, let’s calculate the time-mean SST.</p>
 <div class="cell docutils container">
@@ -16656,8 +16661,8 @@ Coordinates:
 <img alt="../../../_images/04_eccov4_19_2.png" src="../../../_images/04_eccov4_19_2.png" />
 </div>
 </div>
-</div>
-<div class="section" id="speeding-things-up-with-a-dask-cluster">
+</section>
+<section id="speeding-things-up-with-a-dask-cluster">
 <h2>Speeding things up with a Dask Cluster<a class="headerlink" href="#speeding-things-up-with-a-dask-cluster" title="Permalink to this headline">¶</a></h2>
 <p>How can we speed things up? In general, the main bottleneck for this type of data analysis is the speed with which we can read the data. With cloud storage, the access is highly parallelizeable.</p>
 <p>From a Pangeo environment, we can create a <a class="reference external" href="https://distributed.dask.org/en/latest/">Dask cluster</a> to spread the work out amongst many compute nodes. This works on both HPC and cloud. In the cloud, the compute nodes are provisioned on the fly and can be shut down as soon as we are done with our analysis.</p>
@@ -17137,8 +17142,8 @@ Coordinates:
        54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71,
        72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>k</span></div><div class='xr-var-dims'>()</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>0</div><input id='attrs-3fbd4110-3601-43a4-a586-52cd303bb6b7' class='xr-var-attrs-in' type='checkbox' ><label for='attrs-3fbd4110-3601-43a4-a586-52cd303bb6b7' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1d1d8b8e-5a9c-452c-aced-64db1e0a38bc' class='xr-var-data-in' type='checkbox'><label for='data-1d1d8b8e-5a9c-452c-aced-64db1e0a38bc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'><dt><span>axis :</span></dt><dd>Z</dd><dt><span>long_name :</span></dt><dd>z-dimension of the t grid</dd><dt><span>standard_name :</span></dt><dd>z_grid_index</dd><dt><span>swap_dim :</span></dt><dd>Z</dd></dl></div><div class='xr-var-data'><pre>array(0)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-448c2d35-746e-4331-8941-56e341564d83' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-448c2d35-746e-4331-8941-56e341564d83' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
-</div>
-<div class="section" id="spatially-integrated-heat-content-anomaly">
+</section>
+<section id="spatially-integrated-heat-content-anomaly">
 <h2>Spatially-Integrated Heat Content Anomaly<a class="headerlink" href="#spatially-integrated-heat-content-anomaly" title="Permalink to this headline">¶</a></h2>
 <p>Now let’s do something harder. We will calculate the horizontally integrated heat content anomaly for the full 3D model domain.</p>
 <div class="cell docutils container">
@@ -17872,8 +17877,8 @@ Coordinates:
 <img alt="../../../_images/04_eccov4_26_1.png" src="../../../_images/04_eccov4_26_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="spatial-derivatives-heat-budget">
+</section>
+<section id="spatial-derivatives-heat-budget">
 <h2>Spatial Derivatives: Heat Budget<a class="headerlink" href="#spatial-derivatives-heat-budget" title="Permalink to this headline">¶</a></h2>
 <p>As our final exercise, we will do something much more complicated. We will compute the time-mean convergence of vertically-integrated heat fluxes. This is hard for several reasons.</p>
 <p>The first reason it is hard is because it involves variables located at different grid points.
@@ -18934,8 +18939,8 @@ Coordinates:
 <img alt="../../../_images/04_eccov4_36_1.png" src="../../../_images/04_eccov4_36_1.png" />
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
@@ -18961,7 +18966,7 @@ Coordinates:
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -18970,9 +18975,11 @@ Coordinates:
 
       </div>
     </div>
-  
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

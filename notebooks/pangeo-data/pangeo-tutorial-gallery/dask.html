@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Dask Tutorial</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -57,14 +61,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -73,18 +77,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
-      
-      <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../pages/about.html">
    About Project Pythia
@@ -127,7 +131,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -177,12 +180,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -213,11 +216,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -292,7 +296,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -301,10 +306,10 @@
         
               <div>
                 
-  <div class="section" id="dask-tutorial">
+  <section id="dask-tutorial">
 <h1>Dask Tutorial<a class="headerlink" href="#dask-tutorial" title="Permalink to this headline">¶</a></h1>
 <div class="alert-info">
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>teaching:</strong> 20 minutes</p></li>
@@ -315,8 +320,8 @@
 </ul>
 </li>
 </ul>
-</div></div>
-<div class="section" id="table-of-contents">
+</div></section>
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="#Dask-primer"><strong>Dask primer</strong></a></p></li>
@@ -325,8 +330,8 @@
 <li><p><a class="reference external" href="#Dask-Arrays"><strong>Dask arrays</strong></a></p></li>
 <li><p><a class="reference external" href="#Dask-Delayed"><strong>Dask delayed</strong></a></p></li>
 </ol>
-</div>
-<div class="section" id="dask-primer">
+</section>
+<section id="dask-primer">
 <h2>Dask Primer<a class="headerlink" href="#dask-primer" title="Permalink to this headline">¶</a></h2>
 <p><img src="http://dask.readthedocs.io/en/latest/_images/dask_horizontal.svg" 
      width="30%" 
@@ -338,8 +343,8 @@
 <li><p>https://github.com/rabernat/research_computing</p></li>
 <li><p>https://github.com/dask/dask-examples</p></li>
 </ul>
-</div>
-<div class="section" id="dask-clusters">
+</section>
+<section id="dask-clusters">
 <h2>Dask Clusters<a class="headerlink" href="#dask-clusters" title="Permalink to this headline">¶</a></h2>
 <p>Dask needs a collection of computing resources in order to perform parallel computations. Dask Clusters have different names corresponding to different computing environments (for example, <a class="reference external" href="https://distributed.dask.org/en/latest/local-cluster.html">LocalCluster</a> for your Laptop, <a class="reference external" href="http://jobqueue.dask.org/">PBSCluster</a> for your HPC, or <a class="reference external" href="http://kubernetes.dask.org/">Kubernetes Cluster</a> for machines on the Cloud). Each cluster has a certain number of computing resources called ‘Workers’, that each get allocated CPU and RAM. The dask scheduling system maps jobs to each worker on a cluster for you, so the syntax is mostly the same once you initialize a cluster!</p>
 <div class="cell docutils container">
@@ -375,8 +380,8 @@
 </tr>
 </table></div></div>
 </div>
-</div>
-<div class="section" id="dask-dataframe">
+</section>
+<section id="dask-dataframe">
 <h2>Dask Dataframe<a class="headerlink" href="#dask-dataframe" title="Permalink to this headline">¶</a></h2>
 <p>If you are working with a very large Pandas dataframe, you can consider parallizing computations by turning it into a Dask Dataframe. Dask Dataframes split a dataframe into partitions along an index. They support a large subset of the Pandas API. You can find additional details and examples here https://examples.dask.org/dataframe.html</p>
 <div class="cell docutils container">
@@ -750,8 +755,8 @@
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="dask-arrays">
+</section>
+<section id="dask-arrays">
 <h2>Dask Arrays<a class="headerlink" href="#dask-arrays" title="Permalink to this headline">¶</a></h2>
 <p>A dask array looks and feels a lot like a numpy array.
 However, a dask array doesn’t directly hold any data.
@@ -952,7 +957,7 @@ When we call <code class="docutils literal notranslate"><span class="pre">.compu
 <div class="cell_output docutils container">
 <img alt="../../../_images/dask_27_0.svg" src="../../../_images/dask_27_0.svg" /></div>
 </div>
-<div class="section" id="a-bigger-calculation">
+<section id="a-bigger-calculation">
 <h3>A Bigger Calculation<a class="headerlink" href="#a-bigger-calculation" title="Permalink to this headline">¶</a></h3>
 <p>The examples above were toy examples; the data (32 MB) is nowhere nearly big enough to warrant the use of dask.</p>
 <p>We can make it a lot bigger!</p>
@@ -1234,8 +1239,8 @@ When we call <code class="docutils literal notranslate"><span class="pre">.compu
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="reduction">
+</section>
+<section id="reduction">
 <h3>Reduction<a class="headerlink" href="#reduction" title="Permalink to this headline">¶</a></h3>
 <p>All the usual numpy methods work on dask arrays.
 You can also apply numpy function directly to a dask array, and it will stay lazy.</p>
@@ -1507,14 +1512,14 @@ You can also apply numpy function directly to a dask array, and it will stay laz
 <img alt="../../../_images/dask_37_1.png" src="../../../_images/dask_37_1.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="dask-delayed">
+</section>
+</section>
+<section id="dask-delayed">
 <h2>Dask Delayed<a class="headerlink" href="#dask-delayed" title="Permalink to this headline">¶</a></h2>
 <p>Dask.delayed is a simple and powerful way to parallelize existing code.  It allows users to delay function calls into a task graph with dependencies.  Dask.delayed doesn’t provide any fancy parallel algorithms like Dask.dataframe, but it does give the user complete control over what they want to build.</p>
 <p>Systems like Dask.dataframe are built with Dask.delayed.  If you have a problem that is paralellizable, but isn’t as simple as just a big array or a big dataframe, then dask.delayed may be the right choice for you.</p>
-</div>
-<div class="section" id="create-simple-functions">
+</section>
+<section id="create-simple-functions">
 <h2>Create simple functions<a class="headerlink" href="#create-simple-functions" title="Permalink to this headline">¶</a></h2>
 <p>These functions do simple operations like add two numbers together, but they sleep for a random amount of time to simulate real work.</p>
 <div class="cell docutils container">
@@ -1561,8 +1566,8 @@ Wall time: 401 ms
 </div>
 </div>
 <p>These ran one after the other, in sequence.  Note though that the first two lines <code class="docutils literal notranslate"><span class="pre">inc(1)</span></code> and <code class="docutils literal notranslate"><span class="pre">dec(2)</span></code> don’t depend on each other, we <em>could</em> have called them in parallel had we been clever.</p>
-</div>
-<div class="section" id="annotate-functions-with-dask-delayed-to-make-them-lazy">
+</section>
+<section id="annotate-functions-with-dask-delayed-to-make-them-lazy">
 <h2>Annotate functions with Dask Delayed to make them lazy<a class="headerlink" href="#annotate-functions-with-dask-delayed-to-make-them-lazy" title="Permalink to this headline">¶</a></h2>
 <p>We can call <code class="docutils literal notranslate"><span class="pre">dask.delayed</span></code> on our funtions to make them lazy.  Rather than compute their results immediately, they record what we want to compute as a task into a graph that we’ll run later on parallel hardware.</p>
 <div class="cell docutils container">
@@ -1597,8 +1602,8 @@ Wall time: 1.31 ms
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="visualize-computation">
+</section>
+<section id="visualize-computation">
 <h2>Visualize computation<a class="headerlink" href="#visualize-computation" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1609,8 +1614,8 @@ Wall time: 1.31 ms
 <div class="cell_output docutils container">
 <img alt="../../../_images/dask_47_0.svg" src="../../../_images/dask_47_0.svg" /></div>
 </div>
-</div>
-<div class="section" id="run-in-parallel">
+</section>
+<section id="run-in-parallel">
 <h2>Run in parallel<a class="headerlink" href="#run-in-parallel" title="Permalink to this headline">¶</a></h2>
 <p>Call <code class="docutils literal notranslate"><span class="pre">.compute()</span></code> when you want your result as a normal Python object</p>
 <p>If you started <code class="docutils literal notranslate"><span class="pre">Client()</span></code> above then you may want to watch the status page during computation.</p>
@@ -1631,8 +1636,8 @@ Wall time: 334 ms
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="parallelize-normal-python-code">
+</section>
+<section id="parallelize-normal-python-code">
 <h2>Parallelize Normal Python code<a class="headerlink" href="#parallelize-normal-python-code" title="Permalink to this headline">¶</a></h2>
 <p>Now we use Dask in normal for-loopy Python code.  This generates graphs instead of doing computations directly, but still looks like the code we had before.  Dask is a convenient way to add parallelism to existing workflows.</p>
 <div class="cell docutils container">
@@ -1656,8 +1661,8 @@ Wall time: 245 ms
 </div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -1677,7 +1682,7 @@ Wall time: 245 ms
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -1686,9 +1691,11 @@ Wall time: 245 ms
 
       </div>
     </div>
-  
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

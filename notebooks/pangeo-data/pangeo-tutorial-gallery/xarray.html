@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Xarray Tutorial</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -59,14 +63,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -75,18 +79,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
-      
-      <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../pages/about.html">
    About Project Pythia
@@ -129,7 +133,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -179,12 +182,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -215,11 +218,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -330,7 +334,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -339,10 +344,10 @@
         
               <div>
                 
-  <div class="section" id="xarray-tutorial">
+  <section id="xarray-tutorial">
 <h1>Xarray Tutorial<a class="headerlink" href="#xarray-tutorial" title="Permalink to this headline">¶</a></h1>
 <div class="alert-info">
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>teaching:</strong> 30 minutes</p></li>
@@ -358,8 +363,8 @@
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="table-of-contents">
+</section>
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="#Xarray-primer"><strong>Xarray primer</strong></a></p></li>
@@ -370,22 +375,22 @@
 <li><p><a class="reference external" href="#Advanced-Computations"><strong>Advanced computations</strong></a></p></li>
 <li><p><a class="reference external" href="#ENSO-exercise"><strong>ENSO excercise</strong></a></p></li>
 </ol>
-</div>
-<div class="section" id="xarray-primer">
+</section>
+<section id="xarray-primer">
 <h2>Xarray primer<a class="headerlink" href="#xarray-primer" title="Permalink to this headline">¶</a></h2>
 <p>We’ve seen that <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas</a> and <a class="reference external" href="http://geopandas.org">Geopandas</a> are excellent libraries for analyzing tabular “labeled data”. <a class="reference external" href="http://xarray.pydata.org/en/stable/">Xarray</a> is designed to make it easier to work with with <em>labeled multidimensional data</em>. By <em>multidimensional data</em> (also often called <em>N-dimensional</em>), we mean data with many independent dimensions or axes. For example, we might represent Earth’s surface temperature <span class="math notranslate nohighlight">\(T\)</span> as a three dimensional variable</p>
 <div class="math notranslate nohighlight">
 \[ T(x, y, t) \]</div>
 <p>where <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are spatial dimensions and and <span class="math notranslate nohighlight">\(t\)</span> is time. By <em>labeled</em>, we mean data that has metadata associated with it describing the names and relationships between the variables. The cartoon below shows a “data cube” schematic dataset with temperature and preciptation sharing the same three dimensions, plus longitude and latitude as auxilliary coordinates.</p>
 <p><img alt="xarray data model" src="https://github.com/pydata/xarray/raw/master/doc/_static/dataset-diagram.png" /></p>
-<div class="section" id="xarray-data-structures">
+<section id="xarray-data-structures">
 <h3>Xarray data structures<a class="headerlink" href="#xarray-data-structures" title="Permalink to this headline">¶</a></h3>
 <p>Like Pandas, xarray has two fundamental data structures:</p>
 <ul class="simple">
 <li><p>a <code class="docutils literal notranslate"><span class="pre">DataArray</span></code>, which holds a single multi-dimensional variable and its coordinates</p></li>
 <li><p>a <code class="docutils literal notranslate"><span class="pre">Dataset</span></code>, which holds multiple variables that potentially share the same coordinates</p></li>
 </ul>
-<div class="section" id="dataarray">
+<section id="dataarray">
 <h4>DataArray<a class="headerlink" href="#dataarray" title="Permalink to this headline">¶</a></h4>
 <p>A <code class="docutils literal notranslate"><span class="pre">DataArray</span></code> has four essential attributes:</p>
 <ul class="simple">
@@ -394,14 +399,14 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">coords</span></code>: a dict-like container of arrays (coordinates) that label each point (e.g., 1-dimensional arrays of numbers, datetime objects or strings)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">attrs</span></code>: an <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> to hold arbitrary metadata (attributes)</p></li>
 </ul>
-</div>
-<div class="section" id="dataset">
+</section>
+<section id="dataset">
 <h4>DataSet<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h4>
 <p>A dataset is simply an object containing multiple DataArrays indexed by variable name</p>
-</div>
-</div>
-</div>
-<div class="section" id="creating-data">
+</section>
+</section>
+</section>
+<section id="creating-data">
 <h2>Creating data<a class="headerlink" href="#creating-data" title="Permalink to this headline">¶</a></h2>
 <p>Let’s start by constructing some DataArrays manually</p>
 <div class="cell docutils container">
@@ -1503,7 +1508,7 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_15_1.png" src="../../../_images/xarray_15_1.png" />
 </div>
 </div>
-<div class="section" id="selecting-data">
+<section id="selecting-data">
 <h3>Selecting Data<a class="headerlink" href="#selecting-data" title="Permalink to this headline">¶</a></h3>
 <p>We can always use regular numpy indexing and slicing on DataArrays to get the data back out.</p>
 <div class="cell docutils container">
@@ -2554,8 +2559,8 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_21_1.png" src="../../../_images/xarray_21_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="basic-computations">
+</section>
+<section id="basic-computations">
 <h3>Basic Computations<a class="headerlink" href="#basic-computations" title="Permalink to this headline">¶</a></h3>
 <p>When we perform mathematical maniulpations of xarray DataArrays, the coordinates come along for the ride.
 Imagine we want to calcuate</p>
@@ -2925,8 +2930,8 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_24_1.png" src="../../../_images/xarray_24_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="exercise">
+</section>
+<section id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Multipy the DataArrays <code class="docutils literal notranslate"><span class="pre">da_f</span></code> and <code class="docutils literal notranslate"><span class="pre">da_g</span></code> together.</p></li>
@@ -2946,9 +2951,9 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_26_1.png" src="../../../_images/xarray_26_1.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="multidimensional-data">
+</section>
+</section>
+<section id="multidimensional-data">
 <h2>Multidimensional Data<a class="headerlink" href="#multidimensional-data" title="Permalink to this headline">¶</a></h2>
 <p>If we are just dealing with 1D data, Pandas and Xarray have very similar capabilities. Xarray’s real potential comes with multidimensional data.</p>
 <p>At this point we will load data from a netCDF file into an xarray dataset.</p>
@@ -4090,7 +4095,7 @@ dl.xr-attrs {
        &#x27;1960-11-15T00:00:00.000000000&#x27;, &#x27;1960-12-15T00:00:00.000000000&#x27;],
       dtype=&#x27;datetime64[ns]&#x27;)</pre></li></ul></div></li><li class='xr-section-item'><input id='section-fe0a02c7-6e3d-4302-b286-6e1f81a90a40' class='xr-section-summary-in' type='checkbox'  checked><label for='section-fe0a02c7-6e3d-4302-b286-6e1f81a90a40' class='xr-section-summary' >Attributes: <span>(7)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>pointwidth :</span></dt><dd>1.0</dd><dt><span>valid_min :</span></dt><dd>-3.0</dd><dt><span>valid_max :</span></dt><dd>45.0</dd><dt><span>units :</span></dt><dd>degree_Celsius</dd><dt><span>long_name :</span></dt><dd>Extended reconstructed sea surface temperature</dd><dt><span>standard_name :</span></dt><dd>sea_surface_temperature</dd><dt><span>iridl:hasSemantics :</span></dt><dd>iridl:SeaSurfaceTemperature</dd></dl></div></li></ul></div></div></div></div>
 </div>
-<div class="section" id="multidimensional-indexing">
+<section id="multidimensional-indexing">
 <h3>Multidimensional Indexing<a class="headerlink" href="#multidimensional-indexing" title="Permalink to this headline">¶</a></h3>
 <p>In this example, we take advantage of the fact that xarray understands time to select a particular date</p>
 <div class="cell docutils container">
@@ -4133,8 +4138,8 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_36_1.png" src="../../../_images/xarray_36_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="label-based-reduction-operations">
+</section>
+<section id="label-based-reduction-operations">
 <h3>Label-Based Reduction Operations<a class="headerlink" href="#label-based-reduction-operations" title="Permalink to this headline">¶</a></h3>
 <p>Usually the process of data analysis involves going from a big, multidimensional dataset to a few concise figures.
 Inevitably, the data must be “reduced” somehow. Examples of simple reduction operations include:</p>
@@ -4549,8 +4554,8 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_42_1.png" src="../../../_images/xarray_42_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="more-complicated-example-weighted-mean">
+</section>
+<section id="more-complicated-example-weighted-mean">
 <h3>More Complicated Example: Weighted Mean<a class="headerlink" href="#more-complicated-example-weighted-mean" title="Permalink to this headline">¶</a></h3>
 <p>The means we calculated above were “naive”; they were straightforward numerical means over the different dimensions of the dataset. They did not account, for example, for spherical geometry of the globe and the necessary weighting factors. Although xarray is very useful for geospatial analysis, <strong>it has no built-in understanding of geography</strong>.</p>
 <p>Below we show how to create a proper weighted mean by using the formula for the area element in spherical coordinates. This is a good illustration of several xarray concepts.</p>
@@ -4982,8 +4987,8 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_47_1.png" src="../../../_images/xarray_47_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="maps">
+</section>
+<section id="maps">
 <h3>Maps<a class="headerlink" href="#maps" title="Permalink to this headline">¶</a></h3>
 <p>Xarray integrates with cartopy to enable you to plot your data on a map</p>
 <div class="cell docutils container">
@@ -5010,9 +5015,9 @@ dl.xr-attrs {
 <img alt="../../../_images/xarray_49_2.png" src="../../../_images/xarray_49_2.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="iv-opening-many-files">
+</section>
+</section>
+<section id="iv-opening-many-files">
 <h2>IV. Opening Many Files<a class="headerlink" href="#iv-opening-many-files" title="Permalink to this headline">¶</a></h2>
 <p>One of the killer features of xarray is its ability to open many files into a single dataset. We do this with the <code class="docutils literal notranslate"><span class="pre">open_mfdataset</span></code> function.</p>
 <div class="cell docutils container">
@@ -5555,8 +5560,8 @@ dl.xr-attrs {
 </table></pre></li></ul></div></li><li class='xr-section-item'><input id='section-8d5db292-99e9-418d-b0db-3f8b81d3e5d9' class='xr-section-summary-in' type='checkbox'  checked><label for='section-8d5db292-99e9-418d-b0db-3f8b81d3e5d9' class='xr-section-summary' >Attributes: <span>(3)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'><dt><span>Conventions :</span></dt><dd>IRIDL</dd><dt><span>source :</span></dt><dd>https://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.ERSST/.version3b/.sst/</dd><dt><span>history :</span></dt><dd>extracted and cleaned by Ryan Abernathey for Research Computing in Earth Science</dd></dl></div></li></ul></div></div></div></div>
 </div>
 <p>Now we have 57 years of data instead of one!</p>
-</div>
-<div class="section" id="v-groupby">
+</section>
+<section id="v-groupby">
 <h2>V. Groupby<a class="headerlink" href="#v-groupby" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have a bigger dataset, this is a good time to check out xarray’s groupby capabilities.</p>
 <div class="cell docutils container">
@@ -6025,8 +6030,8 @@ Each value represents the average among all of the Januaries, Februaries, etc. i
 <img alt="../../../_images/xarray_56_2.png" src="../../../_images/xarray_56_2.png" />
 </div>
 </div>
-</div>
-<div class="section" id="vi-resample-and-rolling">
+</section>
+<section id="vi-resample-and-rolling">
 <h2>VI. Resample and Rolling<a class="headerlink" href="#vi-resample-and-rolling" title="Permalink to this headline">¶</a></h2>
 <p>Resample is meant specifically to work with time data (data with a <code class="docutils literal notranslate"><span class="pre">datetime64</span></code> variable as a dimension).
 It allows you to change the time-sampling frequency of your data.</p>
@@ -6526,8 +6531,8 @@ This can be accomplished with xarray’s <code class="docutils literal notransla
 <img alt="../../../_images/xarray_61_1.png" src="../../../_images/xarray_61_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="finale-calculate-the-enso-index">
+</section>
+<section id="finale-calculate-the-enso-index">
 <h2>Finale: Calculate the ENSO Index<a class="headerlink" href="#finale-calculate-the-enso-index" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://www.ncdc.noaa.gov/teleconnections/enso/indicators/sst">This page from NOAA</a> explains how the El Niño Southern Oscillation index is calculated.</p>
 <ul class="simple">
@@ -6564,8 +6569,8 @@ Name: NINO3.4, dtype: float64
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="getting-help-with-xarray">
+</section>
+<section id="getting-help-with-xarray">
 <h2>Getting Help with Xarray<a class="headerlink" href="#getting-help-with-xarray" title="Permalink to this headline">¶</a></h2>
 <p>Here are some important resources for learning more about xarray and getting help.</p>
 <ul class="simple">
@@ -6573,8 +6578,8 @@ Name: NINO3.4, dtype: float64
 <li><p><a class="reference external" href="https://github.com/pydata/xarray/issues">Xarray GitHub Issue Tracker</a></p></li>
 <li><p><a class="reference external" href="https://stackoverflow.com/questions/tagged/python-xarray">Xarray questions on StackOverflow</a></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -6594,7 +6599,7 @@ Name: NINO3.4, dtype: float64
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -6603,9 +6608,11 @@ Name: NINO3.4, dtype: float64
 
       </div>
     </div>
-  
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

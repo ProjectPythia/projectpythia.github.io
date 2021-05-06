@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Enhanced Intake-ESM Catalog Demo</title>
     
-  <link href="../../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -57,14 +61,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -73,18 +77,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../../index.html">
-      
-      <img src="../../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../../index.html">
+  
+  <img src="../../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../../pages/about.html">
    About Project Pythia
@@ -127,7 +131,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -177,12 +180,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -213,11 +216,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#set-up-environment">
    Set up environment
@@ -272,7 +276,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -281,12 +286,12 @@
         
               <div>
                 
-  <div class="section" id="enhanced-intake-esm-catalog-demo">
+  <section id="enhanced-intake-esm-catalog-demo">
 <h1>Enhanced Intake-ESM Catalog Demo<a class="headerlink" href="#enhanced-intake-esm-catalog-demo" title="Permalink to this headline">¶</a></h1>
 <p>This Jupyter Notebook compares the original Intake-ESM Catalog with an enhanced catalog that includes additional attributes. Both catalogs are an inventory of the NCAR Community Earth System Model (CESM)
 Large Ensemble (LENS) data hosted on AWS S3 (<a class="reference external" href="https://doi.org/10.26024/wt24-5j82">doi:10.26024/wt24-5j82</a>).</p>
 <p><a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/notebooks/tutorial.html">Intake-esm Documentation</a></p>
-<div class="section" id="set-up-environment">
+<section id="set-up-environment">
 <h2>Set up environment<a class="headerlink" href="#set-up-environment" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -308,8 +313,8 @@ Large Ensemble (LENS) data hosted on AWS S3 (<a class="reference external" href=
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="inspect-original-intake-esm-catalog">
+</section>
+<section id="inspect-original-intake-esm-catalog">
 <h2>Inspect original intake-esm catalog<a class="headerlink" href="#inspect-original-intake-esm-catalog" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -509,8 +514,8 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
 </table></div></div>
 </div>
 <p><strong>Table:</strong> <em>First few lines of the original Intake-ESM Catalog showing the model component, the temporal frequency, the experiment, the abbreviated variable name, and the AWS S3 path for each Zarr store.</em></p>
-</div>
-<div class="section" id="finding-data">
+</section>
+<section id="finding-data">
 <h2>Finding Data<a class="headerlink" href="#finding-data" title="Permalink to this headline">¶</a></h2>
 <p>If you happen to know the meaning of the variable names, you can find what data are available for that variable. For example:</p>
 <div class="cell docutils container">
@@ -701,12 +706,12 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
 </table></div></div>
 </div>
 <p><strong>Table:</strong> <em>The single Zarr store for daily “FLNS” data from “RCP85” experiment.</em></p>
-</div>
-<div class="section" id="the-problem">
+</section>
+<section id="the-problem">
 <h2>The Problem<a class="headerlink" href="#the-problem" title="Permalink to this headline">¶</a></h2>
 <p>Do all potential users know that “FLNS” is a CESM-specific abbreviation for “Net longwave flux at surface”? How would a novice user find out, other than by finding separate documentation, or by opening a Zarr store in the hopes that the long name might be recorded there? How do we address the fact that every climate model code seems to have a different, non-standard name for all the variables, thus making multi-source research needlessly difficult?</p>
-</div>
-<div class="section" id="enhanced-intake-esm-catalog">
+</section>
+<section id="enhanced-intake-esm-catalog">
 <h2>Enhanced Intake-ESM Catalog<a class="headerlink" href="#enhanced-intake-esm-catalog" title="Permalink to this headline">¶</a></h2>
 <p>By adding additional columns to the Intake-ESM catalog, we should be able to improve semantic interoperability and provide potentially useful information to the users.</p>
 <div class="cell docutils container">
@@ -797,7 +802,7 @@ Catalog file: https://ncar-cesm-lens.s3-us-west-2.amazonaws.com/catalogs/aws-ces
 </div>
 </div>
 </div>
-<div class="section" id="long-names">
+<section id="long-names">
 <h3>Long names<a class="headerlink" href="#long-names" title="Permalink to this headline">¶</a></h3>
 <p>In the summary above, note the addition of additional elements: long_name, start, end, and dim.</p>
 <div class="cell docutils container">
@@ -1092,8 +1097,8 @@ total liquid runoff (does not include QSNWCPICE)
 </table></div></div>
 </div>
 <p><strong>Table:</strong> <em>All available data in this catalog for selected variable</em></p>
-</div>
-<div class="section" id="substring-matches">
+</section>
+<section id="substring-matches">
 <h3>Substring matches<a class="headerlink" href="#substring-matches" title="Permalink to this headline">¶</a></h3>
 <p><strong>ISSUE:</strong> The current version of intake-esm search() function requires an exact
 full-string case-sensitive match of the long_name.
@@ -1475,8 +1480,8 @@ Zonal wind
 <p><strong>Table(s):</strong> <em>Information about all matching datasets</em></p>
 <p><strong>ISSUE:</strong> The case-insensitive substring matching is not integrated into intake-esm, so it is not clear
 whether resulting search results can be passed directly to Xarray to read data.</p>
-</div>
-<div class="section" id="other-attributes">
+</section>
+<section id="other-attributes">
 <h3>Other attributes<a class="headerlink" href="#other-attributes" title="Permalink to this headline">¶</a></h3>
 <p>Other columns in the enhanced catalog may be useful. For example, the dimensionality column enables us to list all data from the ocean component that is 3D.</p>
 <div class="cell docutils container">
@@ -2001,8 +2006,8 @@ whether resulting search results can be passed directly to Xarray to read data.<
 </table></div></div>
 </div>
 <p><strong>Table:</strong> <em>List of all 3D ocean datasets</em></p>
-</div>
-<div class="section" id="spatiotemporal-filtering">
+</section>
+<section id="spatiotemporal-filtering">
 <h3>Spatiotemporal filtering<a class="headerlink" href="#spatiotemporal-filtering" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>If there were both regional and global data available (e.g., LENS and NA-CORDEX data for the same variable, both listed in same catalog), some type of coverage indicator (or columns for bounding box edges) could be listed.</p></li>
@@ -2201,8 +2206,8 @@ whether resulting search results can be passed directly to Xarray to read data.<
 </table></div></div>
 </div>
 <p><strong>Table:</strong> *List of all 3D ocean datasets with an end month of 2100 December. Note that because intake-esm currently requires an exact match this search would not find daily data with an end date of 2100 Dec 31.</p>
-</div>
-<div class="section" id="to-do">
+</section>
+<section id="to-do">
 <h3>TO DO<a class="headerlink" href="#to-do" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Add substring search capability to intake-esm.</p></li>
@@ -2210,9 +2215,9 @@ whether resulting search results can be passed directly to Xarray to read data.<
 <li><p>Consider adding spatial attributes (and appropriate intake-esm support) once we have some regional data available.</p></li>
 <li><p>Have some tables in this demo only list only variable and long name rather than every single frequency and experiment.</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
               </div>
@@ -2232,7 +2237,7 @@ whether resulting search results can be passed directly to Xarray to read data.<
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -2241,9 +2246,11 @@ whether resulting search results can be passed directly to Xarray to read data.<
 
       </div>
     </div>
-  
-  <script src="../../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

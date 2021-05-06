@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Contributor’s Guide</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -59,14 +63,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -75,18 +79,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
-      
-      <img src="../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="current nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="about.html">
    About Project Pythia
@@ -129,7 +133,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -179,12 +182,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -193,11 +196,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -222,7 +226,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -231,9 +236,9 @@
         
               <div>
                 
-  <div class="section" id="contributor-s-guide">
+  <section id="contributor-s-guide">
 <h1>Contributor’s Guide<a class="headerlink" href="#contributor-s-guide" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>Project Pythia is an open community, and all contributions are welcome following our <a class="reference internal" href="code_of_conduct.html"><span class="doc std std-doc">Code of Conduct</span></a>.</p>
 <p>The source code for the Pythia Portal is <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io">publicly hosted on github</a>.
@@ -243,17 +248,17 @@ Detailed instructions for new users will be posted here in the near future.</p>
 feel free to <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io/issues">open an issue on github</a>
 or contact any member of the <a class="reference internal" href="people.html"><span class="doc std std-doc">Project Pythia core team</span></a> directly.</p>
 <p>For questions or anything else you would like to share with the <a class="reference internal" href="people.html"><span class="doc std std-doc">Project Pythia Team</span></a>, please reach out to us on our <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io/discussions">GitHub Discussions page</a>.</p>
-</div>
-<div class="section" id="instructions-for-building-the-portal-site">
+</section>
+<section id="instructions-for-building-the-portal-site">
 <h2>Instructions for building the portal site<a class="headerlink" href="#instructions-for-building-the-portal-site" title="Permalink to this headline">¶</a></h2>
 <p>The portal site is built with <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a>.</p>
 <p>When testing new content is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. You can also build it locally on your machine.</p>
-<div class="section" id="to-view-the-read-the-docs-autobuild">
+<section id="to-view-the-read-the-docs-autobuild">
 <h3>To view the Read the Docs autobuild<a class="headerlink" href="#to-view-the-read-the-docs-autobuild" title="Permalink to this headline">¶</a></h3>
 <p>Once a Pull Request has passed all tests, including the Read the Docs build, you can click “Details” of the check that says, “docs/readthedocs.org:projectpythia - Read the Docs build succeeded!” to launch a new tab with a build of the Project Pythia site. (You may have to click “Show all checks” for this to be displayed.)</p>
 <p><img alt="Checks" src="../_images/ReadtheDocsAutobuild.png" /></p>
-</div>
-<div class="section" id="to-build-and-view-the-site-locally">
+</section>
+<section id="to-build-and-view-the-site-locally">
 <h3>To build and view the site locally<a class="headerlink" href="#to-build-and-view-the-site-locally" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p>Fork the <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io">source repository</a> on GitHub</p></li>
@@ -293,9 +298,9 @@ Open with your web browser, or from the terminal:</p>
 </li>
 <li><p>You can re-activate the <code class="docutils literal notranslate"><span class="pre">pythia</span></code> conda environment at any time with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">pythia</span></code>.</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
               </div>
@@ -317,7 +322,7 @@ Open with your web browser, or from the terminal:</p>
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -326,9 +331,11 @@ Open with your web browser, or from the terminal:</p>
 
       </div>
     </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

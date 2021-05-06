@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Geopandas Tutorial</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -57,14 +61,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -73,18 +77,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
-      
-      <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../pages/about.html">
    About Project Pythia
@@ -127,7 +131,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -177,12 +180,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -213,11 +216,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -266,7 +270,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -275,10 +280,10 @@
         
               <div>
                 
-  <div class="section" id="geopandas-tutorial">
+  <section id="geopandas-tutorial">
 <h1>Geopandas Tutorial<a class="headerlink" href="#geopandas-tutorial" title="Permalink to this headline">¶</a></h1>
 <div class="alert-info">
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>teaching:</strong> 30 minutes</p></li>
@@ -289,8 +294,8 @@
 </ul>
 </li>
 </ul>
-</div></div>
-<div class="section" id="table-of-contents">
+</div></section>
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="#Pandas-and-Geopandas"><strong>Pandas and Geopandas</strong></a></p></li>
@@ -298,8 +303,8 @@
 <li><p><a class="reference external" href="#Vector-data-with-Geopandas"><strong>Vector data with Geopandas</strong></a></p></li>
 <li><p><a class="reference external" href="#Visualization-with-holoviz"><strong>Visualization with holoviz</strong></a></p></li>
 </ol>
-</div>
-<div class="section" id="pandas-and-geopandas-primer">
+</section>
+<section id="pandas-and-geopandas-primer">
 <h2>Pandas and Geopandas primer<a class="headerlink" href="#pandas-and-geopandas-primer" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://pandas.pydata.org">Pandas</a> is a core scientific Python library to work with “Panel Data” (PanDas). Basically if you have a spreadsheet or database you should be using Pandas. Pandas has many input/output (I/O) functions, and two core data structures - the “Series” and “DataFrame”. <a class="reference external" href="http://geopandas.org">Geopandas</a> extends Pandas to work efficently with collections of geographic Vector data - geometric shapes that are georeferenced to a position on Earth’s surface. Geopandas data objects are, you might have guessed, called “GeoSeries” and “GeoDataFrame”.</p>
 <div class="cell docutils container">
@@ -320,7 +325,7 @@ Geopandas version:  0.7.0
 </div>
 </div>
 </div>
-<div class="section" id="tabular-data-with-pandas">
+<section id="tabular-data-with-pandas">
 <h3>Tabular data with Pandas<a class="headerlink" href="#tabular-data-with-pandas" title="Permalink to this headline">¶</a></h3>
 <p>We’ll use the <a class="reference external" href="https://volcano.si.edu">Smithsonian Global Volcanism database</a>.  This could be a local csv, excel file, sql database etc… or remote data or results from a server (https://volcano.si.edu/database/webservices.cfm)</p>
 <div class="cell docutils container">
@@ -1032,15 +1037,15 @@ Name: Last_Eruption_Year, dtype: float64
 <img alt="../../../_images/geopandas_13_1.png" src="../../../_images/geopandas_13_1.png" />
 </div>
 </div>
-<div class="section" id="exercises">
+<section id="exercises">
 <h4>Exercises:<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Make a new plot!</p></li>
 <li><p>Change the query to get eruption information</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="vector-data-with-geopandas">
+</section>
+</section>
+<section id="vector-data-with-geopandas">
 <h3>Vector data with Geopandas<a class="headerlink" href="#vector-data-with-geopandas" title="Permalink to this headline">¶</a></h3>
 <p>Since the Volcano database has geolocation information we should consider visualizing information on a map!</p>
 <div class="cell docutils container">
@@ -2190,8 +2195,8 @@ dtype: float64
 <p>14 rows × 26 columns</p>
 </div></div></div>
 </div>
-</div>
-<div class="section" id="visualization-with-holoviz">
+</section>
+<section id="visualization-with-holoviz">
 <h3>Visualization with holoviz<a class="headerlink" href="#visualization-with-holoviz" title="Permalink to this headline">¶</a></h3>
 <p>For geographic data on a map <a class="reference external" href="http://holoviz.org">holoviz</a> libraries are fantastic!</p>
 <div class="cell docutils container">
@@ -3691,15 +3696,15 @@ if (root.Bokeh !== undefined) {
   }
 })(window);</script></div></div>
 </div>
-<div class="section" id="excercises">
+<section id="excercises">
 <h4>Excercises:<a class="headerlink" href="#excercises" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Recreate bar and histogram plots with hvplot!</p></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
@@ -3719,7 +3724,7 @@ if (root.Bokeh !== undefined) {
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -3728,9 +3733,11 @@ if (root.Bokeh !== undefined) {
 
       </div>
     </div>
-  
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

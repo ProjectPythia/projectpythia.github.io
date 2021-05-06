@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Intake Tutorial</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -57,14 +61,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -73,18 +77,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
-      
-      <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../pages/about.html">
    About Project Pythia
@@ -127,7 +131,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -177,12 +180,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -213,11 +216,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -257,7 +261,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -266,10 +271,10 @@
         
               <div>
                 
-  <div class="section" id="intake-tutorial">
+  <section id="intake-tutorial">
 <h1>Intake Tutorial<a class="headerlink" href="#intake-tutorial" title="Permalink to this headline">¶</a></h1>
 <div class="alert-info">
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><strong>teaching:</strong> 20 minutes</p></li>
@@ -280,8 +285,8 @@
 </ul>
 </li>
 </ul>
-</div></div>
-<div class="section" id="table-of-contents">
+</div></section>
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="#Intake-primer"><strong>Intake primer</strong></a></p></li>
@@ -290,13 +295,13 @@
 <li><p><a class="reference external" href="#Intake-xarray-example"><strong>Intake xarray example</strong></a></p></li>
 <li><p><a class="reference external" href="#Intake-STAC-example"><strong>Intake STAC example</strong></a></p></li>
 </ol>
-</div>
-<div class="section" id="intake-primer">
+</section>
+<section id="intake-primer">
 <h2>Intake primer<a class="headerlink" href="#intake-primer" title="Permalink to this headline">¶</a></h2>
 <img src="https://intake.readthedocs.io/en/latest/_static/images/logo.png" alt="intake logo" width="200" align="right"/>
 <p><a class="reference external" href="https://intake.readthedocs.io/en/latest/index.html">Intake</a> is a lightweight package for finding, investigating, loading and disseminating data. This notebook illutrates the usefulness of intake for a “Data User”. Intake simplifies loading data from <a class="reference external" href="https://intake.readthedocs.io/en/latest/plugin-directory.html#plugin-directory">many formats</a> into familiar Python objects like Pandas DataFrames or Xarray Datasets. Intake is especially useful for remote datasets - it allows us to bypass downloading data and instead load directly into a Python object for analysis.</p>
-</div>
-<div class="section" id="build-an-intake-catalog">
+</section>
+<section id="build-an-intake-catalog">
 <h2>Build an intake catalog<a class="headerlink" href="#build-an-intake-catalog" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say we want to save a version of the data from our geopandas.ipynb tutorial for easy sharing and future use. intake has csv support by default but for loading data with geopandas we need to make sure the <a class="reference external" href="https://github.com/intake/intake_geopandas">intake_geopandas plugin</a> is installed.</p>
 <div class="cell docutils container">
@@ -2046,8 +2051,8 @@ if (root.Bokeh !== undefined) {
   }
 })(window);</script></div></div>
 </div>
-</div>
-<div class="section" id="intake-xarray-example">
+</section>
+<section id="intake-xarray-example">
 <h2>Intake xarray example<a class="headerlink" href="#intake-xarray-example" title="Permalink to this headline">¶</a></h2>
 <p>We’ve seen a plugin to load geospatial vector data into geopandas geodataframes, there is also a plugin to facilitate loading geospatial raster data into xarray dataarrays! https://github.com/intake/intake-xarray</p>
 <div class="cell docutils container">
@@ -2473,8 +2478,8 @@ dl.xr-attrs {
        [2779., 2544., 2779., ..., 1429., 1596., 1496.],
        [3183., 2309., 2679., ..., 3067., 3802., 2665.]])</pre></div></li><li class='xr-section-item'><input id='section-4c3a423c-5377-49f3-8247-25dadc1b3676' class='xr-section-summary-in' type='checkbox'  checked><label for='section-4c3a423c-5377-49f3-8247-25dadc1b3676' class='xr-section-summary' >Coordinates: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>y</span></div><div class='xr-var-dims'>(y)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>4.309e+06 4.309e+06 ... 4.264e+06</div><input id='attrs-6e93d0ee-a32b-4ac9-9ca7-b7a49675d625' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-6e93d0ee-a32b-4ac9-9ca7-b7a49675d625' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5dbdffb8-2b9c-41c2-8bc8-b95fca6c5785' class='xr-var-data-in' type='checkbox'><label for='data-5dbdffb8-2b9c-41c2-8bc8-b95fca6c5785' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><pre class='xr-var-data'>array([4309200., 4309050., 4308900., ..., 4264650., 4264500., 4264350.])</pre></li><li class='xr-var-item'><div class='xr-var-name'><span class='xr-has-index'>x</span></div><div class='xr-var-dims'>(x)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>3.324e+05 3.326e+05 ... 3.772e+05</div><input id='attrs-3d6ea4db-0c50-40e4-a207-4cf69906a2d6' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-3d6ea4db-0c50-40e4-a207-4cf69906a2d6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-2f47f311-fc6a-4192-94b0-fc42ac75b25b' class='xr-var-data-in' type='checkbox'><label for='data-2f47f311-fc6a-4192-94b0-fc42ac75b25b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><pre class='xr-var-data'>array([332400., 332550., 332700., ..., 376950., 377100., 377250.])</pre></li></ul></div></li><li class='xr-section-item'><input id='section-d7e17227-468b-4d56-b945-aba7a44ddec4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d7e17227-468b-4d56-b945-aba7a44ddec4' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div></div></div>
 </div>
-</div>
-<div class="section" id="intake-stac-example">
+</section>
+<section id="intake-stac-example">
 <h2>Intake STAC example<a class="headerlink" href="#intake-stac-example" title="Permalink to this headline">¶</a></h2>
 <p>Instead of creating your own metadata catalogs from scratch as YAML files, intake plugins exist to read catalogs in different formats. For example, for geospatial data on the web, <a class="reference external" href="https://stacspec.org/">SpatioTemporal Asset Catalogs (STAC)</a> are emerging as a standard way to descripe data that you want to search for based on georeference location, time, and perhaps other metadata fields. The intake-stac plugin greatly facilitates loading datasets referenced in STAC catalogs into Python Xarray objects for analysis. https://github.com/pangeo-data/intake-stac</p>
 <div class="cell docutils container">
@@ -2932,16 +2937,16 @@ dl.xr-attrs {
 <img alt="../../../_images/intake_24_1.png" src="../../../_images/intake_24_1.png" />
 </div>
 </div>
-<div class="section" id="related-intake-plugins">
+<section id="related-intake-plugins">
 <h3>Related Intake plugins<a class="headerlink" href="#related-intake-plugins" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://intake-esm.readthedocs.io/en/latest/">Intake-ESM</a>: Intake driver for loading catalogs of climate model data, intake-esm.readthedocs.io</p></li>
 <li><p><a class="reference external" href="https://pangeo-data.github.io/pangeo-datastore/">Pangeo-Datastore</a>: Pangeo’s public Intake catalog</p></li>
 <li><p><a class="reference external" href="https://github.com/sat-utils/sat-search">Sat-Search</a>: Search and discovery of STAC catalogs, with plugin support to intake-stac</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
@@ -2967,7 +2972,7 @@ dl.xr-attrs {
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -2976,9 +2981,11 @@ dl.xr-attrs {
 
       </div>
     </div>
-  
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>

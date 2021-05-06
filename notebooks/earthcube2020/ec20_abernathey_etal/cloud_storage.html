@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Big Arrays, Fast: Profiling Cloud Storage Read Throughput</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -20,16 +20,20 @@
 
     
       
+  <link rel="stylesheet"
+    href="../../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -37,7 +41,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="shortcut icon" href="../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
@@ -57,14 +61,14 @@
   gtag('config', 'G-T9KGMX7VHZ')
 </script>
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-     
+
+
+ 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -73,18 +77,18 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
-      
-      <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
-      
-      
-    </a>
+<a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <img src="../../../_static/ProjectPythia_Logo_Final-01-Blue.svg" class="logo" alt="logo">
+  
+  
+</a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../../pages/about.html">
    About Project Pythia
@@ -127,7 +131,6 @@
  </li>
 </ul>
 
-    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -177,12 +180,12 @@
 
             <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -213,11 +216,12 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#introduction">
    Introduction
@@ -325,7 +329,8 @@
  </li>
 </ul>
 
-            </nav>
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -334,10 +339,10 @@
         
               <div>
                 
-  <div class="section" id="big-arrays-fast-profiling-cloud-storage-read-throughput">
+  <section id="big-arrays-fast-profiling-cloud-storage-read-throughput">
 <h1>Big Arrays, Fast: Profiling Cloud Storage Read Throughput<a class="headerlink" href="#big-arrays-fast-profiling-cloud-storage-read-throughput" title="Permalink to this headline">¶</a></h1>
 <p>By <a class="reference external" href="https://github.com/rabernat">Ryan Abernathey</a></p>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Many geoscience problems involve analyzing hundreds of Gigabytes (GB), many Terabytes (TB = 100 GB), or even a Petabyte (PB = 1000 TB) of data.
 For such data volumes, downloading data to personal computers is inefficient.
@@ -367,8 +372,8 @@ However, the software architecture of a data analysis system must be adapted to 
 <li><p><a class="reference external" href="https://filesystem-spec.readthedocs.io/">Filesystem Spec</a> - an abstraction layer for working with different storage technologies. Specific implementations of filesystem spec (e.g. <a class="reference external" href="https://gcsfs.readthedocs.io/">gcsfs</a>, Google Cloud Storage Filesystem) allow Zarr to read and write data from object storage.</p></li>
 <li><p><a class="reference external" href="http://dask.pydata.org/">Dask</a> - a distributed computing framework that allows us to read and write data in parallel asynchronously.</p></li>
 </ul>
-</div>
-<div class="section" id="accessing-the-data">
+</section>
+<section id="accessing-the-data">
 <h2>Accessing the Data<a class="headerlink" href="#accessing-the-data" title="Permalink to this headline">¶</a></h2>
 <p>For this demonstration, we will use data stored in Google Cloud Storage.
 The data come from the <a class="reference external" href="https://www.gfdl.noaa.gov/cm2-6/">GFDL CM2.6 high-resolution climate model</a>.
@@ -8600,8 +8605,8 @@ dl.xr-attrs {
 <li><p>The chunks are contiguous across the latitude and longitude dimensions (axes 2 and 3) and span 5 vertical levels (axis 1). Each timestep (axis 0) is in a different chunk.</p></li>
 <li><p>Zarr + Dask know how to virtually combine these chunks into a single 4-dimensional array.</p></li>
 </ul>
-</div>
-<div class="section" id="set-up-benchmarking">
+</section>
+<section id="set-up-benchmarking">
 <h2>Set Up Benchmarking<a class="headerlink" href="#set-up-benchmarking" title="Permalink to this headline">¶</a></h2>
 <p>Now we want to see how fast we can load data from the object store. <em>We are not interested in any computations.</em> Here the goal is simply to measure read performance and how it scales. In order to do this, we  employ a trick: we  store the data into a virtual storage target that simply discards the data, similar to piping data to <code class="docutils literal notranslate"><span class="pre">/dev/null</span></code> on a filesystem.</p>
 <p>To do this, we define the following storage class:</p>
@@ -8716,8 +8721,8 @@ Most cloud environments can work with <a class="reference external" href="https:
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="do-benchmarking">
+</section>
+<section id="do-benchmarking">
 <h2>Do Benchmarking<a class="headerlink" href="#do-benchmarking" title="Permalink to this headline">¶</a></h2>
 <p>We want to keep track of some information about our array.
 Here we figure out the size (in bytes) of the chunks.</p>
@@ -8923,8 +8928,8 @@ We also keep track of some other metadata about our testing conditions.</p>
 <img alt="../../../_images/cloud_storage_33_1.png" src="../../../_images/cloud_storage_33_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="compare-many-results">
+</section>
+<section id="compare-many-results">
 <h2>Compare Many Results<a class="headerlink" href="#compare-many-results" title="Permalink to this headline">¶</a></h2>
 <p>Similar tests to the one above were performed with many different cloud storage technologies and data formats:</p>
 <ul class="simple">
@@ -9378,8 +9383,8 @@ We also keep track of some other metadata about our testing conditions.</p>
 <img alt="../../../_images/cloud_storage_37_1.png" src="../../../_images/cloud_storage_37_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="discussion">
+</section>
+<section id="discussion">
 <h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
 <p>The figure above shows a wide range of throughput rates and scaling behavior.
 There are a great many factors which might influence the results, including:</p>
@@ -9391,20 +9396,20 @@ There are a great many factors which might influence the results, including:</p>
 <li><p>The overhead of the dask cluster in computing many tasks simultaneously</p></li>
 </ul>
 <p>The comparison is far from “fair”: it is clearly biased towards Google Cloud Storage, which has optimum network proximity to the compute location. Nevertheless, we make the following observations.</p>
-<div class="section" id="zarr-is-about-10x-faster-than-netcdf-in-cloud-object-storage">
+<section id="zarr-is-about-10x-faster-than-netcdf-in-cloud-object-storage">
 <h3>Zarr is about 10x faster than NetCDF in Cloud Object Storage<a class="headerlink" href="#zarr-is-about-10x-faster-than-netcdf-in-cloud-object-storage" title="Permalink to this headline">¶</a></h3>
 <p>Using 40 cores (20 dask workers), we were able to pull netCDF data from Google Cloud Storage at a rate of about 500 MB/s.
 Using the Zarr format, we could get to 5000 MB/s (5 GB/s) for the same number of dask workers.</p>
-</div>
-<div class="section" id="google-cloud-storage-scales">
+</section>
+<section id="google-cloud-storage-scales">
 <h3>Google Cloud Storage Scales<a class="headerlink" href="#google-cloud-storage-scales" title="Permalink to this headline">¶</a></h3>
 <p>Both formats, however, showed good scaling, with throughput increasingly nearly linearly with the size of the cluster.
 The largest experiment we attempted used nearly 400 cores: we were able to pull data from GCS at roughly 20 GB/s.
 That’s pretty fast! At this rate, we could process a Petebyte of data in about 14 hours.
 However, there is a knee in the GCS-Zarr curve around 150 cores, with the scaling becoming slightly poorer above that value.
 We hypothesize that this is due to Dask’s overhead from handling a very large task graph.</p>
-</div>
-<div class="section" id="external-cloud-storage-providers-scale-then-saturate">
+</section>
+<section id="external-cloud-storage-providers-scale-then-saturate">
 <h3>External Cloud Storage Providers Scale…then Saturate<a class="headerlink" href="#external-cloud-storage-providers-scale-then-saturate" title="Permalink to this headline">¶</a></h3>
 <p>We tested three cloud storage providers <em>outside</em> of Google Cloud: Wasabi (a commercial service), Jetstream (an NSF-operated cloud), and OSN (an NSF-sponsored storage provider).
 These curves all show a similar pattern: good scaling for low worker counts, then a plateau.
@@ -9413,8 +9418,8 @@ Of these three, Jetstream saturated at the lowest value (2 GB/s), then Wasabi (3
 Also noteworthy is the fact that, for smaller core counts, OSN was actually <em>faster</em> than GCS <em>within Google Cloud</em>.
 These results are likely highly sensitive to network topology.
 However, they show unambiguously that OSN is an attractive choice for cloud-style storage and on-demand big-data processing.</p>
-</div>
-<div class="section" id="opendap-is-slow">
+</section>
+<section id="opendap-is-slow">
 <h3>OPeNDAP is Slow<a class="headerlink" href="#opendap-is-slow" title="Permalink to this headline">¶</a></h3>
 <p>The fastest we could get data out of an OPeNDAP server was 100 MB/s (UCAR ESGF Node).
 The NOAA ESRL server was more like 20 MB/s.
@@ -9422,16 +9427,16 @@ These rates are many orders of magnitude than cloud storage.
 Perhaps these servers have throttling in place to limit their total bandwidth.
 Or perhaps the OPeNDAP protocol itself has some fundamental inefficiencies.
 OPeNDAP remains a very convenient protocol for remote data access; if we wish to use it for Big Data and distributed processing, data providers need to find some way to speed it up.</p>
-</div>
-</div>
-<div class="section" id="conclusions">
+</section>
+</section>
+<section id="conclusions">
 <h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">¶</a></h2>
 <p>We demonstrated a protocol for testing the throughput and scalability Array data storage with the Dask computing framework.
 Using Google Cloud as our compute platform, we found, unsurprisingly, that a cloud-optimized storage format (Zarr), used with in-region cloud storage, provided the best raw throughput (up to 20 GB/s in our test) and scalability.
 We found that the same storage format also allowed us to transfer data on-demand from other clouds at reasonable rates (5 GB/s) for modest levels of parallelism.
 (Care must be taken in this case, however, because many cloud providers charge egress fees for data leaving their network.)
 Combined with Zarr, all of the cloud object storage platforms were able to deliver data orders of magnitude faster than traditional OPeNDAP servers, the standard remote-data-access protocol for the geosciences.</p>
-<div class="section" id="future-work">
+<section id="future-work">
 <h3>Future Work<a class="headerlink" href="#future-work" title="Permalink to this headline">¶</a></h3>
 <p>This analysis could be improved in numerous ways. In the future we would like to</p>
 <ul class="simple">
@@ -9441,19 +9446,19 @@ Combined with Zarr, all of the cloud object storage platforms were able to deliv
 </ul>
 <p>Finally, we did not attempt to assess the relative costs associated with cloud vs. on-premises data storage, as this involves difficult questions related to total cost of ownership.
 However, we hope these results are useful for data providers in deciding how to provision future infrastructure for data-intensive geoscience.</p>
-</div>
-</div>
-<div class="section" id="notebook-reviews">
+</section>
+</section>
+<section id="notebook-reviews">
 <h2>Notebook Reviews<a class="headerlink" href="#notebook-reviews" title="Permalink to this headline">¶</a></h2>
 <p>Here we include the review of the original version of this notebook and our replies.</p>
-<div class="section" id="review-1">
+<section id="review-1">
 <h3>Review 1<a class="headerlink" href="#review-1" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="evaluation-of-the-contribution">
+<section id="evaluation-of-the-contribution">
 <h4>Evaluation of the Contribution<a class="headerlink" href="#evaluation-of-the-contribution" title="Permalink to this headline">¶</a></h4>
 <p>Overall Recommendation (100%): 9
 Total points (out of 10)    : 9</p>
-</div>
-<div class="section" id="comments-for-the-authors">
+</section>
+<section id="comments-for-the-authors">
 <h4>Comments for the Authors<a class="headerlink" href="#comments-for-the-authors" title="Permalink to this headline">¶</a></h4>
 <p>“Big Arrays, Fast: Profiling Cloud Storage Read Throughput” is a good quality
 and, most of all, interesting science meets computer science notebook. It
@@ -9490,16 +9495,16 @@ future work section.</p>
 <blockquote>
 <div><p>A future work section has been included.</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="review-2">
+</section>
+</section>
+<section id="review-2">
 <h3>Review 2<a class="headerlink" href="#review-2" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id1">
+<section id="id1">
 <h4>Evaluation of the Contribution<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>Overall Recommendation (100%): 8
 Total points (out of 10)    : 8</p>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h4>Comments for the Authors<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>the author should add to the discussion a reason for the choice of threads,
@@ -9557,10 +9562,10 @@ notebook)</p></li>
 <blockquote>
 <div><p>This was all included in the original submission.</p>
 </div></blockquote>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
@@ -9586,7 +9591,7 @@ notebook)</p></li>
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Apr 29, 2021.<br/>
+          Last updated on May 06, 2021.<br/>
       </p>
     </div>
   </footer>
@@ -9595,9 +9600,11 @@ notebook)</p></li>
 
       </div>
     </div>
-  
-  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  
+    
+  <script src="../../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
   </body>
 </html>
