@@ -43,7 +43,7 @@ def generate_tag_menu(all_items, tag_key):
 
     menu_html = f"""
 <div class="dropdown">
-<button class="btn btn-sm btn-primary dropdown-toggle" data-toggle="collapse" data-target="#{tag_key}" aria-haspopup="true">{tag_key.title()}</button>
+<button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#{tag_key}" aria-haspopup="true">{tag_key.title()}</button>
 <div id="{tag_key}" class="collapse dropdown-menu">
 {hrefs}
 </div>
@@ -140,9 +140,13 @@ def main(app):
     with open('links.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
-    menu_html=''
+    menu_html='<div class="d-flex flex-row">' + '\n'
     for tag_key in ['packages', 'formats', 'domains']:
-        menu_html = menu_html + generate_tag_menu(all_items, tag_key) + '\n'
+        menu_html += generate_tag_menu(all_items, tag_key) + '\n'
+    menu_html += '</div>' + '\n'
+
+    #javascript
+    menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     
     build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
 
