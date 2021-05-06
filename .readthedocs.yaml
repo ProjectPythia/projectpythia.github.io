@@ -1,10 +1,11 @@
 # Required
 version: 2
 
-sphinx:
-  configuration: content/conf.py
+build:
+  image: latest
 
-python:
-  version: 3.8
-  install:
-    - requirements: requirements.txt
+conda:
+  environment: ci/environment.yml
+
+sphinx:
+  fail_on_warning: false
