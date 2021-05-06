@@ -24,7 +24,7 @@ jobs:
 
       - name: Build
         run: |
-          conda env list
+          conda activate pythia
           cd content
           make -j4 html
 
