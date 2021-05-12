@@ -72,7 +72,7 @@ def _generate_menu(all_items, flt=None):
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     if flt:
-        menu_html += '<button type="button" class="btn btn-link" href="/pages/links.html">Return to External Links Gallery</button>' + '\n'
+        menu_html += '<a type="button" class="btn btn-link" href="/pages/links.html">Return to External Links Gallery</a>' + '\n'
     menu_html += '</div>' + '\n'
     menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     return menu_html
@@ -166,16 +166,10 @@ def main(app):
     with open('links.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
-    #key_list = generate_tag_keys(all_items)
-    #menu_html='<div class="d-flex flex-row">' + '\n'
-    #for tag_key in key_list:
-    #    menu_html += generate_tag_menu(all_items, tag_key) + '\n'
-    #menu_html += '</div>' + '\n'
-    #menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     menu_html = _generate_menu(all_items)
     build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
 
-    menu_html = _generate_menu(all_items, flt=True)
+    menu_html_flt = _generate_menu(all_items, flt=True)
     tag_set = _generate_tag_set(all_items)
 
     for tag in tag_set:
@@ -185,7 +179,7 @@ def main(app):
             if _tag_in_item(item, tag):
                 items.append(item)
 
-        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html)
+        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html_flt)
 
 
 def setup(app):
