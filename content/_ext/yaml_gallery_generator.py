@@ -3,7 +3,7 @@ from textwrap import dedent
 import pathlib
 
 
-def tag_in_item(item, tag_str):
+def _tag_in_item(item, tag_str):
     if tag_str is None:
         return True
     all_tags = []
@@ -12,7 +12,7 @@ def tag_in_item(item, tag_str):
     return tag_str in all_tags
 
 
-def generate_tag_keys(all_items):
+def _generate_tag_keys(all_items):
 
     key_set = set()
     for item in all_items:
@@ -25,7 +25,7 @@ def generate_tag_keys(all_items):
     return key_list
 
 
-def generate_tag_set(all_items, tag_key=None):
+def _generate_tag_set(all_items, tag_key=None):
 
     tag_set = set()
     for item in all_items:
@@ -38,23 +38,23 @@ def generate_tag_set(all_items, tag_key=None):
     return tag_set
 
 
-def sort_tags(tag_set):
+def _sort_tags(tag_set):
     
     tag_list = list(tag_set)
     tag_list.sort()
     return tag_list
 
 
-def generate_tag_menu(all_items, tag_key):
+def _generate_tag_menu(all_items, tag_key):
 
-    tag_set = generate_tag_set(all_items, tag_key)
-    tag_list = sort_tags(tag_set)
+    tag_set = _generate_tag_set(all_items, tag_key)
+    tag_list = _sort_tags(tag_set)
 
     hrefs = ''
     for tag in tag_list:
         hrefs = hrefs + f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' 
 
-    menu_html = f"""
+    tag_menu_html = f"""
 <div class="dropdown">
 <button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#{tag_key}" aria-haspopup="true">{tag_key.title()}</button>
 <div id="{tag_key}" class="collapse dropdown-menu">
@@ -62,6 +62,19 @@ def generate_tag_menu(all_items, tag_key):
 </div>
 </div>
 """
+    return tag_menu_html
+
+
+def _generate_menu(all_items, flt=None):
+    
+    key_list = _generate_tag_keys(all_items)
+    menu_html='<div class="d-flex flex-row">' + '\n'
+    for tag_key in key_list:
+        menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
+    if flt:
+        menu_html += '<button type="button" class="btn btn-link" href="/pages/links.html">Return to External Links Gallery</button>' + '\n'
+    menu_html += '</div>' + '\n'
+    menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     return menu_html
 
 
@@ -79,7 +92,7 @@ def build_from_items(items, filename, display_name, menu_html):
             for t in e:
                 tag_set.add(t)
 
-        tag_list = sort_tags(tag_set)
+        tag_list = _sort_tags(tag_set)
         tags = [f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
@@ -153,22 +166,23 @@ def main(app):
     with open('links.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
-    key_list = generate_tag_keys(all_items)
-    menu_html='<div class="d-flex flex-row">' + '\n'
-    for tag_key in key_list:
-        menu_html += generate_tag_menu(all_items, tag_key) + '\n'
-    menu_html += '</div>' + '\n'
-    menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
-    
+    #key_list = generate_tag_keys(all_items)
+    #menu_html='<div class="d-flex flex-row">' + '\n'
+    #for tag_key in key_list:
+    #    menu_html += generate_tag_menu(all_items, tag_key) + '\n'
+    #menu_html += '</div>' + '\n'
+    #menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
+    menu_html = _generate_menu(all_items)
     build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
 
-    tag_set = generate_tag_set(all_items)
+    menu_html = _generate_menu(all_items, flt=True)
+    tag_set = _generate_tag_set(all_items)
 
     for tag in tag_set:
 
         items=[]
         for item in all_items:
-            if tag_in_item(item, tag):
+            if _tag_in_item(item, tag):
                 items.append(item)
 
         build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html)
