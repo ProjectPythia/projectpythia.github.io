@@ -17,9 +17,10 @@
   .galmodal-content {
     background-color: #fefefe;
     margin: auto;
+    margin-left: 30%;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 65%;
   }
   
   /* The Close Button */
