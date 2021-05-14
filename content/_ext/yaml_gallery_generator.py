@@ -50,11 +50,9 @@ def _generate_tag_menu(all_items, tag_key):
     tag_set = _generate_tag_set(all_items, tag_key)
     tag_list = _sort_tags(tag_set)
 
-    hrefs = ''
-    for tag in tag_list:
-        hrefs = hrefs + f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' 
+    hrefs = ''.join(f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' for tag in tag_list)
 
-    tag_menu_html = f"""
+    return f"""
 <div class="dropdown">
 <button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#{tag_key}" aria-haspopup="true">{tag_key.title()}</button>
 <div id="{tag_key}" class="collapse dropdown-menu">
@@ -62,7 +60,6 @@ def _generate_tag_menu(all_items, tag_key):
 </div>
 </div>
 """
-    return tag_menu_html
 
 
 def _generate_menu(all_items, flt=None):
@@ -104,13 +101,17 @@ def build_from_items(items, filename, display_name, menu_html):
             authors_str = f'Created by: {authors[0]} and {authors[1]}'
 
         email = [a.get("email", None) for a in item['authors']][0]
-        email_str = '' if email == None else f'Email: {email}'
+        email_str = '' if email is None else f'Email: {email}'
 
         affiliation = [a.get("affiliation", None) for a in item['authors']][0]
-        affiliation_str = '' if affiliation == None else f'Affiliation: {affiliation}'
+        affiliation_str = '' if affiliation is None else f'Affiliation: {affiliation}'
 
         affiliation_url = [a.get("affiliation_url", None) for a in item['authors']][0]
-        affiliation_url_str = '' if affiliation_url == None else f'{affiliation} Site: {affiliation_url}'
+        affiliation_url_str = (
+            '' 
+            if affiliation_url is None 
+            else f'{affiliation} Site: {affiliation_url}'
+        )
 
         panels_body.append(
             f"""\
@@ -172,12 +173,7 @@ def main(app):
     tag_set = _generate_tag_set(all_items)
 
     for tag in tag_set:
-
-        items=[]
-        for item in all_items:
-            if _tag_in_item(item, tag):
-                items.append(item)
-
+        items = [item for item in all_items if _tag_in_item(item, tag)]
         build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html_flt)
 
 
