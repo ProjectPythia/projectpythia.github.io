@@ -136,7 +136,10 @@ def build_from_items(items, filename, display_name, menu_html):
 <div id="myModal-{item["title"]}" class="galmodal">
   <div class="galmodal-content">
     <span class="galmodal-close">&times;</span>
-    <p>Some text in the Modal..</p>
+<p>
+Some text in the Modal..
+{item["title"]}
+</p>
   </div>
 </div>
 
