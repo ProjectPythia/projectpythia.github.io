@@ -14,7 +14,7 @@
   }
   
   /* Modal Content */
-  .modal-content {
+  .galmodal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -23,15 +23,15 @@
   }
   
   /* The Close Button */
-  .modal-close {
+  .galmodal-close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .modal-close:hover,
-  .modal-close:focus {
+  .galmodal-close:hover,
+  .galmodal-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

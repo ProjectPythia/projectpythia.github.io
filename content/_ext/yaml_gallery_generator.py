@@ -134,7 +134,7 @@ def build_from_items(items, filename, display_name, menu_html):
 
 <button id="myBtn-{item["title"]}">Open Modal</button>
 <div id="myModal-{item["title"]}" class="galmodal">
-  <div class="modal-content">
+  <div class="galmodal-content">
     <span class="galmodal-close">&times;</span>
     <p>Some text in the Modal..</p>
   </div>
@@ -143,7 +143,7 @@ def build_from_items(items, filename, display_name, menu_html):
 <script>
 var modal = document.getElementById("myModal-{item["title"]}");
 var btn = document.getElementById("myBtn-{item["title"]}");
-var span = document.getElementsByClassName("modal-close")[0];
+var span = document.getElementsByClassName("galmodal-close")[0];
 
 btn.onclick = function() {{
   modal.style.display = "block";
