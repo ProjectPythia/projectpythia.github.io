@@ -148,7 +148,6 @@ def build_from_items(items, filename, display_name, menu_html):
 {menu_html}
 
 ````{{panels}}
-:container: full-width
 :column: text-left col-6 col-lg-4
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
