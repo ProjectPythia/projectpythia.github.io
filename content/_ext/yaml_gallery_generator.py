@@ -54,7 +54,7 @@ def _generate_tag_menu(all_items, tag_key):
 
 def _generate_menu(all_items, flt=None):
     
-    key_list = _generate_tag_keys(all_items)
+    key_list = _generate_sorted_tag_keys(all_items)
     menu_html='<div class="d-flex flex-row">' + '\n'
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
