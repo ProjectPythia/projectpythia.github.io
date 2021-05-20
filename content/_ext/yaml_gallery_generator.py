@@ -79,7 +79,7 @@ def build_from_items(items, filename, display_name, menu_html):
             for t in e:
                 tag_set.add(t)
 
-        tag_list = _sort_tags(tag_set)
+        tag_list = sorted(tag_set)
         tags = [f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
