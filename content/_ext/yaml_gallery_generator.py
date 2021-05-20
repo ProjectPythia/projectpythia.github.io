@@ -35,13 +35,6 @@ def _generate_tag_set(all_items, tag_key=None):
     return tag_set
 
 
-def _sort_tags(tag_set):
-    
-    tag_list = list(tag_set)
-    tag_list.sort()
-    return tag_list
-
-
 def _generate_tag_menu(all_items, tag_key):
 
     tag_set = _generate_tag_set(all_items, tag_key)
