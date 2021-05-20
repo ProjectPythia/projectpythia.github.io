@@ -12,7 +12,7 @@ def _tag_in_item(item, tag_str=None):
     return tag_str in all_tags
 
 
-def _generate_tag_keys(all_items):
+def _generate_sorted_tag_keys(all_items):
 
     key_set = set()
     for item in all_items:
