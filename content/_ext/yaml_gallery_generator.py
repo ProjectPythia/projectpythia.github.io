@@ -3,7 +3,7 @@ from textwrap import dedent
 import pathlib
 
 
-def _tag_in_item(item, tag_str):
+def _tag_in_item(item, tag_str=None):
     if tag_str is None:
         return True
     all_tags = []
