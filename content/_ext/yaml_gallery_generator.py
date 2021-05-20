@@ -38,7 +38,7 @@ def _generate_tag_set(all_items, tag_key=None):
 def _generate_tag_menu(all_items, tag_key):
 
     tag_set = _generate_tag_set(all_items, tag_key)
-    tag_list = _sort_tags(tag_set)
+    tag_list = sorted(tag_set)
 
     hrefs = ''.join(f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' for tag in tag_list)
 
