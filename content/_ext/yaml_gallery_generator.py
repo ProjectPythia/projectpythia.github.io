@@ -19,10 +19,7 @@ def _generate_sorted_tag_keys(all_items):
         for k, e in item['tags'].items():
             key_set.add(k)
     
-    key_list = list(key_set)
-    key_list.sort()
-
-    return key_list
+    return sorted(key_set)
 
 
 def _generate_tag_set(all_items, tag_key=None):
