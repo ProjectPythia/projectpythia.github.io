@@ -1,0 +1,175 @@
+
+# External Links Gallery - "numpy"
+
+<div class="d-flex flex-row">
+
+<div class="dropdown">
+<button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
+<div id="domains" class="collapse dropdown-menu">
+<a class="dropdown-item" href="/pages/links/atmospheric-science.html">Atmospheric Science</a> 
+<a class="dropdown-item" href="/pages/links/data-science.html">Data Science</a> 
+<a class="dropdown-item" href="/pages/links/remote-sensing.html">Remote Sensing</a> 
+
+</div>
+</div>
+
+
+<div class="dropdown">
+<button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#formats" aria-haspopup="true">Formats</button>
+<div id="formats" class="collapse dropdown-menu">
+<a class="dropdown-item" href="/pages/links/book.html">Book</a> 
+<a class="dropdown-item" href="/pages/links/course.html">Course</a> 
+<a class="dropdown-item" href="/pages/links/documentation.html">Documentation</a> 
+<a class="dropdown-item" href="/pages/links/gallery.html">Gallery</a> 
+<a class="dropdown-item" href="/pages/links/tutorial.html">Tutorial</a> 
+<a class="dropdown-item" href="/pages/links/video.html">Video</a> 
+
+</div>
+</div>
+
+
+<div class="dropdown">
+<button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#packages" aria-haspopup="true">Packages</button>
+<div id="packages" class="collapse dropdown-menu">
+<a class="dropdown-item" href="/pages/links/cartopy.html">Cartopy</a> 
+<a class="dropdown-item" href="/pages/links/contextily.html">Contextily</a> 
+<a class="dropdown-item" href="/pages/links/dask.html">Dask</a> 
+<a class="dropdown-item" href="/pages/links/geocat-comp.html">Geocat-Comp</a> 
+<a class="dropdown-item" href="/pages/links/geocat-viz.html">Geocat-Viz</a> 
+<a class="dropdown-item" href="/pages/links/geopandas.html">Geopandas</a> 
+<a class="dropdown-item" href="/pages/links/hvPlot.html">Hvplot</a> 
+<a class="dropdown-item" href="/pages/links/ipyleaflet.html">Ipyleaflet</a> 
+<a class="dropdown-item" href="/pages/links/jupyter.html">Jupyter</a> 
+<a class="dropdown-item" href="/pages/links/matplotlib.html">Matplotlib</a> 
+<a class="dropdown-item" href="/pages/links/metpy.html">Metpy</a> 
+<a class="dropdown-item" href="/pages/links/numpy.html">Numpy</a> 
+<a class="dropdown-item" href="/pages/links/pandas.html">Pandas</a> 
+<a class="dropdown-item" href="/pages/links/pure-python.html">Pure Python</a> 
+<a class="dropdown-item" href="/pages/links/rasterio.html">Rasterio</a> 
+<a class="dropdown-item" href="/pages/links/siphon.html">Siphon</a> 
+<a class="dropdown-item" href="/pages/links/wrf-python.html">Wrf-Python</a> 
+<a class="dropdown-item" href="/pages/links/xarray.html">Xarray</a> 
+
+</div>
+</div>
+
+<a type="button" class="btn btn-link" href="/pages/links.html">Return to Full Gallery</a>
+</div>
+<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>
+
+
+````{panels}
+:column: text-left col-6 col-lg-4
+:card: +my-2
+:img-top-cls: w-75 m-auto p-2
+:body: d-none
+---
+:img-top: /_static/thumbnails/numpy.png
++++
+**Numpy**
+
+Created by: NumPy
+
+
+
+
+
+
+
+```{dropdown} The fundamental package for scientific computing with Python.
+ ... <br> **See Full Description:**
+The fundamental package for scientific computing with Python.
+
+```
+
+```{link-button} https://numpy.org
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/numpy.png
++++
+**Numpy Tutorials**
+
+Created by: NumPy
+
+
+
+
+
+
+
+```{dropdown} A curated collection of external resources teaching numpy from beginner to advanced uses.
+ ... <br> **See Full Description:**
+A curated collection of external resources teaching numpy from beginner to advanced uses.
+
+```
+
+```{link-button} https://numpy.org/learn/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/Unidata.png
++++
+**Unidata Numpy Workshop**
+
+Created by: anonymous
+
+
+
+Affiliation: Unidata
+
+Unidata Site: https://www.unidata.ucar.edu/
+
+```{dropdown} Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on t ... <br> **See Full Description:**
+Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
+
+```
+
+```{link-button} https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/Enthought.png
++++
+**Intro to Numerical Computing with NumPy**
+
+Created by: A. Chabot-LeClerc
+
+
+
+Affiliation: Enthought
+
+Enthought Site: https://www.enthought.com/
+
+```{dropdown} NumPy provides Python with a powerful array processing library and an elegant syntax that is well su ... <br> **See Full Description:**
+NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
+
+```
+
+```{link-button} https://youtu.be/ZB7BZMhfPgk
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+
+````
