@@ -44,8 +44,6 @@
     <script src="../../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="shortcut icon" href="../../../_static/ProjectPythia_Logo_Final-01-Blue.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -378,10 +376,9 @@
 </section>
 <section id="xarray-primer">
 <h2>Xarray primer<a class="headerlink" href="#xarray-primer" title="Permalink to this headline">¶</a></h2>
-<p>We’ve seen that <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas</a> and <a class="reference external" href="http://geopandas.org">Geopandas</a> are excellent libraries for analyzing tabular “labeled data”. <a class="reference external" href="http://xarray.pydata.org/en/stable/">Xarray</a> is designed to make it easier to work with with <em>labeled multidimensional data</em>. By <em>multidimensional data</em> (also often called <em>N-dimensional</em>), we mean data with many independent dimensions or axes. For example, we might represent Earth’s surface temperature <span class="math notranslate nohighlight">\(T\)</span> as a three dimensional variable</p>
-<div class="math notranslate nohighlight">
-\[ T(x, y, t) \]</div>
-<p>where <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are spatial dimensions and and <span class="math notranslate nohighlight">\(t\)</span> is time. By <em>labeled</em>, we mean data that has metadata associated with it describing the names and relationships between the variables. The cartoon below shows a “data cube” schematic dataset with temperature and preciptation sharing the same three dimensions, plus longitude and latitude as auxilliary coordinates.</p>
+<p>We’ve seen that <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/">Pandas</a> and <a class="reference external" href="http://geopandas.org">Geopandas</a> are excellent libraries for analyzing tabular “labeled data”. <a class="reference external" href="http://xarray.pydata.org/en/stable/">Xarray</a> is designed to make it easier to work with with <em>labeled multidimensional data</em>. By <em>multidimensional data</em> (also often called <em>N-dimensional</em>), we mean data with many independent dimensions or axes. For example, we might represent Earth’s surface temperature $T$ as a three dimensional variable</p>
+<p>$$ T(x, y, t) $$</p>
+<p>where $x$ and $y$ are spatial dimensions and and $t$ is time. By <em>labeled</em>, we mean data that has metadata associated with it describing the names and relationships between the variables. The cartoon below shows a “data cube” schematic dataset with temperature and preciptation sharing the same three dimensions, plus longitude and latitude as auxilliary coordinates.</p>
 <p><img alt="xarray data model" src="https://github.com/pydata/xarray/raw/master/doc/_static/dataset-diagram.png" /></p>
 <section id="xarray-data-structures">
 <h3>Xarray data structures<a class="headerlink" href="#xarray-data-structures" title="Permalink to this headline">¶</a></h3>
@@ -432,9 +429,8 @@ Xarray version:  0.15.1
 </div>
 </div>
 <p>Here we model the simple function</p>
-<div class="math notranslate nohighlight">
-\[f(x) = sin(x)\]</div>
-<p>on the interval <span class="math notranslate nohighlight">\(-\pi\)</span> to <span class="math notranslate nohighlight">\(\pi\)</span>. We start by creating the data as numpy arrays.</p>
+<p>$$f(x) = sin(x)$$</p>
+<p>on the interval $-\pi$ to $\pi$. We start by creating the data as numpy arrays.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">19</span><span class="p">)</span>
@@ -2564,8 +2560,7 @@ dl.xr-attrs {
 <h3>Basic Computations<a class="headerlink" href="#basic-computations" title="Permalink to this headline">¶</a></h3>
 <p>When we perform mathematical maniulpations of xarray DataArrays, the coordinates come along for the ride.
 Imagine we want to calcuate</p>
-<div class="math notranslate nohighlight">
-\[ g = f^2 + 1 \]</div>
+<p>$$ g = f^2 + 1 $$</p>
 <p>We can apply familiar numpy operations to xarray objects.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2935,7 +2930,7 @@ dl.xr-attrs {
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Multipy the DataArrays <code class="docutils literal notranslate"><span class="pre">da_f</span></code> and <code class="docutils literal notranslate"><span class="pre">da_g</span></code> together.</p></li>
-<li><p>Select the range <span class="math notranslate nohighlight">\(-1 &lt; x &lt; 1\)</span></p></li>
+<li><p>Select the range $-1 &lt; x &lt; 1$</p></li>
 <li><p>Plot the result</p></li>
 </ul>
 <div class="cell docutils container">
@@ -4560,9 +4555,8 @@ dl.xr-attrs {
 <p>The means we calculated above were “naive”; they were straightforward numerical means over the different dimensions of the dataset. They did not account, for example, for spherical geometry of the globe and the necessary weighting factors. Although xarray is very useful for geospatial analysis, <strong>it has no built-in understanding of geography</strong>.</p>
 <p>Below we show how to create a proper weighted mean by using the formula for the area element in spherical coordinates. This is a good illustration of several xarray concepts.</p>
 <p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates">area element for lat-lon coordinates</a> is</p>
-<div class="math notranslate nohighlight">
-\[ \delta A = R^2 \delta \phi \delta \lambda \cos(\phi) \]</div>
-<p>where <span class="math notranslate nohighlight">\(\phi\)</span> is latitude, <span class="math notranslate nohighlight">\(\delta \phi\)</span> is the spacing of the points in latitude, <span class="math notranslate nohighlight">\(\delta \lambda\)</span> is the spacing of the points in longitude, and <span class="math notranslate nohighlight">\(R\)</span> is Earth’s radius. (In this formula, <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(\lambda\)</span> are measured in radians.) Let’s use xarray to create the weight factor.</p>
+<p>$$ \delta A = R^2 \delta \phi \delta \lambda \cos(\phi) $$</p>
+<p>where $\phi$ is latitude, $\delta \phi$ is the spacing of the points in latitude, $\delta \lambda$ is the spacing of the points in longitude, and $R$ is Earth’s radius. (In this formula, $\phi$ and $\lambda$ are measured in radians.) Let’s use xarray to create the weight factor.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">R</span> <span class="o">=</span> <span class="mf">6.37e6</span>
@@ -6599,7 +6593,7 @@ Name: NINO3.4, dtype: float64
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on May 20, 2021.<br/>
+          Last updated on May 28, 2021.<br/>
       </p>
     </div>
   </footer>
