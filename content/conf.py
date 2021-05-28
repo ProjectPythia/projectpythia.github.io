@@ -4,8 +4,8 @@
 import datetime
 import os
 import pathlib
-import sys
 import shutil
+import sys
 from textwrap import dedent
 
 import yaml
@@ -71,8 +71,8 @@ html_theme_options = {
 panels_add_bootstrap_css = False
 
 # MyST config
-myst_admonition_enable = True
-myst_deflist_enable = True
+myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
+myst_url_schemes = ('http', 'https', 'mailto')
 jupyter_execute_notebooks = 'off'
 
 # CUSTOM SCRIPTS =============================================================
