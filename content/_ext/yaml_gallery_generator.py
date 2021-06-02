@@ -147,8 +147,7 @@ def build_from_items(items, filename, display_name, menu_html):
 
 {dedent(panels_body)}
 ````
-
-<script src="../_static/custom.js"> </script>
+<script src="/_static/custom.js"> </script>
 """
 
     pathlib.Path(f'pages/{filename}.md').write_text(panels)
