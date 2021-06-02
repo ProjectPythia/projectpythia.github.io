@@ -43,6 +43,7 @@ exclude_patterns = [
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
+html_js_files = ["custom.js"]
 html_logo = '_static/images/ProjectPythia_Logo_Final-01-Blue.svg'
 html_title = ''
 # html_logo = '_static/images/ProjectPythia_Logo_Final-01-Blue-NoText.svg'

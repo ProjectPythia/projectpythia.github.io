@@ -120,54 +120,14 @@ def build_from_items(items, filename, display_name, menu_html):
 +++
 **{item["title"]}**
 
-{authors_str}
-
-{email_str}
-
-{affiliation_str}
-
-{affiliation_url_str}
- 
-```{{dropdown}} {item['description'][0:100]} ... <br> **See Full Description:**
-{item['description']}
-```
-
-<button id="myBtn-{item["title"]}">Open Modal</button>
-<div id="myModal-{item["title"]}" class="galmodal">
-  <div class="galmodal-content">
-    <span class="galmodal-close">&times;</span>
+<button class="modal-btn">Open Modal</button>
+<div class="modal">
+  <div class="content">
 <p>
-Some text in the Modal..
 {item["title"]}
 </p>
   </div>
 </div>
-
-<script>
-var modal = document.getElementById("myModal-{item["title"]}");
-var btn = document.getElementById("myBtn-{item["title"]}");
-var span = document.getElementsByClassName("galmodal-close")[0];
-
-btn.onclick = function() {{
-  modal.style.display = "block";
-}}
-
-span.onclick = function() {{
-  modal.style.display = "none";
-}}
-
-window.onclick = function(event) {{
-  if (event.target == modal) {{
-    modal.style.display = "none";
-  }}
-}}
-</script>
-
-```{{link-button}} {item["url"]}
-:type: url
-:text: Visit Website
-:classes: btn-outline-primary btn-block
-```
 
 {tags}
 """)
@@ -184,8 +144,11 @@ window.onclick = function(event) {{
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 {dedent(panels_body)}
 ````
+
+<script src="../_static/custom.js"> </script>
 """
 
     pathlib.Path(f'pages/{filename}.md').write_text(panels)
