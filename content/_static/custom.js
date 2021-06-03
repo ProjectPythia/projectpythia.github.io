@@ -1,19 +1,33 @@
 var buttons = document.querySelectorAll('.modal-btn');
 var backdrop = document.querySelector('.backdrop');
-var modal = document.querySelector('.modal');
+var modals = document.querySelectorAll('.modal');
+console.log(buttons)
+console.log(backdrop)
+console.log(modals)
 
-function openModal() {
+function openModal(i) {
     backdrop.style.display = 'block';
-    modal.style.display = 'block';
+    modals[i].style.display = 'block';
 }
 
-function closeModal () {
+function closeModal (i) {
     backdrop.style.display = 'none';
-    modal.style.display = 'none';
+    modals[i].style.display = 'none';
 }
 
 for (i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', openModal);
+    buttons[i].addEventListener('click', 
+        function(j) {
+            return function() {
+                openModal(j);
+            }
+        } (i)
+    );
+    backdrop.addEventListener('click', 
+        function(j) {
+            return function() { 
+                closeModal(j);
+            }
+        } (i)
+    );
 }
-
-backdrop.addEventListener('click', closeModal);

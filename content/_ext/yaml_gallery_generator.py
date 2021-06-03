@@ -147,6 +147,7 @@ def build_from_items(items, filename, display_name, menu_html):
 
 {dedent(panels_body)}
 ````
+<div class="backdrop"></div>
 <script src="/_static/custom.js"> </script>
 """
 
