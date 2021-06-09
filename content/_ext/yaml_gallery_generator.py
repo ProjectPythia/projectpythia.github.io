@@ -101,7 +101,7 @@ def build_from_items(items, filename, display_name, menu_html):
             authors_str = f'Created by: {authors[0]} and {authors[1]}'
 
         email = [a.get("email", None) for a in item['authors']][0]
-        email_str = '' if email is None else f'Email: {email}'
+        email_str = '' if email is None else f'Email: <{email}>'
 
         affiliation = [a.get("affiliation", None) for a in item['authors']][0]
         affiliation_str = '' if affiliation is None else f'Affiliation: {affiliation}'
@@ -110,7 +110,7 @@ def build_from_items(items, filename, display_name, menu_html):
         affiliation_url_str = (
             '' 
             if affiliation_url is None 
-            else f'{affiliation} Site: {affiliation_url}'
+            else f'{affiliation} Site: <{affiliation_url}>'
         )
 
         panels_body.append(
