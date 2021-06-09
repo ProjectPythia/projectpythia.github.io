@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/metpy.jpg
 +++
+**MetPy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/metpy.jpg />
+
 **MetPy**
 
 Created by: MetPy developers
@@ -74,12 +83,10 @@ Created by: MetPy developers
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with  ... <br> **See Full Description:**
 MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
 
-```
 
 ```{link-button} https://unidata.github.io/MetPy/latest/index.html
 :type: url
@@ -89,10 +96,24 @@ MetPy is a collection of tools in Python for reading, visualizing, and performin
 
 {link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/metpy.jpg
 +++
+**MetPy Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/metpy.jpg />
+
 **MetPy Tutorial**
 
 Created by: MetPy developers
@@ -101,12 +122,10 @@ Created by: MetPy developers
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} This collection of tutorials (under development) demonstrates the use of MetPy to perform common met ... <br> **See Full Description:**
 This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
 
-```
 
 ```{link-button} https://unidata.github.io/MetPy/latest/tutorials/index.html
 :type: url
@@ -116,10 +135,24 @@ This collection of tutorials (under development) demonstrates the use of MetPy t
 
 {link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/Unidata.png
 +++
+**Unidata Python Workshop- MetPy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
 **Unidata Python Workshop- MetPy**
 
 Created by: anonymous
@@ -128,12 +161,10 @@ Created by: anonymous
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unida ... <br> **See Full Description:**
 MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
 
-```
 
 ```{link-button} https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/
 :type: url
@@ -143,10 +174,24 @@ MetPy is a modern meteorological open-source toolkit for Python. It is a maintai
 
 {link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/metpy.jpg
 +++
+**MetPy Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/metpy.jpg />
+
 **MetPy Gallery**
 
 Created by: MetPy Developers
@@ -155,13 +200,10 @@ Created by: MetPy Developers
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} Examples of using a variety of MetPy’s functionality together.
- ... <br> **See Full Description:**
 Examples of using a variety of MetPy’s functionality together.
 
-```
 
 ```{link-button} https://unidata.github.io/MetPy/latest/examples/index.html
 :type: url
@@ -171,10 +213,24 @@ Examples of using a variety of MetPy’s functionality together.
 
 {link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/metpy-mondays.jpeg
 +++
+**Unidata MetPy Mondays**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/metpy-mondays.jpeg />
+
 **Unidata MetPy Mondays**
 
 Created by: anonymous
@@ -183,12 +239,10 @@ Created by: anonymous
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant  ... <br> **See Full Description:**
 A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications. 
 
-```
 
 ```{link-button} https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO
 :type: url
@@ -198,5 +252,13 @@ A weekly video series showing how to use MetPy or other Python libraries to solv
 
 {link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/geocat.png
 +++
+**GeoCAT Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geocat.png />
+
 **GeoCAT Tutorial**
 
 Created by: GeoCat
@@ -74,12 +83,10 @@ Created by: GeoCat
 
 Affiliation: NCAR
 
-NCAR Site: https://ncar.ucar.edu/
+NCAR Site: <https://ncar.ucar.edu/>
 
-```{dropdown} The examples below show GeoCAT-comp functions being utilized in real-world use cases. They also demo ... <br> **See Full Description:**
 The examples below show GeoCAT-comp functions being utilized in real-world use cases. They also demonstrate how GeoCAT-comp can be used to make plots with Matplotlib (using Cartopy) and PyNGL (work in progress).
 
-```
 
 ```{link-button} https://geocat-comp.readthedocs.io/en/latest/examples.html
 :type: url
@@ -89,10 +96,24 @@ The examples below show GeoCAT-comp functions being utilized in real-world use c
 
 {link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/geocat.png
 +++
+**GeoCAT Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geocat.png />
+
 **GeoCAT Gallery**
 
 Created by: GeoCAT
@@ -101,13 +122,10 @@ Created by: GeoCAT
 
 Affiliation: NCAR
 
-NCAR Site: https://ncar.ucar.edu/
+NCAR Site: <https://ncar.ucar.edu/>
 
-```{dropdown} A gallery of plotting examples from GeoCat.
- ... <br> **See Full Description:**
 A gallery of plotting examples from GeoCat.
 
-```
 
 ```{link-button} https://geocat-examples.readthedocs.io/
 :type: url
@@ -118,5 +136,14 @@ A gallery of plotting examples from GeoCat.
 {link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

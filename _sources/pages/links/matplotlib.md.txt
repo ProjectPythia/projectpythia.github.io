@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/matplotlib-tutorial.png
 +++
+**Matplotlib**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/matplotlib-tutorial.png />
+
 **Matplotlib**
 
 Created by: the Matplotlib development team
@@ -76,10 +85,8 @@ Created by: the Matplotlib development team
 
 
 
-```{dropdown} Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations  ... <br> **See Full Description:**
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 
-```
 
 ```{link-button} https://matplotlib.org/
 :type: url
@@ -89,10 +96,24 @@ Matplotlib is a comprehensive library for creating static, animated, and interac
 
 {link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/matplotlib-tutorial.png
 +++
+**Matplotlib Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/matplotlib-tutorial.png />
+
 **Matplotlib Tutorial**
 
 Created by: the Matplotlib development team
@@ -103,10 +124,8 @@ Created by: the Matplotlib development team
 
 
 
-```{dropdown} This page contains more in-depth guides for using Matplotlib. It is broken up into beginner, interme ... <br> **See Full Description:**
 This page contains more in-depth guides for using Matplotlib. It is broken up into beginner, intermediate, and advanced sections, as well as sections covering specific topics.
 
-```
 
 ```{link-button} https://matplotlib.org/stable/tutorials/index.html
 :type: url
@@ -116,10 +135,24 @@ This page contains more in-depth guides for using Matplotlib. It is broken up in
 
 {link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/matplotlib-tutorial.png
 +++
+**Matplotlib Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/matplotlib-tutorial.png />
+
 **Matplotlib Gallery**
 
 Created by: the Matplotlib development team
@@ -130,11 +163,8 @@ Created by: the Matplotlib development team
 
 
 
-```{dropdown} This gallery contains examples of the many things you can do with Matplotlib.
- ... <br> **See Full Description:**
 This gallery contains examples of the many things you can do with Matplotlib.
 
-```
 
 ```{link-button} https://matplotlib.org/stable/gallery/index.html
 :type: url
@@ -144,5 +174,13 @@ This gallery contains examples of the many things you can do with Matplotlib.
 
 {link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

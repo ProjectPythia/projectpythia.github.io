@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/Unidata.png
 +++
+**Unidata Python Workshop - Jupyter Notebooks Introduction**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
 **Unidata Python Workshop - Jupyter Notebooks Introduction**
 
 Created by: anonymous
@@ -74,12 +83,10 @@ Created by: anonymous
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} Jupyter notebooks are a great way to have code, output, images, video, and other information in one  ... <br> **See Full Description:**
 Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
 
-```
 
 ```{link-button} https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
 :type: url
@@ -88,5 +95,12 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 ```
 
 {link-badge}`"/pages/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/jupyter.html",jupyter,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

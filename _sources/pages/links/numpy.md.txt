@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/numpy.png
 +++
+**Numpy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/numpy.png />
+
 **Numpy**
 
 Created by: NumPy
@@ -76,11 +85,8 @@ Created by: NumPy
 
 
 
-```{dropdown} The fundamental package for scientific computing with Python.
- ... <br> **See Full Description:**
 The fundamental package for scientific computing with Python.
 
-```
 
 ```{link-button} https://numpy.org
 :type: url
@@ -90,10 +96,24 @@ The fundamental package for scientific computing with Python.
 
 {link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/numpy.png
 +++
+**Numpy Tutorials**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/numpy.png />
+
 **Numpy Tutorials**
 
 Created by: NumPy
@@ -104,11 +124,8 @@ Created by: NumPy
 
 
 
-```{dropdown} A curated collection of external resources teaching numpy from beginner to advanced uses.
- ... <br> **See Full Description:**
 A curated collection of external resources teaching numpy from beginner to advanced uses.
 
-```
 
 ```{link-button} https://numpy.org/learn/
 :type: url
@@ -117,10 +134,23 @@ A curated collection of external resources teaching numpy from beginner to advan
 ```
 
 {link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/Unidata.png
 +++
+**Unidata Numpy Workshop**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
 **Unidata Numpy Workshop**
 
 Created by: anonymous
@@ -129,12 +159,10 @@ Created by: anonymous
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on t ... <br> **See Full Description:**
 Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
 
-```
 
 ```{link-button} https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
 :type: url
@@ -144,10 +172,24 @@ Unidata Numpy tutorial that covers how to create an array of ‘data’, perform
 
 {link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/Enthought.png
 +++
+**Intro to Numerical Computing with NumPy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Enthought.png />
+
 **Intro to Numerical Computing with NumPy**
 
 Created by: A. Chabot-LeClerc
@@ -156,12 +198,10 @@ Created by: A. Chabot-LeClerc
 
 Affiliation: Enthought
 
-Enthought Site: https://www.enthought.com/
+Enthought Site: <https://www.enthought.com/>
 
-```{dropdown} NumPy provides Python with a powerful array processing library and an elegant syntax that is well su ... <br> **See Full Description:**
 NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
 
-```
 
 ```{link-button} https://youtu.be/ZB7BZMhfPgk
 :type: url
@@ -171,5 +211,13 @@ NumPy provides Python with a powerful array processing library and an elegant sy
 
 {link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

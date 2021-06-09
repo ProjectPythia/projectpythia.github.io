@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/geopandas_icon.png
 +++
+**GeoPandas Documentation**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geopandas_icon.png />
+
 **GeoPandas Documentation**
 
 Created by: GeoPandas developers
@@ -76,10 +85,8 @@ Created by: GeoPandas developers
 
 
 
-```{dropdown} GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas ... <br> **See Full Description:**
 GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
 
-```
 
 ```{link-button} https://geopandas.org
 :type: url
@@ -89,10 +96,24 @@ GeoPandas is an open source project to make working with geospatial data in pyth
 
 {link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/geopandas_icon.png
 +++
+**GeoPandas Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geopandas_icon.png />
+
 **GeoPandas Gallery**
 
 Created by: GeoPandas developers
@@ -103,10 +124,8 @@ Created by: GeoPandas developers
 
 
 
-```{dropdown} Examples that show off the functionality in GeoPandas. They highlight many of the things you can do  ... <br> **See Full Description:**
 Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
 
-```
 
 ```{link-button} https://geopandas.org/gallery/index.html
 :type: url
@@ -116,5 +135,13 @@ Examples that show off the functionality in GeoPandas. They highlight many of th
 
 {link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

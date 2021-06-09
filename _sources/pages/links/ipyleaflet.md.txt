@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/images/ebp-logo.png
 +++
+**Ipyleaflet**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
 **Ipyleaflet**
 
 Created by: The Jupyter development team
@@ -76,11 +85,8 @@ Created by: The Jupyter development team
 
 
 
-```{dropdown} Interactive maps in the Jupyter notebook.
- ... <br> **See Full Description:**
 Interactive maps in the Jupyter notebook.
 
-```
 
 ```{link-button} https://ipyleaflet.readthedocs.io
 :type: url
@@ -90,5 +96,13 @@ Interactive maps in the Jupyter notebook.
 
 {link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

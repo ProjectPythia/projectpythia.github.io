@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/Xdev.png
 +++
+**Your First Python Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Xdev.png />
+
 **Your First Python Tutorial**
 
 Created by: Xdev Team
@@ -74,12 +83,10 @@ Email: xdev@ucar.edu
 
 Affiliation: NCAR
 
-NCAR Site: https://ncar.ucar.edu/
+NCAR Site: <https://ncar.ucar.edu/>
 
-```{dropdown} A tutorial for getting started with Python aimed at scientists with experience in at least one other ... <br> **See Full Description:**
 A tutorial for getting started with Python aimed at scientists with experience in at least one other coding language. Designed to teach you Python, not package specific syntax.
 
-```
 
 ```{link-button} https://ncar.github.io/python-tutorial/index.html
 :type: url
@@ -89,5 +96,13 @@ A tutorial for getting started with Python aimed at scientists with experience i
 
 {link-badge}`"/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

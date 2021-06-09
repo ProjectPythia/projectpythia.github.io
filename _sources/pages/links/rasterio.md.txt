@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/images/ebp-logo.png
 +++
+**Rasterio**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
 **Rasterio**
 
 Created by: MapBox
@@ -76,10 +85,8 @@ Created by: MapBox
 
 
 
-```{dropdown} Geographic information systems use GeoTIFF and other formats to organize and store gridded raster da ... <br> **See Full Description:**
 Geographic information systems use GeoTIFF and other formats to organize and store gridded raster datasets such as satellite imagery and terrain models. Rasterio reads and writes these formats and provides a Python API based on Numpy N-dimensional arrays and GeoJSON.
 
-```
 
 ```{link-button} https://rasterio.readthedocs.io
 :type: url
@@ -89,10 +96,24 @@ Geographic information systems use GeoTIFF and other formats to organize and sto
 
 {link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/rasterio-tutorial.png
 +++
+**Rasterio Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/rasterio-tutorial.png />
+
 **Rasterio Tutorial**
 
 Created by: MapBox
@@ -103,10 +124,8 @@ Created by: MapBox
 
 
 
-```{dropdown} This document explains how to use Rasterio to read existing files and to create new files. Some adva ... <br> **See Full Description:**
 This document explains how to use Rasterio to read existing files and to create new files. Some advanced topics are glossed over to be covered in more detail elsewhere in Rasterio’s documentation.
 
-```
 
 ```{link-button} https://rasterio.readthedocs.io/en/latest/quickstart.html
 :type: url
@@ -116,5 +135,13 @@ This document explains how to use Rasterio to read existing files and to create 
 
 {link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

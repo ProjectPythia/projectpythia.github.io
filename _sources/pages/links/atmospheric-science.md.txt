@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/Unidata.png
 +++
+**Unidata Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
 **Unidata Gallery**
 
 Created by: anonymous
@@ -74,12 +83,10 @@ Created by: anonymous
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} Check out detailed examples for atmospheric science and meteorology, from data analysis to publicati ... <br> **See Full Description:**
 Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
 
-```
 
 ```{link-button} https://unidata.github.io/python-training/gallery/gallery-home/
 :type: url
@@ -89,5 +96,13 @@ Check out detailed examples for atmospheric science and meteorology, from data a
 
 {link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

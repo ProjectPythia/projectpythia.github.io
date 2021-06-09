@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/thumbnails/Unidata.png
 +++
+**Unidata Python Training**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
 **Unidata Python Training**
 
 Created by: anonymous
@@ -74,12 +83,10 @@ Created by: anonymous
 
 Affiliation: Unidata
 
-Unidata Site: https://www.unidata.ucar.edu/
+Unidata Site: <https://www.unidata.ucar.edu/>
 
-```{dropdown} Introduction to Python for Atmospheric Science & Meteorology. Unidata is working to create a collect ... <br> **See Full Description:**
 Introduction to Python for Atmospheric Science & Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 
-```
 
 ```{link-button} https://unidata.github.io/python-training/python/intro-to-python/
 :type: url
@@ -88,10 +95,23 @@ Introduction to Python for Atmospheric Science & Meteorology. Unidata is working
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/earth_env_data_science.png
 +++
+**An Introduction to Earth and Environmental Data Science**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/earth_env_data_science.png />
+
 **An Introduction to Earth and Environmental Data Science**
 
 Created by: Ryan Abernathey and Kerry Key
@@ -102,10 +122,8 @@ Affiliation: Lamont-Doherty Earth Observatory
 
 
 
-```{dropdown} This book grew out of a course developed at Columbia University called Research Computing in Earth S ... <br> **See Full Description:**
 This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
 
-```
 
 ```{link-button} https://earth-env-data-science.github.io/intro
 :type: url
@@ -114,10 +132,23 @@ This book grew out of a course developed at Columbia University called Research 
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/climlablogo.png
 +++
+**The Climate Laboratory**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/climlablogo.png />
+
 **The Climate Laboratory**
 
 Created by: Brian Rose
@@ -128,10 +159,8 @@ Affiliation: University of Albany
 
 
 
-```{dropdown} A hands on approach to climate physics and climate modeling. Fundamental climate processes are intro ... <br> **See Full Description:**
 A hands on approach to climate physics and climate modeling. Fundamental climate processes are introduced through interactive and reproducible Python-based modeling exercises.  This JupyterBook serves as a course textbook at the University of Albany.
 
-```
 
 ```{link-button} https://brian-rose.github.io/ClimateLaboratoryBook/home
 :type: url
@@ -141,10 +170,24 @@ A hands on approach to climate physics and climate modeling. Fundamental climate
 
 {link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/earth-lab-logo.png
 +++
+**Earth Analytics Python Course**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/earth-lab-logo.png />
+
 **Earth Analytics Python Course**
 
 Created by: Earth Lab
@@ -155,10 +198,8 @@ Affiliation: University of Colorado Boulder
 
 
 
-```{dropdown} Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth ... <br> **See Full Description:**
 Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 
-```
 
 ```{link-button} https://www.earthdatascience.org/courses/earth-analytics-python/
 :type: url
@@ -167,10 +208,23 @@ Earth analytics is an intermediate, multidisciplinary course that addresses majo
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/earth-lab-logo.png
 +++
+**Earth Data Science**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/earth-lab-logo.png />
+
 **Earth Data Science**
 
 Created by: Earth Lab
@@ -181,10 +235,8 @@ Affiliation: University of Colorado Boulder
 
 
 
-```{dropdown} This site contains open, tutorials and course materials covering topics including data integration,  ... <br> **See Full Description:**
 This site contains open, tutorials and course materials covering topics including data integration, GIS and data intensive science.
 
-```
 
 ```{link-button} https://www.earthdatascience.org/
 :type: url
@@ -193,10 +245,23 @@ This site contains open, tutorials and course materials covering topics includin
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/eScience_Logo_HR.png
 +++
+**Geohackweek 2019**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/eScience_Logo_HR.png />
+
 **Geohackweek 2019**
 
 Created by: eScience Institute
@@ -207,10 +272,8 @@ Affiliation: University of Washington
 
 
 
-```{dropdown} Geohackweek is a 5-day hackweek to be held at the University of Washington eScience Institute. Tutor ... <br> **See Full Description:**
 Geohackweek is a 5-day hackweek to be held at the University of Washington eScience Institute. Tutorials from the hackweek are available for everyone to follow (participants and non-participants alike).
 
-```
 
 ```{link-button} https://geohackweek.github.io/
 :type: url
@@ -219,10 +282,23 @@ Geohackweek is a 5-day hackweek to be held at the University of Washington eScie
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/images/ebp-logo.png
 +++
+**Research Software Engineering with Python**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
 **Research Software Engineering with Python**
 
 Created by: Damien Irving, et al.
@@ -233,10 +309,8 @@ Created by: Damien Irving, et al.
 
 
 
-```{dropdown} We believe every researcher should know how to write short programs that clean and analyze data in a ... <br> **See Full Description:**
 We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software that makes research possible. People who do this are called research software engineers; the aim of this book is to get you ready for this role by helping you go from writing code for yourself to creating tools that help your entire field advance.
 
-```
 
 ```{link-button} https://merely-useful.github.io/py-rse/
 :type: url
@@ -245,10 +319,23 @@ We believe every researcher should know how to write short programs that clean a
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/zero-to-pandas.png
 +++
+**Data Analysis with Python- Zero to Pandas**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/zero-to-pandas.png />
+
 **Data Analysis with Python- Zero to Pandas**
 
 Created by: Jovian.ai
@@ -259,10 +346,8 @@ Created by: Jovian.ai
 
 
 
-```{dropdown} "Data Analysis with Python: Zero to Pandas" is a practical and beginner-friendly introduction to dat ... <br> **See Full Description:**
 "Data Analysis with Python: Zero to Pandas" is a practical and beginner-friendly introduction to data analysis covering the basics of Python, Numpy, Pandas, Data Visualization, and Exploratory Data Analysis.
 
-```
 
 ```{link-button} https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas
 :type: url
@@ -271,10 +356,23 @@ Created by: Jovian.ai
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/portland-state.png
 +++
+**MTH271- Mathematical Computing with Data**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/portland-state.png />
+
 **MTH271- Mathematical Computing with Data**
 
 Created by: Jay Gopalakrishnan
@@ -285,10 +383,8 @@ Affiliation: Portland State University
 
 
 
-```{dropdown} In this course, we will have multiple occasions to procure, analyze, and visualize data. We will stu ... <br> **See Full Description:**
 In this course, we will have multiple occasions to procure, analyze, and visualize data. We will study mathematical and statistical techniques to discern patterns in complex data. We shall do so in an ecosystem of python computing modules developed by open-source enthusiasts worldwide.
 
-```
 
 ```{link-button} http://web.pdx.edu/~gjay/teaching/mth271_2020/html/_CONTENTS.html
 :type: url
@@ -297,10 +393,23 @@ In this course, we will have multiple occasions to procure, analyze, and visuali
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/british-columbia.jpg
 +++
+**ATSC301- Atmospheric Radiation and Remote Sensing**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/british-columbia.jpg />
+
 **ATSC301- Atmospheric Radiation and Remote Sensing**
 
 Created by: Philip Austin
@@ -311,10 +420,8 @@ Affiliation: University of British Columbia
 
 
 
-```{dropdown} This course teaches radiation and remote sensing, but also covers: how to write clear, documented an ... <br> **See Full Description:**
 This course teaches radiation and remote sensing, but also covers: how to write clear, documented and tested code that can ingest, manipulate and display data, and how to turn equations into computer algorithms in Python.
 
-```
 
 ```{link-button} https://clouds.eos.ubc.ca/~phil/courses/atsc301/
 :type: url
@@ -324,10 +431,24 @@ This course teaches radiation and remote sensing, but also covers: how to write 
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/remote-sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/remote-sensing.html",remote sensing,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/thumbnails/DC_logo_vision.png
 +++
+**Introduction to Geospatial Concepts**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/DC_logo_vision.png />
+
 **Introduction to Geospatial Concepts**
 
 Created by: The Carpentries
@@ -338,10 +459,8 @@ Created by: The Carpentries
 
 
 
-```{dropdown} The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intend ... <br> **See Full Description:**
 The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and covers the following topics: Introduction to raster and vector data format and attributes, examples of data types commonly stored in raster vs vector format, an introduction to categorical vs continuous raster data and multi-layer rasters, an introduction to the file types and R packages used in the remainder of this workshop, an introduction to coordinate reference systems and the PROJ4 format,  and an overview of commonly used programs and applications for working with geospatial data.
 
-```
 
 ```{link-button} https://datacarpentry.org/organization-geospatial/
 :type: url
@@ -350,10 +469,23 @@ The goal of this lesson is to provide an introduction to core geospatial data co
 ```
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
 :img-top: /_static/images/ebp-logo.png
 +++
+**Dani Arribas-Bel Course Repositories**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
 **Dani Arribas-Bel Course Repositories**
 
 Created by: Dani Arribas-Bel
@@ -362,13 +494,10 @@ Created by: Dani Arribas-Bel
 
 Affiliation: University of Liverpool Department of Geography and Planning
 
-University of Liverpool Department of Geography and Planning Site: https://www.liverpool.ac.uk/geography-and-planning/
+University of Liverpool Department of Geography and Planning Site: <https://www.liverpool.ac.uk/geography-and-planning/>
 
-```{dropdown} A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
- ... <br> **See Full Description:**
 A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
 
-```
 
 ```{link-button} http://darribas.org/materials.html
 :type: url
@@ -378,5 +507,13 @@ A collection of courework repositories for various data science classes taught b
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>

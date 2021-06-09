@@ -63,9 +63,18 @@
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 ---
 :img-top: /_static/images/ebp-logo.png
 +++
+**Dani Arribas-Bel Course Repositories**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
 **Dani Arribas-Bel Course Repositories**
 
 Created by: Dani Arribas-Bel
@@ -74,13 +83,10 @@ Created by: Dani Arribas-Bel
 
 Affiliation: University of Liverpool Department of Geography and Planning
 
-University of Liverpool Department of Geography and Planning Site: https://www.liverpool.ac.uk/geography-and-planning/
+University of Liverpool Department of Geography and Planning Site: <https://www.liverpool.ac.uk/geography-and-planning/>
 
-```{dropdown} A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
- ... <br> **See Full Description:**
 A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
 
-```
 
 ```{link-button} http://darribas.org/materials.html
 :type: url
@@ -90,5 +96,13 @@ A collection of courework repositories for various data science classes taught b
 
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/data-science.html",data science,cls=badge-primary badge-pill text-light`
 
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>
