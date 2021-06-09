@@ -4,8 +4,8 @@
 import datetime
 import os
 import pathlib
-import sys
 import shutil
+import sys
 from textwrap import dedent
 
 import yaml
@@ -16,7 +16,7 @@ copyright = f'2020-{datetime.datetime.now().year}'
 author = 'Project Pythia Developers & Contributors'
 html_last_updated_fmt = '%b %d, %Y'
 
-extensions = ['myst_nb', 'sphinx_panels', 'nb_gallery_generator', 'yaml_gallery_generator']
+extensions = ['myst_nb', 'sphinx_panels', 'yaml_gallery_generator']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -73,8 +73,8 @@ html_theme_options = {
 panels_add_bootstrap_css = False
 
 # MyST config
-myst_admonition_enable = True
-myst_deflist_enable = True
+myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
+myst_url_schemes = ('http', 'https', 'mailto')
 jupyter_execute_notebooks = 'off'
 
 # CUSTOM SCRIPTS =============================================================

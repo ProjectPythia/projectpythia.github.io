@@ -3,7 +3,7 @@ from textwrap import dedent
 import pathlib
 
 
-def _tag_in_item(item, tag_str):
+def _tag_in_item(item, tag_str=None):
     if tag_str is None:
         return True
     all_tags = []
@@ -12,17 +12,14 @@ def _tag_in_item(item, tag_str):
     return tag_str in all_tags
 
 
-def _generate_tag_keys(all_items):
+def _generate_sorted_tag_keys(all_items):
 
     key_set = set()
     for item in all_items:
         for k, e in item['tags'].items():
             key_set.add(k)
     
-    key_list = list(key_set)
-    key_list.sort()
-
-    return key_list
+    return sorted(key_set)
 
 
 def _generate_tag_set(all_items, tag_key=None):
@@ -38,17 +35,10 @@ def _generate_tag_set(all_items, tag_key=None):
     return tag_set
 
 
-def _sort_tags(tag_set):
-    
-    tag_list = list(tag_set)
-    tag_list.sort()
-    return tag_list
-
-
 def _generate_tag_menu(all_items, tag_key):
 
     tag_set = _generate_tag_set(all_items, tag_key)
-    tag_list = _sort_tags(tag_set)
+    tag_list = sorted(tag_set)
 
     hrefs = ''.join(f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' for tag in tag_list)
 
@@ -64,7 +54,7 @@ def _generate_tag_menu(all_items, tag_key):
 
 def _generate_menu(all_items, flt=None):
     
-    key_list = _generate_tag_keys(all_items)
+    key_list = _generate_sorted_tag_keys(all_items)
     menu_html='<div class="d-flex flex-row">' + '\n'
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
@@ -89,7 +79,7 @@ def build_from_items(items, filename, display_name, menu_html):
             for t in e:
                 tag_set.add(t)
 
-        tag_list = _sort_tags(tag_set)
+        tag_list = sorted(tag_set)
         tags = [f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
         tags = '\n'.join(tags)
 
