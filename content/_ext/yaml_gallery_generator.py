@@ -124,6 +124,8 @@ def build_from_items(items, filename, display_name, menu_html):
 <div class="modal">
   <div class="content">
 <p>
+<img src={thumbnail} />
+
 {item["title"]}
 
 {authors_str}
