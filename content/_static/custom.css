@@ -16,7 +16,7 @@
   background: white;
   padding: 10px;
   width: 260px;
-  height: auto;
+  height: auto; !important
   top: 100px;
   left: calc(50% - 140px);
   z-index: 10001;    
