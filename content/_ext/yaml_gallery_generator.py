@@ -136,6 +136,12 @@ def build_from_items(items, filename, display_name, menu_html):
 
 {item['description']}
 
+```{{link-button}} {item["url"]}
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
 {tags}
 </p>
   </div>
