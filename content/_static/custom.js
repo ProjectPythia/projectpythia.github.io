@@ -1,9 +1,6 @@
 var buttons = document.querySelectorAll('.modal-btn');
 var backdrop = document.querySelector('.backdrop');
 var modals = document.querySelectorAll('.modal');
-console.log(buttons)
-console.log(backdrop)
-console.log(modals)
 
 function openModal(i) {
     backdrop.style.display = 'block';
