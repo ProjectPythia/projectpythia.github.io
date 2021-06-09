@@ -125,6 +125,18 @@ def build_from_items(items, filename, display_name, menu_html):
   <div class="content">
 <p>
 {item["title"]}
+
+{authors_str}
+
+{email_str}
+
+{affiliation_str}
+
+{affiliation_url_str}
+
+{item['description']}
+
+{tags}
 </p>
   </div>
 </div>
