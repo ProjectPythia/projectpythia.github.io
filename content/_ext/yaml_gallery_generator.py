@@ -116,7 +116,7 @@ def build_from_items(items, filename, display_name, menu_html):
 <p>
 <img src={thumbnail} />
 
-{item["title"]}
+**{item["title"]}**
 
 {authors_str}
 
