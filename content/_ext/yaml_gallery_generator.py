@@ -100,7 +100,7 @@ def build_from_items(items, filename, display_name, menu_html):
         affiliation_url_str = (
             '' 
             if affiliation_url is None 
-            else f'{affiliation} Site: {affiliation_url}'
+            else f'{affiliation} Site: <{affiliation_url}>'
         )
 
         panels_body.append(
@@ -110,6 +110,14 @@ def build_from_items(items, filename, display_name, menu_html):
 +++
 **{item["title"]}**
 
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src={thumbnail} />
+
+**{item["title"]}**
+
 {authors_str}
 
 {email_str}
@@ -117,10 +125,8 @@ def build_from_items(items, filename, display_name, menu_html):
 {affiliation_str}
 
 {affiliation_url_str}
- 
-```{{dropdown}} {item['description'][0:100]} ... <br> **See Full Description:**
+
 {item['description']}
-```
 
 ```{{link-button}} {item["url"]}
 :type: url
@@ -129,8 +135,13 @@ def build_from_items(items, filename, display_name, menu_html):
 ```
 
 {tags}
-"""
-        )
+</p>
+  </div>
+</div>
+
+{tags}
+""")
+
     panels_body = '\n'.join(panels_body)
 
     panels = f"""
@@ -143,8 +154,11 @@ def build_from_items(items, filename, display_name, menu_html):
 :card: +my-2
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
+
 {dedent(panels_body)}
 ````
+<div class="backdrop"></div>
+<script src="/_static/custom.js"> </script>
 """
 
     pathlib.Path(f'pages/{filename}.md').write_text(panels)
