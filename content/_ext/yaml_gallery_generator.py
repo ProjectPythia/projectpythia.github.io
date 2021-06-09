@@ -110,7 +110,7 @@ def build_from_items(items, filename, display_name, menu_html):
 +++
 **{item["title"]}**
 
-<button class="modal-btn">Open Modal</button>
+<button class="modal-btn">See Details</button>
 <div class="modal">
   <div class="content">
 <p>
