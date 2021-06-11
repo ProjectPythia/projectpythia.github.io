@@ -1,4 +1,5 @@
 # Project Pythia
+
 ````{margin}
 **Our Collaborators:**
 
@@ -27,6 +28,7 @@ at Albany, and funded by NSF EarthCube awards \#2026899 and \#2026863.
 :align: left
 ```
 ````
+
 **_A Community Educational Resource for Geoscientists_**
 
 Scientists working in a multitude of disciplines rely heavily on

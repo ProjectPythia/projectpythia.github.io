@@ -25,6 +25,6 @@ a great deal of ongoing work is being conducted and led by:
 
 ## Project Contributors
 
-Anyone can contribute to and participate in Project Pythia!  Please see our
-[Contributor's Guide](contributing.md) for details on how *you* can get
+Anyone can contribute to and participate in Project Pythia! Please see our
+[Contributor's Guide](contributing.md) for details on how _you_ can get
 involved!
