@@ -49,5 +49,4 @@ and then pointing your browser at the URL: `localhost:8000`.
 
 More information on setting up a local test server is available from [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
 
-
 You can find more details in the [Contributor's Guide](https://projectpythia.org/pages/contributing.html).

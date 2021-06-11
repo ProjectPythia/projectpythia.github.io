@@ -13,7 +13,7 @@
     packages:
       - pure python
     formats:
-       - video
+      - video
 
 - title: Unidata Python Training
   url: https://unidata.github.io/python-training/python/intro-to-python/
@@ -21,12 +21,12 @@
     Introduction to Python for Atmospheric Science & Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
   authors:
     - affiliation: Unidata
-      affiliation_url: https://www.unidata.ucar.edu/ 
+      affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/Unidata.png
   tags:
     formats:
       - course
- 
+
 - title: Unidata Python Workshop - Jupyter Notebooks Introduction
   url: https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
   description: |
@@ -173,7 +173,7 @@
   description: |
     A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
   authors:
-    - name: Dani Arribas-Bel 
+    - name: Dani Arribas-Bel
       affiliation: University of Liverpool Department of Geography and Planning
       affiliation_url: https://www.liverpool.ac.uk/geography-and-planning/
   thumbnail:
@@ -320,12 +320,11 @@
       - geopandas
     formats:
       - gallery
-    
 
 - title: hvPlot
   url: https://hvplot.holoviz.org/
   description: |
-    hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component. 
+    hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
   authors:
     - name: HoloViz developers
       url: https://holoviz.org/
@@ -492,7 +491,7 @@
 - title: Unidata MetPy Mondays
   url: https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO
   description: |
-    A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications. 
+    A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
@@ -526,7 +525,7 @@
   tags:
     packages:
       - numpy
-    
+
 - title: Unidata Numpy Workshop
   url: https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
   description: |
