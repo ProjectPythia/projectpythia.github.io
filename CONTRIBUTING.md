@@ -1,18 +1,10 @@
-# Contributor's Guide
+# Pythia Portal contributor's guide
 
-## Overview
-
-Project Pythia is an open community, and all contributions are welcome following our [Code of Conduct](code_of_conduct.md).
-
-The source code for the Pythia Portal is [publicly hosted on github](https://github.com/ProjectPythia/projectpythia.github.io).
-Contributions to open issues and new Pull Requests are welcome at any time.
-Detailed instructions for new users will be posted here in the near future.
-
-In the mean time, if you have links to some open educational content that you would like to include in the portal,
-feel free to [open an issue on github](https://github.com/ProjectPythia/projectpythia.github.io/issues)
-or contact any member of the [Project Pythia core team](people) directly.
-
-For questions or anything else you would like to share with the [Project Pythia Team](people.md), please reach out to us on our [GitHub Discussions page](https://github.com/ProjectPythia/projectpythia.github.io/discussions).
+This document contains information specific to contributing to the
+Project Pythia Portal.  Please first refer to [Pythia Contributor's
+Guide](https://projectpythia.org/pages/contributing.html) for overall
+contribution guidelines (such as detailed description of Project
+Pythia structure, forking, repository cloning, branching, etc.).
 
 ## Instructions for building the portal site
 
@@ -20,22 +12,10 @@ The portal site is built with [Sphinx](https://www.sphinx-doc.org/).
 
 When testing new content is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. You can also build it locally on your machine.
 
-### To view the Read the Docs autobuild
 
-Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythia - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click "Show all checks" for this to be displayed.)
+### Building the site
 
-![Checks](../_static/images/ReadtheDocsAutobuild.png)
-
-### To build and view the site locally
-
-- Fork the [source repository](https://github.com/ProjectPythia/projectpythia.github.io) on GitHub
-- Make a local clone of the repository on your machine
-  ``` bash
-  git clone git@github.com:USERNAME/projectpythia.github.io.git
-  # or 
-  git clone https://github.com/USERNAME/projectpythia.github.io.git
-  ```
-- In your favorite terminal, navigate to the `content` directory of the source repository
+- After checking out a local copy of the site, in your favorite terminal, navigate to the `content` directory of the source repository
   ```bash
   cd projectpythia.github.io/content
   ```
@@ -58,3 +38,9 @@ Open with your web browser, or from the terminal:
   conda deactivate
   ```
 - You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
+
+### To view the Read the Docs autobuild
+
+Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythia - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click "Show all checks" for this to be displayed.)
+
+![Checks](../_static/images/ReadtheDocsAutobuild.png)

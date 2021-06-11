@@ -82,7 +82,7 @@ jupyter_execute_notebooks = 'off'
 # Copy root files into content pages -----------------------------------------
 
 shutil.copyfile('../CODEOFCONDUCT.md', 'pages/code_of_conduct.md')
-shutil.copyfile('../CONTRIBUTING.md', 'pages/contributing.md')
+#shutil.copyfile('../CONTRIBUTING.md', 'pages/contributing.md')
 
 # Build Communication Channel Gallery ----------------------------------------
 
