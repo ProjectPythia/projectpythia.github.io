@@ -390,8 +390,8 @@ To review your changes against the official Pythia repository do the following:
 
 1. Navigate your web browser to your GitHub repository. E.g.
 https://github.com/YOUR_USER_NAME/GeoCAT-examples
-1. Click on "Compare"
-1. Check the “head repository” and “compare” branches are set correctly.
+1. Click on `Compare`
+1. Check the `head repository` and `compare` branches are set correctly.
 These should be `YOUR_NAME/PYTHIA_REPO_NAME`, and `BRANCH_NAME`,
 respectively, where `BRANCH_NAME` is the name you gave your branch
 when you pushed your changes to your remote repository on GitHub.
