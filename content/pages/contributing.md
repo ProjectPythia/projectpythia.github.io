@@ -291,10 +291,9 @@ repo, your remote, personal GitHub repo, or your local repo in .git,
 until you are ready to merge your local changes upstream, first to
 your .git local repo, then to your remote GitHub repo, and then
 ultimately to the remote Pythia GitHub repo. Simple, right? More
-on this later in How to submit a PR section.
+on this later.
 
-For further information see the [GitHub docs on forking a
-repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+For further information see the [GitHub docs on forking a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 Remember: at this point you should have a local copy of the repository
 in your current working directory. You can safely make changes to
