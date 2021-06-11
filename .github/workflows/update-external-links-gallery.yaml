@@ -104,9 +104,9 @@ jobs:
               links.append(data)
               yaml.dump(links, f)
 
-      - name: Run pre-commit hooks
-        run: |
-          python -m pre_commit run --all-files
+      # - name: Run pre-commit hooks
+      #   run: |
+      #     python -m pre_commit run --all-files
 
       - name: Create pull request
         id: cpr
