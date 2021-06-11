@@ -54,7 +54,6 @@ jobs:
       - name: Validate input
         run: |
           python .github/workflows/collect-user-submission.py
-          exit 0
 
       - uses: actions/upload-artifact@v2
         with:
@@ -107,6 +106,7 @@ jobs:
       - name: Run pre-commit hooks
         run: |
           python -m pre_commit run --all-files
+          exit 0
 
       - name: Create pull request
         id: cpr
