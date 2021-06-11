@@ -9,7 +9,7 @@ jobs:
   validate-user-submission:
     if: |
       github.repository == 'ProjectPythia/projectpythia.github.io'
-      && contains(github.event.issue.labels.*.name, 'external-link-gallery-submission')
+      && contains(github.event.issue.labels.*.name, 'external-links-gallery-submission')
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -54,6 +54,7 @@ jobs:
       - name: Validate input
         run: |
           python .github/workflows/collect-user-submission.py
+          exit 0
 
       - uses: actions/upload-artifact@v2
         with:
