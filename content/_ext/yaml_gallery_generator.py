@@ -60,6 +60,7 @@ def _generate_menu(all_items, flt=None):
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     if flt:
         menu_html += '<a type="button" class="btn btn-link" href="/pages/links.html">Return to Full Gallery</a>' + '\n'
+    menu_html += '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="test.html">Submit a Link</a>' + '\n'
     menu_html += '</div>' + '\n'
     menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     return menu_html
