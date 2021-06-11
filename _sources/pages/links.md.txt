@@ -1004,7 +1004,7 @@ Created by: HoloViz developers
 
 
 
-hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component. 
+hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
 
 
 ```{link-button} https://hvplot.holoviz.org/
@@ -1472,7 +1472,7 @@ Affiliation: Unidata
 
 Unidata Site: <https://www.unidata.ucar.edu/>
 
-A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications. 
+A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
 
 
 ```{link-button} https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO

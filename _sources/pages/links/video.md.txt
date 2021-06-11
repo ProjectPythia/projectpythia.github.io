@@ -124,7 +124,7 @@ Affiliation: Unidata
 
 Unidata Site: <https://www.unidata.ucar.edu/>
 
-A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications. 
+A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
 
 
 ```{link-button} https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO

@@ -30,9 +30,9 @@ Once a Pull Request has passed all tests, including the Read the Docs build, you
 
 - Fork the [source repository](https://github.com/ProjectPythia/projectpythia.github.io) on GitHub
 - Make a local clone of the repository on your machine
-  ``` bash
+  ```bash
   git clone git@github.com:USERNAME/projectpythia.github.io.git
-  # or 
+  # or
   git clone https://github.com/USERNAME/projectpythia.github.io.git
   ```
 - In your favorite terminal, navigate to the `content` directory of the source repository
@@ -40,21 +40,21 @@ Once a Pull Request has passed all tests, including the Read the Docs build, you
   cd projectpythia.github.io/content
   ```
 - Use [conda](https://docs.conda.io/) to set up a build environment:
-  ``` bash
+  ```bash
   conda env create -f ../ci/environment.yml
   conda activate pythia
   ```
 - Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
-  ``` bash
+  ```bash
   make html
   ```
 - The newly rendered site is now available in `content/_build/html/index.html`.
-Open with your web browser, or from the terminal:
-  ``` bash
+  Open with your web browser, or from the terminal:
+  ```bash
   open _build/html/index.html
   ```
 - When you're done, you can deactivate the dedicated build environment with
-  ``` bash
+  ```bash
   conda deactivate
   ```
 - You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
