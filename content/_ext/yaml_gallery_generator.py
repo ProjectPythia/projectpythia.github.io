@@ -65,9 +65,7 @@ def _generate_menu(all_items, flt=None):
     if flt:
         menu_html += '<a type="button" class="btn btn-link" href="/pages/links.html">Return to Full Gallery</a>' + '\n'
     menu_html += (
-        '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a>'
-        + '\n'
-    )
+        '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a>' + '\n')
     menu_html += '</div>' + '\n'
     menu_html += "<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>" + '\n'
     return menu_html
