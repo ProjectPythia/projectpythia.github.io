@@ -22,7 +22,7 @@ description: ''
 authors:
   - name: ''
     affiliation: ''
-    affiliation_url:
+    affiliation_url: ''
     email: ''
   - name: ''
     affiliation: ''
