@@ -8,6 +8,7 @@ on:
 
 jobs:
   linting:
+    if: github.repository == 'ProjectPythia/projectpythia.github.io'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
