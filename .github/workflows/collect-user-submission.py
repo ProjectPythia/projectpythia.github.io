@@ -18,7 +18,7 @@ class Submission(pydantic.BaseModel):
     title: str
     description: str
     url: pydantic.HttpUrl
-    thumbnail: pydantic.HttpUrl = None
+    thumbnail: typing.Union[str, pydantic.HttpUrl] = None
     authors: typing.List[Author] = None
 
 
