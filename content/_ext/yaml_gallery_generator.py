@@ -1,6 +1,7 @@
-import yaml
-from textwrap import dedent
 import pathlib
+from textwrap import dedent
+
+import yaml
 
 
 def _tag_in_item(item, tag_str=None):
@@ -18,7 +19,7 @@ def _generate_sorted_tag_keys(all_items):
     for item in all_items:
         for k, e in item['tags'].items():
             key_set.add(k)
-    
+
     return sorted(key_set)
 
 
@@ -28,7 +29,7 @@ def _generate_tag_set(all_items, tag_key=None):
     for item in all_items:
         for k, e in item['tags'].items():
             if tag_key and k != tag_key:
-                continue            
+                continue
             for t in e:
                 tag_set.add(t)
 
@@ -40,7 +41,10 @@ def _generate_tag_menu(all_items, tag_key):
     tag_set = _generate_tag_set(all_items, tag_key)
     tag_list = sorted(tag_set)
 
-    hrefs = ''.join(f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n' for tag in tag_list)
+    hrefs = ''.join(
+        f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n'
+        for tag in tag_list
+    )
 
     return f"""
 <div class="dropdown">
@@ -53,9 +57,9 @@ def _generate_tag_menu(all_items, tag_key):
 
 
 def _generate_menu(all_items, flt=None):
-    
+
     key_list = _generate_sorted_tag_keys(all_items)
-    menu_html='<div class="d-flex flex-row">' + '\n'
+    menu_html = '<div class="d-flex flex-row">' + '\n'
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     if flt:
@@ -81,28 +85,27 @@ def build_from_items(items, filename, display_name, menu_html):
                 tag_set.add(t)
 
         tag_list = sorted(tag_set)
-        tags = [f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`' for tag in tag_list]
+        tags = [
+            f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
+            for tag in tag_list
+        ]
         tags = '\n'.join(tags)
 
-        authors = [a.get("name", "anonymous") for a in item['authors']]
+        authors = [a.get('name', 'anonymous') for a in item['authors']]
 
         if len(authors) == 1:
             authors_str = f'Created by: {authors[0]}'
         elif len(authors) == 2:
             authors_str = f'Created by: {authors[0]} and {authors[1]}'
 
-        email = [a.get("email", None) for a in item['authors']][0]
+        email = [a.get('email', None) for a in item['authors']][0]
         email_str = '' if email is None else f'Email: {email}'
 
-        affiliation = [a.get("affiliation", None) for a in item['authors']][0]
+        affiliation = [a.get('affiliation', None) for a in item['authors']][0]
         affiliation_str = '' if affiliation is None else f'Affiliation: {affiliation}'
 
-        affiliation_url = [a.get("affiliation_url", None) for a in item['authors']][0]
-        affiliation_url_str = (
-            '' 
-            if affiliation_url is None 
-            else f'{affiliation} Site: <{affiliation_url}>'
-        )
+        affiliation_url = [a.get('affiliation_url', None) for a in item['authors']][0]
+        affiliation_url_str = '' if affiliation_url is None else f'{affiliation} Site: <{affiliation_url}>'
 
         panels_body.append(
             f"""\
@@ -141,7 +144,8 @@ def build_from_items(items, filename, display_name, menu_html):
 </div>
 
 {tags}
-""")
+"""
+        )
 
     panels_body = '\n'.join(panels_body)
 
@@ -163,7 +167,6 @@ def build_from_items(items, filename, display_name, menu_html):
 """
 
     pathlib.Path(f'pages/{filename}.md').write_text(panels)
-
 
 
 def main(app):
