@@ -207,6 +207,9 @@ you wish to use it. Consult the repo-specific contributor’s guide
 for information on “Building the site”, and
 follow the steps described therein.
 
+More information on installing and using conda may be found
+[here](https://foundations.projectpythia.org/foundations/conda.html).
+
 ### Forking a repo
 
 With Git, GitHub, and conda properly installed and configured, we are ready to
@@ -263,7 +266,7 @@ need to operate directly on the contents of the .git directory.
 Secondly, it creates a copy of the repo’s assets (e.g. Python files,
 documentation, etc.) in the local directory `PYTHIA_REPO_NAME`. The files in this latter directory are the ones that you will edit.
 
-Remember: you now essentially have two clones of the GeoCAT repository, one
+Remember: you now essentially have two clones of the `PYTHIA_REPO_NAME` repository, one
 on the GitHub server under your account, and one on your local
 workstation or laptop.
 
@@ -359,6 +362,26 @@ $ git commit
 
 Which will prompt you for a log message. Please provide something informative. If you make lots of changes, it is best to make multiple commits, broken up into related chunks. E.g. “fixed x”, “added documentation”, “added testing”.
 
+Depending on which repo you are making changes to, a `pre-commit`
+[hook](https://www.atlassian.com/git/tutorials/git-hooks)
+may be enabled that will validate your changes and even make changes
+on its own (such as cleaning up code formatting). If the _hook_ makes
+any changes you may need to run `git commit` a second time to commit the
+changes made by the _hook_,
+or possibly make manual changes yourself. A good practice is to run
+
+```
+$ git status
+```
+
+after your `commit` to verify everything looks as expected.
+
+> **Note:** `pre-commit` _hooks_ can sometimes be difficult to satisfy. You
+> can always tell **git** not to run the _hook_ by
+> running `git commit --no-verify`.
+> This will allow you to submit your changes (see steps) below, and get help
+> later from a Project Pythia maintainer.
+
 #### Pushing Your Changes to Your Personal GitHub Repository
 
 Once all of your changes have been committed to your local .git
@@ -389,7 +412,7 @@ this document, and any repo-specific guidelines.
 To review your changes against the official Pythia repository do the following:
 
 1. Navigate your web browser to your GitHub repository. E.g.
-   https://github.com/YOUR_USER_NAME/GeoCAT-examples
+   https://github.com/YOUR_USER_NAME/pythia-foundations
 1. Click on `Compare`
 1. Check the `head repository` and `compare` branches are set correctly.
    These should be `YOUR_NAME/PYTHIA_REPO_NAME`, and `BRANCH_NAME`,
@@ -397,7 +420,7 @@ To review your changes against the official Pythia repository do the following:
    when you pushed your changes to your remote repository on GitHub.
 
 Select the “base repository” and “base”. For “base repository” this
-should be the Pythia repository, for example `ProjectPythia/pythia-foundations``.
+should be the Pythia repository, for example `ProjectPythia/pythia-foundations`.
 For “base” this should be the branch on the Pythia repository that
 you wish to compare against (and subsequently merge with).
 
@@ -429,4 +452,4 @@ to GitHub again is done with the command:
 $ git push origin FEATURE_NAME
 ```
 
-Congradulations!!! You've submitted a PR!
+Congratulations!!! You've submitted a PR!
