@@ -119,7 +119,7 @@ jobs:
           branch: external-links-gallery-${{ github.event.issue.number }}
           title: 'Update external links gallery'
           body: |
-            Update external links gallery as requested in #${{ github.event.issue.number }}.
+            Update external links gallery as requested in #${{ github.event.issue.number }}. Closes #${{ github.event.issue.number }}.
 
       - name: Find Comment
         uses: peter-evans/find-comment@v1
