@@ -357,16 +357,21 @@ Where `PATH_TO_NEW_FILE` is the path name of the newly created file.
 To commit changed files, including new files just added with the above command, run the following command from the root of your local copy:
 
 ```
-$ git commit
+$ git commit PATH_TO_NEW_FILE
 ```
 
 Which will prompt you for a log message. Please provide something informative. If you make lots of changes, it is best to make multiple commits, broken up into related chunks. E.g. “fixed x”, “added documentation”, “added testing”.
+
+> **Note:** When executing `git commit` after `git add PATH_TO_NEW_FILE`,
+> specifying the path to the new file isn't stricly necessary. However,
+> in other instances the file path argument is required. We include it
+> here to keep things simple.
 
 Depending on which repo you are making changes to, a `pre-commit`
 [hook](https://www.atlassian.com/git/tutorials/git-hooks)
 may be enabled that will validate your changes and even make changes
 on its own (such as cleaning up code formatting). If the _hook_ makes
-any changes you may need to run `git commit` a second time to commit the
+any changes you may need to run `git commit PATH_TO_NEW_FILE` a second time to commit the
 changes made by the _hook_,
 or possibly make manual changes yourself. A good practice is to run
 
