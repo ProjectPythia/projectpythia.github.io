@@ -48,6 +48,11 @@ Contributing a new link is easy with these three simple steps:
 1. Click on the button that says “New issue”.
 1. Click on the “Get started” button in the row labeled “Update external links gallery ”, and follow the instructions presented.
 
+Alternatively, you can simply do:
+
+1. Navigate to the External Links Gallery.
+1. Click the `Submit a Link` button, which will redirect you to a new PR template as described in step (3) above.
+
 That’s all you need to do. Your request will be reviewed, and you
 will be notified once your content has been accepted or if changes
 are requested.
