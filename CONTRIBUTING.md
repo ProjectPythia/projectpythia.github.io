@@ -10,46 +10,75 @@ Pythia structure, forking, repository cloning, branching, etc.).
 
 The portal site is built with [Sphinx](https://www.sphinx-doc.org/).
 
-When testing new content is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. You can also build it locally on your machine.
+When testing new content it is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. However, you can also build it locally on your machine following the instructions
+below.
 
 ### Building the site
 
-- After checking out a local copy of the site, in your favorite terminal, navigate to the `content` directory of the source repository
-  ```bash
-  cd projectpythia.github.io/content
-  ```
-- Use [conda](https://docs.conda.io/) to set up a build environment:
-  ```bash
-  conda env create -f ../ci/environment.yml
-  conda activate pythia
-  ```
-- Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
-  ```bash
-  make html
-  ```
-- The newly rendered site is now available in `content/_build/html/index.html`.
-  Open with your web browser, or from the terminal:
-  ```bash
-  open _build/html/index.html
-  ```
-- However, many of the links will not work. For all of the links
-  found in the portal to work properly, you'll need to set up a local
-  testing server. This can be done with Python's http.server by running
-  the following command from within the content directory:
+After checking out a local copy of the site, in your favorite terminal, navigate to the `content` directory of the source repository
 
+```bash
+cd projectpythia.github.io/content
 ```
+
+Use [conda](https://docs.conda.io/) to set up a build environment:
+
+```bash
+conda env create -f ../ci/environment.yml
+```
+
+This will create or update the dev environment (`pythia`).
+
+#### Install `pre-commit` hooks
+
+This repository includes `pre-commit` hooks (defined in
+`.pre-commit-config.yaml`). To activate/install these pre-commit
+hooks, run:
+
+```bash
+conda activate pythia
+pre-commit install
+```
+
+Setting up the environment is typically a one-time step.
+
+_NOTE_: The `pre-commit` package is already installed via the `pythia` conda environment.
+
+#### Building the book locally
+
+Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
+
+```bash
+make html
+```
+
+The newly rendered site is now available in `content/_build/html/index.html`.
+Open with your web browser, or from the terminal:
+
+```bash
+open _build/html/index.html
+```
+
+However, many of the links will not work. For all of the links
+found in the portal to work properly, you'll need to set up a local
+testing server. This can be done with Python's http.server by running
+the following command from within the content directory:
+
+```bash
 python -m http.server --directory _build/html/
 ```
 
-- and then pointing your browser at the URL: localhost:8000.
+and then pointing your browser at the URL: localhost:8000.
 
-- More information on setting up a local test server is available from [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
+More information on setting up a local test server is available from [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
 
-- When you're done, you can deactivate the dedicated build environment with
-  ```bash
-  conda deactivate
-  ```
-- You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
+When you're done, you can deactivate the dedicated build environment with
+
+```bash
+conda deactivate
+```
+
+You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
 
 ### To view the Read the Docs autobuild
 
