@@ -1,3 +1,4 @@
+import itertools
 import pathlib
 from textwrap import dedent
 
@@ -7,19 +8,12 @@ import yaml
 def _tag_in_item(item, tag_str=None):
     if tag_str is None:
         return True
-    all_tags = []
-    for k, e in item['tags'].items():
-        all_tags.extend(e)
+    all_tags = list(item['tags'].values())
     return tag_str in all_tags
 
 
 def _generate_sorted_tag_keys(all_items):
-
-    key_set = set()
-    for item in all_items:
-        for k, e in item['tags'].items():
-            key_set.add(k)
-
+    key_set = set(itertools.chain(*all_items['tags'].values()))
     return sorted(key_set)
 
 
@@ -77,13 +71,7 @@ def build_from_items(items, filename, display_name, menu_html):
         if not item.get('thumbnail'):
             item['thumbnail'] = '/_static/images/ebp-logo.png'
         thumbnail = item['thumbnail']
-
-        tag_set = set()
-        for k, e in item['tags'].items():
-            for t in e:
-                tag_set.add(t)
-
-        tag_list = sorted(tag_set)
+        tag_list = sorted((itertools.chain(*item['tags'].values())))
         tags = [
             f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
             for tag in tag_list
@@ -91,19 +79,15 @@ def build_from_items(items, filename, display_name, menu_html):
         tags = '\n'.join(tags)
 
         authors = [a.get('name', 'anonymous') for a in item['authors']]
+        authors_str = f"Created by: {', '.join(authors)}"
 
-        if len(authors) == 1:
-            authors_str = f'Created by: {authors[0]}'
-        elif len(authors) == 2:
-            authors_str = f'Created by: {authors[0]} and {authors[1]}'
-
-        email = [a.get('email', None) for a in item['authors']][0]
+        email = [a.get('email') for a in item['authors']][0]
         email_str = '' if email is None else f'Email: {email}'
 
-        affiliation = [a.get('affiliation', None) for a in item['authors']][0]
+        affiliation = [a.get('affiliation') for a in item['authors']][0]
         affiliation_str = '' if affiliation is None else f'Affiliation: {affiliation}'
 
-        affiliation_url = [a.get('affiliation_url', None) for a in item['authors']][0]
+        affiliation_url = [a.get('affiliation_url') for a in item['authors']][0]
         affiliation_url_str = '' if affiliation_url is None else f'{affiliation} Site: <{affiliation_url}>'
 
         panels_body.append(
