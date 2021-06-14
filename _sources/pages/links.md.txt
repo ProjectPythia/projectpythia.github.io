@@ -189,7 +189,7 @@ Jupyter notebooks are a great way to have code, output, images, video, and other
 
 **An Introduction to Earth and Environmental Data Science**
 
-Created by: Ryan Abernathey and Kerry Key
+Created by: Ryan Abernathey, Kerry Key
 
 
 
