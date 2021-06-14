@@ -13,7 +13,8 @@ def _tag_in_item(item, tag_str=None):
 
 
 def _generate_sorted_tag_keys(all_items):
-    key_set = set(itertools.chain(*all_items['tags'].values()))
+
+    key_set = set(itertools.chain(*[item['tags'].keys() for item in all_items]))
     return sorted(key_set)
 
 
