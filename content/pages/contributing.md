@@ -44,7 +44,7 @@ to Project Pythia.
 
 Contributing a new link is easy with these three simple steps:
 
-1. Navigate your web browser to the main Project Pythia repo's “issue” page [here](https://github.com/ProjectPythia/projectpythia.github.io/issues). 
+1. Navigate your web browser to the main Project Pythia repo's “issue” page [here](https://github.com/ProjectPythia/projectpythia.github.io/issues).
 1. Click on the button that says “New issue”.
 1. Click on the “Get started” button in the row labeled “Update external links gallery ”, and follow the instructions presented.
 
@@ -101,32 +101,31 @@ project](https://geocat.ucar.edu/pages/contributing.html).
 
 As noted above contributing directly to a GitHub repository that
 is not owned by you is a somewhat complicated process that involves
-a number of technologies.  In the paragraphs below we describe the
+a number of technologies. In the paragraphs below we describe the
 process of "forking" an external repository, making changes, and
 submitting your changes back to the owners of the external repository.
 But first we discuss how to configure your Python environment with the
-conda (anaconda) package manager, and how to configure Git and GitHub. These 
+conda (anaconda) package manager, and how to configure Git and GitHub. These
 are one-time steps that you should not need to perform again.
 
 It's a long journey, but the steps we describe below are common to many, many
 open source projects hosted on GitHub.
 
-
 ### Getting started with GitHub and Git
 
 Contributing to one of Pythia’s repos requires using GitHub, as
-already mentioned, and also Git. The latter, Git, is an open source, 
+already mentioned, and also Git. The latter, Git, is an open source,
 command line tool for collaborative software version control, while
 GitHub is an online, web-accessible service that greatly simplifies
 using the powerful, yet often complex, Git.
 
-> **Note:** GitHub operates entirely within a web browser. You do not 
-> need to install anything, but you will need to set up a free GitHub 
-> account. Git is a command line tool that is most likely already 
+> **Note:** GitHub operates entirely within a web browser. You do not
+> need to install anything, but you will need to set up a free GitHub
+> account. Git is a command line tool that is most likely already
 > installed on your machine, and will need to be run from a “terminal” window, AKA
 > a “shell”.
 
-Using, and even just configuring, Git and GitHub are often the most 
+Using, and even just configuring, Git and GitHub are often the most
 daunting aspects of contributing to a GitHub hosted project. Here
 are the basic steps for Git/GitHub configuration, all of which must
 be performed before the next subsection, forking a repo.
@@ -140,7 +139,7 @@ free account is all that is needed.
 #### Git Setup
 
 If not already installed on your machine, download and install the
-[latest version of Git](https://git-scm.com/downloads) .  Set up
+[latest version of Git](https://git-scm.com/downloads) . Set up
 Git with a user name and your email using the steps below. Note,
 it is advisable that you use the same user name/email as you did
 when setting up your GitHub account, though technically this may
@@ -152,10 +151,9 @@ $ git config --global user.name "Your name here"
 $ git config --global user.email "your_email@example.com"
 ```
 
-Don’t type the $. This simply indicates the command line prompt.
+Don’t type the \$. This simply indicates the command line prompt.
 
 #### Configure your environment to authenticate with GitHub from Git
-
 
 This is a complicated process and there are two authentication
 protocols supported: HTTP or SSH. Either will work fine, but we
@@ -193,14 +191,14 @@ Conda update conda
 ```
 
 Make sure that you have cloned the repository as described above
-in Forking a Repository.  
+in Forking a Repository.
 
 At this point you have a current version of conda available on your
 desktop or laptop. Before using your conda environment to work on
 Pythia content, you'll need to perform an addtional one-time setup
-that is specific to each Pythia repo. After the one-time configuration is 
-complete you will need to "activate" a repo-specific environment whenever 
-you wish to use it.  Consult the repo-specific contributor’s guide
+that is specific to each Pythia repo. After the one-time configuration is
+complete you will need to "activate" a repo-specific environment whenever
+you wish to use it. Consult the repo-specific contributor’s guide
 for information on “Building the site”, and
 follow the steps described therein.
 
@@ -221,25 +219,24 @@ to support contributions from the outside world. This workflow is
 summarized below, and described in detail
 [here](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow).
 
-
 The steps:
 
 1. Navigate your web browser to the Pythia repository that you wish
-to contribute to.
+   to contribute to.
 1. Click on the “Fork” icon. This will create a copy of the Pythia repository
-on the GitHub server under **your** account name. You may be prompted
-to sign in. If so, use the GitHub (not Git) account name and password
-that you created when you created your GitHub account above.
+   on the GitHub server under **your** account name. You may be prompted
+   to sign in. If so, use the GitHub (not Git) account name and password
+   that you created when you created your GitHub account above.
 1. After successfully forking a Pythia repo you should have a copy
-of that repository on the GitHub server under your account name.
-To verify this you can navigate to GitHub, sign in if you are not
-already, and click on “your repositories” under the pull down menu
-in the top right corner of the page. You should see the Pythia
-repository you just cloned listed. Click on it. This is a remote
-clone of the Pythia repo. Changes you make to your copy will not
-impact the contents of the Pythia repo. The next step is to make a
-local copy (clone) of the just-cloned GitHub repository on your
-laptop or workstation. 
+   of that repository on the GitHub server under your account name.
+   To verify this you can navigate to GitHub, sign in if you are not
+   already, and click on “your repositories” under the pull down menu
+   in the top right corner of the page. You should see the Pythia
+   repository you just cloned listed. Click on it. This is a remote
+   clone of the Pythia repo. Changes you make to your copy will not
+   impact the contents of the Pythia repo. The next step is to make a
+   local copy (clone) of the just-cloned GitHub repository on your
+   laptop or workstation.
 
 That’s right. After this final step you will now have **two** copies
 of the repo, one local and one remote. From a terminal window type:
@@ -274,16 +271,16 @@ $ git remote add upstream https://github.com/ProjectPythia/PYTHIA_REPO_NAME.git
 Finally, create a new branch in your local repository:
 
 ```
-$ git checkout -b YOUR_BRANCH_NAME 
+$ git checkout -b YOUR_BRANCH_NAME
 ```
 
 Where `YOUR_BRANCH_NAME` is the name that you want to give your local
 branch. What name should you choose? If the work that you are doing
 is associated with a GitHub issue you should follow the convention:
 
-*issue_XXX*
+_issue_XXX_
 
-Where *XXX* is the GitHub issue number. If it is not associated with a Pythia GitHub issue, pick something short and meaningful, e.g. “documentation_cleanup”.
+Where _XXX_ is the GitHub issue number. If it is not associated with a Pythia GitHub issue, pick something short and meaningful, e.g. “documentation_cleanup”.
 
 You can now make changes to your local copy of the Pythia repo
 without having those changes affect either the remote Pythia GitHub
@@ -300,7 +297,6 @@ in your current working directory. You can safely make changes to
 any of the contents. Once you are ready to contribute your changes
 back to the Pythia repository you will need to submit a Pull Request
 (PR), described later.
-
 
 ### Make your local changes
 
@@ -372,7 +368,7 @@ $ git push origin FEATURE_NAME
 Where `FEATURE_NAME` is the name you gave your branch when you checked
 it out before starting to make your changes. Typically, if you are
 submitting a PR for a change that addresses an open Pythia issue,
-the name should be *issue_XXX* where *XXX* is the issue number.
+the name should be _issue_XXX_ where _XXX_ is the issue number.
 
 After successfully running this command your changes will now be
 on GitHub under your personal account, but they are not yet part
@@ -383,17 +379,17 @@ submitting a pull request.
 
 Before you make the actual PR, it is a good idea to review the
 changes that you’ve made and to have followed all guidelines in
-this document, and any repo-specific guidelines. 
+this document, and any repo-specific guidelines.
 
 To review your changes against the official Pythia repository do the following:
 
 1. Navigate your web browser to your GitHub repository. E.g.
-https://github.com/YOUR_USER_NAME/GeoCAT-examples
+   https://github.com/YOUR_USER_NAME/GeoCAT-examples
 1. Click on `Compare`
 1. Check the `head repository` and `compare` branches are set correctly.
-These should be `YOUR_NAME/PYTHIA_REPO_NAME`, and `BRANCH_NAME`,
-respectively, where `BRANCH_NAME` is the name you gave your branch
-when you pushed your changes to your remote repository on GitHub.
+   These should be `YOUR_NAME/PYTHIA_REPO_NAME`, and `BRANCH_NAME`,
+   respectively, where `BRANCH_NAME` is the name you gave your branch
+   when you pushed your changes to your remote repository on GitHub.
 
 Select the “base repository” and “base”. For “base repository” this
 should be the Pythia repository, for example `ProjectPythia/pythia-foundations``.
@@ -404,6 +400,7 @@ At this point you should be able to review changes between your
 repositories and the GitHub repository.
 
 #### Make the PR
+
 At long last you are ready to make the actual PR, requesting the
 Pythia community to review your code, make possible suggestions for
 changes, and ultimately merge your repo with Pythia. To submit a
