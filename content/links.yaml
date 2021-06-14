@@ -735,3 +735,29 @@
       - xarray
     formats:
       - tutorial
+- title: Python Programming for Earth Science Students
+  description: Python Programming for Earth Science Students
+  url: https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/
+  thumbnail: ''
+  authors:
+    - name: Lisa Tauxe
+      affiliation: Scripps Institution of Oceanography
+      affiliation_url: https://scripps.ucsd.edu/
+      email: ltauxe@ucsd.edu
+    - name: Hanna Asefaw
+      affiliation: ''
+      affiliation_url: ''
+      email: hasefaw@ucsd.edu
+    - name: Brendan Cych
+      affiliation: ''
+      affiliation_url: ''
+      email: bcych@ucsd.edu
+  tags:
+    formats:
+      - tutorial
+    packages:
+      - pure python
+      - pandas
+      - scipy
+      - numpy
+      - matplotlib
