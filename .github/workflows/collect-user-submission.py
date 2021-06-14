@@ -20,6 +20,7 @@ class Submission(pydantic.BaseModel):
     url: pydantic.HttpUrl
     thumbnail: typing.Union[str, pydantic.HttpUrl] = None
     authors: typing.List[Author] = None
+    tags: typing.Dict[str, typing.List[str]] = None
 
 
 @pydantic.dataclasses.dataclass
@@ -53,7 +54,7 @@ class IssueInfo:
         description = inputs.get('description')
         url = inputs.get('url')
         thumbnail = inputs.get('thumbnail')
-        _authors = inputs.get('authors', [])
+        _authors = inputs.get('authors')
         authors = []
         if _authors:
             for item in _authors:
@@ -67,9 +68,11 @@ class IssueInfo:
                 )
         else:
             authors = [Author(name='anyonymous')]
-
+        _tags = inputs.get(
+            'tags', {'packages': ['unspecified'], 'formats': ['unspecified'], 'domains': ['unspecified']}
+        )
         self.submission = Submission(
-            name=name, title=title, description=description, url=url, thumbnail=thumbnail, authors=authors
+            name=name, title=title, description=description, url=url, thumbnail=thumbnail, authors=authors, tags=_tags
         )
 
 
