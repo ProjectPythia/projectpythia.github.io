@@ -1,2 +1,4 @@
 # GLOBAL OWNER
-*   @ProjectPythia/infrastructure @ProjectPythia/education
+*   @ProjectPythia/infrastructure
+
+/content/ @ProjectPythia/infrastructure @ProjectPythia/education
