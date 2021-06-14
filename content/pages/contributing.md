@@ -187,7 +187,7 @@ The steps:
 1. Make sure your conda is up to date by running this command from the terminal:
 
 ```
-Conda update conda
+conda update conda
 ```
 
 Make sure that you have cloned the repository as described above
