@@ -1,7 +1,7 @@
 
 # External Links Gallery - "tutorial"
 
-<div class="d-flex flex-row">
+<div class="d-flex flex-row"> 
 
 <div class="dropdown">
 <button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
@@ -54,9 +54,10 @@
 </div>
 </div>
 
-<a type="button" class="btn btn-link" href="/pages/links.html">Return to Full Gallery</a>
-</div>
-<script> $(document).on('click',function(){$('.collapse').collapse('hide');}); </script>
+<a type="button" class="btn btn-link" href="/pages/links.html">Return to Full Gallery</a> 
+<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a> 
+</div> 
+<script> $(document).on("click",function(){$(".collapse").collapse("hide");}); </script> 
 
 
 ````{panels}
