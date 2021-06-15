@@ -66,6 +66,122 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/hvplot-wm.png
++++
+**hvPlot**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/hvplot-wm.png />
+
+**hvPlot**
+
+Created by: HoloViz developers
+
+
+
+
+
+
+
+hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
+
+
+```{link-button} https://hvplot.holoviz.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/hvplot-wm.png
++++
+**hvPlot Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/hvplot-wm.png />
+
+**hvPlot Tutorial**
+
+Created by: HoloViz developers
+
+
+
+
+
+
+
+The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
+
+
+```{link-button} https://hvplot.holoviz.org/user_guide/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/hvplot-wm.png
++++
+**hvPlot Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/hvplot-wm.png />
+
+**hvPlot Gallery**
+
+Created by: HoloViz developers
+
+
+
+
+
+
+
+Incomplete Reference Gallery containing some small examples of different plot types using hvPlot.
+
+
+```{link-button} https://hvplot.holoviz.org/reference/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

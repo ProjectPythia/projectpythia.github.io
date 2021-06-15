@@ -66,6 +66,122 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/siphon.png
++++
+**Siphon**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/siphon.png />
+
+**Siphon**
+
+Created by: Siphon Contributors
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
+
+
+```{link-button} https://unidata.github.io/siphon
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/siphon.png
++++
+**Siphon Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/siphon.png />
+
+**Siphon Tutorial**
+
+Created by: anonymous
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
+
+
+```{link-button} https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/siphon.png
++++
+**Siphon Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/siphon.png />
+
+**Siphon Gallery**
+
+Created by: Siphon Contributors
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Examples of using Siphon’s functionality.
+
+
+```{link-button} https://unidata.github.io/siphon/latest/examples/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

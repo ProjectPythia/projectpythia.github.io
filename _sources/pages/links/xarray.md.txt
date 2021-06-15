@@ -66,6 +66,126 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/xarray.png
++++
+**Xarray**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/xarray.png />
+
+**Xarray**
+
+Created by: Xarray Developers
+
+
+
+
+
+
+
+xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
+
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive, more concise, and less error-prone developer experience. The package includes a large and growing library of domain-agnostic functions for advanced analytics and visualization with these data structures.
+
+Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
+
+
+```{link-button} http://xarray.pydata.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/xarray.png
++++
+**Unidata Xarray Workshop**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/xarray.png />
+
+**Unidata Xarray Workshop**
+
+Created by: anonymous
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
+
+
+```{link-button} https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/xarray.png
++++
+**Xarray Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/xarray.png />
+
+**Xarray Tutorial**
+
+Created by: Xarray Developers
+
+
+
+
+
+
+
+A collection of tutorials provided by the Xarray developers.
+
+
+```{link-button} https://xarray-contrib.github.io/xarray-tutorial/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

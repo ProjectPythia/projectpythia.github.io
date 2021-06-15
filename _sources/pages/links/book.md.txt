@@ -66,6 +66,44 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/climlablogo.png
++++
+**The Climate Laboratory**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/climlablogo.png />
+
+**The Climate Laboratory**
+
+Created by: Brian Rose
+
+
+
+Affiliation: University of Albany
+
+
+
+A hands on approach to climate physics and climate modeling. Fundamental climate processes are introduced through interactive and reproducible Python-based modeling exercises.  This JupyterBook serves as a course textbook at the University of Albany.
+
+
+```{link-button} https://brian-rose.github.io/ClimateLaboratoryBook/home
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

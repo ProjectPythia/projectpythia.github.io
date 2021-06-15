@@ -66,6 +66,557 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/cartopy.png
++++
+**Cartopy Documentation**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/cartopy.png />
+
+**Cartopy Documentation**
+
+Created by: UK Met Office
+
+
+
+
+
+
+
+Cartopy is a Python package designed for geospatial data processing in order to produce maps and other geospatial data analyses.
+
+
+```{link-button} https://scitools.org.uk/cartopy/docs/latest/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**Contextily Documentation**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**Contextily Documentation**
+
+Created by: Dani Arribas-Bel & Contexily Contributors
+
+
+
+
+
+
+
+contextily is a small Python 3 (3.6 and above) package to retrieve tile maps from the internet. It can add those tiles as basemap to matplotlib figures or write tile maps to disk into geospatial raster files. Bounding boxes can be passed in both WGS84 (EPSG:4326) and Spheric Mercator (EPSG:3857).
+
+
+```{link-button} https://contextily.readthedocs.io
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/dask.png
++++
+**Dask**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/dask.png />
+
+**Dask**
+
+Created by: Dask core developers
+
+
+
+
+
+
+
+Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love.
+
+
+```{link-button} https://dask.org
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/geopandas_icon.png
++++
+**GeoPandas Documentation**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geopandas_icon.png />
+
+**GeoPandas Documentation**
+
+Created by: GeoPandas developers
+
+
+
+
+
+
+
+GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
+
+
+```{link-button} https://geopandas.org
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/hvplot-wm.png
++++
+**hvPlot**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/hvplot-wm.png />
+
+**hvPlot**
+
+Created by: HoloViz developers
+
+
+
+
+
+
+
+hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
+
+
+```{link-button} https://hvplot.holoviz.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**Ipyleaflet**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**Ipyleaflet**
+
+Created by: The Jupyter development team
+
+
+
+
+
+
+
+Interactive maps in the Jupyter notebook.
+
+
+```{link-button} https://ipyleaflet.readthedocs.io
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/ipyleaflet.html",ipyleaflet,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/matplotlib-tutorial.png
++++
+**Matplotlib**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/matplotlib-tutorial.png />
+
+**Matplotlib**
+
+Created by: the Matplotlib development team
+
+
+
+
+
+
+
+Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+
+```{link-button} https://matplotlib.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/metpy.jpg
++++
+**MetPy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/metpy.jpg />
+
+**MetPy**
+
+Created by: MetPy developers
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
+
+
+```{link-button} https://unidata.github.io/MetPy/latest/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/numpy.png
++++
+**Numpy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/numpy.png />
+
+**Numpy**
+
+Created by: NumPy
+
+
+
+
+
+
+
+The fundamental package for scientific computing with Python.
+
+
+```{link-button} https://numpy.org
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/pandas.png
++++
+**Pandas**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/pandas.png />
+
+**Pandas**
+
+Created by: Pandas Development Team
+
+
+
+
+
+
+
+Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+
+
+```{link-button} https://pandas.pydata.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**Rasterio**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**Rasterio**
+
+Created by: MapBox
+
+
+
+
+
+
+
+Geographic information systems use GeoTIFF and other formats to organize and store gridded raster datasets such as satellite imagery and terrain models. Rasterio reads and writes these formats and provides a Python API based on Numpy N-dimensional arrays and GeoJSON.
+
+
+```{link-button} https://rasterio.readthedocs.io
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/rasterio.html",rasterio,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/siphon.png
++++
+**Siphon**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/siphon.png />
+
+**Siphon**
+
+Created by: Siphon Contributors
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
+
+
+```{link-button} https://unidata.github.io/siphon
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**WRF-Python**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**WRF-Python**
+
+Created by: anonymous
+
+
+
+Affiliation: NCAR
+
+NCAR Site: <https://ncar.ucar.edu/>
+
+A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
+
+
+```{link-button} https://wrf-python.readthedocs.io
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/xarray.png
++++
+**Xarray**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/xarray.png />
+
+**Xarray**
+
+Created by: Xarray Developers
+
+
+
+
+
+
+
+xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
+
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive, more concise, and less error-prone developer experience. The package includes a large and growing library of domain-agnostic functions for advanced analytics and visualization with these data structures.
+
+Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
+
+
+```{link-button} http://xarray.pydata.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/xarray.html",xarray,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

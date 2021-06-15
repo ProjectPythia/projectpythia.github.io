@@ -66,6 +66,83 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/dask.png
++++
+**Dask**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/dask.png />
+
+**Dask**
+
+Created by: Dask core developers
+
+
+
+
+
+
+
+Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love.
+
+
+```{link-button} https://dask.org
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/dask.png
++++
+**Dask Tutorial**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/dask.png />
+
+**Dask Tutorial**
+
+Created by: Dask Developers
+
+
+
+
+
+
+
+Dask is a parallel computing library that scales the existing Python ecosystem. This tutorial will introduce Dask and parallel data analysis more generally.
+
+
+```{link-button} https://tutorial.dask.org/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/dask.html",dask,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

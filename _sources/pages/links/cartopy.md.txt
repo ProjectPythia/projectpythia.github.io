@@ -66,6 +66,83 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/cartopy.png
++++
+**Cartopy Documentation**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/cartopy.png />
+
+**Cartopy Documentation**
+
+Created by: UK Met Office
+
+
+
+
+
+
+
+Cartopy is a Python package designed for geospatial data processing in order to produce maps and other geospatial data analyses.
+
+
+```{link-button} https://scitools.org.uk/cartopy/docs/latest/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/cartopy.png
++++
+**Cartopy Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/cartopy.png />
+
+**Cartopy Gallery**
+
+Created by: UK Met Office
+
+
+
+
+
+
+
+Visual examples demonstrating some of the functionality of Cartopy, particularly its matplotlib interface.
+
+
+```{link-button} https://scitools.org.uk/cartopy/docs/latest/gallery/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

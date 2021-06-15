@@ -66,6 +66,438 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/cartopy.png
++++
+**Cartopy Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/cartopy.png />
+
+**Cartopy Gallery**
+
+Created by: UK Met Office
+
+
+
+
+
+
+
+Visual examples demonstrating some of the functionality of Cartopy, particularly its matplotlib interface.
+
+
+```{link-button} https://scitools.org.uk/cartopy/docs/latest/gallery/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/cartopy.html",cartopy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**Contextily Documentation**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**Contextily Documentation**
+
+Created by: Dani Arribas-Bel & Contexily Contributors
+
+
+
+
+
+
+
+contextily is a small Python 3 (3.6 and above) package to retrieve tile maps from the internet. It can add those tiles as basemap to matplotlib figures or write tile maps to disk into geospatial raster files. Bounding boxes can be passed in both WGS84 (EPSG:4326) and Spheric Mercator (EPSG:3857).
+
+
+```{link-button} https://contextily.readthedocs.io
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/contextily.html",contextily,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/geocat.png
++++
+**GeoCAT Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geocat.png />
+
+**GeoCAT Gallery**
+
+Created by: GeoCAT
+
+
+
+Affiliation: NCAR
+
+NCAR Site: <https://ncar.ucar.edu/>
+
+A gallery of plotting examples from GeoCat.
+
+
+```{link-button} https://geocat-examples.readthedocs.io/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-comp.html",geocat-comp,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geocat-viz.html",geocat-viz,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/geopandas_icon.png
++++
+**GeoPandas Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/geopandas_icon.png />
+
+**GeoPandas Gallery**
+
+Created by: GeoPandas developers
+
+
+
+
+
+
+
+Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
+
+
+```{link-button} https://geopandas.org/gallery/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/geopandas.html",geopandas,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/hvplot-wm.png
++++
+**hvPlot Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/hvplot-wm.png />
+
+**hvPlot Gallery**
+
+Created by: HoloViz developers
+
+
+
+
+
+
+
+Incomplete Reference Gallery containing some small examples of different plot types using hvPlot.
+
+
+```{link-button} https://hvplot.holoviz.org/reference/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/hvPlot.html",hvPlot,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/matplotlib-tutorial.png
++++
+**Matplotlib Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/matplotlib-tutorial.png />
+
+**Matplotlib Gallery**
+
+Created by: the Matplotlib development team
+
+
+
+
+
+
+
+This gallery contains examples of the many things you can do with Matplotlib.
+
+
+```{link-button} https://matplotlib.org/stable/gallery/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/metpy.jpg
++++
+**MetPy Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/metpy.jpg />
+
+**MetPy Gallery**
+
+Created by: MetPy Developers
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Examples of using a variety of MetPy’s functionality together.
+
+
+```{link-button} https://unidata.github.io/MetPy/latest/examples/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/metpy.html",metpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/Unidata.png
++++
+**Unidata Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
+**Unidata Gallery**
+
+Created by: anonymous
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
+
+
+```{link-button} https://unidata.github.io/python-training/gallery/gallery-home/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/pandas.png
++++
+**Pandas Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/pandas.png />
+
+**Pandas Gallery**
+
+Created by: Pandas Development Team
+
+
+
+
+
+
+
+A gallery of example pandas functionality.
+
+
+```{link-button} https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/siphon.png
++++
+**Siphon Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/siphon.png />
+
+**Siphon Gallery**
+
+Created by: Siphon Contributors
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Examples of using Siphon’s functionality.
+
+
+```{link-button} https://unidata.github.io/siphon/latest/examples/index.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/siphon.html",siphon,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**WRF-Python Gallery**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**WRF-Python Gallery**
+
+Created by: anonymous
+
+
+
+Affiliation: NCAR
+
+NCAR Site: <https://ncar.ucar.edu/>
+
+Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
+
+
+```{link-button} https://wrf-python.readthedocs.io/en/latest/plot.html
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/gallery.html",gallery,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/wrf-python.html",wrf-python,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>

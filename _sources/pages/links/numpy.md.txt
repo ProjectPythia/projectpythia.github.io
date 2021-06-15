@@ -66,6 +66,205 @@
 :img-top-cls: w-75 m-auto p-2
 :body: d-none
 
+---
+:img-top: /_static/thumbnails/numpy.png
++++
+**Numpy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/numpy.png />
+
+**Numpy**
+
+Created by: NumPy
+
+
+
+
+
+
+
+The fundamental package for scientific computing with Python.
+
+
+```{link-button} https://numpy.org
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/documentation.html",documentation,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/numpy.png
++++
+**Numpy Tutorials**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/numpy.png />
+
+**Numpy Tutorials**
+
+Created by: NumPy
+
+
+
+
+
+
+
+A curated collection of external resources teaching numpy from beginner to advanced uses.
+
+
+```{link-button} https://numpy.org/learn/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/Unidata.png
++++
+**Unidata Numpy Workshop**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Unidata.png />
+
+**Unidata Numpy Workshop**
+
+Created by: anonymous
+
+
+
+Affiliation: Unidata
+
+Unidata Site: <https://www.unidata.ucar.edu/>
+
+Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
+
+
+```{link-button} https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/thumbnails/Enthought.png
++++
+**Intro to Numerical Computing with NumPy**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/thumbnails/Enthought.png />
+
+**Intro to Numerical Computing with NumPy**
+
+Created by: A. Chabot-LeClerc
+
+
+
+Affiliation: Enthought
+
+Enthought Site: <https://www.enthought.com/>
+
+NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
+
+
+```{link-button} https://youtu.be/ZB7BZMhfPgk
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/video.html",video,cls=badge-primary badge-pill text-light`
+
+---
+:img-top: /_static/images/ebp-logo.png
++++
+**Python Programming for Earth Science Students**
+
+<button class="modal-btn">See Details</button>
+<div class="modal">
+  <div class="content">
+<p>
+<img src=/_static/images/ebp-logo.png />
+
+**Python Programming for Earth Science Students**
+
+Created by: Lisa Tauxe, Hanna Asefaw, Brendan Cych
+
+Email: ltauxe@ucsd.edu
+
+Affiliation: Scripps Institution of Oceanography
+
+Scripps Institution of Oceanography Site: <https://scripps.ucsd.edu/>
+
+Python Programming for Earth Science Students
+
+```{link-button} https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/
+:type: url
+:text: Visit Website
+:classes: btn-outline-primary btn-block
+```
+
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/scipy.html",scipy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
+</p>
+  </div>
+</div>
+
+{link-badge}`"/pages/links/matplotlib.html",matplotlib,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/numpy.html",numpy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pandas.html",pandas,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/pure-python.html",pure python,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/scipy.html",scipy,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/tutorial.html",tutorial,cls=badge-primary badge-pill text-light`
 
 ````
 <div class="backdrop"></div>
