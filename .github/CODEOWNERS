@@ -1,8 +1,4 @@
 # GLOBAL OWNER
-*   @kmpaul
+*   @ProjectPythia/infrastructure
 
-# CI OWNER
-/ci/   @andersy005 @kmpaul
-
-# CONTENT OWNER
-/content/   @jukent @kmpaul @ktyle @clyne @brian-rose
+/content/ @ProjectPythia/infrastructure @ProjectPythia/education
