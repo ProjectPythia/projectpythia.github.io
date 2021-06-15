@@ -7,6 +7,7 @@
 <button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#domains" aria-haspopup="true">Domains</button>
 <div id="domains" class="collapse dropdown-menu">
 <a class="dropdown-item" href="/pages/links/atmospheric-science.html">Atmospheric Science</a> 
+<a class="dropdown-item" href="/pages/links/climate-science.html">Climate Science</a> 
 <a class="dropdown-item" href="/pages/links/data-science.html">Data Science</a> 
 <a class="dropdown-item" href="/pages/links/glaciology.html">Glaciology</a> 
 <a class="dropdown-item" href="/pages/links/hydrology.html">Hydrology</a> 
@@ -35,6 +36,7 @@
 <button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#packages" aria-haspopup="true">Packages</button>
 <div id="packages" class="collapse dropdown-menu">
 <a class="dropdown-item" href="/pages/links/cartopy.html">Cartopy</a> 
+<a class="dropdown-item" href="/pages/links/climlab.html">Climlab</a> 
 <a class="dropdown-item" href="/pages/links/contextily.html">Contextily</a> 
 <a class="dropdown-item" href="/pages/links/dask.html">Dask</a> 
 <a class="dropdown-item" href="/pages/links/geocat-comp.html">Geocat-Comp</a> 
@@ -251,13 +253,19 @@ A hands on approach to climate physics and climate modeling. Fundamental climate
 :classes: btn-outline-primary btn-block
 ```
 
+{link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/climate-science.html",climate science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/climlab.html",climlab,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 </p>
   </div>
 </div>
 
+{link-badge}`"/pages/links/atmospheric-science.html",atmospheric science,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/book.html",book,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/climate-science.html",climate science,cls=badge-primary badge-pill text-light`
+{link-badge}`"/pages/links/climlab.html",climlab,cls=badge-primary badge-pill text-light`
 {link-badge}`"/pages/links/course.html",course,cls=badge-primary badge-pill text-light`
 
 ---
