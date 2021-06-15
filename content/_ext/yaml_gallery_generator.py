@@ -8,7 +8,7 @@ import yaml
 def _tag_in_item(item, tag_str=None):
     if tag_str is None:
         return True
-    all_tags = list(item['tags'].values())
+    all_tags = sorted(itertools.chain(*item['tags'].values()))
     return tag_str in all_tags
 
 
