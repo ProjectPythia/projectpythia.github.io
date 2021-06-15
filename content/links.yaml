@@ -66,6 +66,11 @@
     formats:
       - course
       - book
+    domains:
+      - climate science
+      - atmospheric science
+    packages:
+      - climlab
 
 - title: Earth Analytics Python Course
   url: https://www.earthdatascience.org/courses/earth-analytics-python/
@@ -761,3 +766,31 @@
       - scipy
       - numpy
       - matplotlib
+- title: Pangeo Gallery
+  description: A gallery of different Pangeo use cases
+  url: http://gallery.pangeo.io
+  thumbnail: https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png
+  authors:
+    - name: Pangeo Community
+      affiliation: Pangeo
+      affiliation_url: http://pangeo.io/
+      email: ''
+  tags:
+    packages:
+      - jupyter
+      - xarray
+      - dask
+      - matplotlib
+      - intake
+      - xgcm
+      - holoviews
+      - pandas
+      - numpy
+    formats:
+      - gallery
+      - tutorial
+    domains:
+      - glaciology
+      - remote sensing
+      - physical oceanography
+      - hydrology
