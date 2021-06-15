@@ -124,11 +124,13 @@ command line tool for collaborative software version control, while
 GitHub is an online, web-accessible service that greatly simplifies
 using the powerful, yet often complex, Git.
 
-> **Note:** GitHub operates entirely within a web browser. You do not
-> need to install anything, but you will need to set up a free GitHub
-> account. Git is a command line tool that is most likely already
-> installed on your machine, and will need to be run from a “terminal” window, AKA
-> a “shell”.
+```{Note}
+GitHub operates entirely within a web browser. You do not
+need to install anything, but you will need to set up a free GitHub
+account. Git is a command line tool that is most likely already
+installed on your machine, and will need to be run from a “terminal” window, AKA
+a “shell”.
+```
 
 Using, and even just configuring, Git and GitHub are often the most
 daunting aspects of contributing to a GitHub hosted project. Here
@@ -204,12 +206,13 @@ you wish to use it. Consult the repo-specific contributor’s guide
 for information on “Building the site”, and
 follow the steps described therein.
 
-> **Note:**
-> Repository-specific contributor's
-> information can always be accessed by navigating your web browser
-> to the appropriate Project Pythia GitHub repository,
-> [here](https://github.com/ProjectPythia/pythia-foundations) for
-> example, and clicking on the file named `CONTRIBUTING.md`
+```{Note}
+Repository-specific contributor's
+information can always be accessed by navigating your web browser
+to the appropriate Project Pythia GitHub repository,
+[here](https://github.com/ProjectPythia/pythia-foundations) for
+example, and clicking on the file named `CONTRIBUTING.md`
+```
 
 More information on installing and using conda may be found
 [here](https://foundations.projectpythia.org/foundations/conda.html).
@@ -304,11 +307,13 @@ on this later.
 
 For further information see the [GitHub docs on forking a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-> Remember: at this point you should have a local copy of the repository
-> in your current working directory. You can safely make changes to
-> any of the contents. Once you are ready to contribute your changes
-> back to the Pythia repository you will need to submit a Pull Request
-> (PR), described later.
+```{Note}
+At this point you should have a local copy of the repository
+in your current working directory. You can safely make changes to
+any of the contents. Once you are ready to contribute your changes
+back to the Pythia repository you will need to submit a Pull Request
+(PR), described later.
+```
 
 ### Make your local changes
 
@@ -366,10 +371,12 @@ $ git commit PATH_TO_NEW_FILE
 
 Which will prompt you for a log message. Please provide something informative. If you make lots of changes, it is best to make multiple commits, broken up into related chunks. E.g. “fixed x”, “added documentation”, “added testing”.
 
-> **Note:** When executing `git commit` after `git add PATH_TO_NEW_FILE`,
-> specifying the path to the new file isn't stricly necessary. However,
-> in other instances the file path argument is required. We include it
-> here to keep things simple.
+```{Note}
+When executing `git commit` after `git add PATH_TO_NEW_FILE`,
+specifying the path to the new file isn't stricly necessary. However,
+in other instances the file path argument is required. We include it
+here to keep things simple.
+```
 
 Depending on which repo you are making changes to, a `pre-commit`
 [hook](https://www.atlassian.com/git/tutorials/git-hooks)
@@ -385,11 +392,13 @@ $ git status
 
 after your `commit` to verify everything looks as expected.
 
-> **Note:** `pre-commit` _hooks_ can sometimes be difficult to satisfy. You
-> can always tell **git** not to run the _hook_ by
-> running `git commit --no-verify`.
-> This will allow you to submit your changes (see steps) below, and get help
-> later from a Project Pythia maintainer.
+```{Note}
+`pre-commit` _hooks_ can sometimes be difficult to satisfy. You
+can always tell **git** not to run the _hook_ by
+running `git commit --no-verify`.
+This will allow you to submit your changes (see steps) below, and get help
+later from a Project Pythia maintainer.
+```
 
 #### Pushing Your Changes to Your Personal GitHub Repository
 
