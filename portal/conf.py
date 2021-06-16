@@ -62,6 +62,9 @@ html_theme = 'sphinx_pythia_theme'
 html_theme_path = ['..']
 html_last_updated_fmt = '%d %B %Y'
 
+# Logo
+html_logo = '_static/images/logos/pythia_logo-white-rtext.svg'
+
 # Favicon
 html_favicon = '_static/images/icons/favicon.ico'
 
@@ -81,12 +84,12 @@ html_theme_options = {
         'index',
     ],
     'logos_bar': {
-        'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
-        'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
-        'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
+        'NCAR': '/_static/images/logos/NCAR-contemp-logo-blue.svg',
+        'Unidata': '/_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
+        'UAlbany': '/_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
     },
     'sponsor_text': 'This material is based upon work supported by the National Science Foundation under Grant Nos. 2026863 and 2026899. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.',
-    'sponsor_logo': '_static/images/logos/footer-logo-nsf.png',
+    'sponsor_logo': '/_static/images/logos/footer-logo-nsf.png',
 }
 
 # Disable sidebars on all Portal Pages
