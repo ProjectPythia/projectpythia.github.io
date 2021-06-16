@@ -62,8 +62,9 @@ html_theme = 'sphinx_pythia_theme'
 html_theme_path = ['..']
 html_last_updated_fmt = '%d %B %Y'
 
-# Logo
+# Logo & Title
 html_logo = '_static/images/logos/pythia_logo-white-rtext.svg'
+html_title = ''
 
 # Favicon
 html_favicon = '_static/images/icons/favicon.ico'
