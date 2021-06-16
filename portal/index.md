@@ -36,7 +36,7 @@ domain-specific content to be housed here in the Pythia Portal.
 
 <span class="d-flex justify-content-center py-4">
     <a href="https://foundations.projectpythia.org" role="button" class="btn btn-primary btn-lg">
-        See the Project Pythia Foundations Book
+        Read the Project Pythia Foundations Book
     </a>
 </span>
 
@@ -46,6 +46,12 @@ There is a wealth of educational resources out there on the internet for learnin
 Python and how to use it in the geosciences!  Visit the [Project Pythia Gallery](/links)
 to see a hand-picked selection of resources for learning at your own pace.
 
+<span class="d-flex justify-content-center py-4">
+    <a href="/links.html" role="button" class="btn btn-primary btn-lg">
+        Visit the Project Pythia Gallery
+    </a>
+</span>
+<!--
 <a href="/links.html">
 <div id="galleryCarousel" class="carousel carousel-dark slide py-4" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -86,6 +92,7 @@ to see a hand-picked selection of resources for learning at your own pace.
     </button>
 </div>
 </a>
+-->
 
 ## Join us!
 
