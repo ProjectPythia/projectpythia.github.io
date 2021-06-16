@@ -4,21 +4,23 @@
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 10000;
+  z-index: 20000;
 }
 
 .modal {
   display: none;
   position: fixed;
   background: white;
-  padding: 10px;
-  width: 260px;
-  height: auto !important;
-  top: 100px;
-  left: calc(50% - 140px);
-  z-index: 10001;
+  border-radius: 10px;
+  padding: 4rem;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  z-index: 20001;
 }
 
 .modal h1 {
@@ -41,11 +43,4 @@
 
 .modal button:focus {
   outline: none;
-}
-
-@media (min-width: 400px) {
-  .modal {
-    width: 360px;
-    left: calc(50% - 190px);
-  }
 }
