@@ -124,11 +124,13 @@ command line tool for collaborative software version control, while
 GitHub is an online, web-accessible service that greatly simplifies
 using the powerful, yet often complex, Git.
 
-> **Note:** GitHub operates entirely within a web browser. You do not
-> need to install anything, but you will need to set up a free GitHub
-> account. Git is a command line tool that is most likely already
-> installed on your machine, and will need to be run from a “terminal” window, AKA
-> a “shell”.
+```{Note}
+GitHub operates entirely within a web browser. You do not
+need to install anything, but you will need to set up a free GitHub
+account. Git is a command line tool that is most likely already
+installed on your machine, and will need to be run from a “terminal” window, AKA
+a “shell”.
+```
 
 Using, and even just configuring, Git and GitHub are often the most
 daunting aspects of contributing to a GitHub hosted project. Here
@@ -195,9 +197,6 @@ The steps:
 conda update conda
 ```
 
-Make sure that you have cloned the repository as described above
-in Forking a Repository.
-
 At this point you have a current version of conda available on your
 desktop or laptop. Before using your conda environment to work on
 Pythia content, you'll need to perform an addtional one-time setup
@@ -206,6 +205,14 @@ complete you will need to "activate" a repo-specific environment whenever
 you wish to use it. Consult the repo-specific contributor’s guide
 for information on “Building the site”, and
 follow the steps described therein.
+
+```{Note}
+Repository-specific contributor's
+information can always be accessed by navigating your web browser
+to the appropriate Project Pythia GitHub repository,
+[here](https://github.com/ProjectPythia/pythia-foundations) for
+example, and clicking on the file named `CONTRIBUTING.md`
+```
 
 More information on installing and using conda may be found
 [here](https://foundations.projectpythia.org/foundations/conda.html).
@@ -230,14 +237,14 @@ summarized below, and described in detail
 The steps:
 
 1. Navigate your web browser to the Pythia repository that you wish
-   to contribute to.
-1. Click on the “Fork” icon. This will create a copy of the Pythia repository
+   to contribute to. For example, [here](https://github.com/ProjectPythia/pythia-foundations).
+1. Click on the “Fork” icon (upper right). This will create a copy of the Pythia repository
    on the GitHub server under **your** account name. You may be prompted
    to sign in. If so, use the GitHub (not Git) account name and password
    that you created when you created your GitHub account above.
 1. After successfully forking a Pythia repo you should have a copy
    of that repository on the GitHub server under your account name.
-   To verify this you can navigate to GitHub, sign in if you are not
+   To verify this you can navigate to the GitHub [home page](https://github.com/), sign in if you are not
    already, and click on “your repositories” under the pull down menu
    in the top right corner of the page. You should see the Pythia
    repository you just cloned listed. Click on it. This is a remote
@@ -300,24 +307,26 @@ on this later.
 
 For further information see the [GitHub docs on forking a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-Remember: at this point you should have a local copy of the repository
+```{Note}
+At this point you should have a local copy of the repository
 in your current working directory. You can safely make changes to
 any of the contents. Once you are ready to contribute your changes
 back to the Pythia repository you will need to submit a Pull Request
 (PR), described later.
+```
 
 ### Make your local changes
 
 At this point you should be able to make your desired changes to
-the local copies of your files. Consult the repo-specific contributor’s
-guide for information specific to the repo you are working on.
+the local copies of your files. **Always consult the repo-specific contributor’s
+guide for information specific to the repo you are working on.**
 
 ### Submit a Pull Request (PR)
 
 Once you have completed making changes to your local copy of a
 Pythia repository and are ready to have your changes merged with a
 Pythia repository on GitHub, you need to essentially perform the
-reverse processed used to acquire a copy of the Pythia repo, and
+reverse process used to acquire a copy of the Pythia repo, and
 submit a PR asking the Pythia maintainers to consider your merge
 request. The merge will occur between your personal GitHub repository
 and the Pythia GitHub repository, so you first need to merge any
@@ -362,10 +371,12 @@ $ git commit PATH_TO_NEW_FILE
 
 Which will prompt you for a log message. Please provide something informative. If you make lots of changes, it is best to make multiple commits, broken up into related chunks. E.g. “fixed x”, “added documentation”, “added testing”.
 
-> **Note:** When executing `git commit` after `git add PATH_TO_NEW_FILE`,
-> specifying the path to the new file isn't stricly necessary. However,
-> in other instances the file path argument is required. We include it
-> here to keep things simple.
+```{Note}
+When executing `git commit` after `git add PATH_TO_NEW_FILE`,
+specifying the path to the new file isn't stricly necessary. However,
+in other instances the file path argument is required. We include it
+here to keep things simple.
+```
 
 Depending on which repo you are making changes to, a `pre-commit`
 [hook](https://www.atlassian.com/git/tutorials/git-hooks)
@@ -381,11 +392,13 @@ $ git status
 
 after your `commit` to verify everything looks as expected.
 
-> **Note:** `pre-commit` _hooks_ can sometimes be difficult to satisfy. You
-> can always tell **git** not to run the _hook_ by
-> running `git commit --no-verify`.
-> This will allow you to submit your changes (see steps) below, and get help
-> later from a Project Pythia maintainer.
+```{Note}
+`pre-commit` _hooks_ can sometimes be difficult to satisfy. You
+can always tell **git** not to run the _hook_ by
+running `git commit --no-verify`.
+This will allow you to submit your changes (see steps) below, and get help
+later from a Project Pythia maintainer.
+```
 
 #### Pushing Your Changes to Your Personal GitHub Repository
 
@@ -406,7 +419,9 @@ the name should be _issue_XXX_ where _XXX_ is the issue number.
 After successfully running this command your changes will now be
 on GitHub under your personal account, but they are not yet part
 of the Pythia repo. For that to happen one more step is required:
-submitting a pull request.
+you must **Make the PR**.
+
+But first:
 
 #### Review your Code
 

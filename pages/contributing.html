@@ -442,13 +442,14 @@ already mentioned, and also Git. The latter, Git, is an open source,
 command line tool for collaborative software version control, while
 GitHub is an online, web-accessible service that greatly simplifies
 using the powerful, yet often complex, Git.</p>
-<blockquote>
-<div><p><strong>Note:</strong> GitHub operates entirely within a web browser. You do not
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>GitHub operates entirely within a web browser. You do not
 need to install anything, but you will need to set up a free GitHub
 account. Git is a command line tool that is most likely already
 installed on your machine, and will need to be run from a “terminal” window, AKA
 a “shell”.</p>
-</div></blockquote>
+</div>
 <p>Using, and even just configuring, Git and GitHub are often the most
 daunting aspects of contributing to a GitHub hosted project. Here
 are the basic steps for Git/GitHub configuration, all of which must
@@ -509,8 +510,6 @@ in general, not simply for using Pythia.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">update</span> <span class="n">conda</span>
 </pre></div>
 </div>
-<p>Make sure that you have cloned the repository as described above
-in Forking a Repository.</p>
 <p>At this point you have a current version of conda available on your
 desktop or laptop. Before using your conda environment to work on
 Pythia content, you’ll need to perform an addtional one-time setup
@@ -519,6 +518,14 @@ complete you will need to “activate” a repo-specific environment whenever
 you wish to use it. Consult the repo-specific contributor’s guide
 for information on “Building the site”, and
 follow the steps described therein.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Repository-specific contributor’s
+information can always be accessed by navigating your web browser
+to the appropriate Project Pythia GitHub repository,
+<a class="reference external" href="https://github.com/ProjectPythia/pythia-foundations">here</a> for
+example, and clicking on the file named <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code></p>
+</div>
 <p>More information on installing and using conda may be found
 <a class="reference external" href="https://foundations.projectpythia.org/foundations/conda.html">here</a>.</p>
 </section>
@@ -540,14 +547,14 @@ summarized below, and described in detail
 <p>The steps:</p>
 <ol class="simple">
 <li><p>Navigate your web browser to the Pythia repository that you wish
-to contribute to.</p></li>
-<li><p>Click on the “Fork” icon. This will create a copy of the Pythia repository
+to contribute to. For example, <a class="reference external" href="https://github.com/ProjectPythia/pythia-foundations">here</a>.</p></li>
+<li><p>Click on the “Fork” icon (upper right). This will create a copy of the Pythia repository
 on the GitHub server under <strong>your</strong> account name. You may be prompted
 to sign in. If so, use the GitHub (not Git) account name and password
 that you created when you created your GitHub account above.</p></li>
 <li><p>After successfully forking a Pythia repo you should have a copy
 of that repository on the GitHub server under your account name.
-To verify this you can navigate to GitHub, sign in if you are not
+To verify this you can navigate to the GitHub <a class="reference external" href="https://github.com/">home page</a>, sign in if you are not
 already, and click on “your repositories” under the pull down menu
 in the top right corner of the page. You should see the Pythia
 repository you just cloned listed. Click on it. This is a remote
@@ -596,24 +603,27 @@ your .git local repo, then to your remote GitHub repo, and then
 ultimately to the remote Pythia GitHub repo. Simple, right? More
 on this later.</p>
 <p>For further information see the <a class="reference external" href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo">GitHub docs on forking a repo</a>.</p>
-<p>Remember: at this point you should have a local copy of the repository
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At this point you should have a local copy of the repository
 in your current working directory. You can safely make changes to
 any of the contents. Once you are ready to contribute your changes
 back to the Pythia repository you will need to submit a Pull Request
 (PR), described later.</p>
+</div>
 </section>
 <section id="make-your-local-changes">
 <h3>Make your local changes<a class="headerlink" href="#make-your-local-changes" title="Permalink to this headline">¶</a></h3>
 <p>At this point you should be able to make your desired changes to
-the local copies of your files. Consult the repo-specific contributor’s
-guide for information specific to the repo you are working on.</p>
+the local copies of your files. <strong>Always consult the repo-specific contributor’s
+guide for information specific to the repo you are working on.</strong></p>
 </section>
 <section id="submit-a-pull-request-pr">
 <h3>Submit a Pull Request (PR)<a class="headerlink" href="#submit-a-pull-request-pr" title="Permalink to this headline">¶</a></h3>
 <p>Once you have completed making changes to your local copy of a
 Pythia repository and are ready to have your changes merged with a
 Pythia repository on GitHub, you need to essentially perform the
-reverse processed used to acquire a copy of the Pythia repo, and
+reverse process used to acquire a copy of the Pythia repo, and
 submit a PR asking the Pythia maintainers to consider your merge
 request. The merge will occur between your personal GitHub repository
 and the Pythia GitHub repository, so you first need to merge any
@@ -648,12 +658,13 @@ them to the local repo with:</p>
 </pre></div>
 </div>
 <p>Which will prompt you for a log message. Please provide something informative. If you make lots of changes, it is best to make multiple commits, broken up into related chunks. E.g. “fixed x”, “added documentation”, “added testing”.</p>
-<blockquote>
-<div><p><strong>Note:</strong> When executing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> after <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">PATH_TO_NEW_FILE</span></code>,
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When executing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> after <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">PATH_TO_NEW_FILE</span></code>,
 specifying the path to the new file isn’t stricly necessary. However,
 in other instances the file path argument is required. We include it
 here to keep things simple.</p>
-</div></blockquote>
+</div>
 <p>Depending on which repo you are making changes to, a <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>
 <a class="reference external" href="https://www.atlassian.com/git/tutorials/git-hooks">hook</a>
 may be enabled that will validate your changes and even make changes
@@ -665,13 +676,14 @@ or possibly make manual changes yourself. A good practice is to run</p>
 </pre></div>
 </div>
 <p>after your <code class="docutils literal notranslate"><span class="pre">commit</span></code> to verify everything looks as expected.</p>
-<blockquote>
-<div><p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> <em>hooks</em> can sometimes be difficult to satisfy. You
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> <em>hooks</em> can sometimes be difficult to satisfy. You
 can always tell <strong>git</strong> not to run the <em>hook</em> by
 running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--no-verify</span></code>.
 This will allow you to submit your changes (see steps) below, and get help
 later from a Project Pythia maintainer.</p>
-</div></blockquote>
+</div>
 </section>
 <section id="pushing-your-changes-to-your-personal-github-repository">
 <h4>Pushing Your Changes to Your Personal GitHub Repository<a class="headerlink" href="#pushing-your-changes-to-your-personal-github-repository" title="Permalink to this headline">¶</a></h4>
@@ -689,7 +701,8 @@ the name should be <em>issue_XXX</em> where <em>XXX</em> is the issue number.</p
 <p>After successfully running this command your changes will now be
 on GitHub under your personal account, but they are not yet part
 of the Pythia repo. For that to happen one more step is required:
-submitting a pull request.</p>
+you must <strong>Make the PR</strong>.</p>
+<p>But first:</p>
 </section>
 <section id="review-your-code">
 <h4>Review your Code<a class="headerlink" href="#review-your-code" title="Permalink to this headline">¶</a></h4>
@@ -757,7 +770,7 @@ to GitHub again is done with the command:</p>
           By Project Pythia Developers & Contributors<br/>
         
             &copy; Copyright 2020-2021.<br/>
-          Last updated on Jun 15, 2021.<br/>
+          Last updated on Jun 16, 2021.<br/>
       </p>
     </div>
   </footer>
