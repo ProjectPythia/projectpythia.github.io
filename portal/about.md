@@ -2,7 +2,7 @@
 
 Pythia is a community educational resource for helping students, scientists,
 and educators learn how to analyze and visualize geosciences data using
-the Scientifc Python Ecosystem.
+the Scientific Python Ecosystem.
 
 ## Project Pythia Goals
 
@@ -24,14 +24,14 @@ geoscientists with all levels of Python experience from 0 to 100:
 introductory resources for those just getting started with Python,
 through advanced scientific workflow development.
 
-### Introductory topics:
+### Introductory topics
 
 - Setting up your Python environment with Conda
 - Beginning Python programming
 - NumPy
 - Jupyter Notebooks
 
-### Geoscience focused packages:
+### Geoscience focused packages
 
 - Xarray
 - MetPy
@@ -55,4 +55,6 @@ Project Pythia will offer a full gamut of training materials:
 
 Watch this recorded video from AMS 2021 to learn more about Project Pythia!
 
-<iframe src="https://www.youtube.com/embed/_UxlrwB_evo" width="640" height="480"></iframe>
+<div class="iframe-4x3">
+   <iframe src="https://www.youtube.com/embed/_UxlrwB_evo"></iframe>
+</div>
