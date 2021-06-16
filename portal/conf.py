@@ -73,7 +73,7 @@ html_permalinks_icon = '<i class="bi bi-link"></i>'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ['custom.css']
-html_js_files = ['custom.js']
+# html_js_files = ['custom.js']
 
 # HTML Theme-specific Options
 html_theme_options = {
