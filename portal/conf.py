@@ -10,7 +10,7 @@ from textwrap import dedent
 
 import yaml
 
-sys.path.insert(0, os.path.abspath(os.path.join('_ext')))
+sys.path.insert(0, os.path.abspath(os.path.join('_extensions')))
 project = 'Pythia Portal'
 copyright = f'2020-{datetime.datetime.now().year}'
 author = 'Project Pythia Developers & Contributors'
@@ -81,52 +81,4 @@ jupyter_execute_notebooks = 'off'
 
 # Copy root files into content pages -----------------------------------------
 
-shutil.copyfile('../CODEOFCONDUCT.md', 'pages/code_of_conduct.md')
-
-# Build Communication Channel Gallery ----------------------------------------
-
-with open('communications.yaml') as fid:
-    communications = yaml.safe_load(fid)
-
-# Build the gallery file
-panels_body = []
-for item in communications:
-    if not item.get('thumbnail'):
-        item['thumbnail'] = '_static/images/ebp-logo.png'
-    item['thumbnail'] = f"../{item['thumbnail']}"
-    tags = [f'{{badge}}`{tag},badge-primary badge-pill`' for tag in item['tags']]
-    tags = '\n'.join(tags)
-
-    panels_body.append(
-        f"""\
----
-:img-top: {item["thumbnail"]}
-+++
-**{item["name"]}**
-
-{item['description']}
-
-```{{link-button}} {item["url"]}
-:type: url
-:text: Visit Website
-:classes: btn-outline-primary btn-block stretched-link
-```
-
-categories: {tags}
-"""
-    )
-panels_body = '\n'.join(panels_body)
-
-panels = f"""
-# Communication Channels Gallery
-````{{panels}}
-:container: full-width
-:column: text-left col-6 col-lg-4
-:card: +my-2
-:img-top-cls: w-75 m-auto p-2
-:body: d-none
-{dedent(panels_body)}
-````
-"""
-
-pathlib.Path('pages/communications.md').write_text(panels)
+shutil.copyfile('../CODEOFCONDUCT.md', 'code_of_conduct.md')
