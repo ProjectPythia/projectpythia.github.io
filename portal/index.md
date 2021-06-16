@@ -47,9 +47,10 @@ domain-specific content to be housed here in the Pythia Portal.
 ## Gallery
 
 There is a wealth of educational resources out there on the internet for learning
-Python and how to use it in the geosciences!  Visit the Project Pythia Gallery
+Python and how to use it in the geosciences!  Visit the [Project Pythia Gallery](/links)
 to see a hand-picked selection of resources for learning at your own pace.
 
+<a href="/links.html">
 <div id="galleryCarousel" class="carousel carousel-dark slide py-4" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -88,6 +89,7 @@ to see a hand-picked selection of resources for learning at your own pace.
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+</a>
 
 ## Join us!
 
