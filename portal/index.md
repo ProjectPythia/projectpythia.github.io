@@ -51,32 +51,17 @@ scientists to more effectively use both the Scientific Python
 Ecosystem and Cloud Computing to make sense of huge volumes of
 numerical scientific data.
 
-<!-- ![Partners](_static/images/PartnersLogo.png) -->
-
 ```{toctree}
 ---
 hidden: True
 maxdepth: 1
 ---
-pages/about.md
-pages/people.md
-pages/meetings.md
-pages/foundations.md
-pages/contributing.md
-pages/code_of_conduct.md
-pages/discussion.md
-pages/links.md
+about.md
+people.md
+meetings.md
+foundations.md
+contributing.md
+code_of_conduct.md
+discussion.md
+links.md
 ```
-
-<!-- Don't display sample notebook gallery yet
-```{toctree}
----
-hidden: True
-maxdepth: 1
-caption: Galleries
----
-notebooks_gallery/index.md
-pages/communications.md
-
-```
--->
