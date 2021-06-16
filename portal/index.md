@@ -1,9 +1,5 @@
 # Project Pythia
 
-<!-- <span class="display-4" style="font-style: italic;">
-A Community Educational Resource for Geoscientists
-</span> -->
-
 Scientists working in a multitude of disciplines rely heavily on
 computing technologies for their research. Numerical simulations
 run on supercomputers are used in the study of climate, weather,
