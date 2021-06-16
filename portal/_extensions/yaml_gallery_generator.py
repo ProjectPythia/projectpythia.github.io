@@ -36,17 +36,19 @@ def _generate_tag_menu(all_items, tag_key):
     tag_set = _generate_tag_set(all_items, tag_key)
     tag_list = sorted(tag_set)
 
-    hrefs = ''.join(
-        f'<a class="dropdown-item" href="/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n'
+    options = ''.join(
+        f'<li><a class="dropdown-item" href="/links/{tag.replace(" ", "-")}">{tag.title()}</a></li>\n'
         for tag in tag_list
     )
 
     return f"""
 <div class="dropdown">
-<button class="btn btn-sm btn-primary m-2 dropdown-toggle" data-toggle="collapse" data-target="#{tag_key}" aria-haspopup="true">{tag_key.title()}</button>
-<div id="{tag_key}" class="collapse dropdown-menu">
-{hrefs}
-</div>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    {tag_key.title()}
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
+    {options}
+  </ul>
 </div>
 """
 
@@ -58,10 +60,10 @@ def _generate_menu(all_items, flt=None):
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     if flt:
-        menu_html += '<a type="button" class="btn btn-link" href="/links.html">Return to Full Gallery</a> \n'
-    menu_html += '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a> \n'
-    menu_html += '</div> \n'
-    menu_html += '<script> $(document).on("click",function(){$(".collapse").collapse("hide");}); </script> \n'
+        menu_html += '<a type="button" class="btn btn-link" href="/links.html">Return to Full Gallery</a>\n'
+    menu_html += '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a>\n'
+    menu_html += '</div>\n'
+    menu_html += '<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>\n'
     return menu_html
 
 
