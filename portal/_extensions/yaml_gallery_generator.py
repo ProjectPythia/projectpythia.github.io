@@ -43,7 +43,7 @@ def _generate_tag_menu(all_items, tag_key):
 
     return f"""
 <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-sm btn-secondary mx-1 mb-3 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
     {tag_key.title()}
   </button>
   <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
@@ -82,17 +82,30 @@ def build_from_items(items, filename, display_name, menu_html):
         ]
         tags = '\n'.join(tags)
 
-        authors = [a.get('name', 'anonymous') for a in item['authors']]
-        authors_str = f"Created by: {', '.join(authors)}"
+        author_strs = set()
+        affiliation_strs = set()
+        for a in item['authors']:
+            author_name = a.get('name', 'Anonymous')
+            author_email = a.get('email', None)
+            if author_email:
+                _str = f'[{author_name}](mailto:{author_email})'
+            else:
+                _str = author_name
+            author_strs.add(_str)
 
-        email = [a.get('email') for a in item['authors']][0]
-        email_str = '' if email is None else f'Email: {email}'
-
-        affiliation = [a.get('affiliation') for a in item['authors']][0]
-        affiliation_str = '' if affiliation is None else f'Affiliation: {affiliation}'
-
-        affiliation_url = [a.get('affiliation_url') for a in item['authors']][0]
-        affiliation_url_str = '' if affiliation_url is None else f'{affiliation} Site: <{affiliation_url}>'
+            affiliation_name = a.get('affiliation', None)
+            if affiliation_name:
+                affiliation_url = a.get('affiliation_url', None)
+                if affiliation_url:
+                    _str = f'[{affiliation_name}]({affiliation_url})'
+                else:
+                    _str = affiliation_name
+                affiliation_strs.add(_str)
+        authors_str = f"Author: {', '.join(author_strs)}"
+        if affiliation_strs:
+            affiliations_str = f"Affiliation: {' '.join(affiliation_strs)}"
+        else:
+            affiliations_str = ''
 
         panels_body.append(
             f"""\
@@ -105,15 +118,13 @@ def build_from_items(items, filename, display_name, menu_html):
 <div class="modal">
   <div class="content">
 <p>
-<img src={thumbnail} />
+<img src="{thumbnail}" class="m-2" style="float: right; max-width: 400px; max-height: 200px;" />
 
 **{item["title"]}**
 
 {authors_str}
 
-{email_str}
-
-[{affiliation_str}]({affiliation_url_str})
+{affiliations_str}
 
 {item['description']}
 
