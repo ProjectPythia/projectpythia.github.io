@@ -37,7 +37,7 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     hrefs = ''.join(
-        f'<a class="dropdown-item" href="/pages/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n'
+        f'<a class="dropdown-item" href="/links/{tag.replace(" ", "-")}.html">{tag.title()}</a> \n'
         for tag in tag_list
     )
 
@@ -58,7 +58,7 @@ def _generate_menu(all_items, flt=None):
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     if flt:
-        menu_html += '<a type="button" class="btn btn-link" href="/pages/links.html">Return to Full Gallery</a> \n'
+        menu_html += '<a type="button" class="btn btn-link" href="/links.html">Return to Full Gallery</a> \n'
     menu_html += '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a> \n'
     menu_html += '</div> \n'
     menu_html += '<script> $(document).on("click",function(){$(".collapse").collapse("hide");}); </script> \n'
@@ -75,7 +75,7 @@ def build_from_items(items, filename, display_name, menu_html):
         thumbnail = item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tags = [
-            f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
+            f'{{link-badge}}`"/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
             for tag in tag_list
         ]
         tags = '\n'.join(tags)
@@ -151,7 +151,7 @@ def build_from_items(items, filename, display_name, menu_html):
 <script src="/_static/custom.js"> </script>
 """
 
-    pathlib.Path(f'pages/{filename}.md').write_text(panels)
+    pathlib.Path(f'{filename}.md').write_text(panels)
 
 
 def main(app):
