@@ -111,9 +111,7 @@ def build_from_items(items, filename, display_name, menu_html):
 
 {email_str}
 
-{affiliation_str}
-
-{affiliation_url_str}
+[{affiliation_str}]({affiliation_url_str})
 
 {item['description']}
 
@@ -147,8 +145,9 @@ def build_from_items(items, filename, display_name, menu_html):
 
 {dedent(panels_body)}
 ````
+
 <div class="backdrop"></div>
-<script src="/_static/custom.js"> </script>
+<script src="/_static/custom.js"></script>
 """
 
     pathlib.Path(f'{filename}.md').write_text(panels)
@@ -160,14 +159,14 @@ def main(app):
         all_items = yaml.safe_load(fid)
 
     menu_html = _generate_menu(all_items)
-    build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
+    build_from_items(all_items, 'links', 'Project Pythia Gallery', menu_html)
 
     menu_html_flt = _generate_menu(all_items, flt=True)
     tag_set = _generate_tag_set(all_items)
 
     for tag in tag_set:
         items = [item for item in all_items if _tag_in_item(item, tag)]
-        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'External Links Gallery - "{tag}"', menu_html_flt)
+        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'Project Pythia Gallery - "{tag}"', menu_html_flt)
 
 
 def setup(app):
