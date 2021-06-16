@@ -43,7 +43,7 @@
 
 {%- macro script() %}
     <script id="documentation_options" data-url_root="{{ url_root }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
-    <script src="_static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ pathto('_static/bootstrap/js/bootstrap.bundle.min.js', 1) }}"></script>
   {%- for js in script_files %}
     {{ js_tag(js) }}
   {%- endfor %}
