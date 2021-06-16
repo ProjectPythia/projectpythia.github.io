@@ -131,8 +131,10 @@ dmypy.json
 *.DS_Store
 _build/
 _thumbnails/
-content/communications.md
-content/code_of_conduct.md
-content/links.md
-content/links/*.md
+content/pages/code_of_conduct.md
+content/pages/links.md
+content/pages/links/*.md
+portal/code_of_conduct.md
+portal/links.md
+portal/links/*.md
 gallery-submission-input.json
