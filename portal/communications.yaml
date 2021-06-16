@@ -1,0 +1,42 @@
+- name: Pangeo Discourse Forum
+  url: https://discourse.pangeo.io/
+  thumbnail: _static/images/pangeo_simple_logo.png
+  tags:
+    - forum
+    - chat
+  description: |
+    A Discourse forum for all things happening in the Pangeo community
+
+- name: Pangeo Gitter Room
+  url: https://gitter.im/pangeo-data/Lobby
+  thumbnail: _static/images/pangeo_simple_logo.png
+  tags:
+    - chat
+  description: |
+    A Discourse forum for all things happening in the Pangeo community
+
+- name: Pangeo GitHub main repository
+  url: https://github.com/pangeo-data/pangeo
+  thumbnail: _static/images/pangeo_simple_logo.png
+  tags:
+    - github
+  description: |
+    Pangeo website + discussion of general issues related to the project.
+
+- name: xarray Discussions Page
+  url: https://github.com/pydata/xarray/discussions
+  thumbnail: _static/images/xarray-logo.png
+  tags:
+    - github
+    - forum
+  description: |
+    A place to connect with other members of xarray community.
+
+- name: Jupyter Discourse Forum
+  url: https://discourse.jupyter.org/
+  thumbnail: https://aws1.discourse-cdn.com/standard11/uploads/jupyter/original/1X/5042a9e9c48769ff730b5bf57c0d8875e24b4439.png
+  description: |
+    This is a place for the jupyter community to interact with one another,
+    share stories of their work, ask for help, and give help to others.
+  tags:
+    - forum

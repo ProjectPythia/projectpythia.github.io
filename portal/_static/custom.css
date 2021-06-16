@@ -1,0 +1,51 @@
+/*modal*/
+.backdrop {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  background: white;
+  padding: 10px;
+  width: 260px;
+  height: auto !important;
+  top: 100px;
+  left: calc(50% - 140px);
+  z-index: 10001;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal button {
+  background: #fa923f;
+  color: white;
+  border: 1px solid #521751;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.modal button:hover,
+.modal button:active {
+  background: #521751;
+}
+
+.modal button:focus {
+  outline: none;
+}
+
+@media (min-width: 400px) {
+  .modal {
+    width: 360px;
+    left: calc(50% - 190px);
+  }
+}
