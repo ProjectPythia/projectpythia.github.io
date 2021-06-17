@@ -12,7 +12,6 @@
   @include border-radius($list-group-border-radius);
 }
 
-
 // Interactive list items
 //
 // Use anchor or button elements instead of `li`s or `div`s to create interactive
@@ -37,7 +36,6 @@
     background-color: $list-group-action-active-bg;
   }
 }
-
 
 // Individual list items
 //
@@ -85,7 +83,6 @@
   }
 }
 
-
 // Horizontal
 //
 // Change the layout of list group items from vertical (default) to horizontal.
@@ -126,7 +123,6 @@
   }
 }
 
-
 // Flush list items
 //
 // Remove borders and border-radius to keep list group items edge-to-edge. Most
@@ -144,7 +140,6 @@
   }
 }
 
-
 // scss-docs-start list-group-modifiers
 // List group contextual variants
 //
@@ -154,10 +149,21 @@
 @each $state, $value in $theme-colors {
   $list-group-background: shift-color($value, $list-group-item-bg-scale);
   $list-group-color: shift-color($value, $list-group-item-color-scale);
-  @if (contrast-ratio($list-group-background, $list-group-color) < $min-contrast-ratio) {
-    $list-group-color: mix($value, color-contrast($list-group-background), abs($alert-color-scale));
+  @if (
+    contrast-ratio($list-group-background, $list-group-color) <
+      $min-contrast-ratio
+  ) {
+    $list-group-color: mix(
+      $value,
+      color-contrast($list-group-background),
+      abs($alert-color-scale)
+    );
   }
 
-  @include list-group-item-variant($state, $list-group-background, $list-group-color);
+  @include list-group-item-variant(
+    $state,
+    $list-group-background,
+    $list-group-color
+  );
 }
 // scss-docs-end list-group-modifiers

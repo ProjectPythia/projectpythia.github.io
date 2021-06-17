@@ -51,7 +51,7 @@ domain-specific content to be housed here in the Pythia Portal.
 ### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
-Python and how to use it in the geosciences!  We have attempted to gather together as
+Python and how to use it in the geosciences! We have attempted to gather together as
 many of these resources as possible into our [Pythia Resource Gallery](/gallery).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
@@ -127,7 +127,6 @@ Please see our [Contributor’s Guide](/contributing)
 for details on how you can get involved, and come see our work in the
 [ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
 
-
 <span class="d-flex justify-content-center pt-1 pb-3 pe-2">
     <a class="btn btn-primary btn-lg me-2" href="/contributing.html" role="button">
         Read our Contributor’s Guide
@@ -140,7 +139,7 @@ for details on how you can get involved, and come see our work in the
 ### Weekly Working Group Meetings
 
 Project Pythia holds weekly public meetings every Thursday at 11:00AM Mountain (1:00PM Eastern)
-on Zoom.  Our meetings alternate focus between *Infrastructure* and *Education* content.
+on Zoom. Our meetings alternate focus between _Infrastructure_ and _Education_ content.
 Please find links and information about how to join in the calendar below. These meetings
 are open to anyone who wishes to participate. We publish
 [weekly meeting notes here](https://docs.google.com/document/d/e/2PACX-1vQN5YFkZtCZPKVk2Rte2xoHuiqJuYz1KpynsSKmeCLwP-4glUsGuCPJbITwB4OJc8dOhUpHAMacdx59/pub).

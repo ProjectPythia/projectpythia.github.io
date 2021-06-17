@@ -1,11 +1,8 @@
-import itertools
-
 from bs4 import BeautifulSoup as bs
 from sphinx.application import Sphinx
 
 
 def add_functions_to_context(app, pagename, templatename, context, doctree):
-
     def denest_sections(html):
         soup = bs(html, 'html.parser')
 

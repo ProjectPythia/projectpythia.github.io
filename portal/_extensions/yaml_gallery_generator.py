@@ -114,7 +114,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 
 <button type="button" class="btn modal-btn w-100 h-100">
 <div class="text-center">
-<img src="{thumbnail}" class="gallery-thumbnail" \>
+<img src="{thumbnail}" class="gallery-thumbnail" />
 <strong>{item["title"]}</strong>
 </div>
 </button>

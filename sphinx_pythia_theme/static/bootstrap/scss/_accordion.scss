@@ -37,7 +37,7 @@
     width: $accordion-icon-width;
     height: $accordion-icon-width;
     margin-left: auto;
-    content: "";
+    content: '';
     background-image: escape-svg($accordion-button-icon);
     background-repeat: no-repeat;
     background-size: $accordion-icon-width;
@@ -91,7 +91,6 @@
 .accordion-body {
   padding: $accordion-body-padding-y $accordion-body-padding-x;
 }
-
 
 // Flush accordion items
 //

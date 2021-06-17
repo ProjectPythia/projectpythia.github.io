@@ -1,13 +1,5 @@
-{#
-    basic/localtoc.html
-    ~~~~~~~~~~~~~~~~~~~
-
-    Sphinx sidebar template: local table of contents.
-
-    :copyright: Copyright 2007-2021 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
-#}
-{%- if display_toc %}
-  <h6 class="display-6">{{ _('On this page') }}</h6>
-  {{ toc }}
-{%- endif %}
+{# basic/localtoc.html ~~~~~~~~~~~~~~~~~~~ Sphinx sidebar template: local table
+of contents. :copyright: Copyright 2007-2021 by the Sphinx team, see AUTHORS.
+:license: BSD, see LICENSE for details. #} {%- if display_toc %}
+<h6 class="display-6">{{ _('On this page') }}</h6>
+{{ toc }} {%- endif %}

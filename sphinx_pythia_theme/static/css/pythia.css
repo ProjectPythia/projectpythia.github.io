@@ -10690,7 +10690,13 @@ div.document div.section-2 {
   padding-bottom: 1rem;
   max-width: 960px;
 }
-div.document div.section-1 h3, div.document div.section-1 .h3, div.document div.section-1 h4, div.document div.section-1 .h4, div.document div.section-1 h5, div.document div.section-1 .h5, div.document div.section-1 h6, div.document div.section-1 .h6,
+div.document div.section-1 h3, div.document div.section-1 .h3,
+div.document div.section-1 h4,
+div.document div.section-1 .h4,
+div.document div.section-1 h5,
+div.document div.section-1 .h5,
+div.document div.section-1 h6,
+div.document div.section-1 .h6,
 div.document div.section-2 h3,
 div.document div.section-2 .h3,
 div.document div.section-2 h4,
@@ -10790,7 +10796,13 @@ div.document.onepager div.section-2 {
   padding-bottom: 7rem;
   max-width: 960px;
 }
-div.document.onepager div.section-1 h3, div.document.onepager div.section-1 .h3, div.document.onepager div.section-1 h4, div.document.onepager div.section-1 .h4, div.document.onepager div.section-1 h5, div.document.onepager div.section-1 .h5, div.document.onepager div.section-1 h6, div.document.onepager div.section-1 .h6,
+div.document.onepager div.section-1 h3, div.document.onepager div.section-1 .h3,
+div.document.onepager div.section-1 h4,
+div.document.onepager div.section-1 .h4,
+div.document.onepager div.section-1 h5,
+div.document.onepager div.section-1 .h5,
+div.document.onepager div.section-1 h6,
+div.document.onepager div.section-1 .h6,
 div.document.onepager div.section-2 h3,
 div.document.onepager div.section-2 .h3,
 div.document.onepager div.section-2 h4,

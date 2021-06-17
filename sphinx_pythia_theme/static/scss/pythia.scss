@@ -8,7 +8,7 @@ $display-font-sizes: (
   3: 2rem,
   4: 1.6667rem,
   5: 1.3333rem,
-  6: 1rem
+  6: 1rem,
 );
 
 @import '../bootstrap/scss/bootstrap';
@@ -27,7 +27,7 @@ $document-width: map-get($container-max-widths, 'lg');
 // GENERAL HTML ELEMENTS ------------------------------------------------------
 
 :target:before {
-  content: "";
+  content: '';
   display: block;
   height: $offset-height;
   margin-top: -$offset-height;
@@ -98,7 +98,10 @@ div.document {
     padding-bottom: 1rem;
     max-width: $document-width;
 
-    h3, h4, h5, h6 {
+    h3,
+    h4,
+    h5,
+    h6 {
       padding: 1rem 0;
     }
   }
@@ -189,8 +192,10 @@ div.document.onepager {
 
   div.sectionwrapper-1 {
     // Photo by Jeff Stapleton from Pexels
-    background-image:
-      linear-gradient(map-get(ncar.$colors, 'blue-alpha'), map-get(ncar.$colors, 'blue-alpha')),
+    background-image: linear-gradient(
+        map-get(ncar.$colors, 'blue-alpha'),
+        map-get(ncar.$colors, 'blue-alpha')
+      ),
       url(../images/backgrounds/pexels-jeff-stapleton-5792818.jpg);
     background-size: cover;
     background-position: center center;
@@ -198,7 +203,7 @@ div.document.onepager {
   }
 
   div.sectionwrapper-1:after {
-    content: "Photo by Jeff Stapleton from Pexels";
+    content: 'Photo by Jeff Stapleton from Pexels';
     float: right;
     margin-top: -1.6rem;
     font-size: 0.8rem;
@@ -221,7 +226,10 @@ div.document.onepager {
     padding-bottom: 7rem;
     max-width: $document-width;
 
-    h3, h4, h5, h6 {
+    h3,
+    h4,
+    h5,
+    h6 {
       padding: 2rem 0 1rem 0;
       text-align: center;
     }

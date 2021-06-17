@@ -14,9 +14,10 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import datetime
-import shutil
 import os
+import shutil
 import sys
+
 sys.path.insert(0, os.path.abspath('_extensions'))
 
 
