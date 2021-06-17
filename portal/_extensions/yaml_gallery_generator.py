@@ -37,13 +37,13 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        f'<li><a class="dropdown-item" href="/links/{tag.replace(" ", "-")}">{tag.title()}</a></li>\n'
+        f'<li><a class="dropdown-item" href="/gallery/{tag.replace(" ", "-")}">{tag.title()}</a></li>\n'
         for tag in tag_list
     )
 
     return f"""
 <div class="dropdown">
-  <button class="btn btn-sm btn-secondary mx-1 mb-3 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
     {tag_key.title()}
   </button>
   <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
@@ -56,18 +56,19 @@ def _generate_tag_menu(all_items, tag_key):
 def _generate_menu(all_items, flt=None):
 
     key_list = _generate_sorted_tag_keys(all_items)
-    menu_html = '<div class="d-flex flex-row"> \n'
+
+    menu_html = '<div class="d-flex mb-4">\n'
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     if flt:
-        menu_html += '<a type="button" class="btn btn-link" href="/links.html">Return to Full Gallery</a>\n'
-    menu_html += '<a type="button" class="btn btn-link" style="position:absolute; right:0;" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a Link</a>\n'
+        menu_html += '<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>\n'
+    menu_html += '<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
     menu_html += '</div>\n'
     menu_html += '<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>\n'
     return menu_html
 
 
-def build_from_items(items, filename, display_name, menu_html):
+def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=''):
 
     # Build the gallery file
     panels_body = []
@@ -77,7 +78,7 @@ def build_from_items(items, filename, display_name, menu_html):
         thumbnail = item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tags = [
-            f'{{link-badge}}`"/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
+            f'<a href="/gallery/{tag.replace(" ", "-")}.html" class="badge bg-primary link-light">{tag}</a>'
             for tag in tag_list
         ]
         tags = '\n'.join(tags)
@@ -88,7 +89,7 @@ def build_from_items(items, filename, display_name, menu_html):
             author_name = a.get('name', 'Anonymous')
             author_email = a.get('email', None)
             if author_email:
-                _str = f'[{author_name}](mailto:{author_email})'
+                _str = f'<a href="mailto:{author_email}">{author_name}</a>'
             else:
                 _str = author_name
             author_strs.add(_str)
@@ -97,70 +98,71 @@ def build_from_items(items, filename, display_name, menu_html):
             if affiliation_name:
                 affiliation_url = a.get('affiliation_url', None)
                 if affiliation_url:
-                    _str = f'[{affiliation_name}]({affiliation_url})'
+                    _str = f'<a href="{affiliation_url}">{affiliation_name}</a>'
                 else:
                     _str = affiliation_name
                 affiliation_strs.add(_str)
-        authors_str = f"Author: {', '.join(author_strs)}"
+        authors_str = f"<strong>Author:</strong> {', '.join(author_strs)}"
         if affiliation_strs:
-            affiliations_str = f"Affiliation: {' '.join(affiliation_strs)}"
+            affiliations_str = f"<strong>Affiliation:</strong> {' '.join(affiliation_strs)}"
         else:
             affiliations_str = ''
 
         panels_body.append(
             f"""\
 ---
-:img-top: {thumbnail}
-+++
-**{item["title"]}**
 
-<button class="modal-btn">See Details</button>
+<button type="button" class="btn modal-btn w-100 h-100">
+<div class="text-center">
+<img src="{thumbnail}" class="gallery-thumbnail" \>
+<strong>{item["title"]}</strong>
+</div>
+</button>
 <div class="modal">
-  <div class="content">
-<p>
-<img src="{thumbnail}" class="m-2" style="float: right; max-width: 400px; max-height: 200px;" />
-
-**{item["title"]}**
-
+<div class="content">
+<img src="{thumbnail}" class="modal-img" />
+<h3 class="display-3">{item["title"]}</h3>
 {authors_str}
-
+<br/>
 {affiliations_str}
-
-{item['description']}
-
-```{{link-button}} {item["url"]}
-:type: url
-:text: Visit Website
-:classes: btn-outline-primary btn-block
-```
-
-{tags}
-</p>
-  </div>
+<p class="my-2">{item['description']}</p>
+<p class="my-2">{tags}</p>
+<p class="mt-3"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
 </div>
 
++++
+
 {tags}
+
 """
         )
 
     panels_body = '\n'.join(panels_body)
 
+    if subtitle:
+        stitle = f'<span class="display-3">Displaying "{subtitle}" tags</span>'
+    else:
+        stitle = ''
+
     panels = f"""
-# {display_name}
+# {title}
+
+{stitle}
 
 {menu_html}
 
 ````{{panels}}
-:column: text-left col-6 col-lg-4
-:card: +my-2
-:img-top-cls: w-75 m-auto p-2
-:body: d-none
+:column: text-left col-lg-3 col-md-4 col-sm-6
+:card: +mb-4
+:header: d-none
+:body: p-0 m-0
+:footer: p-1
 
 {dedent(panels_body)}
 ````
 
-<div class="backdrop"></div>
-<script src="/_static/custom.js"></script>
+<div class="modal-backdrop"></div>
 """
 
     pathlib.Path(f'{filename}.md').write_text(panels)
@@ -168,18 +170,19 @@ def build_from_items(items, filename, display_name, menu_html):
 
 def main(app):
 
-    with open('links.yaml') as fid:
+    with open('gallery.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
+    title = 'Pythia Resource Gallery'
     menu_html = _generate_menu(all_items)
-    build_from_items(all_items, 'links', 'Project Pythia Gallery', menu_html)
+    build_from_items(all_items, 'gallery', title=title, menu_html=menu_html)
 
     menu_html_flt = _generate_menu(all_items, flt=True)
     tag_set = _generate_tag_set(all_items)
 
     for tag in tag_set:
         items = [item for item in all_items if _tag_in_item(item, tag)]
-        build_from_items(items, f'links/{tag.replace(" ", "-")}', f'Project Pythia Gallery - "{tag}"', menu_html_flt)
+        build_from_items(items, f'gallery/{tag.replace(" ", "-")}', title=title, subtitle=tag, menu_html=menu_html_flt)
 
 
 def setup(app):

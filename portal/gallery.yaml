@@ -22,7 +22,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     formats:
       - course
@@ -34,7 +34,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
       - jupyter
@@ -387,7 +387,7 @@
     Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
   authors:
     - name: the Matplotlib development team
-  thumbnail: /_static/thumbnails/matplotlib-tutorial.png
+  thumbnail: /_static/thumbnails/matplotlib.svg
   tags:
     packages:
       - matplotlib
@@ -400,7 +400,7 @@
     This page contains more in-depth guides for using Matplotlib. It is broken up into beginner, intermediate, and advanced sections, as well as sections covering specific topics.
   authors:
     - name: the Matplotlib development team
-  thumbnail: /_static/thumbnails/matplotlib-tutorial.png
+  thumbnail: /_static/thumbnails/matplotlib.svg
   tags:
     packages:
       - matplotlib
@@ -413,7 +413,7 @@
     This gallery contains examples of the many things you can do with Matplotlib.
   authors:
     - name: the Matplotlib development team
-  thumbnail: /_static/thumbnails/matplotlib-tutorial.png
+  thumbnail: /_static/thumbnails/matplotlib.svg
   tags:
     packages:
       - matplotlib
@@ -457,7 +457,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
       - metpy
@@ -486,7 +486,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     domains:
       - atmospheric science
@@ -538,7 +538,7 @@
   authors:
     - affiliation: Unidata
       affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/Unidata.png
+  thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
       - numpy

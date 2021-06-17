@@ -135,6 +135,6 @@ content/pages/code_of_conduct.md
 content/pages/links.md
 content/pages/links/*.md
 portal/code_of_conduct.md
-portal/links.md
-portal/links/*.md
+portal/gallery.md
+portal/gallery/*.md
 gallery-submission-input.json
