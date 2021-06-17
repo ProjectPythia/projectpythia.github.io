@@ -21,7 +21,7 @@ Ecosystem and Cloud Computing to make sense of huge volumes of
 numerical scientific data.
 
 <span class="d-flex justify-content-center py-4">
-    <a href="about" role="button" class="btn btn-light btn-lg">
+    <a href="/about.html" role="button" class="btn btn-light btn-lg">
         Read more about Project Pythia
     </a>
 </span>
