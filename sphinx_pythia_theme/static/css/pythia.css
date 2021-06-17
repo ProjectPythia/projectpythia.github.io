@@ -10633,6 +10633,10 @@ a {
   color: inherit;
 }
 
+a.badge {
+  text-decoration: none;
+}
+
 a.headerlink {
   text-decoration: none;
   color: transparent;
@@ -10803,10 +10807,54 @@ div.document.onepager div.section-title {
   margin-bottom: 3rem;
   border-bottom: 2px solid #012169;
 }
+.modal {
+  display: none;
+  position: fixed;
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding: 3rem;
+  width: 60%;
+  height: auto !important;
+  top: 20%;
+  left: 20%;
+  z-index: 20001;
+}
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20000;
+}
+
+.modal-btn {
+  padding: 1rem;
+  margin: 0;
+  color: #1a658f;
+}
+
+.modal-img {
+  float: right;
+  margin: 0 0 2rem 2rem;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.gallery-thumbnail {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+  max-height: 160px;
+}
+
 .iframe, .iframe-4x3, .iframe-16x9 {
   position: relative;
   height: 0;
-  width: 90%;
+  width: 75%;
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -10823,11 +10871,11 @@ div.document.onepager div.section-title {
 }
 
 .iframe-16x9 {
-  padding-bottom: calc(0.9 * 56.25%);
+  padding-bottom: calc(0.75 * 56.25%);
 }
 
 .iframe-4x3 {
-  padding-bottom: calc(0.9 * 75%);
+  padding-bottom: calc(0.75 * 75%);
 }
 
 /*# sourceMappingURL=pythia.css.map */
