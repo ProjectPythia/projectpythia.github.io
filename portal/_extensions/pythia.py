@@ -3,8 +3,19 @@ from sphinx.application import Sphinx
 
 
 def add_functions_to_context(app, pagename, templatename, context, doctree):
-    def denest_sections(html):
+    def _sections(html):
         soup = bs(html, 'html.parser')
+
+        for div in soup.select('div.section'):
+            section = soup.new_tag('section')
+            section['id'] = div['id']
+            section.contents = div.contents
+            div.replaceWith(section)
+
+        return soup
+
+    def denest_sections(html):
+        soup = _sections(bs(html, 'html.parser'))
 
         sections = []
         for h1 in soup.find_all(['h1']):
@@ -16,7 +27,7 @@ def add_functions_to_context(app, pagename, templatename, context, doctree):
         return '\n'.join(str(s) for s in sections)
 
     def bootstrapify(html):
-        soup = bs(html, 'html.parser')
+        soup = _sections(bs(html, 'html.parser'))
 
         for s in soup.find_all(['section']):
             h = s.find(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
