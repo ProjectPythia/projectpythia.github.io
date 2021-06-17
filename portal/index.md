@@ -26,33 +26,44 @@ numerical scientific data.
     </a>
 </span>
 
-## Foundations
+## Start Learning
 
-We are currently developing a **comprehensive set of tutorials**
-covering the **foundational skills** everyone needs to get started with
-**computing in the open-source Python ecosystem**. These foundational
-tutorials will serve as common references for more advanced and
+Project Pythia has two main resources for you to use to start learning how to use Python
+and the technology in the Python ecosystem for the geosciences: the
+[Pythia Foundations Book](#the-foundations-book) and the
+[Pythia Resource Gallery](#the-resource-gallery).
+
+### The Foundations Book
+
+The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
+[Jupyter Book](https://jupyterbook.org/) that we are currently developing to
+act as a **comprehensive set of tutorials** covering the **foundational skills**
+everyone needs to get started with **computing in the open-source Python ecosystem**.
+These foundational tutorials will serve as common references for more advanced and
 domain-specific content to be housed here in the Pythia Portal.
 
-<span class="d-flex justify-content-center py-4">
+<span class="d-flex justify-content-center pt-1 pb-3">
     <a href="https://foundations.projectpythia.org" role="button" class="btn btn-primary btn-lg">
         Read the Project Pythia Foundations Book
     </a>
 </span>
 
-## Gallery
+### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
-Python and how to use it in the geosciences!  Visit the [Project Pythia Gallery](/links)
-to see a hand-picked selection of resources for learning at your own pace.
+Python and how to use it in the geosciences!  We have attempted to gather together as
+many of these resources as possible into our [Pythia Resource Gallery](/gallery).
+Click the link below to see a hand-picked selection of resources for learning at
+your own pace.
 
-<span class="d-flex justify-content-center py-4">
-    <a href="/links.html" role="button" class="btn btn-primary btn-lg">
-        Visit the Project Pythia Gallery
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="/gallery.html" role="button" class="btn btn-primary btn-lg">
+        Visit the Pythia Resource Gallery
     </a>
 </span>
+
 <!--
-<a href="/links.html">
+<a href="/gallery.html">
 <div id="galleryCarousel" class="carousel carousel-dark slide py-4" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -101,7 +112,7 @@ If you have questions or want to share anything with the
 [GitHub Discussions page](https://github.com/ProjectPythia/projectpythia.github.io/discussions)
 or join us at our Weekly Working Group Meetings.
 
-<span class="d-flex justify-content-center py-4">
+<span class="d-flex justify-content-center pt-1 pb-4">
     <a href="https://github.com/ProjectPythia/projectpythia.github.io/discussions" role="button" class="btn btn-primary btn-lg">
         Go to GitHub Discussions
     </a>
@@ -110,12 +121,19 @@ or join us at our Weekly Working Group Meetings.
 ### Contributing
 
 Anyone can contribute to and participate in Project Pythia!
-Please see our [Contributor’s Guide](contributing)
-for details on how you can get involved!
+We conduct all of our work in the open, and all of our work is Open Source Licensed.
+We welcome contributions from anyone in the community.
+Please see our [Contributor’s Guide](/contributing)
+for details on how you can get involved, and come see our work in the
+[ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
 
-<span class="d-flex justify-content-center py-4">
-    <a class="btn btn-primary btn-lg" href="/contributing.html" role="button">
-        Contributor’s Guide
+
+<span class="d-flex justify-content-center pt-1 pb-3 pe-2">
+    <a class="btn btn-primary btn-lg me-2" href="/contributing.html" role="button">
+        Read our Contributor’s Guide
+    </a>
+    <a class="btn btn-primary btn-lg ms-2" href="https://github.com/ProjectPythia" role="button">
+        Visit us on GitHub
     </a>
 </span>
 
