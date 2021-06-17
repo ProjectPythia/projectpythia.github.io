@@ -37,7 +37,7 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        f'<li><a class="dropdown-item" href="/gallery/{tag.replace(" ", "-")}">{tag.title()}</a></li>\n'
+        f'<li><a class="dropdown-item" href="/gallery/{tag.replace(" ", "-")}.html">{tag.title()}</a></li>\n'
         for tag in tag_list
     )
 
