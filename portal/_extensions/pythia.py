@@ -15,7 +15,7 @@ def add_functions_to_context(app, pagename, templatename, context, doctree):
         return soup
 
     def denest_sections(html):
-        soup = _sections(bs(html, 'html.parser'))
+        soup = _sections(html)
 
         sections = []
         for h1 in soup.find_all(['h1']):
@@ -27,7 +27,7 @@ def add_functions_to_context(app, pagename, templatename, context, doctree):
         return '\n'.join(str(s) for s in sections)
 
     def bootstrapify(html):
-        soup = _sections(bs(html, 'html.parser'))
+        soup = _sections(html)
 
         for s in soup.find_all(['section']):
             h = s.find(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
