@@ -127,17 +127,19 @@ Please see our [Contributor’s Guide](/contributing)
 for details on how you can get involved, and come see our work in the
 [ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
 
-<span class="d-flex justify-content-center pt-1 pb-3 pe-2">
-    <a class="btn btn-primary btn-lg me-2" href="/contributing.html" role="button">
-        Read our Contributor’s Guide
-    </a>
-    <a class="btn btn-primary btn-lg ms-2" href="https://github.com/ProjectPythia" role="button">
-        Visit us on GitHub
-    </a>
-    <a class="btn btn-primary btn-lg ms-2" href="/code_of_conduct.html" role="button">
-        Read our Code of Conduct
-    </a>
-</span>
+<div class="container">
+<div class="row">
+<div class="col-12 col-md m-2">
+<a class="btn btn-primary btn-lg w-100" href="/contributing.html" role="button">Read our Contributor’s Guide</a>
+</div>
+<div class="col-12 col-md-3 m-2">
+<a class="btn btn-primary btn-lg w-100" href="https://github.com/ProjectPythia" role="button">Visit us on GitHub</a>
+</div>
+<div class="col-12 col-md-4 m-2">
+<a class="btn btn-primary btn-lg w-100" href="/code_of_conduct.html" role="button">Read our Code of Conduct</a>
+</div>
+</div>
+</div>
 
 ### Weekly Working Group Meetings
 
