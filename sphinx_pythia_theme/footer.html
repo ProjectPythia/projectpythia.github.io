@@ -19,17 +19,19 @@
   <div class="container-fluid infobar">
     <div class="container">
       <div class="d-flex justify-content-center">
-        {%- if show_copyright %} {%- if hasdoc('copyright') %} {% trans
-        path=pathto('copyright'), copyright=copyright|e %}&#169;
-        <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %} {%-
-        else %} {% trans copyright=copyright|e %}&#169; Copyright {{ copyright
-        }}.{% endtrans %} {%- endif %} {%- endif %} {%- if last_updated %} {%
-        trans last_updated=last_updated|e %}Last updated on {{ last_updated
-        }}.{% endtrans %} {%- endif %} {%- if show_sphinx %} {% trans
-        sphinx_version=sphinx_version|e %}Created using&nbsp;<a
-          href="https://www.sphinx-doc.org/"
-          >Sphinx</a
-        >&nbsp;{{ sphinx_version }}.{% endtrans %} {%- endif %}
+        <p>
+          {%- if show_copyright %}{%- if hasdoc('copyright') %}{% trans
+            path=pathto('copyright'), copyright=copyright|e %}&#169;
+            <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %} {%-
+            else %} {% trans copyright=copyright|e %}&#169; Copyright {{ copyright
+            }}.{% endtrans %} {%- endif %} {%- endif %} {%- if last_updated %} {%
+            trans last_updated=last_updated|e %}Last updated on {{ last_updated
+            }}.{% endtrans %} {%- endif %} {%- if show_sphinx %} {% trans
+            sphinx_version=sphinx_version|e %}Created using&nbsp;<a
+              href="https://www.sphinx-doc.org/"
+              >Sphinx</a
+            >&nbsp;{{ sphinx_version }}.{% endtrans %} {%- endif %}
+        </p>
       </div>
     </div>
   </div>
