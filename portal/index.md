@@ -134,6 +134,9 @@ for details on how you can get involved, and come see our work in the
     <a class="btn btn-primary btn-lg ms-2" href="https://github.com/ProjectPythia" role="button">
         Visit us on GitHub
     </a>
+    <a class="btn btn-primary btn-lg ms-2" href="/code_of_conduct.html" role="button">
+        Read our Code of Conduct
+    </a>
 </span>
 
 ### Weekly Working Group Meetings
