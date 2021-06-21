@@ -629,16 +629,16 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) / -2);
-  margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-top: calc( var(--bs-gutter-y) * -1 );
+  margin-right: calc( var(--bs-gutter-x) / -2 );
+  margin-left: calc( var(--bs-gutter-x) / -2 );
 }
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) / 2);
-  padding-left: calc(var(--bs-gutter-x) / 2);
+  padding-right: calc( var(--bs-gutter-x) / 2 );
+  padding-left: calc( var(--bs-gutter-x) / 2 );
   margin-top: var(--bs-gutter-y);
 }
 
@@ -1965,17 +1965,23 @@ progress {
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  --bs-table-accent-bg: var(
+    --bs-table-striped-bg
+  );
   color: var(--bs-table-striped-color);
 }
 
 .table-active {
-  --bs-table-accent-bg: var(--bs-table-active-bg);
+  --bs-table-accent-bg: var(
+    --bs-table-active-bg
+  );
   color: var(--bs-table-active-color);
 }
 
 .table-hover > tbody > tr:hover {
-  --bs-table-accent-bg: var(--bs-table-hover-bg);
+  --bs-table-accent-bg: var(
+    --bs-table-hover-bg
+  );
   color: var(--bs-table-hover-color);
 }
 
@@ -10661,14 +10667,53 @@ i.bi::before {
 }
 
 pre {
-  border: 1px solid #ced4da;
+  border: 1px solid #dee2e6;
   border-radius: 4px;
-  background-color: #f8f9fa;
-  padding: 0.4rem 0.6rem;
+  background-color: #e9ecef;
+  padding: 0.5rem 0.65rem;
 }
 
 section > p {
   text-align: justify;
+}
+
+div.admonition {
+  padding: 0.6rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: #212529;
+  border-color: #dee2e6;
+  background-color: #e9ecef;
+}
+
+div.admonition.hint,
+div.admonition.note,
+div.admonition.tip {
+  color: #245269;
+  border-color: #bce8f1;
+  background-color: #d9edf7;
+}
+
+div.admonition.important {
+  color: #316132;
+  border-color: #d6e9c6;
+  background-color: #dff0d8;
+}
+
+div.admonition.attention,
+div.admonition.caution,
+div.admonition.warning {
+  color: #836839;
+  border-color: #fbeed5;
+  background-color: #fcf8e3;
+}
+
+div.admonition.danger,
+div.admonition.error {
+  color: #803332;
+  background-color: #f2dede;
+  border-color: #eed3d7;
 }
 
 div.document {
