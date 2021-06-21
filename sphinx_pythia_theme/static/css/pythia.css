@@ -10703,6 +10703,7 @@ div.admonition.important {
 
 div.admonition.attention,
 div.admonition.caution,
+div.admonition.seealso,
 div.admonition.warning {
   color: #836839;
   border-color: #fbeed5;
