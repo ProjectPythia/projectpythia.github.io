@@ -68,7 +68,7 @@ def _generate_menu(all_items, flt=None):
     return menu_html
 
 
-def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=''):
+def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html='', max_descr_len=300):
 
     # Build the gallery file
     panels_body = []
@@ -102,22 +102,19 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
                 else:
                     _str = affiliation_name
                 affiliation_strs.add(_str)
+
         authors_str = f"<strong>Author:</strong> {', '.join(author_strs)}"
         if affiliation_strs:
             affiliations_str = f"<strong>Affiliation:</strong> {' '.join(affiliation_strs)}"
         else:
             affiliations_str = ''
 
-        panels_body.append(
-            f"""\
----
-
-<button type="button" class="btn modal-btn w-100 h-100">
-<div class="text-center">
-<img src="{thumbnail}" class="gallery-thumbnail" />
-<strong>{item["title"]}</strong>
-</div>
-</button>
+        if len(item['description']) < max_descr_len:
+            short_description = item['description']
+            modal_str = ''
+        else:
+            short_description = item['description'][:max_descr_len] + ' <a class="modal-btn">...more</a>'
+            modal_str = f"""
 <div class="modal">
 <div class="content">
 <img src="{thumbnail}" class="modal-img" />
@@ -130,6 +127,21 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 <p class="mt-3"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
+"""
+
+        panels_body.append(
+            f"""\
+---
+
+<div class="d-flex">
+<img src="{thumbnail}" class="gallery-thumbnail" />
+<div class="container">
+<a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
+<p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
+<p class="my-2">{short_description}</p>
+</div>
+</div>
+{modal_str}
 
 +++
 
@@ -153,16 +165,17 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 {menu_html}
 
 ````{{panels}}
-:column: text-left col-lg-3 col-md-4 col-sm-6
-:card: +mb-4
+:column: col-12
+:card: +mb-4 w-100
 :header: d-none
-:body: p-0 m-0
+:body: p-3 m-0
 :footer: p-1
 
 {dedent(panels_body)}
 ````
 
 <div class="modal-backdrop"></div>
+<script src="_static/custom.js"></script>
 """
 
     pathlib.Path(f'{filename}.md').write_text(panels)
