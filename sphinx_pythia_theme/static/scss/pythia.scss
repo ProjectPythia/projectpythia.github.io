@@ -290,54 +290,6 @@ div.document.onepager {
   }
 }
 
-// MODAL ELEMENTS -------------------------------------------------------------
-
-.modal {
-  display: none;
-  position: fixed;
-  background: $light;
-  border-radius: 5px;
-  padding: 3rem;
-  width: 60%;
-  height: auto !important;
-  top: 20%;
-  left: 20%;
-  z-index: 20001;
-}
-
-.modal-backdrop {
-  display: none;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 20000;
-}
-
-.modal-btn {
-  padding: 1rem;
-  margin: 0;
-  color: $primary;
-}
-
-.modal-img {
-  float: right;
-  margin: 0 0 2rem 2rem;
-  max-width: 300px;
-  max-height: 300px;
-}
-
-// PANELS ELEMENTS ------------------------------------------------------------
-
-.gallery-thumbnail {
-  display: block;
-  margin: 0 auto;
-  padding: 0 0 1rem 0;
-  max-height: 160px;
-}
-
 // IFRAME ELEMENTS ------------------------------------------------------------
 
 .iframe {

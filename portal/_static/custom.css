@@ -1,0 +1,47 @@
+.modal {
+  display: none;
+  position: fixed;
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding: 3rem;
+  width: 60%;
+  height: auto !important;
+  top: 20%;
+  left: 20%;
+  z-index: 20001;
+}
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20000;
+}
+
+.modal-btn {
+  color: #1a658f;
+  text-decoration: none;
+}
+
+.modal-img {
+  float: right;
+  margin: 0 0 2rem 2rem;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.gallery-thumbnail {
+  display: block;
+  float: left;
+  margin: 0 0 auto 0;
+  padding: 0;
+  max-width: 160px;
+}
+
+.card-subtitle {
+  font-size: 0.8rem;
+}
