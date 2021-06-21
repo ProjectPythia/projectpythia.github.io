@@ -1,7 +1,9 @@
-{# basic/searchbox.html ~~~~~~~~~~~~~~~~~~~~ Sphinx sidebar template: quick
-search box. :copyright: Copyright 2007-2021 by the Sphinx team, see AUTHORS.
-:license: BSD, see LICENSE for details. #} {%- if pagename != "search" and
-builder != "singlehtml" %}
+{#
+    Sphinx sidebar template: quick search box.
+
+    Modified from basic/search.html
+#}
+{%- if pagename != "search" and builder != "singlehtml" %}
 <div id="searchbox" class="text-right mb-3" style="display: none" role="search">
   <div class="mb-0 searchformwrapper">
     <form class="search" action="{{ pathto('search') }}" method="get">
