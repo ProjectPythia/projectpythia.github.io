@@ -34,6 +34,10 @@
   max-height: 300px;
 }
 
+.gallery-card div.container {
+  padding: 0 0 0 1rem;
+}
+
 .gallery-thumbnail {
   display: block;
   float: left;
@@ -44,4 +48,24 @@
 
 .card-subtitle {
   font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  .gallery-card {
+    flex-direction: column;
+  }
+
+  .gallery-thumbnail {
+    float: none;
+    margin: 0 0 1rem 0;
+    max-width: 100%;
+  }
+
+  .gallery-card div.container {
+    padding: 0;
+  }
+
+  .gallery-return-btn {
+    padding-bottom: 1rem;
+  }
 }
