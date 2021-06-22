@@ -194,4 +194,4 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 ````
 
 <div class="modal-backdrop"></div>
-<script src="_static/custom.js"></script>
+<script src="/_static/custom.js"></script>

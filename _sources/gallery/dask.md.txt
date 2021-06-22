@@ -155,4 +155,4 @@
 ````
 
 <div class="modal-backdrop"></div>
-<script src="_static/custom.js"></script>
+<script src="/_static/custom.js"></script>
