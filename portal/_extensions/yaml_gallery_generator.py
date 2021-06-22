@@ -175,7 +175,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 ````
 
 <div class="modal-backdrop"></div>
-<script src="_static/custom.js"></script>
+<script src="/_static/custom.js"></script>
 """
 
     pathlib.Path(f'{filename}.md').write_text(panels)
