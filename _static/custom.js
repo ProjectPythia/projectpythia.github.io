@@ -1,5 +1,5 @@
 var buttons = document.querySelectorAll('.modal-btn')
-var backdrop = document.querySelector('.backdrop')
+var backdrop = document.querySelector('.modal-backdrop')
 var modals = document.querySelectorAll('.modal')
 
 function openModal(i) {

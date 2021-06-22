@@ -1,0 +1,24 @@
+$fonts: (
+  'body': 'Poppins',
+  'headings': 'Poppins',
+  'footnote': 'Cormorant',
+);
+
+$colors: (
+  'green': rgb(0, 121, 124),
+  'lighter-green': rgb(40, 147, 157),
+  'lightest-green': rgb(64, 193, 172),
+  'blue-alpha': rgba(26, 100, 143, 0.85),
+  'blue': rgb(26, 101, 143),
+  'lighter-blue': rgb(0, 127, 163),
+  'lightest-blue': rgb(0, 193, 213),
+  'deep-blue': rgb(1, 33, 105),
+  'highlight-green': rgb(168, 199, 0),
+  'cool-gray-11': rgb(83, 86, 90),
+  'cool-gray-7': rgb(151, 153, 155),
+  'cool-gray-4': rgb(187, 188, 188),
+  'cool-gray-1': rgb(217, 217, 214),
+  'background-blue-1': rgb(195, 215, 238),
+  'background-blue-2': rgb(206, 217, 229),
+  'background-blue-3': rgb(219, 226, 233),
+);

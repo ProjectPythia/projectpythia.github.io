@@ -1,51 +1,47 @@
-/*modal*/
-.backdrop {
+.modal {
+  display: none;
+  position: fixed;
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding: 3rem;
+  width: 60%;
+  height: auto !important;
+  top: 20%;
+  left: 20%;
+  z-index: 20001;
+}
+
+.modal-backdrop {
   display: none;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 10000;
+  z-index: 20000;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  background: white;
-  padding: 10px;
-  width: 260px;
-  height: auto !important;
-  top: 100px;
-  left: calc(50% - 140px);
-  z-index: 10001;
+.modal-btn {
+  color: #1a658f;
+  text-decoration: none;
 }
 
-.modal h1 {
-  margin: 0;
+.modal-img {
+  float: right;
+  margin: 0 0 2rem 2rem;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-.modal button {
-  background: #fa923f;
-  color: white;
-  border: 1px solid #521751;
-  font: inherit;
-  font-size: 12px;
-  cursor: pointer;
+.gallery-thumbnail {
+  display: block;
+  float: left;
+  margin: 0 0 auto 0;
+  padding: 0;
+  max-width: 160px;
 }
 
-.modal button:hover,
-.modal button:active {
-  background: #521751;
-}
-
-.modal button:focus {
-  outline: none;
-}
-
-@media (min-width: 400px) {
-  .modal {
-    width: 360px;
-    left: calc(50% - 190px);
-  }
+.card-subtitle {
+  font-size: 0.8rem;
 }

@@ -1,0 +1,146 @@
+
+# Pythia Resource Gallery
+
+<span class="display-3">Displaying "siphon" tags</span>
+
+<div class="d-flex mb-4">
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Domains
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
+<li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
+<li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
+<li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Formats
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
+<li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
+<li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
+<li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
+<li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Packages
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
+<li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
+<li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
+<li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
+<li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
+<li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
+<li><a class="dropdown-item" href="/gallery/ipyleaflet.html">Ipyleaflet</a></li>
+<li><a class="dropdown-item" href="/gallery/jupyter.html">Jupyter</a></li>
+<li><a class="dropdown-item" href="/gallery/matplotlib.html">Matplotlib</a></li>
+<li><a class="dropdown-item" href="/gallery/metpy.html">Metpy</a></li>
+<li><a class="dropdown-item" href="/gallery/numpy.html">Numpy</a></li>
+<li><a class="dropdown-item" href="/gallery/pandas.html">Pandas</a></li>
+<li><a class="dropdown-item" href="/gallery/pure-python.html">Pure Python</a></li>
+<li><a class="dropdown-item" href="/gallery/rasterio.html">Rasterio</a></li>
+<li><a class="dropdown-item" href="/gallery/scipy.html">Scipy</a></li>
+<li><a class="dropdown-item" href="/gallery/siphon.html">Siphon</a></li>
+<li><a class="dropdown-item" href="/gallery/wrf-python.html">Wrf-Python</a></li>
+<li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
+<li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
+
+  </ul>
+</div>
+
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
+<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
+
+
+````{panels}
+:column: col-12
+:card: +mb-4 w-100
+:header: d-none
+:body: p-3 m-0
+:footer: p-1
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/siphon" class="text-decoration-none"><h4 class="display-4 p-0">Siphon</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/siphon.html" class="badge bg-primary link-light">siphon</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/siphon.html" class="badge bg-primary link-light">siphon</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/siphon/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Gallery</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">Examples of using Siphon’s functionality.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/gallery.html" class="badge bg-primary link-light">gallery</a>
+<a href="/gallery/siphon.html" class="badge bg-primary link-light">siphon</a>
+
+
+````
+
+<div class="modal-backdrop"></div>
+<script src="_static/custom.js"></script>

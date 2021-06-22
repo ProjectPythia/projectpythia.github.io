@@ -1,0 +1,141 @@
+
+# Pythia Resource Gallery
+
+<span class="display-3">Displaying "geopandas" tags</span>
+
+<div class="d-flex mb-4">
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Domains
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
+<li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
+<li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
+<li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Formats
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
+<li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
+<li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
+<li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
+<li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Packages
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
+<li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
+<li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
+<li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
+<li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
+<li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
+<li><a class="dropdown-item" href="/gallery/ipyleaflet.html">Ipyleaflet</a></li>
+<li><a class="dropdown-item" href="/gallery/jupyter.html">Jupyter</a></li>
+<li><a class="dropdown-item" href="/gallery/matplotlib.html">Matplotlib</a></li>
+<li><a class="dropdown-item" href="/gallery/metpy.html">Metpy</a></li>
+<li><a class="dropdown-item" href="/gallery/numpy.html">Numpy</a></li>
+<li><a class="dropdown-item" href="/gallery/pandas.html">Pandas</a></li>
+<li><a class="dropdown-item" href="/gallery/pure-python.html">Pure Python</a></li>
+<li><a class="dropdown-item" href="/gallery/rasterio.html">Rasterio</a></li>
+<li><a class="dropdown-item" href="/gallery/scipy.html">Scipy</a></li>
+<li><a class="dropdown-item" href="/gallery/siphon.html">Siphon</a></li>
+<li><a class="dropdown-item" href="/gallery/wrf-python.html">Wrf-Python</a></li>
+<li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
+<li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
+
+  </ul>
+</div>
+
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
+<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
+
+
+````{panels}
+:column: col-12
+:card: +mb-4 w-100
+:header: d-none
+:body: p-3 m-0
+:footer: p-1
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://geopandas.org" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Documentation</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib f <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/thumbnails/geopandas_icon.png" class="modal-img" />
+<h3 class="display-3">GeoPandas Documentation</h3>
+<strong>Author:</strong> GeoPandas developers
+<br/>
+
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
+</p>
+<p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/geopandas.html" class="badge bg-primary link-light">geopandas</a></p>
+<p class="mt-3"><a href="https://geopandas.org" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/geopandas.html" class="badge bg-primary link-light">geopandas</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://geopandas.org/gallery/index.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Gallery</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
+<p class="my-2">Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/gallery.html" class="badge bg-primary link-light">gallery</a>
+<a href="/gallery/geopandas.html" class="badge bg-primary link-light">geopandas</a>
+
+
+````
+
+<div class="modal-backdrop"></div>
+<script src="_static/custom.js"></script>

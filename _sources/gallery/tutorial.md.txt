@@ -1,0 +1,417 @@
+
+# Pythia Resource Gallery
+
+<span class="display-3">Displaying "tutorial" tags</span>
+
+<div class="d-flex mb-4">
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Domains
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
+<li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
+<li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
+<li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Formats
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
+<li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
+<li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
+<li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
+<li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Packages
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
+<li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
+<li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
+<li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
+<li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
+<li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
+<li><a class="dropdown-item" href="/gallery/ipyleaflet.html">Ipyleaflet</a></li>
+<li><a class="dropdown-item" href="/gallery/jupyter.html">Jupyter</a></li>
+<li><a class="dropdown-item" href="/gallery/matplotlib.html">Matplotlib</a></li>
+<li><a class="dropdown-item" href="/gallery/metpy.html">Metpy</a></li>
+<li><a class="dropdown-item" href="/gallery/numpy.html">Numpy</a></li>
+<li><a class="dropdown-item" href="/gallery/pandas.html">Pandas</a></li>
+<li><a class="dropdown-item" href="/gallery/pure-python.html">Pure Python</a></li>
+<li><a class="dropdown-item" href="/gallery/rasterio.html">Rasterio</a></li>
+<li><a class="dropdown-item" href="/gallery/scipy.html">Scipy</a></li>
+<li><a class="dropdown-item" href="/gallery/siphon.html">Siphon</a></li>
+<li><a class="dropdown-item" href="/gallery/wrf-python.html">Wrf-Python</a></li>
+<li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
+<li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
+
+  </ul>
+</div>
+
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
+<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
+
+
+````{panels}
+:column: col-12
+:card: +mb-4 w-100
+:header: d-none
+:body: p-3 m-0
+:footer: p-1
+
+---
+
+<div class="d-flex">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors<br/></p>
+<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integr <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/images/ebp-logo.png" class="modal-img" />
+<h3 class="display-3">Contextily Tutorial</h3>
+<strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors
+<br/>
+
+<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated with other libraries such as geopandas and rasterio.
+</p>
+<p class="my-2"><a href="/gallery/contextily.html" class="badge bg-primary link-light">contextily</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a></p>
+<p class="mt-3"><a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/contextily.html" class="badge bg-primary link-light">contextily</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/dask.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://tutorial.dask.org/" class="text-decoration-none"><h4 class="display-4 p-0">Dask Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Dask Developers<br/></p>
+<p class="my-2">Dask is a parallel computing library that scales the existing Python ecosystem. This tutorial will introduce Dask and parallel data analysis more generally.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/geocat.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://geocat-comp.readthedocs.io/en/latest/examples.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="my-2">The examples below show GeoCAT-comp functions being utilized in real-world use cases. They also demonstrate how GeoCAT-comp can be used to make plots with Matplotlib (using Cartopy) and PyNGL (work in progress).
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/geocat-comp.html" class="badge bg-primary link-light">geocat-comp</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://hvplot.holoviz.org/user_guide/index.html" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> HoloViz developers<br/></p>
+<p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customi <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/thumbnails/hvplot-wm.png" class="modal-img" />
+<h3 class="display-3">hvPlot Tutorial</h3>
+<strong>Author:</strong> HoloViz developers
+<br/>
+
+<p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
+</p>
+<p class="my-2"><a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a></p>
+<p class="mt-3"><a href="https://hvplot.holoviz.org/user_guide/index.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/matplotlib.svg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://matplotlib.org/stable/tutorials/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Matplotlib Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> the Matplotlib development team<br/></p>
+<p class="my-2">This page contains more in-depth guides for using Matplotlib. It is broken up into beginner, intermediate, and advanced sections, as well as sections covering specific topics.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/MetPy/latest/tutorials/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/metpy.html" class="badge bg-primary link-light">metpy</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop- MetPy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/metpy.html" class="badge bg-primary link-light">metpy</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Numpy Workshop</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/pandas.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Pandas Tutorials</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Pandas Development Team<br/></p>
+<p class="my-2">Tutorial for getting started with pandas.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/rasterio-tutorial.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://rasterio.readthedocs.io/en/latest/quickstart.html" class="text-decoration-none"><h4 class="display-4 p-0">Rasterio Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> MapBox<br/></p>
+<p class="my-2">This document explains how to use Rasterio to read existing files and to create new files. Some advanced topics are glossed over to be covered in more detail elsewhere in Rasterio’s documentation.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/rasterio.html" class="badge bg-primary link-light">rasterio</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/siphon.html" class="badge bg-primary link-light">siphon</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/xarray.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Xarray Workshop</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/xarray.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://xarray-contrib.github.io/xarray-tutorial/" class="text-decoration-none"><h4 class="display-4 p-0">Xarray Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Xarray Developers<br/></p>
+<p class="my-2">A collection of tutorials provided by the Xarray developers.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="my-2">Python Programming for Earth Science Students</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
+<a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/pure-python.html" class="badge bg-primary link-light">pure python</a>
+<a href="/gallery/scipy.html" class="badge bg-primary link-light">scipy</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+
+
+---
+
+<div class="d-flex">
+<img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
+<p class="my-2">A gallery of different Pangeo use cases</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/gallery.html" class="badge bg-primary link-light">gallery</a>
+<a href="/gallery/glaciology.html" class="badge bg-primary link-light">glaciology</a>
+<a href="/gallery/holoviews.html" class="badge bg-primary link-light">holoviews</a>
+<a href="/gallery/hydrology.html" class="badge bg-primary link-light">hydrology</a>
+<a href="/gallery/intake.html" class="badge bg-primary link-light">intake</a>
+<a href="/gallery/jupyter.html" class="badge bg-primary link-light">jupyter</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
+<a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/physical-oceanography.html" class="badge bg-primary link-light">physical oceanography</a>
+<a href="/gallery/remote-sensing.html" class="badge bg-primary link-light">remote sensing</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+<a href="/gallery/xgcm.html" class="badge bg-primary link-light">xgcm</a>
+
+
+````
+
+<div class="modal-backdrop"></div>
+<script src="_static/custom.js"></script>

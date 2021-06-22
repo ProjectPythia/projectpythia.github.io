@@ -1,0 +1,404 @@
+
+# Pythia Resource Gallery
+
+<span class="display-3">Displaying "documentation" tags</span>
+
+<div class="d-flex mb-4">
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Domains
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
+<li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
+<li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
+<li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Formats
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
+<li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
+<li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
+<li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
+<li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
+
+  </ul>
+</div>
+
+
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    Packages
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
+<li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
+<li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
+<li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
+<li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
+<li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
+<li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
+<li><a class="dropdown-item" href="/gallery/ipyleaflet.html">Ipyleaflet</a></li>
+<li><a class="dropdown-item" href="/gallery/jupyter.html">Jupyter</a></li>
+<li><a class="dropdown-item" href="/gallery/matplotlib.html">Matplotlib</a></li>
+<li><a class="dropdown-item" href="/gallery/metpy.html">Metpy</a></li>
+<li><a class="dropdown-item" href="/gallery/numpy.html">Numpy</a></li>
+<li><a class="dropdown-item" href="/gallery/pandas.html">Pandas</a></li>
+<li><a class="dropdown-item" href="/gallery/pure-python.html">Pure Python</a></li>
+<li><a class="dropdown-item" href="/gallery/rasterio.html">Rasterio</a></li>
+<li><a class="dropdown-item" href="/gallery/scipy.html">Scipy</a></li>
+<li><a class="dropdown-item" href="/gallery/siphon.html">Siphon</a></li>
+<li><a class="dropdown-item" href="/gallery/wrf-python.html">Wrf-Python</a></li>
+<li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
+<li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
+
+  </ul>
+</div>
+
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
+<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
+
+
+````{panels}
+:column: col-12
+:card: +mb-4 w-100
+:header: d-none
+:body: p-3 m-0
+:footer: p-1
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/cartopy.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://scitools.org.uk/cartopy/docs/latest/" class="text-decoration-none"><h4 class="display-4 p-0">Cartopy Documentation</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> UK Met Office<br/></p>
+<p class="my-2">Cartopy is a Python package designed for geospatial data processing in order to produce maps and other geospatial data analyses.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://contextily.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Documentation</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors<br/></p>
+<p class="my-2">contextily is a small Python 3 (3.6 and above) package to retrieve tile maps from the internet. It can add those tiles as basemap to matplotlib figures or write tile maps to disk into geospatial raster files. Bounding boxes can be passed in both WGS84 (EPSG:4326) and Spheric Mercator (EPSG:3857).
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/contextily.html" class="badge bg-primary link-light">contextily</a>
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/gallery.html" class="badge bg-primary link-light">gallery</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/dask.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://dask.org" class="text-decoration-none"><h4 class="display-4 p-0">Dask</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Dask core developers<br/></p>
+<p class="my-2">Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://geopandas.org" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Documentation</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib f <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/thumbnails/geopandas_icon.png" class="modal-img" />
+<h3 class="display-3">GeoPandas Documentation</h3>
+<strong>Author:</strong> GeoPandas developers
+<br/>
+
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
+</p>
+<p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/geopandas.html" class="badge bg-primary link-light">geopandas</a></p>
+<p class="mt-3"><a href="https://geopandas.org" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/geopandas.html" class="badge bg-primary link-light">geopandas</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://hvplot.holoviz.org/" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> HoloViz developers<br/></p>
+<p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/thumbnails/hvplot-wm.png" class="modal-img" />
+<h3 class="display-3">hvPlot</h3>
+<strong>Author:</strong> HoloViz developers
+<br/>
+
+<p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
+</p>
+<p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a></p>
+<p class="mt-3"><a href="https://hvplot.holoviz.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://ipyleaflet.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Ipyleaflet</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> The Jupyter development team<br/></p>
+<p class="my-2">Interactive maps in the Jupyter notebook.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/ipyleaflet.html" class="badge bg-primary link-light">ipyleaflet</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/matplotlib.svg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://matplotlib.org/" class="text-decoration-none"><h4 class="display-4 p-0">Matplotlib</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> the Matplotlib development team<br/></p>
+<p class="my-2">Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/MetPy/latest/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/metpy.html" class="badge bg-primary link-light">metpy</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/numpy.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://numpy.org" class="text-decoration-none"><h4 class="display-4 p-0">Numpy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> NumPy<br/></p>
+<p class="my-2">The fundamental package for scientific computing with Python.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/pandas.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://pandas.pydata.org/" class="text-decoration-none"><h4 class="display-4 p-0">Pandas</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Pandas Development Team<br/></p>
+<p class="my-2">Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://rasterio.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Rasterio</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> MapBox<br/></p>
+<p class="my-2">Geographic information systems use GeoTIFF and other formats to organize and store gridded raster datasets such as satellite imagery and terrain models. Rasterio reads and writes these formats and provides a Python API based on Numpy N-dimensional arrays and GeoJSON.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/rasterio.html" class="badge bg-primary link-light">rasterio</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://unidata.github.io/siphon" class="text-decoration-none"><h4 class="display-4 p-0">Siphon</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="my-2">Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/siphon.html" class="badge bg-primary link-light">siphon</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://wrf-python.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="my-2">A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/wrf-python.html" class="badge bg-primary link-light">wrf-python</a>
+
+
+---
+
+<div class="d-flex">
+<img src="/_static/thumbnails/xarray.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="http://xarray.pydata.org/" class="text-decoration-none"><h4 class="display-4 p-0">Xarray</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Xarray Developers<br/></p>
+<p class="my-2">xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
+
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/thumbnails/xarray.png" class="modal-img" />
+<h3 class="display-3">Xarray</h3>
+<strong>Author:</strong> Xarray Developers
+<br/>
+
+<p class="my-2">xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
+
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive, more concise, and less error-prone developer experience. The package includes a large and growing library of domain-agnostic functions for advanced analytics and visualization with these data structures.
+
+Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
+</p>
+<p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a></p>
+<p class="mt-3"><a href="http://xarray.pydata.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
+````
+
+<div class="modal-backdrop"></div>
+<script src="_static/custom.js"></script>
