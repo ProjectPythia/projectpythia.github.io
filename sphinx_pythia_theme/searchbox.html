@@ -1,0 +1,23 @@
+{#
+    Sphinx sidebar template: quick search box.
+
+    Modified from basic/search.html
+#}
+{%- if pagename != "search" and builder != "singlehtml" %}
+<div id="searchbox" class="text-right mb-3" style="display: none" role="search">
+  <div class="mb-0 searchformwrapper">
+    <form class="search" action="{{ pathto('search') }}" method="get">
+      <input
+        type="text"
+        class="form-control w-100"
+        placeholder="Search..."
+        name="q"
+        aria-labelledby="searchlabel"
+      />
+    </form>
+  </div>
+</div>
+<script>
+  $('#searchbox').show(0)
+</script>
+{%- endif %}

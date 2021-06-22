@@ -1,0 +1,83 @@
+{# Common macros for Sphinx templating #}
+
+{%- macro sidebar() %}
+  {%- if render_sidebar %}
+<div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+  <div class="sphinxsidebarwrapper">
+    {%- block sidebarlogo %}
+      {%- if logo %}
+    <p class="logo">
+      <a href="{{ pathto(master_doc)|e }}">
+        <img
+          class="logo"
+          src="{{ pathto('_static/' + logo, 1)|e }}"
+          alt="Logo"
+        />
+      </a>
+    </p>
+      {%- endif %}
+    {%- endblock sidebarlogo %}
+    {%- if sidebars != None %}
+      {#- new style sidebar: explicitly include/exclude templates #}
+      {%- for sidebartemplate in sidebars %}
+        {%- include sidebartemplate %}
+      {%- endfor %}
+    {%- else %}
+      {#- old style sidebars: using blocks -- should be deprecated #}
+      {%- block sidebartoc %}
+        {%- include "localtoc.html" %}
+      {%- endblock sidebartoc %}
+      {%- block sidebarrel %}
+        {%- include "relations.html" %}
+      {%- endblock sidebarrel %}
+      {%- block sidebarsourcelink %}
+        {%- include "sourcelink.html" %}
+      {%- endblock sidebarsourcelink %}
+      {%- if customsidebar %}
+        {%- include customsidebar %}
+      {%- endif %}
+      {%- block sidebarsearch %}
+        {%- include "searchbox.html" %}
+      {%- endblock sidebarsearch %}
+    {%- endif %}
+  </div>
+</div>
+  {%- endif %}
+{%- endmacro %}
+
+{%- macro script() %}
+<script
+  id="documentation_options"
+  data-url_root="{{ url_root }}"
+  src="{{ pathto('_static/documentation_options.js', 1) }}"
+></script>
+<script src="{{ pathto('_static/bootstrap/js/bootstrap.bundle.min.js', 1) }}"></script>
+  {%- for js in script_files %}
+    {{ js_tag(js) }}
+  {%- endfor %}
+{%- endmacro %}
+
+{%- macro css() %}
+<link
+  rel="stylesheet"
+  href="{{ pathto('_static/pygments.css', 1) }}"
+  type="text/css"
+/>
+<link
+  rel="stylesheet"
+  href="{{ pathto('_static/' + style, 1)|e }}"
+  type="text/css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+  type="text/css"
+/>
+  {%- for css in css_files %}
+    {%- if css|attr("filename") %}
+{{ css_tag(css) }}
+    {%- else %}
+<link rel="stylesheet" href="{{ pathto(css, 1)|e }}" type="text/css" />
+    {%- endif %}
+  {%- endfor %}
+{%- endmacro %}

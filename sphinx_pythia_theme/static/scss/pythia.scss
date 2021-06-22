@@ -1,0 +1,323 @@
+@use 'ncar';
+
+$primary: map-get(ncar.$colors, 'blue');
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 3rem,
+  3: 2rem,
+  4: 1.6667rem,
+  5: 1.3333rem,
+  6: 1rem,
+);
+
+@import '../bootstrap/scss/bootstrap';
+@import '../basic.css';
+
+@function rem2px($size) {
+  @return $size / 1rem * 16px;
+}
+
+$brand-img-height: 30px;
+$navbar-height: 56px;
+$offset-height: $navbar-height + rem2px(2rem);
+$sidebar-width: 300px;
+$document-width: map-get($container-max-widths, 'lg');
+
+// GENERAL HTML ELEMENTS ------------------------------------------------------
+
+:target:before {
+  content: '';
+  display: block;
+  height: $offset-height;
+  margin-top: -$offset-height;
+}
+
+a {
+  color: inherit;
+}
+
+a.badge {
+  text-decoration: none;
+}
+
+a.headerlink {
+  text-decoration: none;
+  color: transparent;
+  position: absolute;
+}
+
+a.headerlink:hover {
+  color: $gray-500;
+}
+
+a.navbar-brand img {
+  height: $brand-img-height;
+  vertical-align: middle;
+}
+
+body {
+  font-family: map-get(ncar.$fonts, 'body'), sans-serif;
+}
+
+i.bi::before {
+  line-height: inherit;
+}
+
+pre {
+  border: 1px solid $gray-300;
+  border-radius: 4px;
+  background-color: $gray-200;
+  padding: 0.5rem 0.65rem;
+}
+
+section > p {
+  text-align: justify;
+}
+
+// SPHINX BASE LAYOUT ---------------------------------------------------------
+
+div.admonition {
+  padding: 0.6rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: $gray-900;
+  border-color: $gray-300;
+  background-color: $gray-200;
+}
+
+div.admonition.hint,
+div.admonition.note,
+div.admonition.tip {
+  color: #245269;
+  border-color: #bce8f1;
+  background-color: #d9edf7;
+}
+
+div.admonition.important {
+  color: #316132;
+  border-color: #d6e9c6;
+  background-color: #dff0d8;
+}
+
+div.admonition.attention,
+div.admonition.caution,
+div.admonition.seealso,
+div.admonition.warning {
+  color: #836839;
+  border-color: #fbeed5;
+  background-color: #fcf8e3;
+}
+
+div.admonition.danger,
+div.admonition.error {
+  color: #803332;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+div.document {
+  margin-top: $navbar-height;
+  padding: 2rem 0 0 0;
+  background-color: $light;
+
+  div.bodywrapper {
+    margin-left: $sidebar-width;
+  }
+
+  div.sectionwrapper-1,
+  div.sectionwrapper-2 {
+    color: $dark;
+  }
+
+  div.section-1,
+  div.section-2 {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: $document-width;
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 1rem 0;
+    }
+  }
+
+  div.section-title-wrapper {
+    @extend .d-flex, .justify-content-start;
+  }
+
+  div.section-title {
+    padding: 0 4rem 0.1rem 0;
+    margin: 0 0 1.6rem 0;
+    border-bottom: 2px solid map-get(ncar.$colors, 'deep-blue');
+  }
+
+  div.sphinxsidebar {
+    color: $dark;
+    display: block;
+    width: $sidebar-width;
+    position: fixed;
+    top: $navbar-height;
+    margin: 0;
+    padding: 2rem 0 0 2rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+
+    .form-control {
+      border: 1px solid $gray-400;
+      font-family: map-get(ncar.$fonts, 'body'), sans-serif;
+    }
+
+    .form-control::placeholder {
+      color: $gray-500;
+    }
+
+    .highlight-link {
+      @extend .text-end;
+      font-size: 0.75rem;
+      color: $gray-500;
+    }
+
+    div.sphinxsidebarwrapper {
+      a {
+        text-decoration: none;
+      }
+
+      h6 {
+        font-weight: 400;
+      }
+
+      ul {
+        @extend .list-unstyled;
+        padding: 0;
+      }
+    }
+  }
+}
+
+div.footer {
+  color: $light;
+  font-family: map-get(ncar.$fonts, 'footnote');
+
+  div.logos-bar {
+    background-color: $white;
+  }
+
+  div.infobar {
+    background-color: $dark;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  div.sponsor {
+    background-color: $gray-800;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    img {
+      height: 80px;
+    }
+  }
+}
+
+// SPHINX ONEPAGER LAYOUT -----------------------------------------------------
+
+div.document.onepager {
+  margin-top: $navbar-height;
+  padding: 0;
+
+  div.sectionwrapper-1 {
+    // Photo by Jeff Stapleton from Pexels
+    background-image: linear-gradient(
+        map-get(ncar.$colors, 'blue-alpha'),
+        map-get(ncar.$colors, 'blue-alpha')
+      ),
+      url(../images/backgrounds/pexels-jeff-stapleton-5792818.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: $light;
+  }
+
+  div.sectionwrapper-1:after {
+    content: 'Photo by Jeff Stapleton from Pexels';
+    float: right;
+    margin-top: -1.6rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+
+  div.sectionwrapper-2 {
+    color: $dark;
+    background-color: $light;
+  }
+
+  div.sectionwrapper-2:nth-child(even) {
+    background-color: $gray-300;
+  }
+
+  div.section-1,
+  div.section-2 {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    max-width: $document-width;
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+  }
+
+  div.section-title-wrapper {
+    @extend .d-flex, .justify-content-center;
+  }
+
+  div.section-title {
+    padding: 0 4rem 1rem 4rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid map-get(ncar.$colors, 'deep-blue');
+  }
+
+  p {
+    @extend .lead;
+  }
+}
+
+// IFRAME ELEMENTS ------------------------------------------------------------
+
+.iframe {
+  position: relative;
+  height: 0;
+  width: 75%;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.iframe-16x9 {
+  @extend .iframe;
+  padding-bottom: calc(0.75 * 56.25%);
+}
+
+.iframe-4x3 {
+  @extend .iframe;
+  padding-bottom: calc(0.75 * 75%);
+}

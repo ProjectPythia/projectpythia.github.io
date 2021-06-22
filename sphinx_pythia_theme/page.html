@@ -1,0 +1,5 @@
+{# Master template for simple pages. Modified from Sphinx basic/page.html #}
+{%- extends "layout.html" %}
+{%- block body %}
+{{ bootstrapify(denest_sections(body)) }}
+{%- endblock %}

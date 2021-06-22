@@ -28,12 +28,12 @@ jobs:
       - name: Build
         run: |
           conda env list
-          cd content
+          cd portal
           make -j4 html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./content/_build/html
+          publish_dir: ./portal/_build/html
           cname: projectpythia.org
