@@ -24,7 +24,7 @@ cd projectpythia.github.io/content
 Use [conda](https://docs.conda.io/) to set up a build environment:
 
 ```bash
-conda env create -f ../ci/environment.yml
+conda env update -f ../ci/environment.yml
 ```
 
 This will create or update the dev environment (`pythia`).
