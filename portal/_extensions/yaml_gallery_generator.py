@@ -57,11 +57,11 @@ def _generate_menu(all_items, flt=None):
 
     key_list = _generate_sorted_tag_keys(all_items)
 
-    menu_html = '<div class="d-sm-flex mb-4">\n'
-    menu_html += '<div class="d-flex">\n'
-    menu_html += '<div><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
+    menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
+    menu_html += '<div class="d-flex gallery-menu">\n'
+    menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
     if flt:
-        menu_html += '<div class="gallery-return-btn"><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>\n'
+        menu_html += '<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>\n'
     menu_html += '</div>\n'
     menu_html += '<div class="ms-auto d-flex">\n'
     for tag_key in key_list:
@@ -128,7 +128,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 {affiliations_str}
 <p class="my-2">{item['description']}</p>
 <p class="my-2">{tags}</p>
-<p class="mt-3"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 """

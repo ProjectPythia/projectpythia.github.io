@@ -4,10 +4,12 @@
   background: #f8f9fa;
   border-radius: 5px;
   padding: 3rem;
-  width: 60%;
+  width: calc(100% - 8rem);
   height: auto !important;
-  top: 20%;
-  left: 20%;
+  max-height: calc(100% - 8rem);
+  overflow: scroll;
+  top: 4rem;
+  left: 4rem;
   z-index: 20001;
 }
 
@@ -30,8 +32,12 @@
 .modal-img {
   float: right;
   margin: 0 0 2rem 2rem;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 260px;
+  max-height: 260px;
+}
+
+.gallery-menu {
+  margin-bottom: 1rem;
 }
 
 .gallery-card div.container {
@@ -51,6 +57,17 @@
 }
 
 @media (max-width: 576px) {
+  .modal {
+    width: calc(100% - 4rem);
+    max-height: calc(100% - 4rem);
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .modal-img {
+    display: none;
+  }
+
   .gallery-card {
     flex-direction: column;
   }
