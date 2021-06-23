@@ -58,6 +58,7 @@
 
 @media (max-width: 576px) {
   .modal {
+    padding: 2rem;
     width: calc(100% - 4rem);
     max-height: calc(100% - 4rem);
     top: 2rem;
