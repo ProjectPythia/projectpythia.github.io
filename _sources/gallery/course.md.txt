@@ -3,14 +3,19 @@
 
 <span class="display-3">Displaying "course" tags</span>
 
-<div class="d-flex mb-4">
+<div class="d-sm-flex mt-3 mb-4">
+<div class="d-flex gallery-menu">
+<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+</div>
+<div class="ms-auto d-flex">
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Domains
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Domains
+</button>
+<ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+<li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
@@ -18,32 +23,32 @@
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
 <li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
 
-  </ul>
+</ul>
 </div>
 
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Formats
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
-    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Formats
+</button>
+<ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+<li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
 <li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
 <li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
 <li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
 <li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
 <li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
 
-  </ul>
+</ul>
 </div>
 
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Packages
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Packages
+</button>
+<ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+<li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
 <li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
 <li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
 <li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
@@ -67,11 +72,10 @@
 <li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
 <li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
 
-  </ul>
+</ul>
 </div>
 
-<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
-<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
 </div>
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
 
@@ -85,7 +89,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/python/intro-to-python/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Training</h4></a>
@@ -104,7 +108,7 @@
 <p class="my-2">Introduction to Python for Atmospheric Science & Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 </p>
 <p class="my-2"><a href="/gallery/course.html" class="badge bg-primary link-light">course</a></p>
-<p class="mt-3"><a href="https://unidata.github.io/python-training/python/intro-to-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://unidata.github.io/python-training/python/intro-to-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -116,11 +120,11 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python e <a class="modal-btn">...more</a></p>
 </div>
 </div>
@@ -129,13 +133,13 @@
 <div class="content">
 <img src="/_static/thumbnails/earth_env_data_science.png" class="modal-img" />
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
 </p>
 <p class="my-2"><a href="/gallery/course.html" class="badge bg-primary link-light">course</a></p>
-<p class="mt-3"><a href="https://earth-env-data-science.github.io/intro" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://earth-env-data-science.github.io/intro" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -147,7 +151,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/climlablogo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://brian-rose.github.io/ClimateLaboratoryBook/home" class="text-decoration-none"><h4 class="display-4 p-0">The Climate Laboratory</h4></a>
@@ -169,7 +173,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="text-decoration-none"><h4 class="display-4 p-0">Earth Analytics Python Course</h4></a>
@@ -188,7 +192,7 @@
 <p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 </p>
 <p class="my-2"><a href="/gallery/course.html" class="badge bg-primary link-light">course</a></p>
-<p class="mt-3"><a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -200,7 +204,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.earthdatascience.org/" class="text-decoration-none"><h4 class="display-4 p-0">Earth Data Science</h4></a>
@@ -218,7 +222,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/eScience_Logo_HR.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geohackweek.github.io/" class="text-decoration-none"><h4 class="display-4 p-0">Geohackweek 2019</h4></a>
@@ -236,7 +240,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://merely-useful.github.io/py-rse/" class="text-decoration-none"><h4 class="display-4 p-0">Research Software Engineering with Python</h4></a>
@@ -255,7 +259,7 @@
 <p class="my-2">We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software that makes research possible. People who do this are called research software engineers; the aim of this book is to get you ready for this role by helping you go from writing code for yourself to creating tools that help your entire field advance.
 </p>
 <p class="my-2"><a href="/gallery/course.html" class="badge bg-primary link-light">course</a></p>
-<p class="mt-3"><a href="https://merely-useful.github.io/py-rse/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://merely-useful.github.io/py-rse/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -267,7 +271,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/zero-to-pandas.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas" class="text-decoration-none"><h4 class="display-4 p-0">Data Analysis with Python- Zero to Pandas</h4></a>
@@ -285,7 +289,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/portland-state.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://web.pdx.edu/~gjay/teaching/mth271_2020/html/_CONTENTS.html" class="text-decoration-none"><h4 class="display-4 p-0">MTH271- Mathematical Computing with Data</h4></a>
@@ -303,7 +307,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/british-columbia.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://clouds.eos.ubc.ca/~phil/courses/atsc301/" class="text-decoration-none"><h4 class="display-4 p-0">ATSC301- Atmospheric Radiation and Remote Sensing</h4></a>
@@ -322,7 +326,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://datacarpentry.org/organization-geospatial/" class="text-decoration-none"><h4 class="display-4 p-0">Introduction to Geospatial Concepts</h4></a>
@@ -341,7 +345,7 @@
 <p class="my-2">The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and covers the following topics: Introduction to raster and vector data format and attributes, examples of data types commonly stored in raster vs vector format, an introduction to categorical vs continuous raster data and multi-layer rasters, an introduction to the file types and R packages used in the remainder of this workshop, an introduction to coordinate reference systems and the PROJ4 format,  and an overview of commonly used programs and applications for working with geospatial data.
 </p>
 <p class="my-2"><a href="/gallery/course.html" class="badge bg-primary link-light">course</a></p>
-<p class="mt-3"><a href="https://datacarpentry.org/organization-geospatial/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://datacarpentry.org/organization-geospatial/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -353,7 +357,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://darribas.org/materials.html" class="text-decoration-none"><h4 class="display-4 p-0">Dani Arribas-Bel Course Repositories</h4></a>

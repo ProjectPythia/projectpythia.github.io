@@ -3,14 +3,19 @@
 
 <span class="display-3">Displaying "documentation" tags</span>
 
-<div class="d-flex mb-4">
+<div class="d-sm-flex mt-3 mb-4">
+<div class="d-flex gallery-menu">
+<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+</div>
+<div class="ms-auto d-flex">
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Domains
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Domains
+</button>
+<ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+<li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
@@ -18,32 +23,32 @@
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
 <li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
 
-  </ul>
+</ul>
 </div>
 
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Formats
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
-    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Formats
+</button>
+<ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+<li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
 <li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
 <li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
 <li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
 <li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
 <li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
 
-  </ul>
+</ul>
 </div>
 
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Packages
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Packages
+</button>
+<ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+<li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
 <li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
 <li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
 <li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
@@ -67,11 +72,10 @@
 <li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
 <li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
 
-  </ul>
+</ul>
 </div>
 
-<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
-<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
 </div>
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
 
@@ -85,7 +89,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/cartopy.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://scitools.org.uk/cartopy/docs/latest/" class="text-decoration-none"><h4 class="display-4 p-0">Cartopy Documentation</h4></a>
@@ -104,7 +108,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://contextily.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Documentation</h4></a>
@@ -124,7 +128,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/dask.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://dask.org" class="text-decoration-none"><h4 class="display-4 p-0">Dask</h4></a>
@@ -143,7 +147,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geopandas.org" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Documentation</h4></a>
@@ -163,7 +167,7 @@
 </p>
 <p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
 <a href="/gallery/geopandas.html" class="badge bg-primary link-light">geopandas</a></p>
-<p class="mt-3"><a href="https://geopandas.org" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://geopandas.org" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -176,7 +180,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://hvplot.holoviz.org/" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot</h4></a>
@@ -196,7 +200,7 @@
 </p>
 <p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
 <a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a></p>
-<p class="mt-3"><a href="https://hvplot.holoviz.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="https://hvplot.holoviz.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -209,7 +213,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://ipyleaflet.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Ipyleaflet</h4></a>
@@ -228,7 +232,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/matplotlib.svg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://matplotlib.org/" class="text-decoration-none"><h4 class="display-4 p-0">Matplotlib</h4></a>
@@ -247,7 +251,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy</h4></a>
@@ -266,7 +270,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/numpy.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://numpy.org" class="text-decoration-none"><h4 class="display-4 p-0">Numpy</h4></a>
@@ -285,7 +289,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/pandas.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://pandas.pydata.org/" class="text-decoration-none"><h4 class="display-4 p-0">Pandas</h4></a>
@@ -304,7 +308,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://rasterio.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Rasterio</h4></a>
@@ -323,7 +327,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/siphon" class="text-decoration-none"><h4 class="display-4 p-0">Siphon</h4></a>
@@ -342,7 +346,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://wrf-python.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python</h4></a>
@@ -361,7 +365,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://xarray.pydata.org/" class="text-decoration-none"><h4 class="display-4 p-0">Xarray</h4></a>
@@ -387,7 +391,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 </p>
 <p class="my-2"><a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
 <a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a></p>
-<p class="mt-3"><a href="http://xarray.pydata.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="http://xarray.pydata.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 

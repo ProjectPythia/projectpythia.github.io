@@ -4,10 +4,12 @@
   background: #f8f9fa;
   border-radius: 5px;
   padding: 3rem;
-  width: 60%;
+  width: calc(100% - 8rem);
   height: auto !important;
-  top: 20%;
-  left: 20%;
+  max-height: calc(100% - 8rem);
+  overflow: scroll;
+  top: 4rem;
+  left: 4rem;
   z-index: 20001;
 }
 
@@ -30,8 +32,16 @@
 .modal-img {
   float: right;
   margin: 0 0 2rem 2rem;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 260px;
+  max-height: 260px;
+}
+
+.gallery-menu {
+  margin-bottom: 1rem;
+}
+
+.gallery-card div.container {
+  padding: 0 0 0 1rem;
 }
 
 .gallery-thumbnail {
@@ -44,4 +54,36 @@
 
 .card-subtitle {
   font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  .modal {
+    padding: 2rem;
+    width: calc(100% - 4rem);
+    max-height: calc(100% - 4rem);
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .modal-img {
+    display: none;
+  }
+
+  .gallery-card {
+    flex-direction: column;
+  }
+
+  .gallery-thumbnail {
+    float: none;
+    margin: 0 0 1rem 0;
+    max-width: 100%;
+  }
+
+  .gallery-card div.container {
+    padding: 0;
+  }
+
+  .gallery-return-btn {
+    padding-bottom: 1rem;
+  }
 }

@@ -3,14 +3,19 @@
 
 <span class="display-3">Displaying "data science" tags</span>
 
-<div class="d-flex mb-4">
+<div class="d-sm-flex mt-3 mb-4">
+<div class="d-flex gallery-menu">
+<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
+</div>
+<div class="ms-auto d-flex">
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Domains
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-    <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Domains
+</button>
+<ul class="dropdown-menu" aria-labelledby="domainsDropdown">
+<li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
@@ -18,32 +23,32 @@
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
 <li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
 
-  </ul>
+</ul>
 </div>
 
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Formats
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="formatsDropdown">
-    <li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Formats
+</button>
+<ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+<li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
 <li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
 <li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
 <li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
 <li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
 <li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
 
-  </ul>
+</ul>
 </div>
 
 
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    Packages
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-    <li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Packages
+</button>
+<ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+<li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
 <li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
 <li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
 <li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
@@ -67,11 +72,10 @@
 <li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
 <li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
 
-  </ul>
+</ul>
 </div>
 
-<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>
-<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>
+</div>
 </div>
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
 
@@ -85,7 +89,7 @@
 
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://darribas.org/materials.html" class="text-decoration-none"><h4 class="display-4 p-0">Dani Arribas-Bel Course Repositories</h4></a>
