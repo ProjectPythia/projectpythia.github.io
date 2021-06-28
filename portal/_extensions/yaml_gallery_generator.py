@@ -43,12 +43,12 @@ def _generate_tag_menu(all_items, tag_key):
 
     return f"""
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    {tag_key.title()}
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
-    {options}
-  </ul>
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+{tag_key.title()}
+</button>
+<ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
+{options}
+</ul>
 </div>
 """
 
@@ -57,12 +57,16 @@ def _generate_menu(all_items, flt=None):
 
     key_list = _generate_sorted_tag_keys(all_items)
 
-    menu_html = '<div class="d-flex mb-4">\n'
-    for tag_key in key_list:
-        menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
+    menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
+    menu_html += '<div class="d-flex gallery-menu">\n'
+    menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
     if flt:
         menu_html += '<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>\n'
-    menu_html += '<div class="ms-auto"><a role="button" class="btn btn-primary btn-sm" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
+    menu_html += '</div>\n'
+    menu_html += '<div class="ms-auto d-flex">\n'
+    for tag_key in key_list:
+        menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
+    menu_html += '</div>\n'
     menu_html += '</div>\n'
     menu_html += '<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>\n'
     return menu_html
@@ -124,7 +128,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 {affiliations_str}
 <p class="my-2">{item['description']}</p>
 <p class="my-2">{tags}</p>
-<p class="mt-3"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+<p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 """
@@ -133,7 +137,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             f"""\
 ---
 
-<div class="d-flex">
+<div class="d-flex gallery-card">
 <img src="{thumbnail}" class="gallery-thumbnail" />
 <div class="container">
 <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
