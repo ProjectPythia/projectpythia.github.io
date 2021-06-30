@@ -109,6 +109,50 @@ Packages
 <a href="/gallery/course.html" class="badge bg-primary link-light">course</a>
 
 
+---
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://carpentrieslab.github.io/python-aos-lesson/" class="text-decoration-none"><h4 class="display-4 p-0">Python for Atmosphere and Ocean Science</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <br/><strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
+<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command lin <a class="modal-btn">...more</a></p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="/_static/thumbnails/DC_logo_vision.png" class="modal-img" />
+<h3 class="display-3">Python for Atmosphere and Ocean Science</h3>
+<strong>Author:</strong> 
+<br/>
+<strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
+<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
+<p class="my-2"><a href="/gallery/atmospheric-science.html" class="badge bg-primary link-light">atmospheric science</a>
+<a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
+<a href="/gallery/climate-science.html" class="badge bg-primary link-light">climate science</a>
+<a href="/gallery/course.html" class="badge bg-primary link-light">course</a>
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a></p>
+<p class="mt-3 mb-0"><a href="https://carpentrieslab.github.io/python-aos-lesson/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/atmospheric-science.html" class="badge bg-primary link-light">atmospheric science</a>
+<a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
+<a href="/gallery/climate-science.html" class="badge bg-primary link-light">climate science</a>
+<a href="/gallery/course.html" class="badge bg-primary link-light">course</a>
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
 ````
 
 <div class="modal-backdrop"></div>
