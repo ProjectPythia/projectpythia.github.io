@@ -989,7 +989,7 @@
     - name: Max Grover
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-     - name: Drew Camron
+    - name: Drew Camron
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-pandas.jpeg
