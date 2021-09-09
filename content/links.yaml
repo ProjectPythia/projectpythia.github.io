@@ -810,7 +810,7 @@
     - name: Julia Kent
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-txtfile.jpeg
   tags:
     packages:
       - pure python
@@ -826,7 +826,7 @@
     - name: Julia Kent
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-datadict.jpeg
   tags:
     packages:
       - pure python
@@ -842,7 +842,7 @@
     - name: Julia Kent
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-writingfx.jpeg
   tags:
     packages:
       - pure python
@@ -858,7 +858,7 @@
     - name: Julia Kent
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-firstpackage.jpeg
   tags:
     packages:
       - pure python
@@ -874,7 +874,7 @@
     - name: Julia Kent
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-builtinpackage.jpeg
   tags:
     packages:
       - pure python
@@ -890,7 +890,7 @@
     - name: Kevin Paul
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-jupyter.jpeg
   tags:
     packages:
       - jupyter
@@ -906,7 +906,7 @@
     - name: A Kootz
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-numpy.jpeg
   tags:
     packages:
       - numpy
@@ -922,7 +922,7 @@
     - name: Anissa Zacharias
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-matplotlib.jpeg
   tags:
     packages:
       - matplotlib
@@ -940,7 +940,7 @@
     - name: A Kootz
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-oop.jpeg
   tags:
     formats:
       - video
@@ -954,7 +954,7 @@
     - name: Michaela Sizemore
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-cartopy.jpeg
   tags:
     packages:
       - matplotlib
@@ -973,7 +973,7 @@
     - name: Kevin Paul
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-git.jpeg
   tags:
     packages:
       - git
@@ -992,7 +992,7 @@
      - name: Drew Camron
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-pandas.jpeg
   tags:
     packages:
       - pandas
@@ -1008,7 +1008,7 @@
     - name: Anderson Banihirwe
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-xarray1.jpeg
   tags:
     packages:
       - xarray
@@ -1024,7 +1024,7 @@
     - name: Anderson Banihirwe
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-xarray2.jpeg
   tags:
     packages:
       - xarray
@@ -1040,7 +1040,7 @@
     - name: Anderson Banihirwe
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-dask1.jpeg
   tags:
     packages:
       - dask
@@ -1056,7 +1056,7 @@
     - name: Anderson Banihirwe
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-dask2.jpeg
   tags:
     packages:
       - dask
@@ -1072,7 +1072,7 @@
     - name: Anissa Zacharias
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-geocatplot.jpeg
   tags:
     packages:
       - geocat-viz
@@ -1090,7 +1090,7 @@
     - name: A Kootz
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/Xdev.png
+  thumbnail: /_static/thumbnails/ptss-geocatcomp.jpeg
   tags:
     packages:
       - geocat-comp
