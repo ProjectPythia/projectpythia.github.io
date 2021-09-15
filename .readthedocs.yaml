@@ -4,8 +4,10 @@ version: 2
 build:
   image: latest
 
-conda:
-  environment: ci/environment.yml
+python:
+  install:
+    - requirements: ci/environment.yml
+    - method: pip
 
 sphinx:
   configuration: portal/conf.py
