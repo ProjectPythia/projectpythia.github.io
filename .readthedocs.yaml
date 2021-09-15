@@ -6,8 +6,9 @@ build:
 
 python:
   install:
-  - path: ci/environment.yml
   - method: pip
+    requirements: ci/environment.yml
+  
 
 sphinx:
   configuration: portal/conf.py
