@@ -73,12 +73,6 @@ def build_from_items(items, filename, display_name, menu_html):
         if not item.get('thumbnail'):
             item['thumbnail'] = '/_static/images/ebp-logo.png'
         thumbnail = item['thumbnail']
-        tag_list = sorted((itertools.chain(*item['tags'].values())))
-        tags = [
-            f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
-            for tag in tag_list
-        ]
-        tags = '\n'.join(tags)
 
         authors = [a.get('name', 'anonymous') for a in item['authors']]
         authors_str = f"Created by: {', '.join(authors)}"
@@ -91,6 +85,14 @@ def build_from_items(items, filename, display_name, menu_html):
 
         affiliation_url = [a.get('affiliation_url') for a in item['authors']][0]
         affiliation_url_str = '' if affiliation_url is None else f'{affiliation} Site: <{affiliation_url}>'
+
+        tag_list = sorted((itertools.chain(*item['tags'].values())))
+        tag_list.append(set(affiliation))
+        tags = [
+            f'{{link-badge}}`"/pages/links/{tag.replace(" ", "-")}.html",{tag},cls=badge-primary badge-pill text-light`'
+            for tag in tag_list
+        ]
+        tags = '\n'.join(tags)
 
         panels_body.append(
             f"""\
@@ -163,7 +165,7 @@ def main(app):
     build_from_items(all_items, 'links', 'External Links Gallery', menu_html)
 
     menu_html_flt = _generate_menu(all_items, flt=True)
-    tag_set = _generate_tag_set(all_items)
+        tag_set = _generate_tag_set(all_items)
 
     for tag in tag_set:
         items = [item for item in all_items if _tag_in_item(item, tag)]
