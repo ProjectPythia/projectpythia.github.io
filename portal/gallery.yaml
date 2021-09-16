@@ -1036,7 +1036,7 @@
     - name: Kevin Paul
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
-  thumbnail: /_static/thumbnails/ptss-git.jpeg
+  thumbnail: /_static/thumbnails/ptss-git.png
   tags:
     packages:
       - git
