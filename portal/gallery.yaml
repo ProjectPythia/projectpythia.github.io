@@ -213,6 +213,8 @@
     - cartopy
     formats:
     - gallery
+  domains:
+      - data visualization
 
 - title: Contextily Documentation
   url: https://contextily.readthedocs.io
@@ -299,6 +301,8 @@
     - geocat-viz
     formats:
     - gallery
+    domains:
+      - data visualization
 
 - title: GeoPandas Documentation
   url: https://geopandas.org
@@ -353,6 +357,8 @@
     - hvPlot
     formats:
     - tutorial
+    domains:
+      - data visualization
 
 - title: hvPlot Gallery
   url: https://hvplot.holoviz.org/reference/index.html
@@ -367,6 +373,8 @@
     - hvPlot
     formats:
     - gallery
+    domains:
+      - data visualization
 
 - title: Ipyleaflet
   url: https://ipyleaflet.readthedocs.io
@@ -393,6 +401,8 @@
     - matplotlib
     formats:
     - documentation
+    domains:
+      - data visualization
 
 - title: Matplotlib Tutorial
   url: https://matplotlib.org/stable/tutorials/index.html
@@ -406,6 +416,8 @@
     - matplotlib
     formats:
     - tutorial
+    domains:
+      - data visualization
 
 - title: Matplotlib Gallery
   url: https://matplotlib.org/stable/gallery/index.html
@@ -419,6 +431,8 @@
     - matplotlib
     formats:
     - gallery
+    domains:
+      - data visualization
 
 - title: MetPy
   url: https://unidata.github.io/MetPy/latest/index.html
