@@ -14,6 +14,8 @@
     - pure python
     formats:
     - video
+    affiliation:
+    - pythia
 
 - title: Unidata Python Training
   url: https://unidata.github.io/python-training/python/intro-to-python/
@@ -26,6 +28,8 @@
   tags:
     formats:
     - course
+    affiliation:
+    - unidata
 
 - title: Unidata Python Workshop - Jupyter Notebooks Introduction
   url: https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
@@ -38,6 +42,8 @@
   tags:
     packages:
     - jupyter
+    affiliation:
+    - unidata
 
 - title: An Introduction to Earth and Environmental Data Science
   url: https://earth-env-data-science.github.io/intro
@@ -52,6 +58,8 @@
   tags:
     formats:
     - course
+    affiliation:
+    - pangeo
 
 - title: The Climate Laboratory
   url: https://brian-rose.github.io/ClimateLaboratoryBook/home
@@ -794,6 +802,8 @@
     - remote sensing
     - physical oceanography
     - hydrology
+    affiliation:
+    - pangeo
 - title: Python for Atmosphere and Ocean Science
   description: Lesson materials for a one-day workshop on using Python in the atmosphere
     and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”)
