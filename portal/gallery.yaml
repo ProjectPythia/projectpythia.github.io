@@ -833,3 +833,29 @@
     domains:
     - atmospheric science
     - climate science
+- title: Python for Geosciences
+  description: 'This is a short overview of how Python is used in science and particularly
+    in geosciences targeting people who already know programming (e.g. Matlab). '
+  url: https://github.com/koldunovn/python_for_geosciences
+  thumbnail: ''
+  authors:
+  - name: Nikolay Koldunov
+    affiliation: 'Alfred Wegener Institute for Polar and Marine Research '
+    affiliation_url: https://www.awi.de/en/
+    email: koldunovn@gmail.com
+  tags:
+    packages:
+    - matplotlib
+    - scipy
+    - pandas
+    - xarray
+    - cartopy
+    formats:
+    - course
+    - tutorial
+    - video
+    domains:
+    - atmospheric science
+    - climate science
+    - physical oceanography
+    - data science
