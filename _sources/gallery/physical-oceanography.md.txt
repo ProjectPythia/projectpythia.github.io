@@ -118,6 +118,34 @@ Packages
 <a href="/gallery/xgcm.html" class="badge bg-primary link-light">xgcm</a>
 
 
+---
+
+<div class="d-flex gallery-card">
+<img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://github.com/koldunovn/python_for_geosciences" class="text-decoration-none"><h4 class="display-4 p-0">Python for Geosciences</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/><strong>Affiliation:</strong> <a href="https://www.awi.de/en/">Alfred Wegener Institute for Polar and Marine Research </a></p>
+<p class="my-2">This is a short overview of how Python is used in science and particularly in geosciences targeting people who already know programming (e.g. Matlab). </p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/atmospheric-science.html" class="badge bg-primary link-light">atmospheric science</a>
+<a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
+<a href="/gallery/climate-science.html" class="badge bg-primary link-light">climate science</a>
+<a href="/gallery/course.html" class="badge bg-primary link-light">course</a>
+<a href="/gallery/data-science.html" class="badge bg-primary link-light">data science</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/physical-oceanography.html" class="badge bg-primary link-light">physical oceanography</a>
+<a href="/gallery/scipy.html" class="badge bg-primary link-light">scipy</a>
+<a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
+<a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+<a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
 ````
 
 <div class="modal-backdrop"></div>
