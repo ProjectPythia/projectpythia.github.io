@@ -6,8 +6,8 @@
   - name: Xdev Team
     email: xdev@ucar.edu
     url: https://ncar.github.io/xdev/
-    affiliation: NCAR
-    affiliation_url: https://ncar.ucar.edu/
+    institution: NCAR
+    institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/Xdev.png
   tags:
     packages:
@@ -20,8 +20,8 @@
   description: |
     Introduction to Python for Atmospheric Science & Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     formats:
@@ -32,8 +32,8 @@
   description: |
     Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
@@ -45,9 +45,9 @@
     This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
   authors:
   - name: Ryan Abernathey
-    affiliation: Lamont-Doherty Earth Observatory
+    institution: Lamont-Doherty Earth Observatory
   - name: Kerry Key
-    affiliation: Lamont-Doherty Earth Observatory
+    institution: Lamont-Doherty Earth Observatory
   thumbnail: /_static/thumbnails/earth_env_data_science.png
   tags:
     formats:
@@ -60,7 +60,7 @@
   authors:
   - name: Brian Rose
     url: http://www.atmos.albany.edu/facstaff/brose/
-    affiliation: University of Albany
+    institution: University of Albany
   thumbnail: /_static/thumbnails/climlablogo.png
   tags:
     formats:
@@ -79,7 +79,7 @@
   authors:
   - name: Earth Lab
     url: https://www.earthdatascience.org/
-    affiliation: University of Colorado Boulder
+    institution: University of Colorado Boulder
   thumbnail: /_static/thumbnails/earth-lab-logo.png
   tags:
     formats:
@@ -91,7 +91,7 @@
     This site contains open, tutorials and course materials covering topics including data integration, GIS and data intensive science.
   authors:
   - name: Earth Lab
-    affiliation: University of Colorado Boulder
+    institution: University of Colorado Boulder
   thumbnail: /_static/thumbnails/earth-lab-logo.png
   tags:
     formats:
@@ -104,7 +104,7 @@
   authors:
   - name: eScience Institute
     url: https://escience.washington.edu/
-    affiliation: University of Washington
+    institution: University of Washington
   thumbnail: /_static/thumbnails/eScience_Logo_HR.png
   tags:
     formats:
@@ -140,7 +140,7 @@
   authors:
   - name: Jay Gopalakrishnan
     url: http://web.pdx.edu/~gjay/
-    affiliation: Portland State University
+    institution: Portland State University
   thumbnail: /_static/thumbnails/portland-state.png
   tags:
     formats:
@@ -153,7 +153,7 @@
   authors:
   - name: Philip Austin
     email: paustin@eos.ubc.ca
-    affiliation: University of British Columbia
+    institution: University of British Columbia
   thumbnail: /_static/thumbnails/british-columbia.jpg
   tags:
     formats:
@@ -179,8 +179,8 @@
     A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
   authors:
   - name: Dani Arribas-Bel
-    affiliation: University of Liverpool Department of Geography and Planning
-    affiliation_url: https://www.liverpool.ac.uk/geography-and-planning/
+    institution: University of Liverpool Department of Geography and Planning
+    institution_url: https://www.liverpool.ac.uk/geography-and-planning/
   thumbnail:
   tags:
     formats:
@@ -274,8 +274,8 @@
   authors:
   - name: GeoCat
     url: https://geocat.ucar.edu/
-    affiliation: NCAR
-    affiliation_url: https://ncar.ucar.edu/
+    institution: NCAR
+    institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/geocat.png
   tags:
     packages:
@@ -290,8 +290,8 @@
   authors:
   - name: GeoCAT
     url: https://geocat.ucar.edu/
-    affiliation: NCAR
-    affiliation_url: https://ncar.ucar.edu/
+    institution: NCAR
+    institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/geocat.png
   tags:
     packages:
@@ -426,8 +426,8 @@
     MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
   authors:
   - name: MetPy developers
-    affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+    institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
@@ -441,8 +441,8 @@
     This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
   authors:
   - name: MetPy developers
-    affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+    institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
@@ -455,8 +455,8 @@
   description: |
     MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
@@ -470,8 +470,8 @@
     Examples of using a variety of MetPy’s functionality together.
   authors:
   - name: MetPy Developers
-    affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+    institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
@@ -484,8 +484,8 @@
   description: |
     Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     domains:
@@ -498,8 +498,8 @@
   description: |
     A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy-mondays.jpeg
   tags:
     packages:
@@ -536,8 +536,8 @@
   description: |
     Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
@@ -551,8 +551,8 @@
     NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
   authors:
   - name: A. Chabot-LeClerc
-    affiliation: Enthought
-    affiliation_url: https://www.enthought.com/
+    institution: Enthought
+    institution_url: https://www.enthought.com/
   thumbnail: /_static/thumbnails/Enthought.png
   tags:
     packages:
@@ -631,8 +631,8 @@
     Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
   authors:
   - name: Siphon Contributors
-    affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+    institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
@@ -645,8 +645,8 @@
   description: |
     An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
@@ -660,8 +660,8 @@
     Examples of using Siphon’s functionality.
   authors:
   - name: Siphon Contributors
-    affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+    institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
@@ -674,8 +674,8 @@
   description: |
     A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
   authors:
-  - affiliation: NCAR
-    affiliation_url: https://ncar.ucar.edu/
+  - institution: NCAR
+    institution_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
     packages:
@@ -688,8 +688,8 @@
   description: |
     Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
   authors:
-  - affiliation: NCAR
-    affiliation_url: https://ncar.ucar.edu/
+  - institution: NCAR
+    institution_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
     packages:
@@ -719,8 +719,8 @@
   description: |
     An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
   authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
+  - institution: Unidata
+    institution_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/xarray.png
   tags:
     packages:
@@ -746,16 +746,16 @@
   thumbnail: ''
   authors:
   - name: Lisa Tauxe
-    affiliation: Scripps Institution of Oceanography
-    affiliation_url: https://scripps.ucsd.edu/
+    institution: Scripps Institution of Oceanography
+    institution_url: https://scripps.ucsd.edu/
     email: ltauxe@ucsd.edu
   - name: Hanna Asefaw
-    affiliation: ''
-    affiliation_url: ''
+    institution: ''
+    institution_url: ''
     email: hasefaw@ucsd.edu
   - name: Brendan Cych
-    affiliation: ''
-    affiliation_url: ''
+    institution: ''
+    institution_url: ''
     email: bcych@ucsd.edu
   tags:
     formats:
@@ -772,8 +772,8 @@
   thumbnail: https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png
   authors:
   - name: Pangeo Community
-    affiliation: Pangeo
-    affiliation_url: http://pangeo.io/
+    institution: Pangeo
+    institution_url: http://pangeo.io/
     email: ''
   tags:
     packages:
@@ -804,12 +804,12 @@
   thumbnail: /_static/thumbnails/DC_logo_vision.png
   authors:
   - name: ''
-    affiliation: Data Carpentry
-    affiliation_url: https://datacarpentry.org/
+    institution: Data Carpentry
+    institution_url: https://datacarpentry.org/
     email: ''
   - name: ''
-    affiliation: ''
-    affiliation_url: ''
+    institution: ''
+    institution_url: ''
     email: ''
   tags:
     packages:
