@@ -15,10 +15,10 @@ below.
 
 ### Building the site
 
-After checking out a local copy of the site, in your favorite terminal, navigate to the `content` directory of the source repository
+After checking out a local copy of the site, in your favorite terminal, navigate to the `portal` directory of the source repository
 
 ```bash
-cd projectpythia.github.io/content
+cd projectpythia.github.io/portal
 ```
 
 Use [conda](https://docs.conda.io/) to set up a build environment:
@@ -52,7 +52,7 @@ Build the site locally using Sphinx (which you just installed in the `pythia` en
 make html
 ```
 
-The newly rendered site is now available in `content/_build/html/index.html`.
+The newly rendered site is now available in `portal/_build/html/index.html`.
 Open with your web browser, or from the terminal:
 
 ```bash
@@ -62,7 +62,7 @@ open _build/html/index.html
 However, many of the links will not work. For all of the links
 found in the portal to work properly, you'll need to set up a local
 testing server. This can be done with Python's http.server by running
-the following command from within the content directory:
+the following command from within the `portal` directory:
 
 ```bash
 python -m http.server --directory _build/html/
