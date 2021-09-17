@@ -867,7 +867,7 @@
 - title: Your First Python Tutorial - Reading in a .txt File
   url: https://youtu.be/Jog7ybd6amw
   description: |
-    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The conent to follow along with this video is hosted on the [Xdev Python Tutorial website](https://ncar.github.io/python-tutorial/tutorials/yourfirst.html).
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
   authors:
     - name: Project Pythia
     - name: Julia Kent
@@ -883,7 +883,7 @@
 - title: Your First Python Tutorial - Creating a Data Dictionary
   url: https://youtu.be/5z6-t62x7Xs
   description: |
-    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The conent to follow along with this video is hosted on the [Xdev Python Tutorial website](https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary).
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
   authors:
     - name: Project Pythia
     - name: Julia Kent
@@ -899,7 +899,7 @@
 - title: Your First Python Tutorial - Writing Functions
   url: https://youtu.be/BerEf_3CsL8
   description: |
-    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The conent to follow along with this video is hosted on the [Xdev Python Tutorial website](https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions).
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The conent to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
   authors:
     - name: Project Pythia
     - name: Julia Kent
@@ -915,7 +915,7 @@
 - title: Your First Python Tutorial - Creating Your Own Package
   url: https://youtu.be/6lbbTwGFcTc
   description: |
-    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The conent to follow along with this video is hosted on the [Xdev Python Tutorial website](https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package).
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
   authors:
     - name: Project Pythia
     - name: Julia Kent
@@ -931,7 +931,7 @@
 - title: Your First Python Tutorial - Using a Built-In Package and Publishing Your Package
   url: https://youtu.be/44QUMCh2ZHU
   description: |
-    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The conent to follow along with this video is hosted on the [Xdev Python Tutorial website](https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package).
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
   authors:
     - name: Project Pythia
     - name: Julia Kent
@@ -963,7 +963,7 @@
 - title: Python Tutorial Seminar Series - Numpy
   url: https://youtu.be/kstc-6uz7AQ
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The conent to follow along with this video is hosted on this [Numpy Google Collab](https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The conent to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
   authors:
     - name: Project Pythia
     - name: A Kootz
@@ -979,7 +979,7 @@
 - title: Python Tutorial Seminar Series - Matplotlib
   url: https://youtu.be/EiPRIdHQEmE
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this [Matplotlib Tutorial GitHub Repository](https://github.com/anissa111/matplotlib-tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Anissa Zacharias
@@ -997,7 +997,7 @@
 - title: Python Tutorial Seminar Series - Object Oriented Programming
   url: https://youtu.be/GEFnL8C62u8
   description: |
-    Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this [Object Oriented Programming Tutorial GitHub Repository](https://github.com/pilotchute/oop_hrrr_tutorial).
+    Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: A Kootz
