@@ -1011,7 +1011,7 @@
 - title: Python Tutorial Seminar Series - Cartopy
   url: https://youtu.be/ivmd3RluMiw
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this [Cartopy Tutorial GitHub Repository](https://github.com/michaelavs/cartopy_tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Michaela Sizemore
@@ -1030,7 +1030,7 @@
 - title: Python Tutorial Seminar Series - Git and GitHub
   url: https://youtu.be/fYkPn0Nttlg
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this [Git and GitHub Demo GitHub Repository](https://github.com/NCAR/git-github-demo).
+    Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Kevin Paul
@@ -1046,7 +1046,7 @@
 - title: Python Tutorial Seminar Series - Pandas
   url: https://youtu.be/BsV3ek7qsiM
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this [Pandas Tutorial GitHub Repository](https://github.com/mgrover1/ncar_pandas_tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Max Grover
@@ -1065,7 +1065,7 @@
 - title: Python Tutorial Seminar Series - Xarray Part 1
   url: https://youtu.be/Ss4ryKukhi4
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this [Xarray Tutorial GitHub Repository](https://github.com/andersy005/xarray-tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
@@ -1081,7 +1081,7 @@
 - title: Python Tutorial Seminar Series - Xarray Part 2
   url: https://youtu.be/2H_4drBwORY
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this [Xarray Tutorial GitHub Repository](https://github.com/andersy005/xarray-tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
@@ -1097,7 +1097,7 @@
 - title: Python Tutorial Seminar Series - Dask Part 1
   url: https://youtu.be/wn-QM6QUB_U
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this [Xarray Tutorial GitHub Repository](https://github.com/andersy005/xarray-tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
@@ -1113,7 +1113,7 @@
 - title: Python Tutorial Seminar Series - Dask Part 2
   url: https://youtu.be/yn4_-1pHC5k
   description: |
-    Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this [Xarray Tutorial GitHub Repository](https://github.com/andersy005/xarray-tutorial).
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
@@ -1129,7 +1129,7 @@
 - title: Python Tutorial Seminar Series - Plotting with GeoCAT
   url: https://youtu.be/It231le1fAU
   description: |
-    Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this [Plotting with GeoCat GitHub Repository](https://github.com/anissa111/plotting-with-geocat-tutorial).
+    Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: Anissa Zacharias
@@ -1147,7 +1147,7 @@
 - title: Python Tutorial Seminar Series - GeoCAT-Comp
   url: https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s
   description: |
-    Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this [GeoCat-Comp GitHub Repository](https://github.com/pilotchute/geocat_comp_tutorial).
+    Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</A>.
   authors:
     - name: Project Pythia
     - name: A Kootz
