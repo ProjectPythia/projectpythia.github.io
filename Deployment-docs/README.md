@@ -122,7 +122,7 @@ jobs:
 
 ### Previewing the built site
 
-To preview the built site, we'll be using GitHub Actions to interact with Netlify API so as to retrieve the site's URL and posts this URL as a comment on the pull request. GitHub workflow for building and deploying the site. This workflow is saved in `.github/workflows/deploy.yaml`:
+To preview the built site, we'll be using GitHub Actions to interact with Netlify API so as to retrieve the site's URL and posts this URL as a comment on the pull request. GitHub workflow for building and deploying the site. This workflow is saved in `.github/workflows/preview.yaml`:
 
 <details>
 <summary>
