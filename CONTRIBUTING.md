@@ -84,4 +84,4 @@ You can re-activate the `pythia` conda environment at any time with `conda activ
 
 Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythia - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click "Show all checks" for this to be displayed.)
 
-![Checks](../_static/images/ReadtheDocsAutobuild.png)
+![Checks](/portal/_static/images/ReadtheDocsAutobuild.png)
