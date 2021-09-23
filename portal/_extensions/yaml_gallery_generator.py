@@ -118,7 +118,9 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             short_description = item['description']
             modal_str = ''
         else:
-            short_description = truncate(item['description'],max_descr_len,ellipsis='<a class="modal-btn"> ...more</a>')
+            short_description = truncate(
+                item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ...more</a>'
+            )
             modal_str = f"""
 <div class="modal">
 <div class="content">
