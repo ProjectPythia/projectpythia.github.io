@@ -27,7 +27,14 @@ Use [conda](https://docs.conda.io/) to set up a build environment:
 conda env update -f ../ci/environment.yml
 ```
 
-This will create or update the dev environment (`pythia`).
+This will create the dev environment (`pythia`). If you have previously created the environment, running this command will add any new packages that have since been added to the `environment.yml` file.
+
+It's a good idea to also keep the *versions* of each package in the `pythia` environment up to date by doing:
+
+```bash
+conda activate pythia
+conda update --all
+```
 
 #### Install `pre-commit` hooks
 
@@ -78,7 +85,11 @@ When you're done, you can deactivate the dedicated build environment with
 conda deactivate
 ```
 
-You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
+You can re-activate the `pythia` conda environment at any time with `conda activate pythia`. You may also want to update to the latest versions of each package in the activated environment by doing
+
+```bash
+conda update --all
+```
 
 ### To view the Read the Docs autobuild
 
