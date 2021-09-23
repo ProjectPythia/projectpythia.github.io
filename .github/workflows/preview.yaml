@@ -62,6 +62,7 @@ jobs:
           issue-number: ${{ steps.find-pull-request.outputs.number }}
           body: |
             ${{ env.comment_message }}
+
             🚧 Deployment in progress for git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
       - name: Update comment
         if: |
@@ -74,6 +75,7 @@ jobs:
           edit-mode: replace
           body: |
             ${{ env.comment_message }}
+
             🚧 Deployment in progress for git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
       - name: Download Artifact site
         if: |
@@ -123,5 +125,6 @@ jobs:
           edit-mode: replace
           body: |
             ${{ env.comment_message }}
+
             🔍 Git commit SHA:  ${{ steps.find-pull-request.outputs.sha }}
             ✅ Deployment Preview URL: ${{ steps.netlify.outputs.deploy-url }}
