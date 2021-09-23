@@ -85,7 +85,7 @@ When you're done, you can deactivate the dedicated build environment with
 conda deactivate
 ```
 
-You can re-activate the `pythia` conda environment at any time with `conda activate pythia`. You may also want to update to the latest versions of each package in the activated environment by doing
+You can re-activate the `pythia` conda environment at any time with `conda activate pythia`. You may also want to update each package in the activated environment to their latest versions by doing
 
 ```bash
 conda update --all
