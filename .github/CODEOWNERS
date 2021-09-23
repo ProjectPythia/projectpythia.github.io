@@ -1,4 +1,5 @@
 # GLOBAL OWNER
 *   @ProjectPythia/infrastructure
 
-/content/ @ProjectPythia/infrastructure @ProjectPythia/education
+# All markdown files are considered content
+*.md @ProjectPythia/education
