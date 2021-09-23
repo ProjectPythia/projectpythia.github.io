@@ -59,6 +59,8 @@ Build the site locally using Sphinx (which you just installed in the `pythia` en
 make html
 ```
 
+If this step fails and you have not updated your conda environment recently, try updating with `conda env update -f ../ci/environment.yml` and `conda update --all` as described above.
+
 The newly rendered site is now available in `portal/_build/html/index.html`.
 Open with your web browser, or from the terminal:
 
