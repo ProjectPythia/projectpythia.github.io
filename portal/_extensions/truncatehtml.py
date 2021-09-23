@@ -22,8 +22,6 @@
 
 from __future__ import print_function
 
-import sys
-
 END = -1
 
 # HTML5 void-elements that do not require a closing tag
