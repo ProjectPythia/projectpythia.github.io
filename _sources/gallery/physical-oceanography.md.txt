@@ -18,6 +18,7 @@ Domains
 <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
 <li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
@@ -55,6 +56,7 @@ Packages
 <li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
 <li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
 <li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
 <li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
 <li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
 <li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>

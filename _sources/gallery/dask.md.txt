@@ -18,6 +18,7 @@ Domains
 <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
 <li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
@@ -55,6 +56,7 @@ Packages
 <li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
 <li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
 <li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
 <li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
 <li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
 <li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
@@ -163,7 +165,7 @@ Packages
 <div class="container">
 <a href="https://carpentrieslab.github.io/python-aos-lesson/" class="text-decoration-none"><h4 class="display-4 p-0">Python for Atmosphere and Ocean Science</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <br/><strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
-<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command lin <a class="modal-btn">...more</a></p>
+<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
@@ -198,6 +200,44 @@ Packages
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
 <a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
+---
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ptss-dask1.jpeg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://youtu.be/wn-QM6QUB_U" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+
+
+---
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ptss-dask2.jpeg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://youtu.be/yn4_-1pHC5k" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/dask.html" class="badge bg-primary link-light">dask</a>
+<a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
 
 
 ````

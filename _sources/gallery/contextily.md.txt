@@ -18,6 +18,7 @@ Domains
 <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
 <li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
@@ -55,6 +56,7 @@ Packages
 <li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
 <li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
 <li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
 <li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
 <li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
 <li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
@@ -114,7 +116,7 @@ Packages
 <div class="container">
 <a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Tutorial</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors<br/></p>
-<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integr <a class="modal-btn">...more</a></p>
+<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 

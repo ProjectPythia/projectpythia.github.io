@@ -18,6 +18,7 @@ Domains
 <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
 <li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
@@ -55,6 +56,7 @@ Packages
 <li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
 <li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
 <li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
 <li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
 <li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
 <li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
@@ -94,7 +96,7 @@ Packages
 <div class="container">
 <a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Tutorial</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors<br/></p>
-<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integr <a class="modal-btn">...more</a></p>
+<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
@@ -165,7 +167,7 @@ Packages
 <div class="container">
 <a href="https://hvplot.holoviz.org/user_guide/index.html" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot Tutorial</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> HoloViz developers<br/></p>
-<p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customi <a class="modal-btn">...more</a></p>
+<p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
@@ -178,7 +180,8 @@ Packages
 
 <p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
 </p>
-<p class="my-2"><a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a>
+<p class="my-2"><a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
+<a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a></p>
 <p class="mt-3 mb-0"><a href="https://hvplot.holoviz.org/user_guide/index.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
@@ -187,6 +190,7 @@ Packages
 
 +++
 
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/hvPlot.html" class="badge bg-primary link-light">hvPlot</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
 
@@ -206,6 +210,7 @@ Packages
 
 +++
 
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
 
@@ -368,7 +373,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>

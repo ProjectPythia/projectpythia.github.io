@@ -18,6 +18,7 @@ Domains
 <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
 <li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
@@ -55,6 +56,7 @@ Packages
 <li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
 <li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
 <li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
 <li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
 <li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
 <li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
@@ -102,6 +104,7 @@ Packages
 
 +++
 
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 
@@ -121,6 +124,7 @@ Packages
 
 +++
 
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
 
@@ -140,6 +144,7 @@ Packages
 
 +++
 
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/gallery.html" class="badge bg-primary link-light">gallery</a>
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 
@@ -150,7 +155,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>
@@ -204,7 +209,7 @@ Packages
 <div class="container">
 <a href="https://carpentrieslab.github.io/python-aos-lesson/" class="text-decoration-none"><h4 class="display-4 p-0">Python for Atmosphere and Ocean Science</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <br/><strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
-<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command lin <a class="modal-btn">...more</a></p>
+<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
@@ -267,6 +272,47 @@ Packages
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
 <a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
 <a href="/gallery/xarray.html" class="badge bg-primary link-light">xarray</a>
+
+
+---
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ptss-matplotlib.jpeg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://youtu.be/EiPRIdHQEmE" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+
+
+---
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ptss-cartopy.jpeg" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://youtu.be/ivmd3RluMiw" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
+</p>
+</div>
+</div>
+
+
++++
+
+<a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
+<a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
 
 
 ````

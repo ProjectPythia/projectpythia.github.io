@@ -18,6 +18,7 @@ Domains
 <li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
 <li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
 <li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
+<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
 <li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
 <li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
 <li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
@@ -55,6 +56,7 @@ Packages
 <li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
 <li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
 <li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
+<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
 <li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
 <li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
 <li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
@@ -152,7 +154,7 @@ Packages
 <div class="container">
 <a href="https://geopandas.org" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Documentation</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
-<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib f <a class="modal-btn">...more</a></p>
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
@@ -185,7 +187,7 @@ Packages
 <div class="container">
 <a href="https://hvplot.holoviz.org/" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> HoloViz developers<br/></p>
-<p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a <a class="modal-btn">...more</a></p>
+<p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
@@ -245,6 +247,7 @@ Packages
 
 +++
 
+<a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/documentation.html" class="badge bg-primary link-light">documentation</a>
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 
@@ -372,7 +375,7 @@ Packages
 <p class="card-subtitle"><strong>Author:</strong> Xarray Developers<br/></p>
 <p class="my-2">xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
 
-Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive <a class="modal-btn">...more</a></p>
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive,<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
 
