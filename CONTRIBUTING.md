@@ -94,7 +94,7 @@ conda activate pythia
 conda update --all
 ```
 
-### To view the Read the Docs autobuild
+### Preview the built site on Netlify
 
 Once a pull request has passed all tests, including the `preview-site` check, the GitHub bot will post a comment with a preview link on the pull request. You can click on the link to launch a new tab with a build of the Project Pythia site.
 
