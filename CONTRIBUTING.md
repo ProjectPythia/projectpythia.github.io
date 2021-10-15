@@ -96,6 +96,8 @@ conda update --all
 
 ### To view the Read the Docs autobuild
 
-Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythia - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click "Show all checks" for this to be displayed.)
+Once a pull request has passed all tests, including the `preview-site` check, the GitHub bot will post a comment with a preview link on the pull request. You can click on the link to launch a new tab with a build of the Project Pythia site.
 
-![Checks](/portal/_static/images/ReadtheDocsAutobuild.png)
+![CI-check](/portal/_static/images/deploy-site-CI-check.png)
+
+![Netlify Preview](/portal/_static/images/netlify-preview.png)
