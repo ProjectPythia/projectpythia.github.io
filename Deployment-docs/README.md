@@ -49,7 +49,7 @@ Whenever a pull request or a push event is triggered on our GitHub repository, w
 
 ### Building the site
 
-We're going to create a GitHub workflow for building and deploying the site. The configurations for this workflow are saved in `.github/workflows/deploy.yaml`:
+We're going to create a GitHub workflow for building and deploying the site. The configurations for this workflow are saved in `.github/workflows/ci.yaml`:
 
 <details>
 <summary>
@@ -216,7 +216,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v2.14.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: deploy.yaml
+          workflow: ci.yaml
           run_id: ${{ github.event.workflow_run.id }}
           name: site-zip
 
