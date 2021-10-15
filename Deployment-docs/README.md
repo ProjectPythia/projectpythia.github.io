@@ -271,5 +271,5 @@ To interact with Netlify API from GitHub Actions we need to generate a personal 
 Head over to the repository secrets page on GitHub: `https://github.com/ORG/REPOSITORY/settings/secrets/actions` and set the following secrets:
 
 - `NETFLIFY_AUTH_TOKEN`: The personal access token generated in Step 5.
-- `NETLIFY_SITE_ID`: The site ID generated in Step 2. This ID can be found on the site's settings page
+- `NETLIFY_SITE_ID`: The site ID generated in Step 2. This ID can be found on the site's settings page (this is the same thing as the `API ID` in the Netlify site settings).
 ![site-id](./images/site-id.png)
