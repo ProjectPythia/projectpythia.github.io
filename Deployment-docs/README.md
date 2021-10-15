@@ -11,7 +11,7 @@ Once you've logged in to Netlify, you can connect your GitHub repository to your
 
 ![create-new-site](./images/create-new-site.png)
 
-After selecting GitHub, you'll see a new page with the GitHub organizations/accounts connected to your netlify account. To select a repository, ensure that you've connected the right organization. Netlify will then show you the repositories that you can connect to your site. If not, click on the `configure the Netlify app...` option and follow the prompts.
+After selecting GitHub, you'll see a new page with the GitHub organizations/accounts connected to your Netlify account. To select a repository, ensure that you've connected the right organization. Netlify will then show you the repositories that you can connect to your site. If not, click on the `configure the Netlify app...` option and follow the prompts.
 
 ![configure-netlify-app](./images/configure-netlify-app.png)
 ![select-repository](./images/select-repository.png)
