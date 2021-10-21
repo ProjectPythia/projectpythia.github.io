@@ -1,7 +1,0 @@
-myst-nb==0.12.3
-sphinx-book-theme
-sphinx-panels
-matplotlib
-pandas
-pyyaml
-pre-commit
