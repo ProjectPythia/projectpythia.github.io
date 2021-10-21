@@ -911,7 +911,7 @@
       - video
     affiliation:
       - pythia
-      - xdev      
+      - xdev
 
 - title: Your First Python Tutorial - Writing Functions
   url: https://youtu.be/BerEf_3CsL8
@@ -930,7 +930,7 @@
       - video
      affiliation:
       - pythia
-      - xdev     
+      - xdev
 
 - title: Your First Python Tutorial - Creating Your Own Package
   url: https://youtu.be/6lbbTwGFcTc
@@ -949,7 +949,7 @@
       - video
     affiliation:
       - pythia
-      - xdev 
+      - xdev
 
 - title: Your First Python Tutorial - Using a Built-In Package and Publishing Your Package
   url: https://youtu.be/44QUMCh2ZHU
