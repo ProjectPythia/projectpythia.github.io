@@ -882,8 +882,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-txtfile.jpeg
   tags:
     packages:
@@ -901,8 +901,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-datadict.jpeg
   tags:
     packages:
@@ -920,15 +920,15 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-writingfx.jpeg
   tags:
     packages:
       - pure python
     formats:
       - video
-     affiliation:
+    affiliation:
       - pythia
       - xdev
 
@@ -939,8 +939,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-firstpackage.jpeg
   tags:
     packages:
@@ -958,8 +958,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-builtinpackage.jpeg
   tags:
     packages:
@@ -977,8 +977,8 @@
   authors:
     - name: Project Pythia
     - name: Kevin Paul
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-jupyter.jpeg
   tags:
     packages:
@@ -996,8 +996,8 @@
   authors:
     - name: Project Pythia
     - name: A Kootz
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-numpy.jpeg
   tags:
     packages:
@@ -1015,8 +1015,8 @@
   authors:
     - name: Project Pythia
     - name: Anissa Zacharias
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-matplotlib.jpeg
   tags:
     packages:
@@ -1036,8 +1036,8 @@
   authors:
     - name: Project Pythia
     - name: A Kootz
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-oop.jpeg
   tags:
     formats:
@@ -1053,8 +1053,8 @@
   authors:
     - name: Project Pythia
     - name: Michaela Sizemore
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-cartopy.jpeg
   tags:
     packages:
@@ -1075,8 +1075,8 @@
   authors:
     - name: Project Pythia
     - name: Kevin Paul
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-git.png
   tags:
     packages:
@@ -1097,8 +1097,8 @@
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
     - name: Drew Camron
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-pandas.jpeg
   tags:
     packages:
@@ -1116,8 +1116,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-xarray1.jpeg
   tags:
     packages:
@@ -1135,8 +1135,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-xarray2.jpeg
   tags:
     packages:
@@ -1154,8 +1154,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-dask1.jpeg
   tags:
     packages:
@@ -1173,8 +1173,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-dask2.jpeg
   tags:
     packages:
@@ -1192,8 +1192,8 @@
   authors:
     - name: Project Pythia
     - name: Anissa Zacharias
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-geocatplot.jpeg
   tags:
     packages:
@@ -1213,8 +1213,8 @@
   authors:
     - name: Project Pythia
     - name: A Kootz
-      affiliation: NCAR
-      affiliation_url: https://ncar.ucar.edu/
+      institution: NCAR
+      institution_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-geocatcomp.jpeg
   tags:
     packages:
