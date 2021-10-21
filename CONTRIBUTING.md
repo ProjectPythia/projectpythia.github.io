@@ -27,7 +27,14 @@ Use [conda](https://docs.conda.io/) to set up a build environment:
 conda env update -f ../ci/environment.yml
 ```
 
-This will create or update the dev environment (`pythia`).
+This will create the dev environment (`pythia`). If you have previously created the environment, running this command will add any new packages that have since been added to the `environment.yml` file.
+
+It's a good idea to also keep the *versions* of each package in the `pythia` environment up to date by doing:
+
+```bash
+conda activate pythia
+conda update --all
+```
 
 #### Install `pre-commit` hooks
 
@@ -51,6 +58,8 @@ Build the site locally using Sphinx (which you just installed in the `pythia` en
 ```bash
 make html
 ```
+
+If this step fails and you have not updated your conda environment recently, try updating with `conda env update -f ../ci/environment.yml` and `conda update --all` as described above.
 
 The newly rendered site is now available in `portal/_build/html/index.html`.
 Open with your web browser, or from the terminal:
@@ -78,10 +87,17 @@ When you're done, you can deactivate the dedicated build environment with
 conda deactivate
 ```
 
-You can re-activate the `pythia` conda environment at any time with `conda activate pythia`.
+You can re-activate the `pythia` conda environment at any time with `conda activate pythia`. You may also want to update each package in the activated environment to their latest versions by doing
 
-### To view the Read the Docs autobuild
+```bash
+conda activate pythia
+conda update --all
+```
 
-Once a Pull Request has passed all tests, including the Read the Docs build, you can click "Details" of the check that says, "docs/readthedocs.org:projectpythia - Read the Docs build succeeded!" to launch a new tab with a build of the Project Pythia site. (You may have to click "Show all checks" for this to be displayed.)
+### Preview the built site on Netlify
 
-![Checks](../_static/images/ReadtheDocsAutobuild.png)
+Once a pull request has passed all tests, including the `preview-site` check, the GitHub bot will post a comment with a preview link on the pull request. You can click on the link to launch a new tab with a build of the Project Pythia site.
+
+![CI-check](/portal/_static/images/deploy-site-CI-check.png)
+
+![Netlify Preview](/portal/_static/images/netlify-preview.png)
