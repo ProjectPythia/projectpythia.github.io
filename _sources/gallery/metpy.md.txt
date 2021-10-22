@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
 </p>
 </div>
@@ -114,7 +128,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/tutorials/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
 </p>
 </div>
@@ -133,7 +147,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop- MetPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
 </p>
 </div>
@@ -152,7 +166,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Examples of using a variety of MetPy’s functionality together.
 </p>
 </div>
@@ -171,7 +185,7 @@ Packages
 <img src="/_static/thumbnails/metpy-mondays.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO" class="text-decoration-none"><h4 class="display-4 p-0">Unidata MetPy Mondays</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
 </p>
 </div>

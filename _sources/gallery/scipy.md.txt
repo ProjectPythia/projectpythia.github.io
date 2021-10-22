@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>
@@ -117,7 +131,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://github.com/koldunovn/python_for_geosciences" class="text-decoration-none"><h4 class="display-4 p-0">Python for Geosciences</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/><strong>Affiliation:</strong> <a href="https://www.awi.de/en/">Alfred Wegener Institute for Polar and Marine Research </a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/></p>
 <p class="my-2">This is a short overview of how Python is used in science and particularly in geosciences targeting people who already know programming (e.g. Matlab). </p>
 </div>
 </div>

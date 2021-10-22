@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -134,7 +148,7 @@ Packages
 <img src="/_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geocat-examples.readthedocs.io/" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">A gallery of plotting examples from GeoCat.
 </p>
 </div>
@@ -214,7 +228,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Examples of using a variety of MetPy’s functionality together.
 </p>
 </div>
@@ -233,7 +247,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/gallery/gallery-home/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
 </p>
 </div>
@@ -271,7 +285,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/siphon/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Examples of using Siphon’s functionality.
 </p>
 </div>
@@ -290,7 +304,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://wrf-python.readthedocs.io/en/latest/plot.html" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
 </p>
 </div>
@@ -309,7 +323,7 @@ Packages
 <img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Institution:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
 <p class="my-2">A gallery of different Pangeo use cases</p>
 </div>
 </div>
@@ -327,6 +341,7 @@ Packages
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
 <a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/pangeo.html" class="badge bg-primary link-light">pangeo</a>
 <a href="/gallery/physical-oceanography.html" class="badge bg-primary link-light">physical oceanography</a>
 <a href="/gallery/remote-sensing.html" class="badge bg-primary link-light">remote sensing</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>

@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/siphon" class="text-decoration-none"><h4 class="display-4 p-0">Siphon</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
 </p>
 </div>
@@ -114,7 +128,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
 </p>
 </div>
@@ -133,7 +147,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/siphon/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Examples of using Siphon’s functionality.
 </p>
 </div>

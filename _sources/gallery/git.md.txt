@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/thumbnails/ptss-git.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/fYkPn0Nttlg" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Git and GitHub</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
 </p>
 </div>
@@ -105,7 +119,9 @@ Packages
 +++
 
 <a href="/gallery/git.html" class="badge bg-primary link-light">git</a>
+<a href="/gallery/pythia.html" class="badge bg-primary link-light">pythia</a>
 <a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+<a href="/gallery/xdev.html" class="badge bg-primary link-light">xdev</a>
 
 
 ````

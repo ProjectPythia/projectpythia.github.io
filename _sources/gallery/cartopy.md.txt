@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -133,7 +147,7 @@ Packages
 <img src="/_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://carpentrieslab.github.io/python-aos-lesson/" class="text-decoration-none"><h4 class="display-4 p-0">Python for Atmosphere and Ocean Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <br/><strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <br/><strong>Institution:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
@@ -144,7 +158,7 @@ Packages
 <h3 class="display-3">Python for Atmosphere and Ocean Science</h3>
 <strong>Author:</strong> 
 <br/>
-<strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
+<strong>Institution:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
 <p class="my-2"><a href="/gallery/atmospheric-science.html" class="badge bg-primary link-light">atmospheric science</a>
 <a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
@@ -177,7 +191,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://github.com/koldunovn/python_for_geosciences" class="text-decoration-none"><h4 class="display-4 p-0">Python for Geosciences</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/><strong>Affiliation:</strong> <a href="https://www.awi.de/en/">Alfred Wegener Institute for Polar and Marine Research </a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/></p>
 <p class="my-2">This is a short overview of how Python is used in science and particularly in geosciences targeting people who already know programming (e.g. Matlab). </p>
 </div>
 </div>
@@ -205,7 +219,7 @@ Packages
 <img src="/_static/thumbnails/ptss-cartopy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/ivmd3RluMiw" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -217,7 +231,9 @@ Packages
 <a href="/gallery/cartopy.html" class="badge bg-primary link-light">cartopy</a>
 <a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
+<a href="/gallery/pythia.html" class="badge bg-primary link-light">pythia</a>
 <a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+<a href="/gallery/xdev.html" class="badge bg-primary link-light">xdev</a>
 
 
 ````

@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop - Jupyter Notebooks Introduction</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
 </p>
 </div>
@@ -105,6 +119,7 @@ Packages
 +++
 
 <a href="/gallery/jupyter.html" class="badge bg-primary link-light">jupyter</a>
+<a href="/gallery/unidata.html" class="badge bg-primary link-light">unidata</a>
 
 
 ---
@@ -113,7 +128,7 @@ Packages
 <img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Institution:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
 <p class="my-2">A gallery of different Pangeo use cases</p>
 </div>
 </div>
@@ -131,6 +146,7 @@ Packages
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
 <a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/pangeo.html" class="badge bg-primary link-light">pangeo</a>
 <a href="/gallery/physical-oceanography.html" class="badge bg-primary link-light">physical oceanography</a>
 <a href="/gallery/remote-sensing.html" class="badge bg-primary link-light">remote sensing</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
@@ -144,7 +160,7 @@ Packages
 <img src="/_static/thumbnails/ptss-jupyter.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/xSzXvwzFsDU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Jupyter Notebooks</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
 </p>
 </div>
@@ -154,7 +170,9 @@ Packages
 +++
 
 <a href="/gallery/jupyter.html" class="badge bg-primary link-light">jupyter</a>
+<a href="/gallery/pythia.html" class="badge bg-primary link-light">pythia</a>
 <a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+<a href="/gallery/xdev.html" class="badge bg-primary link-light">xdev</a>
 
 
 ````

@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://wrf-python.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
 </p>
 </div>
@@ -114,7 +128,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://wrf-python.readthedocs.io/en/latest/plot.html" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
 </p>
 </div>

@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geocat-examples.readthedocs.io/" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">A gallery of plotting examples from GeoCat.
 </p>
 </div>
@@ -116,7 +130,7 @@ Packages
 <img src="/_static/thumbnails/ptss-geocatplot.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/It231le1fAU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
 </p>
 </div>
@@ -128,12 +142,14 @@ Packages
 <h3 class="display-3">Python Tutorial Seminar Series - Plotting with GeoCAT</h3>
 <strong>Author:</strong> Anissa Zacharias, Project Pythia
 <br/>
-<strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
+<strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
 </p>
 <p class="my-2"><a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/geocat-viz.html" class="badge bg-primary link-light">geocat-viz</a>
-<a href="/gallery/video.html" class="badge bg-primary link-light">video</a></p>
+<a href="/gallery/pythia.html" class="badge bg-primary link-light">pythia</a>
+<a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+<a href="/gallery/xdev.html" class="badge bg-primary link-light">xdev</a></p>
 <p class="mt-3 mb-0"><a href="https://youtu.be/It231le1fAU" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -143,7 +159,9 @@ Packages
 
 <a href="/gallery/data-visualization.html" class="badge bg-primary link-light">data visualization</a>
 <a href="/gallery/geocat-viz.html" class="badge bg-primary link-light">geocat-viz</a>
+<a href="/gallery/pythia.html" class="badge bg-primary link-light">pythia</a>
 <a href="/gallery/video.html" class="badge bg-primary link-light">video</a>
+<a href="/gallery/xdev.html" class="badge bg-primary link-light">xdev</a>
 
 
 ````

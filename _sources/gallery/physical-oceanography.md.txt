@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Institution:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
 <p class="my-2">A gallery of different Pangeo use cases</p>
 </div>
 </div>
@@ -113,6 +127,7 @@ Packages
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
 <a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/pangeo.html" class="badge bg-primary link-light">pangeo</a>
 <a href="/gallery/physical-oceanography.html" class="badge bg-primary link-light">physical oceanography</a>
 <a href="/gallery/remote-sensing.html" class="badge bg-primary link-light">remote sensing</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
@@ -126,7 +141,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://github.com/koldunovn/python_for_geosciences" class="text-decoration-none"><h4 class="display-4 p-0">Python for Geosciences</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/><strong>Affiliation:</strong> <a href="https://www.awi.de/en/">Alfred Wegener Institute for Polar and Marine Research </a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/></p>
 <p class="my-2">This is a short overview of how Python is used in science and particularly in geosciences targeting people who already know programming (e.g. Matlab). </p>
 </div>
 </div>

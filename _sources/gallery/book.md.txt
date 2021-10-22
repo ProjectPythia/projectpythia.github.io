@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -95,7 +109,7 @@ Packages
 <img src="/_static/thumbnails/climlablogo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://brian-rose.github.io/ClimateLaboratoryBook/home" class="text-decoration-none"><h4 class="display-4 p-0">The Climate Laboratory</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Brian Rose<br/><strong>Affiliation:</strong> University of Albany</p>
+<p class="card-subtitle"><strong>Author:</strong> Brian Rose<br/><strong>Institution:</strong> University of Albany</p>
 <p class="my-2">A hands on approach to climate physics and climate modeling. Fundamental climate processes are introduced through interactive and reproducible Python-based modeling exercises.  This JupyterBook serves as a course textbook at the University of Albany.
 </p>
 </div>

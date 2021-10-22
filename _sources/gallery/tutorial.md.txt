@@ -11,6 +11,20 @@
 <div class="ms-auto d-flex">
 
 <div class="dropdown">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+Affiliation
+</button>
+<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
+<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
+<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
+<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
+<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+
+</ul>
+</div>
+
+
+<div class="dropdown">
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 Domains
 </button>
@@ -147,7 +161,7 @@ Packages
 <img src="/_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geocat-comp.readthedocs.io/en/latest/examples.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">The examples below show GeoCAT-comp functions being utilized in real-world use cases. They also demonstrate how GeoCAT-comp can be used to make plots with Matplotlib (using Cartopy) and PyNGL (work in progress).
 </p>
 </div>
@@ -221,7 +235,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/tutorials/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
 </p>
 </div>
@@ -240,7 +254,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop- MetPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
 </p>
 </div>
@@ -259,7 +273,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Numpy Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
 </p>
 </div>
@@ -316,7 +330,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
 </p>
 </div>
@@ -335,7 +349,7 @@ Packages
 <img src="/_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Xarray Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
 </p>
 </div>
@@ -373,7 +387,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>
@@ -395,7 +409,7 @@ Packages
 <img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Institution:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
 <p class="my-2">A gallery of different Pangeo use cases</p>
 </div>
 </div>
@@ -413,6 +427,7 @@ Packages
 <a href="/gallery/matplotlib.html" class="badge bg-primary link-light">matplotlib</a>
 <a href="/gallery/numpy.html" class="badge bg-primary link-light">numpy</a>
 <a href="/gallery/pandas.html" class="badge bg-primary link-light">pandas</a>
+<a href="/gallery/pangeo.html" class="badge bg-primary link-light">pangeo</a>
 <a href="/gallery/physical-oceanography.html" class="badge bg-primary link-light">physical oceanography</a>
 <a href="/gallery/remote-sensing.html" class="badge bg-primary link-light">remote sensing</a>
 <a href="/gallery/tutorial.html" class="badge bg-primary link-light">tutorial</a>
@@ -426,7 +441,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://github.com/koldunovn/python_for_geosciences" class="text-decoration-none"><h4 class="display-4 p-0">Python for Geosciences</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/><strong>Affiliation:</strong> <a href="https://www.awi.de/en/">Alfred Wegener Institute for Polar and Marine Research </a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/></p>
 <p class="my-2">This is a short overview of how Python is used in science and particularly in geosciences targeting people who already know programming (e.g. Matlab). </p>
 </div>
 </div>
