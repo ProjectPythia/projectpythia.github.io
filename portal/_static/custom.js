@@ -30,3 +30,17 @@ for (i = 0; i < buttons.length; i++) {
     })(i)
   )
 }
+
+function filter(classes) {
+  for (var i = 0; i < classes.length; i++) {
+      var elements = document.getElementsByClassName(classes[i]);
+      for (var j = 0; j < elements.length; j++) {
+          e = elements[j];
+          if (e.style.display === "none") {
+              e.style.display = "block";
+          } else {
+              e.style.display = "none";
+          }
+      }
+  }
+}
