@@ -251,11 +251,31 @@ are open to anyone who wishes to participate. We publish
 
 <i class="bi bi-person-circle" style="font-size: 8rem;"></i>
 <br/>
+**Nicole Corbin**
+<br/>
+[**Unidata**](https://unidata.ucar.edu)
+<br/>
+[@ncorbin-id](https://github.com/ncorbin-id)
+
+---
+
+<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+<br/>
 **Orhan Eroglu**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
 [@erogluorhan](https://github.com/erogluorhan)
+
+---
+
+<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+<br/>
+**Robert Ford**
+<br/>
+[**University at Albany**](https://www.albany.edu/)
+<br/>
+[@r-ford](https://github.com/r-ford)
 
 ---
 
@@ -276,6 +296,26 @@ are open to anyone who wishes to participate. We publish
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
 [@mgrover1](https://github.com/mgrover1)
+
+---
+
+<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+<br/>
+**Michaela Sizemore**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@michaelavs](https://github.com/michaelavs)
+
+---
+
+<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+<br/>
+**Anissa Zacharias**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@anissa111](https://github.com/anissa111)
 ```
 
 ```{toctree}
