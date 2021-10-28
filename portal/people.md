@@ -19,9 +19,13 @@ a great deal of ongoing work is being conducted and led by:
 
 - Anderson Banihirwe (NCAR) [[@andersy005](https://github.com/andersy005)]
 - Drew Camron (Unidata) [[@dcamron](https://github.com/dcamron)]
+- Nicole Corbin (Unidata) [[@ncorbin-id](https://github.com/ncorbin-id)]
 - Orhan Eroglu (NCAR) [[@erogluorhan](https://github.com/erogluorhan)]
+- Robert Ford (University at Albany) [[@r-ford](https://github.com/r-ford)]
 - Julia Kent (NCAR) [[@jukent](https://github.com/jukent)]
 - Max Grover (NCAR) [[@mgrover1](https://github.com/mgrover1)]
+- Michaela Sizemore (NCAR) [[@michaelavs](https://github.com/michaelavs)]
+- Anissa Zacharias (NCAR) [[@anissa111](https://github.com/anissa111)]
 
 ## Project Contributors
 
