@@ -269,6 +269,15 @@ are open to anyone who wishes to participate. We publish
 [@r-ford](https://github.com/r-ford)
 
 ---
+:img-top: https://avatars.githubusercontent.com/mgrover1
+
+**Max Grover**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@mgrover1](https://github.com/mgrover1)
+
+---
 :img-top: https://avatars.githubusercontent.com/jukent
 
 **Julia Kent**
@@ -278,13 +287,13 @@ are open to anyone who wishes to participate. We publish
 [@jukent](https://github.com/jukent)
 
 ---
-:img-top: https://avatars.githubusercontent.com/mgrover1
+:img-top: https://avatars.githubusercontent.com/pilotchute
 
-**Max Grover**
+**Alea Kootz**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
-[@mgrover1](https://github.com/mgrover1)
+[@pilotchute](https://github.com/pilotchute)
 
 ---
 :img-top: https://avatars.githubusercontent.com/michaelavs
