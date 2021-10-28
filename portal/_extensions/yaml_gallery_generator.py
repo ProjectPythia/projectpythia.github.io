@@ -139,7 +139,8 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             f"""\
 ---
 
-<div class="d-flex gallery-card {tag_class_str}">
+<div class = "{tag_class_str}">
+<div class="d-flex gallery-card">
 <img src="{thumbnail}" class="gallery-thumbnail" />
 <div class="container">
 <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
@@ -152,6 +153,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 +++
 
 {tags}
+</div>
 
 """
         )

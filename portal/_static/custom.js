@@ -38,7 +38,7 @@ function filter(classes) {
       for (var j = 0; j < elements.length; j++) {
           e = elements[j];
           if (e.style.display === "none !important") {
-              e.style.display = "block !important";
+              e.style.display = "flex !important";
           } else {
               e.style.display = "none !important";
           }
