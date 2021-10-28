@@ -34,12 +34,13 @@ for (i = 0; i < buttons.length; i++) {
 function filter(classes) {
   for (var i = 0; i < classes.length; i++) {
       var elements = document.getElementsByClassName(classes[i]);
+      console.log([elements.length, classes[i]]);
       for (var j = 0; j < elements.length; j++) {
           e = elements[j];
-          if (e.style.display === "none") {
-              e.style.display = "block";
+          if (e.style.display === "none !important") {
+              e.style.display = "block !important";
           } else {
-              e.style.display = "none";
+              e.style.display = "none !important";
           }
       }
   }
