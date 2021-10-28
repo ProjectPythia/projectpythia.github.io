@@ -82,7 +82,10 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
 
-        tags = [f'<button class="badge bg-primary link-light" onclick="filter([\'{tag}\'])">{tag}</button>' for tag in tag_list_f]
+        tags = [
+            f'<button class="badge bg-primary link-light" onclick="filter([\'{tag}\'])">{tag}</button>' 
+            for tag in tag_list_f
+        ]
         tags = '\n'.join(tags)
 
         tag_class_str = ' '.join(tag_list_f)
