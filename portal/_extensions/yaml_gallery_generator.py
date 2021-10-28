@@ -141,8 +141,8 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         panels_body.append(
             f"""\
 ---
+:column: + {tag_class_str}
 
-<div class = "{tag_class_str}">
 <div class="d-flex gallery-card">
 <img src="{thumbnail}" class="gallery-thumbnail" />
 <div class="container">
@@ -156,7 +156,6 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 +++
 
 {tags}
-</div>
 
 """
         )
