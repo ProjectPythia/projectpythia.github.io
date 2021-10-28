@@ -44,7 +44,7 @@ def _generate_tag_menu(all_items, tag_key):
 
     return f"""
 <div class="dropdown">
-<button onclick="filter([{tag_key}]) class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
 {tag_key.title()}
 </button>
 <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
