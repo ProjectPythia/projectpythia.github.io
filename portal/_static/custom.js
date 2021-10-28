@@ -34,13 +34,14 @@ for (i = 0; i < buttons.length; i++) {
 function filter(classes) {
   for (var i = 0; i < classes.length; i++) {
       var elements = document.getElementsByClassName(classes[i]);
-      console.log([elements.length, classes[i]]);
       for (var j = 0; j < elements.length; j++) {
           e = elements[j];
-          if (e.style.display === "none !important") {
-              e.style.display = "flex !important";
+          if (e.classList.contains("d-flex")) {
+            e.classList.remove("d-flex");
+            e.classList.add("d-none");
           } else {
-              e.style.display = "none !important";
+            e.classList.remove("d-none");
+            e.classList.add("d-flex");
           }
       }
   }
