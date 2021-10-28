@@ -82,15 +82,12 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             item['thumbnail'] = '/_static/images/ebp-logo.png'
         thumbnail = item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
-        tag_list_f = [tag.replace(" ", "-") for tag in tag_list]
-        tags = [
-            f'<a href="/gallery/{tag}.html" class="badge bg-primary link-light">{tag}</a>'
-            for tag in tag_list_f
-        ]
+        tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
+  
+        tags = [f'<a href="/gallery/{tag}.html" class="badge bg-primary link-light">{tag}</a>' for tag in tag_list_f]
         tags = '\n'.join(tags)
-        
-        tag_str = " ".join(tab_list)
-        class_str = f'class = "{tag_str}"'
+
+        tag_str = ' '.join(tag_list_f)
 
         author_strs = set()
         institution_strs = set()
@@ -144,7 +141,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             f"""\
 ---
 
-<div class="d-flex gallery-card">
+<div class="d-flex gallery-card {tag_str}">
 <img src="{thumbnail}" class="gallery-thumbnail" />
 <div class="container">
 <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
