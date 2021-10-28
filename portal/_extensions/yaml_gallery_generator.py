@@ -38,7 +38,7 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        f'<li><a class="dropdown-item" href="/gallery/{tag.replace(" ", "-")}.html">{tag.title()}</a></li>\n'
+        f'<li><a class="dropdown-item" onclick="filter([{tag.replace(" ", "-")}])">{tag.title()}</a></li>\n'
         for tag in tag_list
     )
 
@@ -82,7 +82,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
 
-        tags = [f'<a href="/gallery/{tag}.html" class="badge bg-primary link-light">{tag}</a>' for tag in tag_list_f]
+        tags = [f'<a class="badge bg-primary link-light" onclick="filter([{tag}])">{tag}</a>' for tag in tag_list_f]
         tags = '\n'.join(tags)
 
         tag_class_str = ' '.join(tag_list_f)
