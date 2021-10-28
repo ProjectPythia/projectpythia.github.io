@@ -281,6 +281,16 @@ are open to anyone who wishes to participate. We publish
 
 <i class="bi bi-person-circle" style="font-size: 8rem;"></i>
 <br/>
+**Max Grover**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@mgrover1](https://github.com/mgrover1)
+
+---
+
+<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+<br/>
 **Julia Kent**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -291,11 +301,11 @@ are open to anyone who wishes to participate. We publish
 
 <i class="bi bi-person-circle" style="font-size: 8rem;"></i>
 <br/>
-**Max Grover**
+**Alea Kootz**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
-[@mgrover1](https://github.com/mgrover1)
+[@pilotchute](https://github.com/pilotchute)
 
 ---
 
