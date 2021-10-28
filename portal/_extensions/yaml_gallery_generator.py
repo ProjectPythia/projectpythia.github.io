@@ -82,11 +82,15 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             item['thumbnail'] = '/_static/images/ebp-logo.png'
         thumbnail = item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
+        tag_list_f = [tag.replace(" ", "-") for tag in tag_list]
         tags = [
-            f'<a href="/gallery/{tag.replace(" ", "-")}.html" class="badge bg-primary link-light">{tag}</a>'
-            for tag in tag_list
+            f'<a href="/gallery/{tag}.html" class="badge bg-primary link-light">{tag}</a>'
+            for tag in tag_list_f
         ]
         tags = '\n'.join(tags)
+        
+        tag_str = " ".join(tab_list)
+        class_str = f'class = "{tag_str}"'
 
         author_strs = set()
         institution_strs = set()
