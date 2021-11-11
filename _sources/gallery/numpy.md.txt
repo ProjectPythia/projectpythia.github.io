@@ -296,7 +296,7 @@ Packages
 <img src="/_static/thumbnails/ptss-numpy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/kstc-6uz7AQ" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Numpy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The content to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
 </p>
 </div>
