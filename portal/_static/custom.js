@@ -30,19 +30,3 @@ for (i = 0; i < buttons.length; i++) {
     })(i)
   )
 }
-
-function filter(classes) {
-  for (var i = 0; i < classes.length; i++) {
-      var elements = document.getElementsByClassName(classes[i]);
-      for (var j = 0; j < elements.length; j++) {
-          e = elements[j];
-          if (e.classList.contains("d-flex")) {
-            e.classList.remove("d-flex");
-            e.classList.add("d-none");
-          } else {
-            e.classList.remove("d-none");
-            e.classList.add("d-flex");
-          }
-      }
-  }
-}
