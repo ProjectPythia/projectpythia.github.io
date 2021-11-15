@@ -38,12 +38,14 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        f'<li><button class="dropdown-item" onclick="filter([\'{tag.replace(" ", "-")}\'])">{tag.title()}</button></li>\n'
+        #f'<li><button class="dropdown-item" onclick="filter([\'{tag.replace(" ", "-")}\'])">{tag.title()}</button></li>\n'
+        f'<li><label class="dropdown-item checkbox"><input type="checkbox" rel={tag} onchange="change();" checked>{tag.upper()}</label></li>'
         for tag in tag_list
     )
 
     return f"""
 <div class="dropdown">
+
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
 {tag_key.title()}
 </button>
