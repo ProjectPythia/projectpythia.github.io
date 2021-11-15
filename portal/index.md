@@ -242,6 +242,15 @@ are open to anyone who wishes to participate. We publish
 [@dcamron](https://github.com/dcamron)
 
 ---
+:img-top: https://avatars.githubusercontent.com/cjcardinale
+
+**Chris Cardinale**
+<br/>
+[**University at Albany**](https://www.albany.edu/)
+<br/>
+[@cjcardinale](https://github.com/cjcardinale)
+
+---
 :img-top: https://avatars.githubusercontent.com/ncorbin-id
 
 **Nicole Corbin**
