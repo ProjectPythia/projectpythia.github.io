@@ -65,7 +65,7 @@ function getClassOfCheckedCheckboxes(checkboxes) {
 }
 
 function filterResults(filters) {
-  var rElems = document.querySelectorAll(".tagged-card div");
+  var rElems = document.querySelectorAll(".tagged-card");
   var hiddenElems = [];
 
   if (!rElems || rElems.length <= 0) {
@@ -145,14 +145,14 @@ function filterResults(filters) {
   }
 
   for (var i = 0; i < rElems.length; i++) {
-    rElems[i].style.display = "block";
+    rElems[i].classList.replace("d-none", "d-flex");
   }
 
   if (hiddenElems.length <= 0) {
     return;
-  }
+  } 
 
   for (var i = 0; i < hiddenElems.length; i++) {
-    hiddenElems[i].style.display = "none";
+    hiddenElems[i].classList.replace("d-flex", "d-none");
   }
 }
