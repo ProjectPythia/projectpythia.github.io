@@ -150,7 +150,7 @@ function filterResults(filters) {
 
   if (hiddenElems.length <= 0) {
     return;
-  } 
+  }
 
   for (var i = 0; i < hiddenElems.length; i++) {
     hiddenElems[i].classList.replace("d-flex", "d-none");
