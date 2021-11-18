@@ -38,8 +38,7 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        #f'<li><button class="dropdown-item" onclick="filter([\'{tag.replace(" ", "-")}\'])">{tag.title()}</button></li>\n'
-        f'<li><label class="dropdown-item checkbox"><input type="checkbox" rel={tag} onchange="change();" checked>{tag.upper()}</label></li>'
+        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag} onchange="change();">&nbsp;{tag.capitalize()}</label></li>'
         for tag in tag_list
     )
 
@@ -85,7 +84,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
 
         tags = [
-            f'<button class="btn btn-primary btn-sm" onclick="filter([\'{tag}\'])">{tag}</button>' for tag in tag_list_f
+            f'<button class="btn btn-primary btn-sm">{tag}</button>' for tag in tag_list_f
         ]
         tags = '\n'.join(tags)
 
@@ -125,7 +124,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
                 item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ...more</a>'
             )
             modal_str = f"""
-<div class="modal">
+ <div class="modal">
 <div class="content">
 <img src="{thumbnail}" class="modal-img" />
 <h3 class="display-3">{item["title"]}</h3>
@@ -142,7 +141,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         panels_body.append(
             f"""\
 ---
-:column: + {tag_class_str}
+:column: + tagged-card {tag_class_str}
 
 <div class="d-flex gallery-card">
 <img src="{thumbnail}" class="gallery-thumbnail" />
