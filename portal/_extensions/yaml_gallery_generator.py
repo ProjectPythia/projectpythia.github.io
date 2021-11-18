@@ -65,7 +65,7 @@ def _generate_menu(all_items):
     menu_html += '</div>\n'
     menu_html += '<div class="ms-auto d-flex">\n'
     menu_html += (
-        '<div><button class="btn btn-primary btn-sm mx-1" onclick="clearCbs()">Clear all Filters</button></div>\n'
+        '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
     )
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
