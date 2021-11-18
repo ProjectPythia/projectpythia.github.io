@@ -156,3 +156,29 @@ function filterResults(filters) {
     hiddenElems[i].classList.replace("d-flex", "d-none");
   }
 }
+
+
+function clearCbs() {
+  var affiliationCbs = document.querySelectorAll(".affiliation input[type='checkbox']");
+  var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
+  var formatsCbs = document.querySelectorAll(".formats input[type='checkbox']");
+  var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
+
+  for (var i = 0; i < affiliationCbs.length; i++) {
+    affiliationCbs[i].checked=False;
+  }
+
+  for (var i = 0; i < domainsCbs.length; i++) {
+    domainsCbs[i].checked=False;
+  }
+
+  for (var i = 0; i < formatsCbs.length; i++) {
+    formatsCbs[i].checked=False;
+  }
+
+  for (var i = 0; i < packagesCbs.length; i++) {
+    packagesCbs[i].checked=False;
+  }
+
+  change();
+}
