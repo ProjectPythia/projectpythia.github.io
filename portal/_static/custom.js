@@ -37,7 +37,7 @@ function change() {
   var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
   var formatsCbs = document.querySelectorAll(".formats input[type='checkbox']");
   var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
-  
+
   var filters = {
     affiliation: getClassOfCheckedCheckboxes(affiliationCbs),
     domains: getClassOfCheckedCheckboxes(domainsCbs),
