@@ -163,8 +163,8 @@ are open to anyone who wishes to participate. We publish
 :column: col-lg-4 col-md-4 col-sm-6 p-3 mx-auto
 :body: text-center
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
+:img-top: https://avatars.githubusercontent.com/clyne
+
 **John Clyne**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -172,9 +172,8 @@ are open to anyone who wishes to participate. We publish
 [@clyne](https://github.com/clyne)
 
 ---
+:img-top: https://avatars.githubusercontent.com/matt-long
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Matthew C. Long**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -182,9 +181,8 @@ are open to anyone who wishes to participate. We publish
 [@matt-long](https://github.com/matt-long)
 
 ---
+:img-top: https://avatars.githubusercontent.com/dopplershift
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Ryan May**
 <br/>
 [**Unidata**](https://unidata.ucar.edu)
@@ -192,9 +190,8 @@ are open to anyone who wishes to participate. We publish
 [@dopplershift](https://github.com/dopplershift)
 
 ---
+:img-top: https://avatars.githubusercontent.com/kmpaul
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Kevin Paul**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -202,9 +199,8 @@ are open to anyone who wishes to participate. We publish
 [@kmpaul](https://github.com/kmpaul)
 
 ---
+:img-top: https://avatars.githubusercontent.com/brian-rose
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Brian E. J. Rose**
 <br/>
 [**University at Albany**](https://www.albany.edu/)
@@ -212,9 +208,8 @@ are open to anyone who wishes to participate. We publish
 [@brian-rose](https://github.com/brian-rose)
 
 ---
+:img-top: https://avatars.githubusercontent.com/ktyle
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Kevin Tyle**
 <br/>
 [**University at Albany**](https://www.albany.edu/)
@@ -229,8 +224,8 @@ are open to anyone who wishes to participate. We publish
 :column: col-lg-4 col-md-4 col-sm-6 p-3 mx-auto
 :body: text-center
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
+:img-top: https://avatars.githubusercontent.com/andersy005
+
 **Anderson Banihirwe**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -238,9 +233,8 @@ are open to anyone who wishes to participate. We publish
 [@andersy005](https://github.com/andersy005)
 
 ---
+:img-top: https://avatars.githubusercontent.com/dcamron
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Drew Camron**
 <br/>
 [**Unidata**](https://unidata.ucar.edu)
@@ -248,9 +242,26 @@ are open to anyone who wishes to participate. We publish
 [@dcamron](https://github.com/dcamron)
 
 ---
+:img-top: https://avatars.githubusercontent.com/cjcardinale
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+**Chris Cardinale**
 <br/>
+[**University at Albany**](https://www.albany.edu/)
+<br/>
+[@cjcardinale](https://github.com/cjcardinale)
+
+---
+:img-top: https://avatars.githubusercontent.com/ncorbin-id
+
+**Nicole Corbin**
+<br/>
+[**Unidata**](https://unidata.ucar.edu)
+<br/>
+[@ncorbin-id](https://github.com/ncorbin-id)
+
+---
+:img-top: https://avatars.githubusercontent.com/erogluorhan
+
 **Orhan Eroglu**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -258,9 +269,26 @@ are open to anyone who wishes to participate. We publish
 [@erogluorhan](https://github.com/erogluorhan)
 
 ---
+:img-top: https://avatars.githubusercontent.com/r-ford
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+**Robert Ford**
 <br/>
+[**University at Albany**](https://www.albany.edu/)
+<br/>
+[@r-ford](https://github.com/r-ford)
+
+---
+:img-top: https://avatars.githubusercontent.com/mgrover1
+
+**Max Grover**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@mgrover1](https://github.com/mgrover1)
+
+---
+:img-top: https://avatars.githubusercontent.com/jukent
+
 **Julia Kent**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -268,14 +296,31 @@ are open to anyone who wishes to participate. We publish
 [@jukent](https://github.com/jukent)
 
 ---
+:img-top: https://avatars.githubusercontent.com/pilotchute
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
-**Max Grover**
+**Alea Kootz**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
-[@mgrover1](https://github.com/mgrover1)
+[@pilotchute](https://github.com/pilotchute)
+
+---
+:img-top: https://avatars.githubusercontent.com/michaelavs
+
+**Michaela Sizemore**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@michaelavs](https://github.com/michaelavs)
+
+---
+:img-top: https://avatars.githubusercontent.com/anissa111
+
+**Anissa Zacharias**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@anissa111](https://github.com/anissa111)
 ```
 
 ```{toctree}
