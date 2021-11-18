@@ -152,7 +152,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 <p class="my-2">{short_description}</p>
 </div>
 </div>
-
+{modal_str}
 
 +++
 
