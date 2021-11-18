@@ -165,19 +165,19 @@ function clearCbs() {
   var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
 
   for (var i = 0; i < affiliationCbs.length; i++) {
-    affiliationCbs[i].checked=False;
+    affiliationCbs[i].checked=false;
   }
 
   for (var i = 0; i < domainsCbs.length; i++) {
-    domainsCbs[i].checked=False;
+    domainsCbs[i].checked=false;
   }
 
   for (var i = 0; i < formatsCbs.length; i++) {
-    formatsCbs[i].checked=False;
+    formatsCbs[i].checked=false;
   }
 
   for (var i = 0; i < packagesCbs.length; i++) {
-    packagesCbs[i].checked=False;
+    packagesCbs[i].checked=false;
   }
 
   change();
