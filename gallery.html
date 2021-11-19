@@ -109,15 +109,13 @@
 <div><a class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&amp;labels=external-links-gallery-submission&amp;template=update-external-links-gallery.md&amp;title=" role="button">Submit a new resource</a></div>
 </div>
 <div class="ms-auto d-flex">
+<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>
 <div class="dropdown">
 <button aria-expanded="false" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-bs-toggle="dropdown" id="affiliationDropdown" type="button">
 Affiliation
 </button>
 <ul aria-labelledby="affiliationDropdown" class="dropdown-menu">
-<li><a class="dropdown-item" href="/gallery/pangeo.html">Pangeo</a></li>
-<li><a class="dropdown-item" href="/gallery/pythia.html">Pythia</a></li>
-<li><a class="dropdown-item" href="/gallery/unidata.html">Unidata</a></li>
-<li><a class="dropdown-item" href="/gallery/xdev.html">Xdev</a></li>
+<li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pythia" type="checkbox"/> Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="unidata" type="checkbox"/> Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="xdev" type="checkbox"/> Xdev</label></li>
 </ul>
 </div>
 <div class="dropdown">
@@ -125,14 +123,7 @@ Affiliation
 Domains
 </button>
 <ul aria-labelledby="domainsDropdown" class="dropdown-menu">
-<li><a class="dropdown-item" href="/gallery/atmospheric-science.html">Atmospheric Science</a></li>
-<li><a class="dropdown-item" href="/gallery/climate-science.html">Climate Science</a></li>
-<li><a class="dropdown-item" href="/gallery/data-science.html">Data Science</a></li>
-<li><a class="dropdown-item" href="/gallery/data-visualization.html">Data Visualization</a></li>
-<li><a class="dropdown-item" href="/gallery/glaciology.html">Glaciology</a></li>
-<li><a class="dropdown-item" href="/gallery/hydrology.html">Hydrology</a></li>
-<li><a class="dropdown-item" href="/gallery/physical-oceanography.html">Physical Oceanography</a></li>
-<li><a class="dropdown-item" href="/gallery/remote-sensing.html">Remote Sensing</a></li>
+<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmospheric" science="" type="checkbox"/> Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate" science="" type="checkbox"/> Climate science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data" science="" type="checkbox"/> Data science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data" type="checkbox" visualization=""/> Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="glaciology" type="checkbox"/> Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="hydrology" type="checkbox"/> Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input oceanography="" onchange="change();" rel="physical" type="checkbox"/> Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="remote" sensing="" type="checkbox"/> Remote sensing</label></li>
 </ul>
 </div>
 <div class="dropdown">
@@ -140,12 +131,7 @@ Domains
 Formats
 </button>
 <ul aria-labelledby="formatsDropdown" class="dropdown-menu">
-<li><a class="dropdown-item" href="/gallery/book.html">Book</a></li>
-<li><a class="dropdown-item" href="/gallery/course.html">Course</a></li>
-<li><a class="dropdown-item" href="/gallery/documentation.html">Documentation</a></li>
-<li><a class="dropdown-item" href="/gallery/gallery.html">Gallery</a></li>
-<li><a class="dropdown-item" href="/gallery/tutorial.html">Tutorial</a></li>
-<li><a class="dropdown-item" href="/gallery/video.html">Video</a></li>
+<li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="book" type="checkbox"/> Book</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="course" type="checkbox"/> Course</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="documentation" type="checkbox"/> Documentation</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="gallery" type="checkbox"/> Gallery</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="tutorial" type="checkbox"/> Tutorial</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="video" type="checkbox"/> Video</label></li>
 </ul>
 </div>
 <div class="dropdown">
@@ -153,30 +139,7 @@ Formats
 Packages
 </button>
 <ul aria-labelledby="packagesDropdown" class="dropdown-menu">
-<li><a class="dropdown-item" href="/gallery/cartopy.html">Cartopy</a></li>
-<li><a class="dropdown-item" href="/gallery/climlab.html">Climlab</a></li>
-<li><a class="dropdown-item" href="/gallery/contextily.html">Contextily</a></li>
-<li><a class="dropdown-item" href="/gallery/dask.html">Dask</a></li>
-<li><a class="dropdown-item" href="/gallery/geocat-comp.html">Geocat-Comp</a></li>
-<li><a class="dropdown-item" href="/gallery/geocat-viz.html">Geocat-Viz</a></li>
-<li><a class="dropdown-item" href="/gallery/geopandas.html">Geopandas</a></li>
-<li><a class="dropdown-item" href="/gallery/git.html">Git</a></li>
-<li><a class="dropdown-item" href="/gallery/holoviews.html">Holoviews</a></li>
-<li><a class="dropdown-item" href="/gallery/hvPlot.html">Hvplot</a></li>
-<li><a class="dropdown-item" href="/gallery/intake.html">Intake</a></li>
-<li><a class="dropdown-item" href="/gallery/ipyleaflet.html">Ipyleaflet</a></li>
-<li><a class="dropdown-item" href="/gallery/jupyter.html">Jupyter</a></li>
-<li><a class="dropdown-item" href="/gallery/matplotlib.html">Matplotlib</a></li>
-<li><a class="dropdown-item" href="/gallery/metpy.html">Metpy</a></li>
-<li><a class="dropdown-item" href="/gallery/numpy.html">Numpy</a></li>
-<li><a class="dropdown-item" href="/gallery/pandas.html">Pandas</a></li>
-<li><a class="dropdown-item" href="/gallery/pure-python.html">Pure Python</a></li>
-<li><a class="dropdown-item" href="/gallery/rasterio.html">Rasterio</a></li>
-<li><a class="dropdown-item" href="/gallery/scipy.html">Scipy</a></li>
-<li><a class="dropdown-item" href="/gallery/siphon.html">Siphon</a></li>
-<li><a class="dropdown-item" href="/gallery/wrf-python.html">Wrf-Python</a></li>
-<li><a class="dropdown-item" href="/gallery/xarray.html">Xarray</a></li>
-<li><a class="dropdown-item" href="/gallery/xgcm.html">Xgcm</a></li>
+<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="climlab" type="checkbox"/> Climlab</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="contextily" type="checkbox"/> Contextily</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> Dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-comp" type="checkbox"/> Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geopandas" type="checkbox"/> Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="git" type="checkbox"/> Git</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvPlot" type="checkbox"/> Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> Intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="ipyleaflet" type="checkbox"/> Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="jupyter" type="checkbox"/> Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> Metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> Numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pandas" type="checkbox"/> Pandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" python="" rel="pure" type="checkbox"/> Pure python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="rasterio" type="checkbox"/> Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="scipy" type="checkbox"/> Scipy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="siphon" type="checkbox"/> Siphon</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="wrf-python" type="checkbox"/> Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xgcm" type="checkbox"/> Xgcm</label></li>
 </ul>
 </div>
 </div>
@@ -184,7 +147,7 @@ Packages
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pure-python pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -198,14 +161,14 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course unidata docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -225,19 +188,19 @@ Packages
 <strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a>
 <p class="my-2">Introduction to Python for Atmospheric Science &amp; Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/unidata.html">unidata</a></p>
+<p class="my-2"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">unidata</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://unidata.github.io/python-training/python/intro-to-python/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/unidata.html">unidata</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">unidata</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card jupyter unidata docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -251,19 +214,19 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/jupyter.html">jupyter</a>
-<a class="badge bg-primary link-light" href="/gallery/unidata.html">unidata</a></p>
+<p class="card-text"><span class="badge bg-primary">jupyter</span>
+<span class="badge bg-primary">unidata</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course pangeo docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/earth_env_data_science.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://earth-env-data-science.github.io/intro"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Institution:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Institution:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
@@ -271,24 +234,24 @@ Packages
 <div class="content">
 <img class="modal-img" src="/_static/thumbnails/earth_env_data_science.png"/>
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Institution:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/pangeo.html">pangeo</a></p>
+<p class="my-2"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">pangeo</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://earth-env-data-science.github.io/intro">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/pangeo.html">pangeo</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">pangeo</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card atmospheric-science book climate-science climlab course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -302,15 +265,15 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/atmospheric-science.html">atmospheric science</a>
-<a class="badge bg-primary link-light" href="/gallery/book.html">book</a>
-<a class="badge bg-primary link-light" href="/gallery/climate-science.html">climate science</a>
-<a class="badge bg-primary link-light" href="/gallery/climlab.html">climlab</a>
-<a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">climlab</span>
+<span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -330,17 +293,17 @@ Packages
 <strong>Institution:</strong> University of Colorado Boulder
 <p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="my-2"><span class="badge bg-primary">course</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://www.earthdatascience.org/courses/earth-analytics-python/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -354,11 +317,11 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -372,11 +335,11 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -395,17 +358,17 @@ Packages
 <br/>
 <p class="my-2">We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software that makes research possible. People who do this are called research software engineers; the aim of this book is to get you ready for this role by helping you go from writing code for yourself to creating tools that help your entire field advance.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="my-2"><span class="badge bg-primary">course</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://merely-useful.github.io/py-rse/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -419,11 +382,11 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -437,11 +400,11 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course remote-sensing docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -455,12 +418,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/remote-sensing.html">remote sensing</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">remote-sensing</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -479,17 +442,17 @@ Packages
 <br/>
 <p class="my-2">The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and covers the following topics: Introduction to raster and vector data format and attributes, examples of data types commonly stored in raster vs vector format, an introduction to categorical vs continuous raster data and multi-layer rasters, an introduction to the file types and R packages used in the remainder of this workshop, an introduction to coordinate reference systems and the PROJ4 format,  and an overview of commonly used programs and applications for working with geospatial data.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="my-2"><span class="badge bg-primary">course</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://datacarpentry.org/organization-geospatial/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card course data-science docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -503,12 +466,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/data-science.html">data science</a></p>
+<p class="card-text"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">data-science</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card cartopy documentation docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -522,12 +485,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/cartopy.html">cartopy</a>
-<a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a></p>
+<p class="card-text"><span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">documentation</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card cartopy gallery docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -541,12 +504,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/cartopy.html">cartopy</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a></p>
+<p class="card-text"><span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">gallery</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card contextily documentation gallery docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -560,13 +523,13 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/contextily.html">contextily</a>
-<a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a></p>
+<p class="card-text"><span class="badge bg-primary">contextily</span>
+<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">gallery</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card contextily tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -585,19 +548,19 @@ Packages
 <br/>
 <p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated with other libraries such as geopandas and rasterio.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/contextily.html">contextily</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="my-2"><span class="badge bg-primary">contextily</span>
+<span class="badge bg-primary">tutorial</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://contextily.readthedocs.io/en/latest/intro_guide.html">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/contextily.html">contextily</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">contextily</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card dask documentation docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -611,12 +574,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a></p>
+<p class="card-text"><span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">documentation</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card dask tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -630,12 +593,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card geocat-comp tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -649,12 +612,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/geocat-comp.html">geocat-comp</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">geocat-comp</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization gallery geocat-comp geocat-viz docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -668,14 +631,14 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/geocat-comp.html">geocat-comp</a>
-<a class="badge bg-primary link-light" href="/gallery/geocat-viz.html">geocat-viz</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">geocat-comp</span>
+<span class="badge bg-primary">geocat-viz</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation geopandas docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -694,19 +657,19 @@ Packages
 <br/>
 <p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/geopandas.html">geopandas</a></p>
+<p class="my-2"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">geopandas</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://geopandas.org">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/geopandas.html">geopandas</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">geopandas</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card gallery geopandas docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -720,12 +683,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/geopandas.html">geopandas</a></p>
+<p class="card-text"><span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">geopandas</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation hvPlot docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -744,19 +707,19 @@ Packages
 <br/>
 <p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/hvPlot.html">hvPlot</a></p>
+<p class="my-2"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">hvPlot</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://hvplot.holoviz.org/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/hvPlot.html">hvPlot</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">hvPlot</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization hvPlot tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -775,21 +738,21 @@ Packages
 <br/>
 <p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/hvPlot.html">hvPlot</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="my-2"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">hvPlot</span>
+<span class="badge bg-primary">tutorial</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://hvplot.holoviz.org/user_guide/index.html">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/hvPlot.html">hvPlot</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">hvPlot</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization gallery hvPlot docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -803,13 +766,13 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/hvPlot.html">hvPlot</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">hvPlot</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation ipyleaflet docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -823,12 +786,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/ipyleaflet.html">ipyleaflet</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">ipyleaflet</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization documentation matplotlib docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -842,13 +805,13 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">matplotlib</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization matplotlib tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -862,13 +825,13 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization gallery matplotlib docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -882,13 +845,13 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">matplotlib</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation metpy docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -902,12 +865,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/metpy.html">metpy</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">metpy</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card metpy tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -921,12 +884,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/metpy.html">metpy</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">metpy</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card metpy tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -940,12 +903,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/metpy.html">metpy</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">metpy</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card gallery metpy docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -959,12 +922,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/metpy.html">metpy</a></p>
+<p class="card-text"><span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">metpy</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card atmospheric-science gallery docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -978,12 +941,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/atmospheric-science.html">atmospheric science</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a></p>
+<p class="card-text"><span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">gallery</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card metpy video docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -997,12 +960,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/metpy.html">metpy</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a></p>
+<p class="card-text"><span class="badge bg-primary">metpy</span>
+<span class="badge bg-primary">video</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation numpy docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1016,12 +979,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">numpy</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card numpy docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1035,11 +998,11 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a></p>
+<p class="card-text"><span class="badge bg-primary">numpy</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card numpy tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1053,12 +1016,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card numpy video docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1078,19 +1041,19 @@ Packages
 <strong>Institution:</strong> <a href="https://www.enthought.com/">Enthought</a>
 <p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a></p>
+<p class="my-2"><span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">video</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/ZB7BZMhfPgk">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a></p>
+<p class="card-text"><span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">video</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation pandas docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1104,12 +1067,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">pandas</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pandas tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1123,12 +1086,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card gallery pandas docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1142,12 +1105,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a></p>
+<p class="card-text"><span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">pandas</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation rasterio docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1161,12 +1124,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/rasterio.html">rasterio</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">rasterio</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card rasterio tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1180,12 +1143,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/rasterio.html">rasterio</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">rasterio</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation siphon docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1199,12 +1162,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/siphon.html">siphon</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">siphon</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card siphon tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1218,12 +1181,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/siphon.html">siphon</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">siphon</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card gallery siphon docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1237,12 +1200,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/siphon.html">siphon</a></p>
+<p class="card-text"><span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">siphon</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation wrf-python docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1256,12 +1219,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/wrf-python.html">wrf-python</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">wrf-python</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card gallery wrf-python docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1275,12 +1238,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/wrf-python.html">wrf-python</a></p>
+<p class="card-text"><span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">wrf-python</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card documentation xarray docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1302,19 +1265,19 @@ Packages
 <p class="card-text">Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive, more concise, and less error-prone developer experience. The package includes a large and growing library of domain-agnostic functions for advanced analytics and visualization with these data structures.</p>
 <p class="card-text">Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.</p>
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="my-2"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">xarray</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="http://xarray.pydata.org/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/documentation.html">documentation</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="card-text"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">xarray</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card tutorial xarray docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1328,12 +1291,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="card-text"><span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary">xarray</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card tutorial xarray docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1347,12 +1310,12 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="card-text"><span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary">xarray</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card matplotlib numpy pandas pure-python scipy tutorial docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1365,16 +1328,16 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a>
-<a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/scipy.html">scipy</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a></p>
+<p class="card-text"><span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">scipy</span>
+<span class="badge bg-primary">tutorial</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card dask gallery glaciology holoviews hydrology intake jupyter matplotlib numpy pandas pangeo physical-oceanography remote-sensing tutorial xarray xgcm docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1387,26 +1350,26 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/gallery.html">gallery</a>
-<a class="badge bg-primary link-light" href="/gallery/glaciology.html">glaciology</a>
-<a class="badge bg-primary link-light" href="/gallery/holoviews.html">holoviews</a>
-<a class="badge bg-primary link-light" href="/gallery/hydrology.html">hydrology</a>
-<a class="badge bg-primary link-light" href="/gallery/intake.html">intake</a>
-<a class="badge bg-primary link-light" href="/gallery/jupyter.html">jupyter</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a>
-<a class="badge bg-primary link-light" href="/gallery/pangeo.html">pangeo</a>
-<a class="badge bg-primary link-light" href="/gallery/physical-oceanography.html">physical oceanography</a>
-<a class="badge bg-primary link-light" href="/gallery/remote-sensing.html">remote sensing</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a>
-<a class="badge bg-primary link-light" href="/gallery/xgcm.html">xgcm</a></p>
+<p class="card-text"><span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">glaciology</span>
+<span class="badge bg-primary">holoviews</span>
+<span class="badge bg-primary">hydrology</span>
+<span class="badge bg-primary">intake</span>
+<span class="badge bg-primary">jupyter</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">pangeo</span>
+<span class="badge bg-primary">physical-oceanography</span>
+<span class="badge bg-primary">remote-sensing</span>
+<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary">xgcm</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card atmospheric-science cartopy climate-science course dask matplotlib numpy xarray docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1425,31 +1388,31 @@ Packages
 <br/>
 <strong>Institution:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/atmospheric-science.html">atmospheric science</a>
-<a class="badge bg-primary link-light" href="/gallery/cartopy.html">cartopy</a>
-<a class="badge bg-primary link-light" href="/gallery/climate-science.html">climate science</a>
-<a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="my-2"><span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">xarray</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://carpentrieslab.github.io/python-aos-lesson/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/atmospheric-science.html">atmospheric science</a>
-<a class="badge bg-primary link-light" href="/gallery/cartopy.html">cartopy</a>
-<a class="badge bg-primary link-light" href="/gallery/climate-science.html">climate science</a>
-<a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="card-text"><span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">xarray</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card atmospheric-science cartopy climate-science course data-science matplotlib pandas physical-oceanography scipy tutorial video xarray docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1462,22 +1425,22 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/atmospheric-science.html">atmospheric science</a>
-<a class="badge bg-primary link-light" href="/gallery/cartopy.html">cartopy</a>
-<a class="badge bg-primary link-light" href="/gallery/climate-science.html">climate science</a>
-<a class="badge bg-primary link-light" href="/gallery/course.html">course</a>
-<a class="badge bg-primary link-light" href="/gallery/data-science.html">data science</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a>
-<a class="badge bg-primary link-light" href="/gallery/physical-oceanography.html">physical oceanography</a>
-<a class="badge bg-primary link-light" href="/gallery/scipy.html">scipy</a>
-<a class="badge bg-primary link-light" href="/gallery/tutorial.html">tutorial</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a></p>
+<p class="card-text"><span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">data-science</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">physical-oceanography</span>
+<span class="badge bg-primary">scipy</span>
+<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xarray</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pure-python pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1498,23 +1461,23 @@ Packages
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</a>.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="my-2"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/Jog7ybd6amw">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pure-python pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1535,23 +1498,23 @@ Packages
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</a>.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="my-2"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/5z6-t62x7Xs">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pure-python pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1572,23 +1535,23 @@ Packages
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</a>.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="my-2"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/BerEf_3CsL8">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pure-python pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1609,23 +1572,23 @@ Packages
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</a>.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="my-2"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/6lbbTwGFcTc">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pure-python pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1646,44 +1609,44 @@ Packages
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</a>.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="my-2"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/44QUMCh2ZHU">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pure-python.html">pure python</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card jupyter pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/ptss-jupyter.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/xSzXvwzFsDU"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Jupyter Notebooks</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
 </p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/jupyter.html">jupyter</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">jupyter</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card numpy pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1697,36 +1660,36 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/numpy.html">numpy</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization matplotlib pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/ptss-matplotlib.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/EiPRIdHQEmE"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <a href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1740,78 +1703,78 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card cartopy data-visualization matplotlib pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/ptss-cartopy.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/ivmd3RluMiw"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <a href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/cartopy.html">cartopy</a>
-<a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/matplotlib.html">matplotlib</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card git pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/ptss-git.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/fYkPn0Nttlg"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Git and GitHub</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <a href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/git.html">git</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">git</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pandas pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/ptss-pandas.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/BsV3ek7qsiM"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Max Grover, Drew Camron<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Project Pythia, Max Grover<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <a href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pandas.html">pandas</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pythia video xarray xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1825,14 +1788,14 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card pythia video xarray xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1846,14 +1809,14 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xarray.html">xarray</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card dask pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1867,14 +1830,14 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card dask pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1888,21 +1851,21 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/dask.html">dask</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card data-visualization geocat-viz pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="/_static/thumbnails/ptss-geocatplot.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/It231le1fAU"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <a href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</a>.
 </p>
 </div>
@@ -1911,30 +1874,30 @@ Packages
 <div class="content">
 <img class="modal-img" src="/_static/thumbnails/ptss-geocatplot.jpeg"/>
 <h3 class="display-3">Python Tutorial Seminar Series - Plotting with GeoCAT</h3>
-<strong>Author:</strong> Project Pythia, Anissa Zacharias
+<strong>Author:</strong> Anissa Zacharias, Project Pythia
 <br/>
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <a href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</a>.
 </p>
-<p class="my-2"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/geocat-viz.html">geocat-viz</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="my-2"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">geocat-viz</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/It231le1fAU">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/data-visualization.html">data visualization</a>
-<a class="badge bg-primary link-light" href="/gallery/geocat-viz.html">geocat-viz</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">geocat-viz</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 docutils">
+<div class="d-flex col-12 tagged-card geocat-comp pythia video xdev docutils">
 <div class="card w-100 shadow mb-4 docutils">
 <div class="card-body p-3 m-0 docutils">
 <div class="d-flex gallery-card">
@@ -1948,10 +1911,10 @@ Packages
 </div>
 </div>
 <div class="card-footer p-1 docutils">
-<p class="card-text"><a class="badge bg-primary link-light" href="/gallery/geocat-comp.html">geocat-comp</a>
-<a class="badge bg-primary link-light" href="/gallery/pythia.html">pythia</a>
-<a class="badge bg-primary link-light" href="/gallery/video.html">video</a>
-<a class="badge bg-primary link-light" href="/gallery/xdev.html">xdev</a></p>
+<p class="card-text"><span class="badge bg-primary">geocat-comp</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xdev</span></p>
 </div>
 </div>
 </div>
