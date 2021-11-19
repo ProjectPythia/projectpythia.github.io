@@ -38,12 +38,13 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        f'<li><a class="dropdown-item" href="/gallery/{tag.replace(" ", "-")}.html">{tag.title()}</a></li>\n'
+        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag} onchange="change();">&nbsp;{tag.capitalize()}</label></li>'
         for tag in tag_list
     )
 
     return f"""
 <div class="dropdown">
+
 <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
 {tag_key.title()}
 </button>
@@ -54,17 +55,16 @@ def _generate_tag_menu(all_items, tag_key):
 """
 
 
-def _generate_menu(all_items, flt=None):
+def _generate_menu(all_items):
 
     key_list = _generate_sorted_tag_keys(all_items)
 
     menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
     menu_html += '<div class="d-flex gallery-menu">\n'
     menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
-    if flt:
-        menu_html += '<div><a role="button" class="btn btn-link btn-sm text-decoration-none" href="/gallery.html">Return to Full Gallery</a></div>\n'
     menu_html += '</div>\n'
     menu_html += '<div class="ms-auto d-flex">\n'
+    menu_html += '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
     menu_html += '</div>\n'
@@ -82,11 +82,12 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             item['thumbnail'] = '/_static/images/ebp-logo.png'
         thumbnail = item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
-        tags = [
-            f'<a href="/gallery/{tag.replace(" ", "-")}.html" class="badge bg-primary link-light">{tag}</a>'
-            for tag in tag_list
-        ]
+        tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
+
+        tags = [f'<span class="badge bg-primary">{tag}</span>' for tag in tag_list_f]
         tags = '\n'.join(tags)
+
+        tag_class_str = ' '.join(tag_list_f)
 
         author_strs = set()
         institution_strs = set()
@@ -139,6 +140,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         panels_body.append(
             f"""\
 ---
+:column: + tagged-card {tag_class_str}
 
 <div class="d-flex gallery-card">
 <img src="{thumbnail}" class="gallery-thumbnail" />
@@ -196,13 +198,6 @@ def main(app):
     title = 'Pythia Resource Gallery'
     menu_html = _generate_menu(all_items)
     build_from_items(all_items, 'gallery', title=title, menu_html=menu_html)
-
-    menu_html_flt = _generate_menu(all_items, flt=True)
-    tag_set = _generate_tag_set(all_items)
-
-    for tag in tag_set:
-        items = [item for item in all_items if _tag_in_item(item, tag)]
-        build_from_items(items, f'gallery/{tag.replace(" ", "-")}', title=title, subtitle=tag, menu_html=menu_html_flt)
 
 
 def setup(app):
