@@ -38,7 +38,7 @@ def _generate_tag_menu(all_items, tag_key):
     tag_list = sorted(tag_set)
 
     options = ''.join(
-        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag} onchange="change();">&nbsp;{tag.capitalize()}</label></li>'
+        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag.capitalize()}</label></li>'
         for tag in tag_list
     )
 
