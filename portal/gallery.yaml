@@ -1224,3 +1224,194 @@
     affiliation:
       - pythia
       - xdev
+
+- title: The Pythia Foundations Book
+  url: https://foundations.projectpythia.org/landing-page.html
+  description: |
+    Brought to you by Project Pythia, this growing collection covers the foundational skills everyone needs to get started with scientific computing in the open-source Python ecosystem.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+
+- title: Pythia Foundations - Getting started with Python
+  url: https://foundations.projectpythia.org/foundations/getting-started-python.html
+  description: |
+    This chapter of the Project Pythia Foundations book covers Python spin-up for new users. Here you will look at your first Python code and learn to run/install Python on various platforms.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - pure python
+
+- title: Pythia Foundations - Getting started with Jupyter
+  url: https://foundations.projectpythia.org/foundations/getting-started-jupyter.html
+  description: |
+    This chapter of the Project Pythia Foundations book covers Python spin-up using Jupyter. Here you will learn about the JupyterLab interface and markdown formatting.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - jupyter
+
+- title: Pythia Foundations - Getting started with GitHub
+  url: https://foundations.projectpythia.org/foundations/getting-started-github.html
+  description: |
+    This chapter of the Project Pythia Foundations book covers GitHub: what it is, basic version control, and how to open a pull request.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - git
+
+- title: Pythia Foundations - Numpy
+  url: https://foundations.projectpythia.org/core/numpy.html
+  description: |
+    This chapter of the Project Pythia Foundations book covers the Python package NumPy: NumPy basics, intermediate NumPy, and NumPy broadcasting.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - numpy
+
+- title: Pythia Foundations - Matplotlib
+  url: https://foundations.projectpythia.org/core/matplotlib.html
+  description: |
+    This chapter of the Project Pythia Foundations book covers basics of the Python package Matplotlib.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - matplotlib
+    domains:
+    - data visualization
+
+- title: Pythia Foundations - Cartopy
+  url: https://foundations.projectpythia.org/core/cartopy.html
+  description: |
+    This chapter of the Project Pythia Foundations book introduces the Python package Cartopy, a package designed for geospatial data processing and used for its ability to produce maps.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - cartopy
+    domains:
+    - data visualization
+
+- title: Pythia Foundations - Datetime
+  url: https://foundations.projectpythia.org/core/datetime.html
+  description: |
+    This section of the Project Pythia Foundations book contains tutorials on dealing with times and calendars in scientific Python, beginning with use of the datetime standard library.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - datetime
+
+- title: Pythia Foundations - Pandas
+  url: https://foundations.projectpythia.org/core/pandas.html
+  description: |
+    This section of the Project Pythia Foundations book covers Pandas, a very powerful library for working with tabular data (i.e. anything you might put in a spreadsheet – a common data type in the geosciences).
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - pandas
+
+- title: Pythia Foundations - Data Formats
+  url: https://foundations.projectpythia.org/core/pandas.html
+  description: |
+    This section of the Project Pythia Foundations book covers how to interact in Python with data file formats in widespread use in the geosciences, such as NetCDF.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    domains:
+    - data formats
+    packages:
+    - netCDF4
+
+- title: Pythia Foundations - Xarray
+  url: https://foundations.projectpythia.org/core/xarray.html
+  description: |
+    This section of the Project Pythia Foundations book contains tutorials on using Xarray. Xarray is used widely in the geosciences and beyond for analysis of gridded N-dimensional datasets.
+  authors:
+    - name: Project Pythia
+      email: projectpythia@ucar.edu
+      url: https://projectpythia.org/
+  thumbnail: /_static/images/logos/pythia_logo-white-notext.png
+  tags:
+    formats:
+    - book
+    affiliation:
+    - pythia
+    packages:
+    - xarray
