@@ -27,7 +27,7 @@ Affiliation
 Domains
 </button>
 <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmospheric-science onchange="change();">&nbsp;Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-science onchange="change();">&nbsp;Climate science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-visualization onchange="change();">&nbsp;Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=glaciology onchange="change();">&nbsp;Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hydrology onchange="change();">&nbsp;Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-oceanography onchange="change();">&nbsp;Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=remote-sensing onchange="change();">&nbsp;Remote sensing</label></li>
+<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmospheric-science onchange="change();">&nbsp;Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-science onchange="change();">&nbsp;Climate science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-formats onchange="change();">&nbsp;Data formats</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-visualization onchange="change();">&nbsp;Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=glaciology onchange="change();">&nbsp;Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hydrology onchange="change();">&nbsp;Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-oceanography onchange="change();">&nbsp;Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=remote-sensing onchange="change();">&nbsp;Remote sensing</label></li>
 </ul>
 </div>
 
@@ -49,7 +49,7 @@ Formats
 Packages
 </button>
 <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netCDF4 onchange="change();">&nbsp;Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
 </ul>
 </div>
 
@@ -148,7 +148,7 @@ Packages
 <img src="/_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Institution:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Institution:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ...more</a></p>
 </div>
 </div>
@@ -157,7 +157,7 @@ Packages
 <div class="content">
 <img src="/_static/thumbnails/earth_env_data_science.png" class="modal-img" />
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Institution:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
@@ -1315,7 +1315,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>
@@ -1774,7 +1774,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Max Grover, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover, Project Pythia, Drew Camron<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1796,7 +1796,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-xarray1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Ss4ryKukhi4" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1818,7 +1818,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-xarray2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/2H_4drBwORY" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1840,7 +1840,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-dask1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/wn-QM6QUB_U" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1862,7 +1862,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-dask2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/yn4_-1pHC5k" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1938,6 +1938,239 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <span class="badge bg-primary">pythia</span>
 <span class="badge bg-primary">video</span>
 <span class="badge bg-primary">xdev</span>
+
+
+---
+:column: + tagged-card book pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/landing-page.html" class="text-decoration-none"><h4 class="display-4 p-0">The Pythia Foundations Book</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">Brought to you by Project Pythia, this growing collection covers the foundational skills everyone needs to get started with scientific computing in the open-source Python ecosystem.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book pure-python pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/foundations/getting-started-python.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Getting started with Python</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This chapter of the Project Pythia Foundations book covers Python spin-up for new users. Here you will look at your first Python code and learn to run/install Python on various platforms.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">pure-python</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book jupyter pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/foundations/getting-started-jupyter.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Getting started with Jupyter</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This chapter of the Project Pythia Foundations book covers Python spin-up using Jupyter. Here you will learn about the JupyterLab interface and markdown formatting.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">jupyter</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book git pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/foundations/getting-started-github.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Getting started with GitHub</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This chapter of the Project Pythia Foundations book covers GitHub: what it is, basic version control, and how to open a pull request.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">git</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book numpy pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/numpy.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Numpy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This chapter of the Project Pythia Foundations book covers the Python package NumPy: NumPy basics, intermediate NumPy, and NumPy broadcasting.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book data-visualization matplotlib pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/matplotlib.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Matplotlib</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This chapter of the Project Pythia Foundations book covers basics of the Python package Matplotlib.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book cartopy data-visualization pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/cartopy.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Cartopy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This chapter of the Project Pythia Foundations book introduces the Python package Cartopy, a package designed for geospatial data processing and used for its ability to produce maps.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book datetime pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/datetime.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Datetime</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This section of the Project Pythia Foundations book contains tutorials on dealing with times and calendars in scientific Python, beginning with use of the datetime standard library.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">datetime</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book pandas pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/pandas.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Pandas</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This section of the Project Pythia Foundations book covers Pandas, a very powerful library for working with tabular data (i.e. anything you might put in a spreadsheet – a common data type in the geosciences).
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book data-formats netCDF4 pythia
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/pandas.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Data Formats</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This section of the Project Pythia Foundations book covers how to interact in Python with data file formats in widespread use in the geosciences, such as NetCDF.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">data-formats</span>
+<span class="badge bg-primary">netCDF4</span>
+<span class="badge bg-primary">pythia</span>
+
+
+---
+:column: + tagged-card book pythia xarray
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://foundations.projectpythia.org/core/xarray.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Xarray</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
+<p class="my-2">This section of the Project Pythia Foundations book contains tutorials on using Xarray. Xarray is used widely in the geosciences and beyond for analysis of gridded N-dimensional datasets.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary">xarray</span>
 
 
 ````
