@@ -59,7 +59,7 @@ are requested.
 
 ### Add a new Jupyter Notebook to Pythia Foundations
 
-[Project Pythia Foundations](https://foundations.projectpythia.org)
+[Pythia Foundations](https://foundations.projectpythia.org)
 is a collection of material that the Pythia team believes is essential
 knowledge for geoscientists to effectively use the Scientific Python
 Ecosystem. The Pythia Foundations content is hosted on a separate
