@@ -1,3 +1,21 @@
+/* FIXES FOR THEME (to be placed in theme eventually) */
+
+.gallery-card .card-subtitle {
+  margin-top: 0.5rem;
+}
+
+.gallery-card .heading-style,
+.gallery-card h1,
+.gallery-card h2,
+.gallery-card h3,
+.gallery-card h4,
+.gallery-card h5,
+.gallery-card h6 {
+  margin: 0;
+}
+
+/* CUSTOM SITE CONTENT BELOW */
+
 .modal {
   display: none;
   position: fixed;
