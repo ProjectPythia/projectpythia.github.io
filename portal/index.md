@@ -337,4 +337,5 @@ maxdepth: 1
 about.md
 contributing.md
 code_of_conduct.md
+gallery.md
 ```
