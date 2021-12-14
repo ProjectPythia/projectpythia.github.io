@@ -1445,7 +1445,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-txtfile.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Jog7ybd6amw" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1455,7 +1455,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="content">
 <img src="/_static/thumbnails/ptss-txtfile.jpeg" class="modal-img" />
 <h3 class="display-3">Your First Python Tutorial - Reading in a .txt File</h3>
-<strong>Author:</strong> Project Pythia, Julia Kent
+<strong>Author:</strong> Julia Kent, Project Pythia
 <br/>
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
@@ -1484,7 +1484,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-datadict.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/5z6-t62x7Xs" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1494,7 +1494,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="content">
 <img src="/_static/thumbnails/ptss-datadict.jpeg" class="modal-img" />
 <h3 class="display-3">Your First Python Tutorial - Creating a Data Dictionary</h3>
-<strong>Author:</strong> Project Pythia, Julia Kent
+<strong>Author:</strong> Julia Kent, Project Pythia
 <br/>
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
@@ -1523,7 +1523,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-writingfx.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BerEf_3CsL8" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1533,7 +1533,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="content">
 <img src="/_static/thumbnails/ptss-writingfx.jpeg" class="modal-img" />
 <h3 class="display-3">Your First Python Tutorial - Writing Functions</h3>
-<strong>Author:</strong> Project Pythia, Julia Kent
+<strong>Author:</strong> Julia Kent, Project Pythia
 <br/>
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
@@ -1562,7 +1562,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-firstpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/6lbbTwGFcTc" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1572,7 +1572,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="content">
 <img src="/_static/thumbnails/ptss-firstpackage.jpeg" class="modal-img" />
 <h3 class="display-3">Your First Python Tutorial - Creating Your Own Package</h3>
-<strong>Author:</strong> Project Pythia, Julia Kent
+<strong>Author:</strong> Julia Kent, Project Pythia
 <br/>
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
@@ -1601,7 +1601,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-builtinpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/44QUMCh2ZHU" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1611,7 +1611,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="content">
 <img src="/_static/thumbnails/ptss-builtinpackage.jpeg" class="modal-img" />
 <h3 class="display-3">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h3>
-<strong>Author:</strong> Project Pythia, Julia Kent
+<strong>Author:</strong> Julia Kent, Project Pythia
 <br/>
 <strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
@@ -1662,7 +1662,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-numpy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/kstc-6uz7AQ" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Numpy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The content to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
 </p>
 </div>
@@ -1707,7 +1707,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-oop.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/GEFnL8C62u8" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Object Oriented Programming</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1774,7 +1774,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Max Grover, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover, Drew Camron, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1925,7 +1925,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-geocatcomp.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - GeoCAT-Comp</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</A>.
 </p>
 </div>
@@ -1968,7 +1968,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/foundations/getting-started-python.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Getting started with Python</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This chapter of the Project Pythia Foundations book covers Python spin-up for new users. Here you will look at your first Python code and learn to run/install Python on various platforms.
+<p class="my-2">This chapter of the Pythia Foundations book covers Python spin-up for new users. Here you will look at your first Python code and learn to run/install Python on various platforms.
 </p>
 </div>
 </div>
@@ -1989,7 +1989,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/foundations/getting-started-jupyter.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Getting started with Jupyter</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This chapter of the Project Pythia Foundations book covers Python spin-up using Jupyter. Here you will learn about the JupyterLab interface and markdown formatting.
+<p class="my-2">This chapter of the Pythia Foundations book covers Python spin-up using Jupyter. Here you will learn about the JupyterLab interface and markdown formatting.
 </p>
 </div>
 </div>
@@ -2010,7 +2010,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/foundations/getting-started-github.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Getting started with GitHub</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This chapter of the Project Pythia Foundations book covers GitHub: what it is, basic version control, and how to open a pull request.
+<p class="my-2">This chapter of the Pythia Foundations book covers GitHub: what it is, basic version control, and how to open a pull request.
 </p>
 </div>
 </div>
@@ -2031,7 +2031,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/numpy.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Numpy</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This chapter of the Project Pythia Foundations book covers the Python package NumPy: NumPy basics, intermediate NumPy, and NumPy broadcasting.
+<p class="my-2">This chapter of the Pythia Foundations book covers the Python package NumPy: NumPy basics, intermediate NumPy, and NumPy broadcasting.
 </p>
 </div>
 </div>
@@ -2052,7 +2052,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/matplotlib.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Matplotlib</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This chapter of the Project Pythia Foundations book covers basics of the Python package Matplotlib.
+<p class="my-2">This chapter of the Pythia Foundations book covers basics of the Python package Matplotlib.
 </p>
 </div>
 </div>
@@ -2074,7 +2074,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/cartopy.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Cartopy</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This chapter of the Project Pythia Foundations book introduces the Python package Cartopy, a package designed for geospatial data processing and used for its ability to produce maps.
+<p class="my-2">This chapter of the Pythia Foundations book introduces the Python package Cartopy, a package designed for geospatial data processing and used for its ability to produce maps.
 </p>
 </div>
 </div>
@@ -2096,7 +2096,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/datetime.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Datetime</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This section of the Project Pythia Foundations book contains tutorials on dealing with times and calendars in scientific Python, beginning with use of the datetime standard library.
+<p class="my-2">This section of the Pythia Foundations book contains tutorials on dealing with times and calendars in scientific Python, beginning with use of the datetime standard library.
 </p>
 </div>
 </div>
@@ -2117,7 +2117,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/pandas.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Pandas</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This section of the Project Pythia Foundations book covers Pandas, a very powerful library for working with tabular data (i.e. anything you might put in a spreadsheet – a common data type in the geosciences).
+<p class="my-2">This section of the Pythia Foundations book covers Pandas, a very powerful library for working with tabular data (i.e. anything you might put in a spreadsheet – a common data type in the geosciences).
 </p>
 </div>
 </div>
@@ -2138,7 +2138,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/pandas.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Data Formats</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This section of the Project Pythia Foundations book covers how to interact in Python with data file formats in widespread use in the geosciences, such as NetCDF.
+<p class="my-2">This section of the Pythia Foundations book covers how to interact in Python with data file formats in widespread use in the geosciences, such as NetCDF.
 </p>
 </div>
 </div>
@@ -2160,7 +2160,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <div class="container">
 <a href="https://foundations.projectpythia.org/core/xarray.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Xarray</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This section of the Project Pythia Foundations book contains tutorials on using Xarray. Xarray is used widely in the geosciences and beyond for analysis of gridded N-dimensional datasets.
+<p class="my-2">This section of the Pythia Foundations book contains tutorials on using Xarray. Xarray is used widely in the geosciences and beyond for analysis of gridded N-dimensional datasets.
 </p>
 </div>
 </div>
