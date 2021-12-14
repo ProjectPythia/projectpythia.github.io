@@ -44,7 +44,7 @@ domain-specific content to be housed here in the Pythia Portal.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
     <a href="https://foundations.projectpythia.org" role="button" class="btn btn-primary btn-lg">
-        Read the Project Pythia Foundations Book
+        Read the Pythia Foundations Book
     </a>
 </span>
 
