@@ -61,7 +61,7 @@ def _generate_menu(all_items):
 
     menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
     menu_html += '<div class="d-flex gallery-menu">\n'
-    menu_html += '<div><a role="button" class="btn btn-primary text-light btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
+    menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
     menu_html += '</div>\n'
     menu_html += '<div class="ms-auto d-flex">\n'
     menu_html += '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
@@ -84,7 +84,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
 
-        tags = [f'<span class="badge bg-primary text-light">{tag}</span>' for tag in tag_list_f]
+        tags = [f'<span class="badge bg-primary">{tag}</span>' for tag in tag_list_f]
         tags = '\n'.join(tags)
 
         tag_class_str = ' '.join(tag_list_f)
