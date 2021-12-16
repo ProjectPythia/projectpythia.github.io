@@ -1,21 +1,3 @@
-/*
-.gallery-card .card-subtitle {
-  margin-top: 0.5rem;
-}
-
-.gallery-card .heading-style,
-.gallery-card h1,
-.gallery-card h2,
-.gallery-card h3,
-.gallery-card h4,
-.gallery-card h5,
-.gallery-card h6 {
-  margin: 0;
-}
-*/
-
-/* CUSTOM SITE CONTENT BELOW */
-
 .modal {
   display: none;
   position: fixed;
@@ -65,7 +47,7 @@
 .gallery-thumbnail {
   display: block;
   float: left;
-  margin: 0 0 auto 0;
+  margin: auto 0;
   padding: 0;
   max-width: 160px;
 }
