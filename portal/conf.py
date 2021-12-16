@@ -80,7 +80,7 @@ html_css_files = ['custom.css']
 
 # HTML Theme-specific Options
 html_theme_options = {
-    'page_layouts': {'index': 'banner'},
+    'page_layouts': {'index': 'banner', 'gallery': 'standalone'},
     'domnav': [
         {
             'content': 'Start Learning',
