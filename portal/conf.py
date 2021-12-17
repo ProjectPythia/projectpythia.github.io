@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 
 project = 'Project Pythia'
 author = 'Project Pythia Developers & Contributors'
-copyright = f'2020-{datetime.datetime.now().year}, {author}'
+copyright = f'2021-{datetime.datetime.now().year}, {author}'
 
 # -- General configuration ---------------------------------------------------
 
@@ -35,7 +35,6 @@ copyright = f'2020-{datetime.datetime.now().year}, {author}'
 extensions = [
     'myst_nb',
     'sphinx_panels',
-    'pythia',
     'yaml_gallery_generator',
 ]
 
@@ -60,7 +59,6 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_pythia_theme'
-html_theme_path = ['..']
 html_last_updated_fmt = '%d %B %Y'
 
 # Logo & Title
@@ -71,7 +69,7 @@ html_title = ''
 html_favicon = '_static/images/icons/favicon.ico'
 
 # Permalinks Icon
-html_permalinks_icon = '<i class="bi bi-link"></i>'
+html_permalinks_icon = '<i class="fas fa-link"></i>'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -82,21 +80,42 @@ html_css_files = ['custom.css']
 
 # HTML Theme-specific Options
 html_theme_options = {
-    'onepagers': [
-        'index',
+    'page_layouts': {'index': 'banner', 'gallery': 'standalone'},
+    'domnav': [
+        {
+            'content': 'Start Learning',
+            'url': '/index.html#start-learning',
+        },
+        {
+            'content': 'Join us!',
+            'url': '/index.html#join-us',
+        },
+        {
+            'content': 'Team',
+            'url': '/index.html#the-project-pythia-team',
+        },
+        {
+            'content': 'About',
+            'url': 'about',
+        },
     ],
-    'logos_bar': {
-        'NCAR': '/_static/images/logos/NCAR-contemp-logo-blue.svg',
-        'Unidata': '/_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
-        'UAlbany': '/_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
+    'footer': {
+        'logos': {
+            'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
+            'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
+            'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
+        },
+        'acknowledgement': {
+            'content': (
+                'This material is based upon work supported by the National '
+                'Science Foundation under Grant Nos. 2026863 and 2026899. Any '
+                'opinions, findings, and conclusions or recommendations expressed '
+                'in this material are those of the author(s) and do not necessarily '
+                'reflect the views of the National Science Foundation.'
+            ),
+            'image': '_static/images/logos/footer-logo-nsf.png',
+        },
     },
-    'sponsor_text': 'This material is based upon work supported by the National Science Foundation under Grant Nos. 2026863 and 2026899. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.',
-    'sponsor_logo': '/_static/images/logos/footer-logo-nsf.png',
-}
-
-# Disable sidebars on all Portal Pages
-html_sidebars = {
-    '**': [],
 }
 
 # Panels config
@@ -104,7 +123,7 @@ panels_add_bootstrap_css = False
 
 # MyST config
 myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
-myst_url_schemes = ('http', 'https', 'mailto')
+myst_url_schemes = ['http', 'https', 'mailto']
 jupyter_execute_notebooks = 'off'
 
 # CUSTOM SCRIPTS ==============================================================
