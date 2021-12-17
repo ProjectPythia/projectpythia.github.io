@@ -69,7 +69,7 @@ html_title = ''
 html_favicon = '_static/images/icons/favicon.ico'
 
 # Permalinks Icon
-html_permalinks_icon = '<i class="bi bi-link"></i>'
+html_permalinks_icon = '<i class="fas fa-link"></i>'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
