@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 # -- Project information -----------------------------------------------------
 
 project = 'Project Pythia'
-author = 'the Project Pythia Community'
+author = 'the <a href="https://projectpythia.org/">Project Pythia</a> Community'
 copyright = '2022'
 
 # -- General configuration ---------------------------------------------------
@@ -58,7 +58,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_pythia_theme'
-html_last_updated_fmt = '%d %B %Y'
+html_last_updated_fmt = '%-d %B %Y'
 
 # Logo & Title
 html_logo = '_static/images/logos/pythia_logo-white-rtext.svg'
