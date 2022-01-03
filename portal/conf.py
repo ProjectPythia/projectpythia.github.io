@@ -78,44 +78,78 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 # html_js_files = ['custom.js']
 
+# Disable Sidebars on special pages
+html_sidebars = {
+    "index": [],
+    "gallery": [],
+}
+
 # HTML Theme-specific Options
 html_theme_options = {
-    'page_layouts': {'index': 'banner', 'gallery': 'standalone'},
-    'domnav': [
-        {
-            'content': 'Start Learning',
-            'url': '/index.html#start-learning',
-        },
-        {
-            'content': 'Join us!',
-            'url': '/index.html#join-us',
-        },
-        {
-            'content': 'Team',
-            'url': '/index.html#the-project-pythia-team',
-        },
-        {
-            'content': 'About',
-            'url': 'about',
-        },
+    "github_url": "https://github.com/ProjectPythia/projectpythia.github.io",
+    "twitter_url": "https://twitter.com/project_pythia",
+    "logo_only": True,
+    "logo_link": "https://projectpythia.org",
+    "navbar_align": "left",
+    "navbar_links": [
+        {"name": "Portal", "url": "/index.html#project-pythia"},
+        {"name": "Gallery", "url": "/gallery.html"},
+        {"name": "Join", "url": "/index.html#join-us"},
     ],
-    'footer': {
-        'logos': {
-            'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
-            'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
-            'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
-        },
-        'acknowledgement': {
-            'content': (
-                'This material is based upon work supported by the National '
-                'Science Foundation under Grant Nos. 2026863 and 2026899. Any '
-                'opinions, findings, and conclusions or recommendations expressed '
-                'in this material are those of the author(s) and do not necessarily '
-                'reflect the views of the National Science Foundation.'
-            ),
-            'image': '_static/images/logos/footer-logo-nsf.png',
-        },
+    "external_links": [
+        {"name": "Foundations", "url": "https://foundations.projectpythia.org"},
+    ],
+    'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
+    "footer_menu": {
+        "More about...": [
+            {
+                "name": "Project Pythia",
+                "url": "https://projectpythia.org/about",
+            },
+            {
+                "name": "Pangeo",
+                "url": "https://pangeo.io",
+            },
+            {
+                "name": "Project Jupyter",
+                "url": "https://jupyter.org",
+            },
+        ],
+        "Let us know...": [
+            {
+                "name": "Submit an issue on GitHub",
+                "url": "https://github.com/ProjectPythia/sphinx-pythia-theme/issues/new?title=Issue%20with%20Sphinx%20Pythia%20Theme&body=Your%20issue%20content%20here.",  # noqa
+            },
+            {
+                "name": "Feedback to Project Pythia",
+                "url": "https://docs.google.com/forms/d/e/1FAIpQLSeVa1TC9xM-dk7qIE2e8bsgSrIP82yYDNw3wew3J46eREJa4w/viewform?usp=sf_link",  # noqa
+            },
+        ],
+        "Join the community": [
+            {
+                "name": "Contributor's Guide",
+                "url": "https://foundations.projectpythia.org/appendix/how-to-contribute.html",  # noqa
+            },
+            {
+                "name": "Our GitHub Organization",
+                "url": "https://github.com/ProjectPythia",  # noqa
+            },
+        ],
     },
+    'footer_logos': {
+        'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
+        'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
+        'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
+    },
+    "extra_footer": (
+        '<img src="/_static/images/logos/footer-logo-nsf.png" style="float:left;width:60px;height:60px;margin-right:1rem;">'
+        "This material is based upon work supported by the National "
+        "Science Foundation under Grant Nos. 2026863 and 2026899. Any "
+        "opinions, findings, and conclusions or recommendations expressed "
+        "in this material are those of the author(s) and do not necessarily "
+        "reflect the views of the National Science Foundation."
+    ),
+    "extra_navbar": ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
 }
 
 # Panels config
