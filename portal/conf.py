@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 # -- Project information -----------------------------------------------------
 
 project = 'Project Pythia'
-author = 'Project Pythia Developers & Contributors'
+author = 'the Project Pythia Community'
 copyright = '2022'
 
 # -- General configuration ---------------------------------------------------
