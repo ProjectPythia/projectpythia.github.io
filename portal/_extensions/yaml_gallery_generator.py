@@ -45,7 +45,7 @@ def _generate_tag_menu(all_items, tag_key):
     return f"""
 <div class="dropdown">
 
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 {tag_key.title()}
 </button>
 <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
@@ -63,7 +63,7 @@ def _generate_menu(all_items):
     menu_html += '<div class="d-flex gallery-menu">\n'
     menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
     menu_html += '</div>\n'
-    menu_html += '<div class="ms-auto d-flex">\n'
+    menu_html += '<div class="ml-auto d-flex">\n'
     menu_html += '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
     for tag_key in key_list:
         menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
