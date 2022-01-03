@@ -13,7 +13,6 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import datetime
 import os
 import shutil
 import sys
@@ -25,7 +24,7 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 
 project = 'Project Pythia'
 author = 'Project Pythia Developers & Contributors'
-copyright = f'2021-{datetime.datetime.now().year}, {author}'
+copyright = '2022'
 
 # -- General configuration ---------------------------------------------------
 
@@ -92,12 +91,10 @@ html_theme_options = {
     'logo_link': 'https://projectpythia.org',
     'navbar_align': 'left',
     'navbar_links': [
-        {'name': 'Portal', 'url': '/index.html#project-pythia'},
-        {'name': 'Gallery', 'url': '/gallery.html'},
-        {'name': 'Join', 'url': '/index.html#join-us'},
-    ],
-    'external_links': [
+        {'name': 'Portal', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
+        {'name': 'Gallery', 'url': 'https://projectpythia.org/gallery.html'},
+        {'name': 'Join us!', 'url': 'https://projectpythia.org/index.html#join-us'},
     ],
     'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
     'footer_menu': {
