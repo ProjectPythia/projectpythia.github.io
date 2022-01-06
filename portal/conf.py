@@ -85,8 +85,9 @@ html_sidebars = {
 
 # HTML Theme-specific Options
 html_theme_options = {
-    'github_url': 'https://github.com/ProjectPythia/projectpythia.github.io',
+    'github_url': 'https://github.com/ProjectPythia',
     'twitter_url': 'https://twitter.com/project_pythia',
+    'google_analytics_id': 'G-T9KGMX7VHZ',
     'logo_only': True,
     'logo_link': 'https://projectpythia.org',
     'navbar_align': 'left',
@@ -97,55 +98,65 @@ html_theme_options = {
         {'name': 'Join us!', 'url': 'https://projectpythia.org/index.html#join-us'},
     ],
     'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
-    'footer_menu': {
-        'More about...': [
-            {
-                'name': 'Project Pythia',
-                'url': 'https://projectpythia.org/about',
-            },
-            {
-                'name': 'Pangeo',
-                'url': 'https://pangeo.io',
-            },
-            {
-                'name': 'Project Jupyter',
-                'url': 'https://jupyter.org',
-            },
-        ],
-        'Let us know...': [
-            {
-                'name': 'Submit an issue on GitHub',
-                'url': 'https://github.com/ProjectPythia/sphinx-pythia-theme/issues/new?title=Issue%20with%20Sphinx%20Pythia%20Theme&body=Your%20issue%20content%20here.',  # noqa
-            },
-            {
-                'name': 'Feedback to Project Pythia',
-                'url': 'https://docs.google.com/forms/d/e/1FAIpQLSeVa1TC9xM-dk7qIE2e8bsgSrIP82yYDNw3wew3J46eREJa4w/viewform?usp=sf_link',  # noqa
-            },
-        ],
-        'Join the community': [
-            {
-                'name': "Contributor's Guide",
-                'url': 'https://foundations.projectpythia.org/appendix/how-to-contribute.html',  # noqa
-            },
-            {
-                'name': 'Our GitHub Organization',
-                'url': 'https://github.com/ProjectPythia',  # noqa
-            },
-        ],
-    },
+    'footer_menu': [
+        {
+            'title': 'More about...',
+            'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
+            'items': [
+                {
+                    'name': 'Project Pythia',
+                    'url': 'https://projectpythia.org/about',
+                },
+                {
+                    'name': 'Pangeo',
+                    'url': 'https://pangeo.io',
+                },
+                {
+                    'name': 'Project Jupyter',
+                    'url': 'https://jupyter.org',
+                },
+            ],
+        },
+        {
+            'title': 'Join the community',
+            'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
+            'items': [
+                {
+                    'name': "Contributor's Guide",
+                    'url': 'https://foundations.projectpythia.org/appendix/how-to-contribute.html',  # noqa
+                },
+                {
+                    'name': 'Our GitHub Organization',
+                    'url': 'https://github.com/ProjectPythia',  # noqa
+                },
+            ],
+        },
+        {
+            'title': 'We want your feedback!',
+            'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
+            'items': [
+                {
+                    'name': 'Fill out this Google Form',
+                    'url': 'https://docs.google.com/forms/d/e/1FAIpQLSeVa1TC9xM-dk7qIE2e8bsgSrIP82yYDNw3wew3J46eREJa4w/viewform?usp=sf_link',  # noqa
+                },
+                {
+                    'name': 'Submit an issue on GitHub',
+                    'url': 'https://github.com/ProjectPythia/sphinx-pythia-theme/issues/new?title=Issue%20with%20Sphinx%20Pythia%20Theme&body=Your%20issue%20content%20here.',  # noqa
+                },
+            ],
+        },
+    ],
     'footer_logos': {
         'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
         'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
     },
-    'extra_footer': (
-        '<img src="/_static/images/logos/footer-logo-nsf.png" style="float:left;width:60px;height:60px;margin-right:1rem;">'
-        'This material is based upon work supported by the National '
-        'Science Foundation under Grant Nos. 2026863 and 2026899. Any '
-        'opinions, findings, and conclusions or recommendations expressed '
-        'in this material are those of the author(s) and do not necessarily '
-        'reflect the views of the National Science Foundation.'
-    ),
+    'footer_items': [
+        'footer-logos.html',
+        'footer-menu.html',
+        'footer-info.html',
+        'footer-nsf.html',
+    ],
     'extra_navbar': ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
 }
 
