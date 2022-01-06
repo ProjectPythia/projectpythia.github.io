@@ -90,58 +90,74 @@ html_theme_options = {
     'google_analytics_id': 'G-T9KGMX7VHZ',
     'logo_only': True,
     'logo_link': 'https://projectpythia.org',
-    'navbar_align': 'left',
     'navbar_links': [
-        {'name': 'Portal', 'url': 'https://projectpythia.org'},
+        {'name': 'Home', 'url': '/'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
         {'name': 'Gallery', 'url': 'https://projectpythia.org/gallery.html'},
-        {'name': 'Join us!', 'url': 'https://projectpythia.org/index.html#join-us'},
+        {'name': 'Community', 'url': 'https://projectpythia.org/index.html#join-us'},
     ],
+    'navbar_align': 'left',
     'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
     'footer_menu': [
         {
-            'title': 'More about...',
+            'title': 'Column A',
             'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
             'items': [
                 {
-                    'name': 'Project Pythia',
-                    'url': 'https://projectpythia.org/about',
+                    'name': 'Link 1',
+                    'url': 'https://google.com',
                 },
                 {
-                    'name': 'Pangeo',
-                    'url': 'https://pangeo.io',
+                    'name': 'Link 2',
+                    'url': 'https://google.com',
                 },
                 {
-                    'name': 'Project Jupyter',
-                    'url': 'https://jupyter.org',
+                    'name': 'Link 3',
+                    'url': 'https://google.com',
+                },
+                {
+                    'name': 'Link 4',
+                    'url': 'https://google.com',
                 },
             ],
         },
         {
-            'title': 'Join the community',
+            'title': 'Column B',
             'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
             'items': [
                 {
-                    'name': "Contributor's Guide",
-                    'url': 'https://foundations.projectpythia.org/appendix/how-to-contribute.html',  # noqa
+                    'name': 'Link 1',
+                    'url': 'https://google.com',
                 },
                 {
-                    'name': 'Our GitHub Organization',
-                    'url': 'https://github.com/ProjectPythia',  # noqa
+                    'name': 'Link 2',
+                    'url': 'https://google.com',
+                },
+                {
+                    'name': 'Link 3',
+                    'url': 'https://google.com',
+                },
+                {
+                    'name': 'Link 4',
+                    'url': 'https://google.com',
                 },
             ],
         },
         {
-            'title': 'We want your feedback!',
+            'title': 'Column C',
             'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
             'items': [
+                {'name': 'Just some text!'},
                 {
-                    'name': 'Fill out this Google Form',
-                    'url': 'https://docs.google.com/forms/d/e/1FAIpQLSeVa1TC9xM-dk7qIE2e8bsgSrIP82yYDNw3wew3J46eREJa4w/viewform?usp=sf_link',  # noqa
+                    'name': (
+                        'Another paragraph of text. This has '
+                        'a lot more information in it than '
+                        'the previous paragraph.'
+                    )
                 },
                 {
-                    'name': 'Submit an issue on GitHub',
-                    'url': 'https://github.com/ProjectPythia/sphinx-pythia-theme/issues/new?title=Issue%20with%20Sphinx%20Pythia%20Theme&body=Your%20issue%20content%20here.',  # noqa
+                    'name': 'And finally a link',
+                    'url': 'https://google.com',
                 },
             ],
         },
