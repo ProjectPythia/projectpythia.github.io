@@ -85,94 +85,22 @@ html_sidebars = {
 
 # HTML Theme-specific Options
 html_theme_options = {
+    'google_analytics_id': 'G-T9KGMX7VHZ',
     'github_url': 'https://github.com/ProjectPythia',
     'twitter_url': 'https://twitter.com/project_pythia',
-    'google_analytics_id': 'G-T9KGMX7VHZ',
-    'logo_only': True,
     'logo_link': 'https://projectpythia.org',
     'navbar_links': [
-        {'name': 'Home', 'url': '/'},
+        {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
         {'name': 'Gallery', 'url': 'https://projectpythia.org/gallery.html'},
-        {'name': 'Community', 'url': 'https://projectpythia.org/index.html#join-us'},
+        {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
-    'navbar_align': 'left',
     'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
-    'footer_menu': [
-        {
-            'title': 'Column A',
-            'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
-            'items': [
-                {
-                    'name': 'Link 1',
-                    'url': 'https://google.com',
-                },
-                {
-                    'name': 'Link 2',
-                    'url': 'https://google.com',
-                },
-                {
-                    'name': 'Link 3',
-                    'url': 'https://google.com',
-                },
-                {
-                    'name': 'Link 4',
-                    'url': 'https://google.com',
-                },
-            ],
-        },
-        {
-            'title': 'Column B',
-            'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
-            'items': [
-                {
-                    'name': 'Link 1',
-                    'url': 'https://google.com',
-                },
-                {
-                    'name': 'Link 2',
-                    'url': 'https://google.com',
-                },
-                {
-                    'name': 'Link 3',
-                    'url': 'https://google.com',
-                },
-                {
-                    'name': 'Link 4',
-                    'url': 'https://google.com',
-                },
-            ],
-        },
-        {
-            'title': 'Column C',
-            'class': 'col-8 col-sm-4 col-md-3 col-lg-2',
-            'items': [
-                {'name': 'Just some text!'},
-                {
-                    'name': (
-                        'Another paragraph of text. This has '
-                        'a lot more information in it than '
-                        'the previous paragraph.'
-                    )
-                },
-                {
-                    'name': 'And finally a link',
-                    'url': 'https://google.com',
-                },
-            ],
-        },
-    ],
     'footer_logos': {
         'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
         'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
     },
-    'footer_items': [
-        'footer-logos.html',
-        'footer-menu.html',
-        'footer-info.html',
-        'footer-nsf.html',
-    ],
     'extra_navbar': ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
 }
 
