@@ -11,4 +11,4 @@ dependencies:
 - pre-commit
 - sphinx-panels
 - pip:
-  - sphinx-pythia-theme==2021.12.6
+  - sphinx-pythia-theme
