@@ -13,7 +13,6 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import datetime
 import os
 import shutil
 import sys
@@ -24,8 +23,8 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 # -- Project information -----------------------------------------------------
 
 project = 'Project Pythia'
-author = 'Project Pythia Developers & Contributors'
-copyright = f'2021-{datetime.datetime.now().year}, {author}'
+author = 'the <a href="https://projectpythia.org/">Project Pythia</a> Community'
+copyright = '2022'
 
 # -- General configuration ---------------------------------------------------
 
@@ -59,7 +58,7 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_pythia_theme'
-html_last_updated_fmt = '%d %B %Y'
+html_last_updated_fmt = '%-d %B %Y'
 
 # Logo & Title
 html_logo = '_static/images/logos/pythia_logo-white-rtext.svg'
@@ -78,44 +77,31 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 # html_js_files = ['custom.js']
 
+# Disable Sidebars on special pages
+html_sidebars = {
+    'index': [],
+    'gallery': [],
+}
+
 # HTML Theme-specific Options
 html_theme_options = {
-    'page_layouts': {'index': 'banner', 'gallery': 'standalone'},
-    'domnav': [
-        {
-            'content': 'Start Learning',
-            'url': '/index.html#start-learning',
-        },
-        {
-            'content': 'Join us!',
-            'url': '/index.html#join-us',
-        },
-        {
-            'content': 'Team',
-            'url': '/index.html#the-project-pythia-team',
-        },
-        {
-            'content': 'About',
-            'url': 'about',
-        },
+    'google_analytics_id': 'G-T9KGMX7VHZ',
+    'github_url': 'https://github.com/ProjectPythia',
+    'twitter_url': 'https://twitter.com/project_pythia',
+    'logo_link': 'https://projectpythia.org',
+    'navbar_links': [
+        {'name': 'Home', 'url': 'https://projectpythia.org'},
+        {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
+        {'name': 'Gallery', 'url': 'https://projectpythia.org/gallery.html'},
+        {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
-    'footer': {
-        'logos': {
-            'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
-            'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
-            'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
-        },
-        'acknowledgement': {
-            'content': (
-                'This material is based upon work supported by the National '
-                'Science Foundation under Grant Nos. 2026863 and 2026899. Any '
-                'opinions, findings, and conclusions or recommendations expressed '
-                'in this material are those of the author(s) and do not necessarily '
-                'reflect the views of the National Science Foundation.'
-            ),
-            'image': '_static/images/logos/footer-logo-nsf.png',
-        },
+    'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
+    'footer_logos': {
+        'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
+        'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
+        'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
     },
+    'extra_navbar': ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
 }
 
 # Panels config
