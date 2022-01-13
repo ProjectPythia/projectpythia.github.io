@@ -14,6 +14,7 @@
     - pure python
     formats:
     - video
+    - tutorial
     affiliation:
     - pythia
     - xdev
@@ -890,6 +891,7 @@
       - pure python
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -909,6 +911,7 @@
       - pure python
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -928,6 +931,7 @@
       - pure python
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -947,6 +951,7 @@
       - pure python
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -966,6 +971,7 @@
       - pure python
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -985,6 +991,7 @@
       - jupyter
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1004,6 +1011,7 @@
       - numpy
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1023,6 +1031,7 @@
       - matplotlib
     formats:
       - video
+      - tutorial
     domains:
       - data visualization
     affiliation:
@@ -1042,6 +1051,7 @@
   tags:
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1062,6 +1072,7 @@
       - cartopy
     formats:
       - video
+      - tutorial
     domains:
       - data visualization
     affiliation:
@@ -1083,6 +1094,7 @@
       - git
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1105,6 +1117,7 @@
       - pandas
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1124,6 +1137,7 @@
       - xarray
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1143,6 +1157,7 @@
       - xarray
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1162,6 +1177,7 @@
       - dask
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1181,6 +1197,7 @@
       - dask
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
@@ -1200,6 +1217,7 @@
       - geocat-viz
     formats:
       - video
+      - tutorial
     domains:
       - data visualization
     affiliation:
@@ -1221,6 +1239,7 @@
       - geocat-comp
     formats:
       - video
+      - tutorial
     affiliation:
       - pythia
       - xdev
