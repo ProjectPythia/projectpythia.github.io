@@ -13,7 +13,6 @@
     packages:
     - pure python
     formats:
-    - video
     - tutorial
     affiliation:
     - pythia
