@@ -4,6 +4,34 @@ Pythia is a community educational resource for helping students, scientists,
 and educators learn how to analyze and visualize geosciences data using
 the Scientific Python Ecosystem.
 
+## Why do we need Project Pythia?
+
+Scientists working in a multitude of disciplines rely heavily on
+computing technologies for their research. Numerical simulations
+run on supercomputers are used in the study of climate, weather,
+atmospheric chemistry, wildfires, space weather, and more. Similarly,
+a tremendous volume of digital data produced by numerical simulations,
+or observations made with instruments, are analyzed with the help
+of powerful computers and software. Thus, today’s scientists require
+not only expertise in their scientific discipline, but also require
+high-level technical skills to effectively analyze, manipulate, and
+make sense of potentially vast volumes of data. Computing environments
+change rapidly, and two technologies that have emerged and are being
+adopted by scientific communities relatively recently are Cloud
+Computing platforms and a software ecosystem of scientific tools
+built around the open source programming language called Python.
+Project Pythia will provide a public, web-accessible training
+resource that will help educate current, and aspiring, earth
+scientists to more effectively use both the Scientific Python
+Ecosystem and Cloud Computing to make sense of huge volumes of
+numerical scientific data.
+
+## Why the name "Pythia"?
+
+In ancient Greek mythology, the god Apollo is said to have slain the monstrous [Python](https://en.wikipedia.org/wiki/Python_(mythology)). Apollo's temple was later served by the [Oracle of Delphi](https://en.wikipedia.org/wiki/Pythia), who was known as the *Pythia*.
+
+Like the Oracle of old, Project Pythia will help you make sense of things that seem mysterious. We will not, however, slay your [Python](https://www.python.org), but instead help you improve it.
+
 ## Project Pythia Goals
 
 1. _The Pythia Portal:_ A searchable online portal that
