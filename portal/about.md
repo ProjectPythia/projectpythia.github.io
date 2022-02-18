@@ -28,9 +28,9 @@ numerical scientific data.
 
 ## Why the name "Pythia"?
 
-In ancient Greek mythology, the god Apollo is said to have slain the monstrous [Python](https://en.wikipedia.org/wiki/Python_(mythology)). Apollo's temple was later served by the [Oracle of Delphi](https://en.wikipedia.org/wiki/Pythia), who was known as the *Pythia*.
+In ancient Greek mythology, the god [Apollo](https://en.wikipedia.org/wiki/Apollo) is said to have slain the monstrous [Python](https://en.wikipedia.org/wiki/Python_(mythology)). Apollo's temple was later served by the [Oracle](https://en.wikipedia.org/wiki/Oracle) of [Delphi](https://en.wikipedia.org/wiki/Delphi), who was known as the [Pythia](https://en.wikipedia.org/wiki/Pythia).
 
-Like the Oracle of old, Project Pythia will help you make sense of things that seem mysterious. We will not, however, slay your [Python](https://www.python.org), but instead help you improve it.
+Like the Oracle of old, Project Pythia will help you make sense of things that seem mysterious. We will not, however, _slay_ your [Python](https://www.python.org), but instead help you _improve_ it -- and help you to help others do the same!
 
 ## Project Pythia Goals
 
