@@ -1,3 +1,25 @@
+main.banner-main #project-pythia {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+main.banner-main #project-pythia p {
+  font-size: 1.6rem;  /* default: 1.25rem */
+  /* font-weight: 700; default: 300 */
+}
+
+main.banner-main #project-pythia a {
+  color: rgba(var(--spt-color-gray-400), 1)
+}
+
+main.banner-main #project-pythia a:visited {
+  color: rgba(var(--spt-color-gray-400), 1)
+}
+
+main.banner-main #project-pythia a.btn-light {
+  color: rgba(var(--pst-color-primary), 1)
+}
+
 .modal {
   display: none;
   position: fixed;

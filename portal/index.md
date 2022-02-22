@@ -9,7 +9,12 @@
 
 __*A community education and training hub for Python-based computing in the geosciences*__
 
-Project Pythia is a home for _open-source_, _community-owned_, _high-quality_ learning resources for Python-based geoscience. Project Pythia exists to help current, and aspiring, earth scientists make sense of huge volumes of numerical scientific data using tools that facilitate open, reproducible science, and to build an inclusive [community of practice](https://en.wikipedia.org/wiki/Community_of_practice) around these goals.
+A home for learning resources that are _open-source_, _community-owned_, and
+_high-quality_, Project Pythia exists to help earth scientists make sense of
+huge volumes of numerical scientific data using tools that facilitate open,
+reproducible science, and to build an inclusive
+[community of practice](https://en.wikipedia.org/wiki/Community_of_practice/)
+around these goals.
 
 Project Pythia is the primary educational resource for the [Pangeo](https://pangeo.io/) community.
 
