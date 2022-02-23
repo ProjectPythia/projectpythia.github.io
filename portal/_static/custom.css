@@ -10,6 +10,7 @@ main.banner-main #project-pythia p {
 
 main.banner-main #project-pythia a,
 main.banner-main #project-pythia a:visited {
+  color: rgba(var(--spt-color-light), 1);
   text-decoration: underline dotted rgba(var(--spt-color-gray-400), 1);
 }
 
