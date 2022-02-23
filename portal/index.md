@@ -7,7 +7,7 @@
 :class: dark-banner
 :::
 
-__*A community education and training hub for Python-based computing in the geosciences*__
+<span style="font-size: 2.2rem;">A community education and training hub for Python-based computing in the geosciences</span>
 
 A home for learning resources that are _open-source_, _community-owned_, and
 _high-quality_, Project Pythia exists to help earth scientists make sense of
