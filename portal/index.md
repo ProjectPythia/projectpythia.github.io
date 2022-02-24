@@ -7,21 +7,22 @@
 :class: dark-banner
 :::
 
-<span style="font-size: 2.2rem;">A community education and training hub for Python-based computing in the geosciences</span>
+<span style="font-size: 2.6rem;">An education and training hub for the Pangeo community</span>
 
 A home for learning resources that are _open-source_, _community-owned_, and
-_high-quality_, Project Pythia exists to help earth scientists make sense of
+_high-quality_, Project Pythia exists to help geoscientists make sense of
 huge volumes of numerical scientific data using tools that facilitate open,
 reproducible science, and to build an inclusive
 [community of practice](https://en.wikipedia.org/wiki/Community_of_practice)
 around these goals.
 
-Project Pythia is the primary educational resource for the [Pangeo](https://pangeo.io/) community.
-
-
 <span class="d-flex justify-content-center py-4">
     <a href="about.html" role="button" class="btn btn-light btn-lg">
-        Read more about Project Pythia
+        About Project Pythia
+    </a>
+    <div class="horizontalgap" style="width:100px"></div>
+    <a href="https://pangeo.io" role="button" class="btn btn-light btn-lg">
+        About Pangeo
     </a>
 </span>
 

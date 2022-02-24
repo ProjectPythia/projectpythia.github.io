@@ -111,3 +111,10 @@ main.banner-main #project-pythia a.btn-light {
     padding-bottom: 1rem;
   }
 }
+
+div.horizontalgap {
+  float: left;
+  overflow: hidden;
+  height: 1px;
+  width: 0px;
+}
