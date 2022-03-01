@@ -39,7 +39,7 @@ and the technology in the Python ecosystem for the geosciences: the
 ### The Foundations Book
 
 The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
-[Jupyter Book](https://jupyterbook.org/) that we are currently developing to
+[Jupyter Book](https://jupyterbook.org/) developed by the Pythia community to
 act as a **comprehensive set of tutorials** covering the **foundational skills**
 everyone needs to get started with **computing in the open-source Python ecosystem**.
 These foundational tutorials will serve as common references for more advanced and
@@ -54,8 +54,9 @@ domain-specific content to be housed here in the Pythia Portal.
 ### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
-Python and how to use it in the geosciences! We have attempted to gather together as
-many of these resources as possible into our [Pythia Resource Gallery](/gallery).
+Python and how to use it in the geosciences! We have attempted to gather together
+a curated and filterable list of these resources (including Pythia's own content)
+into our [Pythia Resource Gallery](/gallery).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
 
