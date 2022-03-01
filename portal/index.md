@@ -9,7 +9,7 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
-Project Pythia is the education working group for [Pangeo](https://pangeo.io)
+[Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
 Together these initiatives are helping geoscientists make sense of huge volumes of
 numerical scientific data using tools that facilitate open, reproducible science,
@@ -21,13 +21,16 @@ _community-owned_, _geoscience-focused_, and _high-quality_.
 
 <span class="d-flex justify-content-center py-4">
     <a href="about.html" role="button" class="btn btn-light btn-lg">
-        About Project Pythia
+        About <img src="./_static/images/logos/pythia_logo-blue-rtext.svg" alt="Project Pythia" width="180px">
     </a>
-    <div class="horizontalgap" style="width:100px"></div>
+    <div class="horizontalgap" style="width:70px"></div>
     <a href="https://pangeo.io" role="button" class="btn btn-light btn-lg">
-        About Pangeo
+        About
+        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/small_e_logo_cropped.png" alt="Pangeo logo" height="60px">
+        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/pangeo_simple_logo.svg" alt="Pangeo" width="100px">
     </a>
 </span>
+
 
 ## Start Learning
 
