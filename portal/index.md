@@ -20,14 +20,13 @@ Project Pythia is a home for Python-centered learning resources that are _open-s
 _community-owned_, _geoscience-focused_, and _high-quality_.
 
 <span class="d-flex justify-content-center py-4">
-    <a href="about.html" role="button" class="btn btn-light btn-lg">
-        About <img src="./_static/images/logos/pythia_logo-blue-rtext.svg" alt="Project Pythia" width="180px">
+    <a href="about.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center;">
+        About <img src="./_static/images/logos/pythia_logo-blue-rtext.svg" alt="Project Pythia" height="35px" style="margin-left: 0.5rem;">
     </a>
     <div class="horizontalgap" style="width:70px"></div>
-    <a href="https://pangeo.io" role="button" class="btn btn-light btn-lg">
-        About
-        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/small_e_logo_cropped.png" alt="Pangeo logo" height="60px">
-        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/pangeo_simple_logo.svg" alt="Pangeo" width="100px">
+    <a href="https://pangeo.io" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center;">
+        About <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/small_e_logo_cropped.png" alt="Pangeo logo" height="35px" style="margin-left: 0.5rem;">
+        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/pangeo_simple_logo.svg" alt="Pangeo" height="22px">
     </a>
 </span>
 
