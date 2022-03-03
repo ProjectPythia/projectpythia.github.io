@@ -60,8 +60,15 @@ on how to get involved.
 
 ## Presentations about Project Pythia
 
-Watch this recorded video from AMS 2021 to learn more about Project Pythia!
+To learn more about Project Pythia and its history, see this list of presentations (listed in reverse-chronological order):
 
-<div class="iframe-4x3">
-   <iframe src="https://www.youtube.com/embed/_UxlrwB_evo"></iframe>
-</div>
+| Forum | Date | Presenter | Format | Title (with link) |
+| ---   |  ---  |   ---   |  ---    |  --- |
+|  AMS  | 2022-01  | Drew Camron | slides | [Project Pythia: A community update](https://docs.google.com/presentation/d/1NuV5sI3oGhvuUt_s8hzmj0UA9MqCtlxWTADbJHjr9ow/edit?usp=sharing)     |
+|  AMS  | 2022-01  | Kevin Tyle | slides | [Leveraging Project Pythia in an Advanced Geoscience & Visualization Course](https://docs.google.com/presentation/d/1D8kkpsX4CE3rT5QQliH6JfKYeY76fT1gClIEzboxgko/edit#slide=id.p)     |
+| AMS  | 2022-01 | Max Grover | slides | [Rethinking CESM Diagnostics through the Lens of Earth System Data Science](https://docs.google.com/presentation/d/1aTw0DmaZ-7PQtWXxQqdik825r5mOoYRe/edit?usp=sharing&ouid=113419461755911727326&rtpof=true&sd=true) |
+| AGU | 2021-12 | Kevin Paul | e-poster | [Pangeo and Project Pythia: Helping Geoscientists Navigate the Scientific Python Ecosystem](https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=CF-91-F4-F8-35-E4-B7-40-F2-8C-F6-86-76-97-11-02) |
+| AGU | 2021-12 | Kevin Paul | e-poster | [Project Pythia: A Resource to Help Geoscientists Navigate the Scientific Python Ecosystem](https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=25-22-8E-6D-6E-CB-B4-E9-6D-08-78-2A-61-2F-62-09) |
+| AGU | 2021-12 | Julia Kent | abstract | [ESDS Educational Efforts](https://t.co/hQ1wGQZB18) |
+| Pangeo Showcase | 2021-06 | Brian Rose | video + slides | [Project Pythia: a community learning resource for Python-based computing in the geosciences](https://discourse.pangeo.io/t/june-23-2021-project-pythia-a-community-learning-resource-for-python-based-computing-in-the-geosciences/1601) |
+| AMS | 2021-01 | John Clyne | video | [Project Pythia: a community learning resource for geoscientists](https://youtu.be/_UxlrwB_evo)
