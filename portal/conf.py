@@ -111,6 +111,7 @@ panels_add_bootstrap_css = False
 myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
 myst_url_schemes = ['http', 'https', 'mailto']
 jupyter_execute_notebooks = 'off'
+myst_heading_anchors = 3
 
 # CUSTOM SCRIPTS ==============================================================
 

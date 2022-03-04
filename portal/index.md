@@ -7,31 +7,29 @@
 :class: dark-banner
 :::
 
-Scientists working in a multitude of disciplines rely heavily on
-computing technologies for their research. Numerical simulations
-run on supercomputers are used in the study of climate, weather,
-atmospheric chemistry, wildfires, space weather, and more. Similarly,
-a tremendous volume of digital data produced by numerical simulations,
-or observations made with instruments, are analyzed with the help
-of powerful computers and software. Thus, today’s scientists require
-not only expertise in their scientific discipline, but also require
-high-level technical skills to effectively analyze, manipulate, and
-make sense of potentially vast volumes of data. Computing environments
-change rapidly, and two technologies that have emerged and are being
-adopted by scientific communities relatively recently are Cloud
-Computing platforms and a software ecosystem of scientific tools
-built around the open source programming language called Python.
-Project Pythia will provide a public, web-accessible training
-resource that will help educate current, and aspiring, earth
-scientists to more effectively use both the Scientific Python
-Ecosystem and Cloud Computing to make sense of huge volumes of
-numerical scientific data.
+<span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
+
+[Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
+and is an educational resource for the entire geoscience community.
+Together these initiatives are helping geoscientists make sense of huge volumes of
+numerical scientific data using tools that facilitate open, reproducible science,
+and building an inclusive [community of practice](https://en.wikipedia.org/wiki/Community_of_practice)
+around these goals.
+
+Project Pythia is a home for Python-centered learning resources that are _open-source_,
+_community-owned_, _geoscience-focused_, and _high-quality_.
 
 <span class="d-flex justify-content-center py-4">
-    <a href="/about.html" role="button" class="btn btn-light btn-lg">
-        Read more about Project Pythia
+    <a href="about.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        About <img src="./_static/images/logos/pythia_logo-blue-rtext.svg" alt="Project Pythia" height="35px" style="margin-left: 0.5rem;">
+    </a>
+    <div class="horizontalgap" style="width:70px"></div>
+    <a href="https://pangeo.io/about" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        About <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/small_e_logo_cropped.png" alt="Pangeo logo" height="35px" style="margin-left: 0.5rem;">
+        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/pangeo_simple_logo.svg" alt="Pangeo" height="22px">
     </a>
 </span>
+
 
 ## Start Learning
 
@@ -43,7 +41,7 @@ and the technology in the Python ecosystem for the geosciences: the
 ### The Foundations Book
 
 The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
-[Jupyter Book](https://jupyterbook.org/) that we are currently developing to
+[Jupyter Book](https://jupyterbook.org/) developed by the Pythia community to
 act as a **comprehensive set of tutorials** covering the **foundational skills**
 everyone needs to get started with **computing in the open-source Python ecosystem**.
 These foundational tutorials will serve as common references for more advanced and
@@ -58,8 +56,9 @@ domain-specific content to be housed here in the Pythia Portal.
 ### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
-Python and how to use it in the geosciences! We have attempted to gather together as
-many of these resources as possible into our [Pythia Resource Gallery](/gallery).
+Python and how to use it in the geosciences! We have attempted to gather together
+a curated and filterable list of these resources (including Pythia's own content)
+into our [Pythia Resource Gallery](/gallery).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
 
