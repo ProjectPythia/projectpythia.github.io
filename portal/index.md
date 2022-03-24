@@ -66,10 +66,10 @@ your own pace.
     </a>
 </span>
 
-### Webinar Tutorial Series 
+### Webinar Tutorial Series
 
-The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorials.html) is hosted regularly by the Project Pythia team. Anyone can join 
-these hour-long, instructor-led interactive tutorials. Participants can 
+The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorials.html) is hosted regularly by the Project Pythia team. Anyone can join
+these hour-long, instructor-led interactive tutorials. Participants can
 sit back and learn, or download a Jupyter Notebook and work along with
 the instructor. Each seminar is recorded for later viewing on the
 [Project Pythia channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
@@ -100,7 +100,7 @@ Coming soon!!!
 
 <span class="d-flex justify-content-center pt-1 pb-3">
     <a href="https://github.com/ProjectPythia/pythia-cookbook" role="button" class="btn btn-primary btn-lg">
-        Visit Pythia Cookbooks 
+        Visit Pythia Cookbooks
     </a>
 </span>
 
