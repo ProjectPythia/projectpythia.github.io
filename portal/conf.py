@@ -90,10 +90,10 @@ html_theme_options = {
     'twitter_url': 'https://twitter.com/project_pythia',
     'icon_links': [
         {
-            "name": "Youtube",
-            "url": "https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw",
-            "icon": "fab fa-youtube-square",
-            "type": "fontawesome",
+            'name': 'Youtube',
+            'url': 'https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw',
+            'icon': 'fab fa-youtube-square',
+            'type': 'fontawesome',
         }
     ],
     'logo_link': 'https://projectpythia.org',
