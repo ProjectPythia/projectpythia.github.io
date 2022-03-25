@@ -88,6 +88,14 @@ html_theme_options = {
     'google_analytics_id': 'G-T9KGMX7VHZ',
     'github_url': 'https://github.com/ProjectPythia',
     'twitter_url': 'https://twitter.com/project_pythia',
+    'icon_links': [
+        {
+            'name': 'YouTube',
+            'url': 'https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw',
+            'icon': 'fab fa-youtube-square',
+            'type': 'fontawesome',
+        }
+    ],
     'logo_link': 'https://projectpythia.org',
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
