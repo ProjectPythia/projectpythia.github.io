@@ -72,7 +72,7 @@ The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorial
 these hour-long, instructor-led interactive tutorials. Participants can
 sit back and learn, or download a Jupyter Notebook and work along with
 the instructor. Each seminar is recorded for later viewing on the
-[Project Pythia channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
+[Project Pythia YouTube channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
 Click the link below to view past and upcoming seminars, covering a range of
 topics from beginning to advanced.
 
