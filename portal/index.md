@@ -96,7 +96,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 
 ### Pythia Cookbooks
 
-Coming soon!!!
+Coming soon!!! Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
     <a href="https://github.com/ProjectPythia/pythia-cookbook" role="button" class="btn btn-primary btn-lg">
