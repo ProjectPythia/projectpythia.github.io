@@ -33,10 +33,8 @@ _community-owned_, _geoscience-focused_, and _high-quality_.
 
 ## Start Learning
 
-Project Pythia has two main resources for you to use to start learning how to use Python
-and the technology in the Python ecosystem for the geosciences: the
-[Pythia Foundations Book](#the-foundations-book) and the
-[Pythia Resource Gallery](#the-resource-gallery).
+Project Pythia has several resources for you to use to start learning how to use Python
+and the technology in the Python ecosystem for the geosciences.
 
 ### The Foundations Book
 
@@ -65,6 +63,44 @@ your own pace.
 <span class="d-flex justify-content-center pt-1 pb-3">
     <a href="/gallery.html" role="button" class="btn btn-primary btn-lg">
         Visit the Pythia Resource Gallery
+    </a>
+</span>
+
+### Webinar Tutorial Series
+
+The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorials.html) is hosted regularly by the Project Pythia team. Anyone can join
+these hour-long, instructor-led interactive tutorials. Participants can
+sit back and learn, or download a Jupyter Notebook and work along with
+the instructor. Each seminar is recorded for later viewing on the
+[Project Pythia YouTube channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
+Click the link below to view past and upcoming seminars, covering a range of
+topics from beginning to advanced.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="https://ncar-xdev.github.io/status/tutorials.html" role="button" class="btn btn-primary btn-lg">
+        Visit the Pythia Webinar Tutorial Series
+    </a>
+</span>
+
+### Pythia Data Collection
+
+Looking for a free, public domain geoscience data set that you can use to
+sharpen your skills while learning the Scientific Python Ecosystem? All of
+the example data used by the [Pythia Foundations Book](https://foundations.projectpythia.org) are freely accessible.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="https://github.com/ProjectPythia/pythia-datasets" role="button" class="btn btn-primary btn-lg">
+        Visit the Pythia Data Repository
+    </a>
+</span>
+
+### Pythia Cookbooks
+
+Coming soon!!! Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="https://github.com/ProjectPythia/pythia-cookbook" role="button" class="btn btn-primary btn-lg">
+        Visit Pythia Cookbooks
     </a>
 </span>
 
