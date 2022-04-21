@@ -36,6 +36,8 @@ _community-owned_, _geoscience-focused_, and _high-quality_.
 Project Pythia has several resources for you to use to start learning how to use Python
 and the technology in the Python ecosystem for the geosciences.
 
+<i class="fa-solid fa-book"></i>
+
 ### The Foundations Book
 
 The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
@@ -51,6 +53,8 @@ domain-specific content to be housed here in the Pythia Portal.
     </a>
 </span>
 
+<i class="fa-solid fa-images"></i>
+
 ### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
@@ -65,6 +69,8 @@ your own pace.
         Visit the Pythia Resource Gallery
     </a>
 </span>
+
+<i class="fa-solid fa-chalkboard-user"></i>
 
 ### Webinar Tutorial Series
 
@@ -82,6 +88,8 @@ topics from beginning to advanced.
     </a>
 </span>
 
+<i class="fa-solid fa-abacus"></i>
+
 ### Pythia Data Collection
 
 Looking for a free, public domain geoscience data set that you can use to
@@ -93,6 +101,8 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
         Visit the Pythia Data Repository
     </a>
 </span>
+
+<i class="fa-solid fa-gingerbread-man"></i>
 
 ### Pythia Cookbooks
 
