@@ -1,5 +1,3 @@
-<script src="https://kit.fontawesome.com/58443b942d.js" crossorigin="anonymous"></script>
-
 # Project Pythia
 
 :::{banner}
@@ -38,7 +36,7 @@ _community-owned_, _geoscience-focused_, and _high-quality_.
 Project Pythia has several resources for you to use to start learning how to use Python
 and the technology in the Python ecosystem for the geosciences.
 
-<i class="fa-solid fa-book"></i>
+<i class="fa fa-book"></i>
 
 ### The Foundations Book
 
@@ -55,7 +53,7 @@ domain-specific content to be housed here in the Pythia Portal.
     </a>
 </span>
 
-<i class="fa-solid fa-images"></i>
+<i class="fa fa-images"></i>
 
 ### The Resource Gallery
 
@@ -72,7 +70,7 @@ your own pace.
     </a>
 </span>
 
-<i class="fa-solid fa-chalkboard-user"></i>
+<i class="fa fa-chalkboard-user"></i>
 
 ### Webinar Tutorial Series
 
@@ -90,7 +88,7 @@ topics from beginning to advanced.
     </a>
 </span>
 
-<i class="fa-solid fa-abacus"></i>
+<i class="fa fa-abacus"></i>
 
 ### Pythia Data Collection
 
@@ -104,7 +102,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
     </a>
 </span>
 
-<i class="fa-solid fa-gingerbread-man"></i>
+<i class="fa fa-gingerbread-man"></i>
 
 ### Pythia Cookbooks
 
