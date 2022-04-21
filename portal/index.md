@@ -36,7 +36,7 @@ _community-owned_, _geoscience-focused_, and _high-quality_.
 Project Pythia has several resources for you to use to start learning how to use Python
 and the technology in the Python ecosystem for the geosciences.
 
-<i class="fa-solid fa-book"></i>
+<span><i class="fa-solid fa-book"></i></span>
 
 ### The Foundations Book
 
