@@ -41,8 +41,7 @@ and the technology in the Python ecosystem for the geosciences.
 :body: text-center
 
 <i class="fas faportal fa-school"></i>
-<br>
-The Foundations Book
+<h4> The Foundations Book </h4>
 
 The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
 [Jupyter Book](https://jupyterbook.org/) developed by the Pythia community to
@@ -58,8 +57,7 @@ domain-specific content to be housed here in the Pythia Portal.
 </span>
 ---
 <i class="fas faportal fa-shapes"></i>
-<br>
-The Resource Gallery
+<h4>The Resource Gallery</h4>
 
 There is a wealth of educational resources out there on the internet for learning
 Python and how to use it in the geosciences! We have attempted to gather together
@@ -75,8 +73,7 @@ your own pace.
 </span>
 ---
 <i class="fas faportal fa-chalkboard-teacher"></i>
-<br>
-Webinar Tutorial Series
+<h4>Webinar Tutorial Series</h4>
 
 The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorials.html) is hosted regularly by the Project Pythia team. Anyone can join
 these hour-long, instructor-led interactive tutorials. Participants can
@@ -93,8 +90,7 @@ topics from beginning to advanced.
 </span>
 ---
 <i class="fas faportal fa-chart-bar"></i>
-<br>
-Pythia Data Collection
+<h4>Pythia Data Collection</h4>
 
 Looking for a free, public domain geoscience data set that you can use to
 sharpen your skills while learning the Scientific Python Ecosystem? All of
@@ -107,8 +103,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 </span>
 ---
 <i class="fas faportal fa-book-open"></i>
-<br>
-Pythia Cookbooks
+<h4>Pythia Cookbooks</h4>
 
 Coming soon!!! Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
 
