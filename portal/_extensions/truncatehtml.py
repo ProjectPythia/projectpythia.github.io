@@ -96,12 +96,16 @@ class Tokenizer:
         Precondition: self.counter points at the charcter after the &
         Postcondition: self.counter points at the character after the ;
         """
+        next_char = self.input[self.counter +1]
+        if next_char == ' ':
+            return '&'
+        
         char = self.input[self.counter]
         entity = ['&']
-        while char != ';':
-            entity.append(char)
-            char = self.__next_char()
-        entity.append(';')
+            while char != ';':
+                entity.append(char)
+                char = self.__next_char()
+            entity.append(';')
         self.counter += 1
         return ''.join(entity)
 
