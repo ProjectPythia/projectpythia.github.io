@@ -2,7 +2,7 @@ import itertools
 import pathlib
 from textwrap import dedent
 
-import truncatehtml as th
+from truncatehtml import truncate
 import yaml
 
 
@@ -109,7 +109,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             institutions_str = ''
 
         ellipsis_str = '<a class="modal-btn"> ... more</a>'
-        short_description = th.truncate(item['description'], max_descr_len, ellipsis=ellipsis_str)
+        short_description = truncate(item['description'], max_descr_len, ellipsis=ellipsis_str)
 
         if ellipsis_str in short_description:
             modal_str = f"""
