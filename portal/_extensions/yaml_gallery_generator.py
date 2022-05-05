@@ -3,14 +3,18 @@ import pathlib
 from textwrap import dedent
 
 import yaml
-from truncatehtml import truncate
+import truncatehtml as th
 
 
-def _tag_in_item(item, tag_str=None):
-    if tag_str is None:
-        return True
-    all_tags = sorted(itertools.chain(*item['tags'].values()))
-    return tag_str in all_tags
+def _len_html(s):
+    length = 0  # number of characters (not counting markup) placed in retval so far
+    tokens = th.Tokenizer(s)
+    tok = tokens.next_token()
+    while tok != -1:
+        if not isinstance(tok, (th.OpenTag, th.CloseTag, th.SelfClosingTag)):
+            length += 1
+        tok = tokens.next_token()
+    return length
 
 
 def _generate_sorted_tag_keys(all_items):
@@ -115,11 +119,11 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         else:
             institutions_str = ''
 
-        if len(item['description']) < max_descr_len:
+        if _len_html(item['description']) < max_descr_len:
             short_description = item['description']
             modal_str = ''
         else:
-            short_description = truncate(
+            short_description = th.truncate(
                 item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ...more</a>'
             )
             modal_str = f"""
