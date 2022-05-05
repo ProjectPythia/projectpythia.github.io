@@ -6,17 +6,6 @@ import yaml
 import truncatehtml as th
 
 
-def _len_html(s):
-    length = 0  # number of characters (not counting markup) placed in retval so far
-    tokens = th.Tokenizer(s)
-    tok = tokens.next_token()
-    while tok != -1:
-        if not isinstance(tok, (th.OpenTag, th.CloseTag, th.SelfClosingTag)):
-            length += 1
-        tok = tokens.next_token()
-    return length
-
-
 def _generate_sorted_tag_keys(all_items):
 
     key_set = set(itertools.chain(*[item['tags'].keys() for item in all_items]))
@@ -119,13 +108,12 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         else:
             institutions_str = ''
 
-        if _len_html(item['description']) < max_descr_len:
-            short_description = item['description']
-            modal_str = ''
-        else:
-            short_description = th.truncate(
-                item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ...more</a>'
+        ellipsis_str = '... more'
+        short_description = th.truncate(
+                item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ellipsis_str</a>'
             )
+        
+        if ellipsis_str in short_description:
             modal_str = f"""
 <div class="modal">
 <div class="content">
@@ -140,6 +128,8 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 </div>
 </div>
 """
+        else:
+            modal_str = ''
 
         panels_body.append(
             f"""\
