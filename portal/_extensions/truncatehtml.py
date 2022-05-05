@@ -79,7 +79,7 @@ class Tokenizer:
         try:
             char = self.input[self.counter]
             self.counter += 1
-            if char == '&amp;':
+            if char == '&':
                 return self.__entity()
             elif char != '<':
                 return char
