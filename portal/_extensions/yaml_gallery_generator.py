@@ -2,8 +2,8 @@ import itertools
 import pathlib
 from textwrap import dedent
 
-from truncatehtml import truncate
 import yaml
+from truncatehtml import truncate
 
 
 def _generate_sorted_tag_keys(all_items):
