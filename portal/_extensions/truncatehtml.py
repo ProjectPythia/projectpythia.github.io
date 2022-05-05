@@ -99,7 +99,7 @@ class Tokenizer:
         next_char = self.input[self.counter +1]
         if next_char == ' ':
             return '&'
-        
+
         char = self.input[self.counter]
         entity = ['&']
             while char != ';':
