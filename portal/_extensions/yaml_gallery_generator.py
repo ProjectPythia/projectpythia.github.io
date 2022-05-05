@@ -108,9 +108,9 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         else:
             institutions_str = ''
 
-        ellipsis_str = '... more'
+        ellipsis_str = '<a class="modal-btn"> ... more'
         short_description = th.truncate(
-                item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ellipsis_str</a>'
+                item['description'], max_descr_len, ellipsis=ellipsis_str</a>'
             )
         
         if ellipsis_str in short_description:
