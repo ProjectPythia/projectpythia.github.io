@@ -6,13 +6,6 @@ import yaml
 from truncatehtml import truncate
 
 
-def _tag_in_item(item, tag_str=None):
-    if tag_str is None:
-        return True
-    all_tags = sorted(itertools.chain(*item['tags'].values()))
-    return tag_str in all_tags
-
-
 def _generate_sorted_tag_keys(all_items):
 
     key_set = set(itertools.chain(*[item['tags'].keys() for item in all_items]))
@@ -115,13 +108,10 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         else:
             institutions_str = ''
 
-        if len(item['description']) < max_descr_len:
-            short_description = item['description']
-            modal_str = ''
-        else:
-            short_description = truncate(
-                item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ...more</a>'
-            )
+        ellipsis_str = '<a class="modal-btn"> ... more</a>'
+        short_description = truncate(item['description'], max_descr_len, ellipsis=ellipsis_str)
+
+        if ellipsis_str in short_description:
             modal_str = f"""
 <div class="modal">
 <div class="content">
@@ -136,6 +126,8 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 </div>
 </div>
 """
+        else:
+            modal_str = ''
 
         panels_body.append(
             f"""\
