@@ -30,7 +30,7 @@ forum](https://github.com/ProjectPythia/projectpythia.github.io/discussions).
 ### Add content to the Resource Gallery
 
 The Project [Pythia Resource
-Gallery](https://projectpythia.org/gallery.html) contains a
+Gallery](https://projectpythia.org/resource-gallery.html) contains a
 collection of links to useful resources that were created and are
 hosted outside of Project Pythia. Some examples include: documentation
 and tutorials for iconic packages such as Matplotlib, Cartopy, and
