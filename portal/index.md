@@ -99,7 +99,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 Coming soon!!! Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
-    <a href="https://github.com/ProjectPythia/pythia-cookbook" role="button" class="btn btn-primary btn-lg">
+    <a href="cookbooks.html" role="button" class="btn btn-primary btn-lg">
         Visit Pythia Cookbooks
     </a>
 </span>
@@ -373,5 +373,6 @@ maxdepth: 1
 about.md
 contributing.md
 code_of_conduct.md
+cookbooks.md
 resource-gallery.md
 ```
