@@ -56,12 +56,12 @@ domain-specific content to be housed here in the Pythia Portal.
 There is a wealth of educational resources out there on the internet for learning
 Python and how to use it in the geosciences! We have attempted to gather together
 a curated and filterable list of these resources (including Pythia's own content)
-into our [Pythia Resource Gallery](/gallery).
+into our [Pythia Resource Gallery](/resource-gallery).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
-    <a href="/gallery.html" role="button" class="btn btn-primary btn-lg">
+    <a href="/resource-gallery.html" role="button" class="btn btn-primary btn-lg">
         Visit the Pythia Resource Gallery
     </a>
 </span>
@@ -374,5 +374,5 @@ about.md
 contributing.md
 code_of_conduct.md
 cookbooks.md
-gallery.md
+resource-gallery.md
 ```
