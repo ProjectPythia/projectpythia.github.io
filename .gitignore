@@ -137,4 +137,4 @@ content/pages/links/*.md
 portal/code_of_conduct.md
 portal/resource-gallery.md
 portal/resource-gallery/*.md
-gallery-submission-input.json
+resource-gallery-submission-input.json
