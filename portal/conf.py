@@ -100,7 +100,8 @@ html_theme_options = {
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
-        {'name': 'Resource Gallery', 'url': 'https://projectpythia.org/resource-gallery.html'},
+        {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
+        {'name': 'Cookbooks', 'url': 'https://projectpythia.org/cookbooks.html'},
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
     'page_layouts': {'index': 'page-banner.html', 'resource-gallery': 'page-standalone.html'},
