@@ -27,17 +27,17 @@ GitHub issue, but the easiest method is to simply create (or respond
 to) a post on our [discussion
 forum](https://github.com/ProjectPythia/projectpythia.github.io/discussions).
 
-### Add content to the External Links Gallery
+### Add content to the Resource Gallery
 
-The Project [Pythia External Links
-Gallery](https://projectpythia.org/pages/links.html) contains a
+The Project [Pythia Resource
+Gallery](https://projectpythia.org/gallery.html) contains a
 collection of links to useful resources that were created and are
 hosted outside of Project Pythia. Some examples include: documentation
 and tutorials for iconic packages such as Matplotlib, Cartopy, and
 Xarray; on-line courses from universities and other educational
 institutions; and Jupyter Notebook galleries assembled and maintained
 by a variety of other sites. Project Pythia makes it possible to
-filter and search the External Links Gallery in a number of ways
+filter and search the Resource Gallery in a number of ways
 to ease finding relevant content. We encourage the community to
 consider submitting your own geoscience education material links
 to Project Pythia.
@@ -46,12 +46,12 @@ Contributing a new link is easy with these three simple steps:
 
 1. Navigate your web browser to the main Project Pythia repo's “issue” page [here](https://github.com/ProjectPythia/projectpythia.github.io/issues).
 1. Click on the button that says “New issue”.
-1. Click on the “Get started” button in the row labeled “Update external links gallery ”, and follow the instructions presented.
+1. Click on the “Get started” button in the row labeled “Update resource gallery ”, and follow the instructions presented.
 
 Alternatively, you can simply do:
 
-1. Navigate to the External Links Gallery.
-1. Click the `Submit a Link` button, which will redirect you to a new PR template as described in step (3) above.
+1. Navigate to the Resource Gallery.
+1. Click the `Submit a new resource` button, which will redirect you to a new PR template as described in step (3) above.
 
 That’s all you need to do. Your request will be reviewed, and you
 will be notified once your content has been accepted or if changes
