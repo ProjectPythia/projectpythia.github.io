@@ -34,7 +34,7 @@ copyright = '2022'
 extensions = [
     'myst_nb',
     'sphinx_panels',
-    'yaml_gallery_generator',
+    'resource_gallery_generator',
 ]
 
 # Define what extensions will parse which kind of source file
@@ -80,7 +80,7 @@ html_css_files = ['custom.css']
 # Disable Sidebars on special pages
 html_sidebars = {
     'index': [],
-    'gallery': [],
+    'resource-gallery': [],
 }
 
 # HTML Theme-specific Options
@@ -100,10 +100,10 @@ html_theme_options = {
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
-        {'name': 'Gallery', 'url': 'https://projectpythia.org/gallery.html'},
+        {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
-    'page_layouts': {'index': 'page-banner.html', 'gallery': 'page-standalone.html'},
+    'page_layouts': {'index': 'page-banner.html', 'resource-gallery': 'page-standalone.html'},
     'footer_logos': {
         'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',

@@ -1,4 +1,4 @@
-name: Update External Links Gallery
+name: Update Resource Gallery
 
 on:
   issues:
@@ -9,7 +9,7 @@ jobs:
   validate-user-submission:
     if: |
       github.repository == 'ProjectPythia/projectpythia.github.io'
-      && contains(github.event.issue.labels.*.name, 'external-links-gallery-submission')
+      && contains(github.event.issue.labels.*.name, 'resource-gallery-submission')
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -58,7 +58,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: submission
-          path: gallery-submission-input.json
+          path: resource-gallery-submission-input.json
 
   create-pull-request:
     needs: validate-user-submission
@@ -84,24 +84,24 @@ jobs:
           python -m pip install pip --upgrade
           python -m pip install ruamel.yaml pre-commit
 
-      - name: Update gallery
+      - name: Update resource gallery
         shell: python
         run: |
           import json
           from ruamel.yaml import YAML
 
           yaml = YAML()
-          submission_file = 'gallery-submission-input.json'
-          gallery_file = 'portal/gallery.yaml'
+          submission_file = 'resource-gallery-submission-input.json'
+          resource_gallery_file = 'portal/resource-gallery.yaml'
           with open(submission_file) as f:
               data = json.load(f)
 
-          with open(gallery_file) as f:
-              gallery = yaml.load(f)
+          with open(resource_gallery_file) as f:
+              resource-gallery = yaml.load(f)
 
-          with open(gallery_file, 'w') as f:
-              gallery.append(data)
-              yaml.dump(gallery, f)
+          with open(resource_gallery_file, 'w') as f:
+              resource-gallery.append(data)
+              yaml.dump(resurce-gallery, f)
 
       - name: Run pre-commit hooks
         run: |
@@ -112,14 +112,14 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: 'Update external links gallery'
+          commit-message: 'Update resource gallery'
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: external-links-gallery-${{ github.event.issue.number }}
-          title: 'Update external links gallery'
+          branch: resource-gallery-${{ github.event.issue.number }}
+          title: 'Update resource gallery'
           body: |
-            Update external links gallery as requested in #${{ github.event.issue.number }}. Closes #${{ github.event.issue.number }}.
+            Update resource gallery as requested in #${{ github.event.issue.number }}. Closes #${{ github.event.issue.number }}.
 
       - name: Find Comment
         uses: peter-evans/find-comment@v1

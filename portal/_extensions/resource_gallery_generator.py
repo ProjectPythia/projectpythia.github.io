@@ -54,7 +54,7 @@ def _generate_menu(all_items):
 
     menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
     menu_html += '<div class="d-flex gallery-menu">\n'
-    menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=external-links-gallery-submission&template=update-external-links-gallery.md&title=">Submit a new resource</a></div>\n'
+    menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=resource-gallery-submission&template=update-resource-gallery.md&title=">Submit a new resource</a></div>\n'
     menu_html += '</div>\n'
     menu_html += '<div class="ml-auto d-flex">\n'
     menu_html += '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
@@ -184,12 +184,12 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 
 def main(app):
 
-    with open('gallery.yaml') as fid:
+    with open('resource_gallery.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
     title = 'Pythia Resource Gallery'
     menu_html = _generate_menu(all_items)
-    build_from_items(all_items, 'gallery', title=title, menu_html=menu_html)
+    build_from_items(all_items, 'resource-gallery', title=title, menu_html=menu_html)
 
 
 def setup(app):
