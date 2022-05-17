@@ -1,4 +1,3 @@
-import itertools
 import pathlib
 from textwrap import dedent
 
@@ -54,7 +53,6 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 <br/>
 {institutions_str}
 <p class="my-2">{item['description']}</p>
-<p class="my-2">{tags}</p>
 <p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -117,7 +115,6 @@ def main(app):
         all_items = yaml.safe_load(fid)
 
     title = 'Pythia Cookbooks Gallery'
-    menu_html = _generate_menu(all_items)
     build_from_items(all_items, 'cookbook-gallery', title=title, menu_html=menu_html)
 
 
