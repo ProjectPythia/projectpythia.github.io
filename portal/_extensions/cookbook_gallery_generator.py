@@ -1,168 +1,195 @@
-"""
-Sphinx plugin to run generate a gallery for notebooks
-"""
-import base64
-import dataclasses
-import json
-import os
+import itertools
 import pathlib
-import random
-import shutil
 from textwrap import dedent
 
-import matplotlib.image
-import matplotlib.pyplot as plt
-import pandas as pd
 import yaml
-
-with open('lorem_ipsum.txt') as fid:
-    descriptions = fid.read().split('\n\n')
+from truncatehtml import truncate
 
 
-DOC_SRC = pathlib.Path(os.path.dirname(os.path.abspath(__file__))).parent
-default_img_loc = DOC_SRC / '_static/images/sphinx-logo.png'
-thumbnail_dir = DOC_SRC / '_static/thumbnails'
-thumbnail_dir.mkdir(parents=True, exist_ok=True)
+def _generate_sorted_tag_keys(all_items):
+
+    key_set = set(itertools.chain(*[item['tags'].keys() for item in all_items]))
+    return sorted(key_set)
 
 
-def create_thumbnail(infile, width=275, height=275, cx=0.5, cy=0.5, border=4):
-    """Overwrites `infile` with a new file of the given size"""
-    im = matplotlib.image.imread(infile)
-    rows, cols = im.shape[:2]
-    size = min(rows, cols)
-    if size == cols:
-        xslice = slice(0, size)
-        ymin = min(max(0, int(cx * rows - size // 2)), rows - size)
-        yslice = slice(ymin, ymin + size)
-    else:
-        yslice = slice(0, size)
-        xmin = min(max(0, int(cx * cols - size // 2)), cols - size)
-        xslice = slice(xmin, xmin + size)
-    thumb = im[yslice, xslice]
-    thumb[:border, :, :3] = thumb[-border:, :, :3] = 0
-    thumb[:, :border, :3] = thumb[:, -border:, :3] = 0
+def _generate_tag_set(all_items, tag_key=None):
 
-    dpi = 100
-    fig = plt.figure(figsize=(width / dpi, height / dpi), dpi=dpi)
+    tag_set = set()
+    for item in all_items:
+        for k, e in item['tags'].items():
+            if tag_key and k != tag_key:
+                continue
+            for t in e:
+                tag_set.add(t)
 
-    ax = fig.add_axes([0, 0, 1, 1], aspect='auto', frameon=False, xticks=[], yticks=[])
-    ax.imshow(thumb, aspect='auto', resample=True, interpolation='bilinear')
-    fig.savefig(infile, dpi=dpi)
-    plt.close(fig)
-    return fig
+    return tag_set
 
 
-@dataclasses.dataclass
-class NotebookInfo:
-    filepath: pathlib.Path
-    default_img_loc: pathlib.Path
-    thumbnail_dir: pathlib.Path
-    src_dir: pathlib.Path
+def _generate_tag_menu(all_items, tag_key):
 
-    def __post_init__(self):
-        self.thumbnail_dir.mkdir(parents=True, exist_ok=True)
-        self.png_path = self.thumbnail_dir / f'{self.filepath.stem}.png'
-        with open(self.filepath) as fid:
-            self.json_source = json.load(fid)
-            self.gen_preview()
+    tag_set = _generate_tag_set(all_items, tag_key)
+    tag_list = sorted(tag_set)
 
-        nb_id = f'{self.filepath.relative_to(self.src_dir).parent}/{self.filepath.stem}'
-        self.info = {
-            'thumbnail': f'../{self.png_path.relative_to(self.src_dir).as_posix()}',
-            'notebook': f'../{self.filepath.relative_to(self.src_dir).as_posix()}',
-            'title': self.extract_title(),
-            'url': f'../{nb_id}.html',
-            'id': nb_id,
-            'description': random.choice(descriptions)[:200].strip(),
-        }
+    options = ''.join(
+        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag.capitalize()}</label></li>'
+        for tag in tag_list
+    )
 
-    def gen_preview(self):
-        preview = self.extract_preview_pic()
-        if preview is not None:
-            with open(self.png_path, 'wb') as buff:
-                buff.write(preview)
+    return f"""
+<div class="dropdown">
+
+<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{tag_key.title()}
+</button>
+<ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
+{options}
+</ul>
+</div>
+"""
+
+
+def _generate_menu(all_items):
+
+    key_list = _generate_sorted_tag_keys(all_items)
+
+    menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
+    menu_html += '<div class="d-flex gallery-menu">\n'
+    menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=resource-gallery-submission&template=update-resource-gallery.md&title=">Submit a new resource</a></div>\n'
+    menu_html += '</div>\n'
+    menu_html += '<div class="ml-auto d-flex">\n'
+    menu_html += '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
+    for tag_key in key_list:
+        menu_html += _generate_tag_menu(all_items, tag_key) + '\n'
+    menu_html += '</div>\n'
+    menu_html += '</div>\n'
+    menu_html += '<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>\n'
+    return menu_html
+
+
+def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html='', max_descr_len=300):
+
+    # Build the gallery file
+    panels_body = []
+    for item in items:
+        if not item.get('thumbnail'):
+            item['thumbnail'] = '/_static/images/ebp-logo.png'
+        thumbnail = item['thumbnail']
+        tag_list = sorted((itertools.chain(*item['tags'].values())))
+        tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
+
+        tags = [f'<span class="badge bg-primary">{tag}</span>' for tag in tag_list_f]
+        tags = '\n'.join(tags)
+
+        tag_class_str = ' '.join(tag_list_f)
+
+        author_strs = set()
+        institution_strs = set()
+        for a in item['authors']:
+            author_name = a.get('name', 'Anonymous')
+            author_email = a.get('email', None)
+            if author_email:
+                _str = f'<a href="mailto:{author_email}">{author_name}</a>'
+            else:
+                _str = author_name
+            author_strs.add(_str)
+
+            institution_name = a.get('institution', None)
+            if institution_name:
+                institution_url = a.get('institution_url', None)
+                if institution_url:
+                    _str = f'<a href="{institution_url}">{institution_name}</a>'
+                else:
+                    _str = institution_name
+                institution_strs.add(_str)
+
+        authors_str = f"<strong>Author:</strong> {', '.join(author_strs)}"
+        if institution_strs:
+            institutions_str = f"<strong>Institution:</strong> {' '.join(institution_strs)}"
         else:
-            shutil.copy(self.default_img_loc, self.png_path)
+            institutions_str = ''
 
-        create_thumbnail(self.png_path)
+        ellipsis_str = '<a class="modal-btn"> ... more</a>'
+        short_description = truncate(item['description'], max_descr_len, ellipsis=ellipsis_str)
 
-    def extract_preview_pic(self):
-        """Use the last image in the notebook as preview pic"""
-        pic = None
-        for cell in self.json_source['cells']:
-            for output in cell.get('outputs', []):
-                if 'image/png' in output.get('data', []):
-                    pic = output['data']['image/png']
-        if pic is not None:
-            return base64.b64decode(pic)
-        return None
+        if ellipsis_str in short_description:
+            modal_str = f"""
+<div class="modal">
+<div class="content">
+<img src="{thumbnail}" class="modal-img" />
+<h3 class="display-3">{item["title"]}</h3>
+{authors_str}
+<br/>
+{institutions_str}
+<p class="my-2">{item['description']}</p>
+<p class="my-2">{tags}</p>
+<p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+"""
+        else:
+            modal_str = ''
 
-    def extract_title(self):
-        for cell in self.json_source['cells']:
-            if cell['cell_type'] == 'markdown':
-                rows = [row.strip() for row in cell['source'] if row.strip()]
-                for row in rows:
-                    if row.startswith('# '):
-                        return row[2:].replace(':', '-')
-        return self.filepath.stem.replace('_', ' ').replace(':', '-')
+        panels_body.append(
+            f"""\
+---
+:column: + tagged-card {tag_class_str}
 
+<div class="d-flex gallery-card">
+<img src="{thumbnail}" class="gallery-thumbnail" />
+<div class="container">
+<a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
+<p class="card-subtitle">{authors_str}<br/>{institutions_str}</p>
+<p class="my-2">{short_description}</p>
+</div>
+</div>
+{modal_str}
 
-def build_gallery(srcdir, gallery, contains_notebooks):
-    src_dir = pathlib.Path(srcdir)
-    os.chdir(srcdir)
-    target_dir = src_dir / f'{gallery}_gallery'
-    image_dir = target_dir / '_thumbnails'
-    image_dir.mkdir(parents=True, exist_ok=True)
++++
 
-    if contains_notebooks:
-        notebooks_path = src_dir / 'notebooks'
-        notebooks = sorted(
-            [notebook for notebook in notebooks_path.glob('**/*.ipynb') if 'checkpoint' not in notebook.name]
+{tags}
+
+"""
         )
-        entries = [
-            NotebookInfo(note, default_img_loc=default_img_loc, thumbnail_dir=image_dir, src_dir=src_dir).info
-            for note in notebooks
-        ]
-        df = pd.DataFrame(entries).sort_values(by=['title'])
-        entries = df.to_dict(orient='records')
-        with open(target_dir / f'{gallery}_gallery.yaml', 'w') as fid:
-            yaml.dump(entries, fid)
 
-        panels_body = []
-        for entry in entries:
-            x = f"""\
-            ---
-            :img-top: {entry["thumbnail"]}
-            +++
-            **{entry['title']}**
+    panels_body = '\n'.join(panels_body)
 
-            {entry['description'][:50]} ...
+    if subtitle:
+        stitle = f'<span class="display-3">Displaying "{subtitle}" tags</span>'
+    else:
+        stitle = ''
 
-            {{link-badge}}`{entry["url"]},"rendered-notebook",cls=badge-secondary text-white float-left p-2 mr-1`
-            """
+    panels = f"""
+# {title}
 
-            panels_body.append(x)
+{stitle}
 
-        panels_body = '\n'.join(panels_body)
+{menu_html}
 
-        gallery_content = f'''# {gallery.capitalize()} Gallery
 ````{{panels}}
-:container: full-width
-:column: text-left col-6 col-lg-4
-:card: +my-2
-:img-top-cls: w-75 m-auto p-2
-:body: d-none
+:column: col-12
+:card: +mb-4 w-100
+:header: d-none
+:body: p-3 m-0
+:footer: p-1
 
 {dedent(panels_body)}
 ````
-'''
-        with open(target_dir / 'index.md', 'w') as fid:
-            fid.write(dedent(gallery_content))
+
+<div class="modal-backdrop"></div>
+<script src="/_static/custom.js"></script>
+"""
+
+    pathlib.Path(f'{filename}.md').write_text(panels)
 
 
 def main(app):
-    for gallery in [('notebooks', True)]:
-        build_gallery(app.builder.srcdir, gallery[0], gallery[1])
+
+    with open('resource_gallery.yaml') as fid:
+        all_items = yaml.safe_load(fid)
+
+    title = 'Pythia Resource Gallery'
+    menu_html = _generate_menu(all_items)
+    build_from_items(all_items, 'resource-gallery', title=title, menu_html=menu_html)
 
 
 def setup(app):
