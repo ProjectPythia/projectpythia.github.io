@@ -115,7 +115,7 @@ def main(app):
         all_items = yaml.safe_load(fid)
 
     title = 'Pythia Cookbooks Gallery'
-    build_from_items(all_items, 'cookbook-gallery', title=title, menu_html=menu_html)
+    build_from_items(all_items, 'cookbook-gallery', title=title)
 
 
 def setup(app):
