@@ -1,0 +1,7 @@
+- title: CMIP6
+  url: http://gallery.pangeo.io/repos/pangeo-gallery/cmip6/
+  description: |
+    Examples of analysis of Google Cloud CMIP6 data using Pangeo tools.
+  authors:
+  - name: Max Grover
+  thumbnail: /_static/thumbnails/cmip6.png
