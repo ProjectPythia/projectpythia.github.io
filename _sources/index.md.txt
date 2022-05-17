@@ -363,6 +363,15 @@ are open to anyone who wishes to participate. We publish
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
 [@anissa111](https://github.com/anissa111)
+
+---
+:img-top: https://avatars.githubusercontent.com/jnmorley
+
+**James Morley**
+<br/>
+[**Utah Valley University**](https://ncar.ucar.edu)
+<br/>
+[@jnmorley](https://github.com/jnmorley)
 ```
 
 ```{toctree}
