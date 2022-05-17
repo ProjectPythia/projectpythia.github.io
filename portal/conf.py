@@ -35,6 +35,7 @@ extensions = [
     'myst_nb',
     'sphinx_panels',
     'resource_gallery_generator',
+    'cookbook_gallery_generator',
 ]
 
 # Define what extensions will parse which kind of source file
