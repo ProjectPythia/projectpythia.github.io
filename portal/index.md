@@ -374,5 +374,6 @@ about.md
 contributing.md
 code_of_conduct.md
 cookbooks.md
+cookbook-gallery.md
 resource-gallery.md
 ```
