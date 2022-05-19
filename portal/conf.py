@@ -82,6 +82,7 @@ html_css_files = ['custom.css']
 html_sidebars = {
     'index': [],
     'resource-gallery': [],
+    'cookbook-gallery': [],
 }
 
 # HTML Theme-specific Options
