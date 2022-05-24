@@ -1,9 +1,3 @@
-import itertools
-import pathlib
-from textwrap import dedent
-
-import yaml
-from truncatehtml import truncate
 from gallery_generator import build_from_items, generate_menu
 
 

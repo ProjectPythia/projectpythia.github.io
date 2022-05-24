@@ -2,7 +2,6 @@ import itertools
 import pathlib
 from textwrap import dedent
 
-import yaml
 from truncatehtml import truncate
 
 
