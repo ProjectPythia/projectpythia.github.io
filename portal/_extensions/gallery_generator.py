@@ -46,6 +46,7 @@ def _generate_tag_menu(all_items, tag_key):
 </div>
 """
 
+
 def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
 
     key_list = _generate_sorted_tag_keys(all_items)
