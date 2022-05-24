@@ -115,7 +115,8 @@ def main(app):
         all_items = yaml.safe_load(fid)
 
     title = 'Pythia Cookbooks Gallery'
-    build_from_items(all_items, 'cookbook-gallery', title=title)
+    subtitle = 'Pythia Cookbooks provide example workflows on more advanced and domain-specific problems developed by the Pythia community. Cookbooks build on top of skills you learn in Pythia Foundations.'
+    build_from_items(all_items, 'cookbook-gallery', title=title, subtitle=subtitle)
 
 
 def setup(app):
