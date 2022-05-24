@@ -153,15 +153,10 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 
     panels_body = '\n'.join(panels_body)
 
-    if subtitle:
-        stitle = f'<span class="display-3">Displaying "{subtitle}" tags</span>'
-    else:
-        stitle = ''
-
     panels = f"""
 # {title}
 
-{stitle}
+### {subtitle}
 
 {menu_html}
 
