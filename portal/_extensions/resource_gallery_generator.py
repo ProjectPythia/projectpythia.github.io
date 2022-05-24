@@ -1,5 +1,6 @@
+import yaml
+
 from gallery_generator import build_from_items, generate_menu
-from truncatehtml import truncate
 
 
 def main(app):
