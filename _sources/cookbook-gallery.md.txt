@@ -1,0 +1,33 @@
+
+# Pythia Cookbooks Gallery
+
+
+
+
+
+````{panels}
+:column: col-12
+:card: +mb-4 w-100
+:header: d-none
+:body: p-3 m-0
+:footer: p-1
+
+---
+:column:
+
+<div class="d-flex gallery-card">
+<img src="/_static/thumbnails/cmip6.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="http://gallery.pangeo.io/repos/pangeo-gallery/cmip6/" class="text-decoration-none"><h4 class="display-4 p-0">CMIP6</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover<br/></p>
+<p class="my-2">Examples of analysis of Google Cloud CMIP6 data using Pangeo tools.
+</p>
+</div>
+</div>
+
+
+
+````
+
+<div class="modal-backdrop"></div>
+<script src="/_static/custom.js"></script>
