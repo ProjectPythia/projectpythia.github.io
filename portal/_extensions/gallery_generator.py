@@ -54,7 +54,7 @@ def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
     menu_html = '<div class="d-sm-flex mt-3 mb-4">\n'
     menu_html += '<div class="d-flex gallery-menu">\n'
     if submit_btn_txt:
-        menu_html += '<div><a role="button" class="btn btn-primary btn-sm mx-1" href={submit_btn_lnk}>{submit_btn_txt}</a></div>\n'
+        menu_html += f'<div><a role="button" class="btn btn-primary btn-sm mx-1" href={submit_btn_link}>{submit_btn_txt}</a></div>\n'
     menu_html += '</div>\n'
     menu_html += '<div class="ml-auto d-flex">\n'
     menu_html += '<div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>\n'
@@ -153,12 +153,14 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
     panels_body = '\n'.join(panels_body)
 
+    stitle = subtitle if subtitle else ''
+    stext = subtext if subtext else ''
+
     panels = f"""
 # {title}
 
-#### {subtitle}
-
-{subtext}
+#### {stitle}
+{stext}
 
 {menu_html}
 
