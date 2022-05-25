@@ -66,7 +66,7 @@ def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
     return menu_html
 
 
-def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html='', max_descr_len=300):
+def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=None, menu_html='', max_descr_len=300):
 
     # Build the gallery file
     panels_body = []
@@ -156,7 +156,9 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
     panels = f"""
 # {title}
 
-### {subtitle}
+#### {subtitle}
+
+{subtext}
 
 {menu_html}
 
