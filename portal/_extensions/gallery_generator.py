@@ -153,13 +153,13 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
     panels_body = '\n'.join(panels_body)
 
-    stitle = subtitle if subtitle else ''
+    stitle = f'#### {subtitle}' if subtitle else ''
     stext = subtext if subtext else ''
 
     panels = f"""
 # {title}
 
-#### {stitle}
+{stitle}
 {stext}
 
 {menu_html}
