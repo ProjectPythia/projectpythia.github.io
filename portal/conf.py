@@ -106,7 +106,11 @@ html_theme_options = {
         {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
-    'page_layouts': {'index': 'page-banner.html', 'cookbook-gallery': 'page-standalone.html', 'resource-gallery': 'page-standalone.html'},
+    'page_layouts': {
+        'index': 'page-banner.html',
+        'cookbook-gallery': 'page-standalone.html',
+        'resource-gallery': 'page-standalone.html',
+    },
     'footer_logos': {
         'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
