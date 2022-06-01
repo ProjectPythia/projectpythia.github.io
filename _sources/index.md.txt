@@ -51,6 +51,16 @@ domain-specific content to be housed here in the Pythia Portal.
     </a>
 </span>
 
+### Pythia Cookbooks
+
+Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="cookbook-gallery.html" role="button" class="btn btn-primary btn-lg">
+        Visit Pythia Cookbooks
+    </a>
+</span>
+
 ### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
@@ -91,16 +101,6 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 <span class="d-flex justify-content-center pt-1 pb-3">
     <a href="https://github.com/ProjectPythia/pythia-datasets" role="button" class="btn btn-primary btn-lg">
         Visit the Pythia Data Repository
-    </a>
-</span>
-
-### Pythia Cookbooks
-
-Coming soon!!! Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
-
-<span class="d-flex justify-content-center pt-1 pb-3">
-    <a href="cookbook-gallery.html" role="button" class="btn btn-primary btn-lg">
-        Visit Pythia Cookbooks
     </a>
 </span>
 
