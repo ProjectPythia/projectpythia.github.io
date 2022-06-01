@@ -102,11 +102,15 @@ html_theme_options = {
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
-        {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
         {'name': 'Cookbooks', 'url': 'https://projectpythia.org/cookbook-gallery.html'},
+        {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
-    'page_layouts': {'index': 'page-banner.html', 'resource-gallery': 'page-standalone.html'},
+    'page_layouts': {
+        'index': 'page-banner.html',
+        'cookbook-gallery': 'page-standalone.html',
+        'resource-gallery': 'page-standalone.html',
+    },
     'footer_logos': {
         'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
