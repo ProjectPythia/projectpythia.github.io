@@ -7,7 +7,7 @@ def main(app):
     with open('resource_gallery.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
-    title = 'Pythia Resource Gallery'
+    title = 'Resource Gallery'
     submit_btn_link = 'https://github.com/ProjectPythia/projectpythia.github.io/issues/new?assignees=&labels=resource-gallery-submission&template=update-resource-gallery.md&title='
     submit_btn_txt = 'Submit a new resource'
     menu_html = generate_menu(all_items, submit_btn_txt=submit_btn_txt, submit_btn_link=submit_btn_link)
