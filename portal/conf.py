@@ -35,7 +35,6 @@ extensions = [
     'myst_nb',
     'sphinx_panels',
     'resource_gallery_generator',
-    'cookbook_gallery_generator',
 ]
 
 # Define what extensions will parse which kind of source file
@@ -82,7 +81,6 @@ html_css_files = ['custom.css']
 html_sidebars = {
     'index': [],
     'resource-gallery': [],
-    'cookbook-gallery': [],
 }
 
 # HTML Theme-specific Options
@@ -102,13 +100,12 @@ html_theme_options = {
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
-        {'name': 'Cookbooks', 'url': 'https://projectpythia.org/cookbook-gallery.html'},
+        {'name': 'Cookbooks', 'url': 'https://cookbooks.projectpythia.org/'},
         {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
     ],
     'page_layouts': {
         'index': 'page-banner.html',
-        'cookbook-gallery': 'page-standalone.html',
         'resource-gallery': 'page-standalone.html',
     },
     'footer_logos': {
