@@ -56,7 +56,7 @@ domain-specific content to be housed here in the Pythia Portal.
 Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
-    <a href="cookbook-gallery.html" role="button" class="btn btn-primary btn-lg">
+    <a href="https://cookbooks.projectpythia.org" role="button" class="btn btn-primary btn-lg">
         Visit Pythia Cookbooks
     </a>
 </span>
