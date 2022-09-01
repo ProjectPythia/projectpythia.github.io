@@ -236,7 +236,7 @@ are open to anyone who wishes to participate. We publish
 
 **Kevin Paul**
 <br/>
-[**NCAR**](https://ncar.ucar.edu)
+[**NVIDIA**](https://www.nvidia.com/en-us/)
 <br/>
 [@kmpaul](https://github.com/kmpaul)
 
