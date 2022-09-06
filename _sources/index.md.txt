@@ -185,7 +185,7 @@ for details on how you can get involved, and come see our work in the
 
 ### Weekly Working Group Meetings
 
-Project Pythia holds weekly public meetings every Thursday at 11:00AM Mountain (1:00PM Eastern)
+Project Pythia holds weekly public meetings every Monday at 1:00PM Mountain (3:00PM Eastern)
 on Zoom. Our meetings alternate focus between _Infrastructure_ and _Education_ content.
 Please find links and information about how to join in the calendar below. These meetings
 are open to anyone who wishes to participate. We publish
