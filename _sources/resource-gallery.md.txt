@@ -17,7 +17,7 @@
 Affiliation
 </button>
 <ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
-<li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pythia onchange="change();">&nbsp;Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=unidata onchange="change();">&nbsp;Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=xdev onchange="change();">&nbsp;Xdev</label></li>
+<li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=The-Alan-Turing-Institute onchange="change();">&nbsp;The alan turing institute</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pythia onchange="change();">&nbsp;Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=unidata onchange="change();">&nbsp;Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=xdev onchange="change();">&nbsp;Xdev</label></li>
 </ul>
 </div>
 
@@ -28,7 +28,7 @@ Affiliation
 Domains
 </button>
 <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmospheric-science onchange="change();">&nbsp;Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-science onchange="change();">&nbsp;Climate science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-formats onchange="change();">&nbsp;Data formats</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-visualization onchange="change();">&nbsp;Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=glaciology onchange="change();">&nbsp;Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hydrology onchange="change();">&nbsp;Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-oceanography onchange="change();">&nbsp;Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=remote-sensing onchange="change();">&nbsp;Remote sensing</label></li>
+<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmospheric-science onchange="change();">&nbsp;Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-science onchange="change();">&nbsp;Climate science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-formats onchange="change();">&nbsp;Data formats</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-visualization onchange="change();">&nbsp;Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ecology onchange="change();">&nbsp;Ecology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=environmental-science onchange="change();">&nbsp;Environmental science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=glaciology onchange="change();">&nbsp;Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hydrology onchange="change();">&nbsp;Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-geography onchange="change();">&nbsp;Physical geography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-oceanography onchange="change();">&nbsp;Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=remote-sensing onchange="change();">&nbsp;Remote sensing</label></li>
 </ul>
 </div>
 
@@ -50,7 +50,7 @@ Formats
 Packages
 </button>
 <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netCDF4 onchange="change();">&nbsp;Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netCDF4 onchange="change();">&nbsp;Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pooch onchange="change();">&nbsp;Pooch</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pystac onchange="change();">&nbsp;Pystac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
 </ul>
 </div>
 
@@ -1316,7 +1316,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>
@@ -1436,6 +1436,44 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <span class="badge bg-primary">scipy</span>
 <span class="badge bg-primary">tutorial</span>
 <span class="badge bg-primary">video</span>
+<span class="badge bg-primary">xarray</span>
+
+
+---
+:column: + tagged-card The-Alan-Turing-Institute book cartopy climate-science dask data-science ecology environmental-science gallery geopandas holoviews hydrology intake matplotlib pandas pangeo physical-geography pooch pystac remote-sensing xarray
+
+<div class="d-flex gallery-card">
+<img src="https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://github.com/alan-turing-institute/environmental-ds-book" class="text-decoration-none"><h4 class="display-4 p-0">Environmental Data Science Book</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:environmental.ds.book@gmail.com">EDS book community</a><br/><strong>Institution:</strong> <a href="https://github.com/alan-turing-institute/environmental-ds-book#contributors">Environmental Data Science Book</a></p>
+<p class="my-2">A living, open and community-driven resource to showcase and support computational notebooks for collaborative, reproducible and transparent Environmental Science</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">The-Alan-Turing-Institute</span>
+<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">data-science</span>
+<span class="badge bg-primary">ecology</span>
+<span class="badge bg-primary">environmental-science</span>
+<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">geopandas</span>
+<span class="badge bg-primary">holoviews</span>
+<span class="badge bg-primary">hydrology</span>
+<span class="badge bg-primary">intake</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary">pangeo</span>
+<span class="badge bg-primary">physical-geography</span>
+<span class="badge bg-primary">pooch</span>
+<span class="badge bg-primary">pystac</span>
+<span class="badge bg-primary">remote-sensing</span>
 <span class="badge bg-primary">xarray</span>
 
 
