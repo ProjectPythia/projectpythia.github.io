@@ -789,6 +789,7 @@
     - scipy
     - numpy
     - matplotlib
+
 - title: Pangeo Gallery
   description: A gallery of different Pangeo use cases
   url: http://gallery.pangeo.io
@@ -819,6 +820,7 @@
     - hydrology
     affiliation:
     - pangeo
+
 - title: Python for Atmosphere and Ocean Science
   description: Lesson materials for a one-day workshop on using Python in the atmosphere
     and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”)
@@ -848,6 +850,7 @@
     domains:
     - atmospheric science
     - climate science
+
 - title: Python for Geosciences
   description: 'This is a short overview of how Python is used in science and particularly
     in geosciences targeting people who already know programming (e.g. Matlab). '
@@ -874,6 +877,43 @@
     - climate science
     - physical oceanography
     - data science
+
+- title: 'Environmental Data Science Book'
+  description: 'A living, open and community-driven resource to showcase and support computational
+    notebooks for collaborative, reproducible and transparent Environmental Science'
+  url: 'https://github.com/alan-turing-institute/environmental-ds-book'
+  thumbnail: 'https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png'
+  authors:
+    - name: 'EDS book community'
+      institution: 'Environmental Data Science Book'
+      institution_url: 'https://github.com/alan-turing-institute/environmental-ds-book#contributors'
+      email: 'environmental.ds.book@gmail.com'
+  tags:
+    packages:
+      - pangeo
+      - pooch
+      - intake
+      - pystac
+      - pandas
+      - geopandas
+      - xarray
+      - dask
+      - matplotlib
+      - holoviews
+      - cartopy
+    formats:
+      - book
+      - gallery
+    domains:
+      - environmental science
+      - climate science
+      - ecology
+      - hydrology
+      - physical geography
+      - remote sensing
+      - data science
+    affiliation:
+      - The Alan Turing Institute
 
 - title: Your First Python Tutorial - Reading in a .txt File
   url: https://youtu.be/Jog7ybd6amw
