@@ -150,13 +150,13 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 ## Join us!
 
 If you have questions or want to share anything with the
-[Project Pythia Team](#the-project-pythia-team), please reach out to us on our
-[GitHub Discussions page](https://github.com/ProjectPythia/projectpythia.github.io/discussions)
+[Project Pythia Team](#the-project-pythia-team), please reach out to us through the
+[Project Pythia category on the Pangeo Discourse forum](https://discourse.pangeo.io/c/education/project-pythia/)
 or join us at our Weekly Working Group Meetings.
 
 <span class="d-flex justify-content-center pt-1 pb-4">
-    <a href="https://github.com/ProjectPythia/projectpythia.github.io/discussions" role="button" class="btn btn-primary btn-lg">
-        Go to GitHub Discussions
+    <a href="https://discourse.pangeo.io/c/education/project-pythia/" role="button" class="btn btn-primary btn-lg">
+        Go to Pangeo Discourse
     </a>
 </span>
 
