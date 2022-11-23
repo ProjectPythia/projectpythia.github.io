@@ -1479,6 +1479,7 @@
   url: https://academy.climatematch.io/about
   description: |
     Climatematch Academy (CMA) is a wide-reaching, inclusive and approachable program aimed to introduce computational methods for climate science. CMA strives to create a globally diverse climate sciences community, trained on cutting edge techniques to access and analyze open-source modeled and observational climate data.
+  authors:
     - name: Climatematch Team
       url: https://academy.climatematch.io/about/team
   thumbnail: /_static/thumbnails/climatematch.png
