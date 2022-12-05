@@ -78,9 +78,9 @@ Gallery](https://projectpythia.org/cookbook-gallery.html) is a
 collection of "cookbooks" that describe workflows that solve a
 specific problem. Typically, a cookbook references material presented
 elsewhere in Project Pythia, such as  [Pythia Foundations](https://foundations.projectpythia.org).
-Each Cookbook is hosted in a separate GitHub repo under the umbrella
-organization [here](https://github.com/ProjectPythiaCookbooks).
-Contributors should consult the [Cookbook-specific Contributor's guide](https://github.com/ProjectPythiaCookbooks/.github/blob/main/CONTRIBUTING.md).
+Each Cookbook is hosted in a separate GitHub repo under the umbrella [Project Pythia
+organization](https://github.com/ProjectPythia).
+Contributors should consult the [Cookbook-specific Contributor's guide](https://github.com/ProjectPythia/.github/blob/main/CONTRIBUTING.md).
 
 ### Pythia Portal
 
