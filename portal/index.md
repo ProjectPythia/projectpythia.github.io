@@ -160,6 +160,10 @@ or join us at our Weekly Working Group Meetings.
     </a>
 </span>
 
+## How do I get involved?
+
+[Getting Involved](getting_involved)
+
 ### Contributing
 
 Anyone can contribute to and participate in Project Pythia!
@@ -380,6 +384,7 @@ hidden: True
 maxdepth: 1
 ---
 about.md
+getting_involved.md
 contributing.md
 code_of_conduct.md
 cookbook-gallery.md
