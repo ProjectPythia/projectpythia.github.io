@@ -25,7 +25,7 @@ to another community member’s question. There are a number of ways
 to have a dialogue with the Pythia community, such as by opening a
 GitHub issue, but the easiest method is to simply create (or respond
 to) a post on our [discussion
-forum](https://github.com/ProjectPythia/projectpythia.github.io/discussions).
+forum](https://discourse.pangeo.io/c/education/project-pythia/).
 
 ### Add content to the Resource Gallery
 
