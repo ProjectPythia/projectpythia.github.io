@@ -92,15 +92,15 @@ jobs:
 
           yaml = YAML()
           submission_file = 'resource-gallery-submission-input.json'
-          resource_gallery_file = 'portal/resource-gallery.yaml'
+          resource_gallery_file = 'portal/resource_gallery.yaml'
           with open(submission_file) as f:
               data = json.load(f)
 
           with open(resource_gallery_file) as f:
-              resource-gallery = yaml.load(f)
+              resource_gallery = yaml.load(f)
 
           with open(resource_gallery_file, 'w') as f:
-              resource-gallery.append(data)
+              resource_gallery.append(data)
               yaml.dump(resurce-gallery, f)
 
       - name: Run pre-commit hooks
