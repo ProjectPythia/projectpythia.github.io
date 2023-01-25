@@ -21,7 +21,7 @@ jobs:
           activate-environment: pythia
           auto-update-conda: false
           python-version: 3.8
-          environment-file: environment.yml
+          environment-file: ci/environment.yml
           mamba-version: '*'
           use-mamba: true
 
