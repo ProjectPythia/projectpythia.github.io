@@ -1,8 +1,13 @@
 name: deploy-site
+
+# Only run this when the main branch changes
 on:
   push:
   pull_request:
   workflow_dispatch:
+
+
+# This job installs dependencies, build the site, and pushes it to `gh-pages`
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,18 +17,17 @@ jobs:
     if: github.repository == 'ProjectPythia/projectpythia.github.io'
     steps:
       - name: Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.11.0
         with:
           access_token: ${{ github.token }}
-      - uses: actions/checkout@v2
-
+      - uses: actions/checkout@v3
       - uses: conda-incubator/setup-miniconda@master
         with:
-          channels: conda-forge,nodefaults
+          channels: conda-forge
           channel-priority: strict
           activate-environment: pythia
           auto-update-conda: false
-          python-version: 3.9
+          python-version: 3.8
           environment-file: ci/environment.yml
           mamba-version: '*'
           use-mamba: true
@@ -46,10 +50,16 @@ jobs:
           name: site-zip
           path: ./site.zip
 
-      - name: Deploy
+      - uses: actions/upload-artifact@v3
+        with:
+          name: site-zip
+          path: ./site.zip
+      # Push the site's HTML to github-pages
+      - name: Deploy to GitHub pages
         if: github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3.8.0
+        uses: peaceiris/actions-gh-pages@v3.9.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./portal/_build/html
+          publish_dir: ./_build/html
+          enable_jekyll: false
           cname: projectpythia.org

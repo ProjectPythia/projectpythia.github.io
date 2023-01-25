@@ -14,19 +14,20 @@ jobs:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set message value
         run: |
           echo "comment_message=This pull request is being automatically built with [GitHub Actions](https://github.com/features/actions) and [Netlify](https://www.netlify.com/). To see the status of your deployment, click below." >> $GITHUB_ENV
       - name: Find Pull Request
-        uses: actions/github-script@v4
+        uses: actions/github-script@v6
         id: find-pull-request
         with:
           script: |
             let pullRequestNumber = ''
             let pullRequestHeadSHA = ''
             core.info('Finding pull request...')
-            const pullRequests = await github.pulls.list({owner: context.repo.owner, repo: context.repo.repo})
+
+            const pullRequests = await github.rest.pulls.list({owner: context.repo.owner, repo: context.repo.repo})
             for (let pullRequest of pullRequests.data) {
               if(pullRequest.head.sha === context.payload.workflow_run.head_commit.id) {
                   pullRequestHeadSHA = pullRequest.head.sha
@@ -44,59 +45,67 @@ jobs:
             else{
               core.info(`Found pull request ${pullRequestNumber}, with head sha: ${pullRequestHeadSHA}`)
             }
+
       - name: Find Comment
-        uses: peter-evans/find-comment@v1
+        uses: peter-evans/find-comment@v2
         if: steps.find-pull-request.outputs.number != ''
         id: fc
         with:
           issue-number: '${{ steps.find-pull-request.outputs.number }}'
           comment-author: 'github-actions[bot]'
           body-includes: '${{ env.comment_message }}'
+
       - name: Create comment
         if: |
           github.event.workflow_run.conclusion != 'success'
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ steps.find-pull-request.outputs.number }}
           body: |
             ${{ env.comment_message }}
 
-            🚧 Deployment in progress for git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
+            🔍 Git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
+            ✅ Deployment Preview URL: In Progress
+
       - name: Update comment
         if: |
           github.event.workflow_run.conclusion != 'success'
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
             ${{ env.comment_message }}
 
-            🚧 Deployment in progress for git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
+            🔍 Git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
+            ✅ Deployment Preview URL: In Progress
+
       - name: Download Artifact site
         if: |
           github.event.workflow_run.conclusion == 'success'
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id != ''
-        uses: dawidd6/action-download-artifact@v2.14.1
+        uses: dawidd6/action-download-artifact@v2.24.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: ci.yaml
+          workflow: deploy.yaml
           run_id: ${{ github.event.workflow_run.id }}
           name: site-zip
+
       - name: Unzip site
-        if:  |
+        if: |
           github.event.workflow_run.conclusion == 'success'
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id != ''
         run: |
-          rm -rf ./portal/_build/html
+          rm -rf ./_build/html
           unzip site.zip
           rm -f site.zip
+
       # Push the site's HTML to Netlify and get the preview URL
       - name: Deploy to Netlify
         if: |
@@ -106,7 +115,7 @@ jobs:
         id: netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: ./portal/_build/html
+          publish-dir: ./_build/html
           production-deploy: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
           enable-commit-comment: false
@@ -114,17 +123,18 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 5
-      - name: Update site Preview comment
+
+      - name: Update Preview comment
         if: |
           github.event.workflow_run.conclusion == 'success'
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
           body: |
             ${{ env.comment_message }}
 
-            🔍 Git commit SHA:  ${{ steps.find-pull-request.outputs.sha }}
+            🔍 Git commit SHA: ${{ steps.find-pull-request.outputs.sha }}
             ✅ Deployment Preview URL: ${{ steps.netlify.outputs.deploy-url }}
