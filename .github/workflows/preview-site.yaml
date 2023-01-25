@@ -102,7 +102,7 @@ jobs:
           && steps.find-pull-request.outputs.number != ''
           && steps.fc.outputs.comment-id != ''
         run: |
-          rm -rf ./_build/html
+          rm -rf ./portal/_build/html
           unzip site.zip
           rm -f site.zip
 
@@ -115,7 +115,7 @@ jobs:
         id: netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: ./_build/html
+          publish-dir: ./portal/_build/html
           production-deploy: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
           enable-commit-comment: false
