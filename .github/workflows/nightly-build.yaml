@@ -14,4 +14,3 @@ jobs:
       environment_name: pythia
       path_to_notebooks: 'portal'
       build_command: 'make -j4 html'
-      use_cached_environment: 'false'
