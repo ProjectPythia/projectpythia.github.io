@@ -1,0 +1,15 @@
+name: trigger-book-build
+on:
+  pull_request:
+
+jobs:
+  build:
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+    with:
+      environment_file: 'ci/environment.yml'
+      environment_name: pythia
+      artifact_name: book-zip-${{ github.event.number }}
+      path_to_notebooks: 'portal'
+      build_command: 'make -j4 html'
+      use_cached_environment: 'false'
+      # Other input options are possible, see ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml
