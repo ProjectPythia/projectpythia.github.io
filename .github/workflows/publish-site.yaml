@@ -1,4 +1,4 @@
-name: publish-book
+name: publish-site
 
 on:
   # Trigger the workflow on push to main branch

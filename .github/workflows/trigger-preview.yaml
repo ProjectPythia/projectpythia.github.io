@@ -2,7 +2,7 @@ name: trigger-preview
 on:
   workflow_run:
     workflows:
-      - trigger-book-build
+      - trigger-site-build
     types:
       - requested
       - completed
