@@ -1,0 +1,23 @@
+name: publish-site
+
+on:
+  # Trigger the workflow on push to main branch
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+    with:
+      environment_file: 'ci/environment.yml'
+      environment_name: pythia
+      path_to_notebooks: 'portal'
+      build_command: 'make -j4 html'
+
+  deploy:
+    needs: build
+    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+    with:
+      cname: projectpythia.org
