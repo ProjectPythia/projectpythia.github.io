@@ -1,0 +1,10 @@
+name: trigger-link-check
+on:
+  pull_request:
+
+jobs:
+  link-check:
+    uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
+    with:
+      path_to_notebooks: 'portal'
+      build_command: 'make linkcheck'
