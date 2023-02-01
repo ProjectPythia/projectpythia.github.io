@@ -65,7 +65,7 @@ To learn more about Project Pythia and its history, see this list of presentatio
 | Forum | Date | Presenter | Format | Title (with link) |
 | ---   |  ---  |   ---   |  ---    |  --- |
 |  AMS  | 2022-01  | Drew Camron | slides | [Project Pythia: A community update](https://docs.google.com/presentation/d/1NuV5sI3oGhvuUt_s8hzmj0UA9MqCtlxWTADbJHjr9ow/edit?usp=sharing)     |
-|  AMS  | 2022-01  | Kevin Tyle | slides | [Leveraging Project Pythia in an Advanced Geoscience & Visualization Course](https://docs.google.com/presentation/d/1D8kkpsX4CE3rT5QQliH6JfKYeY76fT1gClIEzboxgko/edit#slide=id.p)     |
+|  AMS  | 2022-01  | Kevin Tyle | slides | [Leveraging Project Pythia in an Advanced Geoscience & Visualization Course](https://docs.google.com/presentation/d/1D8kkpsX4CE3rT5QQliH6JfKYeY76fT1gClIEzboxgko/)     |
 | AMS  | 2022-01 | Max Grover | slides | [Rethinking CESM Diagnostics through the Lens of Earth System Data Science](https://docs.google.com/presentation/d/1aTw0DmaZ-7PQtWXxQqdik825r5mOoYRe/edit?usp=sharing&ouid=113419461755911727326&rtpof=true&sd=true) |
 | AGU | 2021-12 | Kevin Paul | e-poster | [Pangeo and Project Pythia: Helping Geoscientists Navigate the Scientific Python Ecosystem](https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=CF-91-F4-F8-35-E4-B7-40-F2-8C-F6-86-76-97-11-02) |
 | AGU | 2021-12 | Kevin Paul | e-poster | [Project Pythia: A Resource to Help Geoscientists Navigate the Scientific Python Ecosystem](https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=25-22-8E-6D-6E-CB-B4-E9-6D-08-78-2A-61-2F-62-09) |
