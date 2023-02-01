@@ -17,7 +17,6 @@ jobs:
 
   link-check:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
-    uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
+    uses: ./.github/workflows/sphinx-link-checker.yaml
     with:
-      path_to_notebooks: 'portal'
-      build_command: 'make linkcheck'
+      path_to_source: 'portal'
