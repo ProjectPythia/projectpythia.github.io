@@ -1,0 +1,9 @@
+name: trigger-link-check
+on:
+  pull_request:
+
+jobs:
+  link-check:
+    uses: ./.github/workflows/sphinx-link-checker.yaml
+    with:
+      path_to_source: 'portal'

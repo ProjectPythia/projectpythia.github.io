@@ -5,7 +5,7 @@
 Welcome! This is the main contributors guide for Project Pythia.
 Project Pythia is an open community, and all contributions are
 welcome following our [Code of
-Conduct](https://projectpythia.org/pages/code_of_conduct.html). All
+Conduct](https://projectpythia.org/code_of_conduct.html). All
 of the content for Project Pythia is hosted on GitHub in a number
 of different public repositories. From this document you can learn
 about the many ways that you can contribute to this community
@@ -177,7 +177,7 @@ Don’t type the \$. This simply indicates the command line prompt.
 This is a complicated process and there are two authentication
 protocols supported: HTTP or SSH. Either will work fine, but we
 find HTTP to be the easiest to set up. Both processes are described
-in detail on the GitHub site [here](https://docs.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git).
+in detail on the GitHub site [here](https://docs.github.com/en/get-started/quickstart/set-up-git#authenticating-with-github-from-git).
 
 For further reading see the [GitHub Getting Started
 Guide](https://docs.github.com/en/github/getting-started-with-github).

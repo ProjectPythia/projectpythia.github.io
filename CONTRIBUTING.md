@@ -24,7 +24,7 @@ cd projectpythia.github.io/portal
 Use [conda](https://docs.conda.io/) to set up a build environment:
 
 ```bash
-conda env update -f ../ci/environment.yml
+conda env update -f ../environment.yml
 ```
 
 This will create the dev environment (`pythia`). If you have previously created the environment, running this command will add any new packages that have since been added to the `environment.yml` file.
@@ -59,7 +59,7 @@ Build the site locally using Sphinx (which you just installed in the `pythia` en
 make html
 ```
 
-If this step fails and you have not updated your conda environment recently, try updating with `conda env update -f ../ci/environment.yml` and `conda update --all` as described above.
+If this step fails and you have not updated your conda environment recently, try updating with `conda env update -f ../environment.yml` and `conda update --all` as described above.
 
 The newly rendered site is now available in `portal/_build/html/index.html`.
 Open with your web browser, or from the terminal:

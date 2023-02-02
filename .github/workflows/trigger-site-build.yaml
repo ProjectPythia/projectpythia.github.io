@@ -6,7 +6,7 @@ jobs:
   build:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
-      environment_file: 'ci/environment.yml'
+      environment_file: 'environment.yml'
       environment_name: pythia
       artifact_name: book-zip-${{ github.event.number }}
       path_to_notebooks: 'portal'
