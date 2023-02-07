@@ -3,7 +3,6 @@ from gallery_generator import build_from_items, generate_menu
 
 
 def main(app):
-
     with open('resource_gallery.yaml') as fid:
         all_items = yaml.safe_load(fid)
 
