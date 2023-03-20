@@ -1491,3 +1491,18 @@
     affiliation:
     - neuromatch
     - pythia
+
+- title: An Introduction to Using Python in the Atmospheric and Oceanic Sciences
+  url: https://www.johnny-lin.com/pycourses/
+  description: |
+    This online course is a hands-on introduction to the Python programming language, tailored for atmospheric and oceanic sciences (AOS) researchers, graduate students, and advanced undergraduates who are new to Python. The course does not focus on computer science but on how Python can help AOS users do AOS work.
+  authors:
+    - name: Johnny Lin
+  thumbnail: |
+    https://www.johnny-lin.com/pycourses/imgs/ISS023-E-57948_lrg_200px.jpg
+  tags: # Replace or delete the "unspecified" tag for each section with keywords associated with the resource. Multi-word tags should be entered with a space between the words (i.e. not joined with a `-`).
+    formats:
+    - course
+    domains:
+    - Atmospheric science
+    - Climate science
