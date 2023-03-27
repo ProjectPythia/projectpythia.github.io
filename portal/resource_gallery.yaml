@@ -1493,7 +1493,7 @@
     - pythia
 
 - title: An Introduction to Using Python in the Atmospheric and Oceanic Sciences
-  url: https://www.johnny-lin.com/pycourses/
+  url: https://www.johnny-lin.com/pyintro/
   description: |
     This online course is a hands-on introduction to the Python programming language, tailored for atmospheric and oceanic sciences (AOS) researchers, graduate students, and advanced undergraduates who are new to Python. The course does not focus on computer science but on how Python can help AOS users do AOS work.
   authors:
