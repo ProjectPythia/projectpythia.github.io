@@ -7,6 +7,9 @@
 :class: dark-banner
 :::
 
+> 🍪 <span style="color:white"> Project Pythia is hosting a Cookbook Cook-Off June 20-23, 2023 in Boulder, CO and online. Learn more on our [event page](https://projectpythia.org/pythia-cookoff-2023/README.html).
+</span>
+
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
 [Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
