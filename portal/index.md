@@ -9,7 +9,7 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
-<a href="https://projectpythia.org/pythia-cookoff-2023/README.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+<a href="https://projectpythia.org/pythia-cookoff-2023/README.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
         Project Pythia is hosting a Cookbook Cook-Off June 20-23, 2023.<br>
         Learn more here.
 </a>
