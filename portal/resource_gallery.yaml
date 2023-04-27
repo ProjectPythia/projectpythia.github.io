@@ -1474,7 +1474,6 @@
     packages:
     - xarray
 
-
 - title: Climatematch Academy
   url: https://academy.climatematch.io/about
   description: |
@@ -1491,3 +1490,21 @@
     affiliation:
     - neuromatch
     - pythia
+
+- title: Plotting Earth Science Data
+  url: https://ploting-earth-science-data.web.app/
+  description: |
+    A guide to analyze and plot Earth Science data for Scientist of all programming skill levels, using L-1 data product from CYGNSS mission as an example.
+  authors:
+    - name: Michael Nguyen
+  thumbnail: /_static/thumbnails/plotting_earth_science_data.jpeg
+  tags:
+    packages:
+    - cartopy
+    - xarray
+    - numpy
+    - matplotlib
+    - netCDF4
+    domains:
+    - data visualization
+    - remote sensing
