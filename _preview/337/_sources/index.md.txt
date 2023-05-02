@@ -14,8 +14,6 @@
         Learn more here.
 </a>
 
-**IGNORE THIS [TEST LINK TO A PUBLICATION](https://doi.org/10.1002/2013GL058955)**
-
 [Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
 Together these initiatives are helping geoscientists make sense of huge volumes of
