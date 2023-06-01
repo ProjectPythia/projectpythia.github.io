@@ -761,8 +761,10 @@
   tags:
     packages:
     - xarray
+    - dask
     formats:
     - tutorial
+
 - title: Python Programming for Earth Science Students
   description: Python Programming for Earth Science Students
   url: https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/
