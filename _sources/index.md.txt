@@ -347,8 +347,6 @@ are open to anyone who wishes to participate. We publish
 
 **Alea Kootz**
 <br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
 [@pilotchute](https://github.com/pilotchute)
 
 ---
