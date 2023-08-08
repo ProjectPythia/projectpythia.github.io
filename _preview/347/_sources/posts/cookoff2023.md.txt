@@ -16,3 +16,5 @@ Pythia Cookbooks provide example end-to-end geoscientific workflows and are an i
 During the hackthon, significant additions were made to our Radar Cookbook and infrastructure changes were made to better support DOI citations of Cookbooks. We are expecting 10 novel Cookbooks to join our gallery soon.
 
 From our post-hackathon exit survey, everyone enjoyed the event, felt that they learned new skills and that their contributions were valued. One scientist commented, “The hackathon for me has become a great place to get a sense of a community. Seeing people enthusiastic about coding up notebooks that would benefit the research community is a gateway for someone starting to code in Python.” This comment mirrors the efforts of Project Pythia as a community-owned resource.
+
+![image](../_static/images/posts/projectpythia-cookbook-cookoff.jpeg)
