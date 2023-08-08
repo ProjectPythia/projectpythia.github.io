@@ -1,10 +1,11 @@
-:blogpost: true
-:date: June 28, 2023
-:author: Julia Kent
-:location: World
-:category: Blog
-:language: English
-:tags: blog
+---
+blogpost: true
+date: Jun 28, 2023
+author: Julia kent
+tags: cook-off
+---
+
+# Pythia Cookbook Cook-Off Hackathon 2023
 
 One year from when Project Pythia first introduced Cookbooks, NCAR hosted Project Pythia’s first “Cookbook Cook-Off” hackathon.
 
