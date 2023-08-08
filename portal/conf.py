@@ -35,6 +35,8 @@ extensions = [
     'myst_nb',
     'sphinx_panels',
     'resource_gallery_generator',
+    'ablog',
+    'sphinx.ext.intersphinx',
 ]
 
 # Define what extensions will parse which kind of source file
@@ -103,6 +105,7 @@ html_theme_options = {
         {'name': 'Cookbooks', 'url': 'https://cookbooks.projectpythia.org/'},
         {'name': 'Resources', 'url': 'https://projectpythia.org/resource-gallery.html'},
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
+        {'name': 'Blog', 'url': 'https://projectpythia.org/blog'},
     ],
     'page_layouts': {
         'index': 'page-banner.html',
@@ -133,3 +136,7 @@ linkcheck_ignore = ['https://doi.org/*']
 # Copy root files into content pages ------------------------------------------
 
 shutil.copyfile('../CODEOFCONDUCT.md', 'code_of_conduct.md')
+
+# Blog configuration settings
+
+blog_post_pattern = ['posts/*.rst', 'posts/*.md']
