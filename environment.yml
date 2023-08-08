@@ -10,5 +10,6 @@ dependencies:
 - pyyaml
 - pre-commit
 - sphinx-panels
+- ablog
 - pip:
   - sphinx-pythia-theme
