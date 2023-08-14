@@ -197,6 +197,17 @@ are open to anyone who wishes to participate. We publish
     <iframe src="https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com" frameborder="0" scrolling="no"></iframe>
 </div>
 
+## How to Cite
+
+The material in Project Pythia is licensed for free and open consumption and reuse. All code is served under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0), while all non-code content is licensed under [Creative Commons BY 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Effectively, this means you are free to share and adapt this material so long as you give appropriate credit to the Project Pythia community.
+
+To cite this project, please site our [NSF GEO OSE proposal](https://zenodo.org/record/8184298). Individual components of the project may be cited separately.
+
+> Rose, Brian E. J., Clyne, John, May, Ryan, Munroe, James, Snyder, Amelia, Eroglu, Orhan, & Tyle, Kevin. (2023). Collaborative Research: GEO OSE TRACK 2: Project Pythia and            Pangeo: Building an inclusive geoscience community through accessible, reusable, and reproducible workflows. Zenodo. https://doi.org/10.5281/zenodo.8184298
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8184298.svg)](https://doi.org/10.5281/zenodo.8184298)
+
+
 ```{toctree}
 ---
 hidden: True
