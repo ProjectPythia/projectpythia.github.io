@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code of Conduct</title>
+    <title>All Posts</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -39,9 +39,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Resource Gallery" href="resource-gallery.html" />
-    <link rel="prev" title="Contributor’s Guide" href="contributing.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -55,7 +53,14 @@
                     gtag('js', new Date());
                     gtag('config', 'G-T9KGMX7VHZ');
                 </script>
-  
+ 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="blog/atom.xml"
+  title=""
+/>
+ 
 <style type="text/css">
   ul.ablog-archive {
     list-style: none;
@@ -197,7 +202,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="about.html">
    About Project Pythia
@@ -208,8 +213,8 @@
    Contributor’s Guide
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="code_of_conduct.html">
    Code of Conduct
   </a>
  </li>
@@ -246,23 +251,6 @@
             </button>
             
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/code_of_conduct.md.txt"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
             <!-- Source interaction buttons -->
 
             <!-- Full screen (wrap in <a> to have style consistency -->
@@ -279,54 +267,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> On this page
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#our-pledge">
-   Our Pledge
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#our-standards">
-   Our Standards
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#scope-of-this-code">
-   Scope of this Code
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#community-responsibilities">
-   Community Responsibilities
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-administrator-responsibilities">
-   Project Administrator Responsibilities
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reporting">
-   Reporting
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#consequences">
-   Consequences
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#attribution">
-   Attribution
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -334,85 +274,52 @@
             <div class="col-12 col-md-9 pl-md-3 pr-md-0">
               
               <div>
-                 <div class="section" id="code-of-conduct">
-<h1>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permalink to this headline"><i class="fas fa-link"></i></a></h1>
-<div class="section" id="our-pledge">
-<h2>Our Pledge<a class="headerlink" href="#our-pledge" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>We, as contributors, creators, stewards, and maintainers (participants), of Project Pythia pledge to make participation in our software, system or hardware project and community a safe, productive, welcoming and inclusive experience for everyone. All participants are required to abide by this Code of Conduct. This includes respectful treatment of everyone regardless of age, body size, disability, ethnicity, gender identity or expression, level of experience, nationality, political affiliation, veteran status, pregnancy, genetic information, physical appearance, race, religion, or sexual orientation, as well as any other characteristic protected under applicable US federal or state law.</p>
-</div>
-<div class="section" id="our-standards">
-<h2>Our Standards<a class="headerlink" href="#our-standards" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>Examples of behaviors that contribute to a positive environment include:</p>
-<ul class="simple">
-<li><p>All participants are treated with respect and consideration, valuing a diversity of views and opinions</p></li>
-<li><p>Be considerate, respectful, and collaborative</p></li>
-<li><p>Communicate openly with respect for others, critiquing ideas rather than individuals and gracefully accepting criticism</p></li>
-<li><p>Acknowledging the contributions of others</p></li>
-<li><p>Avoid personal attacks directed toward other participants</p></li>
-<li><p>Be mindful of your surroundings and of your fellow participants</p></li>
-<li><p>Alert project administrators if you notice a dangerous situation or someone in distress</p></li>
-<li><p>Respect the rules and policies of the project and venue</p></li>
-</ul>
-<p>Examples of unacceptable behavior include, but are not limited to:</p>
-<ul class="simple">
-<li><p>Harassment, intimidation, or discrimination in any form</p></li>
-<li><p>Physical, verbal, or written abuse by anyone to anyone, including repeated use of pronouns other than those requested</p></li>
-<li><p>Unwelcome sexual attention or advances</p></li>
-<li><p>Personal attacks directed at other guests, members, participants, etc.</p></li>
-<li><p>Publishing others’ private information, such as a physical or electronic address, without explicit permission</p></li>
-<li><p>Alarming, intimidating, threatening, or hostile comments or conduct</p></li>
-<li><p>Inappropriate use of nudity and/or sexual images</p></li>
-<li><p>Threatening or stalking anyone, including a participant</p></li>
-<li><p>Other conduct which could reasonably be considered inappropriate in a professional setting</p></li>
-</ul>
-</div>
-<div class="section" id="scope-of-this-code">
-<h2>Scope of this Code<a class="headerlink" href="#scope-of-this-code" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>This Code of Conduct applies to all spaces managed by the Project whether they be physical, online or face-to-face. This includes project code, code repository, associated web pages, documentation, mailing lists, project websites and wiki pages, issue tracker, meetings, telecons, events, project social media accounts, and any other forums created by the project team which the community uses for communication. In addition, violations of this Code of Conduct outside these spaces may affect a person’s ability to participate within them. Representation of a project may be further defined and clarified by project maintainers.</p>
-</div>
-<div class="section" id="community-responsibilities">
-<h2>Community Responsibilities<a class="headerlink" href="#community-responsibilities" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>Everyone in the community is empowered to respond to people who are showing unacceptable behavior. They can talk to them privately or publicly. Anyone requested to stop unacceptable behavior is expected to comply immediately. If the behavior continues concerns may be brought to the project administrators or to any other party listed in the Reporting section below.</p>
-</div>
-<div class="section" id="project-administrator-responsibilities">
-<h2>Project Administrator Responsibilities<a class="headerlink" href="#project-administrator-responsibilities" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>Project administrators are responsible for clarifying the standards of acceptable behavior and are encouraged to model appropriate behavior and provide support when people in the community point out inappropriate behavior. Project administrator(s) are normally the ones that would be tasked to carry out the actions in the Consequences section below.</p>
-</div>
-<div class="section" id="reporting">
-<h2>Reporting<a class="headerlink" href="#reporting" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>Instances of unacceptable behavior can be brought to the attention of the project administrator(s) who may take any action as outlined in the Consequences section below.</p>
-</div>
-<div class="section" id="consequences">
-<h2>Consequences<a class="headerlink" href="#consequences" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>Upon receipt of a complaint, the project administrator(s) may take any action deemed necessary and appropriate under the circumstances. Such action can include things such as: removing, editing, or rejecting comments, commits, code, wiki edits, email, issues, and other contributions that are not aligned to this Code of Conduct, or banning temporarily or permanently any contributor for other behaviors that are deemed inappropriate, threatening, offensive, or harmful. Project administrators also have the right to report violations to UCAR HR and/or UCAR’s Office of Diversity, Equity and Inclusion (ODEI), as well as a participant’s home institution and/or law enforcement. In the event an incident is reported to UCAR, UCAR will follow its Harassment Reporting and Complaint Procedure.</p>
-</div>
-<div class="section" id="attribution">
-<h2>Attribution<a class="headerlink" href="#attribution" title="Permalink to this headline"><i class="fas fa-link"></i></a></h2>
-<p>This Code of Conduct was originally adapted from the Contributor Covenant, version 1.4. We then aligned it with the UCAR Participant Code of Conduct, which also borrows from the American Geophysical Union (AGU) Code of Conduct. The UCAR Participant Code of Conduct applies to both UCAR employees as well as participants in activities run by UCAR. The original version of this for all software projects that have strong management from UCAR or UCAR staff is available on the UCAR website at <a class="reference external" href="https://doi.org/10.5065/6w2c-a132">https://doi.org/10.5065/6w2c-a132</a>. The date that it was adopted by this project was 20 December 2020. When responding to complaints, UCAR HR and ODEI will do so based on the latest published version. Therefore, any project-specific changes should follow the Process for Changes section above.</p>
-</div>
-</div>
+                
 
 <div class="section">
+  <h1>
+     All  Posts 
+  </h1>
+   
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="posts/cookoff2023.html">Pythia Cookbook Cook-Off Hackathon 2023</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          28 June 2023 
+      </li>
+       
+<li id="author">
+  <span>Author:</span
+  >
+   
+  <a href="blog/author/julia-kent.html">Julia kent</a>  
+</li>
+    
+<li id="tags">
+  <span>Tag:</span
+  >
+   
+  <a href="blog/tag/cook-off.html">cook-off</a>  
+</li>
+ 
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>One year from when Project Pythia first introduced Cookbooks, NCAR hosted Project Pythia’s first “Cookbook Cook-Off” hackathon.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="posts/cookoff2023.html"><em>Read more ...</em></a></p>
+    <hr/>
+  </div>
    
 </div>
 
               </div>
               <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="contributing.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Contributor’s Guide</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="resource-gallery.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Resource Gallery</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             </div>
           </div>

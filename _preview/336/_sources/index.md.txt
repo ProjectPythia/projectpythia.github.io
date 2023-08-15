@@ -9,11 +9,6 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
-<a href="https://projectpythia.org/pythia-cookoff-2023/README.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
-        Project Pythia is hosting a Cookbook Cook-Off June 20-23, 2023.<br>
-        Learn more here.
-</a>
-
 [Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
 Together these initiatives are helping geoscientists make sense of huge volumes of
@@ -202,182 +197,16 @@ are open to anyone who wishes to participate. We publish
     <iframe src="https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com" frameborder="0" scrolling="no"></iframe>
 </div>
 
-## The Project Pythia Team
+## How to Cite
 
-### Project Administrators
+The material in Project Pythia is licensed for free and open consumption and reuse. All code is served under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0), while all non-code content is licensed under [Creative Commons BY 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Effectively, this means you are free to share and adapt this material so long as you give appropriate credit to the Project Pythia community.
 
-```{panels}
-:column: col-lg-4 col-md-4 col-sm-6 p-3 mx-auto
-:body: text-center
+To cite this project, please site our [NSF GEO OSE proposal](https://zenodo.org/record/8184298). Individual components of the project may be cited separately.
 
-:img-top: https://avatars.githubusercontent.com/clyne
+> Rose, Brian E. J., Clyne, John, May, Ryan, Munroe, James, Snyder, Amelia, Eroglu, Orhan, & Tyle, Kevin. (2023). Collaborative Research: GEO OSE TRACK 2: Project Pythia and            Pangeo: Building an inclusive geoscience community through accessible, reusable, and reproducible workflows. Zenodo. https://doi.org/10.5281/zenodo.8184298
 
-**John Clyne**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@clyne](https://github.com/clyne)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8184298.svg)](https://doi.org/10.5281/zenodo.8184298)
 
----
-:img-top: https://avatars.githubusercontent.com/matt-long
-
-**Matthew C. Long**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@matt-long](https://github.com/matt-long)
-
----
-:img-top: https://avatars.githubusercontent.com/dopplershift
-
-**Ryan May**
-<br/>
-[**Unidata**](https://unidata.ucar.edu)
-<br/>
-[@dopplershift](https://github.com/dopplershift)
-
----
-:img-top: https://avatars.githubusercontent.com/kmpaul
-
-**Kevin Paul**
-<br/>
-[**NVIDIA**](https://www.nvidia.com/en-us/)
-<br/>
-[@kmpaul](https://github.com/kmpaul)
-
----
-:img-top: https://avatars.githubusercontent.com/brian-rose
-
-**Brian E. J. Rose**
-<br/>
-[**University at Albany**](https://www.albany.edu/)
-<br/>
-[@brian-rose](https://github.com/brian-rose)
-
----
-:img-top: https://avatars.githubusercontent.com/ktyle
-
-**Kevin Tyle**
-<br/>
-[**University at Albany**](https://www.albany.edu/)
-<br/>
-[@ktyle](https://github.com/ktyle)
-
-```
-
-### Project Members
-
-```{panels}
-:column: col-lg-4 col-md-4 col-sm-6 p-3 mx-auto
-:body: text-center
-
-:img-top: https://avatars.githubusercontent.com/andersy005
-
-**Anderson Banihirwe**
-<br/>
-[**CarbonPlan**](https://carbonplan.org/)
-<br/>
-[@andersy005](https://github.com/andersy005)
-
----
-:img-top: https://avatars.githubusercontent.com/dcamron
-
-**Drew Camron**
-<br/>
-[**Unidata**](https://unidata.ucar.edu)
-<br/>
-[@dcamron](https://github.com/dcamron)
-
----
-:img-top: https://avatars.githubusercontent.com/cjcardinale
-
-**Chris Cardinale**
-<br/>
-[**University at Albany**](https://www.albany.edu/)
-<br/>
-[@cjcardinale](https://github.com/cjcardinale)
-
----
-:img-top: https://avatars.githubusercontent.com/ncorbin-id
-
-**Nicole Corbin**
-<br/>
-[**Unidata**](https://unidata.ucar.edu)
-<br/>
-[@ncorbin-id](https://github.com/ncorbin-id)
-
----
-:img-top: https://avatars.githubusercontent.com/erogluorhan
-
-**Orhan Eroglu**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@erogluorhan](https://github.com/erogluorhan)
-
----
-:img-top: https://avatars.githubusercontent.com/r-ford
-
-**Robert Ford**
-<br/>
-[**University at Albany**](https://www.albany.edu/)
-<br/>
-[@r-ford](https://github.com/r-ford)
-
----
-:img-top: https://avatars.githubusercontent.com/mgrover1
-
-**Max Grover**
-<br/>
-[**Argonne National Laboratory**](https://www.anl.gov/)
-<br/>
-[@mgrover1](https://github.com/mgrover1)
-
----
-:img-top: https://avatars.githubusercontent.com/jukent
-
-**Julia Kent**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@jukent](https://github.com/jukent)
-
----
-:img-top: https://avatars.githubusercontent.com/pilotchute
-
-**Alea Kootz**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@pilotchute](https://github.com/pilotchute)
-
----
-:img-top: https://avatars.githubusercontent.com/michaelavs
-
-**Michaela Sizemore**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@michaelavs](https://github.com/michaelavs)
-
----
-:img-top: https://avatars.githubusercontent.com/anissa111
-
-**Anissa Zacharias**
-<br/>
-[**NCAR**](https://ncar.ucar.edu)
-<br/>
-[@anissa111](https://github.com/anissa111)
-
----
-:img-top: https://avatars.githubusercontent.com/jnmorley
-
-**James Morley**
-<br/>
-[**Utah Valley University**](https://ncar.ucar.edu)
-<br/>
-[@jnmorley](https://github.com/jnmorley)
-```
 
 ```{toctree}
 ---
