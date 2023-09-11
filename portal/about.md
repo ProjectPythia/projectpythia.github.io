@@ -78,3 +78,8 @@ To learn more about Project Pythia and its history, see this list of presentatio
 |  AGU  | 2021-12 | Julia Kent | abstract | [ESDS Educational Efforts](https://t.co/hQ1wGQZB18) |
 | Pangeo Showcase | 2021-06 | Brian Rose | video + slides | [Project Pythia: a community learning resource for Python-based computing in the geosciences](https://discourse.pangeo.io/t/june-23-2021-project-pythia-a-community-learning-resource-for-python-based-computing-in-the-geosciences/1601) |
 |  AMS  | 2021-01 | John Clyne | video | [Project Pythia: a community learning resource for geoscientists](https://youtu.be/_UxlrwB_evo)
+
+
+## Metrics
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9KGMX7VHZ"></script>
