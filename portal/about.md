@@ -82,4 +82,12 @@ To learn more about Project Pythia and its history, see this list of presentatio
 
 ## Metrics
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9KGMX7VHZ"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'G-T9KGMX7VHZ', 'projectpythia.org.com');
+  ga('send', 'pageview');
+</script>
