@@ -64,6 +64,7 @@ To learn more about Project Pythia and its history, see this list of presentatio
 
 | Forum | Date | Presenter | Format | Title (with link) |
 | ---   |  ---  |   ---   |  ---    |  --- |
+| SciPy | 2023-07 | Kevin Tyle / Drew Camron | slides | [Better (Open-source) Homes and Gardens with Project Pythia](https://drive.google.com/file/d/125Wk3TTImHqSYLkgPNsy4_M_w3aENgLr/view?usp=sharing) |
 | Pythia Cook-off 2023 | 2023-06 | Brian Rose / Drew Camron | slides | [Cook-off 2023 Introduction: All about Pythia, Cookbooks, and the Cook-off!](https://docs.google.com/presentation/d/1NUnkZLyf4HXkPfQATjoUAs1s9cQAAtTlmVUMwQQmvMg/edit?usp=sharing) |
 | CI2023 Reproducibility Challenge | 2023-05 | Brian Rose | slides | [Project Pythia: Learning Python Geoscience Software](https://doi.org/10.5281/zenodo.7915657) |
 | ISS   |  2023-04 | Julia Kent | slides | [How Project Pythia Leverages GitHub for Community Contributions](https://docs.google.com/presentation/d/13MH5968BAfR6IxplGVbM2bSJ6uRoa5Wkzk5axqvmCX4/edit?usp=sharing) |
@@ -72,6 +73,7 @@ To learn more about Project Pythia and its history, see this list of presentatio
 | AMS   |  2023-01  | Max Grover | talk | [ARMing the Open Science Community with Radar Cookbooks: from the Colorado Rockies to the Gulf Coast and Beyond](https://ams.confex.com/ams/103ANNUAL/meetingapp.cgi/Paper/417388) |
 | AGU   |  2022-12  | Kevin Tyle | slides | [Project Pythia - Transforming Software Engineering Education for GeoScience](https://eppro01.ativ.me/src/EventPilot/php/express/web/planner.php?id=AGU22) |
 | AGU   |  2022-12  | Julia Kent | slides | [Project Pythia: A Pangeo Community Tool for Open-Source Education](https://docs.google.com/presentation/d/19oWV7LULijtIYObrNW3ccoRLNFV9lYA0APuPlXAx_z8/edit?usp=sharing) |
+| SciPy | 2022-07 | Kevin Tyle | slides | [A Community-built Training Resource for the Geoscientific Python Software Ecosystem](https://docs.google.com/presentation/d/1tyPkDVDKZX5BsWk9j-TTwiKT8mNQBBZG/edit?usp=sharing&ouid=114646835079460879999&rtpof=true&sd=true) |
 | ESDS forum |  2022-05  | Julia Kent | slides | [Project Pythia: A Community Learning Resource for Geoscientists](https://docs.google.com/presentation/d/1NGLFwqJdsu53CtsCqZLO3dxQtRcelOsm/edit?usp=sharing&ouid=107342162699810699865&rtpof=true&sd=true) |
 |  AMS  | 2022-01  | Drew Camron | slides | [Project Pythia: A community update](https://docs.google.com/presentation/d/1NuV5sI3oGhvuUt_s8hzmj0UA9MqCtlxWTADbJHjr9ow/edit?usp=sharing)     |
 |  AMS  | 2022-01  | Kevin Tyle | slides | [Leveraging Project Pythia in an Advanced Geoscience & Visualization Course](https://docs.google.com/presentation/d/1D8kkpsX4CE3rT5QQliH6JfKYeY76fT1gClIEzboxgko/)     |
