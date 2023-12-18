@@ -2,9 +2,26 @@
 
 This document contains information specific to contributing to the
 Project Pythia Portal. Please first refer to [Pythia Contributor's
-Guide](https://projectpythia.org/pages/contributing.html) for overall
+Guide](https://projectpythia.org/contributing.html) for overall
 contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
+
+## Instructions for adding a blog post
+
+We use [Sphinx ABblog](https://ablog.readthedocs.io/en/stable/) to add blog posts to our site.
+
+Within the `portal/posts/` folder add your `.md` blog file with the following heading:
+
+```
+---
+blogpost: true
+date: MON DD, YYYY
+author: First Last
+tags: sample-tag
+---
+```
+
+The post will automatically be recognized and displayed when you build the portal site.
 
 ## Instructions for building the portal site
 
@@ -66,7 +83,7 @@ Open with your web browser, or from the terminal:
 
 ```bash
 open _build/html/index.html
-```
+`````
 
 However, many of the links will not work. For all of the links
 found in the portal to work properly, you'll need to set up a local
