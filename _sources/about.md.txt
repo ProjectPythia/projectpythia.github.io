@@ -41,7 +41,6 @@ but instead help you _improve_ it -- and help you to help others do the same!
 
 ## Who is Project Pythia?
 
-The current core Pythia team can be found [here](index.md#the-project-pythia-team).
 Pythia is an open and inclusive community! Look [here](index.md#join-us) for info
 on how to get involved.
 
