@@ -28,15 +28,16 @@ class IssueInfo:
     gh_event_path: pydantic.FilePath
     submission: Submission = pydantic.Field(default=None)
 
+    def __post_init_post_parse__(self):
+        with open(self.gh_event_path) as f:
+            self.data = json.load(f)
+
     def create_submission(self):
         self._get_inputs()
         self._create_submission_input()
         return self
 
     def _get_inputs(self):
-        with open(self.gh_event_path) as f:
-            self.data = json.load(f)
-
         self.author = self.data['issue']['user']['login']
         self.title = self.data['issue']['title']
         self.body = self.data['issue']['body']
@@ -60,8 +61,8 @@ class IssueInfo:
                 authors.append(
                     Author(
                         name=item.get('name', 'anyonymous'),
-                        affiliation=item.get('institution'),
-                        affiliation_url=item.get('institution_url'),
+                        affiliation=item.get('affiliation'),
+                        affiliation_url=item.get('affiliation_url'),
                         email=item.get('email', ''),
                     )
                 )
@@ -77,6 +78,6 @@ class IssueInfo:
 
 if __name__ == '__main__':
     issue = IssueInfo(gh_event_path=os.environ['GITHUB_EVENT_PATH']).create_submission()
-    inputs = issue.submission.model_dump()
+    inputs = issue.submission.dict()
     with open('resource-gallery-submission-input.json', 'w') as f:
         json.dump(inputs, f)
