@@ -149,9 +149,9 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 
 ## Join us!
 
-If you have questions or want to share anything with the Project 
-Pythia Team, please reach out to us through the [Project Pythia 
-category on the Pangeo Discourse forum](https://discourse.pangeo.io/c/education/project-pythia/)  
+If you have questions or want to share anything with the Project
+Pythia Team, please reach out to us through the [Project Pythia
+category on the Pangeo Discourse forum](https://discourse.pangeo.io/c/education/project-pythia/)
 below or join us at our [Weekly Working Group Meetings](#weekly-working-group-meetings).
 
 <span class="d-flex justify-content-center pt-1 pb-4">
