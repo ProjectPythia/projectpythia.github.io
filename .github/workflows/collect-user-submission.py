@@ -60,8 +60,8 @@ class IssueInfo:
                 authors.append(
                     Author(
                         name=item.get('name', 'anyonymous'),
-                        affiliation=item.get('affiliation'),
-                        affiliation_url=item.get('affiliation_url'),
+                        affiliation=item.get('institution'),
+                        affiliation_url=item.get('institution_url'),
                         email=item.get('email', ''),
                     )
                 )
