@@ -77,6 +77,6 @@ class IssueInfo:
 
 if __name__ == '__main__':
     issue = IssueInfo(gh_event_path=os.environ['GITHUB_EVENT_PATH']).create_submission()
-    inputs = issue.submission.model_dump()
+    inputs = issue.submission.model_dump_json()
     with open('resource-gallery-submission-input.json', 'w') as f:
         json.dump(inputs, f)
