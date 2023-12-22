@@ -28,16 +28,15 @@ class IssueInfo:
     gh_event_path: pydantic.FilePath
     submission: Submission = pydantic.Field(default=None)
 
-    def __post_init_post_parse__(self):
-        with open(self.gh_event_path) as f:
-            self.data = json.load(f)
-
     def create_submission(self):
         self._get_inputs()
         self._create_submission_input()
         return self
 
     def _get_inputs(self):
+        with open(self.gh_event_path) as f:
+            self.data = json.load(f)
+
         self.author = self.data['issue']['user']['login']
         self.title = self.data['issue']['title']
         self.body = self.data['issue']['body']
