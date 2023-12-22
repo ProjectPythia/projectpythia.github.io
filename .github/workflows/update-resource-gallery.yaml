@@ -1,7 +1,6 @@
 name: Update Resource Gallery
 
 on:
-  workflow_dispatch:
   issues:
     types:
       - opened
