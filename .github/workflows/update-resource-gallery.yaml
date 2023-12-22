@@ -5,6 +5,8 @@ on:
     types:
       - opened
       - edited
+    branches:
+      - fix-resource_gallery-workflow
 jobs:
   validate-user-submission:
     if: |
