@@ -6,6 +6,7 @@ on:
       - opened
       - edited
     branches:
+      - main
       - fix-resource_gallery-workflow
 jobs:
   validate-user-submission:
