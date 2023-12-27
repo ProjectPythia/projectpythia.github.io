@@ -6,8 +6,8 @@
   - name: Xdev Team
     email: xdev@ucar.edu
     url: https://ncar.github.io/xdev/
-    institution: NCAR
-    institution_url: https://ncar.ucar.edu/
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/Xdev.png
   tags:
     packages:
@@ -23,8 +23,8 @@
   description: |
     Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     formats:
@@ -37,8 +37,8 @@
   description: |
     Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
@@ -52,9 +52,9 @@
     This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
   authors:
   - name: Ryan Abernathey
-    institution: Lamont-Doherty Earth Observatory
+    affiliation: Lamont-Doherty Earth Observatory
   - name: Kerry Key
-    institution: Lamont-Doherty Earth Observatory
+    affiliation: Lamont-Doherty Earth Observatory
   thumbnail: /_static/thumbnails/earth_env_data_science.png
   tags:
     formats:
@@ -69,7 +69,7 @@
   authors:
   - name: Brian Rose
     url: http://www.atmos.albany.edu/facstaff/brose/
-    institution: University of Albany
+    affiliation: University of Albany
   thumbnail: /_static/thumbnails/climlablogo.png
   tags:
     formats:
@@ -88,7 +88,7 @@
   authors:
   - name: Earth Lab
     url: https://www.earthdatascience.org/
-    institution: University of Colorado Boulder
+    affiliation: University of Colorado Boulder
   thumbnail: /_static/thumbnails/earth-lab-logo.png
   tags:
     formats:
@@ -100,7 +100,7 @@
     This site contains open, tutorials and course materials covering topics including data integration, GIS and data intensive science.
   authors:
   - name: Earth Lab
-    institution: University of Colorado Boulder
+    affiliation: University of Colorado Boulder
   thumbnail: /_static/thumbnails/earth-lab-logo.png
   tags:
     formats:
@@ -113,7 +113,7 @@
   authors:
   - name: eScience Institute
     url: https://escience.washington.edu/
-    institution: University of Washington
+    affiliation: University of Washington
   thumbnail: /_static/thumbnails/eScience_Logo_HR.png
   tags:
     formats:
@@ -149,7 +149,7 @@
   authors:
   - name: Jay Gopalakrishnan
     url: http://web.pdx.edu/~gjay/
-    institution: Portland State University
+    affiliation: Portland State University
   thumbnail: /_static/thumbnails/portland-state.png
   tags:
     formats:
@@ -162,7 +162,7 @@
   authors:
   - name: Philip Austin
     email: paustin@eos.ubc.ca
-    institution: University of British Columbia
+    affiliation: University of British Columbia
   thumbnail: /_static/thumbnails/british-columbia.jpg
   tags:
     formats:
@@ -188,8 +188,8 @@
     A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
   authors:
   - name: Dani Arribas-Bel
-    institution: University of Liverpool Department of Geography and Planning
-    institution_url: https://www.liverpool.ac.uk/geography-and-planning/
+    affiliation: University of Liverpool Department of Geography and Planning
+    affiliation_url: https://www.liverpool.ac.uk/geography-and-planning/
   thumbnail:
   tags:
     formats:
@@ -285,8 +285,8 @@
   authors:
   - name: GeoCat
     url: https://geocat.ucar.edu/
-    institution: NCAR
-    institution_url: https://ncar.ucar.edu/
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/geocat.png
   tags:
     packages:
@@ -301,8 +301,8 @@
   authors:
   - name: GeoCAT
     url: https://geocat.ucar.edu/
-    institution: NCAR
-    institution_url: https://ncar.ucar.edu/
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/geocat.png
   tags:
     packages:
@@ -449,8 +449,8 @@
     MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
   authors:
   - name: MetPy developers
-    institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+    affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
@@ -464,8 +464,8 @@
     This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
   authors:
   - name: MetPy developers
-    institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+    affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
@@ -478,8 +478,8 @@
   description: |
     MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
@@ -493,8 +493,8 @@
     Examples of using a variety of MetPy’s functionality together.
   authors:
   - name: MetPy Developers
-    institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+    affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
     packages:
@@ -507,8 +507,8 @@
   description: |
     Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     domains:
@@ -521,8 +521,8 @@
   description: |
     A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy-mondays.jpeg
   tags:
     packages:
@@ -559,8 +559,8 @@
   description: |
     Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
@@ -574,8 +574,8 @@
     NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
   authors:
   - name: A. Chabot-LeClerc
-    institution: Enthought
-    institution_url: https://www.enthought.com/
+    affiliation: Enthought
+    affiliation_url: https://www.enthought.com/
   thumbnail: /_static/thumbnails/Enthought.png
   tags:
     packages:
@@ -654,8 +654,8 @@
     Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
   authors:
   - name: Siphon Contributors
-    institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+    affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
@@ -668,8 +668,8 @@
   description: |
     An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
@@ -683,8 +683,8 @@
     Examples of using Siphon’s functionality.
   authors:
   - name: Siphon Contributors
-    institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+    affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
     packages:
@@ -697,8 +697,8 @@
   description: |
     A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
   authors:
-  - institution: NCAR
-    institution_url: https://ncar.ucar.edu/
+  - affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
     packages:
@@ -711,8 +711,8 @@
   description: |
     Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
   authors:
-  - institution: NCAR
-    institution_url: https://ncar.ucar.edu/
+  - affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
     packages:
@@ -742,8 +742,8 @@
   description: |
     An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
   authors:
-  - institution: Unidata
-    institution_url: https://www.unidata.ucar.edu/
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/xarray.png
   tags:
     packages:
@@ -771,16 +771,16 @@
   thumbnail: ''
   authors:
   - name: Lisa Tauxe
-    institution: Scripps Institution of Oceanography
-    institution_url: https://scripps.ucsd.edu/
+    affiliation: Scripps Institution of Oceanography
+    affiliation_url: https://scripps.ucsd.edu/
     email: ltauxe@ucsd.edu
   - name: Hanna Asefaw
-    institution: ''
-    institution_url: ''
+    affiliation: ''
+    affiliation_url: ''
     email: hasefaw@ucsd.edu
   - name: Brendan Cych
-    institution: ''
-    institution_url: ''
+    affiliation: ''
+    affiliation_url: ''
     email: bcych@ucsd.edu
   tags:
     formats:
@@ -798,8 +798,8 @@
   thumbnail: https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png
   authors:
   - name: Pangeo Community
-    institution: Pangeo
-    institution_url: http://pangeo.io/
+    affiliation: Pangeo
+    affiliation_url: http://pangeo.io/
     email: ''
   tags:
     packages:
@@ -833,12 +833,12 @@
   thumbnail: /_static/thumbnails/DC_logo_vision.png
   authors:
   - name: ''
-    institution: Data Carpentry
-    institution_url: https://datacarpentry.org/
+    affiliation: Data Carpentry
+    affiliation_url: https://datacarpentry.org/
     email: ''
   - name: ''
-    institution: ''
-    institution_url: ''
+    affiliation: ''
+    affiliation_url: ''
     email: ''
   tags:
     packages:
@@ -887,8 +887,8 @@
   thumbnail: 'https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png'
   authors:
     - name: 'EDS book community'
-      institution: 'Environmental Data Science Book'
-      institution_url: 'https://github.com/alan-turing-institute/environmental-ds-book#contributors'
+      affiliation: 'Environmental Data Science Book'
+      affiliation_url: 'https://github.com/alan-turing-institute/environmental-ds-book#contributors'
       email: 'environmental.ds.book@gmail.com'
   tags:
     packages:
@@ -924,8 +924,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-txtfile.jpeg
   tags:
     packages:
@@ -944,8 +944,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-datadict.jpeg
   tags:
     packages:
@@ -964,8 +964,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-writingfx.jpeg
   tags:
     packages:
@@ -984,8 +984,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-firstpackage.jpeg
   tags:
     packages:
@@ -1004,8 +1004,8 @@
   authors:
     - name: Project Pythia
     - name: Julia Kent
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-builtinpackage.jpeg
   tags:
     packages:
@@ -1024,8 +1024,8 @@
   authors:
     - name: Project Pythia
     - name: Kevin Paul
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-jupyter.jpeg
   tags:
     packages:
@@ -1044,8 +1044,8 @@
   authors:
     - name: Project Pythia
     - name: A Kootz
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-numpy.jpeg
   tags:
     packages:
@@ -1064,8 +1064,8 @@
   authors:
     - name: Project Pythia
     - name: Anissa Zacharias
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-matplotlib.jpeg
   tags:
     packages:
@@ -1086,8 +1086,8 @@
   authors:
     - name: Project Pythia
     - name: A Kootz
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-oop.jpeg
   tags:
     formats:
@@ -1104,8 +1104,8 @@
   authors:
     - name: Project Pythia
     - name: Michaela Sizemore
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-cartopy.jpeg
   tags:
     packages:
@@ -1127,8 +1127,8 @@
   authors:
     - name: Project Pythia
     - name: Kevin Paul
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-git.png
   tags:
     packages:
@@ -1150,8 +1150,8 @@
       affiliation: NCAR
       affiliation_url: https://ncar.ucar.edu/
     - name: Drew Camron
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-pandas.jpeg
   tags:
     packages:
@@ -1170,8 +1170,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-xarray1.jpeg
   tags:
     packages:
@@ -1190,8 +1190,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-xarray2.jpeg
   tags:
     packages:
@@ -1210,8 +1210,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-dask1.jpeg
   tags:
     packages:
@@ -1230,8 +1230,8 @@
   authors:
     - name: Project Pythia
     - name: Anderson Banihirwe
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-dask2.jpeg
   tags:
     packages:
@@ -1250,8 +1250,8 @@
   authors:
     - name: Project Pythia
     - name: Anissa Zacharias
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-geocatplot.jpeg
   tags:
     packages:
@@ -1272,8 +1272,8 @@
   authors:
     - name: Project Pythia
     - name: A Kootz
-      institution: NCAR
-      institution_url: https://ncar.ucar.edu/
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-geocatcomp.jpeg
   tags:
     packages:
