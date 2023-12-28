@@ -101,7 +101,7 @@ jobs:
 
           with open(resource_gallery_file, 'w') as f:
               resource_gallery.append(data)
-              yaml.dump(resurce_gallery, f)
+              yaml.dump(resource_gallery, f)
 
       - name: Run pre-commit hooks
         run: |
