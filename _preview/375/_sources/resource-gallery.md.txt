@@ -73,7 +73,7 @@ Packages
 <img src="/_static/thumbnails/Xdev.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://ncar.github.io/python-tutorial/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:xdev@ucar.edu">Xdev Team</a><br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:xdev@ucar.edu">Xdev Team</a><br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">A tutorial for getting started with Python aimed at scientists with experience in at least one other coding language. Designed to teach you Python, not package specific syntax.
 </p>
 </div>
@@ -95,7 +95,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/python/intro-to-python/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Training</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic<a class="modal-btn"> ... more</a></p>
 </div>
 </div>
@@ -106,7 +106,7 @@ Packages
 <h3 class="display-3">Unidata Python Training</h3>
 <strong>Author:</strong> Anonymous
 <br/>
-<strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a>
+<strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a>
 <p class="my-2">Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 </p>
 <p class="my-2"><span class="badge bg-primary">course</span>
@@ -129,7 +129,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop - Jupyter Notebooks Introduction</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
 </p>
 </div>
@@ -149,7 +149,7 @@ Packages
 <img src="/_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Institution:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a></p>
 </div>
 </div>
@@ -160,7 +160,7 @@ Packages
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
 <strong>Author:</strong> Kerry Key, Ryan Abernathey
 <br/>
-<strong>Institution:</strong> Lamont-Doherty Earth Observatory
+<strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
 </p>
 <p class="my-2"><span class="badge bg-primary">course</span>
@@ -183,7 +183,7 @@ Packages
 <img src="/_static/thumbnails/climlablogo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://brian-rose.github.io/ClimateLaboratoryBook/home" class="text-decoration-none"><h4 class="display-4 p-0">The Climate Laboratory</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Brian Rose<br/><strong>Institution:</strong> University of Albany</p>
+<p class="card-subtitle"><strong>Author:</strong> Brian Rose<br/><strong>Affiliation:</strong> University of Albany</p>
 <p class="my-2">A hands on approach to climate physics and climate modeling. Fundamental climate processes are introduced through interactive and reproducible Python-based modeling exercises.  This JupyterBook serves as a course textbook at the University of Albany.
 </p>
 </div>
@@ -206,7 +206,7 @@ Packages
 <img src="/_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="text-decoration-none"><h4 class="display-4 p-0">Earth Analytics Python Course</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Earth Lab<br/><strong>Institution:</strong> University of Colorado Boulder</p>
+<p class="card-subtitle"><strong>Author:</strong> Earth Lab<br/><strong>Affiliation:</strong> University of Colorado Boulder</p>
 <p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating<a class="modal-btn"> ... more</a></p>
 </div>
 </div>
@@ -217,7 +217,7 @@ Packages
 <h3 class="display-3">Earth Analytics Python Course</h3>
 <strong>Author:</strong> Earth Lab
 <br/>
-<strong>Institution:</strong> University of Colorado Boulder
+<strong>Affiliation:</strong> University of Colorado Boulder
 <p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 </p>
 <p class="my-2"><span class="badge bg-primary">course</span></p>
@@ -238,7 +238,7 @@ Packages
 <img src="/_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.earthdatascience.org/" class="text-decoration-none"><h4 class="display-4 p-0">Earth Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Earth Lab<br/><strong>Institution:</strong> University of Colorado Boulder</p>
+<p class="card-subtitle"><strong>Author:</strong> Earth Lab<br/><strong>Affiliation:</strong> University of Colorado Boulder</p>
 <p class="my-2">This site contains open, tutorials and course materials covering topics including data integration, GIS and data intensive science.
 </p>
 </div>
@@ -257,7 +257,7 @@ Packages
 <img src="/_static/thumbnails/eScience_Logo_HR.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geohackweek.github.io/" class="text-decoration-none"><h4 class="display-4 p-0">Geohackweek 2019</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> eScience Institute<br/><strong>Institution:</strong> University of Washington</p>
+<p class="card-subtitle"><strong>Author:</strong> eScience Institute<br/><strong>Affiliation:</strong> University of Washington</p>
 <p class="my-2">Geohackweek is a 5-day hackweek to be held at the University of Washington eScience Institute. Tutorials from the hackweek are available for everyone to follow (participants and non-participants alike).
 </p>
 </div>
@@ -327,7 +327,7 @@ Packages
 <img src="/_static/thumbnails/portland-state.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://web.pdx.edu/~gjay/teaching/mth271_2020/html/_CONTENTS.html" class="text-decoration-none"><h4 class="display-4 p-0">MTH271- Mathematical Computing with Data</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Jay Gopalakrishnan<br/><strong>Institution:</strong> Portland State University</p>
+<p class="card-subtitle"><strong>Author:</strong> Jay Gopalakrishnan<br/><strong>Affiliation:</strong> Portland State University</p>
 <p class="my-2">In this course, we will have multiple occasions to procure, analyze, and visualize data. We will study mathematical and statistical techniques to discern patterns in complex data. We shall do so in an ecosystem of python computing modules developed by open-source enthusiasts worldwide.
 </p>
 </div>
@@ -346,7 +346,7 @@ Packages
 <img src="/_static/thumbnails/british-columbia.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://clouds.eos.ubc.ca/~phil/courses/atsc301/" class="text-decoration-none"><h4 class="display-4 p-0">ATSC301- Atmospheric Radiation and Remote Sensing</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:paustin@eos.ubc.ca">Philip Austin</a><br/><strong>Institution:</strong> University of British Columbia</p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:paustin@eos.ubc.ca">Philip Austin</a><br/><strong>Affiliation:</strong> University of British Columbia</p>
 <p class="my-2">This course teaches radiation and remote sensing, but also covers: how to write clear, documented and tested code that can ingest, manipulate and display data, and how to turn equations into computer algorithms in Python.
 </p>
 </div>
@@ -398,7 +398,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://darribas.org/materials.html" class="text-decoration-none"><h4 class="display-4 p-0">Dani Arribas-Bel Course Repositories</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel<br/><strong>Institution:</strong> <a href="https://www.liverpool.ac.uk/geography-and-planning/">University of Liverpool Department of Geography and Planning</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel<br/><strong>Affiliation:</strong> <a href="https://www.liverpool.ac.uk/geography-and-planning/">University of Liverpool Department of Geography and Planning</a></p>
 <p class="my-2">A collection of courework repositories for various data science classes taught by Dani Arribas-Bel.
 </p>
 </div>
@@ -553,7 +553,7 @@ Packages
 <img src="/_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geocat-comp.readthedocs.io/en/latest/examples.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">The examples below show GeoCAT-comp functions being utilized in real-world use cases. They also demonstrate how GeoCAT-comp can be used to make plots with Matplotlib (using Cartopy) and PyNGL (work in progress).
 </p>
 </div>
@@ -573,7 +573,7 @@ Packages
 <img src="/_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://geocat-examples.readthedocs.io/" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">A gallery of plotting examples from GeoCat.
 </p>
 </div>
@@ -823,7 +823,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
 </p>
 </div>
@@ -843,7 +843,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/tutorials/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
 </p>
 </div>
@@ -863,7 +863,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop- MetPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
 </p>
 </div>
@@ -883,7 +883,7 @@ Packages
 <img src="/_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/MetPy/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">MetPy Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Examples of using a variety of MetPy’s functionality together.
 </p>
 </div>
@@ -903,7 +903,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/gallery/gallery-home/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
 </p>
 </div>
@@ -923,7 +923,7 @@ Packages
 <img src="/_static/thumbnails/metpy-mondays.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO" class="text-decoration-none"><h4 class="display-4 p-0">Unidata MetPy Mondays</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
 </p>
 </div>
@@ -982,7 +982,7 @@ Packages
 <img src="/_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Numpy Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
 </p>
 </div>
@@ -1002,7 +1002,7 @@ Packages
 <img src="/_static/thumbnails/Enthought.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/ZB7BZMhfPgk" class="text-decoration-none"><h4 class="display-4 p-0">Intro to Numerical Computing with NumPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A. Chabot-LeClerc<br/><strong>Institution:</strong> <a href="https://www.enthought.com/">Enthought</a></p>
+<p class="card-subtitle"><strong>Author:</strong> A. Chabot-LeClerc<br/><strong>Affiliation:</strong> <a href="https://www.enthought.com/">Enthought</a></p>
 <p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how<a class="modal-btn"> ... more</a></p>
 </div>
 </div>
@@ -1013,7 +1013,7 @@ Packages
 <h3 class="display-3">Intro to Numerical Computing with NumPy</h3>
 <strong>Author:</strong> A. Chabot-LeClerc
 <br/>
-<strong>Institution:</strong> <a href="https://www.enthought.com/">Enthought</a>
+<strong>Affiliation:</strong> <a href="https://www.enthought.com/">Enthought</a>
 <p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
 </p>
 <p class="my-2"><span class="badge bg-primary">numpy</span>
@@ -1136,7 +1136,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/siphon" class="text-decoration-none"><h4 class="display-4 p-0">Siphon</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
 </p>
 </div>
@@ -1156,7 +1156,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
 </p>
 </div>
@@ -1176,7 +1176,7 @@ Packages
 <img src="/_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/siphon/latest/examples/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Siphon Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">Examples of using Siphon’s functionality.
 </p>
 </div>
@@ -1196,7 +1196,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://wrf-python.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
 </p>
 </div>
@@ -1216,7 +1216,7 @@ Packages
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://wrf-python.readthedocs.io/en/latest/plot.html" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
 </p>
 </div>
@@ -1276,7 +1276,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Xarray Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Institution:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
 </p>
 </div>
@@ -1317,7 +1317,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Institution:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students</p>
 </div>
 </div>
@@ -1340,7 +1340,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Institution:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
 <p class="my-2">A gallery of different Pangeo use cases</p>
 </div>
 </div>
@@ -1373,7 +1373,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://carpentrieslab.github.io/python-aos-lesson/" class="text-decoration-none"><h4 class="display-4 p-0">Python for Atmosphere and Ocean Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <br/><strong>Institution:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <br/><strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line<a class="modal-btn"> ... more</a></p>
 </div>
 </div>
@@ -1384,7 +1384,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <h3 class="display-3">Python for Atmosphere and Ocean Science</h3>
 <strong>Author:</strong> 
 <br/>
-<strong>Institution:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
+<strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
 <p class="my-2"><span class="badge bg-primary">atmospheric-science</span>
 <span class="badge bg-primary">cartopy</span>
@@ -1418,7 +1418,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://github.com/koldunovn/python_for_geosciences" class="text-decoration-none"><h4 class="display-4 p-0">Python for Geosciences</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:koldunovn@gmail.com">Nikolay Koldunov</a><br/><strong>Affiliation:</strong> <a href="https://www.awi.de/en/">Alfred Wegener Institute for Polar and Marine Research </a></p>
 <p class="my-2">This is a short overview of how Python is used in science and particularly in geosciences targeting people who already know programming (e.g. Matlab). </p>
 </div>
 </div>
@@ -1447,7 +1447,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://github.com/alan-turing-institute/environmental-ds-book" class="text-decoration-none"><h4 class="display-4 p-0">Environmental Data Science Book</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:environmental.ds.book@gmail.com">EDS book community</a><br/><strong>Institution:</strong> <a href="https://github.com/alan-turing-institute/environmental-ds-book#contributors">Environmental Data Science Book</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:environmental.ds.book@gmail.com">EDS book community</a><br/><strong>Affiliation:</strong> <a href="https://github.com/alan-turing-institute/environmental-ds-book#contributors">Environmental Data Science Book</a></p>
 <p class="my-2">A living, open and community-driven resource to showcase and support computational notebooks for collaborative, reproducible and transparent Environmental Science</p>
 </div>
 </div>
@@ -1485,7 +1485,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-txtfile.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Jog7ybd6amw" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1508,7 +1508,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-datadict.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/5z6-t62x7Xs" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1531,7 +1531,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-writingfx.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BerEf_3CsL8" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1554,7 +1554,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-firstpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/6lbbTwGFcTc" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1577,7 +1577,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-builtinpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/44QUMCh2ZHU" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1600,7 +1600,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-jupyter.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/xSzXvwzFsDU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Jupyter Notebooks</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
 </p>
 </div>
@@ -1623,7 +1623,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-numpy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/kstc-6uz7AQ" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Numpy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The content to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
 </p>
 </div>
@@ -1646,7 +1646,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-matplotlib.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/EiPRIdHQEmE" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1670,7 +1670,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-oop.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/GEFnL8C62u8" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Object Oriented Programming</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1692,7 +1692,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-cartopy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/ivmd3RluMiw" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1717,7 +1717,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-git.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/fYkPn0Nttlg" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Git and GitHub</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
 </p>
 </div>
@@ -1740,7 +1740,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Max Grover, Project Pythia, Drew Camron<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover, Project Pythia, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1763,7 +1763,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-xarray1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Ss4ryKukhi4" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1786,7 +1786,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-xarray2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/2H_4drBwORY" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1809,7 +1809,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-dask1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/wn-QM6QUB_U" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1832,7 +1832,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-dask2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/yn4_-1pHC5k" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1855,7 +1855,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-geocatplot.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/It231le1fAU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
 </p>
 </div>
@@ -1879,7 +1879,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="/_static/thumbnails/ptss-geocatcomp.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - GeoCAT-Comp</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Institution:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</A>.
 </p>
 </div>
