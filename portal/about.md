@@ -63,6 +63,8 @@ To learn more about Project Pythia and its history, see this list of presentatio
 
 | Forum | Date | Presenter | Format | Title (with link) |
 | ---   |  ---  |   ---   |  ---    |  --- |
+| AGU   | 2023-12 | Brian Rose | slides | [The Project Pythia Cookbook Initiative](https://docs.google.com/presentation/d/1J6wgvypXxYZ4uTQHsquyH_tlY6KiQXBcxb3cwdd3FUM/edit?usp=sharing) |
+| AGU   | 2023-12 | Julia Kent | slides | [Project Pythia: Empowering Geoscientists through Open-Source, Open-Science Collaboration](https://docs.google.com/presentation/d/1wm0RxaswVh_YJFcYsHduONsYiYNLc69f0XuHnP7Vfh8/edit?usp=sharing) |
 | SciPy | 2023-07 | Kevin Tyle / Drew Camron | slides | [Better (Open-source) Homes and Gardens with Project Pythia](https://drive.google.com/file/d/125Wk3TTImHqSYLkgPNsy4_M_w3aENgLr/view?usp=sharing) |
 | Pythia Cook-off 2023 | 2023-06 | Brian Rose / Drew Camron | slides | [Cook-off 2023 Introduction: All about Pythia, Cookbooks, and the Cook-off!](https://docs.google.com/presentation/d/1NUnkZLyf4HXkPfQATjoUAs1s9cQAAtTlmVUMwQQmvMg/edit?usp=sharing) |
 | CI2023 Reproducibility Challenge | 2023-05 | Brian Rose | slides | [Project Pythia: Learning Python Geoscience Software](https://doi.org/10.5281/zenodo.7915657) |
