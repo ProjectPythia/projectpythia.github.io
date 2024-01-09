@@ -190,7 +190,7 @@ for details on how you can get involved, and come see our work in the
 
 ### Monthly Pythia Meetings
 
-Project Pythia regular public meetings via Zoom as scheduled on the calendar below.
+Project Pythia holds regular public meetings via Zoom as scheduled on the calendar below.
 Do you want to learn about the project, engage with other excited folks, or share your own needs and interests in Python learning?
 You are welcome and encouraged to join! Unsure where to start?
 Come to our monthly Pythia Community Meeting for updates, successes, and community participation across the project.
