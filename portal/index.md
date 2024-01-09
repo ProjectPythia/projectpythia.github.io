@@ -157,7 +157,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 If you have questions or want to share anything with the Project
 Pythia Team, please reach out to us through the [Project Pythia
 category on the Pangeo Discourse forum](https://discourse.pangeo.io/c/education/project-pythia/)
-or join us at our [Weekly Working Group Meetings](#weekly-working-group-meetings).
+or join us at any of our [Monthly Project Meetings](#monthly-pythia-meetings).
 
 <span class="d-flex justify-content-center pt-1 pb-4">
     <a href="https://discourse.pangeo.io/c/education/project-pythia/" role="button" class="btn btn-primary btn-lg">
@@ -188,13 +188,17 @@ for details on how you can get involved, and come see our work in the
 </div>
 </div>
 
-### Weekly Working Group Meetings
+### Monthly Pythia Meetings
 
-Project Pythia holds weekly public meetings every Monday at 1:00PM Mountain (3:00PM Eastern)
-on Zoom. Our meetings alternate focus between _Infrastructure_ and _Education_ content.
-Please find links and information about how to join in the calendar below. These meetings
-are open to anyone who wishes to participate. We publish
-[weekly meeting notes here](https://docs.google.com/document/d/e/2PACX-1vQN5YFkZtCZPKVk2Rte2xoHuiqJuYz1KpynsSKmeCLwP-4glUsGuCPJbITwB4OJc8dOhUpHAMacdx59/pub).
+Project Pythia holds regular public meetings via Zoom as scheduled on the calendar below.
+Do you want to learn about the project, engage with other excited folks, or share your own needs and interests in Python learning?
+You are welcome and encouraged to join! Unsure where to start?
+Come to our monthly Pythia Community Meeting for updates, successes, and community participation across the project.
+For a smaller group and to connect with the project on social media and at conferences, you can also join the monthly Pythia Outreach Meeting.
+Please find links and information about how to join in the calendar below.
+We publish all notes and agendas of our
+[Community Meetings](https://docs.google.com/document/d/e/2PACX-1vQWQrgHs_G5XyNH5GTFYydH_woUZcyZibdxPUWLpqFUYs20WM93kdx5onwOaizC_3-tfnbreMNQbYAp/pub)
+and [Outreach Meetings](https://docs.google.com/document/d/e/2PACX-1vQBAt5B24wig2eh-hxHzgJiXjKCpSeGKsw3PFizZjwH7ka71dagipKwCwQvmE-obmSOfR4Psj2lgbvU/pub).
 
 ### Meeting & Event Calendar
 
