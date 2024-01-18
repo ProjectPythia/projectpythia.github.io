@@ -5,6 +5,7 @@ on:
     types:
       - opened
       - edited
+
 jobs:
   validate-user-submission:
     if: |
