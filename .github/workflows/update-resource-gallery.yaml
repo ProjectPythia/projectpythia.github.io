@@ -89,10 +89,10 @@ jobs:
         run: |
           import yaml
           import json
-          
+
           with open(submission_file, 'r') as file:
               data = json.load(file)
-          
+
           with open(resource_gallery_file, 'w') as yaml_file:
               yaml.dump(data, yaml_file)
 
