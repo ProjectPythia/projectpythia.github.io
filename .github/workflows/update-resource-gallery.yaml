@@ -91,6 +91,9 @@ jobs:
           import yaml
           import json
 
+          submission_file = 'resource-gallery-submission-input.json'
+          resource_gallery_file = 'portal/resource_gallery.yaml'
+
           with open(submission_file, 'r') as file:
               data = json.load(file)
 
