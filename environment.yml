@@ -9,6 +9,7 @@ dependencies:
 - pip
 - pyyaml
 - pre-commit
+- python>=3.11,<3.12
 - sphinx-panels
 - ablog
 - pip:
