@@ -33,7 +33,6 @@ copyright = '2022'
 # ones.
 extensions = [
     'myst_nb',
-    'sphinx_panels',
     'resource_gallery_generator',
     'ablog',
     'sphinx.ext.intersphinx',
@@ -118,9 +117,6 @@ html_theme_options = {
     },
     'extra_navbar': ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
 }
-
-# Panels config
-panels_add_bootstrap_css = False
 
 # MyST config
 myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
