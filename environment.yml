@@ -10,6 +10,7 @@ dependencies:
 - pyyaml
 - pre-commit
 - python>=3.9,<3.12
+- sphinx>=5.0
 - ablog
 - pip:
   - sphinx-pythia-theme
