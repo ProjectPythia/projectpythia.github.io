@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@try_updated_theme
     with:
       environment_file: 'environment.yml'
       environment_name: pythia
@@ -18,7 +18,7 @@ jobs:
 
   deploy:
     needs: build
-    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@try_updated_theme
     with:
       cname: projectpythia.org
       publish_dir: 'portal/_build/html'
