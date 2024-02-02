@@ -11,6 +11,7 @@ dependencies:
 - pre-commit
 - python>=3.11,<3.12
 - sphinx>=5.0,<6.0
+- sphinx-panels
 - ablog
 - pip:
   - sphinx-pythia-theme
