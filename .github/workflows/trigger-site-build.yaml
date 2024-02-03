@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@erogluorhan-patch-1
     with:
       environment_file: 'environment.yml'
       environment_name: pythia
