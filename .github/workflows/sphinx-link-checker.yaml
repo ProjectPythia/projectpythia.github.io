@@ -61,7 +61,7 @@ jobs:
           || steps.cache.outputs.cache-hit != 'true')
         run: |
           mamba env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
-          mamba install -c conda-forge sphinxcontrib-applehelp=1.0.7 sphinxcontrib-devhelp=1.0.5 sphinxcontrib-htmlhelp=2.0.4 sphinxcontrib-qthelp=1.0.6 sphinxcontrib-serializinghtml=1.1.9
+          mamba install -c conda-forge sphinxcontrib-applehelp=1.0.4 sphinxcontrib-devhelp=1.0.2 sphinxcontrib-htmlhelp=2.0.1 sphinxcontrib-qthelp=1.0.3 sphinxcontrib-serializinghtml=1.1.5
 
       - name: Check external links
         run: |
