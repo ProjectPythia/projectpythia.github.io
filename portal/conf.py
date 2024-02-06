@@ -98,7 +98,9 @@ html_theme_options = {
             'type': 'fontawesome',
         }
     ],
-    'logo_link': 'https://projectpythia.org',
+    'logo': {
+        'link': 'https://projectpythia.org',
+    },
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
