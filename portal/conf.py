@@ -87,7 +87,9 @@ html_sidebars = {
 
 # HTML Theme-specific Options
 html_theme_options = {
-    'analytics_id': 'G-T9KGMX7VHZ',
+    'analytics': {
+        'google_analytics_id': 'G-T9KGMX7VHZ',
+    },
     'github_url': 'https://github.com/ProjectPythia',
     'twitter_url': 'https://twitter.com/project_pythia',
     'icon_links': [
