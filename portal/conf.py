@@ -87,7 +87,7 @@ html_sidebars = {
 
 # HTML Theme-specific Options
 html_theme_options = {
-    'google_analytics_id': 'G-T9KGMX7VHZ',
+    'analytics_id': 'G-T9KGMX7VHZ',
     'github_url': 'https://github.com/ProjectPythia',
     'twitter_url': 'https://twitter.com/project_pythia',
     'icon_links': [
@@ -127,7 +127,7 @@ panels_add_bootstrap_css = False
 # MyST config
 myst_enable_extensions = ['amsmath', 'colon_fence', 'deflist', 'html_image']
 myst_url_schemes = ['http', 'https', 'mailto']
-jupyter_execute_notebooks = 'off'
+nb_execution_mode = 'off'
 myst_heading_anchors = 3
 
 # Don't run the link checker on immutable DOI links
