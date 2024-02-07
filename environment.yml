@@ -9,8 +9,7 @@ dependencies:
 - pip
 - pyyaml
 - pre-commit
-- sphinx>=5.0
 - sphinx-panels
-- ablog>=0.11
+- ablog
 - pip:
   - sphinx-pythia-theme
