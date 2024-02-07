@@ -103,6 +103,7 @@ html_theme_options = {
     'logo': {
         'link': 'https://projectpythia.org',
     },
+    'navbar_start': ['navbar-logo'],
     'navbar_links': [
         {'name': 'Home', 'url': 'https://projectpythia.org'},
         {'name': 'Foundations', 'url': 'https://foundations.projectpythia.org'},
@@ -111,6 +112,7 @@ html_theme_options = {
         {'name': 'Community', 'url': 'https://projectpythia.org/#join-us'},
         {'name': 'Blog', 'url': 'https://projectpythia.org/blog'},
     ],
+    'navbar_end': ['navbar-icon-links'],
     'page_layouts': {
         'index': 'page-banner.html',
         'resource-gallery': 'page-standalone.html',
