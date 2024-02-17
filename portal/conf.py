@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath('_extensions'))
 
 project = 'Project Pythia'
 author = 'the <a href="https://projectpythia.org/">Project Pythia</a> Community'
-copyright = '2022'
+copyright = '2024'
 
 # -- General configuration ---------------------------------------------------
 
@@ -118,11 +118,11 @@ html_theme_options = {
         'resource-gallery': 'page-standalone.html',
     },
     'footer_logos': {
-        'NCAR': '_static/images/logos/NCAR-contemp-logo-blue.svg',
+        'NCAR': '_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.png',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
         'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
     },
-    'extra_navbar': ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
+    'footer_start': ['footer-logos', 'footer-menu', 'footer-info', 'footer-extra'],
 }
 
 # Panels config
