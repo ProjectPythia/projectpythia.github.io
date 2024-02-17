@@ -12,4 +12,4 @@ dependencies:
 - sphinx-panels
 - ablog
 - pip:
-  - git+https://github.com/ProjectPythia/sphinx-pythia-theme.git@theme-update-more
+  - git+https://github.com/ProjectPythia/sphinx-pythia-theme.git@theme-update
