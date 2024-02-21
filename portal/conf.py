@@ -133,8 +133,8 @@ linkcheck_ignore = [
     # DOI are immutable and presumed generally functional
     r'https://doi\.org/.*',
     # Stackoverflow 403 on GHA
-    r'https://stackoverflow\.com/.*'
-    ]
+    r'https://stackoverflow\.com/.*',
+]
 
 # CUSTOM SCRIPTS ==============================================================
 
