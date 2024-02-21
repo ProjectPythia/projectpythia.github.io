@@ -128,8 +128,13 @@ myst_url_schemes = ['http', 'https', 'mailto']
 jupyter_execute_notebooks = 'off'
 myst_heading_anchors = 3
 
-# Don't run the link checker on immutable DOI links
-linkcheck_ignore = ['https://doi.org/*']
+# List of patterns for linkcheck to skip if broken
+linkcheck_ignore = [
+    # DOI are immutable and presumed generally functional
+    r'https://doi\.org/.*',
+    # Stackoverflow 403 on GHA
+    r'https://stackoverflow\.com/.*'
+    ]
 
 # CUSTOM SCRIPTS ==============================================================
 
