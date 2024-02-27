@@ -64,6 +64,7 @@ To learn more about Project Pythia and its history, see this list of presentatio
 | Forum | Date | Presenter | Format | Title (with link) |
 | ---   |  ---  |   ---   |  ---    |  --- |
 | Ocean Sciences | 2024-02 | Brian Rose | slides | [The Project Pythia Cookbook Initiative](https://docs.google.com/presentation/d/1tvABElX-0CgiuzMfY7XFY-gsXzGUXqWV6k2qJeTw5bk/edit?usp=sharing) |
+| AMS   | 2024-01 | Kevin Tyle | slides | [Cooking up a Storm with Project Pythia](https://docs.google.com/presentation/d/1zMsoCg1RMHGZDuLLV0QsZB6NwKE7CKo5_8iFAGDGj6o/edit?usp=drive_link) |
 | AMS   | 2024-01 | Brian Rose | slides | [Project Pythia's vision: Building an Inclusive Geoscience Community through Accessible, Reusable, and Reproducible Workflows](https://docs.google.com/presentation/d/1nG3iJr6Q7_ktKHg6PXzna7DMp4HDiFgS7scqjKLtXNA/edit?usp=sharing) |
 | AGU   | 2023-12 | Brian Rose | slides | [The Project Pythia Cookbook Initiative](https://docs.google.com/presentation/d/1J6wgvypXxYZ4uTQHsquyH_tlY6KiQXBcxb3cwdd3FUM/edit?usp=sharing) |
 | AGU   | 2023-12 | Julia Kent | slides | [Project Pythia: Empowering Geoscientists through Open-Source, Open-Science Collaboration](https://docs.google.com/presentation/d/1wm0RxaswVh_YJFcYsHduONsYiYNLc69f0XuHnP7Vfh8/edit?usp=sharing) |
