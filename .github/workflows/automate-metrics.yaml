@@ -32,10 +32,10 @@ jobs:
           pip install google-analytics-data
 
       - name: Get and Write Metrics to JSON
-        run: python get_metrics.py
+        run: python get-metrics.py
 
       - name: Write Markdown File
-        run: python write_metrics_md.py
+        run: python write-metrics-md.py
 
       - name: Push Changes
         if: steps.Get-and-Write-Metrics.outputs == 1  # Conditional step execution
