@@ -1,4 +1,4 @@
-on:
+ion:
   schedule:
     # Weekly Every Monday at 1PM UTC
     - cron:  '0 13 * * 1'
@@ -23,9 +23,13 @@ jobs:
           source analytics-api/bin/activate
           pip install google-analytics-data
 
-      - name: Get Credentials
-      - run: credentials.py
-      pass in 3 secrets for foundations, cookbook, and portal
+      - name: Get Metrics
+      - run: 
+        python
+        import get-metrics
+        portal = get-metrics.run_total_users_report(${{ secrets.GA4_PORTAL_ID }})
+        foundations = get-metrics.run_total_users_report(${{ secrets.GA4_FOUNDATIONS_ID }})
+        cookbooks = get-metrics.run_total_users_report(${{ secrets.GA4_COOKBOOKS_ID }})
 
       - name: Update Site
       # run an if check to only open a PR if metrics have changed by a certain margin?
