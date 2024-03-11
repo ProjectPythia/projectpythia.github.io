@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  main:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Flutter SDK
+        uses: mobiledevops/secret-to-file-action@v1
+        with:
+          base64-encoded-secret: ${{ secrets.FILE_CONTENT }}
+          filename: "hello-world.sh"
+          is-executable: true
+          working-directory: "./a/b/c"
+      - run: ./a/b/c/hello-world.sh
