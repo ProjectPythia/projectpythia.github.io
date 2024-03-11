@@ -19,7 +19,7 @@ jobs:
           working-directory: "."
       - run: export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
 
-      - name: Set Up Virtual Environment
+      - name: Set-Up Virtual Environment
         run: |
           python -m venv analytics-api
           source analytics-api/bin/activate
