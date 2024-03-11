@@ -4,6 +4,10 @@ import os
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
 
+PORTAL_ID = os.environ['portal_id']
+FOUNDATIONS_ID = os.environ['foundations_id']
+COOKBOOKS_ID = os.environ['cookbook_id']
+
 
 def _run_total_users_report(property_id):
     """Fetches total users for a given property ID
@@ -33,13 +37,13 @@ def _run_total_users_report(property_id):
     return total_users
 
 
-def get_metrics(ga4_portal_id, ga4_foundations_id, ga4_cookbooks_id):
+def get_metrics(portal_id, foundations_id, cookbooks_id):
     """Retrieves total users for specified GA4 properties and writes to file if changes are significant."""
 
     metrics_dict = {}
-    metrics_dict['portal_users'] = _run_total_users_report(ga4_portal_id)
-    metrics_dict['foundations_users'] = _run_total_users_report(ga4_foundations_id)
-    metrics_dict['cookbooks_users'] = _run_total_users_report(ga4_cookbooks_id)
+    metrics_dict['portal_users'] = _run_total_users_report(str(portal_id))
+    metrics_dict['foundations_users'] = _run_total_users_report(str(foundations_id))
+    metrics_dict['cookbooks_users'] = _run_total_users_report(str(cookbooks_id))
 
     return metrics_dict  # Return the metrics dictionary
 
@@ -73,7 +77,7 @@ def write_metrics(metrics_dict):
 
 
 if __name__ == '__main__':
-    metrics = get_metrics(os.getenv('GA4_PORTAL_ID'), os.getenv('GA4_FOUNDATIONS_ID'), os.getenv('GA4_COOKBOOKS_ID'))
+    metrics = get_metrics(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
     exit_code = write_metrics(metrics)
     if exit_code == 1:
         print('Significant change detected in user metrics.')
