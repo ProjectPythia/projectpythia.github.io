@@ -22,12 +22,12 @@ def process_user_data(user_data_file, markdown_file):
         f.write('# Metrics \n\n')
         f.write('Total Users:\n\n')
         for key in user_data:
-            f.write(f'{key}: {user_data[key]}')
+            f.write(f'{key}: {user_data[key]}\n')
     f.close()
 
 
 if __name__ == '__main__':
-    user_data_file = 'user_data.json'
-    markdown_file = '../portal/metrics.md'
+    user_data_file = 'user_metrics.json'
+    markdown_file = '../../portal/metrics.md'
     process_user_data(user_data_file, markdown_file)
     print('User data report generated: ', markdown_file)
