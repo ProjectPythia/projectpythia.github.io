@@ -72,8 +72,8 @@ def write_metrics():
     if has_significant_change
         with open("user_metrics.json", "w") as outfile:
             json.dump(metrics_dict, outfile)
-        print(f"User count for {portal} has changed significantly. Updating user_metrics.json")
+        return 1
     else:
-        print(f"User count for {portal} hasn't changed significantly. Skipping update.")
+        return 0
 
 write_metrics()
