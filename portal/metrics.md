@@ -2,8 +2,8 @@
 
 Total Users:
 
-Portal: {{ jsonextract("../github/user_metrics.json", "$.portal") }}
+Portal: 0
 
-Foundations: {{ jsonextract("../github/user_metrics.json", "$.foundations") }}
+Foundations: 0
 
-Cookbooks: {{ jsonextract("../github/user_metrics.json", "$.cookbooks") }}
+Cookbooks: 0

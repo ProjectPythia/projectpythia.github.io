@@ -25,8 +25,12 @@ jobs:
           source analytics-api/bin/activate
           pip install google-analytics-data
 
-      - name: Get and Write Metrics
+      - name: Get and Write Metrics to JSON
+        # similarly, could save generated graphs to update more visually appealing metrics
         run: python get_metrics.py ${{ secrets.GA_PORTAL_ID }} ${{ secrets.GA_FOUNDATIONS_ID }} ${{ secrets.GA_COOKBOOKS_ID }}
+
+      - name: Write Markdown File
+        run: python write_metrics_md.py
 
       - name: Push Changes
         if: steps.Get-and-Write-Metrics.outputs == 1  # Conditional step execution
@@ -34,5 +38,6 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           git add user_metrics.json
+          git add ../portal/metrics.md
           git commit -m "Update user metrics"
           git push

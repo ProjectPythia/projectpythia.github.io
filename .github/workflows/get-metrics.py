@@ -72,7 +72,6 @@ def write_metrics(metrics_dict):
         return 0  # Signal no significant change (optional)
 
 
-# Example usage (assuming script is executed directly)
 if __name__ == '__main__':
     metrics = get_metrics(os.getenv('GA4_PORTAL_ID'), os.getenv('GA4_FOUNDATIONS_ID'), os.getenv('GA4_COOKBOOKS_ID'))
     exit_code = write_metrics(metrics)

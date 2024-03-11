@@ -11,6 +11,5 @@ dependencies:
 - pre-commit
 - sphinx-panels
 - ablog
-- sphinx-ext-jsonextract
 - pip:
   - sphinx-pythia-theme
