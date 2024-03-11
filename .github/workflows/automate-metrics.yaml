@@ -26,7 +26,7 @@ jobs:
           pip install google-analytics-data
 
       - name: Get and Write Metrics
-        run: python get_metrics.py
+        run: python get_metrics.py ${{ secrets.GA_PORTAL_ID }} ${{ secrets.GA_FOUNDATIONS_ID }} ${{ secrets.GA_COOKBOOKS_ID }}
 
       - name: Push Changes
         if: steps.Get-and-Write-Metrics.outputs == 1  # Conditional step execution
