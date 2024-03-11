@@ -37,7 +37,6 @@ extensions = [
     'resource_gallery_generator',
     'ablog',
     'sphinx.ext.intersphinx',
-    'json_extract',
 ]
 
 # Define what extensions will parse which kind of source file
