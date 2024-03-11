@@ -41,9 +41,9 @@ def get_metrics(portal_id, foundations_id, cookbooks_id):
     """Retrieves total users for specified GA4 properties and writes to file if changes are significant."""
 
     metrics_dict = {}
-    metrics_dict['portal_users'] = _run_total_users_report(str(portal_id))
-    metrics_dict['foundations_users'] = _run_total_users_report(str(foundations_id))
-    metrics_dict['cookbooks_users'] = _run_total_users_report(str(cookbooks_id))
+    metrics_dict['Portal'] = _run_total_users_report(str(portal_id))
+    metrics_dict['Foundations'] = _run_total_users_report(str(foundations_id))
+    metrics_dict['Cookbooks'] = _run_total_users_report(str(cookbooks_id))
 
     return metrics_dict  # Return the metrics dictionary
 
