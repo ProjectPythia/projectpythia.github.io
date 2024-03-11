@@ -18,7 +18,7 @@ def _run_total_users_report(property_id):
     client = BetaAnalyticsDataClient()
 
     request = RunReportRequest(
-        property=f"properties/{property_id}",
+        property=f'properties/{property_id}',
         dimensions=[],
         metrics=[Metric(name='activeUsers')],
         date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
