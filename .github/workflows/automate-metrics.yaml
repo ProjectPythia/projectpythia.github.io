@@ -1,14 +1,16 @@
-ion:
+name: Update User Metrics
+
+on:
   schedule:
     # Weekly Every Monday at 1PM UTC
-    - cron:  '0 13 * * 1'
+    - cron: '0 13 * * 1'
 
 jobs:
   main:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Flutter SDK
+      - name: Set Credentials
         uses: mobiledevops/secret-to-file-action@v1
         with:
           base64-encoded-secret: ${{ secrets.GOOGLE_ANALYTICS_API_CREDENTIALS }}
@@ -17,19 +19,20 @@ jobs:
           working-directory: "."
       - run: export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
 
-      - name: Create Virtual Environment
-      - run:
-          python3 -m venv analytics-api
+      - name: Set Up Virtual Environment
+        run: |
+          python -m venv analytics-api
           source analytics-api/bin/activate
           pip install google-analytics-data
 
-      - name: Get Metrics
-      - run: 
-        python
-        import get-metrics
-        portal = get-metrics.run_total_users_report(${{ secrets.GA4_PORTAL_ID }})
-        foundations = get-metrics.run_total_users_report(${{ secrets.GA4_FOUNDATIONS_ID }})
-        cookbooks = get-metrics.run_total_users_report(${{ secrets.GA4_COOKBOOKS_ID }})
+      - name: Get and Write Metrics
+        run: python get_metrics.py
 
-      - name: Update Site
-      # run an if check to only open a PR if metrics have changed by a certain margin?
+      - name: Push Changes
+        if: steps.Get-and-Write-Metrics.outputs == 1  # Conditional step execution
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add user_metrics.json
+          git commit -m "Update user metrics"
+          git push
