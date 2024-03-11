@@ -1,4 +1,7 @@
-on: [push]
+on:
+  schedule:
+    # Weekly Every Monday at 1PM UTC
+    - cron:  '0 13 * * 1'
 
 jobs:
   main:
@@ -8,8 +11,21 @@ jobs:
       - name: Install Flutter SDK
         uses: mobiledevops/secret-to-file-action@v1
         with:
-          base64-encoded-secret: ${{ secrets.FILE_CONTENT }}
-          filename: "hello-world.sh"
+          base64-encoded-secret: ${{ secrets.GOOGLE_ANALYTICS_API_CREDENTIALS }}
+          filename: "credentials.json"
           is-executable: true
           working-directory: "./a/b/c"
-      - run: ./a/b/c/hello-world.sh
+      - run: export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
+
+      - name: Create Virtual Environment
+      - run:
+          python3 -m venv analytics-api
+          source analytics-api/bin/activate
+          pip install google-analytics-data
+
+      - name: Get Credentials
+      - run: credentials.py
+      pass in 3 secrets for foundations, cookbook, and portal
+
+      - name: Update Site
+      # run an if check to only open a PR if metrics have changed by a certain margin?
