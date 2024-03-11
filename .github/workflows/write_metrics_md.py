@@ -18,7 +18,8 @@ def process_user_data(user_data_file, markdown_file):
     table = table_header + table_row
     # Write processed data to markdown file
     with open(markdown_file, 'w') as f:
-        f.write('# User Metrics \n\n')
+        f.write('# Metrics \n\n')
+        f.write('Total Users:\n')
         f.write(table)
 
 
