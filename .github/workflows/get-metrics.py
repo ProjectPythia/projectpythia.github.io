@@ -71,9 +71,9 @@ def write_metrics(metrics_dict):
     if has_significant_change:
         with open('user_metrics.json', 'w') as outfile:
             json.dump(metrics_dict, outfile)
-        return 1  # Signal significant change (optional)
+        return 1  # Signals significant change
     else:
-        return 0  # Signal no significant change (optional)
+        return 0  # Signals no significant change
 
 
 if __name__ == '__main__':
