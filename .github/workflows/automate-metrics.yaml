@@ -2,9 +2,6 @@ name: Update User Metrics
 
 on:
   workflow_dispatch:
-  schedule:
-    # Weekly Every Monday at 1PM UTC
-    - cron: '0 13 * * 1'
 
 env:
   portal_id: ${{  secrets.GA4_PORTAL_ID }}
