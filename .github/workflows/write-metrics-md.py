@@ -1,5 +1,5 @@
 import json
-
+import datetime
 
 def process_user_data(user_data_file, markdown_file):
     """
@@ -9,6 +9,7 @@ def process_user_data(user_data_file, markdown_file):
         user_data_file: Path to the JSON file containing user data.
         markdown_file: Path to the output markdown file.
     """
+    now = datetime.datetime.now()
 
     with open(user_data_file, 'r') as f:
         user_data = json.load(f)
@@ -19,6 +20,8 @@ def process_user_data(user_data_file, markdown_file):
         f.write('Total Users:\n\n')
         for key in user_data:
             f.write(f'{key}: {user_data[key]}\n')
+        f.write('\n')
+        f.write(f'Last Updated: {now}\n')
     f.close()
 
 
