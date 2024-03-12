@@ -53,7 +53,7 @@ def write_metrics(metrics_dict):
 
     # Read existing user counts (handle potential file absence)
     try:
-        with open('user_metrics.json') as f:
+        with open('../../metrics/user_metrics.json') as f:
             user_data = json.load(f)
     except FileNotFoundError:
         user_data = {}
@@ -69,7 +69,7 @@ def write_metrics(metrics_dict):
 
     # Write to file if significant change detected
     if has_significant_change:
-        with open('user_metrics.json', 'w') as outfile:
+        with open('../../metrics/user_metrics.json', 'w') as outfile:
             json.dump(metrics_dict, outfile)
         return 1  # Signals significant change
     else:

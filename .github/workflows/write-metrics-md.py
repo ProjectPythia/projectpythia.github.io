@@ -27,7 +27,7 @@ def process_user_data(user_data_file, markdown_file):
 
 
 if __name__ == '__main__':
-    user_data_file = 'user_metrics.json'
+    user_data_file = '../../metrics/user_metrics.json'
     markdown_file = '../../portal/metrics.md'
     process_user_data(user_data_file, markdown_file)
     print('User data report generated: ', markdown_file)
