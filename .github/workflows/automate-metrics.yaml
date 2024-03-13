@@ -29,7 +29,7 @@ jobs:
           pip install google-analytics-data
 
       - name: Get and Write Metrics to JSON
-        run: wget https://github.com/jukent/projectpythia.github.io/blob/main/.github/workflows/get-metrics.py && (python get_metrics.py; rm get_metrics.py)
+        run: python get-metrics.py
 
       - name: Write Markdown File
         run: python write-metrics-md.py
