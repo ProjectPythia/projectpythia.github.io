@@ -1,5 +1,6 @@
-import json
 import datetime
+import json
+
 
 def process_user_data(user_data_file, markdown_file):
     """
