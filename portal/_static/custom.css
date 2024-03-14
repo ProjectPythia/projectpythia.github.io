@@ -1,10 +1,17 @@
+.bd-main .bd-content .bd-article-container {
+  max-width: 100%;  /* default is 60em */
+}
+.bd-page-width {
+  max-width: 85%;  /* default is 88rem */
+}
+
 main.banner-main #project-pythia {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 main.banner-main #project-pythia p {
-  font-size: 1.4rem;  /* default: 1.25rem */
+  font-size: 1.4rem;  /* default: 1.25rem * /
   /* font-weight: 700; default: 300 */
 }
 
