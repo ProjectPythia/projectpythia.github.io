@@ -38,5 +38,6 @@ def get_metrics(portal_id, foundations_id, cookbooks_id):
     with open('user_metrics.json', 'w') as outfile:
         json.dump(metrics_dict, outfile)
 
+
 if __name__ == '__main__':
     get_metrics(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
