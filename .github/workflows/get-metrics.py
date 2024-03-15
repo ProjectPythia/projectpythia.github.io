@@ -27,10 +27,14 @@ COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 #}
 
 ENCODED_CREDENTIALS = os.environ.get('ENCODED_CREDENTIALS')
-decoded_credentials = base64.b64decode(ENCODED_CREDENTIALS).decode('utf-8')
-credentials_dict = json.loads(decoded_credentials)
-
-client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+if ENCODED_CREDENTIALS is None:
+    print("OH NO")
+    raise Exception("Encoded credentials secret not found!")
+else:
+    decoded_credentials = base64.b64decode(ENCODED_CREDENTIALS).decode('utf-8')
+    credentials_dict = json.loads(decoded_credentials)
+    
+    client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _run_total_users_report(property_id):
