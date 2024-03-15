@@ -17,30 +17,30 @@ PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 print('Key ID ',len(PRIVATE_KEY_ID))
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
 print('Key ',len(PRIVATE_KEY))
-#credentials_dict = {
-#  "type": "service_account",
-#  "project_id": "cisl-vast-pythia",
-#  "private_key_id": PRIVATE_KEY_ID,
-#  "private_key": PRIVATE_KEY,
-#  "client_email": "pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com",
-#  "client_id": "113402578114110723940",
-#  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-#  "token_uri": "https://oauth2.googleapis.com/token",
-#  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-#  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com",
-#  "universe_domain": "googleapis.com"
-#}
+credentials_dict = {
+  "type": "service_account",
+  "project_id": "cisl-vast-pythia",
+  "private_key_id": PRIVATE_KEY_ID,
+  "private_key": PRIVATE_KEY,
+  "client_email": "pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com",
+  "client_id": "113402578114110723940",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
 
-ENCODED_CREDENTIALS = os.environ.get('ENCODED_CREDENTIALS')
-print('Credentials ',len(ENCODED_CREDENTIALS))
-if ENCODED_CREDENTIALS is None:
-    print("OH NO")
-    raise Exception("Encoded credentials secret not found!")
-else:
-    decoded_credentials = base64.b64decode(ENCODED_CREDENTIALS).decode('utf-8')
-    credentials_dict = json.loads(decoded_credentials)
+#ENCODED_CREDENTIALS = os.environ.get('ENCODED_CREDENTIALS')
+#print('Credentials ',len(ENCODED_CREDENTIALS))
+#if ENCODED_CREDENTIALS is None:
+#    print("OH NO")
+#    raise Exception("Encoded credentials secret not found!")
+#else:
+#    decoded_credentials = base64.b64decode(ENCODED_CREDENTIALS).decode('utf-8')
+#    credentials_dict = json.loads(decoded_credentials)
     
-    client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _run_total_users_report(property_id):
