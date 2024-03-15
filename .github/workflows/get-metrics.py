@@ -11,16 +11,17 @@ FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
-print(len(PRIVATE_KEY))
-print(type(PRIVATE_KEY))
 print(len(PRIVATE_KEY_ID))
 print(type(PRIVATE_KEY_ID))
+print(len(PRIVATE_KEY))
+print(type(PRIVATE_KEY))
+
       
 credentials_dict = {
   "type": "service_account",
   "project_id": "cisl-vast-pythia",
   "private_key_id": str(PRIVATE_KEY_ID),
-  "private_key": str(PRIVATE_KEY).replace('\\n', '\n'),
+  "private_key": str(PRIVATE_KEY),
   "client_email": "pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com",
   "client_id": "113402578114110723940",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
