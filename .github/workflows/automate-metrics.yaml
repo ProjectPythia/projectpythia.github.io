@@ -30,8 +30,11 @@ jobs:
 
       - name: Get and Write Metrics to JSON
         run: |
-          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/metrics-api/.github/workflows/get-metrics.py
+          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
           python get-metrics.py
+          ls
 
       - name: Write Markdown File
-        run: python write-metrics-md.py
+        run: |
+          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/write-metrics-md.py
+          python write-metrics-md.py
