@@ -15,10 +15,10 @@ if 'GOOGLE_ANALYTICS_CREDENTIALS' not in os.environ:
 else:
     encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
     print('encoded_credentials')
-    print(type(encoded_credentials)
+    print(type(encoded_credentials))
 
 decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
-print(type(decoded_credentials)
+print(type(decoded_credentials))
 credentials_dict = json.loads(decoded_credentials)
 print(credentials_dict)
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
