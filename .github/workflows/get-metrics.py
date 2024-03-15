@@ -13,6 +13,8 @@ PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 print(len(PRIVATE_KEY))
 print(type(PRIVATE_KEY))
+print(len(PRIVATE_KEY_ID))
+print(type(PRIVATE_KEY_ID))
       
 credentials_dict = {
   "type": "service_account",
