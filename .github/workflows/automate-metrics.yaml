@@ -32,6 +32,8 @@ jobs:
         run: |
           source analytics-api/bin/activate
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
+          ls
+          chmod +x get-metrics.py
           python get-metrics.py
           ls
 
