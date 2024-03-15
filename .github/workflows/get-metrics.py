@@ -7,16 +7,16 @@ from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
 
 PORTAL_ID = os.environ.get('PORTAL_ID')
-print(len(PORTAL_ID))
+print('Portal'+len(PORTAL_ID))
 FOUNDATIONS_ID = os.environ.get('FOUNDATIONS_ID')
-print(len(FOUNDATIONS_ID))
+print('Foundations'+len(FOUNDATIONS_ID))
 COOKBOOKS_ID = os.environ.get('COOKBOOKS_ID')
-print(len(COOKBOOKS_ID))
+print('Cookbooks'+len(COOKBOOKS_ID))
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-print(len(PRIVATE_KEY_ID))
+print('Key ID' +len(PRIVATE_KEY_ID))
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
-print(len(PRIVATE_KEY))
+print('Key'+len(PRIVATE_KEY))
 #credentials_dict = {
 #  "type": "service_account",
 #  "project_id": "cisl-vast-pythia",
@@ -32,7 +32,7 @@ print(len(PRIVATE_KEY))
 #}
 
 ENCODED_CREDENTIALS = os.environ.get('ENCODED_CREDENTIALS')
-print(len(ENCODED_CREDENTIALS))
+print('Credentials'+len(ENCODED_CREDENTIALS))
 if ENCODED_CREDENTIALS is None:
     print("OH NO")
     raise Exception("Encoded credentials secret not found!")
