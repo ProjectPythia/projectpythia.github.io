@@ -1,5 +1,6 @@
 import json
 import os
+import base64
 
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
@@ -7,15 +8,14 @@ from google.analytics.data_v1beta.types import DateRange, Metric, RunReportReque
 PORTAL_ID = os.environ['portal_id']
 FOUNDATIONS_ID = os.environ['foundations_id']
 COOKBOOKS_ID = os.environ['cookbooks_id']
-print('hi')
-credentials_path = 'credentials.json'
-client = BetaAnalyticsDataClient.from_service_account_json(credentials_path)
-print(os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'))
+
+encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
+decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
+credentials_dict = json.loads(decoded_credentials)
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+
 
 def _run_total_users_report(property_id):
-
-    client = BetaAnalyticsDataClient()
-
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[],
