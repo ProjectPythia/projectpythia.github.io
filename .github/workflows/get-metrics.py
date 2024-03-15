@@ -12,7 +12,6 @@ COOKBOOKS_ID = os.environ.get('COOKBOOKS_ID')
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
-print('Key ',len(PRIVATE_KEY))
 credentials_dict = {
   "type": "service_account",
   "project_id": "cisl-vast-pythia",
@@ -26,16 +25,12 @@ credentials_dict = {
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
-print(credentials_dict)
+print(len(credentials_dict['private_key']))
+print(credentials_dict['private_key'])
 
 #ENCODED_CREDENTIALS = os.environ.get('ENCODED_CREDENTIALS')
-#print('Credentials ',len(ENCODED_CREDENTIALS))
-#if ENCODED_CREDENTIALS is None:
-#    print("OH NO")
-#    raise Exception("Encoded credentials secret not found!")
-#else:
-#    decoded_credentials = base64.b64decode(ENCODED_CREDENTIALS).decode('utf-8')
-#    credentials_dict = json.loads(decoded_credentials)
+#decoded_credentials = base64.b64decode(ENCODED_CREDENTIALS).decode('utf-8')
+#credentials_dict = json.loads(decoded_credentials)
     
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
