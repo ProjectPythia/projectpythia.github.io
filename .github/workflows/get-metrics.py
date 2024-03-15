@@ -4,12 +4,9 @@ import os
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
 
-credentials_path = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
-print(credentials_path)
-
 PORTAL_ID = os.environ['portal_id']
 FOUNDATIONS_ID = os.environ['foundations_id']
-COOKBOOKS_ID = os.environ['cookbook_id']
+COOKBOOKS_ID = os.environ['cookbooks_id']
 
 
 def _run_total_users_report(property_id):
