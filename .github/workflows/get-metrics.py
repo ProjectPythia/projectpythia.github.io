@@ -6,16 +6,26 @@ import hashlib
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
 
-PORTAL_ID = os.environ['portal_id']
-FOUNDATIONS_ID = os.environ['foundations_id']
-COOKBOOKS_ID = os.environ['cookbooks_id']
+PORTAL_ID = os.environ['PORTAL_ID']
+FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
+COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
-encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
-encoded_hash = hashlib.sha256(encoded_credentials.encode('utf-8')).hexdigest()
-print(f'Encoded credentials hash: {encoded_hash}')
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
+PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 
-decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
-credentials_dict = json.loads(decoded_credentials)
+credentials_dict = {
+  "type": "service_account",
+  "project_id": "cisl-vast-pythia",
+  "private_key_id": str(PRIVATE_KEY_ID),
+  "private_key": str(PRIVATE_KEY),
+  "client_email": "pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com",
+  "client_id": "113402578114110723940",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
