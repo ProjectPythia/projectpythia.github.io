@@ -1,6 +1,7 @@
 import json
 import os
 import base64
+import hashlib
 
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
@@ -9,17 +10,13 @@ PORTAL_ID = os.environ['portal_id']
 FOUNDATIONS_ID = os.environ['foundations_id']
 COOKBOOKS_ID = os.environ['cookbooks_id']
 
-if 'GOOGLE_ANALYTICS_CREDENTIALS' not in os.environ:
-    print("Error: Environment variable 'GOOGLE_ANALYTICS_CREDENTIALS' not found")
-    exit(1)
-else:
-    encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
-    encoded_hash = hashlib.sha256(encoded_credentials.encode('utf-8')).hexdigest()
-    print(f'Encoded credentials hash: {encoded_hash}')
+encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
+encoded_hash = hashlib.sha256(encoded_credentials.encode('utf-8')).hexdigest()
+print(f'Encoded credentials hash: {encoded_hash}')
 
-    decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
-    credentials_dict = json.loads(decoded_credentials)
-    client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
+credentials_dict = json.loads(decoded_credentials)
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _run_total_users_report(property_id):
