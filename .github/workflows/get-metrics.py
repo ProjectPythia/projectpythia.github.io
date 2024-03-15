@@ -9,10 +9,12 @@ PORTAL_ID = os.environ['portal_id']
 FOUNDATIONS_ID = os.environ['foundations_id']
 COOKBOOKS_ID = os.environ['cookbooks_id']
 
-encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
-print('------------')
-print(encoded_credentials)
-print('------------')
+if 'GOOGLE_ANALYTICS_CREDENTIALS' not in os.environ:
+    print("Error: Environment variable 'GOOGLE_ANALYTICS_CREDENTIALS' not found")
+    exit(1)
+else:
+    encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
+    print(encoded_credentials)
 
 
 
