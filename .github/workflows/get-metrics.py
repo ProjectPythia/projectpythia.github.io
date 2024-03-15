@@ -1,18 +1,36 @@
 import json
 import os
+import base64
+import hashlib
 
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
 
-PORTAL_ID = os.environ['portal_id']
-FOUNDATIONS_ID = os.environ['foundations_id']
-COOKBOOKS_ID = os.environ['cookbook_id']
+PORTAL_ID = os.environ.get('PORTAL_ID')
+FOUNDATIONS_ID = os.environ.get('FOUNDATIONS_ID')
+COOKBOOKS_ID = os.environ.get('COOKBOOKS_ID')
+
+PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
+
+credentials_dict = {
+  "type": "service_account",
+  "project_id": "cisl-vast-pythia",
+  "private_key_id": PRIVATE_KEY_ID,
+  "private_key": PRIVATE_KEY,
+  "client_email": "pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com",
+  "client_id": "113402578114110723940",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _run_total_users_report(property_id):
-
-    client = BetaAnalyticsDataClient()
-
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[],
@@ -29,15 +47,15 @@ def _run_total_users_report(property_id):
     return total_users
 
 
-def get_metrics(portal_id, foundations_id, cookbooks_id):
+def get_metrics():
     metrics_dict = {}
-    metrics_dict['Portal'] = _run_total_users_report(str(portal_id))
-    metrics_dict['Foundations'] = _run_total_users_report(str(foundations_id))
-    metrics_dict['Cookbooks'] = _run_total_users_report(str(cookbooks_id))
+    metrics_dict['Portal'] = _run_total_users_report(str(PORTAL_ID))
+    metrics_dict['Foundations'] = _run_total_users_report(str(FOUNDATIONS_ID))
+    metrics_dict['Cookbooks'] = _run_total_users_report(str(COOKBOOKS_ID))
 
     with open('user_metrics.json', 'w') as outfile:
         json.dump(metrics_dict, outfile)
 
 
 if __name__ == '__main__':
-    get_metrics(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
+    get_metrics()

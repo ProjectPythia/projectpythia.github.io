@@ -1,37 +1,34 @@
 name: Update User Metrics
 
 on:
-  workflow_dispatch:
+  workflow_call:
 
 env:
-  portal_id: ${{  secrets.GA4_PORTAL_ID }}
-  foundations_id: ${{ secrets.GA4_FOUNDATIONS_ID }}
-  cookbooks_id: ${{ secrets.GA4_COOKBOOKS_ID }}
+  PORTAL_ID: ${{  secrets.PORTAL_ID }}
+  FOUNDATIONS_ID: ${{ secrets.FOUNDATIONS_ID }}
+  COOKBOOKS_ID: ${{ secrets.COOKBOOKS_ID }}
+  PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+  PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
 
 jobs:
   main:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set Credentials
-        uses: mobiledevops/secret-to-file-action@v1
-        with:
-          base64-encoded-secret: ${{ secrets.GOOGLE_ANALYTICS_API_CREDENTIALS }}
-          filename: "credentials.json"
-          is-executable: true
-          working-directory: "."
-      - run: export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
-
       - name: Set-Up Virtual Environment
         run: |
           python -m venv analytics-api
           source analytics-api/bin/activate
           pip install google-analytics-data
 
-      - name: Get and Write Metrics to JSON
+      - name: Write Metrics to JSON
         run: |
-          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/metrics-api/.github/workflows/get-metrics.py
-          python get_metrics.py
+          source analytics-api/bin/activate
+          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
+          python get-metrics.py
 
       - name: Write Markdown File
-        run: python write-metrics-md.py
+        run: |
+          source analytics-api/bin/activate
+          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/write-metrics-md.py
+          python write-metrics-md.py

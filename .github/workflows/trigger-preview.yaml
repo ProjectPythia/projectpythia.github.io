@@ -8,6 +8,9 @@ on:
       - completed
 
 jobs:
+  update-metrics:
+    uses: ./.github/workflows/automate-metrics.yaml
+
   find-pull-request:
     uses: ProjectPythia/cookbook-actions/.github/workflows/find-pull-request.yaml@main
   deploy-preview:
