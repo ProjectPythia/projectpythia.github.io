@@ -31,5 +31,4 @@ jobs:
         run: |
           source analytics-api/bin/activate
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/write-metrics-md.py
-          pwd
           python write-metrics-md.py
