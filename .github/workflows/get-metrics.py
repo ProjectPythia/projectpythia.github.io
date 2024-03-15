@@ -15,6 +15,8 @@ print(len(PRIVATE_KEY_ID))
 print(type(PRIVATE_KEY_ID))
 print(len(PRIVATE_KEY))
 print(type(PRIVATE_KEY))
+PRIVATE_KEY.replace('$','\n')
+print(len(PRIVATE_KEY))
 
       
 credentials_dict = {
