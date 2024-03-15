@@ -13,9 +13,7 @@ encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
 print('------------')
 print(encoded_credentials)
 print('------------')
-decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
-credentials_dict = json.loads(decoded_credentials)
-client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+
 
 
 def _run_total_users_report(property_id):
