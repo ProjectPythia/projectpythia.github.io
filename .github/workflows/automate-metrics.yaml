@@ -7,30 +7,19 @@ env:
   portal_id: ${{  secrets.GA4_PORTAL_ID }}
   foundations_id: ${{ secrets.GA4_FOUNDATIONS_ID }}
   cookbooks_id: ${{ secrets.GA4_COOKBOOKS_ID }}
+  GOOGLE_ANALYTICS_CREDENTIALS: ${{ secrets.GOOGLE_ANALYTICS_CREDENTIALS }}
 
 jobs:
   main:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set Credentials
-        uses: mobiledevops/secret-to-file-action@v1
-        with:
-          base64-encoded-secret: ${{ secrets.GOOGLE_ANALYTICS_API_CREDENTIALS }}
-          filename: "credentials.json"
-          is-executable: true
-          working-directory: "."
-      - run: export GOOGLE_APPLICATION_CREDENTIALS="credentials.json"
-
-      - name: Set-Up Virtual Environment
+      - name: Set-Up Virtual Environment and Write Metris to JSON
         run: |
           python -m venv analytics-api
           source analytics-api/bin/activate
           pip install google-analytics-data
 
-      - name: Get and Write Metrics to JSON
-        run: |
-          source analytics-api/bin/activate
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
           python get-metrics.py
           ls
