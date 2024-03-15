@@ -26,6 +26,7 @@ credentials_dict = {
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
+print(credentials_dict)
 
 #ENCODED_CREDENTIALS = os.environ.get('ENCODED_CREDENTIALS')
 #print('Credentials ',len(ENCODED_CREDENTIALS))
