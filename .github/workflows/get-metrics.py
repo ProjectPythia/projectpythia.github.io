@@ -10,10 +10,10 @@ FOUNDATIONS_ID = os.environ['foundations_id']
 COOKBOOKS_ID = os.environ['cookbooks_id']
 
 encoded_credentials = os.environ.get('GOOGLE_ANALYTICS_CREDENTIALS')
+print('------------')
 print(encoded_credentials)
+print('------------')
 decoded_credentials = base64.b64decode(encoded_credentials).decode('utf-8')
-print('---')
-print(decoded_credentials)
 credentials_dict = json.loads(decoded_credentials)
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
