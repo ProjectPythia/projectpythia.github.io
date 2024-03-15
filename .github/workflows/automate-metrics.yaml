@@ -30,6 +30,7 @@ jobs:
 
       - name: Get and Write Metrics to JSON
         run: |
+          source analytics-api/bin/activate
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
           python get-metrics.py
           ls
