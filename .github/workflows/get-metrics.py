@@ -6,9 +6,9 @@ import hashlib
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, RunReportRequest
 
-PORTAL_ID = os.environ['PORTAL_ID']
-FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
-COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
+PORTAL_ID = os.environ.get('PORTAL_ID')
+FOUNDATIONS_ID = os.environ.get('FOUNDATIONS_ID')
+COOKBOOKS_ID = os.environ.get('COOKBOOKS_ID')
 
 #PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 #PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
