@@ -7,7 +7,10 @@ from google.analytics.data_v1beta.types import DateRange, Metric, RunReportReque
 PORTAL_ID = os.environ['portal_id']
 FOUNDATIONS_ID = os.environ['foundations_id']
 COOKBOOKS_ID = os.environ['cookbooks_id']
-
+print('hi')
+credentials_path = 'credentials.json'
+client = BetaAnalyticsDataClient.from_service_account_json(credentials_path)
+print(os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'))
 
 def _run_total_users_report(property_id):
 
