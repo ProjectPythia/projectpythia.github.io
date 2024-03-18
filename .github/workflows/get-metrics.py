@@ -16,7 +16,7 @@ FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
 
 credentials_dict = {
     'type': 'service_account',
