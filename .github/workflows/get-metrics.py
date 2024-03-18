@@ -20,8 +20,8 @@ PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 credentials_dict = {
     'type': 'service_account',
     'project_id': 'cisl-vast-pythia',
-    'private_key_id': str(PRIVATE_KEY_ID),
-    'private_key': str(PRIVATE_KEY),
+    'private_key_id': PRIVATE_KEY_ID,
+    'private_key': PRIVATE_KEY,
     'client_email': 'pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com',
     'client_id': '113402578114110723940',
     'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
@@ -31,7 +31,10 @@ credentials_dict = {
     'universe_domain': 'googleapis.com',
 }
 
-client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+try:
+    client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+except:
+    print(credentials_dict)
 
 
 def _format_rounding(value):
