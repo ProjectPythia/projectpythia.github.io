@@ -7,8 +7,10 @@ import matplotlib.cm as cm
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
-from google.analytics.data_v1beta import BetaAnalyticsDataClient
-from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
+
+print('testing 1 2 3')
+# from google.analytics.data_v1beta import BetaAnalyticsDataClient
+# from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
 PORTAL_ID = os.environ['PORTAL_ID']
 FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
@@ -33,7 +35,7 @@ credentials_dict = {
 }
 
 print(credentials_dict)
-client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+# client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _format_rounding(value):
@@ -213,4 +215,5 @@ def get_metrics():
 
 
 if __name__ == '__main__':
-    get_metrics()
+    print(credentials_dict)
+    # get_metrics()

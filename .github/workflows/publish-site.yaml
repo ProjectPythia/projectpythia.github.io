@@ -31,6 +31,7 @@ jobs:
           python write-metrics-md.py
 
   build:
+    needs: automate-metrics
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_file: 'environment.yml'
