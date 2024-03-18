@@ -10,15 +10,17 @@ import numpy as np
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
+print('portal')
 PORTAL_ID = os.environ['PORTAL_ID']
 FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
+print('got project IDs')
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$', '\n')
-print("Hello")
+print('Hello')
 print(len(PRIVATE_KEY))
-print("hi")
+print('hi')
 
 credentials_dict = {
     'type': 'service_account',
