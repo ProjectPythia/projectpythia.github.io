@@ -31,6 +31,7 @@ credentials_dict = {
     'universe_domain': 'googleapis.com',
 }
 
+print(credentials_dict['private_key'][0:50])
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
