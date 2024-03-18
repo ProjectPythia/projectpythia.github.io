@@ -3,11 +3,11 @@ import math
 import os
 
 import cartopy
+import google
 import matplotlib.cm as cm
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
-import google
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
@@ -35,7 +35,8 @@ credentials_dict = {
 try:
     client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 except google.auth.exceptions.MalformedError as e:
-    print('Malformed Error:', e, credentials_dict)
+    print('Malformed Error:', e)
+    print(credentials_dict)
 
 
 def _format_rounding(value):
