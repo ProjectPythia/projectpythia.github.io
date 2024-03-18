@@ -11,26 +11,29 @@ import numpy as np
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
-PORTAL_ID = os.environ['PORTAL_ID']
-FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
-COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
+PORTAL_ID = "281776420" #os.environ['portal_id']
+FOUNDATIONS_ID = "281776420" #os.environ['foundations_id']
+COOKBOOKS_ID = "324070631" #os.environ['cookbook_id']
 
-PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
+#PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
+#PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 
-credentials_dict = {
-    'type': 'service_account',
-    'project_id': 'cisl-vast-pythia',
-    'private_key_id': PRIVATE_KEY_ID,
-    'private_key': PRIVATE_KEY,
-    'client_email': 'pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com',
-    'client_id': '113402578114110723940',
-    'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
-    'token_uri': 'https://oauth2.googleapis.com/token',
-    'auth_provider_x509_cert_url': 'https://www.googleapis.com/oauth2/v1/certs',
-    'client_x509_cert_url': 'https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com',
-    'universe_domain': 'googleapis.com',
-}
+#credentials_dict = {
+#    'type': 'service_account',
+#    'project_id': 'cisl-vast-pythia',
+#    'private_key_id': PRIVATE_KEY_ID,
+#    'private_key': PRIVATE_KEY,
+#    'client_email': 'pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com',
+#    'client_id': '113402578114110723940',
+#    'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
+#    'token_uri': 'https://oauth2.googleapis.com/token',
+#    'auth_provider_x509_cert_url': 'https://www.googleapis.com/oauth2/v1/certs',
+#    'client_x509_cert_url': 'https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com',
+#    'universe_domain': 'googleapis.com',
+#}
+
+with open('cisl-vast-pythia-606cf5ac2303.json') as json_file:
+    credentials_dict = json.load(json_file)
 
 try:
     client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)

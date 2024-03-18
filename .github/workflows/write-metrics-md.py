@@ -23,9 +23,9 @@ def process_user_data(user_data_file, bar_plot_file, map_plot_file, markdown_fil
         for key in user_data:
             f.write(f'{key}: {(user_data[key])}\n')
         f.write('\n')
-        f.write('![Top Pages](bar_plot_file)')
+        f.write(f'![Top Pages]({bar_plot_file})')
         f.write('\n\n')
-        f.write('![Users by Country](map_plot_file)')
+        f.write(f'![Users by Country]({map_plot_file})')
         f.write('\n')
     f.close()
 
