@@ -36,7 +36,7 @@ client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _format_rounding(value):
-    return f"{round(value / 1000, 1):.1f}K"
+    return f'{round(value / 1000, 1):.1f}K'
 
 
 def run_total_users_report(property_id):
@@ -158,7 +158,7 @@ def plot_usersXcountry(foundations_id):
 
     top_10_countries = sorted(users_by_country.items(), key=lambda item: item[1], reverse=True)[:10]
     top_10_text = '\n'.join(
-        f"{country}: {_format_rounding(value)}" for i, (country, value) in enumerate(top_10_countries)
+        f'{country}: {_format_rounding(value)}' for i, (country, value) in enumerate(top_10_countries)
     )
 
     fig = plt.figure(figsize=(10, 4))

@@ -24,7 +24,7 @@ jobs:
           python -m venv analytics-api
           source analytics-api/bin/activate
           pip install google-analytics-data
-          conda install cartopy matplotlib
+          pip install cartopy matplotlib
 
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/write-metrics-md.py
