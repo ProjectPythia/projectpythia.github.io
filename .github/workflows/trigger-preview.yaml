@@ -29,8 +29,8 @@ jobs:
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
           curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/write-metrics-md.py
 
-          python get-metrics.py
-          python write-metrics-md.py
+          python -u get-metrics.py
+          python -u write-metrics-md.py
 
   find-pull-request:
     uses: ProjectPythia/cookbook-actions/.github/workflows/find-pull-request.yaml@main
