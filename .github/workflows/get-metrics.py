@@ -1,7 +1,6 @@
 import json
 import math
 import os
-import sys
 
 import cartopy
 import matplotlib.cm as cm
@@ -11,27 +10,19 @@ import numpy as np
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
-print('portal')
-sys.stdout.flush()
 PORTAL_ID = os.environ['PORTAL_ID']
 FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
-print('got project IDs?')
-sys.stdout.flush()
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$', '\n')
-print('Hello')
-sys.stdout.flush()
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 print(len(PRIVATE_KEY))
-print('hi')
-sys.stdout.flush()
 
 credentials_dict = {
     'type': 'service_account',
     'project_id': 'cisl-vast-pythia',
-    'private_key_id': PRIVATE_KEY_ID,
-    'private_key': PRIVATE_KEY,
+    'private_key_id': str(PRIVATE_KEY_ID),
+    'private_key': str(PRIVATE_KEY),
     'client_email': 'pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com',
     'client_id': '113402578114110723940',
     'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
@@ -42,7 +33,6 @@ credentials_dict = {
 }
 
 print(credentials_dict)
-sys.stdout.flush()
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
