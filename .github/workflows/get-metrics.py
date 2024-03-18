@@ -7,7 +7,6 @@ import matplotlib.cm as cm
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
-
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
@@ -16,7 +15,7 @@ FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$','\n')
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 
 credentials_dict = {
     'type': 'service_account',
