@@ -7,21 +7,24 @@ import matplotlib.cm as cm
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
-from google.analytics.data_v1beta import BetaAnalyticsDataClient
-from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
+
+print('testing 1 2 3')
+# from google.analytics.data_v1beta import BetaAnalyticsDataClient
+# from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
 PORTAL_ID = os.environ['PORTAL_ID']
 FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$', '\n')
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
+print(len(PRIVATE_KEY))
 
 credentials_dict = {
     'type': 'service_account',
     'project_id': 'cisl-vast-pythia',
-    'private_key_id': PRIVATE_KEY_ID,
-    'private_key': PRIVATE_KEY,
+    'private_key_id': str(PRIVATE_KEY_ID),
+    'private_key': str(PRIVATE_KEY),
     'client_email': 'pythia-metrics-api@cisl-vast-pythia.iam.gserviceaccount.com',
     'client_id': '113402578114110723940',
     'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
@@ -30,11 +33,13 @@ credentials_dict = {
     'client_x509_cert_url': 'https://www.googleapis.com/robot/v1/metadata/x509/pythia-metrics-api%40cisl-vast-pythia.iam.gserviceaccount.com',
     'universe_domain': 'googleapis.com',
 }
-client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+
+print(credentials_dict)
+# client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _format_rounding(value):
-    return f"{round(value / 1000, 1):.1f}K"
+    return f'{round(value / 1000, 1):.1f}K'
 
 
 def run_total_users_report(property_id):
@@ -156,7 +161,7 @@ def plot_usersXcountry(foundations_id):
 
     top_10_countries = sorted(users_by_country.items(), key=lambda item: item[1], reverse=True)[:10]
     top_10_text = '\n'.join(
-        f"{country}: {_format_rounding(value)}" for i, (country, value) in enumerate(top_10_countries)
+        f'{country}: {_format_rounding(value)}' for i, (country, value) in enumerate(top_10_countries)
     )
 
     fig = plt.figure(figsize=(10, 4))
@@ -210,4 +215,5 @@ def get_metrics():
 
 
 if __name__ == '__main__':
-    get_metrics()
+    print(credentials_dict)
+    # get_metrics()
