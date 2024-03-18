@@ -1,7 +1,8 @@
 name: trigger-site-build
 on:
   pull_request:
-
+  
+jobs:
   build:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
