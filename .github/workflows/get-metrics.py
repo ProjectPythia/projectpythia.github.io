@@ -33,8 +33,8 @@ credentials_dict = {
 
 try:
     client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
-except:
-    print(credentials_dict)
+except ValueError as e:
+    print('Value Error:', e, credentials_dict)
 
 
 def _format_rounding(value):
