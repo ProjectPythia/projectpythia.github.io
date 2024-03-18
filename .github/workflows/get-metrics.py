@@ -8,9 +8,8 @@ import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
 
-print('testing 1 2 3')
-# from google.analytics.data_v1beta import BetaAnalyticsDataClient
-# from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
+from google.analytics.data_v1beta import BetaAnalyticsDataClient
+from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
 PORTAL_ID = os.environ['PORTAL_ID']
 FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
@@ -18,7 +17,6 @@ COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
-print(len(PRIVATE_KEY))
 
 credentials_dict = {
     'type': 'service_account',
@@ -34,8 +32,7 @@ credentials_dict = {
     'universe_domain': 'googleapis.com',
 }
 
-print(credentials_dict)
-# client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _format_rounding(value):
@@ -215,5 +212,4 @@ def get_metrics():
 
 
 if __name__ == '__main__':
-    print(credentials_dict)
-    # get_metrics()
+    get_metrics()
