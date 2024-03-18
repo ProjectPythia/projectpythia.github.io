@@ -1,6 +1,7 @@
 import json
 import math
 import os
+import sys
 
 import cartopy
 import matplotlib.cm as cm
@@ -11,16 +12,20 @@ from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
 print('portal')
+sys.stdout.flush()
 PORTAL_ID = os.environ['PORTAL_ID']
 FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
 COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
-print('got project IDs')
+print('got project IDs?')
+sys.stdout.flush()
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('$', '\n')
 print('Hello')
+sys.stdout.flush()
 print(len(PRIVATE_KEY))
 print('hi')
+sys.stdout.flush()
 
 credentials_dict = {
     'type': 'service_account',
@@ -37,6 +42,7 @@ credentials_dict = {
 }
 
 print(credentials_dict)
+sys.stdout.flush()
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
