@@ -36,9 +36,7 @@ try:
     client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 except google.auth.exceptions.MalformedError as e:
     print('Malformed Error:', e)
-    print(len(PORTAL_ID))
     print(len(PRIVATE_KEY))
-    print(credentials_dict)
 
 
 def _format_rounding(value):
