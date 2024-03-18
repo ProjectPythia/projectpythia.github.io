@@ -120,7 +120,7 @@ def plot_top_pages(foundations_id, cookbooks_id):
     ax.bar_label(bar2, fmt=_format_rounding)
 
     plt.legend()
-    plt.savefig('bypage.png', bbox_inches='tight')
+    plt.savefig('portal/_static/bypage.png', bbox_inches='tight')
 
 
 def _run_usersXcountry_report(foundations_id):
@@ -199,7 +199,7 @@ def plot_usersXcountry(foundations_id):
     ax.text(1.01, 0.5, top_10_text, transform=ax.transAxes, fontsize=9, verticalalignment='center', bbox=props)
 
     plt.tight_layout()
-    plt.savefig('bycountry.png', bbox_inches='tight')
+    plt.savefig('portal/_static/bycountry.png', bbox_inches='tight')
 
 
 def get_metrics():

@@ -25,14 +25,14 @@ def process_user_data(user_data_file, bar_plot_file, map_plot_file, markdown_fil
         f.write('\n')
         f.write('![Top Pages](bar_plot_file)')
         f.write('\n\n')
-        f.write('![Users by Country](../.github/workflows/map_plot_file)')
+        f.write('![Users by Country](map_plot_file)')
         f.write('\n')
     f.close()
 
 
 if __name__ == '__main__':
     user_data_file = 'user_metrics.json'
-    bar_plot_file = '../.github/workflows/bypage.png'
-    map_plot_file = '../.github/workflows/bycountry.png'
+    bar_plot_file = '_static/bypage.png'
+    map_plot_file = '_static/bycountry.png'
     markdown_file = 'portal/metrics.md'
     process_user_data(user_data_file, bar_plot_file, map_plot_file, markdown_file)
