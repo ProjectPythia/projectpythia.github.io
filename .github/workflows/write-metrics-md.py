@@ -24,7 +24,6 @@ def process_user_data(json_file, top_pages, this_year, map, md_file):
         f.write(f'![Users this Year]({this_year})\n\n')
         f.write(f'![Top Pages]({top_pages})\n\n')
         f.write(f'![Users by Country]({map})\n\n')
-        
 
     f.close()
 
