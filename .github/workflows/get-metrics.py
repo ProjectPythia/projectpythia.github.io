@@ -3,7 +3,6 @@ import math
 import os
 
 import cartopy
-import google
 import matplotlib.cm as cm
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
@@ -32,28 +31,20 @@ credentials_dict = {
     'universe_domain': 'googleapis.com',
 }
 
-# with open('cisl-vast-pythia-606cf5ac2303.json') as json_file:
-#     credentials_dict = json.load(json_file)
-
-try:
-    client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
-except google.auth.exceptions.MalformedError as e:
-    print('Malformed Error:', e)
-    print(len(PRIVATE_KEY))
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
 
 def _format_rounding(value):
     return f'{round(value / 1000, 1):.1f}K'
 
 
-def run_total_users_report(property_id):
+def _run_total_users_report(property_id):
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[],
         metrics=[Metric(name='activeUsers')],
         date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
     )
-
     response = client.run_report(request)
 
     total_users = 0
@@ -63,6 +54,15 @@ def run_total_users_report(property_id):
     return _format_rounding(total_users)
 
 
+def get_total_users(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
+    metrics_dict = {}
+    metrics_dict['Portal'] = _run_total_users_report(PORTAL_ID)
+    metrics_dict['Foundations'] = _run_total_users_report(FOUNDATIONS_ID)
+    metrics_dict['Cookbooks'] = _run_total_users_report(COOKBOOKS_ID)
+    with open('portal/metrics/user_metrics.json', 'w') as outfile:
+        json.dump(metrics_dict, outfile)
+
+
 def _run_top_pages_report(property_id):
     request = RunReportRequest(
         property=f'properties/{property_id}',
@@ -70,7 +70,6 @@ def _run_top_pages_report(property_id):
         date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
         metrics=[Metric(name='screenPageViews')],
     )
-
     response = client.run_report(request)
 
     page_views = {}
@@ -80,12 +79,18 @@ def _run_top_pages_report(property_id):
         page_views[page] = views
 
     top_10_pages = sorted(page_views.items(), key=lambda item: item[1], reverse=True)[:10]
-    top_10_pages_dict = {page: views for page, views in top_10_pages}
-
-    return top_10_pages_dict
+    return {page: views for page, views in top_10_pages}
 
 
-def plot_top_pages(foundations_id, cookbooks_id):
+def plot_top_pages(portal_id, foundations_id, cookbooks_id):
+    portal_page_views = _run_top_pages_report(portal_id)
+    portal_pages = []
+    portal_sorted = {k: v for k, v in sorted(portal_page_views.items(), key=lambda item: item[1])}
+    portal_views = portal_sorted.values()
+    for key in portal_sorted:
+        newkey = key.split('—')[0]
+        portal_pages.append(newkey)
+
     foundations_page_views = _run_top_pages_report(foundations_id)
     foundations_pages = []
     foundations_sorted = {k: v for k, v in sorted(foundations_page_views.items(), key=lambda item: item[1])}
@@ -102,28 +107,32 @@ def plot_top_pages(foundations_id, cookbooks_id):
         newkey = key.split('—')[0]
         cookbooks_pages.insert(0, newkey)
 
-    pages = cookbooks_pages + foundations_pages
+    pages = cookbooks_pages + foundations_pages + portal_pages
 
-    fig, ax = plt.subplots()
-    plt.title('Most Popular Pages')
+    fig, ax = plt.subplots(figsize=(10, 8))
+    plt.title('All-Time Top Pages')
 
-    views_max = int(math.ceil(max(foundations_views) / 10000.0)) * 10000
+    views_max = int(math.ceil(max(portal_views) / 10000.0)) * 10000
     ax.set_xlim([0, views_max])
 
     y = np.arange(10)
     y2 = np.arange(11, 21)
-    y3 = np.append(y, y2)
+    y3 = np.arange(22, 32)
+    y4 = np.append(y, y2)
+    y4 = np.append(y4, y3)
 
-    bar1 = ax.barh(y2, foundations_views, align='center', label='Foundations', color='royalblue')
-    bar2 = ax.barh(y, cookbooks_views, align='center', label='Cookbooks', color='indianred')
+    bar1 = ax.barh(y3, portal_views, align='center', label='Portal', color='purple')
+    bar2 = ax.barh(y2, foundations_views, align='center', label='Foundations', color='royalblue')
+    bar3 = ax.barh(y, cookbooks_views, align='center', label='Cookbooks', color='indianred')
 
-    ax.set_yticks(y3, labels=pages)
+    ax.set_yticks(y4, labels=pages)
 
     ax.bar_label(bar1, fmt=_format_rounding)
     ax.bar_label(bar2, fmt=_format_rounding)
+    ax.bar_label(bar3, fmt=_format_rounding)
 
     plt.legend()
-    plt.savefig('portal/metrics/bypage.png', bbox_inches='tight')
+    plt.savefig('portal/metrics/toppages.png', bbox_inches='tight')
 
 
 def _run_usersXcountry_report(foundations_id):
@@ -133,7 +142,6 @@ def _run_usersXcountry_report(foundations_id):
         metrics=[Metric(name='activeUsers')],
         date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
     )
-
     response = client.run_report(request)
 
     user_by_country = {}
@@ -205,18 +213,7 @@ def plot_usersXcountry(foundations_id):
     plt.savefig('portal/metrics/bycountry.png', bbox_inches='tight')
 
 
-def get_metrics():
-    metrics_dict = {}
-    metrics_dict['Portal'] = run_total_users_report(str(PORTAL_ID))
-    metrics_dict['Foundations'] = run_total_users_report(str(FOUNDATIONS_ID))
-    metrics_dict['Cookbooks'] = run_total_users_report(str(COOKBOOKS_ID))
-    with open('portal/metrics/user_metrics.json', 'w') as outfile:
-        json.dump(metrics_dict, outfile)
-
-    plot_top_pages(str(FOUNDATIONS_ID), str(COOKBOOKS_ID))
-
-    plot_usersXcountry(str(FOUNDATIONS_ID))
-
-
 if __name__ == '__main__':
-    get_metrics()
+    get_total_users(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
+    plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
+    plot_usersXcountry(str(FOUNDATIONS_ID))
