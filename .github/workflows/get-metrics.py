@@ -11,9 +11,9 @@ import numpy as np
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
-PORTAL_ID = os.environ['portal_id']
-FOUNDATIONS_ID = os.environ['foundations_id']
-COOKBOOKS_ID = os.environ['cookbook_id']
+PORTAL_ID = os.environ['PORTAL_ID']
+FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
+COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
@@ -123,7 +123,7 @@ def plot_top_pages(foundations_id, cookbooks_id):
     ax.bar_label(bar2, fmt=_format_rounding)
 
     plt.legend()
-    plt.savefig('portal/_static/bypage.png', bbox_inches='tight')
+    plt.savefig('portal/metrics/bypage.png', bbox_inches='tight')
 
 
 def _run_usersXcountry_report(foundations_id):
@@ -202,7 +202,7 @@ def plot_usersXcountry(foundations_id):
     ax.text(1.01, 0.5, top_10_text, transform=ax.transAxes, fontsize=9, verticalalignment='center', bbox=props)
 
     plt.tight_layout()
-    plt.savefig('portal/_static/bycountry.png', bbox_inches='tight')
+    plt.savefig('portal/metrics/bycountry.png', bbox_inches='tight')
 
 
 def get_metrics():
@@ -210,7 +210,7 @@ def get_metrics():
     metrics_dict['Portal'] = run_total_users_report(str(PORTAL_ID))
     metrics_dict['Foundations'] = run_total_users_report(str(FOUNDATIONS_ID))
     metrics_dict['Cookbooks'] = run_total_users_report(str(COOKBOOKS_ID))
-    with open('user_metrics.json', 'w') as outfile:
+    with open('portal/metrics/user_metrics.json', 'w') as outfile:
         json.dump(metrics_dict, outfile)
 
     plot_top_pages(str(FOUNDATIONS_ID), str(COOKBOOKS_ID))

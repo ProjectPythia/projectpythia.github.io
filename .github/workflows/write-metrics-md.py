@@ -31,8 +31,8 @@ def process_user_data(user_data_file, bar_plot_file, map_plot_file, markdown_fil
 
 
 if __name__ == '__main__':
-    user_data_file = 'user_metrics.json'
-    bar_plot_file = '_static/bypage.png'
-    map_plot_file = '_static/bycountry.png'
+    user_data_file = 'portal/metrics/user_metrics.json'
+    bar_plot_file = 'metrics/bypage.png'
+    map_plot_file = 'metrics/bycountry.png'
     markdown_file = 'portal/metrics.md'
     process_user_data(user_data_file, bar_plot_file, map_plot_file, markdown_file)
