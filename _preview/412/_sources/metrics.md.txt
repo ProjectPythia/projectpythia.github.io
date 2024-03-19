@@ -11,5 +11,3 @@ Last Updated: 2024-03-19 15:46:22.786326
 ![Top Pages](metrics/toppages.png)
 
 ![Users this Year](metrics/thisyear.png)
-
-![Users by Country](metrics/bycountry.png)
