@@ -24,11 +24,8 @@ jobs:
           source analytics-api/bin/activate
           pip install google-analytics-data cartopy matplotlib
 
-          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/get-metrics.py
-          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/main/.github/workflows/write-metrics-md.py
-
-          python get-metrics.py
-          python write-metrics-md.py
+          python .github/workflows/get-metrics.py
+          python .github/workflows/write-metrics-md.py
 
   build:
     needs: automate-metrics
