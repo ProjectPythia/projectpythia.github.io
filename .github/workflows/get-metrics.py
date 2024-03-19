@@ -11,9 +11,9 @@ import numpy as np
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
-PORTAL_ID = os.environ['PORTAL_ID']
-FOUNDATIONS_ID = os.environ['FOUNDATIONS_ID']
-COOKBOOKS_ID = os.environ['COOKBOOKS_ID']
+PORTAL_ID = '266784902'
+FOUNDATIONS_ID = '281776420'
+COOKBOOKS_ID = '324070631'
 
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
@@ -34,6 +34,8 @@ credentials_dict = {
 
 client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
 
+pre_project_date = '2020-03-31'  # random date before project start
+
 
 def _format_rounding(value):
     return f'{round(value / 1000, 1):.1f}K'
@@ -44,7 +46,7 @@ def _run_total_users_report(property_id):
         property=f'properties/{property_id}',
         dimensions=[],
         metrics=[Metric(name='activeUsers')],
-        date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
+        date_ranges=[DateRange(start_date=pre_project_date, end_date='today')],
     )
     response = client.run_report(request)
 
@@ -110,7 +112,7 @@ def _run_top_pages_report(property_id):
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[Dimension(name='pageTitle')],
-        date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
+        date_ranges=[DateRange(start_date=pre_project_date, end_date='today')],
         metrics=[Metric(name='screenPageViews')],
     )
     response = client.run_report(request)
@@ -167,7 +169,7 @@ def _run_usersXcountry_report(property_id):
         property=f'properties/{property_id}',
         dimensions=[Dimension(name='country')],
         metrics=[Metric(name='activeUsers')],
-        date_ranges=[DateRange(start_date='2020-03-31', end_date='today')],
+        date_ranges=[DateRange(start_date=pre_project_date, end_date='today')],
     )
     response = client.run_report(request)
 
@@ -183,6 +185,7 @@ def _run_usersXcountry_report(property_id):
 def plot_usersXcountry(FOUNDATIONS_ID):
     users_by_country = _run_usersXcountry_report(FOUNDATIONS_ID)
 
+    # Google API Country names do not match Cartopy Country Shapefile names
     dict_api2cartopy = {
         'Tanzania': 'United Republic of Tanzania',
         'United States': 'United States of America',
