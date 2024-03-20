@@ -3,6 +3,7 @@ import json
 import os
 
 import cartopy
+import google
 import matplotlib
 import matplotlib.cm as cm
 import matplotlib.colors as colors
@@ -11,10 +12,13 @@ import numpy as np
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
+# Project ID Numbers
 PORTAL_ID = '266784902'
 FOUNDATIONS_ID = '281776420'
 COOKBOOKS_ID = '324070631'
 
+
+# Access Secrets
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
 
@@ -32,16 +36,27 @@ credentials_dict = {
     'universe_domain': 'googleapis.com',
 }
 
-client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+try:
+    client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+except google.auth.exceptions.MalformedError as e:
+    print('Malformed Error:', repr(e))
+    # Insight into reason for failure without exposing secret key
+    print('Length of PRIVATE_KEY:', len(PRIVATE_KEY))  # 0: Secret not found, ~734: Secret malformed
 
-pre_project_date = '2020-03-31'  # random date before project start
+pre_project_date = '2020-03-31'  # Random date before project start
 
 
 def _format_rounding(value):
+    """
+    Helper function for rounding string displays. 1,232 -> 1.2K
+    """
     return f'{round(value / 1000, 1):.1f}K'
 
 
 def _run_total_users_report(property_id):
+    """
+    Function for requesting cumulative active users from a project since project start.
+    """
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[],
@@ -58,16 +73,24 @@ def _run_total_users_report(property_id):
 
 
 def get_total_users(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
+    """
+    Function for taking cumulative active users from each project and dumping it into a JSON with the current datetime.
+    """
     metrics_dict = {}
     metrics_dict['Now'] = str(datetime.datetime.now())
     metrics_dict['Portal'] = _run_total_users_report(PORTAL_ID)
     metrics_dict['Foundations'] = _run_total_users_report(FOUNDATIONS_ID)
     metrics_dict['Cookbooks'] = _run_total_users_report(COOKBOOKS_ID)
+
+    # Save to JSON, Remember Action is called from root directory
     with open('portal/metrics/user_metrics.json', 'w') as outfile:
         json.dump(metrics_dict, outfile)
 
 
 def _run_active_users_this_year(property_id):
+    """
+    Function for requesting active users by day from a project since year start.
+    """
     current_year = datetime.datetime.now().year
     start_date = f'{current_year}-01-01'
 
@@ -87,14 +110,19 @@ def _run_active_users_this_year(property_id):
         dates.append(date)
         user_counts.append(int(row.metric_values[0].value))
 
+    # Days need to be sorted chronologically
     return zip(*sorted(zip(dates, user_counts), key=lambda x: x[0]))
 
 
 def plot_projects_this_year(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
+    """
+    Function for taking year-to-date active users by day and plotting it for each project.
+    """
     portal_dates, portal_users = _run_active_users_this_year(PORTAL_ID)
     foundations_dates, foundations_users = _run_active_users_this_year(FOUNDATIONS_ID)
     cookbooks_dates, cookbooks_users = _run_active_users_this_year(COOKBOOKS_ID)
 
+    # Plotting code
     plt.figure(figsize=(10, 5.5))
     plt.title('Year-to-Date Pythia Active Users', fontsize=15)
 
@@ -109,6 +137,9 @@ def plot_projects_this_year(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
 
 
 def _run_top_pages_report(property_id):
+    """
+    Function for requesting top 5 pages from a project.
+    """
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[Dimension(name='pageTitle')],
@@ -123,41 +154,48 @@ def _run_top_pages_report(property_id):
         views = int(row.metric_values[0].value)
         views_dict[page] = views
 
+    # Sort by views and grab the top 5
     top_pages = sorted(views_dict.items(), key=lambda item: item[1], reverse=True)[:5]
+    # String manipulation on page titles "Cartopy - Pythia Foundations" -> "Cartopy"
     pages = [page.split('—')[0] for page, _ in top_pages]
     views = [views for _, views in top_pages]
 
+    #  Reverse order of lists, so they'll plot with most visited page on top (i.e. last)
     return pages[::-1], views[::-1]
 
 
 def plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
+    """
+    Function that takes the top 5 viewed pages for all 3 projects and plot them on a histogram.
+    """
     portal_pages, portal_views = _run_top_pages_report(PORTAL_ID)
     foundations_pages, foundations_views = _run_top_pages_report(FOUNDATIONS_ID)
     cookbooks_pages, cookbooks_views = _run_top_pages_report(COOKBOOKS_ID)
 
-    pages = cookbooks_pages + foundations_pages + portal_pages
-
+    # Plotting code
     fig, ax = plt.subplots(figsize=(10, 5.5))
     plt.title('All-Time Top Pages', fontsize=15)
 
-    y = np.arange(5)
-    y2 = np.arange(6, 11)
-    y3 = np.arange(12, 17)
-    y4 = np.append(y, y2)
-    y4 = np.append(y4, y3)
+    y = np.arange(5)  # 0-4 for Cookbooks
+    y2 = np.arange(6, 11)  # 6-10 for Foundations
+    y3 = np.arange(12, 17)  # 12-16 for Portal
 
     bar1 = ax.barh(y3, portal_views, align='center', label='Portal', color='purple')
     bar2 = ax.barh(y2, foundations_views, align='center', label='Foundations', color='royalblue')
     bar3 = ax.barh(y, cookbooks_views, align='center', label='Cookbooks', color='indianred')
 
+    y4 = np.append(y, y2)
+    y4 = np.append(y4, y3)  # 0-4,6-19,12-6 for page labels to have a gap between projects
+    pages = cookbooks_pages + foundations_pages + portal_pages  # List of all pages
     ax.set_yticks(y4, labels=pages, fontsize=12)
 
+    # Adds round-formatted views label to end of each bar
     ax.bar_label(bar1, fmt=_format_rounding, padding=5, fontsize=10)
     ax.bar_label(bar2, fmt=_format_rounding, padding=5, fontsize=10)
     ax.bar_label(bar3, fmt=_format_rounding, padding=5, fontsize=10)
 
     ax.set_xscale('log')
-    ax.set_xlim([10, 10**5])
+    ax.set_xlim([10, 10**5])  # set_xlim must be after setting xscale to log
     ax.set_xlabel('Page Views', fontsize=12)
 
     plt.legend(fontsize=12, loc='lower right')
@@ -165,6 +203,9 @@ def plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
 
 
 def _run_usersXcountry_report(property_id):
+    """
+    Function for requesting users by country for a project.
+    """
     request = RunReportRequest(
         property=f'properties/{property_id}',
         dimensions=[Dimension(name='country')],
@@ -183,6 +224,9 @@ def _run_usersXcountry_report(property_id):
 
 
 def plot_usersXcountry(FOUNDATIONS_ID):
+    """
+    Function for taking users by country for Pythia Foundations and plotting them on a map.
+    """
     users_by_country = _run_usersXcountry_report(FOUNDATIONS_ID)
 
     # Google API Country names do not match Cartopy Country Shapefile names
@@ -201,11 +245,13 @@ def plot_usersXcountry(FOUNDATIONS_ID):
     for key in dict_api2cartopy:
         users_by_country[dict_api2cartopy[key]] = users_by_country.pop(key)
 
+    # Sort by views and grab the top 10 countries for a text box
     top_10_countries = sorted(users_by_country.items(), key=lambda item: item[1], reverse=True)[:10]
     top_10_text = '\n'.join(
         f'{country}: {_format_rounding(value)}' for i, (country, value) in enumerate(top_10_countries)
     )
 
+    # Plotting code
     fig = plt.figure(figsize=(10, 4))
     ax = plt.axes(projection=cartopy.crs.PlateCarree(), frameon=False)
     ax.set_title('Pythia Foundations Users by Country', fontsize=15)
@@ -215,12 +261,13 @@ def plot_usersXcountry(FOUNDATIONS_ID):
     countries = reader.records()
 
     colormap = plt.get_cmap('Blues')
-    newcmp = colors.ListedColormap(colormap(np.linspace(0.2, 1, 128)))
+    newcmp = colors.ListedColormap(colormap(np.linspace(0.2, 1, 128)))  # Truncate colormap to remove white hues
     newcmp.set_extremes(under='grey')
 
-    norm = colors.LogNorm(vmin=1, vmax=max(users_by_country.values()))
+    norm = colors.LogNorm(vmin=1, vmax=max(users_by_country.values()))  # Plot on log scale
     mappable = cm.ScalarMappable(norm=norm, cmap=newcmp)
 
+    # Loop through countries and plot their color
     for country in countries:
         country_name = country.attributes['SOVEREIGNT']
         if country_name in users_by_country.keys():
@@ -238,10 +285,12 @@ def plot_usersXcountry(FOUNDATIONS_ID):
                 [country.geometry], cartopy.crs.PlateCarree(), facecolor='grey', edgecolor='white', linewidth=0.7
             )
 
+    # Add colorbar
     cax = fig.add_axes([0.1, -0.015, 0.67, 0.03])
     cbar = fig.colorbar(mappable=mappable, cax=cax, spacing='uniform', orientation='horizontal', extend='min')
     cbar.set_label('Unique Users')
 
+    # Add top 10 countries text
     props = dict(boxstyle='round', facecolor='white', edgecolor='white')
     ax.text(1.01, 0.5, top_10_text, transform=ax.transAxes, fontsize=12, verticalalignment='center', bbox=props)
 
