@@ -132,11 +132,15 @@ source analytics-api-env/bin/activate
 pip install google-analytics-data
 ```
 
-Replacing 'analytics-api-env' with any new environment name. Also `pip install` any other packages you may want for your analytics work.
+Replace 'analytics-api-env' with any new environment name. Also, `pip install` any other packages you may want for your analytics work.
 
 ### Setting up Credentials
 
-To interact with the Google Analytics API locally you need to download the credentials file. This file has been uploaded to the ProjectPythia Google Drive and lives in the Analytics_API folder. It will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`.
+To interact with the Google Analytics API locally you need to download the credentials file. This file has been uploaded to the ProjectPythia Google Drive and lives in the Analytics_API folder.
+
+**This credentials file needs to be kept secure**, especially the `private_key` field. **Do NOT share this file.** If you do not have access to our Google Drive and need access to this file, please reach out to the team on discourse or in a community meeting. 
+
+The credentials file will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`. This file may be replaced intermittently with a slightly differnt alphanumeric string for additional security.
 
 One way to ensure that your Python script is using the correct credentials file is to read it as a dictionary and pass that into your API client at the begging of your script.
 
@@ -168,7 +172,9 @@ def _run_analytics_request(property_id):
     return response
 ```
 
-This function demonstrates how to format your `RunReportRequest()` arguments, notably the `dimensions` and `metrics` calls, as well as the expected date formatting in `date_ranges`. This [Google Analytics API Schema](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema) documentation lists all of the available dimension and metric keys that can be passed into your request.
+This function demonstrates how to format your `RunReportRequest()` arguments, notably the `dimensions` and `metrics` fields, as well as the expected date formatting in `date_ranges`.
+
+This [Google Analytics API Schema](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema) documentation lists all of the available dimension and metric keys that can be passed into your request.
 
 `property_id` is a 9-digit number associated with the project you are interested in. This number can be found on the Analytics project page. For Project Pythia, our three different property IDs are:
 ```
