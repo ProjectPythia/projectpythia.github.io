@@ -138,7 +138,7 @@ Replace 'analytics-api-env' with any new environment name. Also, `pip install` a
 
 To interact with the Google Analytics API locally you need to download the credentials file. This file has been uploaded to the ProjectPythia Google Drive and lives in the Analytics_API folder.
 
-**This credentials file needs to be kept secure**, especially the `private_key` field. **Do NOT share this file.** If you do not have access to our Google Drive and need access to this file, please reach out to the team on discourse or in a community meeting. 
+**This credentials file needs to be kept secure**, especially the `private_key` field. **Do NOT share this file.** If you do not have access to our Google Drive and need access to this file, please reach out to the team on discourse or in a community meeting.
 
 The credentials file will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`. This file may be replaced intermittently with a slightly differnt alphanumeric string for additional security.
 
