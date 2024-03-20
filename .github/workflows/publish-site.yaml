@@ -23,9 +23,16 @@ jobs:
 
           python .github/workflows/get-metrics.py
           python .github/workflows/write-metrics-md.py
+    - uses: actions/upload-artifact@v3
+      with:
+        name: repo-w-metrics
+          path: '.'
 
   build:
     needs: automate-metrics
+    uses: actions/download-artifact@v3
+      with:
+        name: repo-w-metrics
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_file: 'environment.yml'
