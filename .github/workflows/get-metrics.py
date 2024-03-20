@@ -20,7 +20,8 @@ COOKBOOKS_ID = '324070631'
 
 # Access Secrets
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-PRIVATE_KEY = os.environ.get('PRIVATE_KEY')
+# Ensure GH secrets doesn't intrudce extra '\' new line characters (related to '\' being an escape character)
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('\\n', '\n')
 
 credentials_dict = {
     'type': 'service_account',
@@ -41,7 +42,9 @@ try:
 except google.auth.exceptions.MalformedError as e:
     print('Malformed Error:', repr(e))
     # Insight into reason for failure without exposing secret key
-    print('Length of PRIVATE_KEY:', len(PRIVATE_KEY))  # 0: Secret not found, ~734: Secret malformed
+    # 0: Secret not found, else malformed
+    # 706: extra quote, 732: extra '\', 734: both
+    print('Length of PRIVATE_KEY:', len(PRIVATE_KEY))
 
 pre_project_date = '2020-03-31'  # Random date before project start
 
