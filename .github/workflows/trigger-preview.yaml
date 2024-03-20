@@ -34,6 +34,9 @@ jobs:
   deploy-preview:
     needs: find-pull-request
     if: github.event.workflow_run.conclusion == 'success'
+    uses: actions/download-artifact@v3
+      with:
+        name: repo-w-metrics
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
     with:
       artifact_name: book-zip-${{ needs.find-pull-request.outputs.number }}
