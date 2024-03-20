@@ -140,7 +140,7 @@ To interact with the Google Analytics API locally you need to download the crede
 
 **This credentials file needs to be kept secure**, especially the `private_key` field. **Do NOT share this file.** If you do not have access to our Google Drive and need access to this file, please reach out to the team on discourse or in a community meeting.
 
-The credentials file will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`. This file may be replaced intermittently with a slightly differnt alphanumeric string for additional security.
+The credentials file will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`. This file may be replaced intermittently with a slightly different alphanumeric string for additional security.
 
 One way to ensure that your Python script is using the correct credentials file is to read it as a dictionary and pass that into your API client at the begging of your script.
 
