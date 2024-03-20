@@ -118,3 +118,79 @@ Once a pull request has passed all tests, including the `preview-site` check, th
 ![CI-check](/portal/_static/images/deploy-site-CI-check.png)
 
 ![Netlify Preview](/portal/_static/images/netlify-preview.png)
+
+
+## Instructions for intacting with the Google Analytics API
+
+### Setting up the Virtual Environment
+
+Analytics must be run on a virtual environment. To create and activate this environment, with the necessary `google-analytics-data` package, the terminal commands are:
+
+```
+python -m venv analytics-api-env
+source analytics-api-env/bin/activate
+pip install google-analytics-data
+```
+
+Replacing 'analytics-api-env' with any new environment name. Also `pip install` any other packages you may want for your analytics work.
+
+### Setting up Credentials
+
+To interact with the Google Analytics API locally you need to download the credentials file. This file has been uploaded to the ProjectPythia Google Drive and lives in the Analytics_API folder. It will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`.
+
+One way to ensure that your Python script is using the correct credentials file is to read it as a dictionary and pass that into your API client at the begging of your script.
+
+```
+from google.analytics.data_v1beta import BetaAnalyticsDataClient
+from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
+
+with open('{credentials-file-path}') as json_file:
+   credentials_dict = json.load(json_file)
+
+client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
+```
+
+Recommended and commonly needed import statements are also shown at the script beginning.
+
+### Making a request
+
+Below is a sample function for calling an Analytics API request.
+
+```
+def _run_analytics_request(property_id):
+    request = RunReportRequest(
+        property=f'properties/{property_id}',
+        dimensions=[Dimension(name='date')],
+        metrics=[Metric(name='activeUsers')],
+        date_ranges=[DateRange(start_date='2024-01-01', end_date='today')],
+    )
+    response = client.run_report(request)
+    return response
+```
+
+This function demonstrates how to format your `RunReportRequest()` arguments, notably the `dimensions` and `metrics` calls, as well as the expected date formatting in `date_ranges`. This [Google Analytics API Schema](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema) documentation lists all of the available dimension and metric keys that can be passed into your request.
+
+`property_id` is a 9-digit number associated with the project you are interested in. This number can be found on the Analytics project page. For Project Pythia, our three different property IDs are:
+```
+PORTAL_ID = '266784902'
+FOUNDATIONS_ID = '281776420'
+COOKBOOKS_ID = '324070631'
+```
+
+### Working with your request output
+
+Your Google Analytics response is formatted in a series of rows that each have the key `dimension_value` and `metric_value`. You may find it easier to work with your data in a dictionary or tuple. For the single dimension of "date" and metric of "activeUsers" as specified in our example function, here is what your data manipulation may look like before you can carry out additional analysis.
+
+```
+dates=[]
+users=[]
+for row in response.rows:
+    date_str = row.dimension_values[0].value
+    date = datetime.datetime.strptime(date_str, '%Y%m%d')
+    dates.append(date)
+    users.append(int(row.metric_values[0].value))
+
+dates, users =  zip(*sorted(zip(dates, user_counts), key=lambda x: x[0]))
+```
+
+One thing to note is that your Analytics response rows are not automatically chronological, so in this example we zipped our sorted tuple to ensure that the dates are in the expected order.
