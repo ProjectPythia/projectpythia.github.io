@@ -21,23 +21,28 @@ jobs:
 
           python .github/workflows/get-metrics.py
           python .github/workflows/write-metrics-md.py
-    - uses: actions/upload-artifact@v3
-      with:
-        name: repo-w-metrics
-          path: '.'
+      - name: Upload zipped repo artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-w-metrics
+          path: ./repo.zip
 
   build:
     needs: automate-metrics
-    uses: actions/download-artifact@v3
-      with:
-        name: repo-w-metrics
-    if: ${{ github.repository_owner == 'ProjectPythia' }}
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
-    with:
-      environment_file: 'environment.yml'
-      environment_name: pythia
-      path_to_notebooks: 'portal'
-      build_command: 'make -j4 html'
+    steps:
+      upload-artifact:  # Assuming this is the step name on line 33 (adjust if different)
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-w-metrics
+          path: ./repo.zip
+      build:
+        if: ${{ github.repository_owner == 'ProjectPythia' }}
+        uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+        with:
+          environment_file: 'environment.yml'
+          environment_name: pythia
+          path_to_notebooks: 'portal'
+          build_command: 'make -j4 html'
 
   link-check:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
