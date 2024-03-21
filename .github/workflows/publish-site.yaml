@@ -12,35 +12,43 @@ on:
 jobs:
   automate-metrics:
     runs-on: macos-latest
-    uses: actions/checkout@v3
-    env:
-      PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-      PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
-    run: |
-      python -m venv analytics-api
-      source analytics-api/bin/activate
-      pip install google-analytics-data cartopy matplotlib
+    steps:
+      - uses: actions/checkout@v3
+      - name: Automate Metrics
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
+        run: |
+          python -m venv analytics-api
+          source analytics-api/bin/activate
+          pip install google-analytics-data cartopy matplotlib
 
-      python .github/workflows/get-metrics.py
-      python .github/workflows/write-metrics-md.py
+          python .github/workflows/get-metrics.py
+          python .github/workflows/write-metrics-md.py
 
-  zip-artifact:
-    uses: actions/upload-artifact@v4
-    with:
-      name: repo-w-metrics
-      path: ./repo.zip
+      - name: Upload zipped repo artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-w-metrics
+          path: ./repo.zip
 
   build:
-    needs: Automate Metrics
+    needs: automate-metrics
     runs-on: ubuntu-latest
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
-    with:
-      environment_file: 'environment.yml'
-      environment_name: pythia
-      path_to_notebooks: 'portal'
-      build_command: 'make -j4 html'
-      artifact: repo-w-metrics
-      path: ./repo.zip
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: repo-w-metrics
+          path: ./repo.zip
+
+      - name: Build the Book
+        uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+        with:
+          environment_file: 'environment.yml'
+          environment_name: pythia
+          path_to_notebooks: 'portal'
+          build_command: 'make -j4 html'
 
   deploy:
     needs: build
