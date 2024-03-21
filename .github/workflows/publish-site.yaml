@@ -31,7 +31,7 @@ jobs:
           name: repo-w-metrics
           path: ./repo.zip
 
-  build:
+  grab-and-build:
     needs: automate-metrics
     steps:
       upload-artifact:  # Assuming this is the step name on line 33 (adjust if different)
