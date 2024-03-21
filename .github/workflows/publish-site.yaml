@@ -25,8 +25,16 @@ jobs:
 
           python .github/workflows/get-metrics.py
           python .github/workflows/write-metrics-md.py
+      - name: Zip the book
+        run: |
+          set -x
+          set -e
+          if [ -f book.zip ]; then
+              rm -rf book.zip
+          fi
+          zip -r repo.zip .
 
-  zip-repo:
+  upload-zip:
     needs: automate-metrics
     runs-on: macos-latest
     steps:
@@ -34,10 +42,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: repo-w-metrics
-          path: ./repo.zip
+          path: repo.zip
 
   build:
-    needs: zip-repo
+    needs: upload-zip
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_file: 'environment.yml'

@@ -290,7 +290,7 @@ def plot_usersXcountry(FOUNDATIONS_ID):
             )
 
     # Add colorbar
-    cax = fig.add_axes([0.05, -0.015, 0.7, 0.03])
+    cax = fig.add_axes([0.05, -0.015, 0.7, 0.03])  # [x0, y0, width, height]
     cbar = fig.colorbar(mappable=mappable, cax=cax, spacing='uniform', orientation='horizontal', extend='min')
     cbar.set_label('Unique Users')
 
