@@ -17,7 +17,6 @@ PORTAL_ID = '266784902'
 FOUNDATIONS_ID = '281776420'
 COOKBOOKS_ID = '324070631'
 
-
 # Access Secrets
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
 # Ensure GH secrets doesn't intrudce extra '\' new line characters (related to '\' being an escape character)
@@ -56,6 +55,8 @@ def _format_rounding(value):
     return f'{round(value / 1000, 1):.1f}K'
 
 
+# The rest of this file alternates between functions for requesting information from Google Analytics
+# And functions that use that request image to form either a .json or a .png file to be used in write-metrics-md.py
 def _run_total_users_report(property_id):
     """
     Function for requesting cumulative active users from a project since project start.
@@ -289,7 +290,7 @@ def plot_usersXcountry(FOUNDATIONS_ID):
             )
 
     # Add colorbar
-    cax = fig.add_axes([0.1, -0.015, 0.67, 0.03])
+    cax = fig.add_axes([0.05, -0.015, 0.7, 0.03])  # [x0, y0, width, height]
     cbar = fig.colorbar(mappable=mappable, cax=cax, spacing='uniform', orientation='horizontal', extend='min')
     cbar.set_label('Unique Users')
 
