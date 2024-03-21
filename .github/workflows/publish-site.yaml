@@ -25,12 +25,12 @@ jobs:
 
           python .github/workflows/get-metrics.py
           python .github/workflows/write-metrics-md.py
-      - name: Zip the book
+      - name: Zip the repo
         run: |
           set -x
           set -e
-          if [ -f book.zip ]; then
-              rm -rf book.zip
+          if [ -f repo.zip ]; then
+              rm -rf repo.zip
           fi
           zip -r repo.zip .
 
