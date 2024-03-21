@@ -8,8 +8,44 @@ on:
       - completed
 
 jobs:
+  automate-metrics:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Automate Metrics
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
+        run: |
+          python -m venv analytics-api
+          source analytics-api/bin/activate
+          pip install google-analytics-data cartopy matplotlib
+
+          python .github/workflows/get-metrics.py
+          python .github/workflows/write-metrics-md.py
+      - name: Zip the repo
+        run: |
+          set -x
+          set -e
+          if [ -f repo.zip ]; then
+              rm -rf repo.zip
+          fi
+          zip -r repo.zip .
+
+  upload-zip:
+    needs: automate-metrics
+    runs-on: macos-latest
+    steps:
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-w-metrics
+          path: repo.zip
+
   find-pull-request:
+    needs: upload-zip
     uses: ProjectPythia/cookbook-actions/.github/workflows/find-pull-request.yaml@main
+
   deploy-preview:
     needs: find-pull-request
     if: github.event.workflow_run.conclusion == 'success'
