@@ -31,15 +31,16 @@ jobs:
           name: repo-w-metrics
           path: ./repo.zip
 
-  grab-and-build:
-    needs: automate-metrics
+  build:
+    needs: Automate Metrics
+    runs-on: ubuntu-latest  # Assuming Ubuntu, adjust as needed
     steps:
-      upload-artifact:  # Assuming this is the step name on line 33 (adjust if different)
-        uses: actions/upload-artifact@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v3
         with:
           name: repo-w-metrics
           path: ./repo.zip
-      build:
+      - name: Build the Book  # Simplified for clarity
         uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
         with:
           environment_file: 'environment.yml'
