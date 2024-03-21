@@ -54,6 +54,7 @@ jobs:
       build_command: 'make -j4 html'
       build_from_code_artifact: 'true'
       code_artifact_name: 'repo-w-metrics'
+      trigger_workflow: publish-site.yaml
 
   deploy:
     needs: build
