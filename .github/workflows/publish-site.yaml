@@ -27,6 +27,8 @@ jobs:
           python .github/workflows/write-metrics-md.py
 
   zip-repo:
+    needs: automate-metrics
+    runs-on: macos-latest
     steps:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -35,7 +37,7 @@ jobs:
           path: ./repo.zip
 
   build:
-    needs: automate-metrics
+    needs: zip-repo
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_file: 'environment.yml'
