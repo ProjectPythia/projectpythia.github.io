@@ -39,8 +39,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: repo-w-metrics
-          path: repo.zip
+          name: 'repo-w-metrics'
+          path: 'repo.zip'
 
   find-pull-request:
     needs: upload-zip

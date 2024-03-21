@@ -41,8 +41,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: repo-w-metrics
-          path: repo.zip
+          name: 'repo-w-metrics'
+          path: 'repo.zip'
 
   build:
     needs: upload-zip
@@ -52,8 +52,8 @@ jobs:
       environment_name: pythia
       path_to_notebooks: 'portal'
       build_command: 'make -j4 html'
-      build_from_code_artifact: true
-      code_artifact_name: repo-w-metrics
+      build_from_code_artifact: 'true'
+      code_artifact_name: 'repo-w-metrics'
 
   deploy:
     needs: build
