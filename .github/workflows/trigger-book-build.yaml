@@ -14,5 +14,5 @@ jobs:
     with:
       environment_name: pythia-book-dev
       artifact_name: book-zip-${{ github.event.number }}
-      code_artifact_name: {{ inputs.code_artifact_name }}
+      code_artifact_name: inputs.code_artifact_name
       # Other input options are possible, see ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml
