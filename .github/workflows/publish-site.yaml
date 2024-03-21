@@ -26,11 +26,13 @@ jobs:
           python .github/workflows/get-metrics.py
           python .github/workflows/write-metrics-md.py
 
-  zip-repo:
-    uses: actions/upload-artifact@v4
-    with:
-      name: repo-w-metrics
-      path: ./repo.zip
+zip-repo:
+  steps:
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: repo-w-metrics
+        path: ./repo.zip
 
   build:
     needs: automate-metrics
