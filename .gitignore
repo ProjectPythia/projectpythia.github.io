@@ -142,4 +142,4 @@ resource-gallery-submission-input.json
 # Analytics
 .github/workflows/analytics-api/
 portal/metrics/*.png
-cisl-viast-pythia-*.json
+cisl-vast-pythia-*.json
