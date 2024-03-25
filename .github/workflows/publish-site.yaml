@@ -41,7 +41,7 @@ jobs:
       build_command: 'make -j4 html'
       build_from_code_artifact: 'true'
       code_artifact_name: 'repo-zip'
-      trigger_workflow: publish-site.yaml
+      trigger_workflow: .github/workflows/publish-site.yaml
 
   deploy:
     needs: build
