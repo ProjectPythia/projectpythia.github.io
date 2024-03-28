@@ -9,5 +9,7 @@ dependencies:
 - pandas
 - pre-commit
 - pyyaml
-- sphinx-panels
-- sphinx-pythia-theme
+- pip
+
+pip:
+- git+https://github.com/ProjectPythia/sphinx-pythia-theme.git@theme-update
