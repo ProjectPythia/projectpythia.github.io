@@ -145,7 +145,6 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
             """
 
-        print(thumbnail)
         panels_body.append('\n'.join([m.lstrip() for m in new_panel.split('\n')]))
 
     panels_body = '\n'.join(panels_body)
