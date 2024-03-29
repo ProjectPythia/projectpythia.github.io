@@ -63,7 +63,7 @@ def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
 
 def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=None, menu_html='', max_descr_len=300):
     # Build the gallery file
-    panels_body = []
+    grid_body = []
     for item in items:
         if not item.get('thumbnail'):
             item['thumbnail'] = '_static/images/ebp-logo.png'
@@ -123,7 +123,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
             modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ''
-        new_panel = f"""\
+            new_card = f"""\
             :::{{grid-item-card}}
             :shadow: md
             :class-footer: card-footer
@@ -145,14 +145,14 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
             """
 
-        panels_body.append('\n'.join([m.lstrip() for m in new_panel.split('\n')]))
+        grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
-    panels_body = '\n'.join(panels_body)
+    grid_body = '\n'.join(grid_body)
 
     stitle = f'#### {subtitle}' if subtitle else ''
     stext = subtext if subtext else ''
 
-    panels = f"""\
+    grid = f"""\
         {title}
         {'=' * len(title)}
 
@@ -164,13 +164,12 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
         ::::{{grid}} 1
         :gutter: 4
 
-        {panels_body}
-        ````
+        {grid_body}
 
         <div class="modal-backdrop"></div>
         <script src="/_static/custom.js"></script>
     """
 
-    panels = '\n'.join([m.lstrip() for m in panels.split('\n')])
+    grid = '\n'.join([m.lstrip() for m in grid.split('\n')])
 
-    pathlib.Path(f'{filename}.md').write_text(panels)
+    pathlib.Path(f'{filename}.md').write_text(grid)
