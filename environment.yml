@@ -13,3 +13,4 @@ dependencies:
 
 pip:
 - git+https://github.com/ProjectPythia/sphinx-pythia-theme.git@theme-update
+- sphinx_design #will remove when theme is installed through PyPI or conda
