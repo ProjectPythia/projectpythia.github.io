@@ -31,16 +31,16 @@ def _generate_tag_menu(all_items, tag_key):
     )
 
     return f"""
-<div class="dropdown">
+        <div class="dropdown">
 
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-{tag_key.title()}
-</button>
-<ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
-{options}
-</ul>
-</div>
-"""
+        <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {tag_key.title()}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
+        {options}
+        </ul>
+        </div>
+        """
 
 
 def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
