@@ -10,3 +10,4 @@ dependencies:
 - pre-commit
 - pyyaml
 - sphinx-pythia-theme
+
