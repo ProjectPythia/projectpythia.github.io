@@ -1,7 +1,7 @@
 # Project Pythia
 
 :::{banner}
-:color: rgba(26, 100, 143, 0.85)
+:color: rgba(26, 100, 143, 0.9)
 :image: _static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
 :caption: Photo by Jeff Stapleton from Pexels
 :class: dark-banner

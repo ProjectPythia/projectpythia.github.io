@@ -1,10 +1,26 @@
+:root {
+  --pst-color-border: rgba(0, 0, 0, 0.125) !important;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 100%;  /* default is 60em */
+}
+.bd-page-width {
+  max-width: 100%;  /* default is 88rem */
+}
+
+.sd-card-footer {
+  background: rgba(var(--spt-color-gray-100), 1) !important;
+  padding: 4px;
+}
+
 main.banner-main #project-pythia {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 main.banner-main #project-pythia p {
-  font-size: 1.4rem;  /* default: 1.25rem */
+  font-size: 1.4rem;  /* default: 1.25rem * /
   /* font-weight: 700; default: 300 */
 }
 
@@ -74,10 +90,20 @@ main.banner-main #project-pythia a.btn-light {
   margin: auto 0;
   padding: 0;
   max-width: 160px;
+  background: transparent !important;
 }
 
 .card-subtitle {
   font-size: 0.8rem;
+}
+
+.my-2 {
+  color: inherit;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 576px) {

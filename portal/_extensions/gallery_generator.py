@@ -1,6 +1,5 @@
 import itertools
 import pathlib
-from textwrap import dedent
 
 from truncatehtml import truncate
 
@@ -32,16 +31,16 @@ def _generate_tag_menu(all_items, tag_key):
     )
 
     return f"""
-<div class="dropdown">
+        <div class="dropdown">
 
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-{tag_key.title()}
-</button>
-<ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
-{options}
-</ul>
-</div>
-"""
+        <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {tag_key.title()}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
+        {options}
+        </ul>
+        </div>
+        """
 
 
 def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
@@ -64,18 +63,18 @@ def generate_menu(all_items, submit_btn_txt=None, submit_btn_link=None):
 
 def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=None, menu_html='', max_descr_len=300):
     # Build the gallery file
-    panels_body = []
+    grid_body = []
     for item in items:
         if not item.get('thumbnail'):
-            item['thumbnail'] = '/_static/images/ebp-logo.png'
-        thumbnail = item['thumbnail']
+            item['thumbnail'] = '_static/images/ebp-logo.png'
+        thumbnail = item['thumbnail'][1:] if item['thumbnail'].startswith('/') else item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
 
         tags = [f'<span class="badge bg-primary">{tag}</span>' for tag in tag_list_f]
         tags = '\n'.join(tags)
 
-        tag_class_str = ' '.join(tag_list_f)
+        # tag_class_str = ' '.join(tag_list_f)
 
         author_strs = set()
         affiliation_strs = set()
@@ -108,69 +107,69 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
         if ellipsis_str in short_description:
             modal_str = f"""
-<div class="modal">
-<div class="content">
-<img src="{thumbnail}" class="modal-img" />
-<h3 class="display-3">{item["title"]}</h3>
-{authors_str}
-<br/>
-{affiliations_str}
-<p class="my-2">{item['description']}</p>
-<p class="my-2">{tags}</p>
-<p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
-</div>
-</div>
-"""
+            <div class="modal">
+            <div class="content">
+            <img src="{thumbnail}" class="modal-img" />
+            <h3 class="display-3">{item["title"]}</h3>
+            {authors_str}
+            <br/>
+            {affiliations_str}
+            <p class="my-2">{item['description']}</p>
+            <p class="my-2">{tags}</p>
+            <p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+            </div>
+            </div>
+            """
+            modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ''
+            new_card = f"""\
+            :::{{grid-item-card}}
+            :shadow: md
+            :class-footer: card-footer
+            <div class="d-flex gallery-card">
+            <img src="{thumbnail}" class="gallery-thumbnail" />
+            <div class="container">
+            <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
+            <p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
+            <p class="my-2">{short_description} </p>
+            </div>
+            </div>
+            {modal_str}
 
-        panels_body.append(
-            f"""\
----
-:column: + tagged-card {tag_class_str}
+            +++
 
-<div class="d-flex gallery-card">
-<img src="{thumbnail}" class="gallery-thumbnail" />
-<div class="container">
-<a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
-<p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
-<p class="my-2">{short_description}</p>
-</div>
-</div>
-{modal_str}
+            {tags}
 
-+++
+            :::
 
-{tags}
+            """
 
-"""
-        )
+        grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
-    panels_body = '\n'.join(panels_body)
+    grid_body = '\n'.join(grid_body)
 
     stitle = f'#### {subtitle}' if subtitle else ''
     stext = subtext if subtext else ''
 
-    panels = f"""
-# {title}
+    grid = f"""\
+        {title}
+        {'=' * len(title)}
 
-{stitle}
-{stext}
+        {stitle}
+        {stext}
 
-{menu_html}
+        {menu_html}
 
-````{{panels}}
-:column: col-12
-:card: +mb-4 w-100
-:header: d-none
-:body: p-3 m-0
-:footer: p-1
+        ::::{{grid}} 1
+        :gutter: 4
 
-{dedent(panels_body)}
-````
+        {grid_body}
 
-<div class="modal-backdrop"></div>
-<script src="/_static/custom.js"></script>
-"""
+        <div class="modal-backdrop"></div>
+        <script src="/_static/custom.js"></script>
+    """
 
-    pathlib.Path(f'{filename}.md').write_text(panels)
+    grid = '\n'.join([m.lstrip() for m in grid.split('\n')])
+
+    pathlib.Path(f'{filename}.md').write_text(grid)
