@@ -14,14 +14,8 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-import pathlib
 import shutil
 import sys
-from textwrap import dedent, indent
-
-import yaml
-from sphinx.application import Sphinx
-from sphinx.util import logging
 
 sys.path.insert(0, os.path.abspath('_extensions'))
 
@@ -38,6 +32,7 @@ copyright = '2024'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'resource_gallery_generator',
     'myst_nb',
     'ablog',
     'sphinx.ext.intersphinx',
@@ -150,45 +145,3 @@ shutil.copyfile('../CODEOFCONDUCT.md', 'code_of_conduct.md')
 # Blog configuration settings
 
 blog_post_pattern = ['posts/*.rst', 'posts/*.md']
-
-
-LOGGER = logging.getLogger('conf')
-
-
-# custom scripts for making a gallery of examples notebooks
-def update_gallery(app: Sphinx):
-    """Update the gallery of examples notebooks."""
-
-    notebooks = yaml.safe_load('resource_gallery.yaml')
-
-    LOGGER.info(notebooks)
-
-    items = [
-        f"""
-         .. grid-item-card::
-            :text-align: center
-
-            .. image:: {item['thumbnail']}
-                :alt: {item['title']}
-            +++
-            {item['title']}
-            """
-        for item in notebooks
-    ]
-
-    items_md = indent(dedent('\n'.join(items)), prefix='    ')
-    markdown = f"""
-.. grid:: 1 2 3 3
-    :gutter: 2
-
-    {items_md}
-    """
-
-    # pathlib.Path(app.srcdir, "notebook-examples.txt").write_text(markdown)
-
-    pathlib.Path('resource-gallery.md').write_text(markdown)
-
-
-# Allow for changes to be made to the css in the theme_overrides file
-def setup(app):
-    app.connect('builder-inited', update_gallery)

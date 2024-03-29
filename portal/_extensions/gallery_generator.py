@@ -1,6 +1,5 @@
 import itertools
 import pathlib
-from textwrap import dedent
 
 from truncatehtml import truncate
 
@@ -67,15 +66,15 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
     panels_body = []
     for item in items:
         if not item.get('thumbnail'):
-            item['thumbnail'] = '/_static/images/ebp-logo.png'
-        thumbnail = item['thumbnail']
+            item['thumbnail'] = '_static/images/ebp-logo.png'
+        thumbnail = item['thumbnail'][1:] if item['thumbnail'].startswith('/') else item['thumbnail']
         tag_list = sorted((itertools.chain(*item['tags'].values())))
         tag_list_f = [tag.replace(' ', '-') for tag in tag_list]
 
         tags = [f'<span class="badge bg-primary">{tag}</span>' for tag in tag_list_f]
         tags = '\n'.join(tags)
 
-        tag_class_str = ' '.join(tag_list_f)
+        # tag_class_str = ' '.join(tag_list_f)
 
         author_strs = set()
         affiliation_strs = set()
@@ -121,20 +120,19 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
             </div>
             </div>
             """
+            modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ''
-
-        panels_body.append(
-            f"""\
+        new_panel = f"""\
             :::{{grid-item-card}}
-            :column: + tagged-card {tag_class_str}
-
+            :shadow: md
+            :class-footer: card-footer
             <div class="d-flex gallery-card">
             <img src="{thumbnail}" class="gallery-thumbnail" />
             <div class="container">
             <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
             <p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
-            <p class="my-2">{short_description}</p>
+            <p class="my-2">{short_description} </p>
             </div>
             </div>
             {modal_str}
@@ -143,10 +141,11 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
             {tags}
 
-            ::::
+            :::
 
             """
-        )
+
+        panels_body.append('\n'.join([m.lstrip() for m in new_panel.split('\n')]))
 
     panels_body = '\n'.join(panels_body)
 
@@ -154,25 +153,24 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
     stext = subtext if subtext else ''
 
     panels = f"""\
-        # {title}
+        {title}
+        {'=' * len(title)}
 
         {stitle}
         {stext}
 
         {menu_html}
 
-        ````{{grid}}
-        :column: col-12
-        :card: +mb-4 w-100
-        :header: d-none
-        :body: p-3 m-0
-        :footer: p-1
+        ::::{{grid}} 1
+        :gutter: 4
 
-        {dedent(panels_body)}
+        {panels_body}
         ````
 
         <div class="modal-backdrop"></div>
         <script src="/_static/custom.js"></script>
     """
+
+    panels = '\n'.join([m.lstrip() for m in panels.split('\n')])
 
     pathlib.Path(f'{filename}.md').write_text(panels)
