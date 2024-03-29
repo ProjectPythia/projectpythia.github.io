@@ -10,7 +10,7 @@
 }
 
 .sd-card-footer {
-  background: rgba(0, 0, 0, 0.03) !important;
+  background: rgba(var(--spt-color-gray-100), 1) !important;
   padding: 4px;
 }
 
