@@ -9,4 +9,4 @@ dependencies:
 - pandas
 - pre-commit
 - pyyaml
-- sphinx-pythia-theme >2024.3.0
+- sphinx-pythia-theme
