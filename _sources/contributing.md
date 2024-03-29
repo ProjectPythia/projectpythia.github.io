@@ -350,7 +350,7 @@ Git has lots and lots of commands, each with lots and lots of
 options. Here we only cover the very basics. Detailed information
 about Git can be found [here](https://git-scm.com/), but your best
 friend for figuring out to do things with Git may be Google, and
-in particular StackOverflow.
+in particular [StackOverflow](https://stackoverflow.com/).
 
 #### Committing Your Code Locally with Git
 
