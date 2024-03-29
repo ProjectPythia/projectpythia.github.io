@@ -1,7 +1,5 @@
 import itertools
-import os
 import pathlib
-from textwrap import dedent
 
 from truncatehtml import truncate
 
@@ -76,7 +74,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
         tags = [f'<span class="badge bg-primary">{tag}</span>' for tag in tag_list_f]
         tags = '\n'.join(tags)
 
-        tag_class_str = ' '.join(tag_list_f)
+        # tag_class_str = ' '.join(tag_list_f)
 
         author_strs = set()
         affiliation_strs = set()
@@ -158,7 +156,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
     panels = f"""\
         {title}
         {'=' * len(title)}
-        
+
         {stitle}
         {stext}
 
