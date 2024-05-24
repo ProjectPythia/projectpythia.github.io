@@ -87,7 +87,7 @@ You can open issues, PRs, and continue making edits as necessary.
 
 <span class="d-flex justify-content-center py-4">
     <a href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
-        Submit a new Cookbook 
+        Submit a new Cookbook
     </a>
 </span>
 
