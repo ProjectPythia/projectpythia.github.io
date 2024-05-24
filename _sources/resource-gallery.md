@@ -1272,7 +1272,7 @@ Packages
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students </p>
 </div>
 </div>
@@ -1438,7 +1438,7 @@ Packages
 <img src="_static/thumbnails/ptss-txtfile.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Jog7ybd6amw" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1463,7 +1463,7 @@ Packages
 <img src="_static/thumbnails/ptss-datadict.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/5z6-t62x7Xs" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1488,7 +1488,7 @@ Packages
 <img src="_static/thumbnails/ptss-writingfx.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BerEf_3CsL8" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1513,7 +1513,7 @@ Packages
 <img src="_static/thumbnails/ptss-firstpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/6lbbTwGFcTc" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1538,7 +1538,7 @@ Packages
 <img src="_static/thumbnails/ptss-builtinpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/44QUMCh2ZHU" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1663,7 +1663,7 @@ Packages
 <img src="_static/thumbnails/ptss-cartopy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/ivmd3RluMiw" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1715,7 +1715,7 @@ Packages
 <img src="_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Max Grover, Project Pythia, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover, Drew Camron, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
