@@ -224,8 +224,8 @@ maxdepth: 1
 ---
 about.md
 contributing.md
+cookbook-guide.md
 code_of_conduct.md
-cookbook-gallery.md
 resource-gallery.md
 metrics.md
 ```
