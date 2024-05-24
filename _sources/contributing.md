@@ -1,4 +1,4 @@
-# Contributor's Guide
+# Project Pythia Contributor's Guide
 
 ## Overview
 
