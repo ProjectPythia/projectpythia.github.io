@@ -33,18 +33,18 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
 
 ## Update repository-specific text
 
-1. Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
-1. Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
+- Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
+- Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
   - title
   - thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
   - tags
-1. Edit the `CITATION.cff` file Change the following fields. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
+- Edit the `CITATION.cff` file Change the following fields. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
   - title
   - authors
   - authors' ORCID IDs and affiliation websites (optional)
   - description/abstract
   - Cookbook contributor name
-1. Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
+- Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
 
 ## Set up the environment
 
@@ -84,6 +84,12 @@ You can open issues, PRs, and continue making edits as necessary.
 1.  On GitHub make a new release! This is on the right nav side of the page from your code-view in the repository. Again ask for help if needed. Note Zenodo badge links will fail until you have made a release.
 
 ## Add your cookbook to the Cookbooks Gallery!
+
+<span class="d-flex justify-content-center py-4">
+    <a href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        Submit a new Cookbook
+    </a>
+</span>
 
 1. Navigate to the [Cookbooks Gallery](https://cookbooks.projectpythia.org/)
 1. Click the "Submit a New Cookbook" button, which will redirect you to a [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook)

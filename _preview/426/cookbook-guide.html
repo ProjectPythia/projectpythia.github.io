@@ -422,28 +422,26 @@ hosted on the <a class="reference external" href="https://cookbooks.projectpythi
 </section>
 <section id="update-repository-specific-text">
 <h2>Update repository-specific text<a class="headerlink" href="#update-repository-specific-text" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<ol class="arabic simple">
-<li><p>Automatically adjust link paths that need to be changed from the <code class="docutils literal notranslate"><span class="pre">cookbook-template</span></code> to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to “Actions” -&gt; “trigger-replace-links” -&gt; “Run workflow”.</p></li>
-<li><p>Edit <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and are used for filtering.</p></li>
-</ol>
 <ul class="simple">
+<li><p>Automatically adjust link paths that need to be changed from the <code class="docutils literal notranslate"><span class="pre">cookbook-template</span></code> to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to “Actions” -&gt; “trigger-replace-links” -&gt; “Run workflow”.</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and are used for filtering.</p>
+<ul>
 <li><p>title</p></li>
 <li><p>thumbnail (not logo). You may simply replace the default <code class="docutils literal notranslate"><span class="pre">thumbnail.png</span></code> with your own image</p></li>
 <li><p>tags</p></li>
 </ul>
-<ol class="arabic simple">
-<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file Change the following fields. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and on your Zenodo citation.</p></li>
-</ol>
-<ul class="simple">
+</li>
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file Change the following fields. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and on your Zenodo citation.</p>
+<ul>
 <li><p>title</p></li>
 <li><p>authors</p></li>
 <li><p>authors’ ORCID IDs and affiliation websites (optional)</p></li>
 <li><p>description/abstract</p></li>
 <li><p>Cookbook contributor name</p></li>
 </ul>
-<ol class="arabic simple">
+</li>
 <li><p>Edit the <code class="docutils literal notranslate"><span class="pre">notebooks/how-to-cite.md</span></code> file with your Cookbook title in the line, “The material in <This Cookbook> is licensed …”</p></li>
-</ol>
+</ul>
 </section>
 <section id="set-up-the-environment">
 <h2>Set up the environment<a class="headerlink" href="#set-up-the-environment" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
@@ -489,6 +487,11 @@ Once you have a set of notebooks that you are ready to share, there are various 
 </section>
 <section id="add-your-cookbook-to-the-cookbooks-gallery">
 <h2>Add your cookbook to the Cookbooks Gallery!<a class="headerlink" href="#add-your-cookbook-to-the-cookbooks-gallery" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<span class="d-flex justify-content-center py-4">
+    <a href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        Submit a new Cookbook
+    </a>
+</span>
 <ol class="arabic simple">
 <li><p>Navigate to the <a class="reference external" href="https://cookbooks.projectpythia.org/">Cookbooks Gallery</a></p></li>
 <li><p>Click the “Submit a New Cookbook” button, which will redirect you to a <a class="reference external" href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&amp;amp;labels=content%2Ccookbook-gallery-submission&amp;amp;template=update-cookbook-gallery.yaml&amp;amp;title=Update+Gallery+with+new+Cookbook">new cookbook PR template</a></p></li>
