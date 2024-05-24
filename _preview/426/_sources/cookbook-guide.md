@@ -91,7 +91,6 @@ You can open issues, PRs, and continue making edits as necessary.
     </a>
 </span>
 
-1. Navigate to the [Cookbooks Gallery](https://cookbooks.projectpythia.org/)
-1. Click the "Submit a New Cookbook" button, which will redirect you to a [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook)
-1. Add the root name of your cookbook repository (e.g., just "cesm-cookbook", not the whole URL) and any other information you'd like the team to know
-1. Your request will be reviewed, and you will be notified once your content has been accepted or if changes are requested
+1. Click the above button, or use this link to the [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook).
+1. Add the root name of your cookbook repository (e.g., just "cesm-cookbook", not the whole URL) and any other information you'd like the team to know.
+1. The Pythia team will review your content and work with you on any necessary updates.
