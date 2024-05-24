@@ -3,8 +3,8 @@
 ```{Note}
 This the top-level guide for Project Pythia and a great starting point for getting involved!
 
-We also have specific guides for 
-[contributing to Pythia Foundations](https://foundations.projectpythia.org/appendix/how-to-contribute.html) 
+We also have specific guides for
+[contributing to Pythia Foundations](https://foundations.projectpythia.org/appendix/how-to-contribute.html)
 and [contributing new Cookbooks](https://projectpythia.org/cookbook-guide.html).
 ```
 
@@ -75,7 +75,7 @@ Ecosystem. The Pythia Foundations content is hosted on a separate
 and contributors should consult the contributor’s guide there for
 information specific to Foundations. However, adding new, or changing
 existing Foundations content requires contributors to be familiar
-with a few technologies and workflows, described in Advanced 
+with a few technologies and workflows, described in Advanced
 Contributions below.
 
 ### Add a new Cookbook to Cookbooks Gallery
