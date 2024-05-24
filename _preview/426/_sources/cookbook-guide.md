@@ -33,18 +33,18 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
 
 ## Update repository-specific text
 
-- [ ] Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
-- [ ] Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
-  - [ ] title
-  - [ ] thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
-  - [ ] tags
-- [ ] Edit the `CITATION.cff` file Change the following fields. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
-  - [ ] title
-  - [ ] authors
-  - [ ] authors' ORCID IDs and affiliation websites (optional)
-  - [ ] description/abstract
-  - [ ] Cookbook contributor name
-- [ ] Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
+1. Automatically adjust link paths that need to be changed from the `cookbook-template` to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to "Actions" -> "trigger-replace-links" -> "Run workflow".
+1. Edit `_config.yml`. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and are used for filtering.
+  - title
+  - thumbnail (not logo). You may simply replace the default `thumbnail.png` with your own image
+  - tags
+1. Edit the `CITATION.cff` file Change the following fields. These will show up on your [card in the gallery](https://cookbooks.projectpythia.org/) and on your Zenodo citation.
+  - title
+  - authors
+  - authors' ORCID IDs and affiliation websites (optional)
+  - description/abstract
+  - Cookbook contributor name
+1. Edit the `notebooks/how-to-cite.md` file with your Cookbook title in the line, "The material in <This Cookbook> is licensed ..."
 
 ## Set up the environment
 
@@ -60,11 +60,11 @@ Your cookbook is now ready to have content added. In the rest of this guide, we 
 To add content, you should edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb`. You can add folders to organize notebooks into sections if applicable.
 Once you have a set of notebooks that you are ready to share, there are various edits that need to be made so that your cookbook is functional and polished. Here is a checklist to go through before moving on to the next step:
 
-- [ ] Add the notebooks to `_toc.yml` (the table of contents). See [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for syntax
-- [ ] Edit `README.md` as described in that file. This is the homepage of your cookbook, so it should be descriptive
-- [ ] If your cookbook requires more computing resources than available through GitHub Actions, change `execute_notebooks` from `cache` to `binder` in `_config.yml` to run your cookbook on the Pythia Binder
-- [ ] Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks
-- [ ] Ensure that your cookbook successfully builds and shows the executed code
+- Add the notebooks to `_toc.yml` (the table of contents). See [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for syntax
+- Edit `README.md` as described in that file. This is the homepage of your cookbook, so it should be descriptive
+- If your cookbook requires more computing resources than available through GitHub Actions, change `execute_notebooks` from `cache` to `binder` in `_config.yml` to run your cookbook on the Pythia Binder
+- Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks
+- Ensure that your cookbook successfully builds and shows the executed code
 
 ## Transfer cookbook to the [ProjectPythia](https://github.com/ProjectPythia) organization
 

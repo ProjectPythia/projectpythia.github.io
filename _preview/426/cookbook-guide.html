@@ -422,26 +422,28 @@ hosted on the <a class="reference external" href="https://cookbooks.projectpythi
 </section>
 <section id="update-repository-specific-text">
 <h2>Update repository-specific text<a class="headerlink" href="#update-repository-specific-text" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<ol class="arabic simple">
+<li><p>Automatically adjust link paths that need to be changed from the <code class="docutils literal notranslate"><span class="pre">cookbook-template</span></code> to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to “Actions” -&gt; “trigger-replace-links” -&gt; “Run workflow”.</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and are used for filtering.</p></li>
+</ol>
 <ul class="simple">
-<li><p>[ ] Automatically adjust link paths that need to be changed from the <code class="docutils literal notranslate"><span class="pre">cookbook-template</span></code> to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to “Actions” -&gt; “trigger-replace-links” -&gt; “Run workflow”.</p></li>
-<li><p>[ ] Edit <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and are used for filtering.</p>
-<ul>
-<li><p>[ ] title</p></li>
-<li><p>[ ] thumbnail (not logo). You may simply replace the default <code class="docutils literal notranslate"><span class="pre">thumbnail.png</span></code> with your own image</p></li>
-<li><p>[ ] tags</p></li>
+<li><p>title</p></li>
+<li><p>thumbnail (not logo). You may simply replace the default <code class="docutils literal notranslate"><span class="pre">thumbnail.png</span></code> with your own image</p></li>
+<li><p>tags</p></li>
 </ul>
-</li>
-<li><p>[ ] Edit the <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file Change the following fields. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and on your Zenodo citation.</p>
-<ul>
-<li><p>[ ] title</p></li>
-<li><p>[ ] authors</p></li>
-<li><p>[ ] authors’ ORCID IDs and affiliation websites (optional)</p></li>
-<li><p>[ ] description/abstract</p></li>
-<li><p>[ ] Cookbook contributor name</p></li>
+<ol class="arabic simple">
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file Change the following fields. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and on your Zenodo citation.</p></li>
+</ol>
+<ul class="simple">
+<li><p>title</p></li>
+<li><p>authors</p></li>
+<li><p>authors’ ORCID IDs and affiliation websites (optional)</p></li>
+<li><p>description/abstract</p></li>
+<li><p>Cookbook contributor name</p></li>
 </ul>
-</li>
-<li><p>[ ] Edit the <code class="docutils literal notranslate"><span class="pre">notebooks/how-to-cite.md</span></code> file with your Cookbook title in the line, “The material in <This Cookbook> is licensed …”</p></li>
-</ul>
+<ol class="arabic simple">
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">notebooks/how-to-cite.md</span></code> file with your Cookbook title in the line, “The material in <This Cookbook> is licensed …”</p></li>
+</ol>
 </section>
 <section id="set-up-the-environment">
 <h2>Set up the environment<a class="headerlink" href="#set-up-the-environment" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
@@ -459,11 +461,11 @@ hosted on the <a class="reference external" href="https://cookbooks.projectpythi
 <p>To add content, you should edit (and duplicate as necessary) the notebook template <code class="docutils literal notranslate"><span class="pre">notebooks/notebook-template.ipynb</span></code>. You can add folders to organize notebooks into sections if applicable.
 Once you have a set of notebooks that you are ready to share, there are various edits that need to be made so that your cookbook is functional and polished. Here is a checklist to go through before moving on to the next step:</p>
 <ul class="simple">
-<li><p>[ ] Add the notebooks to <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> (the table of contents). See <a class="reference external" href="https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml"><code class="docutils literal notranslate"><span class="pre">radar-cookbook/_toc.yml</span></code></a> for syntax</p></li>
-<li><p>[ ] Edit <code class="docutils literal notranslate"><span class="pre">README.md</span></code> as described in that file. This is the homepage of your cookbook, so it should be descriptive</p></li>
-<li><p>[ ] If your cookbook requires more computing resources than available through GitHub Actions, change <code class="docutils literal notranslate"><span class="pre">execute_notebooks</span></code> from <code class="docutils literal notranslate"><span class="pre">cache</span></code> to <code class="docutils literal notranslate"><span class="pre">binder</span></code> in <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> to run your cookbook on the Pythia Binder</p></li>
-<li><p>[ ] Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks</p></li>
-<li><p>[ ] Ensure that your cookbook successfully builds and shows the executed code</p></li>
+<li><p>Add the notebooks to <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> (the table of contents). See <a class="reference external" href="https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml"><code class="docutils literal notranslate"><span class="pre">radar-cookbook/_toc.yml</span></code></a> for syntax</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">README.md</span></code> as described in that file. This is the homepage of your cookbook, so it should be descriptive</p></li>
+<li><p>If your cookbook requires more computing resources than available through GitHub Actions, change <code class="docutils literal notranslate"><span class="pre">execute_notebooks</span></code> from <code class="docutils literal notranslate"><span class="pre">cache</span></code> to <code class="docutils literal notranslate"><span class="pre">binder</span></code> in <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> to run your cookbook on the Pythia Binder</p></li>
+<li><p>Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks</p></li>
+<li><p>Ensure that your cookbook successfully builds and shows the executed code</p></li>
 </ul>
 </section>
 <section id="transfer-cookbook-to-the-projectpythia-organization">
