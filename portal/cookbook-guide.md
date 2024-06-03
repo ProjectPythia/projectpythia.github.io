@@ -23,7 +23,7 @@ Before developing your cookbook, you should consider how it will access the data
 ## Use the template
 
 1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
-1. On https://github.com/ProjectPythia/cookbook-template, click "Use this template&rarr;Create a new repository"
+1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template&rarr;Create a new repository"
 1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description
 1. Choose "Include all branches" and create the repository. Your browser will be directed to the newly created repository under your GitHub account
 1. Under Settings&rarr;Pages, ensure that GitHub Pages is enabled. If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
