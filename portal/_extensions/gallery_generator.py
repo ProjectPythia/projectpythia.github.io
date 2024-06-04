@@ -123,7 +123,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
             modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ''
-        
+
         new_card = f"""\
         :::{{grid-item-card}}
         :shadow: md
