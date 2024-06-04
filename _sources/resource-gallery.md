@@ -90,43 +90,33 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/Xdev.png" class="gallery-thumbnail" />
-<div class="container">
-<a href="https://ncar.github.io/python-tutorial/index.html" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:xdev@ucar.edu">Xdev Team</a><br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
-<p class="my-2">A tutorial for getting started with Python aimed at scientists with experience in at least one other coding language. Designed to teach you Python, not package specific syntax.
-</p>
-</div>
-</div>
-
-
-+++
-
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xdev</span>
-
-:::
-
-
-:::{grid-item-card}
-:shadow: md
-:class-footer: card-footer
-<div class="d-flex gallery-card">
 <img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Workshop - Jupyter Notebooks Introduction</h4></a>
+<a href="https://unidata.github.io/python-training/python/intro-to-python/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Python Training</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
-<p class="my-2">Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
+<p class="my-2">Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/unidata_150x150.png" class="modal-img" />
+<h3 class="display-3">Unidata Python Training</h3>
+<strong>Author:</strong> Anonymous
+<br/>
+<strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a>
+<p class="my-2">Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 </p>
+<p class="my-2"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">unidata</span></p>
+<p class="mt-3 mb-0"><a href="https://unidata.github.io/python-training/python/intro-to-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
 
 +++
 
-<span class="badge bg-primary">jupyter</span>
+<span class="badge bg-primary">course</span>
 <span class="badge bg-primary">unidata</span>
 
 :::
@@ -150,6 +140,42 @@ Packages
 
 <span class="badge bg-primary">jupyter</span>
 <span class="badge bg-primary">unidata</span>
+
+:::
+
+
+:::{grid-item-card}
+:shadow: md
+:class-footer: card-footer
+<div class="d-flex gallery-card">
+<img src="_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/earth_env_data_science.png" class="modal-img" />
+<h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
+<br/>
+<strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
+<p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
+</p>
+<p class="my-2"><span class="badge bg-primary">course</span>
+<span class="badge bg-primary">pangeo</span></p>
+<p class="mt-3 mb-0"><a href="https://earth-env-data-science.github.io/intro" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">pangeo</span>
 
 :::
 
@@ -183,22 +209,31 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/climlablogo.png" class="gallery-thumbnail" />
+<img src="_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://brian-rose.github.io/ClimateLaboratoryBook/home" class="text-decoration-none"><h4 class="display-4 p-0">The Climate Laboratory</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Brian Rose<br/><strong>Affiliation:</strong> University of Albany</p>
-<p class="my-2">A hands on approach to climate physics and climate modeling. Fundamental climate processes are introduced through interactive and reproducible Python-based modeling exercises.  This JupyterBook serves as a course textbook at the University of Albany.
+<a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="text-decoration-none"><h4 class="display-4 p-0">Earth Analytics Python Course</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Earth Lab<br/><strong>Affiliation:</strong> University of Colorado Boulder</p>
+<p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/earth-lab-logo.png" class="modal-img" />
+<h3 class="display-3">Earth Analytics Python Course</h3>
+<strong>Author:</strong> Earth Lab
+<br/>
+<strong>Affiliation:</strong> University of Colorado Boulder
+<p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 </p>
+<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="mt-3 mb-0"><a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
 
 +++
 
-<span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">climlab</span>
 <span class="badge bg-primary">course</span>
 
 :::
@@ -250,12 +285,25 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/eScience_Logo_HR.png" class="gallery-thumbnail" />
+<img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://geohackweek.github.io/" class="text-decoration-none"><h4 class="display-4 p-0">Geohackweek 2019</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> eScience Institute<br/><strong>Affiliation:</strong> University of Washington</p>
-<p class="my-2">Geohackweek is a 5-day hackweek to be held at the University of Washington eScience Institute. Tutorials from the hackweek are available for everyone to follow (participants and non-participants alike).
+<a href="https://merely-useful.github.io/py-rse/" class="text-decoration-none"><h4 class="display-4 p-0">Research Software Engineering with Python</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Damien Irving, et al.<br/></p>
+<p class="my-2">We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/images/ebp-logo.png" class="modal-img" />
+<h3 class="display-3">Research Software Engineering with Python</h3>
+<strong>Author:</strong> Damien Irving, et al.
+<br/>
+
+<p class="my-2">We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software that makes research possible. People who do this are called research software engineers; the aim of this book is to get you ready for this role by helping you go from writing code for yourself to creating tools that help your entire field advance.
 </p>
+<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="mt-3 mb-0"><a href="https://merely-useful.github.io/py-rse/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -335,12 +383,25 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/british-columbia.jpg" class="gallery-thumbnail" />
+<img src="_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://clouds.eos.ubc.ca/~phil/courses/atsc301/" class="text-decoration-none"><h4 class="display-4 p-0">ATSC301- Atmospheric Radiation and Remote Sensing</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:paustin@eos.ubc.ca">Philip Austin</a><br/><strong>Affiliation:</strong> University of British Columbia</p>
-<p class="my-2">This course teaches radiation and remote sensing, but also covers: how to write clear, documented and tested code that can ingest, manipulate and display data, and how to turn equations into computer algorithms in Python.
+<a href="https://datacarpentry.org/organization-geospatial/" class="text-decoration-none"><h4 class="display-4 p-0">Introduction to Geospatial Concepts</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> The Carpentries<br/></p>
+<p class="my-2">The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/DC_logo_vision.png" class="modal-img" />
+<h3 class="display-3">Introduction to Geospatial Concepts</h3>
+<strong>Author:</strong> The Carpentries
+<br/>
+
+<p class="my-2">The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and covers the following topics: Introduction to raster and vector data format and attributes, examples of data types commonly stored in raster vs vector format, an introduction to categorical vs continuous raster data and multi-layer rasters, an introduction to the file types and R packages used in the remainder of this workshop, an introduction to coordinate reference systems and the PROJ4 format,  and an overview of commonly used programs and applications for working with geospatial data.
 </p>
+<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="mt-3 mb-0"><a href="https://datacarpentry.org/organization-geospatial/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -348,7 +409,6 @@ Packages
 +++
 
 <span class="badge bg-primary">course</span>
-<span class="badge bg-primary">remote-sensing</span>
 
 :::
 
@@ -448,10 +508,24 @@ Packages
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://contextily.readthedocs.io" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Documentation</h4></a>
+<a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="text-decoration-none"><h4 class="display-4 p-0">Contextily Tutorial</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors<br/></p>
-<p class="my-2">contextily is a small Python 3 (3.6 and above) package to retrieve tile maps from the internet. It can add those tiles as basemap to matplotlib figures or write tile maps to disk into geospatial raster files. Bounding boxes can be passed in both WGS84 (EPSG:4326) and Spheric Mercator (EPSG:3857).
+<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/images/ebp-logo.png" class="modal-img" />
+<h3 class="display-3">Contextily Tutorial</h3>
+<strong>Author:</strong> Dani Arribas-Bel & Contexily Contributors
+<br/>
+
+<p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated with other libraries such as geopandas and rasterio.
 </p>
+<p class="my-2"><span class="badge bg-primary">contextily</span>
+<span class="badge bg-primary">tutorial</span></p>
+<p class="mt-3 mb-0"><a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -459,8 +533,7 @@ Packages
 +++
 
 <span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">tutorial</span>
 
 :::
 
@@ -559,12 +632,121 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/geocat.png" class="gallery-thumbnail" />
+<img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://geocat-examples.readthedocs.io/" class="text-decoration-none"><h4 class="display-4 p-0">GeoCAT Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
-<p class="my-2">A gallery of plotting examples from GeoCat.
+<a href="https://geopandas.org" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Documentation</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/geopandas_icon.png" class="modal-img" />
+<h3 class="display-3">GeoPandas Documentation</h3>
+<strong>Author:</strong> GeoPandas developers
+<br/>
+
+<p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
 </p>
+<p class="my-2"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">geopandas</span></p>
+<p class="mt-3 mb-0"><a href="https://geopandas.org" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">geopandas</span>
+
+:::
+
+
+:::{grid-item-card}
+:shadow: md
+:class-footer: card-footer
+<div class="d-flex gallery-card">
+<img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://geopandas.org/gallery/index.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Gallery</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
+<p class="my-2">Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary">geopandas</span>
+
+:::
+
+
+:::{grid-item-card}
+:shadow: md
+:class-footer: card-footer
+<div class="d-flex gallery-card">
+<img src="_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://hvplot.holoviz.org/" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> HoloViz developers<br/></p>
+<p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/hvplot-wm.png" class="modal-img" />
+<h3 class="display-3">hvPlot</h3>
+<strong>Author:</strong> HoloViz developers
+<br/>
+
+<p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
+</p>
+<p class="my-2"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">hvPlot</span></p>
+<p class="mt-3 mb-0"><a href="https://hvplot.holoviz.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">hvPlot</span>
+
+:::
+
+
+:::{grid-item-card}
+:shadow: md
+:class-footer: card-footer
+<div class="d-flex gallery-card">
+<img src="_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://hvplot.holoviz.org/user_guide/index.html" class="text-decoration-none"><h4 class="display-4 p-0">hvPlot Tutorial</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> HoloViz developers<br/></p>
+<p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/hvplot-wm.png" class="modal-img" />
+<h3 class="display-3">hvPlot Tutorial</h3>
+<strong>Author:</strong> HoloViz developers
+<br/>
+
+<p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
+</p>
+<p class="my-2"><span class="badge bg-primary">data-visualization</span>
+<span class="badge bg-primary">hvPlot</span>
+<span class="badge bg-primary">tutorial</span></p>
+<p class="mt-3 mb-0"><a href="https://hvplot.holoviz.org/user_guide/index.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -572,75 +754,8 @@ Packages
 +++
 
 <span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">geocat-viz</span>
-
-:::
-
-
-:::{grid-item-card}
-:shadow: md
-:class-footer: card-footer
-<div class="d-flex gallery-card">
-<img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
-<div class="container">
-<a href="https://geopandas.org/gallery/index.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
-<p class="my-2">Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
-</p>
-</div>
-</div>
-
-
-+++
-
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span>
-
-:::
-
-
-:::{grid-item-card}
-:shadow: md
-:class-footer: card-footer
-<div class="d-flex gallery-card">
-<img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
-<div class="container">
-<a href="https://geopandas.org/gallery/index.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
-<p class="my-2">Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
-</p>
-</div>
-</div>
-
-
-+++
-
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span>
-
-:::
-
-
-:::{grid-item-card}
-:shadow: md
-:class-footer: card-footer
-<div class="d-flex gallery-card">
-<img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
-<div class="container">
-<a href="https://geopandas.org/gallery/index.html" class="text-decoration-none"><h4 class="display-4 p-0">GeoPandas Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoPandas developers<br/></p>
-<p class="my-2">Examples that show off the functionality in GeoPandas. They highlight many of the things you can do with this package, and show off some best-practices.
-</p>
-</div>
-</div>
-
-
-+++
-
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span>
+<span class="badge bg-primary">hvPlot</span>
+<span class="badge bg-primary">tutorial</span>
 
 :::
 
@@ -960,12 +1075,26 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
+<img src="_static/thumbnails/Enthought.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/" class="text-decoration-none"><h4 class="display-4 p-0">Unidata Numpy Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
-<p class="my-2">Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
+<a href="https://youtu.be/ZB7BZMhfPgk" class="text-decoration-none"><h4 class="display-4 p-0">Intro to Numerical Computing with NumPy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> A. Chabot-LeClerc<br/><strong>Affiliation:</strong> <a href="https://www.enthought.com/">Enthought</a></p>
+<p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/Enthought.png" class="modal-img" />
+<h3 class="display-3">Intro to Numerical Computing with NumPy</h3>
+<strong>Author:</strong> A. Chabot-LeClerc
+<br/>
+<strong>Affiliation:</strong> <a href="https://www.enthought.com/">Enthought</a>
+<p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
 </p>
+<p class="my-2"><span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">video</span></p>
+<p class="mt-3 mb-0"><a href="https://youtu.be/ZB7BZMhfPgk" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
@@ -973,7 +1102,7 @@ Packages
 +++
 
 <span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary">video</span>
 
 :::
 
@@ -1202,20 +1331,40 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<img src="_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://wrf-python.readthedocs.io/en/latest/plot.html" class="text-decoration-none"><h4 class="display-4 p-0">WRF-Python Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
-<p class="my-2">Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
+<a href="http://xarray.pydata.org/" class="text-decoration-none"><h4 class="display-4 p-0">Xarray</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Xarray Developers<br/></p>
+<p class="my-2">xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
+
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive,<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/xarray.png" class="modal-img" />
+<h3 class="display-3">Xarray</h3>
+<strong>Author:</strong> Xarray Developers
+<br/>
+
+<p class="my-2">xarray (formerly xray) is an open source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun!
+
+Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive, more concise, and less error-prone developer experience. The package includes a large and growing library of domain-agnostic functions for advanced analytics and visualization with these data structures.
+
+Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
 </p>
+<p class="my-2"><span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">xarray</span></p>
+<p class="mt-3 mb-0"><a href="http://xarray.pydata.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
 
 +++
 
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">wrf-python</span>
+<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary">xarray</span>
 
 :::
 
@@ -1329,33 +1478,45 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
+<img src="_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="http://gallery.pangeo.io" class="text-decoration-none"><h4 class="display-4 p-0">Pangeo Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Pangeo Community<br/><strong>Affiliation:</strong> <a href="http://pangeo.io/">Pangeo</a></p>
-<p class="my-2">A gallery of different Pangeo use cases </p>
+<a href="https://carpentrieslab.github.io/python-aos-lesson/" class="text-decoration-none"><h4 class="display-4 p-0">Python for Atmosphere and Ocean Science</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <br/><strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a></p>
+<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/DC_logo_vision.png" class="modal-img" />
+<h3 class="display-3">Python for Atmosphere and Ocean Science</h3>
+<strong>Author:</strong> 
+<br/>
+<strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
+<p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
+<p class="my-2"><span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">dask</span>
+<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary">xarray</span></p>
+<p class="mt-3 mb-0"><a href="https://carpentrieslab.github.io/python-aos-lesson/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
 
 +++
 
+<span class="badge bg-primary">atmospheric-science</span>
+<span class="badge bg-primary">cartopy</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
 <span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">glaciology</span>
-<span class="badge bg-primary">holoviews</span>
-<span class="badge bg-primary">hydrology</span>
-<span class="badge bg-primary">intake</span>
-<span class="badge bg-primary">jupyter</span>
 <span class="badge bg-primary">matplotlib</span>
 <span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pangeo</span>
-<span class="badge bg-primary">physical-oceanography</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">tutorial</span>
 <span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xgcm</span>
 
 :::
 
@@ -1438,7 +1599,7 @@ Packages
 <img src="_static/thumbnails/ptss-txtfile.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Jog7ybd6amw" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1463,7 +1624,7 @@ Packages
 <img src="_static/thumbnails/ptss-datadict.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/5z6-t62x7Xs" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1488,7 +1649,7 @@ Packages
 <img src="_static/thumbnails/ptss-writingfx.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BerEf_3CsL8" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1513,7 +1674,7 @@ Packages
 <img src="_static/thumbnails/ptss-firstpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/6lbbTwGFcTc" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1538,7 +1699,7 @@ Packages
 <img src="_static/thumbnails/ptss-builtinpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/44QUMCh2ZHU" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1715,7 +1876,7 @@ Packages
 <img src="_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Max Grover, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover, Project Pythia, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -2143,21 +2304,38 @@ Packages
 :shadow: md
 :class-footer: card-footer
 <div class="d-flex gallery-card">
-<img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
+<img src="_static/thumbnails/climatematch.png" class="gallery-thumbnail" />
 <div class="container">
-<a href="https://foundations.projectpythia.org/core/xarray.html" class="text-decoration-none"><h4 class="display-4 p-0">Pythia Foundations - Xarray</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:projectpythia@ucar.edu">Project Pythia</a><br/></p>
-<p class="my-2">This section of the Pythia Foundations book contains tutorials on using Xarray. Xarray is used widely in the geosciences and beyond for analysis of gridded N-dimensional datasets.
+<a href="https://academy.climatematch.io/about" class="text-decoration-none"><h4 class="display-4 p-0">Climatematch Academy</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Climatematch Team<br/></p>
+<p class="my-2">Climatematch Academy (CMA) is a wide-reaching, inclusive and approachable program aimed to introduce computational methods for climate science. CMA strives to create a globally diverse climate sciences community, trained on cutting edge techniques to access and analyze open-source modeled and observational<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+
+<div class="modal">
+<div class="content">
+<img src="_static/thumbnails/climatematch.png" class="modal-img" />
+<h3 class="display-3">Climatematch Academy</h3>
+<strong>Author:</strong> Climatematch Team
+<br/>
+
+<p class="my-2">Climatematch Academy (CMA) is a wide-reaching, inclusive and approachable program aimed to introduce computational methods for climate science. CMA strives to create a globally diverse climate sciences community, trained on cutting edge techniques to access and analyze open-source modeled and observational climate data.
 </p>
+<p class="my-2"><span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">neuromatch</span>
+<span class="badge bg-primary">pythia</span></p>
+<p class="mt-3 mb-0"><a href="https://academy.climatematch.io/about" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
 
 
 +++
 
-<span class="badge bg-primary">book</span>
+<span class="badge bg-primary">climate-science</span>
+<span class="badge bg-primary">course</span>
+<span class="badge bg-primary">neuromatch</span>
 <span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">xarray</span>
 
 :::
 
