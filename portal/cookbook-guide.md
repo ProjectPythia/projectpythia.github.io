@@ -34,17 +34,17 @@ Before developing your cookbook, you should consider how it will access the data
 1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled. If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
 1. Under Settings &rarr; Actions &rarr; General, allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
-Your cookbook is now ready to have content added! 
+Your cookbook is now ready to have content added!
 
 ```{Note}
 In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 ```
 
-## Transfer your cookbook repo to the ProjectPythia organization 
+## Transfer your cookbook repo to the ProjectPythia organization
 
 In order for your Cookbook to be included in the Gallery, the source repository needs to be housed within the [Project Pythia GitHub organization](https://github.com/ProjectPythia).
 
-You can keep your repository in your personal GitHub space while you're developing your content if that works better for you. Repository ownership can be transfered at any time. 
+You can keep your repository in your personal GitHub space while you're developing your content if that works better for you. Repository ownership can be transfered at any time.
 
 However, we recommend transfering to the Pythia organization early, for a few reasons:
 - Fewer settings to tweak later
@@ -52,7 +52,7 @@ However, we recommend transfering to the Pythia organization early, for a few re
 - Encourages collaboration
 
 ```{Note}
-You're still in control! You will always retain write access to your Cookbook repository even after transfering ownership to the Pythia organization. 
+You're still in control! You will always retain write access to your Cookbook repository even after transfering ownership to the Pythia organization.
 
 Also, _don't worry about breaking anything!_ Your repo will not affect any other Project Pythia content until you initiate the request to list it on the [Cookbook Gallery](https://cookbooks.projectpythia.org) (see below...)
 ```
@@ -159,8 +159,8 @@ The URL of your published book will depend on where the source repository is hou
 - If the repo is in the [Project Pythia organization](https://github.com/ProjectPythia), the book is published to `https://projectpythia.org/[YOUR_COOKBOOK_REPO_NAME]/`
 - If the repo is in your personal GitHub space, the book is published to `https://[YOUR_GITHUB_USERNAME].github.io/[YOUR_COOKBOOK_REPO_NAME]/`
 
-Here's a handy trick for finding your published book: 
-- On the home page of your GitHub repo, look for the "About" section in the right-hand side bar. 
+Here's a handy trick for finding your published book:
+- On the home page of your GitHub repo, look for the "About" section in the right-hand side bar.
 - Click the "gear" icon next to "About"
 - Select the checkbox "Use your GitHub Pages website".
 
@@ -185,10 +185,10 @@ By default, notebooks are executed on the free GitHub Actions service. This work
 
 For Cookbooks with substantial compute requirements, you have the option of routing notebook execution to a specialized Binder service maintained by the Project Pythia team.
 
-Here's how: 
-- Edit your `_config.yml` in the root of your repo. 
-- Change the field `execute_notebooks` from `cache` to `binder`. 
-- Commit that change and open a Pull Request to your main branch. 
+Here's how:
+- Edit your `_config.yml` in the root of your repo.
+- Change the field `execute_notebooks` from `cache` to `binder`.
+- Commit that change and open a Pull Request to your main branch.
 - That will trigger a build and preview as usual, but the notebook execution will happen on the Binder.
 - If all is well, merge the changes, and all further builds will work this way.
 
@@ -233,9 +233,9 @@ GitHub automatically tracks all contributions to your repository. The folks who 
 The file `_gallery_info.yml` determines how your Cookbook will be findable on the [gallery](https://cookbooks.projectpythia.org/). Edit this file with the following:
 
 - Replace `thumbnail.png` with your own image (which will appear on your gallery card)
-- Edit the tags under `domains` and `packages` as appropriate. Check out the existing filters on the [gallery page](https://cookbooks.projectpythia.org/) to get a sense of how these are used. 
+- Edit the tags under `domains` and `packages` as appropriate. Check out the existing filters on the [gallery page](https://cookbooks.projectpythia.org/) to get a sense of how these are used.
 
-### Generate a DOI 
+### Generate a DOI
 
 Once all the above steps are complete and your `CITATION.cff` file is correct, you are ready to "release" a tagged version of your book and generate your first DOI. We've tried to make this as painless as possible, but there are a few more steps to take initially.
 
@@ -246,7 +246,7 @@ As always, reach out to a Pythia team member for help with any of these steps!
 1. You will see a long list of GitHub repositories, both your personal repos as well as the ProjectPythia repos.
 1. Find your Cookbook repository (which needs to be housed in the ProjectPythia organization at this point), and toggle the "On" switch.
 1. Now, leave Zenodo and go back to GitHub
-1. Make a new release of your Cookbook repository! This is on the right nav side of the page from your code-view in the repository. 
+1. Make a new release of your Cookbook repository! This is on the right nav side of the page from your code-view in the repository.
 1. The DOI will now be generated automatically. The DOI badge on your homepage should link to the new archive that was just created on Zenodo.
 
 ### Initiate the Cookbook review process
