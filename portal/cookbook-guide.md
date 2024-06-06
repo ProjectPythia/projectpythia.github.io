@@ -95,7 +95,7 @@ Your repository includes automation for building and publishing your Cookbook, p
 - `.github/workflows/publish-book.yaml`
 - `.github/workflows/trigger-book-build.yaml`
 
-In each of these files, in the field called `environment_name:`, replace  `cookbook-dev` with the name your used in your `environment.yml` file (probably `<your-cookbook-name>-dev`). Commit these changes.
+In each of these files, in the field called `environment_name:`, replace  `cookbook-dev` with the name you used in your `environment.yml` file (probably `<your-cookbook-name>-dev`). Commit these changes.
 
 ```{Note}
 If these workflow files look mysterious and you don't know anything about how GitHub Actions work, don't worry! The Pythia team will help with any problems that arise with the Cookbook automation.
