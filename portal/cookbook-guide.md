@@ -31,7 +31,7 @@ Before developing your cookbook, you should consider how it will access the data
 1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template &rarr; Create a new repository"
 1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description
 1. Choose "Include all branches" and create the repository. Your browser will be directed to the newly created repository under your GitHub account
-1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled. If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
+1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled by checking that `Branch` is set to "gh-pages", and the folder set to "gh-pages/(root)". If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
 1. Under Settings &rarr; Actions &rarr; General, allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
 Your cookbook is now ready to have content added!
@@ -113,7 +113,7 @@ The file `README.md` serves as the homepage of your Cookbook, so it should be de
 
 ### Build your Cookbook locally
 
-You should be able to build your new Cookbook on your local machine by doing
+You should be able to build your new Cookbook on your local machine by running this command from the root of the repository:
 ```
 jupyter-book build .
 ```
