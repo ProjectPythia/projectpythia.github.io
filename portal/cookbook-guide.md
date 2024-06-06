@@ -125,7 +125,7 @@ The file `README.md` serves as the homepage of your Cookbook, so it should be de
 
 ### Build your Cookbook locally
 
-You should be able to build your new Cookbook on your local machine by doing
+You should be able to build your new Cookbook on your local machine by running this command from the root of the repository:
 ```
 jupyter-book build .
 ```
