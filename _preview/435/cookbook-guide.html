@@ -405,6 +405,7 @@ background knowledge.</p>
 <p>These instructions assume that your goal is to contribute a new Cookbook to the community-maintained collection housed on the <a class="reference external" href="https://cookbooks.projectpythia.org">Pythia Cookbook Gallery</a>.</p>
 <p>Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don’t focus on that use case in this guide.</p>
 </div>
+<p>If you’re not looking to create a <em>new</em> Cookbook, but rather looking for guidance on contributing to <em>existing</em> Cookbooks, first make sure you’re comfortable with the <a class="reference external" href="https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow">GitHub forking workflow</a>, then take a look at the section below on “Pull Requests and previews”.</p>
 <section id="data-access">
 <h2>Data access<a class="headerlink" href="#data-access" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
 <p>Before developing your cookbook, you should consider how it will access the data you plan to use. In loose order of preference, we recommend the following:</p>
@@ -560,15 +561,16 @@ background knowledge.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you have transfered your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will <em>only run on the upstream fork on the ProjectPythia organization</em> so there’s only one copy of the “published” book.</p>
-<p>It’s possible to enable the workflows on your personal fork, but usually unneccesary if you preview your work via Pull Requests (see below).</p>
+<p>It’s possible to enable the workflows on your personal fork, but usually unneccesary if you preview your work via Pull Requests (see next section)!</p>
 </div>
 </section>
 <section id="pull-requests-and-previews">
 <h3>Pull Requests and previews<a class="headerlink" href="#pull-requests-and-previews" title="Link to this heading"><i class="fas fa-link"></i></a></h3>
 <p>Collaboration on Cookbooks is best done via <a class="reference external" href="https://foundations.projectpythia.org/foundations/github/github-pull-request.html">Pull Requests</a>. Every PR on a Cookbook repository will trigger a “Preview” version of our publishing pipeline. The entire book is re-built from the updated source and the preview site is hosted at a temporary online location. This way, the team can safely see what the end product will look like after the PR is merged.</p>
 <p>The only difference between the “preview” pipeline and the regular publishing pipeline is the URL to which the rendered website is deployed. A temporary preview location is used, leaving the main book untouched until the PR is merged.</p>
+<p>To propose changes to a Cookbook, or even just to test something out temporarily, follow the <a class="reference external" href="https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow">forking workflow</a>: make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.</p>
 <p>A link to the preview will appear as a comment on the Pull Request once the publishing actions are complete. <em>If the link shows up but you get a 404 error when you click on it the first time, just wait a few minutes! There are some lags before the preview is fully deployed.</em></p>
-<p>Every new push to the PR branch will trigger another rebuild, and an updated preview. The preview will be deleted if and when the PR is closed or merged.</p>
+<p>Not satisfied? Keep making changes! Every new push to the feature branch on your personal fork will trigger another rebuild, and an updated preview. The preview will be deleted if and when the PR is closed or merged.</p>
 </section>
 <section id="building-on-the-pythia-binder">
 <h3>Building on the Pythia Binder<a class="headerlink" href="#building-on-the-pythia-binder" title="Link to this heading"><i class="fas fa-link"></i></a></h3>
