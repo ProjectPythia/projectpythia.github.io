@@ -147,11 +147,11 @@ Pythia Cookbooks are not just collections of notebooks! They are backed by GitHu
 ### About the publishing pipeline
 
 Any time you push new content to the `main` branch of your Cookbook repo, actions are triggered that do the following:
-- create an up-to-date build environment using your `environment.yml` file
-- execute all the notebooks in that environment
-- package the book into a styled website
-- check all the links in the website to make sure they are valid
-- deploy the styled website so it's visible to the world
+- Create an up-to-date build environment using your `environment.yml` file
+- Execute all the notebooks in that environment
+- Package the book into a styled website
+- Check all the links in the website to make sure they are valid
+- Deploy the styled website so it's visible to the world
 
 ### Where is my book?
 
