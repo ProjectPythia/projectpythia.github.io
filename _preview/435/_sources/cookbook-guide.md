@@ -16,8 +16,6 @@ These instructions assume that your goal is to contribute a new Cookbook to the 
 Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don't focus on that use case in this guide.
 ```
 
----
-
 ## Data access
 
 Before developing your cookbook, you should consider how it will access the data you plan to use. In loose order of preference, we recommend the following:
@@ -27,24 +25,21 @@ Before developing your cookbook, you should consider how it will access the data
 1. Discuss your larger data storage needs with the Pythia team. We are currently experimenting with cloud object storage for Cookbooks via NSF JetStream2.
 1. Provide the tools and/or clear documentation for accessing the data that you have stored somewhere else
 
----
-
 ## Use the template
 
 1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
 1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template &rarr; Create a new repository"
+1. Choose "Include all branches".
 1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description
-1. Choose "Include all branches" and create the repository. Your browser will be directed to the newly created repository under your GitHub account
+1. Create the repository. Your browser will be directed to the newly created repository under your GitHub account
 1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled by checking that `Branch` is set to "gh-pages", and the folder set to "gh-pages/(root)". If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
-1. Under Settings &rarr; Actions &rarr; General, allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
+1. Under Settings &rarr; Actions &rarr; General, make sure that "Read and write permissions" is selected. <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
 Your cookbook is now ready to have content added!
 
 ```{Note}
 In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 ```
-
----
 
 ## Transfer your cookbook repo to the ProjectPythia organization
 
@@ -71,18 +66,15 @@ Also, _don't worry about breaking anything!_ Your repo will not affect any other
 1. Once you are a member of the organization, navigate to the Settings of your cookbook repository and scroll down to the **Danger Zone**.
 1. Click "Transfer".
 1. Select or type "ProjectPythia", confirm, and transfer.
+1. When prompted about which teams to give access to, select "core". _This will enable the Pythia maintenance team to have full access to your repository._
 
 Once you have successfully transfered the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow).
-
----
 
 ## Customize the paths in your repository
 
 Whether the repository lives in your personal GitHub space or on the ProjectPythia organization, there are several paths and links in the repository code that need to be updated to reflect the current home of your cookbook source. This step is necessary to ensure that the cookbook building and publishing infrastructure works as intended.
 
 Fortunately this is quick and easy. Just run our custom GitHub action called `trigger-replace-links`: Navigate to "Actions" &rarr; "trigger-replace-links" &rarr; "Run workflow".
-
----
 
 ## Set up the computational environment
 
@@ -108,8 +100,6 @@ In each of these files, in the field called `environment_name:`, replace  `cookb
 ```{Note}
 If these workflow files look mysterious and you don't know anything about how GitHub Actions work, don't worry! The Pythia team will help with any problems that arise with the Cookbook automation.
 ```
-
----
 
 ## Develop your cookbook
 
@@ -148,8 +138,6 @@ To strip a notebook, in a Jupyter Lab session, go to "Kernel" &rarr; "Restart Ke
 
 You're ready to push content up to GitHub and trigger the automated publishing pipeline.
 
----
-
 ## Deploying your Cookbook
 
 Pythia Cookbooks are not just collections of notebooks! They are backed by GitHub-based automation that handles building, testing, previewing, and publishing the books online.
@@ -186,7 +174,6 @@ A link to the preview will appear as a comment on the Pull Request once the publ
 
 Every new push to the PR branch will trigger another rebuild, and an updated preview. The preview will be deleted if and when the PR is closed or merged.
 
-
 ### Building on the Pythia Binder
 
 ```{Note}
@@ -205,8 +192,6 @@ Here's how:
 ```{Note}
 The Binder uses your `environment.yml` file to create an image of an execution environment, which is stored for reuse. The time to execute your notebooks can vary, depending on whether the Binder needs to build a new image or not.
 ```
-
----
 
 ## Publish your Cookbook on the Pythia Gallery
 
