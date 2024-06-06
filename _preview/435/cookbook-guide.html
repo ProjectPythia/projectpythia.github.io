@@ -424,7 +424,7 @@ background knowledge.</p>
 <li><p>On the <a class="reference external" href="https://github.com/ProjectPythia/cookbook-template">Cookbook Template repository</a>, click “Use this template → Create a new repository”</p></li>
 <li><p>Give your repository a descriptive name followed by <code class="docutils literal notranslate"><span class="pre">-cookbook</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">hydrology-cookbook</span></code>, <code class="docutils literal notranslate"><span class="pre">hpc-cookbook</span></code>, <code class="docutils literal notranslate"><span class="pre">cesm-cookbook</span></code>) and a description</p></li>
 <li><p>Choose “Include all branches” and create the repository. Your browser will be directed to the newly created repository under your GitHub account</p></li>
-<li><p>Under Settings → Pages, ensure that GitHub Pages is enabled. If it is not, change the Branch from “None” to “gh-pages/(root)” and click “Save”</p></li>
+<li><p>Under Settings → Pages, ensure that GitHub Pages is enabled by checking that <code class="docutils literal notranslate"><span class="pre">Branch</span></code> is set to “gh-pages”, and the folder set to “gh-pages/(root)”. If it is not, change the Branch from “None” to “gh-pages/(root)” and click “Save”</p></li>
 <li><p>Under Settings → Actions → General, allow Github Actions to <strong>push</strong> to the repository <a class="reference internal" href="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"><img alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png" style="width: 901px;" /></a></p></li>
 </ol>
 <p>Your cookbook is now ready to have content added!</p>
@@ -510,7 +510,7 @@ background knowledge.</p>
 </section>
 <section id="build-your-cookbook-locally">
 <h3>Build your Cookbook locally<a class="headerlink" href="#build-your-cookbook-locally" title="Link to this heading"><i class="fas fa-link"></i></a></h3>
-<p>You should be able to build your new Cookbook on your local machine by doing</p>
+<p>You should be able to build your new Cookbook on your local machine by running this command from the root of the repository:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">.</span>
 </pre></div>
 </div>
