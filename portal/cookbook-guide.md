@@ -29,10 +29,11 @@ Before developing your cookbook, you should consider how it will access the data
 
 1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
 1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template &rarr; Create a new repository"
+1. Choose "Include all branches".
 1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description
-1. Choose "Include all branches" and create the repository. Your browser will be directed to the newly created repository under your GitHub account
+1. Create the repository. Your browser will be directed to the newly created repository under your GitHub account
 1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled by checking that `Branch` is set to "gh-pages", and the folder set to "gh-pages/(root)". If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
-1. Under Settings &rarr; Actions &rarr; General, allow Github Actions to **push** to the repository <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
+1. Under Settings &rarr; Actions &rarr; General, make sure that "Read and write permissions" is selected. <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
 Your cookbook is now ready to have content added!
 
@@ -65,6 +66,7 @@ Also, _don't worry about breaking anything!_ Your repo will not affect any other
 1. Once you are a member of the organization, navigate to the Settings of your cookbook repository and scroll down to the **Danger Zone**.
 1. Click "Transfer".
 1. Select or type "ProjectPythia", confirm, and transfer.
+1. When prompted about which teams to give access to, select "core". _This will enable the Pythia maintenance team to have full access to your repository._
 
 Once you have successfully transfered the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow).
 
