@@ -164,6 +164,12 @@ Here's a handy trick for finding your published book:
 
 The link to your published book will then be displayed on the home page of the repo.
 
+```{Note}
+If you have transfered your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will _only run on the upstream fork on the ProjectPythia organization_ so there's only one copy of the "published" book.
+
+It's possible to enable the workflows on your personal fork, but usually unneccesary if you preview your work via Pull Requests (see below).
+```
+
 ### Pull Requests and previews
 
 Collaboration on Cookbooks is best done via [Pull Requests](https://foundations.projectpythia.org/foundations/github/github-pull-request.html). Every PR on a Cookbook repository will trigger a "Preview" version of our publishing pipeline. The entire book is re-built from the updated source and the preview site is hosted at a temporary online location. This way, the team can safely see what the end product will look like after the PR is merged.
