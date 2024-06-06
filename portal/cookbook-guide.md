@@ -16,6 +16,8 @@ These instructions assume that your goal is to contribute a new Cookbook to the 
 Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don't focus on that use case in this guide.
 ```
 
+If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow), then take a look at the section below on "Pull Requests and previews".
+
 ## Data access
 
 Before developing your cookbook, you should consider how it will access the data you plan to use. In loose order of preference, we recommend the following:
@@ -167,7 +169,7 @@ The link to your published book will then be displayed on the home page of the r
 ```{Note}
 If you have transfered your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will _only run on the upstream fork on the ProjectPythia organization_ so there's only one copy of the "published" book.
 
-It's possible to enable the workflows on your personal fork, but usually unneccesary if you preview your work via Pull Requests (see below).
+It's possible to enable the workflows on your personal fork, but usually unneccesary if you preview your work via Pull Requests (see next section)!
 ```
 
 ### Pull Requests and previews
@@ -176,9 +178,11 @@ Collaboration on Cookbooks is best done via [Pull Requests](https://foundations.
 
 The only difference between the "preview" pipeline and the regular publishing pipeline is the URL to which the rendered website is deployed. A temporary preview location is used, leaving the main book untouched until the PR is merged.
 
+To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
+
 A link to the preview will appear as a comment on the Pull Request once the publishing actions are complete. _If the link shows up but you get a 404 error when you click on it the first time, just wait a few minutes! There are some lags before the preview is fully deployed._
 
-Every new push to the PR branch will trigger another rebuild, and an updated preview. The preview will be deleted if and when the PR is closed or merged.
+Not satisfied? Keep making changes! Every new push to the feature branch on your personal fork will trigger another rebuild, and an updated preview. The preview will be deleted if and when the PR is closed or merged.
 
 ### Building on the Pythia Binder
 
