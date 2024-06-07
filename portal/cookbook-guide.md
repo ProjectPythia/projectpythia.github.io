@@ -163,6 +163,7 @@ Here's a handy trick for finding your published book:
 - On the home page of your GitHub repo, look for the "About" section in the right-hand side bar.
 - Click the "gear" icon next to "About"
 - Select the checkbox "Use your GitHub Pages website".
+- Is that checkbox missing? That likely means you're looking at the "About" section of your _personal fork_, not the upstream fork. Navigate back to `https://github.com/ProjectPythia/[YOUR_COOKBOOK_REPO_NAME]/` and look for it there.
 
 The link to your published book will then be displayed on the home page of the repo.
 
