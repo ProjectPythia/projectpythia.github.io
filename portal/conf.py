@@ -118,7 +118,6 @@ html_theme_options = {
         'index': 'page-banner.html',
         'resource-gallery': 'page-standalone.html',
     },
-    'secondary_sidebar_items': [],
     'footer_logos': {
         'NCAR': '_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.png',
         'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',

@@ -227,5 +227,6 @@ contributing.md
 cookbook-guide.md
 code_of_conduct.md
 resource-gallery.md
+blog.md
 metrics.md
 ```
