@@ -209,5 +209,8 @@ html[data-them="dark"] h4.display-4.p-0 {
 
 html[data-theme="dark"] .sd-card-body.docutils {
   background-color: white;
+}
+
+html[data-them="dark"] container .p {
   color: black;
 }
