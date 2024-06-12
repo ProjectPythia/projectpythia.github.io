@@ -1509,3 +1509,20 @@
     domains:
     - data visualization
     - remote sensing
+
+- title: 'Herbie: Retrieve NWP Model Data'
+  url: https://herbie.readthedocs.io/
+  description: |
+    Herbie is a python package that downloads recent and archived numerical weather prediction (NWP) model output from different cloud archive sources. Its most popular capability is to download HRRR model data. NWP data in the GRIB2 format can be read with xarray+cfgrib.
+  authors:
+  - name: Brian Blaylock
+  tags:
+    packages:
+    - xarray
+    - cfgrib
+  formats:
+  - documentation
+  - tutorial
+  domains:
+  - atmospheric science
+  - numerical weather prediction
