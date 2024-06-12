@@ -127,29 +127,30 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
             modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ''
-            new_card = f"""
-                        :::{{grid-item-card}}
-                        :shadow: md
-                        :class-footer: card-footer
-                        :class-card: tagged-card {tag_classes}
 
-                        <div class="d-flex gallery-card">
-                            <img src="{thumbnail}" class="gallery-thumbnail" />
-                            <div class="container">
-                                <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
-                                <p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
-                                <p class="my-2">{short_description} </p>
-                            </div>
+        new_card = f"""
+                    :::{{grid-item-card}}
+                    :shadow: md
+                    :class-footer: card-footer
+                    :class-card: tagged-card {tag_classes}
+
+                    <div class="d-flex gallery-card">
+                        <img src="{thumbnail}" class="gallery-thumbnail" />
+                        <div class="container">
+                            <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
+                            <p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
+                            <p class="my-2">{short_description} </p>
                         </div>
-                        {modal_str}
+                    </div>
+                    {modal_str}
 
-                        +++
+                    +++
 
-                        {tags}
+                    {tags}
 
-                        :::
+                    :::
 
-                        """
+                    """
 
         grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
