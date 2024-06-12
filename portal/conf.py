@@ -34,7 +34,7 @@ copyright = '2024'
 extensions = [
     'resource_gallery_generator',
     'myst_nb',
-    "sphinx_design",
+    'sphinx_design',
     'ablog',
     'sphinx.ext.intersphinx',
 ]

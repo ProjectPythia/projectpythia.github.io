@@ -1,6 +1,7 @@
 import itertools
 import pathlib
 import re
+
 from truncatehtml import truncate
 
 
@@ -12,8 +13,10 @@ def _generate_sorted_tag_keys(all_items):
 def _title_case_preserve(s):
     return re.sub(r'\b(\w)', lambda m: m.group(1).upper(), s)
 
+
 def _make_class(s):
-    return re.sub(r'^\d+', '', s.replace(" ", "-").lower())
+    return re.sub(r'^\d+', '', s.replace(' ', '-').lower())
+
 
 def _generate_tag_set(all_items, tag_key=None):
     tag_set = set()
@@ -35,7 +38,7 @@ def _generate_tag_menu(all_items, tag_key):
     options = ''.join(
         f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={_make_class(tag)} onchange="change();">&nbsp;{tag}</label></li>'
         for tag in tag_list
-        )
+    )
 
     return f"""
             :::{{dropdown}} {tag_key}
@@ -78,7 +81,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
 
         tags = [f'<span class="badge bg-primary mybadges">{_title_case_preserve(tag)}</span>' for tag in tag_list_f]
         tags = '\n'.join(tags)
-        tag_classes = " ".join(tag_list_f)
+        tag_classes = ' '.join(tag_list_f)
 
         author_strs = set()
         affiliation_strs = set()
@@ -157,7 +160,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, subtext=No
     stitle = f'#### {subtitle}' if subtitle else ''
     stext = subtext if subtext else ''
 
-    grid_body = "\n".join(grid_body)
+    grid_body = '\n'.join(grid_body)
     grid = f"""\
         {title}
         {'=' * len(title)}
