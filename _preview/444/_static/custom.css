@@ -198,3 +198,16 @@ main.bd-content #main-content a {
 .sd-col.sd-d-flex-row.docutils.has-visible-card {
   margin-bottom: 1rem;
 }
+
+html[data-theme="dark"] h1.display-1 {
+  color: white;
+}
+
+html[data-them="dark"] h4.display-4.p-0 {
+  color: black !important;
+}
+
+html[data-theme="dark"] .sd-card-body.docutils {
+  background-color: white;
+  color: black;
+}
