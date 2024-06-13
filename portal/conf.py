@@ -140,6 +140,18 @@ linkcheck_ignore = [
     r'https://stackoverflow\.com/.*',
 ]
 
+# Optionally set the max output length directly if supported
+# If nbsphinx or myst_nb does not have this, refer to their documentation for correct usage
+nbsphinx_output_prompt = 300  # Example value
+
+# For MyST-NB, you can set notebook related configurations
+myst_nb_config = {
+    'output_prompt_height': 300,  # Example value, adjust as needed
+}
+
+# Ensure no invalid maxOutputLength setting
+maxOutputLength = 1024  # Setting a valid example value within the required range
+
 # CUSTOM SCRIPTS ==============================================================
 
 # Copy root files into content pages ------------------------------------------
