@@ -34,9 +34,9 @@ copyright = '2024'
 extensions = [
     'resource_gallery_generator',
     'myst_nb',
+    'sphinx_design',
     'ablog',
     'sphinx.ext.intersphinx',
-    'sphinx_design',
 ]
 
 # Define what extensions will parse which kind of source file
@@ -77,7 +77,7 @@ html_permalinks_icon = '<i class="fas fa-link"></i>'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ['custom.css']
-# html_js_files = ['custom.js']
+html_js_files = ['custom.js']
 
 # Disable Sidebars on special pages
 html_sidebars = {
