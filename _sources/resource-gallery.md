@@ -11,48 +11,40 @@ Resource Gallery
 <div class="ml-auto d-flex">
 <div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>
 
+:::{dropdown} affiliation
 <div class="dropdown">
-
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="affiliationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Affiliation
-</button>
-<ul class="dropdown-menu" aria-labelledby="affiliationDropdown">
-<li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=The-Alan-Turing-Institute onchange="change();">&nbsp;The alan turing institute</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=neuromatch onchange="change();">&nbsp;Neuromatch</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pythia onchange="change();">&nbsp;Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=unidata onchange="change();">&nbsp;Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=xdev onchange="change();">&nbsp;Xdev</label></li>
+<ul>
+<li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=neuromatch onchange="change();">&nbsp;Neuromatch</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=pythia onchange="change();">&nbsp;Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=the-alan-turing-institute onchange="change();">&nbsp;The Alan Turing Institute</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=unidata onchange="change();">&nbsp;Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input type="checkbox" rel=xdev onchange="change();">&nbsp;Xdev</label></li>
 </ul>
 </div>
+:::
 
 
+:::{dropdown} domains
 <div class="dropdown">
-
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="domainsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Domains
-</button>
-<ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmospheric-science onchange="change();">&nbsp;Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-science onchange="change();">&nbsp;Climate science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-formats onchange="change();">&nbsp;Data formats</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-visualization onchange="change();">&nbsp;Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ecology onchange="change();">&nbsp;Ecology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=environmental-science onchange="change();">&nbsp;Environmental science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=glaciology onchange="change();">&nbsp;Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hydrology onchange="change();">&nbsp;Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-geography onchange="change();">&nbsp;Physical geography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-oceanography onchange="change();">&nbsp;Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=remote-sensing onchange="change();">&nbsp;Remote sensing</label></li>
+<ul>
+<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmospheric-science onchange="change();">&nbsp;Atmospheric Science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-science onchange="change();">&nbsp;Climate Science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-formats onchange="change();">&nbsp;Data Formats</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data Science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-visualization onchange="change();">&nbsp;Data Visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ecology onchange="change();">&nbsp;Ecology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=environmental-science onchange="change();">&nbsp;Environmental Science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=glaciology onchange="change();">&nbsp;Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hydrology onchange="change();">&nbsp;Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-geography onchange="change();">&nbsp;Physical Geography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=physical-oceanography onchange="change();">&nbsp;Physical Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=remote-sensing onchange="change();">&nbsp;Remote Sensing</label></li>
 </ul>
 </div>
+:::
 
 
+:::{dropdown} formats
 <div class="dropdown">
-
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="formatsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Formats
-</button>
-<ul class="dropdown-menu" aria-labelledby="formatsDropdown">
+<ul>
 <li><label class="dropdown-item checkbox formats"><input type="checkbox" rel=book onchange="change();">&nbsp;Book</label></li><li><label class="dropdown-item checkbox formats"><input type="checkbox" rel=course onchange="change();">&nbsp;Course</label></li><li><label class="dropdown-item checkbox formats"><input type="checkbox" rel=documentation onchange="change();">&nbsp;Documentation</label></li><li><label class="dropdown-item checkbox formats"><input type="checkbox" rel=gallery onchange="change();">&nbsp;Gallery</label></li><li><label class="dropdown-item checkbox formats"><input type="checkbox" rel=tutorial onchange="change();">&nbsp;Tutorial</label></li><li><label class="dropdown-item checkbox formats"><input type="checkbox" rel=video onchange="change();">&nbsp;Video</label></li>
 </ul>
 </div>
+:::
 
 
+:::{dropdown} packages
 <div class="dropdown">
-
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="packagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Packages
-</button>
-<ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cfgrib onchange="change();">&nbsp;Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netCDF4 onchange="change();">&nbsp;Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pooch onchange="change();">&nbsp;Pooch</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pystac onchange="change();">&nbsp;Pystac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
+<ul>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cfgrib onchange="change();">&nbsp;Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-Comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvplot onchange="change();">&nbsp;HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netcdf4 onchange="change();">&nbsp;NetCDF4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pooch onchange="change();">&nbsp;Pooch</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure Python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pystac onchange="change();">&nbsp;Pystac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-Python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
 </ul>
 </div>
+:::
 
 </div>
 </div>
@@ -60,11 +52,14 @@ Packages
 
 
 ::::{grid} 1
-:gutter: 4
+:gutter: 0
+
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pure-python pythia tutorial xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/Xdev.png" class="gallery-thumbnail" />
 <div class="container">
@@ -78,17 +73,20 @@ Packages
 
 +++
 
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course unidata
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
@@ -107,8 +105,8 @@ Packages
 <strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a>
 <p class="my-2">Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">unidata</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Unidata</span></p>
 <p class="mt-3 mb-0"><a href="https://unidata.github.io/python-training/python/intro-to-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -116,15 +114,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">unidata</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Unidata</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card jupyter unidata
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
@@ -138,20 +139,23 @@ Packages
 
 +++
 
-<span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">unidata</span>
+<span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Unidata</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course pangeo
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a> </p>
 </div>
 </div>
@@ -160,13 +164,13 @@ Packages
 <div class="content">
 <img src="_static/thumbnails/earth_env_data_science.png" class="modal-img" />
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">pangeo</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Pangeo</span></p>
 <p class="mt-3 mb-0"><a href="https://earth-env-data-science.github.io/intro" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -174,15 +178,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">pangeo</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Pangeo</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card atmospheric-science book climate-science climlab course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/climlablogo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -196,18 +203,21 @@ Packages
 
 +++
 
-<span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">climlab</span>
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Climlab</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -226,7 +236,7 @@ Packages
 <strong>Affiliation:</strong> University of Colorado Boulder
 <p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span></p>
 <p class="mt-3 mb-0"><a href="https://www.earthdatascience.org/courses/earth-analytics-python/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -234,14 +244,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/earth-lab-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -255,14 +268,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/eScience_Logo_HR.png" class="gallery-thumbnail" />
 <div class="container">
@@ -276,14 +292,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -302,7 +321,7 @@ Packages
 
 <p class="my-2">We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software that makes research possible. People who do this are called research software engineers; the aim of this book is to get you ready for this role by helping you go from writing code for yourself to creating tools that help your entire field advance.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span></p>
 <p class="mt-3 mb-0"><a href="https://merely-useful.github.io/py-rse/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -310,14 +329,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/zero-to-pandas.png" class="gallery-thumbnail" />
 <div class="container">
@@ -331,14 +353,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/portland-state.png" class="gallery-thumbnail" />
 <div class="container">
@@ -352,14 +377,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course remote-sensing
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/british-columbia.jpg" class="gallery-thumbnail" />
 <div class="container">
@@ -373,15 +401,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">remote-sensing</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
@@ -400,7 +431,7 @@ Packages
 
 <p class="my-2">The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and covers the following topics: Introduction to raster and vector data format and attributes, examples of data types commonly stored in raster vs vector format, an introduction to categorical vs continuous raster data and multi-layer rasters, an introduction to the file types and R packages used in the remainder of this workshop, an introduction to coordinate reference systems and the PROJ4 format,  and an overview of commonly used programs and applications for working with geospatial data.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span></p>
 <p class="mt-3 mb-0"><a href="https://datacarpentry.org/organization-geospatial/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -408,14 +439,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
+<span class="badge bg-primary mybadges">Course</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card course data-science
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -429,15 +463,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">data-science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Data-Science</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card cartopy documentation
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/cartopy.png" class="gallery-thumbnail" />
 <div class="container">
@@ -451,15 +488,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Documentation</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card cartopy gallery
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/cartopy.png" class="gallery-thumbnail" />
 <div class="container">
@@ -473,15 +513,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Gallery</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card contextily documentation gallery
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -495,16 +538,19 @@ Packages
 
 +++
 
-<span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary mybadges">Contextily</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Gallery</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card contextily tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -523,8 +569,8 @@ Packages
 
 <p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated with other libraries such as geopandas and rasterio.
 </p>
-<p class="my-2"><span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Contextily</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 <p class="mt-3 mb-0"><a href="https://contextily.readthedocs.io/en/latest/intro_guide.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -532,15 +578,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Contextily</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card dask documentation
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/dask.png" class="gallery-thumbnail" />
 <div class="container">
@@ -554,15 +603,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">documentation</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Documentation</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card dask tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/dask.png" class="gallery-thumbnail" />
 <div class="container">
@@ -576,15 +628,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card geocat-comp tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
@@ -598,15 +653,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Geocat-Comp</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization gallery geocat-comp geocat-viz
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/geocat.png" class="gallery-thumbnail" />
 <div class="container">
@@ -620,17 +678,20 @@ Packages
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">geocat-viz</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Geocat-Comp</span>
+<span class="badge bg-primary mybadges">Geocat-Viz</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation geopandas
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
 <div class="container">
@@ -649,8 +710,8 @@ Packages
 
 <p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
 </p>
-<p class="my-2"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">geopandas</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Geopandas</span></p>
 <p class="mt-3 mb-0"><a href="https://geopandas.org" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -658,15 +719,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">geopandas</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Geopandas</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card gallery geopandas
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/geopandas_icon.png" class="gallery-thumbnail" />
 <div class="container">
@@ -680,15 +744,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Geopandas</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation hvPlot
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
 <div class="container">
@@ -707,8 +774,8 @@ Packages
 
 <p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
 </p>
-<p class="my-2"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">hvPlot</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">HvPlot</span></p>
 <p class="mt-3 mb-0"><a href="https://hvplot.holoviz.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -716,15 +783,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">hvPlot</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization hvPlot tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
 <div class="container">
@@ -743,9 +813,9 @@ Packages
 
 <p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
 </p>
-<p class="my-2"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">hvPlot</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 <p class="mt-3 mb-0"><a href="https://hvplot.holoviz.org/user_guide/index.html" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -753,16 +823,19 @@ Packages
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">hvPlot</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization gallery hvPlot
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/hvplot-wm.png" class="gallery-thumbnail" />
 <div class="container">
@@ -776,16 +849,19 @@ Packages
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">hvPlot</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation ipyleaflet
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -799,15 +875,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">ipyleaflet</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Ipyleaflet</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization documentation matplotlib
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/matplotlib.svg" class="gallery-thumbnail" />
 <div class="container">
@@ -821,16 +900,19 @@ Packages
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization matplotlib tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/matplotlib.svg" class="gallery-thumbnail" />
 <div class="container">
@@ -844,16 +926,19 @@ Packages
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization gallery matplotlib
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/matplotlib.svg" class="gallery-thumbnail" />
 <div class="container">
@@ -867,16 +952,19 @@ Packages
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">matplotlib</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation metpy
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
@@ -890,15 +978,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">metpy</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Metpy</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card metpy tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
@@ -912,15 +1003,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">metpy</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card metpy tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
@@ -934,15 +1028,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">metpy</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card gallery metpy
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/metpy.jpg" class="gallery-thumbnail" />
 <div class="container">
@@ -956,15 +1053,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">metpy</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Metpy</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card atmospheric-science gallery
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
@@ -978,15 +1078,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">gallery</span>
+<span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Gallery</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card metpy video
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/metpy-mondays.jpeg" class="gallery-thumbnail" />
 <div class="container">
@@ -1000,15 +1103,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">metpy</span>
-<span class="badge bg-primary">video</span>
+<span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Video</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation numpy
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/numpy.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1022,15 +1128,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Numpy</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card numpy
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/numpy.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1044,14 +1153,17 @@ Packages
 
 +++
 
-<span class="badge bg-primary">numpy</span>
+<span class="badge bg-primary mybadges">Numpy</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card numpy tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/unidata_150x150.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1065,15 +1177,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card numpy video
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/Enthought.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1092,8 +1207,8 @@ Packages
 <strong>Affiliation:</strong> <a href="https://www.enthought.com/">Enthought</a>
 <p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
 </p>
-<p class="my-2"><span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">video</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Video</span></p>
 <p class="mt-3 mb-0"><a href="https://youtu.be/ZB7BZMhfPgk" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -1101,15 +1216,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">video</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Video</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation pandas
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/pandas.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1123,15 +1241,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Pandas</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pandas tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/pandas.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1145,15 +1266,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card gallery pandas
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/pandas.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1167,15 +1291,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">pandas</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Pandas</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation rasterio
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1189,15 +1316,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">rasterio</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Rasterio</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card rasterio tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/rasterio-tutorial.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1211,15 +1341,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">rasterio</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Rasterio</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation siphon
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1233,15 +1366,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">siphon</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Siphon</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card siphon tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1255,15 +1391,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">siphon</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Siphon</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card gallery siphon
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/siphon.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1277,15 +1416,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">siphon</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Siphon</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation wrf-python
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1299,15 +1441,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">wrf-python</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Wrf-Python</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card gallery wrf-python
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1321,15 +1466,18 @@ Packages
 
 +++
 
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">wrf-python</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Wrf-Python</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card documentation xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1354,8 +1502,8 @@ Xarray introduces labels in the form of dimensions, coordinates and attributes o
 
 Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.
 </p>
-<p class="my-2"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 <p class="mt-3 mb-0"><a href="http://xarray.pydata.org/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -1363,15 +1511,18 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card tutorial xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1385,15 +1536,18 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card dask tutorial xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/xarray.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1407,21 +1561,24 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card matplotlib numpy pandas pure-python scipy tutorial
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students </p>
 </div>
 </div>
@@ -1429,19 +1586,22 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">scipy</span>
-<span class="badge bg-primary">tutorial</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Scipy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card dask gallery glaciology holoviews hydrology intake jupyter matplotlib numpy pandas pangeo physical-oceanography remote-sensing tutorial xarray xgcm
+
 <div class="d-flex gallery-card">
 <img src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1454,29 +1614,32 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">glaciology</span>
-<span class="badge bg-primary">holoviews</span>
-<span class="badge bg-primary">hydrology</span>
-<span class="badge bg-primary">intake</span>
-<span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pangeo</span>
-<span class="badge bg-primary">physical-oceanography</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xgcm</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Glaciology</span>
+<span class="badge bg-primary mybadges">Holoviews</span>
+<span class="badge bg-primary mybadges">Hydrology</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pangeo</span>
+<span class="badge bg-primary mybadges">Physical-Oceanography</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xgcm</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card atmospheric-science cartopy climate-science course dask matplotlib numpy xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/DC_logo_vision.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1494,14 +1657,14 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <br/>
 <strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
-<p class="my-2"><span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 <p class="mt-3 mb-0"><a href="https://carpentrieslab.github.io/python-aos-lesson/" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -1509,21 +1672,24 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card atmospheric-science cartopy climate-science course data-science matplotlib pandas physical-oceanography scipy tutorial video xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1536,25 +1702,28 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">data-science</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">physical-oceanography</span>
-<span class="badge bg-primary">scipy</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Data-Science</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Physical-Oceanography</span>
+<span class="badge bg-primary mybadges">Scipy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card The-Alan-Turing-Institute book cartopy climate-science dask data-science ecology environmental-science gallery geopandas holoviews hydrology intake matplotlib pandas pangeo physical-geography pooch pystac remote-sensing xarray
+
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1567,39 +1736,42 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">The-Alan-Turing-Institute</span>
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">data-science</span>
-<span class="badge bg-primary">ecology</span>
-<span class="badge bg-primary">environmental-science</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span>
-<span class="badge bg-primary">holoviews</span>
-<span class="badge bg-primary">hydrology</span>
-<span class="badge bg-primary">intake</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pangeo</span>
-<span class="badge bg-primary">physical-geography</span>
-<span class="badge bg-primary">pooch</span>
-<span class="badge bg-primary">pystac</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">The-Alan-Turing-Institute</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Data-Science</span>
+<span class="badge bg-primary mybadges">Ecology</span>
+<span class="badge bg-primary mybadges">Environmental-Science</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Geopandas</span>
+<span class="badge bg-primary mybadges">Holoviews</span>
+<span class="badge bg-primary mybadges">Hydrology</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pangeo</span>
+<span class="badge bg-primary mybadges">Physical-Geography</span>
+<span class="badge bg-primary mybadges">Pooch</span>
+<span class="badge bg-primary mybadges">Pystac</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pure-python pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-txtfile.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Jog7ybd6amw" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1608,23 +1780,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pure-python pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-datadict.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/5z6-t62x7Xs" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1633,23 +1808,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pure-python pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-writingfx.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BerEf_3CsL8" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1658,23 +1836,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pure-python pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-firstpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/6lbbTwGFcTc" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1683,23 +1864,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pure-python pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-builtinpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/44QUMCh2ZHU" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1708,18 +1892,21 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card jupyter pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-jupyter.jpeg" class="gallery-thumbnail" />
 <div class="container">
@@ -1733,23 +1920,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card numpy pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-numpy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/kstc-6uz7AQ" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Numpy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The content to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
 </p>
 </div>
@@ -1758,23 +1948,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization matplotlib pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-matplotlib.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/EiPRIdHQEmE" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1783,24 +1976,27 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-oop.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/GEFnL8C62u8" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Object Oriented Programming</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1809,22 +2005,25 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card cartopy data-visualization matplotlib pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-cartopy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/ivmd3RluMiw" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1833,20 +2032,23 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card git pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-git.png" class="gallery-thumbnail" />
 <div class="container">
@@ -1860,23 +2062,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">git</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Git</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pandas pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Max Grover, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Max Grover, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1885,23 +2090,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pythia tutorial video xarray xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-xarray1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Ss4ryKukhi4" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1910,23 +2118,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card pythia tutorial video xarray xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-xarray2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/2H_4drBwORY" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1935,23 +2146,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card dask pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-dask1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/wn-QM6QUB_U" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1960,23 +2174,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card dask pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-dask2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/yn4_-1pHC5k" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1985,23 +2202,26 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card data-visualization geocat-viz pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-geocatplot.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/It231le1fAU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
 </p>
 </div>
@@ -2010,24 +2230,27 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">geocat-viz</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Geocat-Viz</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card geocat-comp pythia tutorial video xdev
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ptss-geocatcomp.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - GeoCAT-Comp</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</A>.
 </p>
 </div>
@@ -2036,18 +2259,21 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span>
+<span class="badge bg-primary mybadges">Geocat-Comp</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2061,15 +2287,18 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book pure-python pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2083,16 +2312,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book jupyter pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2106,16 +2338,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book git pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2129,16 +2364,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">git</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Git</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book numpy pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2152,16 +2390,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book data-visualization matplotlib pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2175,17 +2416,20 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book cartopy data-visualization pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2199,17 +2443,20 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book datetime pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2223,16 +2470,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">datetime</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Datetime</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book pandas pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2246,16 +2496,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book data-formats netCDF4 pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2269,17 +2522,20 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">data-formats</span>
-<span class="badge bg-primary">netCDF4</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Data-Formats</span>
+<span class="badge bg-primary mybadges">NetCDF4</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card book pythia xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/ProjectPythia_Blue.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2293,16 +2549,19 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card climate-science course neuromatch pythia
+
 <div class="d-flex gallery-card">
 <img src="_static/thumbnails/climatematch.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2321,10 +2580,10 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 <p class="my-2">Climatematch Academy (CMA) is a wide-reaching, inclusive and approachable program aimed to introduce computational methods for climate science. CMA strives to create a globally diverse climate sciences community, trained on cutting edge techniques to access and analyze open-source modeled and observational climate data.
 </p>
-<p class="my-2"><span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">neuromatch</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Neuromatch</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 <p class="mt-3 mb-0"><a href="https://academy.climatematch.io/about" class="btn btn-outline-primary btn-block">Visit Website</a></p>
 </div>
 </div>
@@ -2332,17 +2591,20 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">neuromatch</span>
-<span class="badge bg-primary">pythia</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Neuromatch</span>
+<span class="badge bg-primary mybadges">Pythia</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card cartopy data-visualization matplotlib netCDF4 numpy remote-sensing xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2356,20 +2618,23 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">netCDF4</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">NetCDF4</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
+
 
 
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
+:class-card: tagged-card cfgrib xarray
+
 <div class="d-flex gallery-card">
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
@@ -2383,12 +2648,12 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 
 +++
 
-<span class="badge bg-primary">cfgrib</span>
-<span class="badge bg-primary">xarray</span>
+<span class="badge bg-primary mybadges">Cfgrib</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 
 :::
 
 
 
 <div class="modal-backdrop"></div>
-<script src="/_static/custom.js"></script>
+<script src="../html/_static/custom.js"></script>

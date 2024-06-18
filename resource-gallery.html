@@ -31,8 +31,8 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css?v=ba7ce088" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=89dcb427" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=c1bdfaaf" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
@@ -42,8 +42,8 @@
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-T9KGMX7VHZ"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -58,6 +58,7 @@
                 gtag('config', 'G-T9KGMX7VHZ');
             </script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'resource-gallery';</script>
+    <script src="_static/custom.js?v=d32380c4"></script>
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
@@ -67,7 +68,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="10 June 2024"/>
+    <meta name="docbuild:last-update" content="18 June 2024"/>
 
 
 
@@ -233,45 +234,49 @@
 </div>
 <div class="ml-auto d-flex">
 <div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">affiliation</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
-<button aria-expanded="false" aria-haspopup="true" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-toggle="dropdown" id="affiliationDropdown" type="button">
-Affiliation
-</button>
-<ul aria-labelledby="affiliationDropdown" class="dropdown-menu">
-<li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="The-Alan-Turing-Institute" type="checkbox"/> The alan turing institute</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="neuromatch" type="checkbox"/> Neuromatch</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pythia" type="checkbox"/> Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="unidata" type="checkbox"/> Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="xdev" type="checkbox"/> Xdev</label></li>
+<ul>
+<li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="neuromatch" type="checkbox"/> Neuromatch</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pythia" type="checkbox"/> Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="the-alan-turing-institute" type="checkbox"/> The Alan Turing Institute</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="unidata" type="checkbox"/> Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="xdev" type="checkbox"/> Xdev</label></li>
 </ul>
 </div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">domains</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
-<button aria-expanded="false" aria-haspopup="true" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-toggle="dropdown" id="domainsDropdown" type="button">
-Domains
-</button>
-<ul aria-labelledby="domainsDropdown" class="dropdown-menu">
-<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmospheric-science" type="checkbox"/> Atmospheric science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate-science" type="checkbox"/> Climate science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-formats" type="checkbox"/> Data formats</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-science" type="checkbox"/> Data science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-visualization" type="checkbox"/> Data visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="ecology" type="checkbox"/> Ecology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="environmental-science" type="checkbox"/> Environmental science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="glaciology" type="checkbox"/> Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="hydrology" type="checkbox"/> Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-geography" type="checkbox"/> Physical geography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-oceanography" type="checkbox"/> Physical oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="remote-sensing" type="checkbox"/> Remote sensing</label></li>
+<ul>
+<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmospheric-science" type="checkbox"/> Atmospheric Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate-science" type="checkbox"/> Climate Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-formats" type="checkbox"/> Data Formats</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-science" type="checkbox"/> Data Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-visualization" type="checkbox"/> Data Visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="ecology" type="checkbox"/> Ecology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="environmental-science" type="checkbox"/> Environmental Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="glaciology" type="checkbox"/> Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="hydrology" type="checkbox"/> Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-geography" type="checkbox"/> Physical Geography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-oceanography" type="checkbox"/> Physical Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="remote-sensing" type="checkbox"/> Remote Sensing</label></li>
 </ul>
 </div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">formats</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
-<button aria-expanded="false" aria-haspopup="true" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-toggle="dropdown" id="formatsDropdown" type="button">
-Formats
-</button>
-<ul aria-labelledby="formatsDropdown" class="dropdown-menu">
+<ul>
 <li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="book" type="checkbox"/> Book</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="course" type="checkbox"/> Course</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="documentation" type="checkbox"/> Documentation</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="gallery" type="checkbox"/> Gallery</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="tutorial" type="checkbox"/> Tutorial</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="video" type="checkbox"/> Video</label></li>
 </ul>
 </div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">packages</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
-<button aria-expanded="false" aria-haspopup="true" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-toggle="dropdown" id="packagesDropdown" type="button">
-Packages
-</button>
-<ul aria-labelledby="packagesDropdown" class="dropdown-menu">
-<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cfgrib" type="checkbox"/> Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="climlab" type="checkbox"/> Climlab</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="contextily" type="checkbox"/> Contextily</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> Dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="datetime" type="checkbox"/> Datetime</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-comp" type="checkbox"/> Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geopandas" type="checkbox"/> Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="git" type="checkbox"/> Git</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvPlot" type="checkbox"/> Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> Intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="ipyleaflet" type="checkbox"/> Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="jupyter" type="checkbox"/> Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> Metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="netCDF4" type="checkbox"/> Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> Numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pandas" type="checkbox"/> Pandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pooch" type="checkbox"/> Pooch</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pure-python" type="checkbox"/> Pure python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pystac" type="checkbox"/> Pystac</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="rasterio" type="checkbox"/> Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="scipy" type="checkbox"/> Scipy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="siphon" type="checkbox"/> Siphon</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="wrf-python" type="checkbox"/> Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xgcm" type="checkbox"/> Xgcm</label></li>
+<ul>
+<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cfgrib" type="checkbox"/> Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="climlab" type="checkbox"/> Climlab</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="contextily" type="checkbox"/> Contextily</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> Dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="datetime" type="checkbox"/> Datetime</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-comp" type="checkbox"/> Geocat-Comp</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geopandas" type="checkbox"/> Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="git" type="checkbox"/> Git</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvplot" type="checkbox"/> HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> Intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="ipyleaflet" type="checkbox"/> Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="jupyter" type="checkbox"/> Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> Metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="netcdf4" type="checkbox"/> NetCDF4</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> Numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pandas" type="checkbox"/> Pandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pooch" type="checkbox"/> Pooch</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pure-python" type="checkbox"/> Pure Python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pystac" type="checkbox"/> Pystac</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="rasterio" type="checkbox"/> Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="scipy" type="checkbox"/> Scipy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="siphon" type="checkbox"/> Siphon</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="wrf-python" type="checkbox"/> Wrf-Python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xgcm" type="checkbox"/> Xgcm</label></li>
 </ul>
 </div>
 </div>
+</details></div>
 </div>
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-4 sd-g-xs-4 sd-g-sm-4 sd-g-md-4 sd-g-lg-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pure-python pythia tutorial xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/Xdev.png"/>
@@ -284,15 +289,15 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course unidata docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
@@ -311,20 +316,20 @@ Packages
 <strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a>
 <p class="my-2">Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">unidata</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Unidata</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://unidata.github.io/python-training/python/intro-to-python/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">unidata</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Unidata</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card jupyter unidata docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
@@ -337,19 +342,19 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">unidata</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Unidata</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course pangeo docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/earth_env_data_science.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://earth-env-data-science.github.io/intro"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a> </p>
 </div>
 </div>
@@ -357,25 +362,25 @@ Packages
 <div class="content">
 <img class="modal-img" src="_static/thumbnails/earth_env_data_science.png"/>
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">pangeo</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Pangeo</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://earth-env-data-science.github.io/intro">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">pangeo</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Pangeo</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmospheric-science book climate-science climlab course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/climlablogo.png"/>
@@ -388,16 +393,16 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">climlab</span>
-<span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Climlab</span>
+<span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/earth-lab-logo.png"/>
@@ -416,18 +421,18 @@ Packages
 <strong>Affiliation:</strong> University of Colorado Boulder
 <p class="my-2">Earth analytics is an intermediate, multidisciplinary course that addresses major questions in Earth science and teaches students to use the analytical tools necessary to undertake exploration of heterogeneous ‘big scientific data’. This course is designed for graduate students and students participating in the Earth Data Analytics Professional Certificate.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://www.earthdatascience.org/courses/earth-analytics-python/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/earth-lab-logo.png"/>
@@ -440,12 +445,12 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/eScience_Logo_HR.png"/>
@@ -458,12 +463,12 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -481,18 +486,18 @@ Packages
 <br/>
 <p class="my-2">We believe every researcher should know how to write short programs that clean and analyze data in a reproducible way and how to use version control to keep track of what they have done. But just as some astronomers spend their careers designing telescopes, some researchers focus on building the software that makes research possible. People who do this are called research software engineers; the aim of this book is to get you ready for this role by helping you go from writing code for yourself to creating tools that help your entire field advance.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://merely-useful.github.io/py-rse/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/zero-to-pandas.png"/>
@@ -505,12 +510,12 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/portland-state.png"/>
@@ -523,12 +528,12 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course remote-sensing docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/british-columbia.jpg"/>
@@ -541,13 +546,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">remote-sensing</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/DC_logo_vision.png"/>
@@ -565,18 +570,18 @@ Packages
 <br/>
 <p class="my-2">The goal of this lesson is to provide an introduction to core geospatial data concepts. It is intended for learners who have no prior experience working with geospatial data, and as a pre-requisite for the R for Raster and Vector Data lesson . This lesson can be taught in approximately 75 minutes and covers the following topics: Introduction to raster and vector data format and attributes, examples of data types commonly stored in raster vs vector format, an introduction to categorical vs continuous raster data and multi-layer rasters, an introduction to the file types and R packages used in the remainder of this workshop, an introduction to coordinate reference systems and the PROJ4 format,  and an overview of commonly used programs and applications for working with geospatial data.
 </p>
-<p class="my-2"><span class="badge bg-primary">course</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Course</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://datacarpentry.org/organization-geospatial/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card course data-science docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -589,13 +594,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">course</span>
-<span class="badge bg-primary">data-science</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Data-Science</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cartopy documentation docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/cartopy.png"/>
@@ -608,13 +613,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">documentation</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Documentation</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cartopy gallery docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/cartopy.png"/>
@@ -627,13 +632,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">gallery</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Gallery</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card contextily documentation gallery docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -646,14 +651,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">gallery</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Contextily</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Gallery</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card contextily tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -671,20 +676,20 @@ Packages
 <br/>
 <p class="my-2">Welcome to the taster guide for contextily, the package for contextual tiles in Python. In this notebook, we will show the basic functionality available in contextily, a package to work with web-tiles for background maps. To do that, we will use additional data to illustrate contextily can be integrated with other libraries such as geopandas and rasterio.
 </p>
-<p class="my-2"><span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Contextily</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://contextily.readthedocs.io/en/latest/intro_guide.html">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">contextily</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Contextily</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask documentation docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/dask.png"/>
@@ -697,13 +702,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">documentation</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Documentation</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/dask.png"/>
@@ -716,13 +721,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card geocat-comp tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/geocat.png"/>
@@ -735,13 +740,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Geocat-Comp</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization gallery geocat-comp geocat-viz docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/geocat.png"/>
@@ -754,15 +759,15 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">geocat-viz</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Geocat-Comp</span>
+<span class="badge bg-primary mybadges">Geocat-Viz</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation geopandas docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/geopandas_icon.png"/>
@@ -780,20 +785,20 @@ Packages
 <br/>
 <p class="my-2">GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by pandas to allow spatial operations on geometric types. Geometric operations are performed by shapely. Geopandas further depends on fiona for file access and matplotlib for plotting.
 </p>
-<p class="my-2"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">geopandas</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Geopandas</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://geopandas.org">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">geopandas</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Geopandas</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card gallery geopandas docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/geopandas_icon.png"/>
@@ -806,13 +811,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Geopandas</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation hvplot docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/hvplot-wm.png"/>
@@ -830,20 +835,20 @@ Packages
 <br/>
 <p class="my-2">hvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data in all the abovementioned formats. hvPlot can integrate neatly with the individual libraries if an extension mechanism for the native plot APIs is offered, or it can be used as a standalone component.
 </p>
-<p class="my-2"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">hvPlot</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">HvPlot</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://hvplot.holoviz.org/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">hvPlot</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">HvPlot</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization hvplot tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/hvplot-wm.png"/>
@@ -861,22 +866,22 @@ Packages
 <br/>
 <p class="my-2">The user guide provides a detailed introduction to the API and features of hvPlot. In the Introduction you will learn how to activate the plotting API and start using it. Next you will learn to use the API for tabular data and get an overview of the types of plots you can generate and how to customize them; including how to customize interactivity using widgets. Next is an overview on how to display and save plots in the notebook, on the commandline, and from a script. Another section will introduce you to generating subplots from your data. Once the basics are covered you can learn how to use the plotting API for specific types of data including streaming data, gridded data network graphs, geographic data, and timeseries data.
 </p>
-<p class="my-2"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">hvPlot</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://hvplot.holoviz.org/user_guide/index.html">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">hvPlot</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization gallery hvplot docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/hvplot-wm.png"/>
@@ -889,14 +894,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">hvPlot</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">HvPlot</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation ipyleaflet docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -909,13 +914,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">ipyleaflet</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Ipyleaflet</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization documentation matplotlib docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/matplotlib.svg"/>
@@ -928,14 +933,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">matplotlib</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Matplotlib</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization matplotlib tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/matplotlib.svg"/>
@@ -948,14 +953,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization gallery matplotlib docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/matplotlib.svg"/>
@@ -968,14 +973,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">matplotlib</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Matplotlib</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation metpy docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy.jpg"/>
@@ -988,13 +993,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">metpy</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Metpy</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card metpy tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy.jpg"/>
@@ -1007,13 +1012,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">metpy</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card metpy tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
@@ -1026,13 +1031,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">metpy</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card gallery metpy docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy.jpg"/>
@@ -1045,13 +1050,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">metpy</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Metpy</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmospheric-science gallery docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
@@ -1064,13 +1069,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">gallery</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Gallery</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card metpy video docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy-mondays.jpeg"/>
@@ -1083,13 +1088,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">metpy</span>
-<span class="badge bg-primary">video</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Video</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation numpy docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/numpy.png"/>
@@ -1102,13 +1107,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">numpy</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Numpy</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card numpy docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/numpy.png"/>
@@ -1121,12 +1126,12 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">numpy</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Numpy</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card numpy tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
@@ -1139,13 +1144,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card numpy video docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/Enthought.png"/>
@@ -1164,20 +1169,20 @@ Packages
 <strong>Affiliation:</strong> <a href="https://www.enthought.com/">Enthought</a>
 <p class="my-2">NumPy provides Python with a powerful array processing library and an elegant syntax that is well suited to expressing computational algorithms clearly and efficiently. We'll introduce basic array syntax and array indexing, review some of the available mathematical functions in NumPy, and discuss how to write your own routines. Along the way, we'll learn just enough about matplotlib to display results from our examples.
 </p>
-<p class="my-2"><span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">video</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Video</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://youtu.be/ZB7BZMhfPgk">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">video</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Video</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation pandas docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/pandas.png"/>
@@ -1190,13 +1195,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">pandas</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Pandas</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pandas tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/pandas.png"/>
@@ -1209,13 +1214,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card gallery pandas docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/pandas.png"/>
@@ -1228,13 +1233,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">pandas</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Pandas</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation rasterio docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -1247,13 +1252,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">rasterio</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Rasterio</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card rasterio tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/rasterio-tutorial.png"/>
@@ -1266,13 +1271,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">rasterio</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Rasterio</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation siphon docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/siphon.png"/>
@@ -1285,13 +1290,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">siphon</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Siphon</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card siphon tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/siphon.png"/>
@@ -1304,13 +1309,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">siphon</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Siphon</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card gallery siphon docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/siphon.png"/>
@@ -1323,13 +1328,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">siphon</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Siphon</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation wrf-python docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -1342,13 +1347,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">wrf-python</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Wrf-Python</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card gallery wrf-python docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -1361,13 +1366,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">wrf-python</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Wrf-Python</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/xarray.png"/>
@@ -1388,20 +1393,20 @@ Packages
 <p class="sd-card-text">Xarray introduces labels in the form of dimensions, coordinates and attributes on top of raw NumPy-like arrays, which allows for a more intuitive, more concise, and less error-prone developer experience. The package includes a large and growing library of domain-agnostic functions for advanced analytics and visualization with these data structures.</p>
 <p class="sd-card-text">Xarray is inspired by and borrows heavily from pandas, the popular data analysis package focused on labelled tabular data. It is particularly tailored to working with netCDF files, which were the source of xarray’s data model, and integrates tightly with dask for parallel computing.</p>
 </p>
-<p class="my-2"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="http://xarray.pydata.org/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">documentation</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card tutorial xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/xarray.png"/>
@@ -1414,13 +1419,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask tutorial xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/xarray.png"/>
@@ -1433,36 +1438,36 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card matplotlib numpy pandas pure-python scipy tutorial docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">scipy</span>
-<span class="badge bg-primary">tutorial</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Scipy</span>
+<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask gallery glaciology holoviews hydrology intake jupyter matplotlib numpy pandas pangeo physical-oceanography remote-sensing tutorial xarray xgcm docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png"/>
@@ -1474,27 +1479,27 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">glaciology</span>
-<span class="badge bg-primary">holoviews</span>
-<span class="badge bg-primary">hydrology</span>
-<span class="badge bg-primary">intake</span>
-<span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pangeo</span>
-<span class="badge bg-primary">physical-oceanography</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xgcm</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Glaciology</span>
+<span class="badge bg-primary mybadges">Holoviews</span>
+<span class="badge bg-primary mybadges">Hydrology</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pangeo</span>
+<span class="badge bg-primary mybadges">Physical-Oceanography</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xgcm</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmospheric-science cartopy climate-science course dask matplotlib numpy xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/DC_logo_vision.png"/>
@@ -1512,32 +1517,32 @@ Packages
 <br/>
 <strong>Affiliation:</strong> <a href="https://datacarpentry.org/">Data Carpentry</a>
 <p class="my-2">Lesson materials for a one-day workshop on using Python in the atmosphere and ocean sciences. Useful for any geoscientist working with raster (a.k.a. “gridded”) data, the lessons cover packages/tools including conda, xarray, dask and netCDF, as well as best practices including functions, command line programs, defensive programming, provenance tracking and version control via git/GitHub.</p>
-<p class="my-2"><span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://carpentrieslab.github.io/python-aos-lesson/">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmospheric-science cartopy climate-science course data-science matplotlib pandas physical-oceanography scipy tutorial video xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -1549,23 +1554,23 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">atmospheric-science</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">data-science</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">physical-oceanography</span>
-<span class="badge bg-primary">scipy</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Data-Science</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Physical-Oceanography</span>
+<span class="badge bg-primary mybadges">Scipy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card the-alan-turing-institute book cartopy climate-science dask data-science ecology environmental-science gallery geopandas holoviews hydrology intake matplotlib pandas pangeo physical-geography pooch pystac remote-sensing xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png"/>
@@ -1577,142 +1582,142 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">The-Alan-Turing-Institute</span>
-<span class="badge bg-primary">book</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">data-science</span>
-<span class="badge bg-primary">ecology</span>
-<span class="badge bg-primary">environmental-science</span>
-<span class="badge bg-primary">gallery</span>
-<span class="badge bg-primary">geopandas</span>
-<span class="badge bg-primary">holoviews</span>
-<span class="badge bg-primary">hydrology</span>
-<span class="badge bg-primary">intake</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pangeo</span>
-<span class="badge bg-primary">physical-geography</span>
-<span class="badge bg-primary">pooch</span>
-<span class="badge bg-primary">pystac</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">The-Alan-Turing-Institute</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Data-Science</span>
+<span class="badge bg-primary mybadges">Ecology</span>
+<span class="badge bg-primary mybadges">Environmental-Science</span>
+<span class="badge bg-primary mybadges">Gallery</span>
+<span class="badge bg-primary mybadges">Geopandas</span>
+<span class="badge bg-primary mybadges">Holoviews</span>
+<span class="badge bg-primary mybadges">Hydrology</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pangeo</span>
+<span class="badge bg-primary mybadges">Physical-Geography</span>
+<span class="badge bg-primary mybadges">Pooch</span>
+<span class="badge bg-primary mybadges">Pystac</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pure-python pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-txtfile.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/Jog7ybd6amw"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pure-python pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-datadict.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/5z6-t62x7Xs"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pure-python pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-writingfx.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/BerEf_3CsL8"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pure-python pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-firstpackage.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/6lbbTwGFcTc"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pure-python pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-builtinpackage.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/44QUMCh2ZHU"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card jupyter pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-jupyter.jpeg"/>
@@ -1725,106 +1730,106 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card numpy pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-numpy.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/kstc-6uz7AQ"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Numpy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The content to follow along with this video is hosted on this <a href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization matplotlib pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-matplotlib.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/EiPRIdHQEmE"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <a href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-oop.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/GEFnL8C62u8"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Object Oriented Programming</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <a href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cartopy data-visualization matplotlib pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-cartopy.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/ivmd3RluMiw"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <a href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card git pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-git.png"/>
@@ -1837,171 +1842,171 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">git</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Git</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pandas pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-pandas.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/BsV3ek7qsiM"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Max Grover, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Max Grover, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <a href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pythia tutorial video xarray xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-xarray1.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/Ss4ryKukhi4"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pythia tutorial video xarray xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-xarray2.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/2H_4drBwORY"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xarray</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-dask1.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/wn-QM6QUB_U"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-dask2.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/yn4_-1pHC5k"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">dask</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-visualization geocat-viz pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-geocatplot.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/It231le1fAU"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <a href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">geocat-viz</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Geocat-Viz</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card geocat-comp pythia tutorial video xdev docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-geocatcomp.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://www.youtube.com/watch?v=uiWDQKI8YTQ&amp;t=6s"><h4 class="display-4 p-0">Python Tutorial Seminar Series - GeoCAT-Comp</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> A Kootz, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, A Kootz<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <a href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</a>.
 </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">geocat-comp</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">tutorial</span>
-<span class="badge bg-primary">video</span>
-<span class="badge bg-primary">xdev</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Geocat-Comp</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Video</span>
+<span class="badge bg-primary mybadges">Xdev</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2014,13 +2019,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book pure-python pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2033,14 +2038,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pure-python</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pure-Python</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book jupyter pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2053,14 +2058,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">jupyter</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Jupyter</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book git pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2073,14 +2078,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">git</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Git</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book numpy pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2093,14 +2098,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book data-visualization matplotlib pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2113,15 +2118,15 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book cartopy data-visualization pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2134,15 +2139,15 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book datetime pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2155,14 +2160,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">datetime</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Datetime</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book pandas pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2175,14 +2180,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pandas</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pandas</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book data-formats netcdf4 pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2195,15 +2200,15 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">data-formats</span>
-<span class="badge bg-primary">netCDF4</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Data-Formats</span>
+<span class="badge bg-primary mybadges">NetCDF4</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card book pythia xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/ProjectPythia_Blue.png"/>
@@ -2216,14 +2221,14 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">book</span>
-<span class="badge bg-primary">pythia</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Pythia</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card climate-science course neuromatch pythia docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/climatematch.png"/>
@@ -2241,24 +2246,24 @@ Packages
 <br/>
 <p class="my-2">Climatematch Academy (CMA) is a wide-reaching, inclusive and approachable program aimed to introduce computational methods for climate science. CMA strives to create a globally diverse climate sciences community, trained on cutting edge techniques to access and analyze open-source modeled and observational climate data.
 </p>
-<p class="my-2"><span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">neuromatch</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="my-2"><span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Neuromatch</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 <p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://academy.climatematch.io/about">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">climate-science</span>
-<span class="badge bg-primary">course</span>
-<span class="badge bg-primary">neuromatch</span>
-<span class="badge bg-primary">pythia</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Course</span>
+<span class="badge bg-primary mybadges">Neuromatch</span>
+<span class="badge bg-primary mybadges">Pythia</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cartopy data-visualization matplotlib netcdf4 numpy remote-sensing xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -2271,18 +2276,18 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">cartopy</span>
-<span class="badge bg-primary">data-visualization</span>
-<span class="badge bg-primary">matplotlib</span>
-<span class="badge bg-primary">netCDF4</span>
-<span class="badge bg-primary">numpy</span>
-<span class="badge bg-primary">remote-sensing</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">NetCDF4</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cfgrib xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
@@ -2295,13 +2300,13 @@ Packages
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary">cfgrib</span>
-<span class="badge bg-primary">xarray</span></p>
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Cfgrib</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
 </div>
 </div>
 </div>
 <div class="modal-backdrop"></div>
-<script src="/_static/custom.js"></script>
+<script src="../html/_static/custom.js"></script>
 </div>
 </div>
 </section></div></div>
@@ -2404,7 +2409,7 @@ Packages
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 10 June 2024.
+          Last updated on 18 June 2024.
         </p>
       </div>
     </div>
