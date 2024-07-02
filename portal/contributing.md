@@ -1,6 +1,6 @@
 # Project Pythia Contributor's Guide
 
-```{Note}
+```{note}
 This the top-level guide for Project Pythia and a great starting point for getting involved!
 
 We also have specific guides for
@@ -143,7 +143,7 @@ command line tool for collaborative software version control, while
 GitHub is an online, web-accessible service that greatly simplifies
 using the powerful, yet often complex, Git.
 
-```{Note}
+```{note}
 GitHub operates entirely within a web browser. You do not
 need to install anything, but you will need to set up a free GitHub
 account. Git is a command line tool that is most likely already
@@ -225,7 +225,7 @@ you wish to use it. Consult the repo-specific contributor’s guide
 for information on “Building the site”, and
 follow the steps described therein.
 
-```{Note}
+```{note}
 Repository-specific contributor's
 information can always be accessed by navigating your web browser
 to the appropriate Project Pythia GitHub repository,
@@ -326,7 +326,7 @@ on this later.
 
 For further information see the [GitHub docs on forking a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-```{Note}
+```{note}
 At this point you should have a local copy of the repository
 in your current working directory. You can safely make changes to
 any of the contents. Once you are ready to contribute your changes
@@ -390,7 +390,7 @@ $ git commit PATH_TO_NEW_FILE
 
 Which will prompt you for a log message. Please provide something informative. If you make lots of changes, it is best to make multiple commits, broken up into related chunks. E.g. “fixed x”, “added documentation”, “added testing”.
 
-```{Note}
+```{note}
 When executing `git commit` after `git add PATH_TO_NEW_FILE`,
 specifying the path to the new file isn't stricly necessary. However,
 in other instances the file path argument is required. We include it
@@ -411,7 +411,7 @@ $ git status
 
 after your `commit` to verify everything looks as expected.
 
-```{Note}
+```{note}
 `pre-commit` _hooks_ can sometimes be difficult to satisfy. You
 can always tell **git** not to run the _hook_ by
 running `git commit --no-verify`.
