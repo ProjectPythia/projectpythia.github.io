@@ -13,7 +13,7 @@ Take note especially of the **Develop your cookbook**, **Authorship and the CITA
 - [ ] **Confirm that the individual notebooks within your Cookbook adhere to the [notebook template](https://github.com/ProjectPythia/cookbook-template/blob/main/notebooks/notebook-template.ipynb)**.
 If the template does not fit your Cookbook’s needs, that’s fine too! Simply let us know here in this issue.
 - [ ] **Finalize your Cookbook repository name.**
-We generally encourage the <content>-cookbook name structure.
+We generally encourage the `<content>-cookbook` name structure.
 - [ ] **Finalize your environment.yml.**
 Specify the minimum number of packages needed to reproduce your content. Document any necessary conflicts and pinned package versions in an issue. In your Cookbook README or a content preamble, describe any unique dependencies handled outside the conda environment.
 - [ ] **Sufficiently document your code** with markdown narrative text, supplementary media and references, and citations.
