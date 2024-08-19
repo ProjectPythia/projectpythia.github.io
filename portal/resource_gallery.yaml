@@ -18,34 +18,6 @@
     - pythia
     - xdev
 
-- title: Unidata Python Training
-  url: https://unidata.github.io/python-training/python/intro-to-python/
-  description: |
-    Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    formats:
-    - course
-    affiliation:
-    - unidata
-
-- title: Unidata Python Workshop - Jupyter Notebooks Introduction
-  url: https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
-  description: |
-    Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    packages:
-    - jupyter
-    affiliation:
-    - unidata
-
 - title: An Introduction to Earth and Environmental Data Science
   url: https://earth-env-data-science.github.io/intro
   description: |
@@ -473,20 +445,6 @@
     formats:
     - tutorial
 
-- title: Unidata Python Workshop- MetPy
-  url: https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/
-  description: |
-    MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    packages:
-    - metpy
-    formats:
-    - tutorial
-
 - title: MetPy Gallery
   url: https://unidata.github.io/MetPy/latest/examples/index.html
   description: |
@@ -502,21 +460,7 @@
     formats:
     - gallery
 
-- title: Unidata Gallery
-  url: https://unidata.github.io/python-training/gallery/gallery-home/
-  description: |
-    Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    domains:
-    - atmospheric science
-    formats:
-    - gallery
-
-- title: Unidata MetPy Mondays
+- title: MetPy Mondays
   url: https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO
   description: |
     A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
@@ -553,20 +497,6 @@
   tags:
     packages:
     - numpy
-
-- title: Unidata Numpy Workshop
-  url: https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
-  description: |
-    Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    packages:
-    - numpy
-    formats:
-    - tutorial
 
 - title: Intro to Numerical Computing with NumPy
   url: https://youtu.be/ZB7BZMhfPgk
@@ -663,20 +593,6 @@
     formats:
     - documentation
 
-- title: Siphon Tutorial
-  url: https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/
-  description: |
-    An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/siphon.png
-  tags:
-    packages:
-    - siphon
-    formats:
-    - tutorial
-
 - title: Siphon Gallery
   url: https://unidata.github.io/siphon/latest/examples/index.html
   description: |
@@ -736,20 +652,6 @@
     - xarray
     formats:
     - documentation
-
-- title: Unidata Xarray Workshop
-  url: https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/
-  description: |
-    An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/xarray.png
-  tags:
-    packages:
-    - xarray
-    formats:
-    - tutorial
 
 - title: Xarray Tutorial
   url: https://xarray-contrib.github.io/xarray-tutorial/
