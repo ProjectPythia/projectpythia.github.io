@@ -10,7 +10,7 @@
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
 <a href="posts/fundraiser.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
-         Donate to Project Pythia!
+         Donate to support Project Pythia!
  </a>
 
 
