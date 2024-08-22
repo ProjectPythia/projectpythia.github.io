@@ -13,14 +13,14 @@ By donating to support Project Pythia you are investing in an important educatio
 ## Friends of the National Center
 Friends of the National Center is the fundraising arm of the University Corporation for Atmospheric Research (UCAR), which manages the National Science Foundation National Center for Atmospheric Research. UCAR is a non-profit organization, so all donations to Project Pythia are tax-deductible to the fullest extent allowed by law.
 
-We accept donations through the following ways:
-**Online** – Click the Donate Button on the right (we accept credit cards, Paypal and ApplePay).
-**Check** – Mail your check made out to UCAR and send it to:
-UCAR – Friends of the National Center
-Attn: Sarah Swanson
-PO BOX 3000
-Boulder, CO 80307
-Please include in the memo: Donation for Project Pythia
+We accept donations through the following ways: <br>
+**Online** – Click the Donate Button on the right (we accept credit cards, Paypal and ApplePay). <br>
+**Check** – Mail your check made out to UCAR and send it to: <br>
+UCAR – Friends of the National Center <br>
+Attn: Sarah Swanson <br>
+PO BOX 3000 <br>
+Boulder, CO 80307 <br>
+Please include in the memo: Donation for Project Pythia <br>
 **Stock gifts, ACH Transfers, etc.** – Please reach out to Friends of the National Center at info@friendsofthenationalcenter.org
 
 <script>
