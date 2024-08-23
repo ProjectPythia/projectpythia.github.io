@@ -8,7 +8,7 @@ tags: fundraiser
 # Donate to Support Project Pythia!
 
 ## You can make an impact on our community!
-By donating to support Project Pythia you are investing in an important educational resource for the entire geoscience community. Project Pythia is an education working group helping geoscientists make sense of huge volumes of numerical scientific data using tools that facilitate open, reproducible science, and building an inclusive community of practice around these goals. Project Pythia is a home for Python-centered learning resources that are open-source, community-owned, geoscience-focused, and high-quality.
+By donating to support Project Pythia you are investing in an important educational resource for the entire geoscience community, from students to late career. Project Pythia is an education working group helping geoscientists make sense of huge volumes of numerical scientific data using tools that facilitate open, reproducible science, and building an inclusive community of practice around these goals. Project Pythia is a home for Python-centered learning resources that are open-source, community-owned, geoscience-focused, and high-quality.
 
 ## Friends of the National Center
 Friends of the National Center is the fundraising arm of the University Corporation for Atmospheric Research (UCAR), which manages the National Science Foundation National Center for Atmospheric Research. UCAR is a non-profit organization, so all donations to Project Pythia are tax-deductible to the fullest extent allowed by law.
