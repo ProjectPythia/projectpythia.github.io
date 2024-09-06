@@ -258,9 +258,12 @@ As always, reach out to a Pythia team member for help with any of these steps!
 
 ### Initiate the Cookbook review process
 
-Your Cookbook will be assigned a Cookbook advocate from the Project Pythia maintenance team.
+If you haven't already, now is a great time to [contact the Project Pythia team](https://discourse.pangeo.io/c/education/project-pythia/60) to let them know about your new Cookbook. You will be assigned a Cookbook advocate from the Pythia maintenance team.
 They will open an issue on your Cookbook repository with the [Cookbook Checklist](cookbook-tasklist.md) for you to document your completion of the above process, plus a few more GitHub-specific steps.
 Once you complete this process, your Cookbook will be ready for review and publication!
+
+### Submit your Cookbook to the Gallery
+
 Click the button below to request addition of your Cookbook to the [Project Pythia Cookbook Gallery](https://cookbooks.projectpythia.org).
 
 <span class="d-flex justify-content-center py-4">
