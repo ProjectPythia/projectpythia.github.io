@@ -41,7 +41,9 @@ This can be seen in individual Pull Requests as green checkmarks ✅ for importa
     - Code errors in your notebooks themselves
 - [ ] **Identify a Maintainer team via GitHub handle(s) in this thread.**
 This can be one or more people with availability to check in on this Cookbook, issue fixes to broken content, or with a vision for the future development of the Cookbook. This is typically (but not necessarily) one of the primary authors of the Cookbook.
-- [ ] **Finally, release your Cookbook!**
+- [ ] **Link your Cookbook repo to Zenodo for DOI generation**
+Follow steps 1-4 under [Generate a DOI](https://projectpythia.org/cookbook-guide.html#generate-a-doi) in the Cookbook Guide. Return here for instructions on step 5, and your final step:
+- [ ] **Release your Cookbook!**
     - On the right-hand sidebar for your Cookbook repository, click “Create a new release”. If you don’t see this button, you may need to click on the “Releases” header first and “Create” or “Draft” a new release.
     ![GitHub Repository sidebar section titled "Releases"](https://raw.githubusercontent.com/ProjectPythia/projectpythia.github.io/main/portal/_static/images/4-releases.png "Releases")
     - “Choose a tag”, enter a new tag name. This will be the git reference of the snapshot of code that represents this particular release of your Cookbook! We recommend using a name fitting the [CalVer](https://calver.org/) scheme, so something like v2024.06.13 for the date of the release, then choose “+ Create new tag: <your tag name> on publish” and make its Target main (unless you have the knowledge and desire to release from another branch!)
