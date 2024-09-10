@@ -138,3 +138,8 @@ portal/code_of_conduct.md
 portal/resource-gallery.md
 portal/resource-gallery/*.md
 resource-gallery-submission-input.json
+
+# Analytics
+.github/workflows/analytics-api/
+portal/metrics/*.png
+cisl-vast-pythia-*.json

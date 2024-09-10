@@ -1,7 +1,7 @@
 # Project Pythia
 
 :::{banner}
-:color: rgba(26, 100, 143, 0.85)
+:color: rgba(26, 100, 143, 0.9)
 :image: _static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
 :caption: Photo by Jeff Stapleton from Pexels
 :class: dark-banner
@@ -9,9 +9,8 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
-<a href="https://projectpythia.org/pythia-cookoff-2024/" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
-         Project Pythia is hosting a Cookbook Cook-Off June 10-14, 2024.<br>
-         Learn more here.
+<a href="posts/fundraiser.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
+         Donate to support Project Pythia!
  </a>
 
 [Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
@@ -224,7 +223,10 @@ maxdepth: 1
 ---
 about.md
 contributing.md
+cookbook-guide.md
+cookbook-tasklist.md
 code_of_conduct.md
-cookbook-gallery.md
 resource-gallery.md
+blog.md
+metrics.md
 ```
