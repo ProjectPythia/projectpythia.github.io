@@ -18,6 +18,35 @@
     - pythia
     - xdev
 
+- title: Unidata Python Training
+  url: https://unidata.github.io/python-training/python/intro-to-python/
+  description: |
+    Introduction to Python for Atmospheric Science and Meteorology. Unidata is working to create a collection of online training materials focused on the use of Python in the atmospheric sciences. While our examples and scenarios may feature Unidata tools and data technologies, our aim is to present a generic set of freely available tools that are generally useful to scientists, educators, and students in the geosciences, broadly defined.
+  authors:
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
+  thumbnail: /_static/thumbnails/unidata_150x150.png
+  tags:
+    formats:
+    - course
+    affiliation:
+    - unidata
+
+- title: Unidata Python Workshop - Jupyter Notebooks Introduction
+  url:
+    https://unidata.github.io/python-training/workshop/Jupyter_Notebooks/jupyter-notebooks-introduction/
+  description: |
+    Jupyter notebooks are a great way to have code, output, images, video, and other information in one place. Notebooks are an ideal tool for the student, research scientist, and even software developer. In this lesson we will go over the basic features of Jupyter notebooks and how to use them.
+  authors:
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
+  thumbnail: /_static/thumbnails/unidata_150x150.png
+  tags:
+    packages:
+    - jupyter
+    affiliation:
+    - unidata
+
 - title: An Introduction to Earth and Environmental Data Science
   url: https://earth-env-data-science.github.io/intro
   description: |
@@ -195,7 +224,7 @@
     formats:
     - gallery
   domains:
-      - data visualization
+  - data visualization
 
 - title: Contextily Documentation
   url: https://contextily.readthedocs.io
@@ -283,7 +312,7 @@
     formats:
     - gallery
     domains:
-      - data visualization
+    - data visualization
 
 - title: GeoPandas Documentation
   url: https://geopandas.org
@@ -339,7 +368,7 @@
     formats:
     - tutorial
     domains:
-      - data visualization
+    - data visualization
 
 - title: hvPlot Gallery
   url: https://hvplot.holoviz.org/reference/index.html
@@ -355,7 +384,7 @@
     formats:
     - gallery
     domains:
-      - data visualization
+    - data visualization
 
 - title: Ipyleaflet
   url: https://ipyleaflet.readthedocs.io
@@ -383,7 +412,7 @@
     formats:
     - documentation
     domains:
-      - data visualization
+    - data visualization
 
 - title: Matplotlib Tutorial
   url: https://matplotlib.org/stable/tutorials/index.html
@@ -398,7 +427,7 @@
     formats:
     - tutorial
     domains:
-      - data visualization
+    - data visualization
 
 - title: Matplotlib Gallery
   url: https://matplotlib.org/stable/gallery/index.html
@@ -413,7 +442,7 @@
     formats:
     - gallery
     domains:
-      - data visualization
+    - data visualization
 
 - title: MetPy
   url: https://unidata.github.io/MetPy/latest/index.html
@@ -439,6 +468,21 @@
     affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
+  tags:
+    packages:
+    - metpy
+    formats:
+    - tutorial
+
+- title: Unidata Python Workshop - MetPy
+  url:
+    https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/
+  description: |
+    MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
+  authors:
+  - affiliation: Unidata
+    affiliation_url: https://www.unidata.ucar.edu/
+  thumbnail: /_static/thumbnails/unidata_150x150.png
   tags:
     packages:
     - metpy
@@ -669,7 +713,8 @@
 
 - title: Python Programming for Earth Science Students
   description: Python Programming for Earth Science Students
-  url: https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/
+  url:
+    https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/
   thumbnail: ''
   authors:
   - name: Lisa Tauxe
@@ -697,7 +742,8 @@
 - title: Pangeo Gallery
   description: A gallery of different Pangeo use cases
   url: http://gallery.pangeo.io
-  thumbnail: https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png
+  thumbnail:
+    https://github.com/pangeo-data/pangeo/raw/master/docs/_static/pangeo_simple_logo.png
   authors:
   - name: Pangeo Community
     affiliation: Pangeo
@@ -782,419 +828,422 @@
     - physical oceanography
     - data science
 
-- title: 'Environmental Data Science Book'
-  description: 'A living, open and community-driven resource to showcase and support computational
-    notebooks for collaborative, reproducible and transparent Environmental Science'
-  url: 'https://github.com/alan-turing-institute/environmental-ds-book'
-  thumbnail: 'https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png'
+- title: Environmental Data Science Book
+  description: A living, open and community-driven resource to showcase and support
+    computational notebooks for collaborative, reproducible and transparent Environmental
+    Science
+  url: https://github.com/alan-turing-institute/environmental-ds-book
+  thumbnail:
+    https://raw.githubusercontent.com/alan-turing-institute/environmental-ds-book/master/book/figures/logo/logo.png
   authors:
-    - name: 'EDS book community'
-      affiliation: 'Environmental Data Science Book'
-      affiliation_url: 'https://github.com/alan-turing-institute/environmental-ds-book#contributors'
-      email: 'environmental.ds.book@gmail.com'
+  - name: EDS book community
+    affiliation: Environmental Data Science Book
+    affiliation_url: https://github.com/alan-turing-institute/environmental-ds-book#contributors
+    email: environmental.ds.book@gmail.com
   tags:
     packages:
-      - pangeo
-      - pooch
-      - intake
-      - pystac
-      - pandas
-      - geopandas
-      - xarray
-      - dask
-      - matplotlib
-      - holoviews
-      - cartopy
+    - pangeo
+    - pooch
+    - intake
+    - pystac
+    - pandas
+    - geopandas
+    - xarray
+    - dask
+    - matplotlib
+    - holoviews
+    - cartopy
     formats:
-      - book
-      - gallery
+    - book
+    - gallery
     domains:
-      - environmental science
-      - climate science
-      - ecology
-      - hydrology
-      - physical geography
-      - remote sensing
-      - data science
+    - environmental science
+    - climate science
+    - ecology
+    - hydrology
+    - physical geography
+    - remote sensing
+    - data science
     affiliation:
-      - The Alan Turing Institute
+    - The Alan Turing Institute
 
 - title: Your First Python Tutorial - Reading in a .txt File
   url: https://youtu.be/Jog7ybd6amw
   description: |
     Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
   authors:
-    - name: Project Pythia
-    - name: Julia Kent
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Julia Kent
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-txtfile.jpeg
   tags:
     packages:
-      - pure python
+    - pure python
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Your First Python Tutorial - Creating a Data Dictionary
   url: https://youtu.be/5z6-t62x7Xs
   description: |
     Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
   authors:
-    - name: Project Pythia
-    - name: Julia Kent
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Julia Kent
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-datadict.jpeg
   tags:
     packages:
-      - pure python
+    - pure python
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Your First Python Tutorial - Writing Functions
   url: https://youtu.be/BerEf_3CsL8
   description: |
     Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
   authors:
-    - name: Project Pythia
-    - name: Julia Kent
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Julia Kent
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-writingfx.jpeg
   tags:
     packages:
-      - pure python
+    - pure python
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Your First Python Tutorial - Creating Your Own Package
   url: https://youtu.be/6lbbTwGFcTc
   description: |
     Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
   authors:
-    - name: Project Pythia
-    - name: Julia Kent
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Julia Kent
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-firstpackage.jpeg
   tags:
     packages:
-      - pure python
+    - pure python
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
-- title: Your First Python Tutorial - Using a Built-In Package and Publishing Your Package
+- title: Your First Python Tutorial - Using a Built-In Package and Publishing Your
+    Package
   url: https://youtu.be/44QUMCh2ZHU
   description: |
     Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
   authors:
-    - name: Project Pythia
-    - name: Julia Kent
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Julia Kent
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-builtinpackage.jpeg
   tags:
     packages:
-      - pure python
+    - pure python
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Jupyter Notebooks
   url: https://youtu.be/xSzXvwzFsDU
   description: |
     Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
   authors:
-    - name: Project Pythia
-    - name: Kevin Paul
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Kevin Paul
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-jupyter.jpeg
   tags:
     packages:
-      - jupyter
+    - jupyter
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Numpy
   url: https://youtu.be/kstc-6uz7AQ
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The content to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
   authors:
-    - name: Project Pythia
-    - name: A Kootz
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: A Kootz
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-numpy.jpeg
   tags:
     packages:
-      - numpy
+    - numpy
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Matplotlib
   url: https://youtu.be/EiPRIdHQEmE
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Anissa Zacharias
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Anissa Zacharias
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-matplotlib.jpeg
   tags:
     packages:
-      - matplotlib
+    - matplotlib
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     domains:
-      - data visualization
+    - data visualization
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Object Oriented Programming
   url: https://youtu.be/GEFnL8C62u8
   description: |
     Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: A Kootz
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: A Kootz
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-oop.jpeg
   tags:
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Cartopy
   url: https://youtu.be/ivmd3RluMiw
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Michaela Sizemore
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Michaela Sizemore
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-cartopy.jpeg
   tags:
     packages:
-      - matplotlib
-      - cartopy
+    - matplotlib
+    - cartopy
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     domains:
-      - data visualization
+    - data visualization
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Git and GitHub
   url: https://youtu.be/fYkPn0Nttlg
   description: |
     Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Kevin Paul
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Kevin Paul
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-git.png
   tags:
     packages:
-      - git
+    - git
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Pandas
   url: https://youtu.be/BsV3ek7qsiM
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Max Grover
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
-    - name: Drew Camron
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Max Grover
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
+  - name: Drew Camron
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-pandas.jpeg
   tags:
     packages:
-      - pandas
+    - pandas
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Xarray Part 1
   url: https://youtu.be/Ss4ryKukhi4
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Anderson Banihirwe
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Anderson Banihirwe
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-xarray1.jpeg
   tags:
     packages:
-      - xarray
+    - xarray
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Xarray Part 2
   url: https://youtu.be/2H_4drBwORY
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Anderson Banihirwe
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Anderson Banihirwe
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-xarray2.jpeg
   tags:
     packages:
-      - xarray
+    - xarray
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Dask Part 1
   url: https://youtu.be/wn-QM6QUB_U
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Anderson Banihirwe
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Anderson Banihirwe
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-dask1.jpeg
   tags:
     packages:
-      - dask
+    - dask
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Dask Part 2
   url: https://youtu.be/yn4_-1pHC5k
   description: |
     Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Anderson Banihirwe
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Anderson Banihirwe
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-dask2.jpeg
   tags:
     packages:
-      - dask
+    - dask
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - Plotting with GeoCAT
   url: https://youtu.be/It231le1fAU
   description: |
     Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: Anissa Zacharias
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: Anissa Zacharias
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-geocatplot.jpeg
   tags:
     packages:
-      - geocat-viz
+    - geocat-viz
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     domains:
-      - data visualization
+    - data visualization
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: Python Tutorial Seminar Series - GeoCAT-Comp
   url: https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s
   description: |
     Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</A>.
   authors:
-    - name: Project Pythia
-    - name: A Kootz
-      affiliation: NSF NCAR
-      affiliation_url: https://ncar.ucar.edu/
+  - name: Project Pythia
+  - name: A Kootz
+    affiliation: NCAR
+    affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/ptss-geocatcomp.jpeg
   tags:
     packages:
-      - geocat-comp
+    - geocat-comp
     formats:
-      - video
-      - tutorial
+    - video
+    - tutorial
     affiliation:
-      - pythia
-      - xdev
+    - pythia
+    - xdev
 
 - title: The Pythia Foundations Book
   url: https://foundations.projectpythia.org/landing-page.html
   description: |
     Brought to you by Project Pythia, this growing collection covers the foundational skills everyone needs to get started with scientific computing in the open-source Python ecosystem.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1207,9 +1256,9 @@
   description: |
     This chapter of the Pythia Foundations book covers Python spin-up for new users. Here you will look at your first Python code and learn to run/install Python on various platforms.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1224,9 +1273,9 @@
   description: |
     This chapter of the Pythia Foundations book covers Python spin-up using Jupyter. Here you will learn about the JupyterLab interface and markdown formatting.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1241,9 +1290,9 @@
   description: |
     This chapter of the Pythia Foundations book covers GitHub: what it is, basic version control, and how to open a pull request.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1258,9 +1307,9 @@
   description: |
     This chapter of the Pythia Foundations book covers the Python package NumPy: NumPy basics, intermediate NumPy, and NumPy broadcasting.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1275,9 +1324,9 @@
   description: |
     This chapter of the Pythia Foundations book covers basics of the Python package Matplotlib.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1294,9 +1343,9 @@
   description: |
     This chapter of the Pythia Foundations book introduces the Python package Cartopy, a package designed for geospatial data processing and used for its ability to produce maps.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1313,9 +1362,9 @@
   description: |
     This section of the Pythia Foundations book contains tutorials on dealing with times and calendars in scientific Python, beginning with use of the datetime standard library.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1330,9 +1379,9 @@
   description: |
     This section of the Pythia Foundations book covers Pandas, a very powerful library for working with tabular data (i.e. anything you might put in a spreadsheet – a common data type in the geosciences).
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1347,9 +1396,9 @@
   description: |
     This section of the Pythia Foundations book covers how to interact in Python with data file formats in widespread use in the geosciences, such as NetCDF.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1366,9 +1415,9 @@
   description: |
     This section of the Pythia Foundations book contains tutorials on using Xarray. Xarray is used widely in the geosciences and beyond for analysis of gridded N-dimensional datasets.
   authors:
-    - name: Project Pythia
-      email: projectpythia@ucar.edu
-      url: https://projectpythia.org/
+  - name: Project Pythia
+    email: projectpythia@ucar.edu
+    url: https://projectpythia.org/
   thumbnail: /_static/thumbnails/ProjectPythia_Blue.png
   tags:
     formats:
@@ -1383,8 +1432,8 @@
   description: |
     Climatematch Academy (CMA) is a wide-reaching, inclusive and approachable program aimed to introduce computational methods for climate science. CMA strives to create a globally diverse climate sciences community, trained on cutting edge techniques to access and analyze open-source modeled and observational climate data.
   authors:
-    - name: Climatematch Team
-      url: https://academy.climatematch.io/about/team
+  - name: Climatematch Team
+    url: https://academy.climatematch.io/about/team
   thumbnail: /_static/thumbnails/climatematch.png
   tags:
     formats:
@@ -1400,7 +1449,7 @@
   description: |
     A guide to analyze and plot Earth Science data for Scientist of all programming skill levels, using L-1 data product from CYGNSS mission as an example.
   authors:
-    - name: Michael Nguyen
+  - name: Michael Nguyen
   tags:
     packages:
     - cartopy
@@ -1428,3 +1477,26 @@
   domains:
   - atmospheric science
   - numerical weather prediction
+
+- title: The Earth Science Box Modelling Toolkit
+  description: |
+    ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
+    It uses a declarative approach to describe models, and abstracts typical modeling tasks like gas-exchange and carbonate dissolution through python classes. See the
+    manual at https://esbmtk.readthedocs.io/en/latest for installation instructions usage, and example code.
+  url: https://github.com/uliw/esbmtk
+  thumbnail: https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png
+  authors:
+  - name: Ulrich G Wortmann
+    affiliation: Dept. of Earth Sciences, University of Toronto
+    affiliation_url: https://www.es.utoronto.ca/
+    email: uli.wortmann@utoronto.ca
+  tags:
+    packages:
+    - esbmtk
+    - matplotlib
+    - numpy
+    - pandas
+    formats: code
+    domains:
+    - Earth System Science
+    - Chemical Oceanography
