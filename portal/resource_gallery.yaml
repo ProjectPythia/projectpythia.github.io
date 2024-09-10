@@ -473,7 +473,7 @@
     - metpy
     formats:
     - tutorial
-    
+
 - title: Unidata Python Workshop - MetPy
   url:
     https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/
@@ -488,7 +488,7 @@
     - metpy
     formats:
     - tutorial
-    
+
 - title: MetPy Gallery
   url: https://unidata.github.io/MetPy/latest/examples/index.html
   description: |
@@ -1477,7 +1477,7 @@
   domains:
   - atmospheric science
   - numerical weather prediction
-  
+
 - title: The Earth Science Box Modelling Toolkit
   description: |
     ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
@@ -1490,13 +1490,13 @@
     affiliation: Dept. of Earth Sciences, University of Toronto
     affiliation_url: https://www.es.utoronto.ca/
     email: uli.wortmann@utoronto.ca
-  tags: 
+  tags:
     packages:
     - esbmtk
     - matplotlib
     - numpy
     - pandas
     formats: code
-    domains: 
+    domains:
     - Earth System Science
     - Chemical Oceanography
