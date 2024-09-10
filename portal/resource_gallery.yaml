@@ -1516,11 +1516,25 @@
     domains:
     - data visualization
     - remote sensing
-- '{"title":"The Earth Science Box Modelling Toolkit","description":"ESBMTK is a python
-  library that aims to simplify typical box modeling projects in the Earth-Sciences.
-  It uses a declarative approach to describe models, and abstracts typical modeling
-  tasks like gas-exchange and carbonate dissolution through python classes. See the
-  manual at https://esbmtk.readthedocs.io/en/latest for installation instructions
-  usage, and example code.","url":"https://github.com/uliw/esbmtk","thumbnail":"https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png","authors":[{"name":"Ulrich
-  G Wortmann","affiliation":"Dept. of Earth Sciences, University of Toronto","affiliation_url":"https://www.es.utoronto.ca/","email":"uli.wortmann@utoronto.ca"}],"tags":{"packages":["esbmtk","matplotlib","numpy","pandas"],"formats":["code"],"domains":["Earth
-  System Science","Chemical Oceanography"],"affiliation":["unspecified"]}}'
+- title: The Earth Science Box Modelling Toolkit
+  description: |
+    ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
+    It uses a declarative approach to describe models, and abstracts typical modeling tasks like gas-exchange and carbonate dissolution through python classes. See the
+    manual at https://esbmtk.readthedocs.io/en/latest for installation instructions usage, and example code.
+  url: https://github.com/uliw/esbmtk
+  thumbnail: https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png
+  authors:
+  - name: Ulrich G Wortmann
+    affiliation: Dept. of Earth Sciences, University of Toronto
+    affiliation_url: https://www.es.utoronto.ca/
+    email: uli.wortmann@utoronto.ca
+  tags: 
+    packages:
+    - esbmtk
+    - matplotlib
+    - numpy
+    - pandas
+    formats: code
+    domains: 
+    - Earth System Science
+    - Chemical Oceanography
