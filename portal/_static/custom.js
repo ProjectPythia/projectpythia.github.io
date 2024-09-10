@@ -1,184 +1,99 @@
-var buttons = document.querySelectorAll('.modal-btn')
-var backdrop = document.querySelector('.modal-backdrop')
-var modals = document.querySelectorAll('.modal')
-
-function openModal(i) {
-  backdrop.style.display = 'block'
-  modals[i].style.display = 'block'
-}
-
-function closeModal(i) {
-  backdrop.style.display = 'none'
-  modals[i].style.display = 'none'
-}
-
-for (i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener(
-    'click',
-    (function (j) {
-      return function () {
-        openModal(j)
-      }
-    })(i)
-  )
-  backdrop.addEventListener(
-    'click',
-    (function (j) {
-      return function () {
-        closeModal(j)
-      }
-    })(i)
-  )
-}
-
-
-function change() {
-  var affiliationCbs = document.querySelectorAll(".affiliation input[type='checkbox']");
-  var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
-  var formatsCbs = document.querySelectorAll(".formats input[type='checkbox']");
-  var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
-
-  var filters = {
-    affiliation: getClassOfCheckedCheckboxes(affiliationCbs),
-    domains: getClassOfCheckedCheckboxes(domainsCbs),
-    formats: getClassOfCheckedCheckboxes(formatsCbs),
-    packages: getClassOfCheckedCheckboxes(packagesCbs)
-  };
-
-  filterResults(filters);
-}
-
 function getClassOfCheckedCheckboxes(checkboxes) {
-  var classes = [];
-
-  if (checkboxes && checkboxes.length > 0) {
-    for (var i = 0; i < checkboxes.length; i++) {
-      var cb = checkboxes[i];
-
+    var tags = [];
+    checkboxes.forEach(function (cb) {
       if (cb.checked) {
-        classes.push(cb.getAttribute("rel"));
+        tags.push(cb.getAttribute("rel"));
       }
-    }
+    });
+    return tags;
   }
 
-  return classes;
-}
+  function change() {
+    console.log("Change event fired.");
+    var affiliationsCbs = document.querySelectorAll(".affiliation input[type='checkbox']");
+    var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
+    var formatsCbs = document.querySelectorAll(".formats input[type='checkbox']");
+    var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
 
-function filterResults(filters) {
-  var rElems = document.querySelectorAll(".tagged-card");
-  var hiddenElems = [];
+    var affiliatioinTags = getClassOfCheckedCheckboxes(affiliationsCbs);
+    var domainTags = getClassOfCheckedCheckboxes(domainsCbs);
+    var formatTags = getClassOfCheckedCheckboxes(formatsCbs);
+    var packageTags = getClassOfCheckedCheckboxes(packagesCbs);
 
-  if (!rElems || rElems.length <= 0) {
-    return;
+    var filters = {
+      affiliations: affiliatioinTags,
+      domains: domainTags,
+      formats: formatTags,
+      packages: packageTags
+    };
+
+    filterResults(filters);
   }
 
-  for (var i = 0; i < rElems.length; i++) {
-    var el = rElems[i];
+  function filterResults(filters) {
+    console.log("Filtering results...");
+    var rElems = document.querySelectorAll(".tagged-card");
 
-    if (filters.affiliation.length > 0) {
-      var isHidden = true;
+    rElems.forEach(function (el) {
+      var isVisible = true; // Assume visible by default
 
-      for (var j = 0; j < filters.affiliation.length; j++) {
-        var filter = filters.affiliation[j];
+      // Check if the element has any domain or package filter
+      if (filters.affiliations.length > 0 || filters.domains.length > 0 || filters.formats.length > 0 || filters.packages.length > 0) {
+        var hasMatchingAffiliation = filters.affiliations.length === 0 || filters.affiliations.some(affiliation => el.classList.contains(affiliation));
+        var hasMatchingDomain = filters.domains.length === 0 || filters.domains.some(domain => el.classList.contains(domain));
+        var hasMatchingFormat = filters.formats.length === 0 || filters.formats.some(format => el.classList.contains(format));
+        var hasMatchingPackage = filters.packages.length === 0 || filters.packages.some(package => el.classList.contains(package));
 
-        if (el.classList.contains(filter)) {
-          isHidden = false;
-          break;
-        }
-      }
-
-      if (isHidden) {
-        hiddenElems.push(el);
-      }
-    }
-
-    if (filters.domains.length > 0) {
-      var isHidden = true;
-
-      for (var j = 0; j < filters.domains.length; j++) {
-        var filter = filters.domains[j];
-
-        if (el.classList.contains(filter)) {
-          isHidden = false;
-          break;
-        }
+        // The element should be visible if it matches any filter within each category
+        isVisible = hasMatchingAffiliation && hasMatchingDomain && hasMatchingFormat && hasMatchingPackage;
       }
 
-      if (isHidden) {
-        hiddenElems.push(el);
+      // Toggle visibility based on the result
+      if (isVisible) {
+        el.classList.remove("d-none");
+        el.classList.add("d-flex");
+      } else {
+        el.classList.remove("d-flex");
+        el.classList.add("d-none");
       }
-    }
+    });
 
-    if (filters.formats.length > 0) {
-      var isHidden = true;
+    // Update the margins after filtering
+    updateMargins();
+  }
 
-      for (var j = 0; j < filters.formats.length; j++) {
-        var filter = filters.formats[j];
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener("change", change);
+  });
 
-        if (el.classList.contains(filter)) {
-          isHidden = false;
-          break;
-        }
+  function updateMargins() {
+    const columns = document.querySelectorAll('.sd-col.sd-d-flex-row.docutils');
+
+    columns.forEach(column => {
+      // Check if this column has any visible cards
+      const hasVisibleCard = Array.from(column.children).some(child => !child.classList.contains('d-none'));
+
+      // Toggle a class based on whether there are visible cards
+      if (hasVisibleCard) {
+        column.classList.add('has-visible-card');
+      } else {
+        column.classList.remove('has-visible-card');
       }
-
-      if (isHidden) {
-        hiddenElems.push(el);
-      }
-    }
-
-    if (filters.packages.length > 0) {
-      var isHidden = true;
-
-      for (var j = 0; j < filters.packages.length; j++) {
-        var filter = filters.packages[j];
-
-        if (el.classList.contains(filter)) {
-          isHidden = false;
-          break;
-        }
-      }
-
-      if (isHidden) {
-        hiddenElems.push(el);
-      }
-    }
+    });
   }
 
-  for (var i = 0; i < rElems.length; i++) {
-    rElems[i].classList.replace("d-none", "d-flex");
+  function clearCbs() {
+    // Select all checkbox inputs and uncheck them
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(function(checkbox) {
+      checkbox.checked = false;
+    });
+
+    change();
   }
 
-  if (hiddenElems.length <= 0) {
-    return;
-  }
+  // Initial call to set up correct margins when the page loads
+  document.addEventListener('DOMContentLoaded', updateMargins);
 
-  for (var i = 0; i < hiddenElems.length; i++) {
-    hiddenElems[i].classList.replace("d-flex", "d-none");
-  }
-}
-
-
-function clearCbs() {
-  var affiliationCbs = document.querySelectorAll(".affiliation input[type='checkbox']");
-  var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
-  var formatsCbs = document.querySelectorAll(".formats input[type='checkbox']");
-  var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
-
-  for (var i = 0; i < affiliationCbs.length; i++) {
-    affiliationCbs[i].checked=false;
-  }
-
-  for (var i = 0; i < domainsCbs.length; i++) {
-    domainsCbs[i].checked=false;
-  }
-
-  for (var i = 0; i < formatsCbs.length; i++) {
-    formatsCbs[i].checked=false;
-  }
-
-  for (var i = 0; i < packagesCbs.length; i++) {
-    packagesCbs[i].checked=false;
-  }
-
-  change();
-}
+  console.log("Script loaded.");

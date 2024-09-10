@@ -1,4 +1,12 @@
-# Contributor's Guide
+# Project Pythia Contributor's Guide
+
+```{Note}
+This the top-level guide for Project Pythia and a great starting point for getting involved!
+
+We also have specific guides for
+[contributing to Pythia Foundations](https://foundations.projectpythia.org/appendix/how-to-contribute.html)
+and [contributing new Cookbooks](https://projectpythia.org/cookbook-guide.html).
+```
 
 ## Overview
 
@@ -77,10 +85,10 @@ The Pythia [Cookbook
 Gallery](https://cookbooks.projectpythia.org/) is a
 collection of "cookbooks" that describe workflows that solve a
 specific problem. Typically, a cookbook references material presented
-elsewhere in Project Pythia, such as  [Pythia Foundations](https://foundations.projectpythia.org).
+elsewhere in Project Pythia, such as [Pythia Foundations](https://foundations.projectpythia.org).
 Each Cookbook is hosted in a separate GitHub repo under the umbrella [Project Pythia
 organization](https://github.com/ProjectPythia).
-Contributors should consult the [Cookbook-specific Contributor's guide](https://github.com/ProjectPythia/.github/blob/main/.github/CONTRIBUTING.md).
+Contributors should consult the [Cookbook-specific Contributor's guide](/cookbook-guide).
 
 ### Pythia Portal
 

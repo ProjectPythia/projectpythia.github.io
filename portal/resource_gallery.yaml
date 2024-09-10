@@ -6,7 +6,7 @@
   - name: Xdev Team
     email: xdev@ucar.edu
     url: https://ncar.github.io/xdev/
-    affiliation: NCAR
+    affiliation: NSF NCAR
     affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/Xdev.png
   tags:
@@ -286,7 +286,7 @@
   authors:
   - name: GeoCat
     url: https://geocat.ucar.edu/
-    affiliation: NCAR
+    affiliation: NSF NCAR
     affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/geocat.png
   tags:
@@ -302,7 +302,7 @@
   authors:
   - name: GeoCAT
     url: https://geocat.ucar.edu/
-    affiliation: NCAR
+    affiliation: NSF NCAR
     affiliation_url: https://ncar.ucar.edu/
   thumbnail: /_static/thumbnails/geocat.png
   tags:
@@ -450,7 +450,7 @@
     MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
   authors:
   - name: MetPy developers
-    affiliation: Unidata
+    affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
@@ -465,7 +465,7 @@
     This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
   authors:
   - name: MetPy developers
-    affiliation: Unidata
+    affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
@@ -473,8 +473,8 @@
     - metpy
     formats:
     - tutorial
-
-- title: Unidata Python Workshop- MetPy
+    
+- title: Unidata Python Workshop - MetPy
   url:
     https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/
   description: |
@@ -488,14 +488,14 @@
     - metpy
     formats:
     - tutorial
-
+    
 - title: MetPy Gallery
   url: https://unidata.github.io/MetPy/latest/examples/index.html
   description: |
     Examples of using a variety of MetPy’s functionality together.
   authors:
   - name: MetPy Developers
-    affiliation: Unidata
+    affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy.jpg
   tags:
@@ -504,26 +504,12 @@
     formats:
     - gallery
 
-- title: Unidata Gallery
-  url: https://unidata.github.io/python-training/gallery/gallery-home/
-  description: |
-    Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    domains:
-    - atmospheric science
-    formats:
-    - gallery
-
-- title: Unidata MetPy Mondays
+- title: MetPy Mondays
   url: https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO
   description: |
     A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
   authors:
-  - affiliation: Unidata
+  - affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/metpy-mondays.jpeg
   tags:
@@ -555,20 +541,6 @@
   tags:
     packages:
     - numpy
-
-- title: Unidata Numpy Workshop
-  url: https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/
-  description: |
-    Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/unidata_150x150.png
-  tags:
-    packages:
-    - numpy
-    formats:
-    - tutorial
 
 - title: Intro to Numerical Computing with NumPy
   url: https://youtu.be/ZB7BZMhfPgk
@@ -656,7 +628,7 @@
     Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
   authors:
   - name: Siphon Contributors
-    affiliation: Unidata
+    affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
@@ -665,27 +637,13 @@
     formats:
     - documentation
 
-- title: Siphon Tutorial
-  url: https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/
-  description: |
-    An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/siphon.png
-  tags:
-    packages:
-    - siphon
-    formats:
-    - tutorial
-
 - title: Siphon Gallery
   url: https://unidata.github.io/siphon/latest/examples/index.html
   description: |
     Examples of using Siphon’s functionality.
   authors:
   - name: Siphon Contributors
-    affiliation: Unidata
+    affiliation: NSF Unidata
     affiliation_url: https://www.unidata.ucar.edu/
   thumbnail: /_static/thumbnails/siphon.png
   tags:
@@ -699,7 +657,7 @@
   description: |
     A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
   authors:
-  - affiliation: NCAR
+  - affiliation: NSF NCAR
     affiliation_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
@@ -713,7 +671,7 @@
   description: |
     Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
   authors:
-  - affiliation: NCAR
+  - affiliation: NSF NCAR
     affiliation_url: https://ncar.ucar.edu/
   thumbnail:
   tags:
@@ -739,22 +697,8 @@
     formats:
     - documentation
 
-- title: Unidata Xarray Workshop
-  url: https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/
-  description: |
-    An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
-  authors:
-  - affiliation: Unidata
-    affiliation_url: https://www.unidata.ucar.edu/
-  thumbnail: /_static/thumbnails/xarray.png
-  tags:
-    packages:
-    - xarray
-    formats:
-    - tutorial
-
 - title: Xarray Tutorial
-  url: https://xarray-contrib.github.io/xarray-tutorial/
+  url: https://tutorial.xarray.dev/intro.html
   description: |
     A collection of tutorials provided by the Xarray developers.
   authors:
@@ -1516,6 +1460,24 @@
     domains:
     - data visualization
     - remote sensing
+
+- title: 'Herbie: Retrieve NWP Model Data'
+  url: https://herbie.readthedocs.io/
+  description: |
+    Herbie is a python package that downloads recent and archived numerical weather prediction (NWP) model output from different cloud archive sources. Its most popular capability is to download HRRR model data. NWP data in the GRIB2 format can be read with xarray+cfgrib.
+  authors:
+  - name: Brian Blaylock
+  tags:
+    packages:
+    - xarray
+    - cfgrib
+  formats:
+  - documentation
+  - tutorial
+  domains:
+  - atmospheric science
+  - numerical weather prediction
+  
 - title: The Earth Science Box Modelling Toolkit
   description: |
     ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
