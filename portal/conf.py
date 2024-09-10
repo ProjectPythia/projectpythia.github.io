@@ -33,9 +33,10 @@ copyright = '2024'
 # ones.
 extensions = [
     'resource_gallery_generator',
-    'myst_nb',
-    'sphinx_design',
     'ablog',
+    'myst_nb',
+    'sphinx_copybutton',
+    'sphinx_design',
     'sphinx.ext.intersphinx',
 ]
 

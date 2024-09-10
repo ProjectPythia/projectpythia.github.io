@@ -10,3 +10,5 @@ dependencies:
 - pre-commit
 - pyyaml
 - sphinx-pythia-theme
+- sphinx-design
+- sphinx-copybutton

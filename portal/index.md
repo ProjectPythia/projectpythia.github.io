@@ -224,6 +224,7 @@ maxdepth: 1
 about.md
 contributing.md
 cookbook-guide.md
+cookbook-tasklist.md
 code_of_conduct.md
 resource-gallery.md
 blog.md
