@@ -1500,3 +1500,28 @@
     domains:
     - Earth System Science
     - Chemical Oceanography
+
+- title: The PO.DAAC Cookbook
+  description: |
+    A place to find NASA ocean, climate, and surface water data recipes and tutorials for the Physical Oceanography Distributed Active Archive Center (PO.DAAC) datasets, tools & services!
+  url: https://podaac.github.io/tutorials/
+  thumbnail: https://github.com/podaac/tutorials/blob/master/images/podaac_cookbook_thumbnail.png
+  authors:
+  - name: PO.DAAC Team
+    affiliation: Jet Propulsion Laboratory, California Institute of Technology
+    affiliation_url: https://www.jpl.nasa.gov/
+  tags:
+    packages:
+    - earthaccess
+    - xarray
+    formats:
+    - book
+    - tutorial
+    domains:
+    - Remote sensing
+    - Oceanography
+    - Hydrology
+    affiliation:
+    - Physical Oceanography Distributed Active Archive Center (PO.DAAC)
+    - Jet Propulsion Laboratory
+    - California Institute of Technology
