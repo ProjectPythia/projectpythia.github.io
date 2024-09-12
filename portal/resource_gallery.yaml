@@ -1479,11 +1479,11 @@
   - numerical weather prediction
 
 - title: The Earth Science Box Modelling Toolkit
+  url: https://github.com/uliw/esbmtk
   description: |
     ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
     It uses a declarative approach to describe models, and abstracts typical modeling tasks like gas-exchange and carbonate dissolution through python classes. See the
     manual at https://esbmtk.readthedocs.io/en/latest for installation instructions usage, and example code.
-  url: https://github.com/uliw/esbmtk
   thumbnail: https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png
   authors:
   - name: Ulrich G Wortmann
@@ -1502,9 +1502,9 @@
     - Chemical Oceanography
 
 - title: The PO.DAAC Cookbook
+  url: https://podaac.github.io/tutorials/
   description: |
     A place to find NASA ocean, climate, and surface water data recipes and tutorials for the Physical Oceanography Distributed Active Archive Center (PO.DAAC) datasets, tools & services!
-  url: https://podaac.github.io/tutorials/
   thumbnail: https://github.com/podaac/tutorials/blob/master/images/podaac_cookbook_thumbnail.png
   authors:
   - name: PO.DAAC Team
@@ -1527,8 +1527,8 @@
     - California Institute of Technology
 
 - title: UXarray
-  description: Xarray extension for unstructured climate and global weather data
   url: https://uxarray.readthedocs.io/
+  description: Xarray extension for unstructured climate and global weather data
   thumbnail: https://raw.githubusercontent.com/UXARRAY/uxarray/921dd8f42f661692f0cec170ee5c7dbedb294237/docs/_static/images/logos/uxarray_logo_v_dark.svg
   authors:
   - name: Aaron Zedwick
