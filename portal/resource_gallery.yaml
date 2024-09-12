@@ -1479,11 +1479,11 @@
   - numerical weather prediction
 
 - title: The Earth Science Box Modelling Toolkit
+  url: https://github.com/uliw/esbmtk
   description: |
     ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
     It uses a declarative approach to describe models, and abstracts typical modeling tasks like gas-exchange and carbonate dissolution through python classes. See the
     manual at https://esbmtk.readthedocs.io/en/latest for installation instructions usage, and example code.
-  url: https://github.com/uliw/esbmtk
   thumbnail: https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png
   authors:
   - name: Ulrich G Wortmann
@@ -1502,9 +1502,9 @@
     - Chemical Oceanography
 
 - title: The PO.DAAC Cookbook
+  url: https://podaac.github.io/tutorials/
   description: |
     A place to find NASA ocean, climate, and surface water data recipes and tutorials for the Physical Oceanography Distributed Active Archive Center (PO.DAAC) datasets, tools & services!
-  url: https://podaac.github.io/tutorials/
   thumbnail: https://github.com/podaac/tutorials/blob/master/images/podaac_cookbook_thumbnail.png
   authors:
   - name: PO.DAAC Team
@@ -1525,3 +1525,76 @@
     - Physical Oceanography Distributed Active Archive Center (PO.DAAC)
     - Jet Propulsion Laboratory
     - California Institute of Technology
+
+- title: UXarray
+  url: https://uxarray.readthedocs.io/
+  description: Xarray extension for unstructured climate and global weather data
+  thumbnail: https://raw.githubusercontent.com/UXARRAY/uxarray/921dd8f42f661692f0cec170ee5c7dbedb294237/docs/_static/images/logos/uxarray_logo_v_dark.svg
+  authors:
+  - name: Aaron Zedwick
+    affiliation: Liberty University
+    affiliation_url: https://www.liberty.edu/
+  - name: Amber Chen
+  - name: Anissa Zacharias
+    affiliation: NSF National Center for Atmospheric Research
+    affiliation_url: https://ncar.ucar.edu/
+  - name: Brian Medeiros
+    affiliation: NSF National Center for Atmospheric Research
+    affiliation_url: https://ncar.ucar.edu/
+  - name: Colin Zarzycki
+    affiliation: The Pennsylvania State University
+    affiliation_url: https://www.psu.edu/
+  - name: Hongyu Chen
+    affiliation: University of California, Davis
+    affiliation_url: https://www.ucdavis.edu/
+  - name: Ian Franda
+    affiliation: University of Wisconsin-Madison
+    affiliation_url: https://www.wisc.edu/
+  - name: John Clyne
+    affiliation: NSF National Center for Atmospheric Research
+    affiliation_url: https://ncar.ucar.edu/
+  - name: Michaela Sizemore
+    affiliation: National Renewable Energy Laboratory
+    affiliation_url: https://www.nrel.gov/
+  - name: Orhan Eroglu
+    affiliation: NSF National Center for Atmospheric Research
+    affiliation_url: https://ncar.ucar.edu/
+    email: oero@ucar.edu
+  - name: Paul Ullrich
+    affiliation: University of California, Davis
+    affiliation_url: https://www.ucdavis.edu/
+  - name: Philip Chmielowiec
+    affiliation: NSF National Center for Atmospheric Research
+    affiliation_url: https://ncar.ucar.edu/
+  - name: Rachel Tam
+    affiliation: University of Illinois Urbana-Champaign
+    affiliation_url: https://illinois.edu/
+  - name: Rajeev Jain
+    affiliation: Argonne National Laboratory
+    affiliation_url: https://www.anl.gov/
+  - name: Robert Jacob
+    affiliation: Argonne National Laboratory
+    affiliation_url: https://www.anl.gov/
+  tags:
+    packages:
+      - xarray
+      - dask
+      - numba
+      - numpy
+      - spatialpandas
+      - datashader
+      - holoviews
+      - matplotlib
+    formats:
+      - documentation
+      - tutorial
+    domains:
+      - Unstructured Grids
+      - Data Analysis
+      - Data Visualization
+      - Atmospheric Science
+      - Climate Science
+    affiliation:
+      - Pangeo
+      - Raijin
+      - SEATS
