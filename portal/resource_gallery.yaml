@@ -1598,3 +1598,17 @@
       - Pangeo
       - Raijin
       - SEATS
+
+- title: GeoCAT Applications
+  url: https://ncar.github.io/geocat-applications/
+  description: |
+    GeoCAT Applications is a community resource managed by the GeoCAT team. Inspired by the NCL Applications page, this is designed to be a quick reference demonstrating capabilities within the Scientific Python Ecosystem that may be relevant to your geoscience workflows.
+  authors:
+  - name: GeoCAT Team
+    url: https://geocat.ucar.edu/
+    affiliation: NSF NCAR
+    affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/geocat.png
+  tags:
+    formats:
+    - documentation
