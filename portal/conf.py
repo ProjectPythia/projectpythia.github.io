@@ -33,9 +33,10 @@ copyright = '2024'
 # ones.
 extensions = [
     'resource_gallery_generator',
-    'myst_nb',
-    'sphinx_design',
     'ablog',
+    'myst_nb',
+    'sphinx_copybutton',
+    'sphinx_design',
     'sphinx.ext.intersphinx',
 ]
 
@@ -119,8 +120,8 @@ html_theme_options = {
         'resource-gallery': 'page-standalone.html',
     },
     'footer_logos': {
-        'NCAR': '_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.png',
-        'Unidata': '_static/images/logos/Unidata_logo_horizontal_1200x300.svg',
+        'NSF NCAR': '_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.png',
+        'NSF Unidata': '_static/images/logos/NSF-Unidata_lockup_horizontal_2023.png',
         'UAlbany': '_static/images/logos/UAlbany-A2-logo-purple-gold.svg',
     },
     'footer_start': ['footer-logos', 'footer-menu', 'footer-info', 'footer-extra'],
