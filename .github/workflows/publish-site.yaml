@@ -30,6 +30,7 @@ jobs:
         with:
           name: repo-zip
           path: .
+          include-hidden-files: true
 
   build:
     needs: automate-metrics
