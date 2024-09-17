@@ -30,6 +30,7 @@ jobs:
         with:
           name: repo-zip
           path: .
+          include-hidden-files: 'true'
 
   build:
     needs: automate-metrics
@@ -39,6 +40,10 @@ jobs:
       environment_name: pythia
       path_to_notebooks: 'portal'
       build_command: 'make -j4 html'
+      build_from_code_artifact: 'true'
+      code_artifact_name: 'repo-zip'
+      workflow: ''
+      workflow_conclusion: ''
   deploy:
     needs: build
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
