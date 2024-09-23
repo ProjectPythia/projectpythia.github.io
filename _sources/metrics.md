@@ -1,12 +1,12 @@
 # Metrics 
 
-Last Updated: 2024-09-18 20:11:02.467331
+Last Updated: 2024-09-23 01:02:16.476086
 
 | Project | Users |
 | ----- | ----- |
-| Portal | 15.7K |
-| Foundations | 60.7K |
-| Cookbooks | 13.4K |
+| Portal | 15.8K |
+| Foundations | 61.0K |
+| Cookbooks | 13.5K |
 
 ![Users this Year](metrics/thisyear.png)
 
