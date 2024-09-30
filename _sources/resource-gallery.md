@@ -155,7 +155,7 @@ Resource Gallery
 <img src="_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a> </p>
 </div>
 </div>
@@ -164,7 +164,7 @@ Resource Gallery
 <div class="content">
 <img src="_static/thumbnails/earth_env_data_science.png" class="modal-img" />
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Ryan Abernathey, Kerry Key
+<strong>Author:</strong> Kerry Key, Ryan Abernathey
 <br/>
 <strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
@@ -1478,7 +1478,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students </p>
 </div>
 </div>
@@ -1811,7 +1811,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-jupyter.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/xSzXvwzFsDU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Jupyter Notebooks</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
 </p>
 </div>
@@ -1867,7 +1867,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-matplotlib.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/EiPRIdHQEmE" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1923,7 +1923,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-cartopy.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/ivmd3RluMiw" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Cartopy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Michaela Sizemore<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Michaela Sizemore, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1953,7 +1953,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-git.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/fYkPn0Nttlg" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Git and GitHub</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
 </p>
 </div>
@@ -1981,7 +1981,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Max Grover, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Max Grover, Drew Camron, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -2121,7 +2121,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-geocatplot.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/It231le1fAU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
 </p>
 </div>
