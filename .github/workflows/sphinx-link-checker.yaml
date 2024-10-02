@@ -33,14 +33,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Mambaforge
+      - name: Setup Miniforge
         uses: conda-incubator/setup-miniconda@v2
         with:
-          miniforge-variant: Mambaforge
           miniforge-version: latest
           python-version: "3.10"  # binderbot is failing with python 3.11
           activate-environment: ${{ inputs.environment_name }}
-          use-mamba: true
 
       - name: Set cache date
         if: inputs.use_cached_environment == 'true'
@@ -60,8 +58,8 @@ jobs:
           (inputs.use_cached_environment != 'true'
           || steps.cache.outputs.cache-hit != 'true')
         run: |
-          mamba env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
-          mamba install -c conda-forge sphinxcontrib-applehelp=1.0.4 sphinxcontrib-devhelp=1.0.2 sphinxcontrib-htmlhelp=2.0.1 sphinxcontrib-qthelp=1.0.3 sphinxcontrib-serializinghtml=1.1.5
+          conda env update -n ${{ inputs.environment_name }} -f ${{ inputs.environment_file }}
+          conda install -c conda-forge sphinxcontrib-applehelp=1.0.4 sphinxcontrib-devhelp=1.0.2 sphinxcontrib-htmlhelp=2.0.1 sphinxcontrib-qthelp=1.0.3 sphinxcontrib-serializinghtml=1.1.5
 
       - name: Check external links
         run: |
