@@ -98,7 +98,7 @@ jobs:
               new_data = json.load(file)
 
           with open(resource_gallery_file, 'r') as yaml_file:
-              existing_data = yaml.load(yaml_file) or []
+              existing_data = yaml.load(yaml_file, Loader=yaml.SafeLoader) or []
 
           existing_data.append(new_data)
 
