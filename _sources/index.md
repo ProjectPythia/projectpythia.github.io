@@ -9,6 +9,12 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
+<a href="posts/binderhub_status.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: orange; border: rgba(var(--spt-color-dark), 1);">
+         Pythia BinderHub Maintenance Monday Dec. 19, 2024
+ </a>
+
+<br><br>
+
 <a href="posts/fundraiser.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
          Donate to support Project Pythia!
  </a>
