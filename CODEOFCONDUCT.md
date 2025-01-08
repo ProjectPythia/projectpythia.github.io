@@ -43,7 +43,7 @@ Project administrators are responsible for clarifying the standards of acceptabl
 
 ## Reporting
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the the @ProjectPythia/core GitHub handle and/or projectpythia@ucar.edu as the community leaders in charge of these can view and manage the reported content, and hence are responsible for enforcement as outlined in the Consequences section below.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the @ProjectPythia/core GitHub handle and/or projectpythia@ucar.edu as the community leaders in charge of these can view and manage the reported content, and hence are responsible for enforcement as outlined in the Consequences section below.
 
 All complaints will be reviewed and investigated promptly and fairly.
 
