@@ -134,6 +134,23 @@ This Cookbook demonstrates how to do the following:
   <img src="https://contrib.rocks/image?repo=ProjectPythia/ERA5_interactive-cookbook" />
 </a>
 
+### [Wavelet Cookbook](https://projectpythia.org/wavelet-cookbook/)
+
+<img class="modal-img" src="https://projectpythia.org/wavelet-cookbook/_images/thumbnail.png
+" alt="Wavelet thumbnail" width="300"/>
+
+**Authors:** [Cora Schneck](https://github.com/cyschneck)
+
+[![DOI](https://zenodo.org/badge/815311051.svg)](https://zenodo.org/badge/latestdoi/815311051)
+
+This Cookbook covers how to work with wavelets in Python. Wavelets are a powerful tool to analyze time-series data. When data frequencies vary over time, wavelets can be applied to analysis trends and overcome the time/frequency limitations of Fourier Transforms
+
+**Contributors:**
+<a href="https://github.com/ProjectPythia/wavelet-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ProjectPythia/wavelet-cookbook" />
+</a>
+
+
 ## The 2024 Cook-off
 
 ### In pictures
