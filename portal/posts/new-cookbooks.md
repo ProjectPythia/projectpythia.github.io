@@ -7,7 +7,7 @@ tags: cook-off
 
 # Hello world, new Cookbooks!
 
-The Project Pythia team is excited to announce the publication of new community-contributed Cookbooks from our successful [2024 Pythia Cook-Off hackathon](https://projectpythia.org/pythia-cookoff-2024/), which was held June 11 - 14 2024, at the NCAR Mesa Lab in Boulder, Colorado and online. 
+The Project Pythia team is excited to announce the publication of new community-contributed Cookbooks from our successful [2024 Pythia Cook-Off hackathon](https://projectpythia.org/pythia-cookoff-2024/), which was held June 11 - 14 2024, at the NCAR Mesa Lab in Boulder, Colorado and online.
 
 [Cookbooks](https://cookbooks.projectpythia.org) are geoscience-flavored collections of tutorials, recipes, and reproducible example workflows for Python-based data analysis and visualization. Cookbooks are supported by a rich computational infrastructure enabling collaborative authoring, automated health-checking, and interactive use.
 
@@ -60,7 +60,7 @@ This Cookbook covers paleoclimate model-data comparison using spatio-temporal pa
 
 Paleoclimate observations obtained from tree rings or the geochemical composition of speleothems, ice and sediments provide an out-of-sample validation of climate models. However, comparing the output of climate models directly with the paleoclimate observations is difficult: (1) they are often expressed in different quantities (i.e., temperature vs ring width), (2) paleoclimate observations have large time uncertainties, (3) paleoclimate observations often incorporate more than one environmental signal (i.e., temperature AND moisture).
 
-Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used PCA analysis to compare model and data output. Here, we use a similar approach with the [CESM Last Millennium simulation](https://www2.cesm.ucar.edu/models/cesm1.2/) and proxy records stored on the [LiPDverse](https://lipdverse.org). This repository contains paleoclimate datasets that have been curated by the community and are archived in a standard format, facilitating analysis. 
+Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used PCA analysis to compare model and data output. Here, we use a similar approach with the [CESM Last Millennium simulation](https://www2.cesm.ucar.edu/models/cesm1.2/) and proxy records stored on the [LiPDverse](https://lipdverse.org). This repository contains paleoclimate datasets that have been curated by the community and are archived in a standard format, facilitating analysis.
 
 
 **Contributors:**
@@ -119,7 +119,7 @@ This Cookbook covers accessing, regridding, and visualizing the [ECMWF Reanalysi
 
 The ERA-5 represents the current state-of-the-art meteorological reanalysis, extending from well back into the 20th century to the present. While the data is freely-available for download by archival centers such as [Copernicus](https://www.copernicus.eu/en) and [RDA](https://rda.ucar.edu/), the data format and directory structure are typically not well-suited for interactive exploration. Specifically, parameters of interest are stored in individual files, for a limited period of time.
 
-A team at Google Cloud and Research has made interactive exploration much more tenable by representing the data in [Zarr](https://zarr.readthedocs.io/en/stable/) format. 
+A team at Google Cloud and Research has made interactive exploration much more tenable by representing the data in [Zarr](https://zarr.readthedocs.io/en/stable/) format.
 
 This Cookbook demonstrates how to do the following:
 
@@ -153,7 +153,7 @@ This Cookbook demonstrates how to do the following:
     - 29% graduate
     - 14% postdoc
     - 43% faculty or staff
-- Gender of attendees: 
+- Gender of attendees:
     - 59% men
     - 30% women
     - 11% other
