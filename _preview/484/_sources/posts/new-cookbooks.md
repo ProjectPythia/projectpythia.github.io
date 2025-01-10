@@ -175,7 +175,7 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
     - 30% women
     - 11% other
 - Number of individual project breakout groups: 9
-- New cookbooks published to the [Pythia Gallery](https://cookbooks.projectpythia.org): 4 _(as of this writing)_
+- New cookbooks published to the [Pythia Gallery](https://cookbooks.projectpythia.org): 5 _(as of this writing)_
 - Heavily revised cookbooks: 2
 
 ## Want to get involved?
