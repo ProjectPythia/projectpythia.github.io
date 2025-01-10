@@ -9,7 +9,7 @@ tags: cook-off
 
 The Project Pythia team is excited to announce the publication of new community-contributed Cookbooks from our successful [2024 Pythia Cook-Off hackathon](https://projectpythia.org/pythia-cookoff-2024/), which was held June 11 - 14 2024, at the NCAR Mesa Lab in Boulder, Colorado and online.
 
-[Cookbooks](https://cookbooks.projectpythia.org) are geoscience-flavored collections of tutorials, recipes, and reproducible example workflows for Python-based data analysis and visualization. Cookbooks are supported by a rich computational infrastructure enabling collaborative authoring, automated health-checking, and interactive use. Cookbooks undergo a review process and are tested and maintained by the Project Pythia community.
+[Cookbooks](https://cookbooks.projectpythia.org) are geoscience-flavored collections of tutorials, recipes, and reproducible example workflows for Python-based data analysis and visualization. Cookbooks are supported by a rich computational infrastructure enabling collaborative authoring, automated health-checking, and interactive use. Cookbooks undergo a review process, are citable by DOI, and are tested and maintained by the Project Pythia community.
 
 It's time to celebrate the Cook-off projects that have made it across the finish line. *[Watch this space!](https://cookbooks.projectpythia.org)* There are several more exciting Cookbooks still in development.
 
