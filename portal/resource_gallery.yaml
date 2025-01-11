@@ -1496,7 +1496,8 @@
     - matplotlib
     - numpy
     - pandas
-    formats: code
+    formats: 
+    - code
     domains:
     - Earth System Science
     - Chemical Oceanography
