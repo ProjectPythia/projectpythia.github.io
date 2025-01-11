@@ -7,7 +7,7 @@ tags: cook-off
 
 # Hello world, new Cookbooks!
 
-The Project Pythia team is excited to announce the publication of new community-contributed Cookbooks from our successful [2024 Pythia Cook-Off hackathon](https://projectpythia.org/pythia-cookoff-2024/), which was held June 11 - 14 2024, at the NCAR Mesa Lab in Boulder, Colorado and online.
+The Project Pythia team is excited to announce the publication of new community-contributed Cookbooks from our successful [2024 Pythia Cook-Off hackathon](https://projectpythia.org/pythia-cookoff-2024/), which was held June 11 - 14 2024, at the NSF NCAR's Mesa Lab in Boulder, Colorado and online.
 
 [Cookbooks](https://cookbooks.projectpythia.org) are geoscience-flavored collections of tutorials, recipes, and reproducible example workflows for Python-based data analysis and visualization. Cookbooks are supported by a rich computational infrastructure enabling collaborative authoring, automated health-checking, and interactive use. Cookbooks undergo a review process, are citable by DOI, and are tested and maintained by the Project Pythia community.
 
@@ -15,7 +15,7 @@ It's time to celebrate the Cook-off projects that have made it across the finish
 
 ## Cookbook round-up
 
-Here you can find brief descriptions and links to the new (and signficantly updated) books on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org). Try also filtering the [gallery](https://cookbooks.projectpythia.org) with the new "events" dropdown menu!
+Here you can find brief descriptions and links to the new (and significantly updated) books on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org). Try also filtering the [gallery](https://cookbooks.projectpythia.org) with the new "events" dropdown menu!
 
 
 ### [EOFs Cookbook](https://projectpythia.org/eofs-cookbook/)
@@ -183,7 +183,7 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 ## Want to get involved?
 
 <a role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
-          SAVE THE DATE! Project Pythia is hosting our next Cookbook Cook-off hackathon event at NCAR, August 5-8 2025.
+          SAVE THE DATE! Project Pythia is hosting our next Cookbook Cook-off hackathon event at the NSF NCAR's Mesa Lab, August 5-8 2025.
   </a>
 
 Do you have some feedback or ideaa for a new Cookbook project? Unsure how to get started? We'd love to hear from you at any of our [open meetings](https://projectpythia.org/#monthly-pythia-meetings), through the [Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/), or via any of our social media. Join us at our next Cook-off 2025!
