@@ -1496,7 +1496,7 @@
     - matplotlib
     - numpy
     - pandas
-    formats: 
+    formats:
     - code
     domains:
     - Earth System Science
