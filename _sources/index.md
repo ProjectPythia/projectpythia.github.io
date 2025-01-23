@@ -11,10 +11,6 @@
 
 <br><br>
 
-<a href="posts/binderhub_status.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: orange; border: rgba(var(--spt-color-dark), 1);">
-         Pythia BinderHub Maintenance Monday Jan. 20, 2025
- </a>
-<br
 <a href="posts/new-cookbooks.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
           Round-up of new Cookbooks from our 2024 Cook-off hackathon!
   </a>
