@@ -2,7 +2,7 @@
 
 :::{banner}
 :color: rgba(26, 100, 143, 0.9)
-:image: _static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
+:image: \_static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
 :caption: Photo by Jeff Stapleton from Pexels
 :class: dark-banner
 :::
@@ -44,7 +44,6 @@ _community-owned_, _geoscience-focused_, and _high-quality_.
         <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/pangeo_simple_logo.svg" alt="Pangeo" height="22px">
     </a>
 </span>
-
 
 ## Start Learning
 
@@ -212,9 +211,8 @@ and [Outreach Meetings](https://docs.google.com/document/d/e/2PACX-1vQBAt5B24wig
 
 ### Meeting & Event Calendar
 
-<div class="iframe-4x3">
-    <iframe src="https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com" frameborder="0" scrolling="no"></iframe>
-</div>
+:::{iframe} https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com
+:::
 
 ## How to Cite
 
@@ -225,7 +223,6 @@ To cite this project, please site our [NSF GEO OSE proposal](https://zenodo.org/
 > Rose, Brian E. J., Clyne, John, May, Ryan, Munroe, James, Snyder, Amelia, Eroglu, Orhan, & Tyle, Kevin. (2023). Collaborative Research: GEO OSE TRACK 2: Project Pythia and Pangeo. Zenodo. https://doi.org/10.5281/zenodo.8184298
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8184298.svg)](https://doi.org/10.5281/zenodo.8184298)
-
 
 ```{toctree}
 ---
