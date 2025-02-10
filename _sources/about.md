@@ -41,7 +41,7 @@ but instead help you _improve_ it -- and help you to help others do the same!
 
 ## Who is Project Pythia?
 
-Pythia is an open and inclusive community! Look [here](index.md#join-us) for info
+Pythia is an open and welcoming community! Look [here](index.md#join-us) for info
 on how to get involved.
 
 ## Project Pythia Goals
@@ -63,11 +63,11 @@ To learn more about Project Pythia and its history, see this list of presentatio
 
 | Forum | Date | Presenter | Format | Title (with link) |
 | ---   |  ---  |   ---   |  ---    |  --- |
-| Pangeo Showcase | 2024-10 | Brian Rose | slides | [Project Pythia Cookbooks: Challenges and progress in breaking down barriers to Open Science](https://docs.google.com/presentation/d/1-RS9DviJnOzwlRMNv1786UMYJ8PmQU-ohu0vo51NM0Q/edit?usp=sharing) |
+| Pangeo Showcase | 2024-10 | Brian Rose | slides | [Project Pythia Cookbooks](https://docs.google.com/presentation/d/1-RS9DviJnOzwlRMNv1786UMYJ8PmQU-ohu0vo51NM0Q/edit?usp=sharing) |
 | Ocean Sciences | 2024-02 | Brian Rose | slides | [The Project Pythia Cookbook Initiative](https://docs.google.com/presentation/d/1tvABElX-0CgiuzMfY7XFY-gsXzGUXqWV6k2qJeTw5bk/edit?usp=sharing) |
 | AMS   | 2024-01 | Drew Camron | slides | [Project Pythia: Three Years of Community Building Through Open Source Technology and Education](https://drive.google.com/file/d/1nZfWWozBKQzVCYpKUqWPX51MEgSAhgfM/view?usp=sharing) |
 | AMS   | 2024-01 | Kevin Tyle | slides | [Cooking up a Storm with Project Pythia](https://docs.google.com/presentation/d/1zMsoCg1RMHGZDuLLV0QsZB6NwKE7CKo5_8iFAGDGj6o/edit?usp=drive_link) |
-| AMS   | 2024-01 | Brian Rose | slides | [Project Pythia's vision: Building an Inclusive Geoscience Community through Accessible, Reusable, and Reproducible Workflows](https://docs.google.com/presentation/d/1nG3iJr6Q7_ktKHg6PXzna7DMp4HDiFgS7scqjKLtXNA/edit?usp=sharing) |
+| AMS   | 2024-01 | Brian Rose | slides | [Project Pythia's vision](https://docs.google.com/presentation/d/1nG3iJr6Q7_ktKHg6PXzna7DMp4HDiFgS7scqjKLtXNA/edit?usp=sharing) |
 | AGU   | 2023-12 | Brian Rose | slides | [The Project Pythia Cookbook Initiative](https://docs.google.com/presentation/d/1J6wgvypXxYZ4uTQHsquyH_tlY6KiQXBcxb3cwdd3FUM/edit?usp=sharing) |
 | AGU   | 2023-12 | Julia Kent | slides | [Project Pythia: Empowering Geoscientists through Open-Source, Open-Science Collaboration](https://docs.google.com/presentation/d/1wm0RxaswVh_YJFcYsHduONsYiYNLc69f0XuHnP7Vfh8/edit?usp=sharing) |
 | SciPy | 2023-07 | Kevin Tyle / Drew Camron | slides | [Better (Open-source) Homes and Gardens with Project Pythia](https://drive.google.com/file/d/125Wk3TTImHqSYLkgPNsy4_M_w3aENgLr/view?usp=sharing) |

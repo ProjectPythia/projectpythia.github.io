@@ -8,7 +8,7 @@ tags: fundraiser
 # Donate to Support Project Pythia!
 
 ## You can make an impact on our community!
-By donating to support Project Pythia you are investing in an important educational resource for the entire geoscience community, from students to late career. Project Pythia is an education working group helping geoscientists make sense of huge volumes of numerical scientific data using tools that facilitate open, reproducible science, and building an inclusive community of practice around these goals. Project Pythia is a home for Python-centered learning resources that are open-source, community-owned, geoscience-focused, and high-quality.
+By donating to support Project Pythia you are investing in an important educational resource for the entire geoscience community, from students to late career. Project Pythia is an education working group helping geoscientists make sense of huge volumes of numerical scientific data using tools that facilitate open, reproducible science, and building a community of practice around these goals. Project Pythia is a home for Python-centered learning resources that are open-source, community-owned, geoscience-focused, and high-quality.
 
 Donations contribute to outreach and community engagement activities, such as participant support at our annual hackathons.
 
