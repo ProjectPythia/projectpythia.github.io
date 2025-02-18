@@ -17,9 +17,11 @@ An education and training hub for the geoscientific Python community
 
 Project Pythia is hosting a Cookbook Cook-Off June 11-14, 2024. {button}`Cook-Off 2025<./posts/pythia-cookoff-2024.md>` {button}`Cook-Off 2024<./posts/pythia-cookoff-2024.md>`
 
-+++ { "class": "centered"}
++++ { "class": "justified"}
 
 ## What is Project Pythia?
+
+{button}`Learn More →<./about.md>`
 
 [Project Pythia](./about.md) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
@@ -28,10 +30,10 @@ numerical scientific data using tools that facilitate open, reproducible science
 and building a [community of practice](https://en.wikipedia.org/wiki/Community_of_practice)
 around these goals.
 
-Project Pythia is a home for Python-centered learning resources that are _open-source_,
+Project Pythia is a home for Python-justified learning resources that are _open-source_,
 _community-owned_, _geoscience-focused_, and _high-quality_.
 
-+++ { "class": "centered"}
++++ { "class": "justified"}
 
 ## Start Learning
 
@@ -98,16 +100,16 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 :::
 ::::
 
-+++ { "class": "centered"}
++++ { "class": "justified"}
 
 ## Join us!
+
+{button}`Go to Pangeo Discourse<https://discourse.pangeo.io/c/education/project-pythia/>`
 
 If you have questions or want to share anything with the Project
 Pythia Team, please reach out to us through the [Project Pythia
 category on the Pangeo Discourse forum](https://discourse.pangeo.io/c/education/project-pythia/)
 or join us at any of our [Monthly Project Meetings](#monthly-pythia-meetings).
-
-{button}`Go to Pangeo Discourse<https://discourse.pangeo.io/c/education/project-pythia/>`
 
 ### Contributing
 
@@ -117,20 +119,6 @@ We welcome contributions from anyone in the community.
 Please see our [Contributor’s Guide](/contributing)
 for details on how you can get involved, and come see our work in the
 [ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
-
-<div class="container">
-<div class="row">
-<div class="col-12 col-md m-2">
-<a class="btn btn-primary btn-lg w-100" href="/contributing.html" role="button">Read our Contributor’s Guide</a>
-</div>
-<div class="col-12 col-md-3 m-2">
-<a class="btn btn-primary btn-lg w-100" href="https://github.com/ProjectPythia" role="button">Visit us on GitHub</a>
-</div>
-<div class="col-12 col-md-4 m-2">
-<a class="btn btn-primary btn-lg w-100" href="/code_of_conduct.html" role="button">Read our Code of Conduct</a>
-</div>
-</div>
-</div>
 
 ### Monthly Pythia Meetings
 
@@ -144,15 +132,10 @@ We publish all notes and agendas of our
 [Community Meetings](https://docs.google.com/document/d/e/2PACX-1vQWQrgHs_G5XyNH5GTFYydH_woUZcyZibdxPUWLpqFUYs20WM93kdx5onwOaizC_3-tfnbreMNQbYAp/pub)
 and [Outreach Meetings](https://docs.google.com/document/d/e/2PACX-1vQBAt5B24wig2eh-hxHzgJiXjKCpSeGKsw3PFizZjwH7ka71dagipKwCwQvmE-obmSOfR4Psj2lgbvU/pub).
 
-### Meeting & Event Calendar
-
 :::{iframe} https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com
 :::
 
-# <<<<<<< HEAD
-
-+++ { "class": "centered"}
-
++++ { "class": "justified"}
 
 ## How to Cite
 
@@ -163,4 +146,3 @@ To cite this project, please site our [NSF GEO OSE proposal](https://zenodo.org/
 > Rose, Brian E. J., Clyne, John, May, Ryan, Munroe, James, Snyder, Amelia, Eroglu, Orhan, & Tyle, Kevin. (2023). Collaborative Research: GEO OSE TRACK 2: Project Pythia and Pangeo. Zenodo. https://doi.org/10.5281/zenodo.8184298
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8184298.svg)](https://doi.org/10.5281/zenodo.8184298)
-
