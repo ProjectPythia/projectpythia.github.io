@@ -30,6 +30,7 @@ jobs:
         with:
           name: repo-zip
           path: .
+          include-hidden-files: 'true'
 
   build:
     needs: automate-metrics
@@ -47,5 +48,4 @@ jobs:
     needs: build
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
     with:
-      cname: projectpythia.org
       publish_dir: 'portal/_build/html'

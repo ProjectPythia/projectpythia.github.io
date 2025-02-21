@@ -3,10 +3,13 @@
 }
 
 .bd-main .bd-content .bd-article-container {
-  max-width: 100%;  /* default is 60em */
+  max-width: 100%;
+  /* default is 60em */
 }
+
 .bd-page-width {
-  max-width: 100%;  /* default is 88rem */
+  max-width: 100%;
+  /* default is 88rem */
 }
 
 .sd-card-footer {
@@ -20,7 +23,8 @@ main.banner-main #project-pythia {
 }
 
 main.banner-main #project-pythia p {
-  font-size: 1.4rem;  /* default: 1.25rem * /
+  font-size: 1.4rem;
+  /* default: 1.25rem * /
   /* font-weight: 700; default: 300 */
 }
 
@@ -163,7 +167,7 @@ details.sd-dropdown {
   box-shadow: none !important;
 }
 
-details.sd-dropdown summary.sd-card-header + div.sd-summary-content {
+details.sd-dropdown summary.sd-card-header+div.sd-summary-content {
   background-color: white !important;
   border: 0.2rem solid var(--pst-sd-dropdown-color) !important;
   border-radius: calc(.25rem - 1px);
@@ -195,18 +199,33 @@ p {
   margin-bottom: 1rem;
 }
 
-html[data-theme="dark"] h1.display-1 {
-  color: white;
+/* Set a light color for text throughout in dark mode */
+html[data-theme="dark"] body {
+  color: #e0e0e0;
+  /* Light gray */
 }
 
-html[data-them="dark"] h4.display-4.p-0 {
-  color: black !important;
+/* Ensure links are visible */
+html[data-theme="dark"] a {
+  color: #b0c4de;
+  /* Light blue */
 }
 
+/* Target specific elements that need adjustment */
 html[data-theme="dark"] .sd-card-body.docutils {
-  background-color: white;
+  background-color: #202020;
+  /* Darker gray background for cards */
+  color: #e0e0e0;
+  /* Light gray text in cards */
 }
 
-html[data-theme="dark"] .container p {
-  color: black !important;
+/* Adjust headings if necessary */
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+  color: #f5f5f5;
+  /* Almost white for headings */
 }

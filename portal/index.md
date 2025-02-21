@@ -9,15 +9,23 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
+<br><br>
+
+<a href="posts/new-cookbooks.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
+          Round-up of new Cookbooks from our 2024 Cook-off hackathon!
+  </a>
+<br>
+
 <a href="posts/fundraiser.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
          Donate to support Project Pythia!
  </a>
+ <br>
 
 [Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
 Together these initiatives are helping geoscientists make sense of huge volumes of
 numerical scientific data using tools that facilitate open, reproducible science,
-and building an inclusive [community of practice](https://en.wikipedia.org/wiki/Community_of_practice)
+and building a [community of practice](https://en.wikipedia.org/wiki/Community_of_practice)
 around these goals.
 
 Project Pythia is a home for Python-centered learning resources that are _open-source_,
@@ -211,7 +219,7 @@ The material in Project Pythia is licensed for free and open consumption and reu
 
 To cite this project, please site our [NSF GEO OSE proposal](https://zenodo.org/record/8184298). Individual components of the project may be cited separately.
 
-> Rose, Brian E. J., Clyne, John, May, Ryan, Munroe, James, Snyder, Amelia, Eroglu, Orhan, & Tyle, Kevin. (2023). Collaborative Research: GEO OSE TRACK 2: Project Pythia and            Pangeo: Building an inclusive geoscience community through accessible, reusable, and reproducible workflows. Zenodo. https://doi.org/10.5281/zenodo.8184298
+> Rose, Brian E. J., Clyne, John, May, Ryan, Munroe, James, Snyder, Amelia, Eroglu, Orhan, & Tyle, Kevin. (2023). Collaborative Research: GEO OSE TRACK 2: Project Pythia and Pangeo. Zenodo. https://doi.org/10.5281/zenodo.8184298
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8184298.svg)](https://doi.org/10.5281/zenodo.8184298)
 
