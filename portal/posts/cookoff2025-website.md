@@ -10,4 +10,4 @@ tags: cook-off
 The 2025 Pythia Cookbook Cook-Off Hackathon will take place Agust
 5-8, at the NCAR Mesa Lab, located in Boulder, Colorado.
 
-Check out [this preliminary website for the hackathon](https://projectpythia.org/pythia-cookoff-2025/)
+Check out [this preliminary website for the hackathon](https://projectpythia.org/cookoff-2025/)
