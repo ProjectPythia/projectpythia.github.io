@@ -5,7 +5,7 @@ site:
   hide_title_block: true
 ---
 
-+++ {"class": "split-image"}
++++ {"kind": "split-image"}
 
 ## Project Pythia
 
@@ -17,7 +17,7 @@ An education and training hub for the geoscientific Python community
 
 Project Pythia is hosting a Cookbook Cook-Off June 11-14, 2024. {button}`Cookbook Cook-Off<https://projectpythia.org/pythia-cookoff-2024>`
 
-+++ { "class": "justified"}
++++ { "kind": "justified"}
 
 ## What is Project Pythia?
 
@@ -33,7 +33,7 @@ around these goals.
 Project Pythia is a home for Python-justified learning resources that are _open-source_,
 _community-owned_, _geoscience-focused_, and _high-quality_.
 
-+++ { "class": "justified"}
++++ { "kind": "justified"}
 
 ## Start Learning
 
@@ -100,7 +100,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 :::
 ::::
 
-+++ { "class": "justified"}
++++ { "kind": "justified"}
 
 ## Join us!
 
@@ -135,7 +135,7 @@ and [Outreach Meetings](https://docs.google.com/document/d/e/2PACX-1vQBAt5B24wig
 :::{iframe} https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com
 :::
 
-+++ { "class": "justified"}
++++ { "kind": "justified"}
 
 ## How to Cite
 
