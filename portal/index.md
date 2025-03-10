@@ -28,9 +28,6 @@ Donate to support Project Pythia!
 
 {button}`About Pangeo →<https://pangeo.io>`
 
-{button}`[About Pangeo](https://pangeo.io)`
-
-
 [Project Pythia](./about.md) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
 Together these initiatives are helping geoscientists make sense of huge volumes of
