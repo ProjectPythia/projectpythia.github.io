@@ -17,6 +17,9 @@ An education and training hub for the geoscientific Python community
 
 Project Pythia is hosting a Cookbook Cook-Off June 11-14, 2024. {button}`Cook-Off 2025<./posts/pythia-cookoff-2024.md>` {button}`Cook-Off 2024<./posts/pythia-cookoff-2024.md>`
 
+Donate to support Project Pythia!
+{button}`Donate now<posts/fundraiser.md>`
+
 +++ { "kind": "justified"}
 
 ## What is Project Pythia?
