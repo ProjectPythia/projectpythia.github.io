@@ -30,3 +30,5 @@ site:
     - title: Learn More
       url: https://mystmd.org/guide
   domains: []
+  options:
+    style: style.css
