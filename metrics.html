@@ -69,7 +69,7 @@
     <link rel="prev" title="Blog" href="blog.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="17 March 2025"/>   
+    <meta name="docbuild:last-update" content="19 March 2025"/>   
   </head>
   
   
@@ -218,6 +218,10 @@
   
   
 
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
   
 </div>
 
@@ -395,11 +399,15 @@
                   <article class="bd-article">
                      <section id="metrics">
 <h1>Metrics<a class="headerlink" href="#metrics" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
-<p>Last Updated: 2025-03-17 01:08:54.530839</p>
+<p>Last Updated: 2025-03-19 22:14:32.790509</p>
+<p>This metrics page provides an overview of user activity collected by Google Analytics across the three pillars of Project Pythia: our portal which includes information about the project as well as our resource gallery, our Foundations book, and our Cookbooks gallery. Information is either all-time (from a pre-project start date of March 2020) or year-to-date as indicated and is updated nightly to provide real-time and automated insights into our engagement, impact, and audience reach. If you would like to request a different metrics analysis, timeframe, or view, please <a class="reference external" href="https://github.com/ProjectPythia/projectpythia.github.io/issues/new/choose">open a GitHub issue</a>.</p>
+<section id="table-of-total-active-users-by-project">
+<h2>Table of Total Active Users by Project<a class="headerlink" href="#table-of-total-active-users-by-project" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<p>This table displays the total active users of our 3 Pythia projects over the life of Project Pythia. Google analytics defines active users as the number of unique people who have visited the site and met certain <a class="reference external" href="https://support.google.com/analytics/answer/9234069?sjid=8697784525616937194-NC">engagement requirements</a>. You can read more from the <a class="reference external" href="https://support.google.com/analytics/answer/12253918?hl=en">GA4 “Understand User Metrics” documentation</a>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Project</p></th>
-<th class="head"><p>Users</p></th>
+<th class="head"><p>All-Time Users</p></th>
 </tr>
 </thead>
 <tbody>
@@ -407,17 +415,30 @@
 <td><p>18.4K</p></td>
 </tr>
 <tr class="row-odd"><td><p>Foundations</p></td>
-<td><p>73.0K</p></td>
+<td><p>73.2K</p></td>
 </tr>
 <tr class="row-even"><td><p>Cookbooks</p></td>
-<td><p>20.0K</p></td>
+<td><p>20.1K</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+</section>
+<section id="chart-of-active-users-by-project-since-year-start">
+<h2>Chart of Active Users by Project Since Year Start<a class="headerlink" href="#chart-of-active-users-by-project-since-year-start" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<p>This line plot displays active users for our 3 Pythia projects (Portal in purple, Foundations in blue, and Cookbooks in salmon) since January 1st of the current year.</p>
 <p><img alt="Users this Year" src="_images/thisyear.png" /></p>
+</section>
+<section id="chart-of-top-5-pages-by-project">
+<h2>Chart of Top 5 Pages by Project<a class="headerlink" href="#chart-of-top-5-pages-by-project" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<p>This bar-chart displays the top 5 pages by project over the life of Project Pythia, as determined by screen page views. Screen page views refers to the number of times users viewed a page, including repeated visits. To learn more visit the <a class="reference external" href="https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema">GA4 “API Dimensions &amp; Metrics” page</a>.</p>
 <p><img alt="Top Pages" src="_images/toppages.png" /></p>
+</section>
+<section id="map-of-total-foundation-active-users-by-country">
+<h2>Map of Total Foundation Active Users by Country<a class="headerlink" href="#map-of-total-foundation-active-users-by-country" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<p>This map displays the number of active users per country for Pythia Foundations for the entire life of Project Pythia.</p>
 <p><img alt="Users by Country" src="_images/bycountry.png" /></p>
+</section>
 </section>
 
 <div class="section ablog__blog_comments">
@@ -450,6 +471,24 @@
 
               
               
+                
+                  <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-total-active-users-by-project">Table of Total Active Users by Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chart-of-active-users-by-project-since-year-start">Chart of Active Users by Project Since Year Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chart-of-top-5-pages-by-project">Chart of Top 5 Pages by Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-of-total-foundation-active-users-by-country">Map of Total Foundation Active Users by Country</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
                 
               
 
@@ -556,7 +595,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -591,7 +632,7 @@ By the <a href="https://projectpythia.org/">Project Pythia</a> Community
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 17 March 2025.
+  Last updated on 19 March 2025.
   <br/>
 </p>
   </div>
@@ -678,7 +719,7 @@ By the <a href="https://projectpythia.org/">Project Pythia</a> Community
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 17 March 2025.
+          Last updated on 19 March 2025.
         </p>
       </div>
     </div>
