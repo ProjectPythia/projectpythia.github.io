@@ -258,7 +258,7 @@ def plot_usersXcountry(FOUNDATIONS_ID):
     # Plotting code
     fig = plt.figure(figsize=(10, 4))
     ax = plt.axes(projection=cartopy.crs.PlateCarree(), frameon=False)
-    ax.set_title('Pythia Foundations Users by Country', fontsize=15)
+    ax.set_title('All-Time Pythia Foundations Users by Country', fontsize=15)
 
     shapefile = cartopy.io.shapereader.natural_earth(category='cultural', resolution='110m', name='admin_0_countries')
     reader = cartopy.io.shapereader.Reader(shapefile)
