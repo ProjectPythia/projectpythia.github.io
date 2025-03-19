@@ -37,7 +37,7 @@ def process_user_data(json_file, top_pages, this_year, map, md_file):
         # Add plots
         f.write('## Chart of Active Users by Project Since Year Start\n\n')
         f.write(
-            'This line plot displays active users for our 3 Pythia projects (Portal in purple, Foundations in blue, and Cookbooks in salmon) since January 1st of the current year. Typically Foundations is our most visited project, but with all 3 displaying a cycle representative of the Monday-Friday work week.\n\n'
+            'This line plot displays active users for our 3 Pythia projects (Portal in purple, Foundations in blue, and Cookbooks in salmon) since January 1st of the current year.\n\n'
         )
         f.write(f'![Users this Year]({this_year})\n\n')
 
