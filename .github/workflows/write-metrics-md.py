@@ -43,7 +43,7 @@ def process_user_data(json_file, top_pages, this_year, map, md_file):
 
         f.write('## Chart of Top 5 Pages by Project\n\n')
         f.write(
-            'This table displays the top 5 pages by project over the life of Project Pythia, as determined by screen page views. Screen page views refers to the number of times users viewed a page, including repeated visits. To learn more visit the [GA4 "API Dimensions & Metrics" page](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema).\n\n'
+            'This bar-chart displays the top 5 pages by project over the life of Project Pythia, as determined by screen page views. Screen page views refers to the number of times users viewed a page, including repeated visits. To learn more visit the [GA4 "API Dimensions & Metrics" page](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema).\n\n'
         )
         f.write(f'![Top Pages]({top_pages})\n\n')
 
