@@ -7,9 +7,12 @@
 :class: dark-banner
 :::
 
-<span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
+<span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span><br>
 
-<br><br>
+<a href="posts/cookoff2025-website.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
+          Save the date for the 2025 Cook-off hackathon!
+  </a>
+<br>
 
 <a href="posts/new-cookbooks.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
           Round-up of new Cookbooks from our 2024 Cook-off hackathon!
