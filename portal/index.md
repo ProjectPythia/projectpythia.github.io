@@ -125,6 +125,8 @@ Please see our [Contributor’s Guide](/contributing)
 for details on how you can get involved, our [Code of Conduct](https://github.com/projectpythia/projectpythia.github.io/blob/main/CODEOFCONDUCT.md) for an overview of contribution rules and responsibilities, and come see our work in the
 [ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
 
+(monthly-pythia-meetings)=
+
 ### Monthly Pythia Meetings
 
 Project Pythia holds regular public meetings via Zoom as scheduled on the calendar below.
