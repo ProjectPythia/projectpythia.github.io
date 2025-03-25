@@ -9,7 +9,7 @@ site:
 
 ## Project Pythia
 
-:::{image} \_static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
+:::{image} _static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
 :caption: Photo by Jeff Stapleton from Pexels
 :::
 
