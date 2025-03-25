@@ -109,7 +109,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 
 ## Join us!
 
-{button}`Go to Pangeo Discourse<https://discourse.pangeo.io/c/education/project-pythia/>`
+{button}`Pangeo Discourse →<https://discourse.pangeo.io/c/education/project-pythia/>`
 
 If you have questions or want to share anything with the Project
 Pythia Team, please reach out to us through the [Project Pythia
