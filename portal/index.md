@@ -10,7 +10,7 @@ site:
 ## Project Pythia
 
 :::{image} _static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
-:caption: Photo by Jeff Stapleton from Pexels
+:alt: Photo by Jeff Stapleton from Pexels
 :::
 
 An education and training hub for the geoscientific Python community
