@@ -20,10 +20,7 @@ project:
     - file: portal/metrics.md
     - title: Posts
       children:
-        - file: portal/posts/cookoff2023.md
-        - file: portal/posts/cookoff2024-savethedate.md
-        - file: portal/posts/cookoff2024-website.md
-
+        - pattern: portal/posts/*.md
 site:
   template: book-theme
   actions:

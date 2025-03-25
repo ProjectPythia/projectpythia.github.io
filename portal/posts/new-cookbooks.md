@@ -23,7 +23,7 @@ Here you can find brief descriptions and links to the new (and significantly upd
 
 **Authors:** [Robert Ford](https://github.com/r-ford)
 
-[![DOI](https://zenodo.org/badge/656765685.svg)](https://zenodo.org/badge/latestdoi/656765685)
+<doi:10.5281/zenodo.10909812>
 
 This Cookbook covers Empirical Orthogonal Function (EOF) analysis and its application to climate data. EOF analysis is an essential tool for studying the variability of the atmosphere-ocean system. Meteorological and oceanographic data is noisy and multidimensional, but an EOF analysis allows us to pull out patterns from the data that might otherwise be difficult to find. The goal of this cookbook is to provide background and context to the analysis alongside practical examples of carrying out the analysis using Python packages.
 
@@ -38,7 +38,7 @@ This Cookbook covers Empirical Orthogonal Function (EOF) analysis and its applic
 
 **Authors:** [Lev Romashkov](https://github.com/rmshkv) and [Kristen Krumhardt](https://github.com/kristenkrumhardt)
 
-<a class="reference external" href="https://zenodo.org/badge/latestdoi/739552419"><img alt="DOI" src="https://zenodo.org/badge/739552419.svg"/></a>
+<doi:10.5281/zenodo.12557198>
 
 This Cookbook covers working with various sources of ocean biogeochemistry data, including Community Earth System Model (CESM) output and observational data. It provides a brief introduction to some metrics important to ocean biogeochemistry, from physical quantities like temperature to biological quantities like plankton biomass. It also demonstrates some of the data science techniques used to work with this information, and provides an introduction to the relationship between modeled and observational estimates.
 
@@ -53,7 +53,7 @@ This Cookbook covers working with various sources of ocean biogeochemistry data,
 
 **Authors:** [Deborah Khider](https://github.com/khider), [Hari Sundar](https://github.com/sriharisundar), and [Varun Ratnakar](https://github.com/varunratnakar)
 
-[![DOI](https://zenodo.org/badge/813352705.svg)](https://zenodo.org/badge/latestdoi/813352705)
+<doi:10.5281/zenodo.11659789>
 
 This Cookbook covers paleoclimate model-data comparison using spatio-temporal pattern obtained using Principal Component Analysis (PCA).
 
@@ -72,7 +72,7 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 
 **Authors:** [Max Grover](@mgrover1), [Nathan Collier](@nocollier), [Carsten Ehbrecht](@cehbrecht), [Jacqueline Nugent](@jacnugent), and [Gerardo Rivera Tello](@griverat)
 
-[![DOI](https://zenodo.org/badge/721319801.svg)](https://doi.org/10.5281/zenodo.11663067)
+<doi:10.5281/zenodo.11663067>
 
 This Cookbook covers how to access and analyze datasets that can be accessed from Earth System Grid Federation (ESGF) cyberinfrastructure.
 
@@ -89,7 +89,7 @@ This cookbook focuses on highlighting analysis recipes, as well as data acccess 
 
 **Authors:** [Max Grover](https://github.com/mgrover1), [Zachary Sherman](https://github.com/zssherman), [Milind Sharma](https://github.com/gewitterblitz), [Alfonso Ladino](https://github.com/aladinor), [Crystal Camron](https://github.com/crystalclearwx), and [Takashi Unuma](https://github.com/TakashiUNUMA)
 
-[![DOI](https://zenodo.org/badge/479066261.svg)](https://zenodo.org/badge/latestdoi/479066261)
+<doi:10.5281/zenodo.8075854>
 
 Pythia's very first cookbook continues to grow!
 
@@ -109,7 +109,7 @@ The Example Workflows section contains a growing collection of real-world case s
 
 **Authors:** [Kevin Tyle](https://github.com/ktyle), [Michael Barletta](https://github.com/Michael-Barletta), [Negin Sobhani](https://github.com/negin513), [Nicholas Cote](https://github.com/ncote) , [Harsha Hampapura](https://github.com/hrhampapura) , and [Philip Chmielowiec](https://github.com/philip2c)
 
-[![DOI](https://zenodo.org/badge/657280462.svg)](https://zenodo.org/badge/latestdoi/657280462)
+<doi:10.5281/zenodo.10303236>
 
 This Cookbook covers accessing, regridding, and visualizing the [ECMWF Reanalysis version 5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) (aka **ERA-5**) dataset in a [Analysis Ready, Cloud Optimized](https://www.frontiersin.org/articles/10.3389/fclim.2021.782909/full) (aka **ARCO**) format.
 
@@ -136,7 +136,7 @@ This Cookbook demonstrates how to do the following:
 
 **Authors:** [Cora Schneck](https://github.com/cyschneck)
 
-[![DOI](https://zenodo.org/badge/815311051.svg)](https://zenodo.org/badge/latestdoi/815311051)
+<doi:10.5281/zenodo.14550038>
 
 This Cookbook covers how to work with wavelets in Python. Wavelets are a powerful tool to analyze time-series data. When data frequencies vary over time, wavelets can be applied to analysis trends and overcome the time/frequency limitations of Fourier Transforms
 
