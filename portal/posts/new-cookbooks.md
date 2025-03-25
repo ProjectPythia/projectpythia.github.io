@@ -1,5 +1,4 @@
 ---
-blogpost: true
 date: 2025-01-10
 author: Brian Rose
 tags: [cook-off]

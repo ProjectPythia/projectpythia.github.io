@@ -1,5 +1,4 @@
 ---
-blogpost: true
 date: 2023-08-29
 author: John Clyne
 tags: [cook-off]

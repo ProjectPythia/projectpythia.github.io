@@ -1,5 +1,4 @@
 ---
-blogpost: true
 date: 2023-06-28
 author: Julia kent
 tags: [cook-off]

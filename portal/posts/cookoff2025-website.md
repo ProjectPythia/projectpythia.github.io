@@ -1,5 +1,4 @@
 ---
-blogpost: true
 date: 2025-02-20
 author: Julia Kent
 tags: [cook-off]
