@@ -14,13 +14,12 @@ project:
   toc:
     - file: portal/index.md
     - file: portal/about.md
-    - file: portal/blog.md
+    - title: Blog
+      children:
+        - pattern: portal/posts/*.md
     - file: portal/contributing.md
     - file: portal/cookbook-guide.md
     - file: portal/metrics.md
-    - title: Posts
-      children:
-        - pattern: portal/posts/*.md
 site:
   template: book-theme
   actions:
