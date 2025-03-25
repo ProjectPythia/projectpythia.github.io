@@ -1,8 +1,8 @@
 ---
 blogpost: true
-date: Feb 20, 2025
+date: 2025-02-20
 author: Julia Kent
-tags: cook-off
+tags: [cook-off]
 ---
 
 # Save the date for the 2025 Cook-off hackathon!

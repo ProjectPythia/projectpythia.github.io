@@ -1,8 +1,8 @@
 ---
 blogpost: true
-date: Jun 28, 2023
+date: 2023-06-28
 author: Julia kent
-tags: cook-off
+tags: [cook-off]
 ---
 
 # Pythia Cookbook Cook-Off Hackathon 2023
