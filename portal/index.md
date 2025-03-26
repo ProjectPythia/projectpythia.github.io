@@ -9,7 +9,7 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span><br>
 
-<a href="posts/cookoff2025-website.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
+<a href="https://projectpythia.org/pythia-cookoff-2025/" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
           Save the date for the 2025 Cook-off hackathon!
   </a>
 <br>
