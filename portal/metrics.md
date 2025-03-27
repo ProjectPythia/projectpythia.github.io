@@ -65,7 +65,7 @@ This metrics page provides an overview of user activity collected by Google Anal
 
 ## Table of Total Active Users by Project
 
-``{code-cell} python3
+```{code-cell} python3
 :tags: [remove-cell]
 
 def _format_rounding(value):
@@ -106,13 +106,15 @@ foundations_users = _run_total_users_report(FOUNDATIONS_ID)
 cookbooks_users = _run_total_users_report(COOKBOOKS_ID)
 ```
 
-| Project     | All-Time Users            |
+(table-total-users)=
+| Project | All-Time Users |
 | ----------- | ------------------------- |
-| Portal      | {eval}`portal_users`      |
+| Portal | {eval}`portal_users` |
 | Foundations | {eval}`foundations_users` |
-| Cookbooks   | {eval}`cookbooks_users`   |
+| Cookbooks | {eval}`cookbooks_users` |
 
 ## Chart of Active Users by Project Since Year Start
+
 ```{code-cell} python3
 :tags: [remove-cell]
 
@@ -165,16 +167,19 @@ def plot_projects_this_year(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
     plt.show()
 
 ```
+
 This line plot displays active users for our 3 Pythia projects (Portal in purple, Foundations in blue, and Cookbooks in salmon) since January 1st of the current year.
 
 ```{code-cell} python3
 :tags: [remove-input]
+:name: plot-active-users
 :caption: Chart of active users by project since year start.
 
 plot_projects_this_year(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
 ```
 
 ## Chart of Top 5 Pages by Project
+
 ```{code-cell} python3
 :tags: [remove-cell]
 
@@ -241,16 +246,19 @@ def plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
     plt.legend(fontsize=12, loc='lower right')
     plt.show()
 ```
+
 This bar-chart displays the top 5 pages by project over the life of Project Pythia, as determined by screen page views. Screen page views refers to the number of times users viewed a page, including repeated visits. To learn more visit the [GA4 "API Dimensions & Metrics" page](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema).
 
 ```{code-cell} python3
 :tags: [remove-input]
+:name: chart-top-five-pages
 :caption: Bar chart of the top five pages by project over the life of Project Pythia
 
 plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
 ```
 
 ## Map of Total Foundation Active Users by Country
+
 ```{code-cell} python3
 :tags: [remove-cell]
 
@@ -296,11 +304,9 @@ def plot_usersXcountry(FOUNDATIONS_ID):
         users_by_country[dict_api2cartopy[key]] = users_by_country.pop(key)
 
     # Sort by views and grab the top 10 countries for a text box
-    top_10_countries = sorted(users_by_country.items(), key=lambda item: item[1], reverse=T
-rue)[:10]
+    top_10_countries = sorted(users_by_country.items(), key=lambda item: item[1], reverse=True)[:10]
     top_10_text = '\n'.join(
-        f'{country}: {_format_rounding(value)}' for i, (country, value) in enumerate(top_10
-_countries)
+        f'{country}: {_format_rounding(value)}' for i, (country, value) in enumerate(top_10_countries)
     )
 
     # Plotting code
@@ -346,15 +352,15 @@ _countries)
     props = dict(boxstyle='round', facecolor='white', edgecolor='white')
     ax.text(1.01, 0.5, top_10_text, transform=ax.transAxes, fontsize=12, verticalalignment='center', bbox=props)
 
-    plt.tight_layout()
     plt.show()
 ```
+
 This map displays the number of active users per country for Pythia Foundations for the entire life of Project Pythia.
 
 ```{code-cell} python3
 :tags: [remove-input]
+:name: map-active-users-country
 :caption: Map of the number of active users per country for Pythia Foundations for the entire life of Project Pythia.
 
 plot_usersXcountry(FOUNDATIONS_ID)
 ```
-
