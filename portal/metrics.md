@@ -162,7 +162,7 @@ def plot_projects_this_year(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
     plt.legend(fontsize=12, loc='upper right')
 
     plt.xlabel('Date', fontsize=12)
-    plt.savefig('portal/metrics/thisyear.png', bbox_inches='tight')
+    plt.show()
 
 ```
 This line plot displays active users for our 3 Pythia projects (Portal in purple, Foundations in blue, and Cookbooks in salmon) since January 1st of the current year.
@@ -239,7 +239,7 @@ def plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
     ax.set_xlabel('Page Views', fontsize=12)
 
     plt.legend(fontsize=12, loc='lower right')
-    plt.savefig('portal/metrics/toppages.png', bbox_inches='tight')
+    plt.show()
 ```
 This bar-chart displays the top 5 pages by project over the life of Project Pythia, as determined by screen page views. Screen page views refers to the number of times users viewed a page, including repeated visits. To learn more visit the [GA4 "API Dimensions & Metrics" page](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema).
 
@@ -347,7 +347,7 @@ _countries)
     ax.text(1.01, 0.5, top_10_text, transform=ax.transAxes, fontsize=12, verticalalignment='center', bbox=props)
 
     plt.tight_layout()
-    plt.savefig('portal/metrics/bycountry.png', bbox_inches='tight')
+    plt.show()
 ```
 This map displays the number of active users per country for Pythia Foundations for the entire life of Project Pythia.
 
