@@ -4,6 +4,8 @@ kernelspec:
   display_name: Python 3
 ---
 
+# Metrics
+
 ```{code-cell} python3
 :tags: [remove-cell]
 
@@ -57,7 +59,6 @@ except google.auth.exceptions.MalformedError as e:
 pre_project_date = '2020-03-31'
 ```
 
-# Metrics
 
 Last Updated: {eval}`str(datetime.datetime.now())`
 
