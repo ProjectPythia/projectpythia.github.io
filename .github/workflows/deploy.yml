@@ -43,7 +43,7 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
       - name: Build HTML Assets
-        run: myst build --html
+        run: myst build --html --execute
         # Only expose secrets here
         env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
