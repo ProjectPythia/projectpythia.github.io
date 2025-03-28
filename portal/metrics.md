@@ -30,7 +30,7 @@ COOKBOOKS_ID = '324070631'
 
 # Access Secrets
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-# Ensure GH secrets doesn't intrudce extra '\' new line characters (related to '\' being an escape character)
+# Ensure GH secrets doesn't introduce extra '\' new line characters (related to '\' being an escape character)
 PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('\\n', '\n')
 
 credentials_dict = {
