@@ -20,6 +20,8 @@ import matplotlib.cm as cm
 import matplotlib.colors as colors
 import matplotlib.pyplot as plt
 import numpy as np
+import warnings
+
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Dimension, Metric, RunReportRequest
 
@@ -262,6 +264,9 @@ plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
 
 ```{code-cell} python3
 :tags: [remove-cell]
+
+# Disable cartopy warning
+warnings.filterwarnings('ignore', category=cartopy.DownloadWarning)
 
 def _run_usersXcountry_report(property_id):
     """
