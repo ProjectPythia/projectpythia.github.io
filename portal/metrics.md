@@ -14,6 +14,7 @@ import json
 import os
 
 import cartopy
+import cartopy.io
 import google
 import matplotlib
 import matplotlib.cm as cm
@@ -266,7 +267,7 @@ plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID)
 :tags: [remove-cell]
 
 # Disable cartopy warning
-warnings.filterwarnings('ignore', category=cartopy.DownloadWarning)
+warnings.filterwarnings('ignore', category=cartopy.io.DownloadWarning)
 
 def _run_usersXcountry_report(property_id):
     """
