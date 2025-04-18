@@ -1,6 +1,6 @@
 # Metrics 
 
-Last Updated: 2025-04-14 01:11:37.720219
+Last Updated: 2025-04-18 21:29:09.948990
 
 This metrics page provides an overview of user activity collected by Google Analytics across the three pillars of Project Pythia: our portal which includes information about the project as well as our resource gallery, our Foundations book, and our Cookbooks gallery. Information is either all-time (from a pre-project start date of March 2020) or year-to-date as indicated and is updated nightly to provide real-time and automated insights into our engagement, impact, and audience reach. If you would like to request a different metrics analysis, timeframe, or view, please [open a GitHub issue](https://github.com/ProjectPythia/projectpythia.github.io/issues/new/choose).
 
@@ -10,9 +10,9 @@ This table displays the total active users of our 3 Pythia projects over the lif
 
 | Project | All-Time Users |
 | ----- | ----- |
-| Portal | 18.8K |
-| Foundations | 74.9K |
-| Cookbooks | 21.4K |
+| Portal | 18.9K |
+| Foundations | 75.2K |
+| Cookbooks | 21.7K |
 
 ## Chart of Active Users by Project Since Year Start
 
