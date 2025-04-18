@@ -170,7 +170,7 @@ The link to your published book will then be displayed on the home page of the r
 ```{Note}
 If you have transferred your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will _only run on the upstream fork on the ProjectPythia organization_ so there's only one copy of the "published" book.
 
-It's possible to enable the workflows on your personal fork, but usually unnecesary if you preview your work via Pull Requests (see next section)!
+It's possible to enable the workflows on your personal fork, but usually unnecessary if you preview your work via Pull Requests (see next section)!
 ```
 
 ### Pull Requests and previews
