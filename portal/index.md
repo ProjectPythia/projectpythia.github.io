@@ -9,6 +9,11 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span><br>
 
+:::{admonition} **Service Notice**
+:class: warning, large-banner
+We are transitioning our infrastructure from Jupyter Book to Jupyter Book 2. **You may experience service interruptions on Tuesday, June 17th.**
+:::
+
 <a href="posts/cookoff2025-website.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
           Save the date for the 2025 Cook-off hackathon!
   </a>
