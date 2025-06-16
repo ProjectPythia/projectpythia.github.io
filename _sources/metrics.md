@@ -1,6 +1,6 @@
 # Metrics 
 
-Last Updated: 2025-06-15 17:35:56.464492
+Last Updated: 2025-06-16 01:17:13.892196
 
 This metrics page provides an overview of user activity collected by Google Analytics across the three pillars of Project Pythia: our portal which includes information about the project as well as our resource gallery, our Foundations book, and our Cookbooks gallery. Information is either all-time (from a pre-project start date of March 2020) or year-to-date as indicated and is updated nightly to provide real-time and automated insights into our engagement, impact, and audience reach. If you would like to request a different metrics analysis, timeframe, or view, please [open a GitHub issue](https://github.com/ProjectPythia/projectpythia.github.io/issues/new/choose).
 
