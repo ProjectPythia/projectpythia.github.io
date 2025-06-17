@@ -7,17 +7,14 @@ contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
 
 ## Instructions for adding a blog post
-
-We use [Sphinx ABblog](https://ablog.readthedocs.io/en/stable/) to add blog posts to our site.
-
 Within the `portal/posts/` folder add your `.md` blog file with the following heading:
 
 ```
 ---
-blogpost: true
-date: MON DD, YYYY
+
+date: YYYY-MM-DD
 author: First Last
-tags: sample-tag
+tags: [sample-tag]
 ---
 ```
 

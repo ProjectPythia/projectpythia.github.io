@@ -10,7 +10,7 @@ The following is a step-by-step guide to creating a new Cookbook and getting it 
 
 Before you begin, ask yourself if the content you are developing for a cookbook would be better suited as an addition to an existing cookbook. The best place to discuss cookbook ideas is the [Project Pythia category of the Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/60).
 
-```{Note}
+```{note}
 These instructions assume that your goal is to contribute a new Cookbook to the community-maintained collection housed on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org).
 
 Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don't focus on that use case in this guide.
@@ -39,7 +39,7 @@ Before developing your cookbook, you should consider how it will access the data
 
 Your cookbook is now ready to have content added!
 
-```{Note}
+```{note}
 In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 ```
 
@@ -54,8 +54,8 @@ However, we recommend transferring to the Pythia organization early, for a few r
 - Easier to get help from the Pythia infrastructure team
 - Encourages collaboration
 
-```{Note}
-You're still in control! You will always retain write access to your Cookbook repository even after transferring ownership to the Pythia organization.
+```{note}
+You're still in control! You will always retain write access to your Cookbook repository even after transfering ownership to the Pythia organization.
 
 Also, _don't worry about breaking anything!_ Your repo will not affect any other Project Pythia content until you initiate the request to list it on the [Cookbook Gallery](https://cookbooks.projectpythia.org) (see below...)
 ```
@@ -99,7 +99,7 @@ Your repository includes automation for building and publishing your Cookbook, p
 
 In each of these files, in the field called `environment_name:`, replace  `cookbook-dev` with the name you used in your `environment.yml` file (probably `<your-cookbook-name>-dev`). Commit these changes.
 
-```{Note}
+```{note}
 If these workflow files look mysterious and you don't know anything about how GitHub Actions work, don't worry! The Pythia team will help with any problems that arise with the Cookbook automation.
 ```
 
@@ -167,8 +167,8 @@ Here's a handy trick for finding your published book:
 
 The link to your published book will then be displayed on the home page of the repo.
 
-```{Note}
-If you have transferred your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will _only run on the upstream fork on the ProjectPythia organization_ so there's only one copy of the "published" book.
+```{note}
+If you have transfered your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will _only run on the upstream fork on the ProjectPythia organization_ so there's only one copy of the "published" book.
 
 It's possible to enable the workflows on your personal fork, but usually unnecessary if you preview your work via Pull Requests (see next section)!
 ```
@@ -187,8 +187,8 @@ Not satisfied? Keep making changes! Every new push to the feature branch on your
 
 ### Building on the Pythia Binder
 
-```{Note}
-By default, notebooks are executed on the free GitHub Actions service. This works fine for most lightweight Cookbooks. If your book is building and publishing successfully, you can safely ignore this section!
+```{note}
+By default, notebooks are executed on the free GitHub Actions service. This works fine for most lightweight Cookbooks. If your book is building and publishing succesfully, you can safely ignore this section!
 ```
 
 For Cookbooks with substantial compute requirements, you have the option of routing notebook execution to a specialized Binder service maintained by the Project Pythia team.
@@ -200,7 +200,7 @@ Here's how:
 - That will trigger a build and preview as usual, but the notebook execution will happen on the Binder.
 - If all is well, merge the changes, and all further builds will work this way.
 
-```{Note}
+```{note}
 The Binder uses your `environment.yml` file to create an image of an execution environment, which is stored for reuse. The time to execute your notebooks can vary, depending on whether the Binder needs to build a new image or not.
 ```
 
@@ -208,8 +208,8 @@ The Binder uses your `environment.yml` file to create an image of an execution e
 
 Once you're happy with your content and your Cookbook is building and deploying properly, it's time to think about submitting it for inclusion in the [Cookbook Gallery](https://cookbooks.projectpythia.org/)!
 
-```{Note}
-Cookbooks don't need to be "finished" in order to be accepted in the Gallery! Cookbooks are typically accepted so long as they run cleanly, are free of obvious errors, and have some relevant new content.
+```{note}
+Cookbooks don't need to be "finished" in order to accepted in the Gallery! Cookbooks are typically accepted so long as they run cleanly, are free of obvious errors, and have some relevant new content.
 
 Cookbooks are meant to be living documents. We encourage authors to open GitHub issues to track progress on adding and updating content.
 ```
@@ -231,7 +231,7 @@ Edit `CITATION.cff` as follows:
   - ORCID and other metadata for each author is optional but helpful
 - Under the `name:` field, change "Cookbook Template contributors" to "[Your Cookbook Name] contributors"
 
-```{Note}
+```{note}
 GitHub automatically tracks all contributions to your repository. The folks who help with infrastructure fixes, content reviews, etc., are considered "contributors" but not primary authors. We include the "contributors" as a single group in `CITATION.cff` to acknowledge this!
 ```
 

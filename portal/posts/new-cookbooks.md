@@ -1,8 +1,7 @@
 ---
-blogpost: true
-date: Jan 10, 2025
+date: 2025-01-10
 author: Brian Rose
-tags: cook-off
+tags: [cook-off]
 ---
 
 # Hello world, new Cookbooks!
@@ -11,12 +10,11 @@ The Project Pythia team is excited to announce the publication of new community-
 
 [Cookbooks](https://cookbooks.projectpythia.org) are geoscience-flavored collections of tutorials, recipes, and reproducible example workflows for Python-based data analysis and visualization. Cookbooks are supported by a rich computational infrastructure enabling collaborative authoring, automated health-checking, and interactive use. Cookbooks undergo a review process, are citable by DOI, and are tested and maintained by the Project Pythia community.
 
-It's time to celebrate the Cook-off projects that have made it across the finish line. *[Watch this space!](https://cookbooks.projectpythia.org)* There are several more exciting Cookbooks still in development.
+It's time to celebrate the Cook-off projects that have made it across the finish line. _[Watch this space!](https://cookbooks.projectpythia.org)_ There are several more exciting Cookbooks still in development.
 
 ## Cookbook round-up
 
 Here you can find brief descriptions and links to the new (and significantly updated) books on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org). Try also filtering the [gallery](https://cookbooks.projectpythia.org) with the new "events" dropdown menu!
-
 
 ### [EOFs Cookbook](https://projectpythia.org/eofs-cookbook/)
 
@@ -24,15 +22,14 @@ Here you can find brief descriptions and links to the new (and significantly upd
 
 **Authors:** [Robert Ford](https://github.com/r-ford)
 
-[![DOI](https://zenodo.org/badge/656765685.svg)](https://zenodo.org/badge/latestdoi/656765685)
+<doi:10.5281/zenodo.10909812>
 
 This Cookbook covers Empirical Orthogonal Function (EOF) analysis and its application to climate data. EOF analysis is an essential tool for studying the variability of the atmosphere-ocean system. Meteorological and oceanographic data is noisy and multidimensional, but an EOF analysis allows us to pull out patterns from the data that might otherwise be difficult to find. The goal of this cookbook is to provide background and context to the analysis alongside practical examples of carrying out the analysis using Python packages.
 
 **Contributors:**
 <a href="https://github.com/ProjectPythia/eofs-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/eofs-cookbook" />
+<img src="https://contrib.rocks/image?repo=ProjectPythia/eofs-cookbook" />
 </a>
-
 
 ### [Ocean Biogeochemistry Cookbook](https://projectpythia.org/ocean-bgc-cookbook/)
 
@@ -40,15 +37,14 @@ This Cookbook covers Empirical Orthogonal Function (EOF) analysis and its applic
 
 **Authors:** [Lev Romashkov](https://github.com/rmshkv) and [Kristen Krumhardt](https://github.com/kristenkrumhardt)
 
-<a class="reference external" href="https://zenodo.org/badge/latestdoi/739552419"><img alt="DOI" src="https://zenodo.org/badge/739552419.svg"/></a>
+<doi:10.5281/zenodo.12557198>
 
 This Cookbook covers working with various sources of ocean biogeochemistry data, including Community Earth System Model (CESM) output and observational data. It provides a brief introduction to some metrics important to ocean biogeochemistry, from physical quantities like temperature to biological quantities like plankton biomass. It also demonstrates some of the data science techniques used to work with this information, and provides an introduction to the relationship between modeled and observational estimates.
 
 **Contributors:**
 <a href="https://github.com/rmshkv/ocean-bgc-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rmshkv/ocean-bgc-cookbook" />
+<img src="https://contrib.rocks/image?repo=rmshkv/ocean-bgc-cookbook" />
 </a>
-
 
 ### [Investigating interhemispheric precipitation changes over the past millennium](https://projectpythia.org/paleoPCA-cookbook/)
 
@@ -56,7 +52,7 @@ This Cookbook covers working with various sources of ocean biogeochemistry data,
 
 **Authors:** [Deborah Khider](https://github.com/khider), [Hari Sundar](https://github.com/sriharisundar), and [Varun Ratnakar](https://github.com/varunratnakar)
 
-[![DOI](https://zenodo.org/badge/813352705.svg)](https://zenodo.org/badge/latestdoi/813352705)
+<doi:10.5281/zenodo.11659789>
 
 This Cookbook covers paleoclimate model-data comparison using spatio-temporal pattern obtained using Principal Component Analysis (PCA).
 
@@ -64,12 +60,10 @@ Paleoclimate observations obtained from tree rings or the geochemical compositio
 
 Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used PCA analysis to compare model and data output. Here, we use a similar approach with the [CESM Last Millennium simulation](https://www.cesm.ucar.edu/community-projects/lme) and proxy records stored on the [LiPDverse](https://lipdverse.org). This repository contains paleoclimate datasets that have been curated by the community and are archived in a standard format, facilitating analysis.
 
-
 **Contributors:**
 <a href="https://github.com/ProjectPythia/paleoPCA-Cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/paleoPCA-Cookbook" />
+<img src="https://contrib.rocks/image?repo=ProjectPythia/paleoPCA-Cookbook" />
 </a>
-
 
 ### [ESGF Cookbook](https://projectpythia.org/esgf-cookbook/)
 
@@ -77,7 +71,7 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 
 **Authors:** [Max Grover](@mgrover1), [Nathan Collier](@nocollier), [Carsten Ehbrecht](@cehbrecht), [Jacqueline Nugent](@jacnugent), and [Gerardo Rivera Tello](@griverat)
 
-[![DOI](https://zenodo.org/badge/721319801.svg)](https://doi.org/10.5281/zenodo.11663067)
+<doi:10.5281/zenodo.11663067>
 
 This Cookbook covers how to access and analyze datasets that can be accessed from Earth System Grid Federation (ESGF) cyberinfrastructure.
 
@@ -85,7 +79,7 @@ This cookbook focuses on highlighting analysis recipes, as well as data acccess 
 
 **Contributors:**
 <a href="https://github.com/ProjectPythia/esgf-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/esgf-cookbook" />
+<img src="https://contrib.rocks/image?repo=ProjectPythia/esgf-cookbook" />
 </a>
 
 ### [Radar Cookbook](https://projectpythia.org/radar-cookbook/)
@@ -94,7 +88,7 @@ This cookbook focuses on highlighting analysis recipes, as well as data acccess 
 
 **Authors:** [Max Grover](https://github.com/mgrover1), [Zachary Sherman](https://github.com/zssherman), [Milind Sharma](https://github.com/gewitterblitz), [Alfonso Ladino](https://github.com/aladinor), [Crystal Camron](https://github.com/crystalclearwx), and [Takashi Unuma](https://github.com/TakashiUNUMA)
 
-[![DOI](https://zenodo.org/badge/479066261.svg)](https://zenodo.org/badge/latestdoi/479066261)
+<doi:10.5281/zenodo.8075854>
 
 Pythia's very first cookbook continues to grow!
 
@@ -104,9 +98,8 @@ The Example Workflows section contains a growing collection of real-world case s
 
 **Contributors:**
 <a href="https://github.com/ProjectPythia/radar-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/radar-cookbook" />
+<img src="https://contrib.rocks/image?repo=ProjectPythia/radar-cookbook" />
 </a>
-
 
 ### [ARCO ERA-5 Interactive Visualization Cookbook](https://projectpythia.org/ERA5_interactive-cookbook/)
 
@@ -115,7 +108,7 @@ The Example Workflows section contains a growing collection of real-world case s
 
 **Authors:** [Kevin Tyle](https://github.com/ktyle), [Michael Barletta](https://github.com/Michael-Barletta), [Negin Sobhani](https://github.com/negin513), [Nicholas Cote](https://github.com/ncote) , [Harsha Hampapura](https://github.com/hrhampapura) , and [Philip Chmielowiec](https://github.com/philip2c)
 
-[![DOI](https://zenodo.org/badge/657280462.svg)](https://zenodo.org/badge/latestdoi/657280462)
+<doi:10.5281/zenodo.10303236>
 
 This Cookbook covers accessing, regridding, and visualizing the [ECMWF Reanalysis version 5](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) (aka **ERA-5**) dataset in a [Analysis Ready, Cloud Optimized](https://www.frontiersin.org/articles/10.3389/fclim.2021.782909/full) (aka **ARCO**) format.
 
@@ -130,10 +123,9 @@ This Cookbook demonstrates how to do the following:
 3. Plot a map at a specific time using Matplotlib and Cartopy
 4. Create interactive visualizations, leveraging the [Holoviz](https://holoviz.org) ecosystem
 
-
 **Contributors:**
 <a href="https://github.com/ProjectPythia/ERA5_interactive-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/ERA5_interactive-cookbook" />
+<img src="https://contrib.rocks/image?repo=ProjectPythia/ERA5_interactive-cookbook" />
 </a>
 
 ### [Wavelet Cookbook](https://projectpythia.org/wavelet-cookbook/)
@@ -143,15 +135,14 @@ This Cookbook demonstrates how to do the following:
 
 **Authors:** [Cora Schneck](https://github.com/cyschneck)
 
-[![DOI](https://zenodo.org/badge/815311051.svg)](https://zenodo.org/badge/latestdoi/815311051)
+<doi:10.5281/zenodo.14550038>
 
 This Cookbook covers how to work with wavelets in Python. Wavelets are a powerful tool to analyze time-series data. When data frequencies vary over time, wavelets can be applied to analysis trends and overcome the time/frequency limitations of Fourier Transforms
 
 **Contributors:**
 <a href="https://github.com/ProjectPythia/wavelet-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/wavelet-cookbook" />
+<img src="https://contrib.rocks/image?repo=ProjectPythia/wavelet-cookbook" />
 </a>
-
 
 ## The 2024 Cook-off
 
@@ -168,14 +159,14 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 - Number of attendees: 92 (49 in-person, 43 remote)
 - Number of attendees receiving travel support from Project Pythia: 16
 - Career stage:
-    - 14% undergrad
-    - 29% graduate
-    - 14% postdoc
-    - 43% faculty or staff
+  - 14% undergrad
+  - 29% graduate
+  - 14% postdoc
+  - 43% faculty or staff
 - Gender of attendees:
-    - 59% men
-    - 30% women
-    - 11% other
+  - 59% men
+  - 30% women
+  - 11% other
 - Number of individual project breakout groups: 9
 - New cookbooks published to the [Pythia Gallery](https://cookbooks.projectpythia.org): 5 _(as of this writing)_
 - Heavily revised cookbooks: 2

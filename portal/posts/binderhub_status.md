@@ -1,8 +1,7 @@
 ---
-blogpost: true
-date: Jan 20, 2025
+date: 2025-01-20
 author: Kevin Tyle
-tags: ["binderhub", "maintenance"]
+tags: ['binderhub', 'maintenance']
 ---
 
 # binder.projectpythia.org Maintenance
