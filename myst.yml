@@ -21,7 +21,6 @@ project:
     - file: portal/cookbook-guide.md
     - file: portal/metrics.md
 site:
-  template: book-theme
   actions:
     - title: Learn More
       url: https://mystmd.org/guide
