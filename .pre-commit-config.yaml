@@ -24,6 +24,11 @@ repos:
     hooks:
       - id: flake8
 
+  - repo: https://github.com/asottile/seed-isort-config
+    rev: v2.2.0
+    hooks:
+      - id: seed-isort-config
+
   - repo: https://github.com/PyCQA/isort
     rev: 6.0.1
     hooks:
@@ -33,4 +38,9 @@ repos:
     rev: 1.9.1
     hooks:
       - id: nbqa-black
+        additional_dependencies: [black]
       - id: nbqa-pyupgrade
+        additional_dependencies: [pyupgrade]
+        exclude: foundations/quickstart.ipynb
+      - id: nbqa-isort
+        additional_dependencies: [isort]

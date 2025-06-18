@@ -1,8 +1,7 @@
 ---
-blogpost: true
-date: Aug 29, 2023
+date: 2023-08-29
 author: John Clyne
-tags: cook-off
+tags: [cook-off]
 ---
 
 # Pythia Cookbook Cook-Off Hackathon 2024 - Save the Date!

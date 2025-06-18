@@ -6,44 +6,13 @@ on:
     branches:
       - main
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * 1' # Weekly on Monday
 
 jobs:
-  automate-metrics:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Automate Metrics
-        env:
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
-        run: |
-          python -m venv analytics-api
-          source analytics-api/bin/activate
-          pip install google-analytics-data cartopy matplotlib
-
-          python .github/workflows/get-metrics.py
-          python .github/workflows/write-metrics-md.py
-      - name: Upload zip
-        uses: actions/upload-artifact@v4
-        with:
-          name: repo-zip
-          path: .
-          include-hidden-files: 'true'
-
   build:
-    needs: automate-metrics
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
-      environment_file: 'environment.yml'
-      environment_name: pythia
-      path_to_notebooks: 'portal'
-      build_command: 'make -j4 html'
-      build_from_code_artifact: 'true'
-      code_artifact_name: 'repo-zip'
-      workflow: ''
-      workflow_conclusion: ''
+      base_url: ''
+
   deploy:
     needs: build
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main

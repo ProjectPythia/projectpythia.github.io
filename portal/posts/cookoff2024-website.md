@@ -1,8 +1,7 @@
 ---
-blogpost: true
-date: Jan 8, 2024
+date: 2024-01-08
 author: Brian Rose
-tags: cook-off
+tags: [cook-off]
 ---
 
 # Website is live for the 2024 Cook-off hackathon

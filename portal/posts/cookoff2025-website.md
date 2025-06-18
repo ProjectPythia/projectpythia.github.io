@@ -1,8 +1,7 @@
 ---
-blogpost: true
-date: Jun 03, 2025
-author: Kevin Tyle
-tags: cook-off
+date: 2025-02-20
+author: Julia Kent
+tags: [cook-off]
 ---
 
 # Register now for the 2025 Cook-off hackathon!
