@@ -1,0 +1,31 @@
+name: trigger-replace-links
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Find and Replace Repository Name
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "ProjectPythia/cookbook-template"
+          replace: "${{ github.repository_owner }}/${{ github.event.repository.name }}"
+          regex: false
+          exclude: ".github/workflows/trigger-replace-links.yaml"
+
+      - name: Find and Replace Repository ID
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "475509405"
+          replace: "${{ github.repository_id}}"
+          regex: false
+          exclude: ".github/workflows/trigger-replace-links.yml"
+
+      - name: Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4

@@ -4,6 +4,4 @@ on:
 
 jobs:
   link-check:
-    uses: ./.github/workflows/sphinx-link-checker.yaml
-    with:
-      path_to_source: 'portal'
+    uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
