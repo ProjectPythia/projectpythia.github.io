@@ -15,7 +15,11 @@ site:
 
 An education and training hub for the geoscientific Python community
 
-Project Pythia is hosting a Cookbook Cook-Off June 11-14, 2024. {button}`Cook-Off 2025<./posts/cookoff2025-website.md>` {button}`Cook-Off 2024<https://projectpythia.org/pythia-cookoff-2024/>`
+Project Pythia is hosting a Cookbook Cook-Off August 5-8, 2025.
+
+{button}`Cook-Off 2025<.https://projectpythia.org/pythia-cookoff-2025/>`
+
+{button}`2024 Cookbooks<./posts/new-cookbooks.md>`
 
 Donate to support Project Pythia!
 {button}`Donate now<posts/fundraiser.md>`
@@ -38,8 +42,7 @@ around these goals.
 Project Pythia is a home for Python-justified learning resources that are _open-source_,
 _community-owned_, _geoscience-focused_, and _high-quality_.
 
-+++ { "kind": "justified"}
-
+<br><br>
 ## Start Learning
 
 Project Pythia has several resources for you to use to start learning how to use Python
@@ -105,8 +108,7 @@ the example data used by the [Pythia Foundations Book](https://foundations.proje
 :::
 ::::
 
-+++ { "kind": "justified"}
-
+<br><br>
 ## Join us!
 
 {button}`Pangeo Discourse →<https://discourse.pangeo.io/c/education/project-pythia/>`
@@ -142,8 +144,8 @@ and [Outreach Meetings](https://docs.google.com/document/d/e/2PACX-1vQBAt5B24wig
 :::{iframe} https://calendar.google.com/calendar/embed?src=c_4qpvf316afd9mv0ci7d2uiafog%40group.calendar.google.com
 :::
 
-+++ { "kind": "justified"}
 
+<br><br>
 ## How to Cite
 
 The material in Project Pythia is licensed for free and open consumption and reuse. All code is served under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0), while all non-code content is licensed under [Creative Commons BY 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Effectively, this means you are free to share and adapt this material so long as you give appropriate credit to the Project Pythia community.
