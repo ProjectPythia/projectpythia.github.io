@@ -17,7 +17,7 @@ An education and training hub for the geoscientific Python community
 
 Project Pythia is hosting a Cookbook Cook-Off August 5-8, 2025.
 
-{button}`Cook-Off 2025<.https://projectpythia.org/pythia-cookoff-2025/>`
+{button}`Cook-Off 2025<https://projectpythia.org/pythia-cookoff-2025/>`
 
 {button}`2024 Cookbooks<./posts/new-cookbooks.md>`
 
