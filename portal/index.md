@@ -180,6 +180,10 @@ or join us at any of our [Monthly Project Meetings](#monthly-pythia-meetings).
     </a>
 </span>
 
+## How do I get involved?
+
+[Getting Involved](getting_involved)
+
 ### Contributing
 
 Anyone can contribute to and participate in Project Pythia!
@@ -238,6 +242,7 @@ hidden: True
 maxdepth: 1
 ---
 about.md
+getting_involved.md
 contributing.md
 cookbook-guide.md
 cookbook-tasklist.md
