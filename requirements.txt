@@ -1,5 +1,5 @@
-google-analytics-data 
-cartopy 
+google-analytics-data
+cartopy
 matplotlib
 jupyter-server
 ipykernel

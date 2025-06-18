@@ -47,9 +47,9 @@ In the rest of this guide, we assume that you are familiar with the basics of us
 
 In order for your Cookbook to be included in the Gallery, the source repository needs to be housed within the [Project Pythia GitHub organization](https://github.com/ProjectPythia).
 
-You can keep your repository in your personal GitHub space while you're developing your content if that works better for you. Repository ownership can be transfered at any time.
+You can keep your repository in your personal GitHub space while you're developing your content if that works better for you. Repository ownership can be transferred at any time.
 
-However, we recommend transfering to the Pythia organization early, for a few reasons:
+However, we recommend transferring to the Pythia organization early, for a few reasons:
 - Fewer settings to tweak later
 - Easier to get help from the Pythia infrastructure team
 - Encourages collaboration
@@ -63,14 +63,14 @@ Also, _don't worry about breaking anything!_ Your repo will not affect any other
 ### Steps to transfer the repository
 
 1. [Contact the Pythia team via the Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/60) (or otherwise) to let us know about your cookbook.
-1. You will get an invitation to join the the [ProjectPythia organization](https://github.com/ProjectPythia).
+1. You will get an invitation to join the [ProjectPythia organization](https://github.com/ProjectPythia).
 1. Accept the GitHub invitation. _Welcome to the team!_
 1. Once you are a member of the organization, navigate to the Settings of your cookbook repository and scroll down to the **Danger Zone**.
 1. Click "Transfer".
 1. Select or type "ProjectPythia", confirm, and transfer.
 1. When prompted about which teams to give access to, select "core". _This will enable the Pythia maintenance team to have full access to your repository._
 
-Once you have successfully transfered the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow).
+Once you have successfully transferred the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow).
 
 ## Customize the paths in your repository
 
@@ -170,7 +170,7 @@ The link to your published book will then be displayed on the home page of the r
 ```{note}
 If you have transfered your repository to the ProjectPythia organization and also made a personal fork, the publishing pipeline automation will _only run on the upstream fork on the ProjectPythia organization_ so there's only one copy of the "published" book.
 
-It's possible to enable the workflows on your personal fork, but usually unneccesary if you preview your work via Pull Requests (see next section)!
+It's possible to enable the workflows on your personal fork, but usually unnecessary if you preview your work via Pull Requests (see next section)!
 ```
 
 ### Pull Requests and previews
@@ -206,7 +206,7 @@ The Binder uses your `environment.yml` file to create an image of an execution e
 
 ## Publish your Cookbook on the Pythia Gallery
 
-Once you're happy with your content and your Cookbook is building and deploying properly, it's time to think about submiting it for inclusion in the [Cookbook Gallery](https://cookbooks.projectpythia.org/)!
+Once you're happy with your content and your Cookbook is building and deploying properly, it's time to think about submitting it for inclusion in the [Cookbook Gallery](https://cookbooks.projectpythia.org/)!
 
 ```{note}
 Cookbooks don't need to be "finished" in order to accepted in the Gallery! Cookbooks are typically accepted so long as they run cleanly, are free of obvious errors, and have some relevant new content.
@@ -218,7 +218,7 @@ At this stage, there are a few more steps to get things ready to go.
 
 ### Authorship and the `CITATION.cff` file
 
-Cookbooks are scholarly objects. As part of the publication process, your Cookbook will get a citeable DOI (via [Zenodo](https://zenodo.org)). Just as for journal publications, you need to make decisions about who gets credited for authorship.
+Cookbooks are scholarly objects. As part of the publication process, your Cookbook will get a citable DOI (via [Zenodo](https://zenodo.org)). Just as for journal publications, you need to make decisions about who gets credited for authorship.
 
 This information is managed manually through the file `CITATION.cff` in the root of your repository. This will determine the names displayed on your card in the [gallery](https://cookbooks.projectpythia.org/) as well as your DOI-based citation.
 
