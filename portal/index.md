@@ -82,30 +82,6 @@ into our [Pythia Resource Gallery](/resource-gallery).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
 :::
-
-:::{card}
-:url: https://ncar-xdev.github.io/status/tutorials.html
-:header: Webinar Tutorial Series
-:footer: Visit the Pythia Webinar Tutorial Series »
-
-The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorials.html) is hosted regularly by the Project Pythia team. Anyone can join
-these hour-long, instructor-led interactive tutorials. Participants can
-sit back and learn, or download a Jupyter Notebook and work along with
-the instructor. Each seminar is recorded for later viewing on the
-[Project Pythia YouTube channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
-Click the link below to view past and upcoming seminars, covering a range of
-topics from beginning to advanced.
-:::
-
-:::{card}
-:url: https://github.com/ProjectPythia/pythia-datasets
-:header: Pythia Data Collection
-:footer: Visit the Pythia Data Repository »
-
-Looking for a free, public domain geoscience data set that you can use to
-sharpen your skills while learning the Scientific Python Ecosystem? All of
-the example data used by the [Pythia Foundations Book](https://foundations.projectpythia.org) are freely accessible.
-:::
 ::::
 
 <br><br>
