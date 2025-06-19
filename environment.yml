@@ -8,3 +8,4 @@ dependencies:
 - pre-commit
 - pyyaml
 - mystmd
+- jupyterlab
