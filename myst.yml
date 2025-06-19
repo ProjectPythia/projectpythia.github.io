@@ -10,6 +10,19 @@ project:
   authors: []
   github: https://github.com/projectpythia/projectpythia.github.io
   # bibliography: []
+  contributors:
+    - name: Brian Rose
+      id: brian-rose
+      orcid: 0000-0002-9961-3821
+    - name: John Clyne
+      id: clyne
+      orcid: 0000-0003-2788-9017
+    - name: Julia Kent
+      id: jukent
+      orcid: 0000-0002-5611-8986
+    - name: Kevin Tyle
+      id: ktyle
+      orcid: 0000-0001-5249-9665
 
   toc:
     - file: portal/index.md

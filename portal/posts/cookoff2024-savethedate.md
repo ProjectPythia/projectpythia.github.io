@@ -1,6 +1,6 @@
 ---
 date: 2023-08-29
-author: John Clyne
+author: clyne
 tags: [cook-off]
 ---
 
