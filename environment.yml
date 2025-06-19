@@ -9,3 +9,10 @@ dependencies:
 - pyyaml
 - mystmd
 - jupyterlab
+- cartopy
+- numpy
+- matplotlib
+- google-api-python-client
+- pip
+- pip:
+    - google-analytics-data

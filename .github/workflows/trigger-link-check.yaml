@@ -6,4 +6,4 @@ jobs:
   link-check:
     uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
     with:
-      path_to_source: 'portal'
+      path_to_notebooks: 'portal'
