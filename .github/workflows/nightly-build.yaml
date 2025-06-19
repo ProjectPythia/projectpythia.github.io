@@ -18,7 +18,7 @@ jobs:
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
     with:
       publish_dir: 'portal/_build/html'
-  
+
   link-check:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/link-checker.yaml@main
