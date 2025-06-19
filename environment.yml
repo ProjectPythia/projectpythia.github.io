@@ -9,3 +9,7 @@ dependencies:
 - pyyaml
 - mystmd
 - jupyterlab
+- cartopy
+- numpy
+- matplotlib
+- google-api-python-client
