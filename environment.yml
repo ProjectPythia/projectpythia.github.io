@@ -13,4 +13,6 @@ dependencies:
 - numpy
 - matplotlib
 - google-api-python-client
-- google-analytics-data
+- pip
+- pip:
+    - google-analytics-data
