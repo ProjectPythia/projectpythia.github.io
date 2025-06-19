@@ -1,6 +1,6 @@
 ---
 date: 2025-01-10
-author: Brian Rose
+author: brian-rose
 tags: [cook-off]
 ---
 
