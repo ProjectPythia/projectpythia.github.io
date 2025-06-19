@@ -17,9 +17,6 @@ project:
     - file: cookbook-guide.md
     - file: metrics.md
 site:
-  actions:
-    - title: Learn More
-      url: about.md
   domains: []
   options:
     style: style.css
