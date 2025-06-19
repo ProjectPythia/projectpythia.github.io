@@ -4,26 +4,19 @@ extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
   id: 770e49e5-344a-4c46-adaa-3afb060b2085
-  # title:
-  # description:
-  keywords: []
-  authors: []
+  authors: Project Pythia Community
   github: https://github.com/projectpythia/projectpythia.github.io
-  # bibliography: []
 
   toc:
-    - file: portal/index.md
-    - file: portal/about.md
+    - file: index.md
+    - file: about.md
     - title: Blog
       children:
-        - pattern: portal/posts/*.md
-    - file: portal/contributing.md
-    - file: portal/cookbook-guide.md
-    - file: portal/metrics.md
+        - pattern: posts/*.md
+    - file: contributing.md
+    - file: cookbook-guide.md
+    - file: metrics.md
 site:
-  actions:
-    - title: Learn More
-      url: https://mystmd.org/guide
   domains: []
   options:
     style: style.css
