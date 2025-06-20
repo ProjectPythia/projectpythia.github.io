@@ -21,6 +21,7 @@ Here you can find brief descriptions and links to the new (and significantly upd
 ```{image} https://raw.githubusercontent.com/ProjectPythia/eofs-cookbook/main/notebooks/images/nh-slp-eofs.png
 :alt: EOF cookbook thumbnail
 :width: 600
+:align: left
 ```
 
 **Authors:** [Robert Ford](https://github.com/r-ford)
@@ -38,6 +39,8 @@ This Cookbook covers Empirical Orthogonal Function (EOF) analysis and its applic
 
 ```{image} https://raw.githubusercontent.com/ProjectPythia/ocean-bgc-cookbook/main/coccolithophore_kristen_krumhardt.png
 :alt: Ocean Biogeochemistry Cookbook thumbnail
+:width: 300
+:align: left
 ```
 
 **Authors:** [Lev Romashkov](https://github.com/rmshkv) and [Kristen Krumhardt](https://github.com/kristenkrumhardt)
@@ -56,6 +59,7 @@ This Cookbook covers working with various sources of ocean biogeochemistry data,
 ```{image} https://raw.githubusercontent.com/LinkedEarth/Logos/master/LinkedEarth/LinkedEarth_medium.png
 :alt: LinkedEarth Logo
 :width: 500
+:align: left
 ```
 
 **Authors:** [Deborah Khider](https://github.com/khider), [Hari Sundar](https://github.com/sriharisundar), and [Varun Ratnakar](https://github.com/varunratnakar)
@@ -78,6 +82,7 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 ```{image} https://raw.githubusercontent.com/ProjectPythia/esgf-cookbook/refs/heads/main/notebooks/images/logos/esgf2-us.png?raw=true
 :alt: ESGF2 thumbnail
 :width: 300
+:aling: left
 ```
 
 **Authors:** [Max Grover](@mgrover1), [Nathan Collier](@nocollier), [Carsten Ehbrecht](@cehbrecht), [Jacqueline Nugent](@jacnugent), and [Gerardo Rivera Tello](@griverat)
@@ -98,6 +103,7 @@ This cookbook focuses on highlighting analysis recipes, as well as data acccess 
 ```{image} https://raw.githubusercontent.com/projectpythia/radar-cookbook/main/notebooks/images/logos/arm_logo.png
 :alt: ARM logo
 :width: 300
+:align: left
 ```
 
 **Authors:** [Max Grover](https://github.com/mgrover1), [Zachary Sherman](https://github.com/zssherman), [Milind Sharma](https://github.com/gewitterblitz), [Alfonso Ladino](https://github.com/aladinor), [Crystal Camron](https://github.com/crystalclearwx), and [Takashi Unuma](https://github.com/TakashiUNUMA)
@@ -149,6 +155,7 @@ This Cookbook demonstrates how to do the following:
 ```{image} https://raw.githubusercontent.com/ProjectPythia/wavelet-cookbook/main/thumbnail.png
 :alt: Wavelet thumbnail
 :width: 300
+:align: left
 ```
 
 **Authors:** [Cora Schneck](https://github.com/cyschneck)
