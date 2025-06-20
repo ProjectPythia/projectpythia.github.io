@@ -58,7 +58,7 @@ This Cookbook covers working with various sources of ocean biogeochemistry data,
 
 ```{image} https://raw.githubusercontent.com/LinkedEarth/Logos/master/LinkedEarth/LinkedEarth_medium.png
 :alt: LinkedEarth Logo
-:width: 500
+:width: 400
 :align: left
 ```
 
@@ -82,7 +82,7 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 ```{image} https://raw.githubusercontent.com/ProjectPythia/esgf-cookbook/refs/heads/main/notebooks/images/logos/esgf2-us.png?raw=true
 :alt: ESGF2 thumbnail
 :width: 300
-:aling: left
+:align: left
 ```
 
 **Authors:** [Max Grover](@mgrover1), [Nathan Collier](@nocollier), [Carsten Ehbrecht](@cehbrecht), [Jacqueline Nugent](@jacnugent), and [Gerardo Rivera Tello](@griverat)
