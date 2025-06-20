@@ -1,6 +1,6 @@
 ---
 date: 2025-02-20
-author: Julia Kent
+author: jukent
 tags: [cook-off]
 ---
 
