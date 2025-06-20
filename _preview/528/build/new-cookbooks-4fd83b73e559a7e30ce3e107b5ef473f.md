@@ -81,7 +81,7 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 
 ```{image} https://raw.githubusercontent.com/ProjectPythia/esgf-cookbook/refs/heads/main/notebooks/images/logos/esgf2-us.png?raw=true
 :alt: ESGF2 thumbnail
-:width: 300
+:width: 250
 :align: left
 ```
 
