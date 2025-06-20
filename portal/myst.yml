@@ -20,9 +20,7 @@ site:
   domains: []
   options:
     style: style.css
-
-# Temporary until the upstream footer definition is working
-parts:
+  parts:
     footer: |
         :::::{grid} 3
         :class: items-center
