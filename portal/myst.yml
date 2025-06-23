@@ -12,7 +12,15 @@ project:
     - file: about.md
     - title: Blog
       children:
-        - pattern: posts/*.md
+        # - pattern: posts/*.md
+        #  Temporary until we have blog infrastructure: explicit list of posts by date (newest first)
+        - file: posts/cookoff2025-website.md
+        - file: posts/binderhub_status.md
+        - file: posts/new-cookbooks.md
+        - file: posts/cookoff2024-website.md
+        - file: posts/cookoff2024-savethedate.md
+        - file: posts/fundraiser.md
+        - file: posts/cookoff2023.md
     - file: contributing.md
     - file: cookbook-guide.md
     - file: metrics.md
