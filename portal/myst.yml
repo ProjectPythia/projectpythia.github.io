@@ -28,3 +28,32 @@ site:
   domains: []
   options:
     style: style.css
+  parts:
+    footer: |
+        :::::{grid} 3
+        :class: items-center
+
+
+        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/NSF-NCAR.png
+        :alt: NCAR Logo
+        ```
+
+        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/NSF-Unidata.png
+        :alt: Unidata Logo
+        ```
+
+        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/UAlbany.svg
+        :alt: UAlbany Logo
+        ```
+        :::::
+
+        :::::{div}
+        :class: flex items-center gap-4 text-disclaimer
+
+        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/nsf.jpg
+        :alt: NSF Logo
+        :height: 60px
+        ```
+
+        This material is based upon work supported by the National Science Foundation under Grant Nos. 2026863 and 2026899. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+        :::::
