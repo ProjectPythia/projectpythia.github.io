@@ -18,7 +18,11 @@ Here you can find brief descriptions and links to the new (and significantly upd
 
 ### [EOFs Cookbook](https://projectpythia.org/eofs-cookbook/)
 
-<img src="https://projectpythia.org/eofs-cookbook/_images/nh-slp-eofs.png" alt="EOF cookbook thumbnail">
+```{image} https://raw.githubusercontent.com/ProjectPythia/eofs-cookbook/main/notebooks/images/nh-slp-eofs.png
+:alt: EOF cookbook thumbnail
+:width: 600
+:align: left
+```
 
 **Authors:** [Robert Ford](https://github.com/r-ford)
 
@@ -33,7 +37,11 @@ This Cookbook covers Empirical Orthogonal Function (EOF) analysis and its applic
 
 ### [Ocean Biogeochemistry Cookbook](https://projectpythia.org/ocean-bgc-cookbook/)
 
-<img class="modal-img" src="https://raw.githubusercontent.com/ProjectPythia/ocean-bgc-cookbook/main/coccolithophore_kristen_krumhardt.png"/>
+```{image} https://raw.githubusercontent.com/ProjectPythia/ocean-bgc-cookbook/main/coccolithophore_kristen_krumhardt.png
+:alt: Ocean Biogeochemistry Cookbook thumbnail
+:width: 300
+:align: left
+```
 
 **Authors:** [Lev Romashkov](https://github.com/rmshkv) and [Kristen Krumhardt](https://github.com/kristenkrumhardt)
 
@@ -48,7 +56,11 @@ This Cookbook covers working with various sources of ocean biogeochemistry data,
 
 ### [Investigating interhemispheric precipitation changes over the past millennium](https://projectpythia.org/paleoPCA-cookbook/)
 
-<img class="modal-img" src="https://github.com/LinkedEarth/Logos/blob/master/LinkedEarth/LinkedEarth_medium.png?raw=true" alt="LinkedEarth Logo" width="500">
+```{image} https://raw.githubusercontent.com/LinkedEarth/Logos/master/LinkedEarth/LinkedEarth_medium.png
+:alt: LinkedEarth Logo
+:width: 400
+:align: left
+```
 
 **Authors:** [Deborah Khider](https://github.com/khider), [Hari Sundar](https://github.com/sriharisundar), and [Varun Ratnakar](https://github.com/varunratnakar)
 
@@ -67,7 +79,11 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 
 ### [ESGF Cookbook](https://projectpythia.org/esgf-cookbook/)
 
-<img class="modal-img" src="https://projectpythia.org/esgf-cookbook/_images/esgf2-us.png" alt="thumbnail" width="300"/>
+```{image} https://raw.githubusercontent.com/ProjectPythia/esgf-cookbook/refs/heads/main/notebooks/images/logos/esgf2-us.png?raw=true
+:alt: ESGF2 thumbnail
+:width: 250
+:align: left
+```
 
 **Authors:** [Max Grover](@mgrover1), [Nathan Collier](@nocollier), [Carsten Ehbrecht](@cehbrecht), [Jacqueline Nugent](@jacnugent), and [Gerardo Rivera Tello](@griverat)
 
@@ -84,7 +100,11 @@ This cookbook focuses on highlighting analysis recipes, as well as data acccess 
 
 ### [Radar Cookbook](https://projectpythia.org/radar-cookbook/)
 
-<img class="modal-img" src="https://projectpythia.org/radar-cookbook/_images/thumbnail.png" alt="radar thumbnail" width="300"/>
+```{image} https://raw.githubusercontent.com/projectpythia/radar-cookbook/main/notebooks/images/logos/arm_logo.png
+:alt: ARM logo
+:width: 300
+:align: left
+```
 
 **Authors:** [Max Grover](https://github.com/mgrover1), [Zachary Sherman](https://github.com/zssherman), [Milind Sharma](https://github.com/gewitterblitz), [Alfonso Ladino](https://github.com/aladinor), [Crystal Camron](https://github.com/crystalclearwx), and [Takashi Unuma](https://github.com/TakashiUNUMA)
 
@@ -103,8 +123,10 @@ The Example Workflows section contains a growing collection of real-world case s
 
 ### [ARCO ERA-5 Interactive Visualization Cookbook](https://projectpythia.org/ERA5_interactive-cookbook/)
 
-<img class="modal-img" src="https://projectpythia.org/ERA5_interactive-cookbook/_images/thumbnail.png
-" alt="ERA5 thumbnail" width="300"/>
+```{image} https://raw.githubusercontent.com/ProjectPythia/ERA5_interactive-cookbook/main/thumbnail.png
+:alt: ERA5 thumbnail
+:width: 300
+```
 
 **Authors:** [Kevin Tyle](https://github.com/ktyle), [Michael Barletta](https://github.com/Michael-Barletta), [Negin Sobhani](https://github.com/negin513), [Nicholas Cote](https://github.com/ncote) , [Harsha Hampapura](https://github.com/hrhampapura) , and [Philip Chmielowiec](https://github.com/philip2c)
 
@@ -130,8 +152,11 @@ This Cookbook demonstrates how to do the following:
 
 ### [Wavelet Cookbook](https://projectpythia.org/wavelet-cookbook/)
 
-<img class="modal-img" src="https://projectpythia.org/wavelet-cookbook/_images/thumbnail.png
-" alt="Wavelet thumbnail" width="300"/>
+```{image} https://raw.githubusercontent.com/ProjectPythia/wavelet-cookbook/main/thumbnail.png
+:alt: Wavelet thumbnail
+:width: 300
+:align: left
+```
 
 **Authors:** [Cora Schneck](https://github.com/cyschneck)
 
