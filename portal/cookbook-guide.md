@@ -1,7 +1,13 @@
 # Cookbook Contributor's Guide
 
+<p style="text-align: center; margin-top: 2em;">
+  <a href="quick-cookbook-guide.md" style="display: inline-block; background-color:rgb(13, 83, 130); color: white; padding: 8px 10px; font-size: 1.1em; border-radius: 8px;">
+    &leftarrow; Back to Quickstart Guide
+  </a>
+</p>
+
 Project Pythia Cookbooks are collections of more advanced and domain-specific example
-workflows building on top of [Pythia Foundations](https://foundations.projectpythia.org/landing-page.html).
+workflows building on top of [Pythia Foundations](https://foundations.projectpythia.org/).
 They are [geoscience](https://en.wikipedia.org/wiki/Earth_science)-focused
 and should direct the reader towards the Foundations material for any required
 background knowledge.
@@ -18,7 +24,7 @@ Using the Pythia Cookbook template to create reproducible documents housed elsew
 
 If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow), then take a look at the section below on "Pull Requests and previews".
 
-## Data access
+## A. Data Access
 
 Before developing your cookbook, you should consider how it will access the data you plan to use. In loose order of preference, we recommend the following:
 
@@ -27,23 +33,120 @@ Before developing your cookbook, you should consider how it will access the data
 1. Discuss your larger data storage needs with the Pythia team. We are currently experimenting with cloud object storage for Cookbooks via NSF JetStream2.
 1. Provide the tools and/or clear documentation for accessing the data that you have stored somewhere else
 
-## Use the template
+## B. Create a Repository From the Cookbook Template
 
-1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html)
-1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template &rarr; Create a new repository"
+1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html).
+1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template &rarr; Create a new repository".
 1. Choose "Include all branches".
-1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description
-1. Create the repository. Your browser will be directed to the newly created repository under your GitHub account
-1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled by checking that `Branch` is set to "gh-pages", and the folder set to "gh-pages/(root)". If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save"
-1. Under Settings &rarr; Actions &rarr; General, make sure that "Read and write permissions" is selected. <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
+1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description.
+1. Create the repository. Your browser will be directed to the newly created repository under your GitHub account.
+1. Under Settings &rarr; Pages, ensure that GitHub Pages is enabled by checking that `Branch` is set to "gh-pages", and the folder set to "gh-pages/(root)". If it is not, change the Branch from "None" to "gh-pages/(root)" and click "Save".
+1. Under Settings &rarr; Actions &rarr; General, make sure that "Read and write permissions" is selected.
 
-Your cookbook is now ready to have content added!
+<img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
 ```{note}
 In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
 ```
 
-## Transfer your cookbook repo to the ProjectPythia organization
+Your cookbook is now ready to have content added!
+
+
+## C. Set up the Computational Environment
+
+You'll most likely want to do your edits in a [local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) on your laptop or wherever your are running your notebooks.
+
+### Customizing Your Conda Environment
+
+1. Within `environment.yml` (in the root of the repository), change `name` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes.
+1. Create the [conda environment](https://foundations.projectpythia.org/foundations/conda.html) with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
+1. Activate your environment with `conda activate <env-name>`
+
+You're now ready to create and run awesome notebooks.
+
+## D. Develop your Cookbook
+
+### 1. Add Notebooks
+
+To add content, you should edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb`. Using this template will help keep your content consistent with the expected Cookbook style.
+
+### 2. Update Your Configuration File
+
+The organization of your notebooks within the published book is dictated by the table of contents level of the `myst.yml` configuration file. _Edit this file to add your chapters / subfolders._
+
+Required changes to your `myst.yml` file are all under the `project` section. Update the values for these fields:
+- `title`
+- `github`
+- `authors`
+- `toc` (table of contents)
+- `Jupyter -> Binder -> Repo`
+
+Take a look at the [`radar-cookbook/myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for example syntax.
+
+### 3. Customize Your Home Page
+
+The file `README.md` serves as the homepage of your Cookbook, so it should be descriptive. Edit this file as appropriate, following guidance in the file itself. Make sure this file represents your new:
+- Title
+- Description
+- Motivation
+- Authors
+- Content structure
+- The paths in the nightly build, Binder, and DOI badges.
+
+### 4. Build Your Cookbook Locally
+
+You should be able to build your new Cookbook on your local machine by running this command from the root of the repository:
+```
+myst start --execute
+```
+from the root of your repository. This will execute all your notebooks.
+
+If the build is successful, you should be able to preview the result in a web browser at [localhost:3000](http://localhost:3000)
+
+
+### 5. Strip Output From Your Notebooks Before Committing
+
+Wherever feasible, we recommend only committing bare, unexecuted notebooks into your Cookbook repository. There are a few reasons:
+- The notebooks are executed automatically each time the book is built
+- Pre-existing output in the notebooks will have no effect on the published book
+- Better reproducibility of your content
+- The repo stays cleaner and leaner. Diffs of notebook changes are easier to interpret.
+
+To strip a notebook, in a Jupyter Lab session, go to "Kernel" &rarr; "Restart Kernel and Clear Output of All Cells...". Save your notebook, then commit.
+
+You're ready to push content up to GitHub and trigger the automated publishing pipeline.
+
+## E. Making Your Cookbook Findable and Citable
+
+### 1. Credit yourself
+
+Cookbooks are scholarly objects. As part of the publication process, your Cookbook will get a citable DOI (via [Zenodo](https://zenodo.org)). Just as for journal publications, you need to make decisions about who gets credited for authorship.
+
+This information is managed manually through the file `CITATION.cff` in the root of your repository. This will determine the names displayed on your card in the [gallery](https://cookbooks.projectpythia.org/) as well as your DOI-based citation.
+
+Edit `CITATION.cff` as follows:
+
+- If you haven't already, _remove the people already listed in this file_. These are the credited authors of the [Cookbook Template](https://github.com/ProjectPythia/cookbook-template) only, and they should not be included in your author list (unless one of them also happens to be a content author for your book).
+- Set your Cookbook title
+- Write a short description / abstract (this will also appear on the [gallery](https://cookbooks.projectpythia.org/))
+- Include names of all content authors
+  - ORCID and other metadata for each author is optional but helpful
+- Under the `name:` field, change "Cookbook Template contributors" to "[Your Cookbook Name] contributors"
+
+```{note}
+GitHub automatically tracks all contributions to your repository. The folks who help with infrastructure fixes, content reviews, etc., are considered "contributors" but not primary authors. We include the "contributors" as a single group in `CITATION.cff` to acknowledge this!
+```
+
+### 2. Tag your Cookbook
+
+The file `_gallery_info.yml` determines how your Cookbook will be findable on the [gallery](https://cookbooks.projectpythia.org/). Edit this file with the following:
+
+- Replace `thumbnail.png` with your own image (which will appear on your gallery card)
+- Edit the tags under `domains` and `packages` as appropriate. Check out the existing filters on the [gallery page](https://cookbooks.projectpythia.org/) to get a sense of how these are used.
+
+
+
+## F. Transfer Your Cookbook to the ProjectPythia Organization
 
 In order for your Cookbook to be included in the Gallery, the source repository needs to be housed within the [Project Pythia GitHub organization](https://github.com/ProjectPythia).
 
@@ -60,7 +163,7 @@ You're still in control! You will always retain write access to your Cookbook re
 Also, _don't worry about breaking anything!_ Your repo will not affect any other Project Pythia content until you initiate the request to list it on the [Cookbook Gallery](https://cookbooks.projectpythia.org) (see below...)
 ```
 
-### Steps to transfer the repository
+### Steps to Transfer the Repository
 
 1. [Contact the Pythia team via the Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/60) (or otherwise) to let us know about your cookbook.
 1. You will get an invitation to join the [ProjectPythia organization](https://github.com/ProjectPythia).
@@ -72,75 +175,8 @@ Also, _don't worry about breaking anything!_ Your repo will not affect any other
 
 Once you have successfully transferred the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow).
 
-## Customize the paths in your repository
 
-Whether the repository lives in your personal GitHub space or on the ProjectPythia organization, there are several paths and links in the repository code that need to be updated to reflect the current home of your cookbook source. This step is necessary to ensure that the cookbook building and publishing infrastructure works as intended.
-
-Fortunately this is quick and easy. Just run our custom GitHub action called `trigger-replace-links`: Navigate to "Actions" &rarr; "trigger-replace-links" &rarr; "Run workflow".
-
-## Set up the computational environment
-
-You'll most likely want to do your edits in a [local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) on your laptop or wherever your are running your notebooks.
-
-### Customizing your environment file
-
-1. Within `environment.yml` (in the root of the repository), change `name` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes.
-1. Create the [conda environment](https://foundations.projectpythia.org/foundations/conda.html) with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
-1. Activate your environment with `conda activate <env-name>`
-
-You're now ready to create and run awesome notebooks.
-
-### Customizing your GitHub actions
-
-Your repository includes automation for building and publishing your Cookbook, powered by [GitHub Actions](https://docs.github.com/en/actions). Now that you have created a custom name for your conda environment (`<your-cookbook-name>-dev`), you need to edit three files found in the `.github/workflows` section of your repo:
-- `.github/workflows/nightly-build.yaml`
-- `.github/workflows/publish-book.yaml`
-- `.github/workflows/trigger-book-build.yaml`
-
-In each of these files, in the field called `environment_name:`, replace  `cookbook-dev` with the name you used in your `environment.yml` file (probably `<your-cookbook-name>-dev`). Commit these changes.
-
-```{note}
-If these workflow files look mysterious and you don't know anything about how GitHub Actions work, don't worry! The Pythia team will help with any problems that arise with the Cookbook automation.
-```
-
-## Develop your cookbook
-
-### Add notebooks
-
-To add content, you should edit (and duplicate as necessary) the notebook template `notebooks/notebook-template.ipynb`. Using this template will help keep your content consistent with the expected Cookbook style.
-
-You can add subfolders to organize your notebook files as necessary. However, the organization of the notebooks within the published book is dictated by the table of contents file `_toc.yml`. _Edit this file to add your chapters._ Take a look at the [`radar-cookbook/_toc.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for example syntax, or consult the [JupyterBook documentation](https://jupyterbook.org/en/stable/structure/toc.html).
-
-### Customize your home page
-
-The file `README.md` serves as the homepage of your Cookbook, so it should be descriptive. Edit this file as appropriate, following guidance in the file itself.
-
-### Build your Cookbook locally
-
-You should be able to build your new Cookbook on your local machine by running this command from the root of the repository:
-```
-jupyter-book build .
-```
-from the root of your repository. This will execute all your notebooks and package them into a book styled with the Pythia theme.
-
-If the build is successful, you should be able to preview the result in a web browser by running
-```
-open _build/html/index.html
-```
-
-### Strip output from your notebooks before committing
-
-Wherever feasible, we recommend only committing bare, unexecuted notebooks into your Cookbook repository. There are a few reasons:
-- The notebooks are executed automatically each time the book is built
-- Pre-existing output in the notebooks will have no effect on the published book
-- Better reproducibility of your content
-- The repo stays cleaner and leaner. Diffs of notebook changes are easier to interpret.
-
-To strip a notebook, in a Jupyter Lab session, go to "Kernel" &rarr; "Restart Kernel and Clear Output of All Cells...". Save your notebook, then commit.
-
-You're ready to push content up to GitHub and trigger the automated publishing pipeline.
-
-## Deploying your Cookbook
+## G. Deploying your Cookbook
 
 Pythia Cookbooks are not just collections of notebooks! They are backed by GitHub-based automation that handles building, testing, previewing, and publishing the books online.
 
@@ -204,45 +240,7 @@ Here's how:
 The Binder uses your `environment.yml` file to create an image of an execution environment, which is stored for reuse. The time to execute your notebooks can vary, depending on whether the Binder needs to build a new image or not.
 ```
 
-## Publish your Cookbook on the Pythia Gallery
-
-Once you're happy with your content and your Cookbook is building and deploying properly, it's time to think about submitting it for inclusion in the [Cookbook Gallery](https://cookbooks.projectpythia.org/)!
-
-```{note}
-Cookbooks don't need to be "finished" in order to accepted in the Gallery! Cookbooks are typically accepted so long as they run cleanly, are free of obvious errors, and have some relevant new content.
-
-Cookbooks are meant to be living documents. We encourage authors to open GitHub issues to track progress on adding and updating content.
-```
-
-At this stage, there are a few more steps to get things ready to go.
-
-### Authorship and the `CITATION.cff` file
-
-Cookbooks are scholarly objects. As part of the publication process, your Cookbook will get a citable DOI (via [Zenodo](https://zenodo.org)). Just as for journal publications, you need to make decisions about who gets credited for authorship.
-
-This information is managed manually through the file `CITATION.cff` in the root of your repository. This will determine the names displayed on your card in the [gallery](https://cookbooks.projectpythia.org/) as well as your DOI-based citation.
-
-Edit `CITATION.cff` as follows:
-
-- If you haven't already, _remove the people already listed in this file_. These are the credited authors of the [Cookbook Template](https://github.com/ProjectPythia/cookbook-template) only, and they should not be included in your author list (unless one of them also happens to be a content author for your book).
-- Set your Cookbook title
-- Write a short description / abstract (this will also appear on the [gallery](https://cookbooks.projectpythia.org/))
-- Include names of all content authors
-  - ORCID and other metadata for each author is optional but helpful
-- Under the `name:` field, change "Cookbook Template contributors" to "[Your Cookbook Name] contributors"
-
-```{note}
-GitHub automatically tracks all contributions to your repository. The folks who help with infrastructure fixes, content reviews, etc., are considered "contributors" but not primary authors. We include the "contributors" as a single group in `CITATION.cff` to acknowledge this!
-```
-
-### Gallery tags
-
-The file `_gallery_info.yml` determines how your Cookbook will be findable on the [gallery](https://cookbooks.projectpythia.org/). Edit this file with the following:
-
-- Replace `thumbnail.png` with your own image (which will appear on your gallery card)
-- Edit the tags under `domains` and `packages` as appropriate. Check out the existing filters on the [gallery page](https://cookbooks.projectpythia.org/) to get a sense of how these are used.
-
-### Generate a DOI
+## H. Release a Version of Your Cookbook
 
 Once all the above steps are complete and your `CITATION.cff` file is correct, you are ready to "release" a tagged version of your book and generate your first DOI. We've tried to make this as painless as possible, but there are a few more steps to take initially.
 
@@ -256,24 +254,30 @@ As always, reach out to a Pythia team member for help with any of these steps!
 1. Make a new release of your Cookbook repository! This is on the right nav side of the page from your code-view in the repository.
 1. The DOI will now be generated automatically. The DOI badge on your homepage should link to the new archive that was just created on Zenodo.
 
-### Initiate the Cookbook review process
+
+## I. Publish Your Cookbook on the Pythia Cookbook Gallery
+
+Once you're happy with your content and your Cookbook is building and deploying properly, it's time to think about submitting it for inclusion in the [Cookbook Gallery](https://cookbooks.projectpythia.org/)!
+
+```{note}
+Cookbooks don't need to be "finished" in order to accepted in the Gallery! Cookbooks are typically accepted so long as they run cleanly, are free of obvious errors, and have some relevant new content.
+
+Cookbooks are meant to be living documents. We encourage authors to open GitHub issues to track progress on adding and updating content.
+```
+
+At this stage, there are a few more steps to get things ready to go.
+
+
+### 1. Initiate the Cookbook review process
 
 If you haven't already, now is a great time to [contact the Project Pythia team](https://discourse.pangeo.io/c/education/project-pythia/60) to let them know about your new Cookbook. You will be assigned a Cookbook advocate from the Pythia maintenance team.
 They will open an issue on your Cookbook repository with the [Cookbook Checklist](cookbook-tasklist.md) for you to document your completion of the above process, plus a few more GitHub-specific steps.
 Once you complete this process, your Cookbook will be ready for review and publication!
 
-### Submit your Cookbook to the Gallery
+### 2. Submit your Cookbook to the Gallery
 
-Click the button below to request addition of your Cookbook to the [Project Pythia Cookbook Gallery](https://cookbooks.projectpythia.org).
-
-<span class="d-flex justify-content-center py-4">
-    <a href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
-        Submit a new Cookbook
-    </a>
-</span>
-
-1. Click the above button, or use this link to the [new cookbook PR template](https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook).
-1. Add the root name of your cookbook repository (e.g., just "cesm-cookbook", not the whole URL) and any other information you'd like the team to know.
-1. The Pythia team will take a look at your content, and work with you on any necessary updates and fixes.
+1. Following fork-branch workflows, append the [`cookbook-gallery/cookbook_gallery.txt`](https://github.com/ProjectPythia/cookbook-gallery/blob/main/cookbook_gallery.txt) file to include the root name of your repository (e.g., just "cesm-cookbook", not the whole URL).
+2. Open a Pull Request and tag a Project Pythia team member for review.
+3. The Pythia team will take a look at your content, and work with you on any necessary updates and fixes.
 
 __*THANK YOU FOR YOUR AMAZING CONTRIBUTION TO THIS COMMUNITY RESOURCE!*__
