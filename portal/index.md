@@ -99,7 +99,7 @@ or join us at any of our [Monthly Project Meetings](#monthly-pythia-meetings).
 Anyone can contribute to and participate in Project Pythia!
 We conduct all of our work in the open, and all of our work is Open Source Licensed.
 We welcome contributions from anyone in the community.
-Please see our [Contributor’s Guide](/contributing)
+Please see our [Contributor’s Guide](/pythia-contributing)
 for details on how you can get involved, our [Code of Conduct](https://github.com/projectpythia/projectpythia.github.io/blob/main/CODEOFCONDUCT.md) for an overview of contribution rules and responsibilities, and come see our work in the
 [ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
 

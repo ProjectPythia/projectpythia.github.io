@@ -17,8 +17,9 @@ project:
     - title: Blog
       children:
         - pattern: portal/posts/*.md
-    - file: portal/contributing.md
+    - file: portal/pythia-contributing.md
     - file: portal/cookbook-guide.md
+    - file: portal/quick-cookbook-guide.md
     - file: portal/metrics.md
 site:
   actions:
