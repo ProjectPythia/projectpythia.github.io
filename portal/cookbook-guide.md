@@ -1,4 +1,4 @@
-# Cookbook Contributor's Guide
+# Contributing a New Cookbook
 
 <p style="text-align: center; margin-top: 2em;">
   <a href="quick-cookbook-guide.md" style="display: inline-block; background-color:rgb(13, 83, 130); color: white; padding: 8px 10px; font-size: 1.1em; border-radius: 8px;">
@@ -242,7 +242,7 @@ The Binder uses your `environment.yml` file to create an image of an execution e
 
 ## H. Release a Version of Your Cookbook
 
-Once all the above steps are complete and your `CITATION.cff` file is correct, you are ready to "release" a tagged version of your book and generate your first DOI. We've tried to make this as painless as possible, but there are a few more steps to take initially.
+Once all the above steps are complete and your `CITATION.cff` file is correct, you are ready to "release" a tagged version of your book and generate your first DOI. We've tried to make this as painless as possible, but there are a few more steps to take initially. **For be able to initiate a release, you must have admin-level access to the Cookbook repository.**
 
 As always, reach out to a Pythia team member for help with any of these steps!
 
