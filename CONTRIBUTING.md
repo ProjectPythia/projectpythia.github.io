@@ -1,8 +1,7 @@
-# Pythia Portal contributor's guide
+# Contributing to the Project Pythia Portal
 
 This document contains information specific to contributing to the
-Project Pythia Portal. Please first refer to [Pythia Contributor's
-Guide](https://projectpythia.org/pythia-contributing.html) for overall
+Project Pythia Portal. Please first refer to [Guide for Contributing to Project Pythia](https://projectpythia.org/contributing.html) for overall
 contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
 
