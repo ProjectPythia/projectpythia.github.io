@@ -1,9 +1,9 @@
-# Quick Cookbook Contributing Guide
+# Quick Guide to Contributing a New Cookbook
 
-For a more detailed, step-by-step contributor guide, see the **Full Cookbook Contributor's Guide**
+This document is designed be lightweight. For more detailed, step-by-step instuctions, see the **Full Guide for Cookbook Guide**
 <p style="text-align: center; margin-top: 2em;">
   <a href="cookbook-guide.md" style="display: inline-block; background-color:rgb(13, 83, 130); color: white; padding: 8px 10px; font-size: 1.1em; border-radius: 8px;">
-    Full Cookbook Contributor's Guide &rightarrow;
+    Contributing a New Cookbook &rightarrow;
   </a>
 </p>
 
