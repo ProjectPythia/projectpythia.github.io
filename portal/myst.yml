@@ -23,6 +23,7 @@ project:
         - file: posts/cookoff2023.md
     - file: contributing.md
     - file: cookbook-guide.md
+    - file: quick-cookbook-guide.md
     - file: metrics.md
 site:
   domains: []

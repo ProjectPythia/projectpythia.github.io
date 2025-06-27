@@ -1,8 +1,7 @@
-# Pythia Portal contributor's guide
+# Contributing to the Project Pythia Portal
 
 This document contains information specific to contributing to the
-Project Pythia Portal. Please first refer to [Pythia Contributor's
-Guide](https://projectpythia.org/contributing.html) for overall
+Project Pythia Portal. Please first refer to [Guide for Contributing to Project Pythia](https://projectpythia.org/contributing.html) for overall
 contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
 
@@ -22,7 +21,7 @@ The post will automatically be recognized and displayed when you build the porta
 
 ## Instructions for building the portal site
 
-The portal site is built with [Sphinx](https://www.sphinx-doc.org/).
+The portal site is built with [MyST-MD](https://mystmd.org/).
 
 When testing new content it is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. However, you can also build it locally on your machine following the instructions
 below.
@@ -70,28 +69,12 @@ _NOTE_: The `pre-commit` package is already installed via the `pythia` conda env
 Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
 
 ```bash
-make html
+myst start --execute
 ```
 
-If this step fails and you have not updated your conda environment recently, try updating with `conda env update -f ../environment.yml` and `conda update --all` as described above.
+If this step fails and you may not have updated your conda environment recently, try updating with `conda env update -f ../environment.yml` and `conda update --all` as described above.
 
-The newly rendered site is now available in `portal/_build/html/index.html`.
-Open with your web browser, or from the terminal:
-
-```bash
-open _build/html/index.html
-`````
-
-However, many of the links will not work. For all of the links
-found in the portal to work properly, you'll need to set up a local
-testing server. This can be done with Python's http.server by running
-the following command from within the `portal` directory:
-
-```bash
-python -m http.server --directory _build/html/
-```
-
-and then pointing your browser at the URL: localhost:8000.
+The newly rendered site is now available at [localhost:3000](http://localhost:3000). A link should appear in your terminal.
 
 More information on setting up a local test server is available from [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
 
@@ -107,15 +90,6 @@ You can re-activate the `pythia` conda environment at any time with `conda activ
 conda activate pythia
 conda update --all
 ```
-
-### Preview the built site on Netlify
-
-Once a pull request has passed all tests, including the `preview-site` check, the GitHub bot will post a comment with a preview link on the pull request. You can click on the link to launch a new tab with a build of the Project Pythia site.
-
-![CI-check](/portal/_static/images/deploy-site-CI-check.png)
-
-![Netlify Preview](/portal/_static/images/netlify-preview.png)
-
 
 ## Instructions for intacting with the Google Analytics API
 
