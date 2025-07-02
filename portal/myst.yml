@@ -10,7 +10,7 @@ project:
   toc:
     - file: index.md
     - file: about.md
-    - title: Blog
+    - file: blog.md
       children:
         # - pattern: posts/*.md
         #  Temporary until we have blog infrastructure: explicit list of posts by date (newest first)
