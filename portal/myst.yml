@@ -14,6 +14,7 @@ project:
       children:
         # - pattern: posts/*.md
         #  Temporary until we have blog infrastructure: explicit list of posts by date (newest first)
+        - file: posts/mystification.md
         - file: posts/cookoff2025-website.md
         - file: posts/binderhub_status.md
         - file: posts/new-cookbooks.md
