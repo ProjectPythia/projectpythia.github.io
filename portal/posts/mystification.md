@@ -38,7 +38,7 @@ In mid-June, we met over the course of several hack days to tinker, to test, to 
 ## Looking Ahead
 After the Sprint day, continued work went into documentation for the new contribution guides, working with the MyST team to identify bugs and new feature requests, and finishing up various tasks. We are currently working diligently on the Footer, which will be manually added to 4 key sites while we wait for a MyST release that allows for the extension of site-parts in the configuration. Other key features we hope to include are: gallery extensions for custom gallery card filtering, custom internal vs external link treatment and checking, and better blog functionality. Even without these features, we are thrilled and proud to have rolled out the new infrastructure and a fresh new look for our websites in advance of our summer Cook-off Hackathon.
 
-We hope you’ll find the Cookbook creation process to be streamlined! **Test out our new architecture at this year’s [Cook-off Hackathon](https://projectpythia.org/pythia-cookoff-2025/)** (August 5-8 at the NSF NCAR Mesa Lab in Boulder). Register by July 20th. Or drop by any of our open community meetings (https://projectpythia.org/#join-us).
+We hope you’ll find the Cookbook creation process to be streamlined! **Test out our new architecture at this year’s [Cook-off Hackathon](https://projectpythia.org/pythia-cookoff-2025/)** (August 5-8 at the NSF NCAR Mesa Lab in Boulder). Register by July 20th. Or drop by any of our [open community meetings](https://projectpythia.org/#join-us).
 
 ## Attribution
 Thanks to everyone who was involved in our sprint day (alphabetical):
