@@ -14,7 +14,7 @@ We began the process of transitioning to MyST in the summer of 2024 at the annua
 The new MyST architecture was very appealing for several reasons:
 Sustainability. Our current Sphinx-based architecture was becoming clunky and hard to maintain as members joined or left the project, and required too much boilerplate code in individual cookbook repos which presented a barrier to would-be new contributors. MyST offered a much more streamlined alternative to keep our community project growing.
 Staying on the leading edge of best practices. We are an open-source community resource that teaches open-source coding practices, so it’s important that our own sites continue to be useful models for the broader community.
-Making cookbooks better! A lot of the new functionality in MyST is really well suited to the cookbooks, including things like [cross-referencing](https://mystmd.org/guide/cross-references) and embedding content (Embed & Include Content - MyST Markdown) and automated [bibliographies](https://mystmd.org/guide/citations).
+Making cookbooks better! A lot of the new functionality in MyST is really well suited to the cookbooks, including things like [cross-referencing](https://mystmd.org/guide/cross-references) and [embedding content](Embed & Include Content - MyST Markdown) and automated [bibliographies](https://mystmd.org/guide/citations).
 Cross-pollination with the core developers! Having the MyST developers invested in our use-case as a demo as they learn, understand, and develop functionality that will be particularly useful to us (and users that come after) is a really nice feedback loop from both a community and technological stand point.
 
 ## MyST for sustainability
@@ -36,9 +36,9 @@ The first task was to adapt the shared GitHub Actions workflows that we rely on 
 In mid-June, we met over the course of several hack days to tinker, to test, to review each other’s pull requests, and to deploy the new websites. We had a spreadsheet to track our progress that listed 57 repositories (including 52 Cookbooks) that needed to be Myst-ified or cleaned up. Knowing that there were paths that were pointing to the old sandbox “with myST” GitHub organization, even Cookbooks that were previously transitioned to MyST would need to be combed through to make sure all updated changes were reflected. These changes included adding in the new boilerplate code to leverage MyST, updating all action calls, removing any stale code, and other miscellaneous changes to the README.md files and contribution guides. A typical Cookbook had additions, modifications, and deletions of 12 total files ([example](https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/pull/16/files)), which is a total of over 600 files changed in a day. We could not have completed the process so quickly without the rapid response from the upstream MyST MD team.
 
 ## Looking Ahead
-After the Sprint day, continued work went into documentation for the new contribution guides, working with the MyST team to identify bugs and new feature requests, and finishing up various tasks. We are currently working diligently on the Footer, which will be manually added to 4 key sites while we wait for a MyST release that allows for the extension of site-parts in the configuration. Other key features we hope to include are: gallery extensions for custom gallery card filtering, custom internal vs external link treatment and checking, and better blog functionality. Even without these features, we are thrilled and proud to have rolled out the new infrastructure and a fresh new look for our websites in advance of our summer Cook-off Hackathon.
+After the sprint day, continued work went into documentation for the new contribution guides, working with the MyST team to identify bugs and new feature requests, and finishing up various tasks. We are currently working diligently on the footer, which will be manually added to 4 key sites while we wait for a MyST release that allows for the extension of site-parts in the configuration. Other key features we hope to include are: gallery extensions for custom gallery card filtering, custom internal vs external link treatment and checking, and better blog functionality. Even without these features, we are thrilled and proud to have rolled out the new infrastructure and a fresh new look for our websites in advance of our summer Cook-off Hackathon.
 
-We hope you’ll find the Cookbook creation process to be streamlined! **Test out our new architecture at this year’s [Cook-off Hackathon](https://projectpythia.org/pythia-cookoff-2025/)** (August 5-8 at the NSF NCAR Mesa Lab in Boulder). Register by July 20th. Or drop by any of our open community meetings (https://projectpythia.org/#join-us).
+We hope you’ll find the Cookbook creation process to be streamlined! **Test out our new architecture at this year’s [Cook-off Hackathon](https://projectpythia.org/pythia-cookoff-2025/)** (August 5-8 at the NSF NCAR Mesa Lab in Boulder). Register by July 20th. Or drop by any of our [open community meetings](https://projectpythia.org/#join-us).
 
 ## Attribution
 Thanks to everyone who was involved in our sprint day (alphabetical):
@@ -46,8 +46,8 @@ Thanks to everyone who was involved in our sprint day (alphabetical):
 - Rowan Cockett
 - Katelyn FitzGerald
 - Robert Ford
-- Julia Kent
 - Angus Hollands
+- Julia Kent
 - Christian Okyere
 - Brian Rose
 - Kevin Tyle
@@ -58,7 +58,7 @@ Thanks to everyone who was involved in our sprint day (alphabetical):
     build:
         uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
         with:
-        build_commandl: 'jupyter-book build .'
+        build_command: 'jupyter-book build .'
     ```
     Reach out if this is causing problems!
 
