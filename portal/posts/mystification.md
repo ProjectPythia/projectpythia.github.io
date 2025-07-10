@@ -46,8 +46,8 @@ Thanks to everyone who was involved in our sprint day (alphabetical):
 - Rowan Cockett
 - Katelyn FitzGerald
 - Robert Ford
-- Julia Kent
 - Angus Hollands
+- Julia Kent
 - Christian Okyere
 - Brian Rose
 - Kevin Tyle
