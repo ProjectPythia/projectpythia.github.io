@@ -2,7 +2,7 @@
 title: Reflections on MyST-ification
 subtitle: Project Pythia’s transition to MyST and JupyterBook2 architecture
 date: 2025-07-11
-authors: jukent, brian-rose, dcamron, kafitzgerald
+authors: [jukent, brian-rose, dcamron, kafitzgerald]
 tags: [myst]
 ---
 
@@ -42,24 +42,24 @@ We hope you’ll find the Cookbook creation process to be streamlined! **Test ou
 
 ## Attribution
 Thanks to everyone who was involved in our sprint day (alphabetical):
-Drew Camron
-Rowan Cockett
-Katelyn FitzGerald
-Robert Ford
-Julia Kent
-Angus Hollands
-Christian Okyere
-Brian Rose
-Kevin Tyle
+- Drew Camron
+- Rowan Cockett
+- Katelyn FitzGerald
+- Robert Ford
+- Julia Kent
+- Angus Hollands
+- Christian Okyere
+- Brian Rose
+- Kevin Tyle
 
 [^buildcommand]: Our shared [build-book.yaml workflow](https://github.com/ProjectPythia/cookbook-actions/blob/main/.github/workflows/build-book.yaml) accepts an arbitrary build_command input argument to accommodate using different HTML building tools. We switched the default build_command from jupyter-book build . to myst build –execute –html. You can restore previous behavior by explicitly setting the input argument from your workflow file like this:
-```
-jobs:
-  build:
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
-    with:
-      build_commandl: 'jupyter-book build .'
-```
-Reach out if this is causing problems!
+    ```
+    jobs:
+    build:
+        uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+        with:
+        build_commandl: 'jupyter-book build .'
+    ```
+    Reach out if this is causing problems!
 
 [^baseurl]: Unlike Sphinx, [MyST needs to know where a site is being deployed at build time](https://mystmd.org/guide/deployment-github-pages#base-url-configuration-for-github-pages). That means we have to pass different arguments depending on whether we are building a preview or the actual site since the previews are deployed to subdirectories of each site’s base URL.
