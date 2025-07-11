@@ -15,7 +15,7 @@ The new MyST architecture was very appealing for several reasons:
 Sustainability. Our current Sphinx-based architecture was becoming clunky and hard to maintain as members joined or left the project, and required too much boilerplate code in individual cookbook repos which presented a barrier to would-be new contributors. MyST offered a much more streamlined alternative to keep our community project growing.
 Staying on the leading edge of best practices. We are an open-source community resource that teaches open-source coding practices, so it’s important that our own sites continue to be useful models for the broader community.
 Making cookbooks better! A lot of the new functionality in MyST is really well suited to the cookbooks, including things like [cross-referencing](https://mystmd.org/guide/cross-references) and [embedding content](Embed & Include Content - MyST Markdown) and automated [bibliographies](https://mystmd.org/guide/citations).
-Cross-pollination with the core developers! Having the MyST developers invested in our use-case as a demo as they learn, understand, and develop functionality that will be particularly useful to us (and users that come after) is a really nice feedback loop from both a community and technological stand point.
+**Cross-pollination with the core developers!** Having the MyST developers invested in our use-case as a demo as they learn, understand, and develop functionality that will be particularly useful to us (and users that come after) is a really nice feedback loop from both a community and technological stand point.
 
 ## MyST for sustainability
 ### Our aging infrastructure
@@ -58,7 +58,7 @@ Thanks to everyone who was involved in our sprint day (alphabetical):
     build:
         uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
         with:
-        build_command: 'jupyter-book build .'
+            build_command: 'jupyter-book build .'
     ```
     Reach out if this is causing problems!
 
