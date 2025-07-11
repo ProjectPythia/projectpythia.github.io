@@ -9,7 +9,7 @@ tags: [myst]
 Project Pythia recently transitioned from a [Sphinx-based JupyterBook](https://jupyterbook.org/en/stable/intro.html) architecture to using [MyST Markdown](https://mystmd.org/), which serves as the foundation for the upcoming [JupyterBook 2](https://next.jupyterbook.org/)!
 
 ## Our Motivation for MyST
-We began the process of transitioning to MyST in the summer of 2024 at the annual [Project Pythia Cook-off hackathon](https://projectpythia.org/posts/new-cookbooks). At that event, members of the MyST team demonstrated the current [alpha-version of the technology](https://executablebooks.org/en/latest/blog/2024-06-14-project-pythia-mystmd/) and coached us through the boilerplate code necessary to make some of our key resources build with MyST.
+We began the process of transitioning to MyST in the summer of 2024 at the annual [Project Pythia Cook-off hackathon](https://projectpythia.org/posts/2025/new-cookbooks). At that event, members of the MyST team demonstrated the current [alpha-version of the technology](https://executablebooks.org/en/latest/blog/2024-06-14-project-pythia-mystmd/) and coached us through the boilerplate code necessary to make some of our key resources build with MyST.
 
 The new MyST architecture was very appealing for several reasons:
 - **Sustainability**: Our current Sphinx-based architecture was becoming clunky and hard to maintain as members joined or left the project, and required too much boilerplate code in individual cookbook repos which presented a barrier to would-be new contributors. MyST offered a much more streamlined alternative to keep our community project growing.
