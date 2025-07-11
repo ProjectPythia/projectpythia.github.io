@@ -58,7 +58,7 @@ Thanks to everyone who was involved in our sprint day (alphabetical):
     build:
         uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
         with:
-        build_command: 'jupyter-book build .'
+            build_command: 'jupyter-book build .'
     ```
     Reach out if this is causing problems!
 
