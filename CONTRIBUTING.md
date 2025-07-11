@@ -6,7 +6,7 @@ contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
 
 ## Instructions for adding a blog post
-Within the `portal/posts/` folder add your `.md` blog file with the following heading:
+Within the `portal/posts/[YEAR]` folder add your `.md` blog file with the following heading:
 
 ```
 ---

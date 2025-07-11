@@ -14,14 +14,14 @@ project:
       children:
         # - pattern: posts/*.md
         #  Temporary until we have blog infrastructure: explicit list of posts by date (newest first)
-        - file: posts/mystification.md
-        - file: posts/cookoff2025-website.md
-        - file: posts/binderhub_status.md
-        - file: posts/new-cookbooks.md
-        - file: posts/cookoff2024-website.md
-        - file: posts/cookoff2024-savethedate.md
-        - file: posts/fundraiser.md
-        - file: posts/cookoff2023.md
+        - file: posts/2025/mystification.md
+        - file: posts/2025/cookoff2025-website.md
+        - file: posts/2025/binderhub_status.md
+        - file: posts/2025/new-cookbooks.md
+        - file: posts/2024/cookoff2024-website.md
+        - file: posts/2023/cookoff2024-savethedate.md
+        - file: posts/2023/fundraiser.md
+        - file: posts/2023/cookoff2023.md
     - file: contributing.md
     - file: cookbook-guide.md
     - file: quick-cookbook-guide.md
