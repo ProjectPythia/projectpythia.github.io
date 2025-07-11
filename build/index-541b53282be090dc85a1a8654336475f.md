@@ -19,10 +19,10 @@ Project Pythia is hosting a Cookbook Cook-Off August 5-8, 2025.
 
 {button}`Cook-Off 2025<https://projectpythia.org/pythia-cookoff-2025/>`
 
-{button}`2024 Cookbooks<./posts/new-cookbooks.md>`
+{button}`2024 Cookbooks<./posts/2025/new-cookbooks.md>`
 
 Donate to support Project Pythia!
-{button}`Donate now<posts/fundraiser.md>`
+{button}`Donate now<posts/2023/fundraiser.md>`
 
 +++ { "kind": "justified"}
 
