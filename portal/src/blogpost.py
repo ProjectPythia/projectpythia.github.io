@@ -50,7 +50,7 @@ for ifile in root.rglob("posts/**/*.md"):
     meta["content"] = meta.get("description", words)
     posts.append(meta)
 posts = pd.DataFrame(posts)
-posts["date"] = pd.to_datetime(posts["date"]).dt.tz_localize("US/Pacific")
+posts["date"] = pd.to_datetime(posts["date"])
 posts = posts.dropna(subset=["date"])
 posts = posts.sort_values("date", ascending=False)
 
