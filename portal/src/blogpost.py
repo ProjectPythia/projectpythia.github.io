@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -43,14 +44,18 @@ for ifile in root.rglob("posts/**/*.md"):
         for ii in content.splitlines()
         if not any(ii.startswith(char) for char in skip_lines)
     )
+
     N_WORDS = 50
-    words = " ".join(content.split(" ")[:N_WORDS])
+    content_no_links = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", content)
+    content_no_bold = re.sub(r"\*\*", "", content_no_links)
+    words = " ".join(content_no_bold.split(" ")[:N_WORDS])
+
     if "author" not in meta:
         meta["author"] = "Project Pythia Team"
     meta["content"] = meta.get("description", words)
     posts.append(meta)
 posts = pd.DataFrame(posts)
-posts["date"] = pd.to_datetime(posts["date"])
+posts["date"] = pd.to_datetime(posts["date"]).dt.tz_localize("UTC")
 posts = posts.dropna(subset=["date"])
 posts = posts.sort_values("date", ascending=False)
 
