@@ -16,4 +16,4 @@ During the hackthon, significant additions were made to our Radar Cookbook and i
 
 From our post-hackathon exit survey, everyone enjoyed the event, felt that they learned new skills and that their contributions were valued. One scientist commented, “The hackathon for me has become a great place to get a sense of a community. Seeing people enthusiastic about coding up notebooks that would benefit the research community is a gateway for someone starting to code in Python.” This comment mirrors the efforts of Project Pythia as a community-owned resource.
 
-<img src="../_static/images/posts/projectpythia-cookbook-cookoff.jpeg" alt="Cookoff Image">
+<img src="../../_static/images/posts/projectpythia-cookbook-cookoff.jpeg" alt="Cookoff Image">
