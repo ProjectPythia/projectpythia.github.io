@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import argparse
 import json
 import sys
@@ -45,6 +45,8 @@ for ifile in root.rglob("posts/**/*.md"):
     )
     N_WORDS = 50
     words = " ".join(content.split(" ")[:N_WORDS])
+    if "author" not in meta:
+        meta["author"] = "Project Pythia Team"
     meta["content"] = meta.get("description", words)
     posts.append(meta)
 posts = pd.DataFrame(posts)
@@ -56,20 +58,20 @@ posts = posts.sort_values("date", ascending=False)
 fg = FeedGenerator()
 fg.id("https://projectpythia.org/")
 fg.title("Project Pythia blog")
-fg.author({"name": "Project Pythia Team", "email": "projectpythia@ucar.edu"})
+fg.author({"name": "Project Pytia Team", "email": "choldgraf@gmail.com"})
 fg.link(href="https://projectpythia.org/", rel="alternate")
-fg.logo("_static/images/logos/pythia_logo-blue-btext.svg")
-fg.subtitle("")
-fg.link(href="http://chrisholdgraf.com/rss.xml", rel="self")
+fg.logo("https://projectpythia.org/_static/profile.jpg")
+fg.subtitle("Project Pythia blog!")
+fg.link(href="https://projectpythia.org/", rel="self")
 fg.language("en")
 
 # Add all my posts to it
 for ix, irow in posts.iterrows():
     fe = fg.add_entry()
-    fe.id(f'https://projectpythia.org/{irow["path"]}')
+    fe.id(f"https://projectpythia.org/{irow['path']}")
     fe.published(irow["date"])
     fe.title(irow["title"])
-    fe.link(href=f'https://projectpythia.org/{irow["path"]}')
+    fe.link(href=f"https://projectpythia.org/{irow['path']}")
     fe.content(content=irow["content"])
 
 # Write an RSS feed with latest posts
@@ -99,7 +101,7 @@ for ix, irow in posts.iterrows():
     children.append(
         {
             "type": "card",
-            "url": f'/{irow["path"].with_suffix("")}',
+            "url": f"/{irow['path'].with_suffix('')}",
             "children": [
                 {"type": "cardTitle", "children": [u.text(irow["title"])]},
                 {"type": "paragraph", "children": [u.text(irow["content"])]},
@@ -107,9 +109,9 @@ for ix, irow in posts.iterrows():
                     "type": "footer",
                     "children": [
                         u.strong([u.text("Date: ")]),
-                        u.text(f'{irow["date"]:%B %d, %Y} | '),
+                        u.text(f"{irow['date']:%B %d, %Y} | "),
                         u.strong([u.text("Author: ")]),
-                        u.text(f'{irow["author"]}'),
+                        u.text(f"{irow['author']}"),
                     ],
                 },
             ],
