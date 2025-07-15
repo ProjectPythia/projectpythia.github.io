@@ -173,11 +173,11 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 
 ### In pictures
 
-<img src="../_static/images/posts/IMG_5686.jpeg" alt="2024 Cookoff group photo" width=900>
+<img src="../../_static/images/posts/IMG_5686.jpeg" alt="2024 Cookoff group photo" width=900>
 <br>
-<img src="../_static/images/posts/IMG_5854.jpeg" alt="Breakout group" width=250>
-<img src="../_static/images/posts/IMG_6546.jpg" alt="Cookoff attendees at Mesa Lab" width=250>
-<img src="../_static/images/posts/IMG_6055.jpeg" alt="Virtual presentation" width=250>
+<img src="../../_static/images/posts/IMG_5854.jpeg" alt="Breakout group" width=250>
+<img src="../../_static/images/posts/IMG_6546.jpg" alt="Cookoff attendees at Mesa Lab" width=250>
+<img src="../../_static/images/posts/IMG_6055.jpeg" alt="Virtual presentation" width=250>
 
 ### By the numbers
 
