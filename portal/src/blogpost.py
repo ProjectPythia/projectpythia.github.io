@@ -14,9 +14,9 @@ DEFAULTS = {"number": 10}
 
 root = Path(__file__).parent.parent
 
-# Aggregate all posts from the markdown and ipynb files
+# Aggregate all posts from the markdown files
 posts = []
-for ifile in root.rglob("posts/**/*.md"):
+for ifile in root.rglob("posts/????/*.md"):
     if "drafts" in str(ifile):
         continue
 
