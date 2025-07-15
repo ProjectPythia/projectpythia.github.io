@@ -13,7 +13,7 @@ project:
   toc:
     - file: index.md
     - file: about.md
-    - file: posts/blog.md
+    - file: blog.md
       children:
       - title: "2025"
         children:
