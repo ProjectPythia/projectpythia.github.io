@@ -6,19 +6,26 @@ project:
   id: 770e49e5-344a-4c46-adaa-3afb060b2085
   authors: Project Pythia Community
   github: https://github.com/projectpythia/projectpythia.github.io
+  plugins:
+    - type: executable
+      path: src/blogpost.py
 
   toc:
     - file: index.md
     - file: about.md
-    - title: Blog
+    - file: posts/blog.md
       children:
-        # - pattern: posts/*.md
-        #  Temporary until we have blog infrastructure: explicit list of posts by date (newest first)
+      - title: "2025"
+        children:
         - file: posts/2025/mystification.md
         - file: posts/2025/cookoff2025-website.md
         - file: posts/2025/binderhub_status.md
         - file: posts/2025/new-cookbooks.md
+      - title: "2024"
+        children:
         - file: posts/2024/cookoff2024-website.md
+      - title: "2023"
+        children:
         - file: posts/2023/cookoff2024-savethedate.md
         - file: posts/2023/fundraiser.md
         - file: posts/2023/cookoff2023.md
@@ -26,6 +33,7 @@ project:
     - file: cookbook-guide.md
     - file: quick-cookbook-guide.md
     - file: metrics.md
+
 site:
   domains: []
   options:
