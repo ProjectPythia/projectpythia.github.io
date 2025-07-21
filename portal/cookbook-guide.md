@@ -26,7 +26,7 @@ If you're not looking to create a _new_ Cookbook, but rather looking for guidanc
 
 ## A. Data access and storage considerations for Cookbooks
 
-Pythia Cookbooks are typically powered by one or more geoscientific data sets to help illustrate a workflow or concept. The variety of formats and sources of Earth science data is huge. Here we provide general guidelines for helping choose data for your Cookbook, as well as options for storing and making data accessible if necessary. 
+Pythia Cookbooks are typically powered by one or more geoscientific data sets to help illustrate a workflow or concept. The variety of formats and sources of Earth science data is huge. Here we provide general guidelines for helping choose data for your Cookbook, as well as options for storing and making data accessible if necessary.
 
 ### Options for data pathways
 
@@ -34,16 +34,16 @@ Cookbooks can most often succeed by relying on data that are publicly accessible
 
 1. **Remotely access open data**<br>For most Cookbooks that rely on data to demonstrate their concepts, we recommend accessing open, public datasets remotely in a sustainable way. Use tools like [Xarray](https://xarray.dev), [Siphon](https://www.unidata.ucar.edu/software/siphon), and [Intake](https://intake.readthedocs.io) to read data from providers such as [NOAA NCEI](https://www.ncei.noaa.gov), [AWS Open Data](https://registry.opendata.aws), [Google Cloud Public Datasets](https://cloud.google.com/datasets) and [Source Cooperative](https://source.coop), as long as such data are licensed and priced openly for public demonstration and use. Examples of existing Cookbooks that follow this preferred method include the [CMIP6 Cookbook](https://projectpythia.org/cmip6-cookbook/) and the [CESM LENS on AWS Cookbook](https://projectpythia.org/cesm-lens-aws-cookbook/).
 
-2. **Commit a small data artifact to your Cookbook repository**  
+2. **Commit a small data artifact to your Cookbook repository**
 If a few data files whose total size amount to less than 50MB can power your Cookbook, these can be directly stored in your `git` repository! *Make sure you have the license to provide such datasets*. An example Cookbook is the [Landsat ML Cookbook](https://projectpythia.org/landsat-ml-cookbook/README.html). *Note that the more files you commit and the larger they are, the more sluggish your Cookbook's notebooks will quickly become*. Exercise restraint!
 
-3. **Generate “toy” sample data in your Cookbook**  
+3. **Generate “toy” sample data in your Cookbook**
 For many concepts, we encourage writing self-contained functions to generate simple representative datasets for demonstrating scientific concepts. Your Cookbook can even reuse these sample data repeatedly throughout.
 
-4. **For complex Cookbooks that rely on large datasets that are not already accessible through other services**, we suggest two options:  
-a. Institutional Repositories  
-Many universities, labs, and centers offer institutional repositories for storing data in a manner that makes it freely and readily available to the public. If you’re based at a university or a publicly funded research facility, check with your local library or data management office. If you are funded by NSF, you may be able to store your data on NSF NCAR’s [Research Data Archive (RDA)](https://rda.ucar.edu).  
-b. Project Pythia's [NSF Jetstream2](https://jetstream-cloud.org) Object Store  
+4. **For complex Cookbooks that rely on large datasets that are not already accessible through other services**, we suggest two options:
+a. Institutional Repositories
+Many universities, labs, and centers offer institutional repositories for storing data in a manner that makes it freely and readily available to the public. If you’re based at a university or a publicly funded research facility, check with your local library or data management office. If you are funded by NSF, you may be able to store your data on NSF NCAR’s [Research Data Archive (RDA)](https://rda.ucar.edu).
+b. Project Pythia's [NSF Jetstream2](https://jetstream-cloud.org) Object Store
 If you have created a larger dataset for your Cookbook and don’t have access to institutional resources of your own, Project Pythia may be able to provide a home on our
 cloud object store. Our [Ocean Biogeochemistry Cookbook](https://projectpythia.org/ocean-bgc-cookbook/notebooks/readintutorial) uses this option. Please [contact the Project Pythia team](https://discourse.pangeo.io/c/education/project-pythia/60) if you would like to explore this option.
 
