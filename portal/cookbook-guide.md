@@ -41,11 +41,12 @@ If a few data files whose total size amount to less than 50MB can power your Coo
 For many concepts, we encourage writing self-contained functions to generate simple representative datasets for demonstrating scientific concepts. Your Cookbook can even reuse these sample data repeatedly throughout.
 
 4. **For complex Cookbooks that rely on large datasets that are not already accessible through other services**, we suggest two options:
-Institutional Repositories
-: Many universities, labs, and centers offer institutional repositories for storing data in a manner that makes it freely and readily available to the public. If you’re based at a university or a publicly funded research facility, check with your local library or data management office. If you are funded by NSF, you may be able to store your data on NSF NCAR’s [Research Data Archive (RDA)](https://rda.ucar.edu).
+   
+    a. **Institutional Repositories**  
+    Many universities, labs, and centers offer institutional repositories for storing data in a manner that makes it freely and readily available to the public. If you’re based at a university or a publicly funded research facility, check with your local library or data management office. If you are funded by NSF, you may be able to store your data on NSF NCAR’s [Research Data Archive (RDA)](https://rda.ucar.edu).
 
-Project Pythia's [NSF Jetstream2](https://jetstream-cloud.org) Object Store
-: If you have created a larger dataset for your Cookbook and don’t have access to institutional resources of your own, Project Pythia may be able to provide a home on our cloud object store. Our [Ocean Biogeochemistry Cookbook](https://projectpythia.org/ocean-bgc-cookbook/notebooks/readintutorial) uses this option. Please [contact the Project Pythia team](https://discourse.pangeo.io/c/education/project-pythia/60) if you would like to explore this option.
+    b. **Project Pythia's [NSF Jetstream2](https://jetstream-cloud.org) Object Store**  
+       If you have created a larger dataset for your Cookbook and don’t have access to institutional resources of your own, Project Pythia may be able to provide a home on our cloud object store. Our [Ocean Biogeochemistry Cookbook](https://projectpythia.org/ocean-bgc-cookbook/notebooks/readintutorial) uses this option. Please [contact the Project Pythia team](https://discourse.pangeo.io/c/education/project-pythia/60) if you would like to explore this option.
 
 ## B. Create a Repository From the Cookbook Template
 
