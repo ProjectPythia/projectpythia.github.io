@@ -22,7 +22,7 @@ These instructions assume that your goal is to contribute a new Cookbook to the 
 Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don't focus on that use case in this guide.
 ```
 
-If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow), then take a look at the section below on "Pull Requests and previews".
+If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow), then take a look at the section below on "Pull Requests and previews".
 
 ## A. Data access and storage considerations for Cookbooks
 
@@ -50,7 +50,7 @@ For many concepts, we encourage writing self-contained functions to generate sim
 
 ## B. Create a Repository From the Cookbook Template
 
-1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github.html).
+1. If you don't already have a GitHub account, create one by following the [Getting Started with GitHub guide](https://foundations.projectpythia.org/foundations/getting-started-github).
 1. On the [Cookbook Template repository](https://github.com/ProjectPythia/cookbook-template), click "Use this template &rarr; Create a new repository".
 1. Choose "Include all branches".
 1. Give your repository a descriptive name followed by `-cookbook` (e.g., `hydrology-cookbook`, `hpc-cookbook`, `cesm-cookbook`) and a description.
@@ -61,7 +61,7 @@ For many concepts, we encourage writing self-contained functions to generate sim
 <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
 ```{note}
-In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.html).
+In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.
 ```
 
 Your cookbook is now ready to have content added!
@@ -69,12 +69,12 @@ Your cookbook is now ready to have content added!
 
 ## C. Set up the Computational Environment
 
-You'll most likely want to do your edits in a [local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) on your laptop or wherever your are running your notebooks.
+You'll most likely want to do your edits in a [local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking) on your laptop or wherever your are running your notebooks.
 
 ### Customizing Your Conda Environment
 
 1. Within `environment.yml` (in the root of the repository), change `name` from `cookbook-dev` to `<your-cookbook-name>-dev` (e.g. `cesm-cookbook-dev`) and add all required libraries and other dependencies under `dependencies:`. Commit the changes.
-1. Create the [conda environment](https://foundations.projectpythia.org/foundations/conda.html) with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
+1. Create the [conda environment](https://foundations.projectpythia.org/foundations/conda) with `conda env create -f environment.yml`. If it crashes, try running `conda config --set channel_priority strict`
 1. Activate your environment with `conda activate <env-name>`
 
 You're now ready to create and run awesome notebooks.
@@ -188,7 +188,7 @@ Also, _don't worry about breaking anything!_ Your repo will not affect any other
 1. Select or type "ProjectPythia", confirm, and transfer.
 1. When prompted about which teams to give access to, select "core". _This will enable the Pythia maintenance team to have full access to your repository._
 
-Once you have successfully transferred the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow).
+Once you have successfully transferred the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow).
 
 
 ## G. Deploying your Cookbook
@@ -226,11 +226,11 @@ It's possible to enable the workflows on your personal fork, but usually unneces
 
 ### Pull Requests and previews
 
-Collaboration on Cookbooks is best done via [Pull Requests](https://foundations.projectpythia.org/foundations/github/github-pull-request.html). Every PR on a Cookbook repository will trigger a "Preview" version of our publishing pipeline. The entire book is re-built from the updated source and the preview site is hosted at a temporary online location. This way, the team can safely see what the end product will look like after the PR is merged.
+Collaboration on Cookbooks is best done via [Pull Requests](https://foundations.projectpythia.org/foundations/github/github-pull-request). Every PR on a Cookbook repository will trigger a "Preview" version of our publishing pipeline. The entire book is re-built from the updated source and the preview site is hosted at a temporary online location. This way, the team can safely see what the end product will look like after the PR is merged.
 
 The only difference between the "preview" pipeline and the regular publishing pipeline is the URL to which the rendered website is deployed. A temporary preview location is used, leaving the main book untouched until the PR is merged.
 
-To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows.html#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
+To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
 
 A link to the preview will appear as a comment on the Pull Request once the publishing actions are complete. _If the link shows up but you get a 404 error when you click on it the first time, just wait a few minutes! There are some lags before the preview is fully deployed._
 
