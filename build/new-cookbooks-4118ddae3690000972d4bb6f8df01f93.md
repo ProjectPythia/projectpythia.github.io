@@ -204,4 +204,4 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 
 Do you have some feedback or ideaa for a new Cookbook project? Unsure how to get started? We'd love to hear from you at any of our [open meetings](https://projectpythia.org/#monthly-pythia-meetings), through the [Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/), or via any of our social media. Join us at our next Cook-off 2025!
 
-Take a look at our [guide for Cookbook contributors](https://projectpythia.org/cookbook-guide.html).
+Take a look at our [guide for Cookbook contributors](https://projectpythia.org/cookbook-guide).
