@@ -4,8 +4,8 @@
 This the top-level guide for Project Pythia and a great starting point for getting involved!
 
 We also have specific guides for
-[contributing to Pythia Foundations](https://foundations.projectpythia.org/appendix/how-to-contribute.html)
-and [contributing new Cookbooks](https://projectpythia.org/cookbook-guide.html).
+[contributing to Pythia Foundations](https://foundations.projectpythia.org/appendix/how-to-contribute)
+and [contributing new Cookbooks](https://projectpythia.org/cookbook-guide).
 ```
 
 ## Overview
@@ -13,7 +13,7 @@ and [contributing new Cookbooks](https://projectpythia.org/cookbook-guide.html).
 Welcome! This is the main guide for contributing to Project Pythia.
 Project Pythia is an open community, and all contributions are
 welcome following our [Code of
-Conduct](https://projectpythia.org/code_of_conduct.html). All
+Conduct](https://projectpythia.org/code_of_conduct). All
 of the content for Project Pythia is hosted on GitHub in a number
 of different public repositories. From this document you can learn
 about the many ways that you can contribute to this community
@@ -37,7 +37,7 @@ forum](https://discourse.pangeo.io/c/education/project-pythia/).
 ### Add content to the Resource Gallery
 
 The Project [Pythia Resource
-Gallery](https://projectpythia.org/resource-gallery.html) contains a
+Gallery](https://projectpythia.org/resource-gallery) contains a
 collection of links to useful resources that were created and are
 hosted outside of Project Pythia. Some examples include: documentation
 and tutorials for iconic packages such as Matplotlib, Cartopy, and
@@ -233,7 +233,7 @@ example, and clicking on the file named `CONTRIBUTING.md`
 ```
 
 More information on installing and using conda may be found
-[here](https://foundations.projectpythia.org/foundations/conda.html).
+[here](https://foundations.projectpythia.org/foundations/conda).
 
 ### Forking a repo
 
