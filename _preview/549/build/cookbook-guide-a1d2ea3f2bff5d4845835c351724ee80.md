@@ -61,7 +61,7 @@ For many concepts, we encourage writing self-contained functions to generate sim
 <img width="901" alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png">
 
 ```{note}
-In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github.
+In the rest of this guide, we assume that you are familiar with the basics of using git and GitHub. If not, we strongly recommend reading through our [GitHub tutorials in Foundations](https://foundations.projectpythia.org/foundations/getting-started-github).
 ```
 
 Your cookbook is now ready to have content added!
