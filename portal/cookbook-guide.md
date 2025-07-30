@@ -96,7 +96,7 @@ Required changes to your `myst.yml` file are all under the `project` section. Up
 - `toc` (table of contents)
 - `Jupyter -> Binder -> Repo`
 
-Take a look at the [`radar-cookbook/myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml) for example syntax.
+Take a look at the [`radar-cookbook/myst.yml`](https://github.com/ProjectPythia/radar-cookbook/blob/main/myst.yml) for example syntax.
 
 ### 3. Customize Your Home Page
 
