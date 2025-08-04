@@ -8,7 +8,7 @@ We, as contributors, creators, stewards, and maintainers (collectively referred 
 
 Examples of behaviors that contribute to a positive environment include:
 
-- All contributors are treated with respect and consideration
+- Treating all contributors with respect and consideration
 - Be considerate, respectful, and collaborative
 - Communicate openly with respect for others, critiquing ideas rather than individuals and gracefully accepting criticism
 - Acknowledging the contributions of others
