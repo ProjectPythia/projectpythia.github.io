@@ -13,7 +13,7 @@ Examples of behaviors that contribute to a positive environment include:
 - Communicating openly with respect for others, critiquing ideas rather than individuals and gracefully accepting criticism
 - Acknowledging the contributions of others
 - Avoiding personal attacks directed toward other contributors
-- Be mindful of your surroundings and of your fellow contributors
+- Being mindful of your surroundings and of your fellow contributors
 - Alert UCAR staff and suppliers/vendors if you notice a dangerous situation or someone in distress
 - Respect the rules and policies of the project and venue
 
