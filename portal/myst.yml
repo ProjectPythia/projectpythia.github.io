@@ -38,6 +38,7 @@ site:
   domains: []
   options:
     style: style.css
+    analytics_google: G-T9KGMX7VHZ # Measurement ID or Tracking ID
   parts:
     footer: |
         :::::{grid} 3
