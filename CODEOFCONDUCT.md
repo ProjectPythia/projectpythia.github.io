@@ -35,7 +35,7 @@ This Code of Conduct applies to all spaces managed by the Project whether they b
 
 ## Community Responsibilities
 
-Everyone in the community is empowered to respond to people who are showing unacceptable behavior. They can talk to them privately or publicly. Anyone requested to stop unacceptable behavior is expected to comply immediately. If the behavior continues concerns may be brought to the project administrators (see the next section to a list project administrators who are in charge of handling reports) or to any other party listed in the Reporting section below.
+Everyone in the community is empowered to respond to people who are showing unacceptable behavior. They can talk to them privately or publicly. Anyone requested to stop unacceptable behavior is expected to comply immediately. If the behavior continues, concerns may be brought to the project administrators (Read the next section to see who they are) or to any other party listed in the Reporting section below.
 
 ## Project Administrator Responsibilities
 
