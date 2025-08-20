@@ -45,8 +45,14 @@ Project administrators are also expected to keep this Code of Conduct updated wi
 
 The list of project administrators, who are also Project Pythia's Principal Investigators (PIs), can be seen as follows:
 
-|![](https://github.com/brian-rose.png)<br>Brian Rose|![](https://github.com/clyne.png)<br>John Clyne|![](https://github.com/erogluorhan.png)<br>Orhan Eroglu|![](https://github.com/dopplershift.png)<br>Ryan May|![](https://github.com/jmunroe.png)<br>James Munroe|
+|[![Brian Rose](https://github.com/brian-rose.png)](https://github.com/brian-rose)<br>Brian Rose|[![John Clyne](https://github.com/clyne.png)](https://github.com/clyne)<br>John Clyne|[![Orhan Eroglu](https://github.com/erogluorhan.png)](https://github.com/erogluorhan)<br>Orhan Eroglu|[![Ryan May](https://github.com/dopplershift.png)](https://github.com/dopplershift)<br>Ryan May|[![James Munroe](https://github.com/jmunroe.png)](https://github.com/jmunroe)<br>James Munroe|
 |:-:|:-:|:-:|:-:|:-:|
+
+:::{card} Clickable Card
+:link: https://mystmd.org
+
+The entire card can be clicked to navigate to `mystmd.org`.
+:::
 
 ## Reporting
 
