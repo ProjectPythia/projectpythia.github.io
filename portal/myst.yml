@@ -33,6 +33,7 @@ project:
     - file: cookbook-guide.md
     - file: quick-cookbook-guide.md
     - file: metrics.md
+    - file: ../CODEOFCONDUCT.md
 
 site:
   domains: []
