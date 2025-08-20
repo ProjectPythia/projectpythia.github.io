@@ -48,12 +48,6 @@ The list of project administrators, who are also Project Pythia's Principal Inve
 |[![Brian Rose](https://github.com/brian-rose.png)](https://github.com/brian-rose)<br>Brian Rose|[![John Clyne](https://github.com/clyne.png)](https://github.com/clyne)<br>John Clyne|[![Orhan Eroglu](https://github.com/erogluorhan.png)](https://github.com/erogluorhan)<br>Orhan Eroglu|[![Ryan May](https://github.com/dopplershift.png)](https://github.com/dopplershift)<br>Ryan May|[![James Munroe](https://github.com/jmunroe.png)](https://github.com/jmunroe)<br>James Munroe|
 |:-:|:-:|:-:|:-:|:-:|
 
-:::{card} Clickable Card
-:link: https://mystmd.org
-
-The entire card can be clicked to navigate to `mystmd.org`.
-:::
-
 ## Reporting
 
 Instances of unacceptable behavior can be brought to the attention of the project administrator(s), either by directly reaaching out to one of them (see the previous section for their individual GitHub profiles) or via the @ProjectPythia/core GitHub handle and/or projectpythia@ucar.edu (the latter two may include more people than the project administrators though), who may take any reasonable and necessary action to address and stop the behavior. However, making a report to a project administrator is not considered an ‘official report’ to UCAR.
