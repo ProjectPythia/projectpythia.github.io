@@ -50,7 +50,7 @@ The list of project administrators, who are also Project Pythia's Principal Inve
 
 ## Reporting
 
-Instances of unacceptable behavior can be brought to the attention of the project administrator(s), either by directly reaaching out to one of them (see the previous section for their individual GitHub profiles) or via the @ProjectPythia/core GitHub handle and/or projectpythia@ucar.edu (the latter two may include more people than the project administrators though), who may take any reasonable and necessary action to address and stop the behavior. However, making a report to a project administrator is not considered an ‘official report’ to UCAR.
+Instances of unacceptable behavior can be brought to the attention of the project administrator(s), either by directly reaaching out to one of them (see the previous section for their individual GitHub profiles) or via the [`@ProjectPythia/core`](https://github.com/orgs/ProjectPythia/teams/core) GitHub handle and/or projectpythia@ucar.edu (the latter two may include more people than the project administrators though), who may take any reasonable and necessary action to address and stop the behavior. However, making a report to a project administrator is not considered an ‘official report’ to UCAR.
 
 Instances of unacceptable behavior may also be reported:
 - To [The Chief Human Resources Officer](chro@ucar.edu) who serves as UCAR’s Section 504, Title VI, VII and IX Coordinator;
