@@ -35,7 +35,7 @@ This Code of Conduct applies to all spaces managed by the Project whether they b
 
 ## Community Responsibilities
 
-Everyone in the community is empowered to respond to people who are showing unacceptable behavior. They can talk to them privately or publicly. Anyone requested to stop unacceptable behavior is expected to comply immediately. If the behavior continues concerns may be brought to the project administrators or to any other party listed in the Reporting section below.
+Everyone in the community is empowered to respond to people who are showing unacceptable behavior. They can talk to them privately or publicly. Anyone requested to stop unacceptable behavior is expected to comply immediately. If the behavior continues, concerns may be brought to the project administrators (Read the next section to see who they are) or to any other party listed in the Reporting section below.
 
 ## Project Administrator Responsibilities
 
@@ -43,9 +43,14 @@ Project administrators are responsible for clarifying the standards of acceptabl
 
 Project administrators are also expected to keep this Code of Conduct updated with the main one housed at UCAR, as listed below in the Attribution section.
 
+The list of project administrators, who are also Project Pythia's Principal Investigators (PIs), can be seen as follows:
+
+|[![Brian Rose](https://github.com/brian-rose.png)](https://github.com/brian-rose)<br>Brian Rose|[![John Clyne](https://github.com/clyne.png)](https://github.com/clyne)<br>John Clyne|[![Orhan Eroglu](https://github.com/erogluorhan.png)](https://github.com/erogluorhan)<br>Orhan Eroglu|[![Ryan May](https://github.com/dopplershift.png)](https://github.com/dopplershift)<br>Ryan May|[![James Munroe](https://github.com/jmunroe.png)](https://github.com/jmunroe)<br>James Munroe|
+|:-:|:-:|:-:|:-:|:-:|
+
 ## Reporting
 
-Instances of unacceptable behavior can be brought to the attention of the project administrator(s), via the @ProjectPythia/core GitHub handle and/or projectpythia@ucar.edu, who may take any reasonable and necessary action to address and stop the behavior. However, making a report to a project administrator is not considered an ‘official report’ to UCAR.
+Instances of unacceptable behavior can be brought to the attention of the project administrator(s), either by directly reaaching out to one of them (see the previous section for their individual GitHub profiles) or via the [`@ProjectPythia/core`](https://github.com/orgs/ProjectPythia/teams/core) GitHub handle and/or projectpythia@ucar.edu (the latter two may include more people than the project administrators though), who may take any reasonable and necessary action to address and stop the behavior. However, making a report to a project administrator is not considered an ‘official report’ to UCAR.
 
 Instances of unacceptable behavior may also be reported:
 - To [The Chief Human Resources Officer](chro@ucar.edu) who serves as UCAR’s Section 504, Title VI, VII and IX Coordinator;
@@ -57,6 +62,17 @@ Complaints received by UCAR will be handled pursuant to the procedures outlined 
 If you require a reasonable accommodation due to a disability or for assistance as an individual with Limited English Proficiency (LEP), please contact UCAR's [Chief Human Resources Officer](chro@ucar.edu).
 
 Any Contributor can use these reporting methods even if they are not directly affiliated with UCAR. The Frequently Asked Questions (FAQ) page for reporting is [here](https://www.ucar.edu/who-we-are/ethics).
+
+## Confidentiality
+**All reports will be kept confidential**. When we discuss incidents with people who are reported, we will anonymize details as much as we can to protect reporter privacy.
+
+However, some incidents happen in one-on-one interactions, and even if the details are anonymized, the reported person may be able to guess who made the report. If you have concerns about retaliation or your safety, please note those in your report. We still encourage you to report so that we can support you while keeping our community members safe. In some cases, we can compile several anonymized reports into a pattern of behavior and take action on that pattern.
+
+If a public statement is necessary, the identities of all individuals involved will remain confidential unless those individuals instruct us otherwise.
+
+## Conflicts of Interest
+
+If a member of the project administrators has a conflict of interest regarding a report, they will recuse themselves from discussing and handling the incident. They will not have access to the incident documentation, and they will excuse themselves from any conversations involving handling the incident.
 
 ## Consequences
 
