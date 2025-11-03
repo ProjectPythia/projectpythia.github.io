@@ -22,7 +22,7 @@ Project Pythia is hosting a Cookbook Cook-Off August 5-8, 2025.
 {button}`2024 Cookbooks<./posts/2025/new-cookbooks.md>`
 
 Donate to support Project Pythia!
-{button}`Donate now<posts/2023/fundraiser.md>`
+{button}`Donate now<https://friendsofthenationalcenter.org/donate-project-pythia/>`
 
 +++ { "kind": "justified"}
 
