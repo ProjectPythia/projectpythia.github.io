@@ -13,7 +13,7 @@ and [contributing new Cookbooks](https://projectpythia.org/cookbook-guide).
 Welcome! This is the main guide for contributing to Project Pythia.
 Project Pythia is an open community, and all contributions are
 welcome following our [Code of
-Conduct](https://projectpythia.org/code_of_conduct). All
+Conduct](https://projectpythia.org/codeofconduct/). All
 of the content for Project Pythia is hosted on GitHub in a number
 of different public repositories. From this document you can learn
 about the many ways that you can contribute to this community
