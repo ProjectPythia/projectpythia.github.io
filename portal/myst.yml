@@ -16,6 +16,8 @@ project:
         - 'chro@ucar.edu'
         - 'http://localhost:3000'
         - 'https://github.com/YOUR_USER_NAME/pythia-foundations'
+        - 'https://pangeo.io'
+        - 'https://docs.google.com/**'
     - rule: directive-known # The postlist directive is not recognized by the linter, but it works when the site is built
       severity: ignore
     - rule: image-format-optimizes # `metrics.md` has some large images that are not optimized
