@@ -22,7 +22,7 @@ These instructions assume that your goal is to contribute a new Cookbook to the 
 Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don't focus on that use case in this guide.
 ```
 
-If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow), then take a look at the section below on "Pull Requests and previews".
+If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/git-workflows/#forking-workflow), then take a look at the section below on "Pull Requests and previews".
 
 ## A. Data access and storage considerations for Cookbooks
 
