@@ -22,7 +22,7 @@ These instructions assume that your goal is to contribute a new Cookbook to the 
 Using the Pythia Cookbook template to create reproducible documents housed elsewhere is definitely possible! But we don't focus on that use case in this guide.
 ```
 
-If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow), then take a look at the section below on "Pull Requests and previews".
+If you're not looking to create a _new_ Cookbook, but rather looking for guidance on contributing to _existing_ Cookbooks, first make sure you're comfortable with the [GitHub forking workflow](https://foundations.projectpythia.org/foundations/github/git-workflows/#forking-workflow), then take a look at the section below on "Pull Requests and previews".
 
 ## A. Data access and storage considerations for Cookbooks
 
@@ -188,7 +188,7 @@ Also, _don't worry about breaking anything!_ Your repo will not affect any other
 1. Select or type "ProjectPythia", confirm, and transfer.
 1. When prompted about which teams to give access to, select "core". _This will enable the Pythia maintenance team to have full access to your repository._
 
-Once you have successfully transferred the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow).
+Once you have successfully transferred the repository, you'll most likely want to make a [personal fork and a local clone of the repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking) so that you can continue to develop and collaborate on the Cookbook via the [forking workflow](https://foundations.projectpythia.org/foundations/github/git-workflows/#forking-workflow).
 
 
 ## G. Deploying your Cookbook
@@ -230,7 +230,7 @@ Collaboration on Cookbooks is best done via [Pull Requests](https://foundations.
 
 The only difference between the "preview" pipeline and the regular publishing pipeline is the URL to which the rendered website is deployed. A temporary preview location is used, leaving the main book untouched until the PR is merged.
 
-To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
+To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/git-workflows/#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
 
 A link to the preview will appear as a comment on the Pull Request once the publishing actions are complete. _If the link shows up but you get a 404 error when you click on it the first time, just wait a few minutes! There are some lags before the preview is fully deployed._
 
