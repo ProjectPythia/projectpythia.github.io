@@ -230,7 +230,7 @@ Collaboration on Cookbooks is best done via [Pull Requests](https://foundations.
 
 The only difference between the "preview" pipeline and the regular publishing pipeline is the URL to which the rendered website is deployed. A temporary preview location is used, leaving the main book untouched until the PR is merged.
 
-To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/github-workflows#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
+To propose changes to a Cookbook, or even just to test something out temporarily, follow the [forking workflow](https://foundations.projectpythia.org/foundations/github/git-workflows/#forking-workflow): make changes on a feature branch of your personal fork, and open a Pull Request from that branch to the main branch of the upstream fork. This will trigger the preview.
 
 A link to the preview will appear as a comment on the Pull Request once the publishing actions are complete. _If the link shows up but you get a 404 error when you click on it the first time, just wait a few minutes! There are some lags before the preview is fully deployed._
 
