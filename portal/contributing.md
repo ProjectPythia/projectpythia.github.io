@@ -59,18 +59,18 @@ are requested.
 
 ### Add to or update Pythia Foundations
 
-[Pythia Foundations](https://foundations.projectpythia.org)
+[Pythia Foundations](xref:foundations)
 is a collection of material that the Pythia team believes is essential
 knowledge for geoscientists to effectively use the Scientific Python
 Ecosystem. The Pythia Foundations content is hosted on a separate
 [GitHub repository](https://github.com/ProjectPythia/pythia-foundations),
-and contributors should consult the [Contributing to Foundations](https://foundations.projectpythia.org/appendix/how-to-contribute) guide there for
+and contributors should consult the [Contributing to Foundations](xref:foundations/appendix/how-to-contribute) guide there for
 information specific to Foundations. However, adding or changing
 Foundations content requires contributors to be familiar
 with a few technologies and workflows, particularly conda and Git. Foundations
-has tutorials on both [conda](https://foundations.projectpythia.org/foundations/conda/)
-and [Git/GitHub](https://foundations.projectpythia.org/foundations/getting-started-github/),
-including a section on how to specifically [contribute to Project Pythia via GitHub](https://foundations.projectpythia.org/foundations/github/contribute-to-pythia/).
+has tutorials on both [conda](xref:foundations/foundations/conda/)
+and [Git/GitHub](xref:foundations/foundations/getting-started-github/),
+including a section on how to specifically [contribute to Project Pythia via GitHub](xref:foundations/foundations/github/contribute-to-pythia/).
 
 ### Add a new Cookbook to Cookbooks Gallery
 
@@ -78,7 +78,7 @@ including a section on how to specifically [contribute to Project Pythia via Git
 The Pythia [Cookbook Gallery](https://cookbooks.projectpythia.org/) is a
 collection of "cookbooks" that describe workflows that solve a
 specific problem. Typically, a cookbook references material presented
-elsewhere in Project Pythia, such as [Pythia Foundations](https://foundations.projectpythia.org).
+elsewhere in Project Pythia, such as [Pythia Foundations](xref:foundations).
 Each Cookbook is hosted in a separate GitHub repository under the umbrella [Project Pythia
 organization](https://github.com/ProjectPythia).
 Contributors should consult the [Contributing a New Cookbook](/cookbook-guide) guide.
