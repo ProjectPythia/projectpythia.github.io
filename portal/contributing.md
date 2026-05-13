@@ -86,9 +86,9 @@ Like with contributing to Foundations, you will want to be familiar with conda a
 
 ### Update the Project Pythia portal
 
-The [Project Pythia portal](https://projectpythia.org/) is the homepage of Project Pythia 
-and the website you are currently on. It is not necessarily expected that external 
+The [Project Pythia portal](https://projectpythia.org/) is the homepage of Project Pythia
+and the website you are currently on. It is not necessarily expected that external
 contributors will want to make contributions directly to the [portal
-GitHub repository](https://github.com/ProjectPythia/projectpythia.github.io) that 
+GitHub repository](https://github.com/ProjectPythia/projectpythia.github.io) that
 builds this website. Nevertheless, detailed information on how to contribute can be found in the `CONTRIBUTING.md` file located in the root directory of the [portal
 GitHub repository](https://github.com/ProjectPythia/projectpythia.github.io).
