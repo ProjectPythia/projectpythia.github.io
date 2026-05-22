@@ -143,3 +143,7 @@ resource-gallery-submission-input.json
 .github/workflows/analytics-api/
 portal/metrics/*.png
 cisl-vast-pythia-*.json
+
+# Blog post generation
+portal/atom.xml
+portal/rss.xml

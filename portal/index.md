@@ -15,14 +15,14 @@ site:
 
 An education and training hub for the geoscientific Python community
 
-Project Pythia is hosting a Cookbook Cook-Off August 5-8, 2025.
+Project Pythia is hosting a Cookbook Cook-Off June 15-18, 2026.
 
-{button}`Cook-Off 2025<https://projectpythia.org/pythia-cookoff-2025/>`
+{button}`Cook-Off 2026<https://projectpythia.org/pythia-cookoff-2026/>`
 
-{button}`2024 Cookbooks<./posts/new-cookbooks.md>`
+{button}`2024 Cookbooks<./posts/2025/new-cookbooks.md>`
 
 Donate to support Project Pythia!
-{button}`Donate now<posts/fundraiser.md>`
+{button}`Donate now<https://friendsofthenationalcenter.org/donate-project-pythia/>`
 
 +++ { "kind": "justified"}
 
@@ -100,7 +100,7 @@ Anyone can contribute to and participate in Project Pythia!
 We conduct all of our work in the open, and all of our work is Open Source Licensed.
 We welcome contributions from anyone in the community.
 Please see our [Contributor’s Guide](/contributing)
-for details on how you can get involved, our [Code of Conduct](https://github.com/projectpythia/projectpythia.github.io/blob/main/CODEOFCONDUCT.md) for an overview of contribution rules and responsibilities, and come see our work in the
+for details on how you can get involved, our [Code of Conduct](https://projectpythia.org/codeofconduct/) for an overview of contribution rules and responsibilities, and come see our work in the
 [ProjectPythia GitHub Organization](https://github.com/ProjectPythia).
 
 (monthly-pythia-meetings)=

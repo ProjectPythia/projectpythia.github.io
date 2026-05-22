@@ -10,3 +10,4 @@ jobs:
       base_url: '/_preview/${{ github.event.number }}'
       path_to_notebooks: 'portal'
       # Other input options are possible, see ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml
+      build_command: 'myst build --execute --html'

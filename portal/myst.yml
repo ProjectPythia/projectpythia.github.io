@@ -6,55 +6,52 @@ project:
   id: 770e49e5-344a-4c46-adaa-3afb060b2085
   authors: Project Pythia Community
   github: https://github.com/projectpythia/projectpythia.github.io
+  plugins:
+    - type: executable
+      path: src/blogpost.py
+  error_rules:
+    - rule: link-resolves
+      severity: ignore
+      keys:
+        - 'chro@ucar.edu'
+        - 'http://localhost:3000'
+        - 'https://github.com/YOUR_USER_NAME/pythia-foundations'
+        - 'https://pangeo.io'
+        - 'https://docs.google.com/**'
+    - rule: directive-known # The postlist directive is not recognized by the linter, but it works when the site is built
+      severity: ignore
+    - rule: image-format-optimizes # `metrics.md` has some large images that are not optimized
+      severity: ignore
+    - rule: container-children-valid # `metrics.md`` unexpected figure content of type output found in legend node, but works when the site is built
+      severity: ignore
 
   toc:
     - file: index.md
     - file: about.md
-    - title: Blog
+    - file: blog.md
       children:
-        # - pattern: posts/*.md
-        #  Temporary until we have blog infrastructure: explicit list of posts by date (newest first)
-        - file: posts/cookoff2025-website.md
-        - file: posts/binderhub_status.md
-        - file: posts/new-cookbooks.md
-        - file: posts/cookoff2024-website.md
-        - file: posts/cookoff2024-savethedate.md
-        - file: posts/fundraiser.md
-        - file: posts/cookoff2023.md
+      - title: "2025"
+        children:
+        - file: posts/2025/mystification.md
+        - file: posts/2025/cookoff2025-website.md
+        - file: posts/2025/binderhub_status.md
+        - file: posts/2025/new-cookbooks.md
+      - title: "2024"
+        children:
+        - file: posts/2024/cookoff2024-website.md
+      - title: "2023"
+        children:
+        - file: posts/2023/cookoff2024-savethedate.md
+        - file: posts/2023/fundraiser.md
+        - file: posts/2023/cookoff2023.md
     - file: contributing.md
     - file: cookbook-guide.md
     - file: quick-cookbook-guide.md
     - file: metrics.md
+    - file: ../CODEOFCONDUCT.md
+
 site:
   domains: []
   options:
     style: style.css
-  parts:
-    footer: |
-        :::::{grid} 3
-        :class: items-center
-
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/NSF-NCAR.png
-        :alt: NCAR Logo
-        ```
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/NSF-Unidata.png
-        :alt: Unidata Logo
-        ```
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/UAlbany.svg
-        :alt: UAlbany Logo
-        ```
-        :::::
-
-        :::::{div}
-        :class: flex items-center gap-4 text-disclaimer
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/nsf.jpg
-        :alt: NSF Logo
-        :height: 60px
-        ```
-
-        This material is based upon work supported by the National Science Foundation under Grant Nos. 2026863 and 2026899. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-        :::::
+    analytics_google: G-T9KGMX7VHZ # Measurement ID or Tracking ID

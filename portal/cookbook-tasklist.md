@@ -8,8 +8,8 @@ Once we've marked this entire checklist, [click here to open an issue on Project
 
 ---
 
-- [ ] **Confirm you’ve followed the entire Project Pythia [Cookbook Guide](https://projectpythia.org/cookbook-guide.html)**.
-Take note especially of the [Develop your cookbook](https://projectpythia.org/cookbook-guide.html#develop-your-cookbook), [Authorship and the CITATION.cff file](https://projectpythia.org/cookbook-guide.html#authorship-and-the-citation-cff-file), and [Gallery tags](https://projectpythia.org/cookbook-guide.html#gallery-tags) sections. **Save the [Generate a DOI](https://projectpythia.org/cookbook-guide.html#generate-a-doi) step as the last step of this checklist.**
+- [ ] **Confirm you’ve followed the entire Project Pythia [Cookbook Guide](https://projectpythia.org/cookbook-guide)**.
+Take note especially of the [Develop your cookbook](https://projectpythia.org/cookbook-guide/#d-develop-your-cookbook), [Authorship and the CITATION.cff file](https://projectpythia.org/cookbook-guide/#e-making-your-cookbook-findable-and-citable), and [Gallery tags](https://projectpythia.org/cookbook-guide/#id-2-tag-your-cookbook) sections. **Save the [Generate a DOI](https://projectpythia.org/cookbook-guide#generate-a-doi) step as the last step of this checklist.**
 - [ ] **Confirm that the individual notebooks within your Cookbook adhere to the [notebook template](https://github.com/ProjectPythia/cookbook-template/blob/main/notebooks/notebook-template.ipynb)**.
 If the template does not fit your Cookbook’s needs, that’s fine too! Simply let us know here in this issue.
 - [ ] **Finalize your Cookbook repository name.**
@@ -42,7 +42,7 @@ This can be seen in individual Pull Requests as green checkmarks ✅ for importa
 - [ ] **Identify a Maintainer team via GitHub handle(s) in this thread.**
 This can be one or more people with availability to check in on this Cookbook, issue fixes to broken content, or with a vision for the future development of the Cookbook. This is typically (but not necessarily) one of the primary authors of the Cookbook.
 - [ ] **Link your Cookbook repo to Zenodo for DOI generation**
-Follow steps 1-4 under [Generate a DOI](https://projectpythia.org/cookbook-guide.html#generate-a-doi) in the Cookbook Guide. Return here for instructions on step 5, and your final step:
+Follow steps 1-4 under [Generate a DOI](https://projectpythia.org/cookbook-guide/#id-1-credit-yourself) in the Cookbook Guide. Return here for instructions on step 5, and your final step:
 - [ ] **Release your Cookbook!**
     - On the right-hand sidebar for your Cookbook repository, click “Create a new release”. If you don’t see this button, you may need to click on the “Releases” header first and “Create” or “Draft” a new release.
     ![GitHub Repository sidebar section titled "Releases"](https://raw.githubusercontent.com/ProjectPythia/projectpythia.github.io/main/portal/_static/images/4-releases.png "Releases")

@@ -1,23 +1,23 @@
 # Contributing to the Project Pythia Portal
 
 This document contains information specific to contributing to the
-Project Pythia Portal. Please first refer to [Guide for Contributing to Project Pythia](https://projectpythia.org/contributing.html) for overall
+Project Pythia Portal. Please first refer to [Guide for Contributing to Project Pythia](https://projectpythia.org/contributing) for overall
 contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
 
 ## Instructions for adding a blog post
-Within the `portal/posts/` folder add your `.md` blog file with the following heading:
+Within the `portal/posts/[YEAR]` folder add your `.md` blog file with the following heading:
 
 ```
 ---
 
 date: YYYY-MM-DD
-author: First Last
+author: github-handle
 tags: [sample-tag]
 ---
 ```
 
-The post will automatically be recognized and displayed when you build the portal site.
+To display the post, you need to add the file path in the `myst.yml` configuration file under `toc:` -> `- title: Blog` -> `children:`. Please add the newest blog post at the top of the blog file list. This is temporary until we have better blog infrastructure.
 
 ## Instructions for building the portal site
 

@@ -26,7 +26,7 @@ This document is designed be lightweight. For more detailed, step-by-step instuc
 
 ## Update Content
 
-Follow [Git/GitHub best practices](https://foundations.projectpythia.org/foundations/getting-started-github.html) with your collaborators:
+Follow [Git/GitHub best practices](https://foundations.projectpythia.org/foundations/getting-started-github) with your collaborators:
 
 - Add content with your scientific insight as `.ipynb` files in the `notebooks/` folder
 - Update `environment.yml` to include all necessary packages

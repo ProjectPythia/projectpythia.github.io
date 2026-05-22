@@ -85,7 +85,7 @@ Recently, [Steinman et al. (2022)](https://doi.org/10.1073/pnas.2120015119) used
 :align: left
 ```
 
-**Authors:** [Max Grover](@mgrover1), [Nathan Collier](@nocollier), [Carsten Ehbrecht](@cehbrecht), [Jacqueline Nugent](@jacnugent), and [Gerardo Rivera Tello](@griverat)
+**Authors:** [Max Grover](https://github.com/mgrover1), [Nathan Collier](https://github.com/nocollier), [Carsten Ehbrecht](https://github.com/cehbrecht), [Jacqueline Nugent](https://github.com/jacnugent), and [Gerardo Rivera Tello](https://github.com/griverat)
 
 <doi:10.5281/zenodo.11663067>
 
@@ -173,11 +173,11 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 
 ### In pictures
 
-<img src="../_static/images/posts/IMG_5686.jpeg" alt="2024 Cookoff group photo" width=900>
+<img src="../../_static/images/posts/IMG_5686.jpeg" alt="2024 Cookoff group photo" width=900>
 <br>
-<img src="../_static/images/posts/IMG_5854.jpeg" alt="Breakout group" width=250>
-<img src="../_static/images/posts/IMG_6546.jpg" alt="Cookoff attendees at Mesa Lab" width=250>
-<img src="../_static/images/posts/IMG_6055.jpeg" alt="Virtual presentation" width=250>
+<img src="../../_static/images/posts/IMG_5854.jpeg" alt="Breakout group" width=250>
+<img src="../../_static/images/posts/IMG_6546.jpg" alt="Cookoff attendees at Mesa Lab" width=250>
+<img src="../../_static/images/posts/IMG_6055.jpeg" alt="Virtual presentation" width=250>
 
 ### By the numbers
 
@@ -198,10 +198,10 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 
 ## Want to get involved?
 
-<a role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
+<a href="https://projectpythia.org/pythia-cookoff-2025/" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
           SAVE THE DATE! Project Pythia is hosting our next Cookbook Cook-off hackathon event at the NSF NCAR's Mesa Lab, August 5-8 2025.
   </a>
 
 Do you have some feedback or ideaa for a new Cookbook project? Unsure how to get started? We'd love to hear from you at any of our [open meetings](https://projectpythia.org/#monthly-pythia-meetings), through the [Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/), or via any of our social media. Join us at our next Cook-off 2025!
 
-Take a look at our [guide for Cookbook contributors](https://projectpythia.org/cookbook-guide.html).
+Take a look at our [guide for Cookbook contributors](https://projectpythia.org/cookbook-guide).
