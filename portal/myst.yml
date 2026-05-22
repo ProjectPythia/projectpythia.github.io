@@ -30,6 +30,9 @@ project:
     - file: about.md
     - file: blog.md
       children:
+      - title: "2026"
+        children:
+        - file: posts/2026/gh-actions.md
       - title: "2025"
         children:
         - file: posts/2025/mystification.md
