@@ -60,6 +60,7 @@ From what I can gather there are three main theories why a GitHub account can be
 There seems to have been a mass shadowbanning of GitHub accounts due to copilot usage. My connection at GitHub suggested that this was the likely culprit.
 
 But that seems unlikely to me, with my literally minimal usage:
+
 ![0 Copilot Minutes](../../_static/images/posts/gh-actions/copilot-minutes.png)
 
 ### 2. Actions minutes
@@ -94,17 +95,22 @@ To fix this:
 One workflow pattern now seems especially concerning: nightly rebuilds that repeatedly commit updates to `gh-pages`, often attributed to an individual maintainer account (i.e. mine).
 
 I noticed since we changed our Actions in 2025 that I had commits on days I knew I did not work (weekends, holidays, etc).
+
 ![Weekend Commits](../../_static/images/posts/gh-actions/weekend-commits.png)
+
 ![Weekend Commits 2](../../_static/images/posts/gh-actions/weekend-commits2.png)
 
 
 I accepted this as a non-issue, in part because it went on for a whole year before the shadowban. And partially because, when I would go to investigate the commits there would be none.
+
 ![No Commits](../../_static/images/posts/gh-actions/no-commits.png)
 
 I didn't realize that the previous view defaulted to `main` instead of the branch where the commits are on - `gh-pages`. When I adjust my view, the commits become visible again.
+
 ![GH-pages Commits](../../_static/images/posts/gh-actions/gh-pages-commits.png)
 
 And they do look, admittedly, very spammy; pushing Jupyter notebook metadata that does not need to be published.
+
 ![Noisy Commits](../../_static/images/posts/gh-actions/noisy-commits.png)
 
 [We exorcised these ghost commits by dropping `gh-pages`](https://github.com/ProjectPythia/cookbook-actions/pull/179) and using the native GitHub-actions bot (instead of a user's account).
