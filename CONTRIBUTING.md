@@ -66,15 +66,17 @@ _NOTE_: The `pre-commit` package is already installed via the `pythia` conda env
 
 #### Building the book locally
 
-Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
+The site builds with [`nox`](https://nox.thea.codes/), which creates its own environment with MyST; you don't need conda or the `pythia` environment to build or preview the site.
+Install nox once (for example `pip install nox`), then run from the repository root:
 
 ```bash
-myst start --execute
+nox -s docs-live   # serve with live reload at localhost:3000
+nox -s docs        # build the static HTML once
 ```
 
-If this step fails and you may not have updated your conda environment recently, try updating with `conda env update -f ../environment.yml` and `conda update --all` as described above.
+A link to [localhost:3000](http://localhost:3000) should appear in your terminal when serving.
 
-The newly rendered site is now available at [localhost:3000](http://localhost:3000). A link should appear in your terminal.
+If a session fails and you haven't updated your conda environment recently, try updating with `conda env update -f environment.yml` and `conda update --all` as described above.
 
 More information on setting up a local test server is available from [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
 

@@ -85,6 +85,19 @@ your own pace.
 ::::
 
 <br><br>
+
+## Latest from the blog
+
+:::{listing}
+:path: posts/*/*.md
+:display: summary
+:limit: 3
+:::
+
+[Read the blog →](./blog.md)
+
+<br><br>
+
 ## Join us!
 
 {button}`Pangeo Discourse →<https://discourse.pangeo.io/c/education/project-pythia/>`

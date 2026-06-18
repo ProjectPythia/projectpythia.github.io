@@ -3,6 +3,7 @@ title: Reflections on MyST-ification
 subtitle: Project Pythia’s transition to MyST and JupyterBook2 architecture
 date: 2025-07-10
 authors: [jukent, brian-rose, dcamron, kafitzgerald]
+description: Project Pythia's transition from a Sphinx-based Jupyter Book to MyST Markdown, the foundation for Jupyter Book 2.
 tags: [myst]
 ---
 

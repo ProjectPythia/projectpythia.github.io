@@ -1,6 +1,7 @@
 ---
 date: 2023-08-29
 author: clyne
+description: "Save the date: the 2024 Pythia Cookbook Cook-Off Hackathon runs June 11–14 at the NCAR Mesa Lab in Boulder, Colorado."
 tags: [cook-off]
 ---
 

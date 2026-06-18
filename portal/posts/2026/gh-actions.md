@@ -1,10 +1,11 @@
 ---
+title: "When a GitHub Shadowban Breaks Open Source Infrastructure"
+subtitle: Overhauling our GitHub Actions to Reduce Compute Minutes and Ghost Commits
 date: 2026-05-20
 author: jukent
+description: What I learned after discovering my GitHub account had been shadowbanned, and how it broke our link checks.
 tags: ["github", "actions"]
 ---
-
-# When a GitHub Shadowban Breaks Open Source Infrastructure: <br> Overhauling our GitHub Actions to Reduce Compute Minutes and Ghost Commits
 
 Early April, I discovered that my GitHub account was shadowbanned.
 
