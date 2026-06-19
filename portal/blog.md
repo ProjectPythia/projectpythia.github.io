@@ -2,6 +2,8 @@
 
 Below is the latest news from Project Pythia.
 
-:::{postlist}
-:number: 25
+:::{listing}
+:path: posts/*/*.md
+:display: summary
+:limit: 25
 :::

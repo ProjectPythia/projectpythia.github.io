@@ -1,6 +1,7 @@
 ---
 date: 2024-01-08
 author: brian-rose
+description: The 2024 Pythia Cookbook Cook-Off Hackathon takes place June 11–14 at the NCAR Mesa Lab in Boulder, Colorado.
 tags: [cook-off]
 ---
 

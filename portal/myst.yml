@@ -7,8 +7,7 @@ project:
   authors: Project Pythia Community
   github: https://github.com/projectpythia/projectpythia.github.io
   plugins:
-    - type: executable
-      path: src/blogpost.py
+    - https://github.com/myst-contrib/myst-listing/releases/latest/download/plugin.mjs
   error_rules:
     - rule: link-resolves
       severity: ignore
@@ -18,8 +17,6 @@ project:
         - 'https://github.com/YOUR_USER_NAME/pythia-foundations'
         - 'https://pangeo.io'
         - 'https://docs.google.com/**'
-    - rule: directive-known # The postlist directive is not recognized by the linter, but it works when the site is built
-      severity: ignore
     - rule: image-format-optimizes # `metrics.md` has some large images that are not optimized
       severity: ignore
     - rule: container-children-valid # `metrics.md`` unexpected figure content of type output found in legend node, but works when the site is built
@@ -48,6 +45,8 @@ project:
         - file: posts/2023/fundraiser.md
         - file: posts/2023/cookoff2023.md
     - file: contributing.md
+      children:
+      - file: developing.md
     - file: cookbook-guide.md
     - file: quick-cookbook-guide.md
     - file: metrics.md

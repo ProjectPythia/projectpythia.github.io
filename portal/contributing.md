@@ -68,9 +68,9 @@ and contributors should consult the [Contributing to Foundations](xref:foundatio
 information specific to Foundations. However, adding or changing
 Foundations content requires contributors to be familiar
 with a few technologies and workflows, particularly conda and Git. Foundations
-has tutorials on both [conda](xref:foundations/foundations/conda/)
-and [Git/GitHub](xref:foundations/foundations/getting-started-github/),
-including a section on how to specifically [contribute to Project Pythia via GitHub](xref:foundations/foundations/github/contribute-to-pythia/).
+has tutorials on both [conda](xref:foundations/foundations/conda)
+and [Git/GitHub](xref:foundations/foundations/getting-started-github),
+including a section on how to specifically [contribute to Project Pythia via GitHub](xref:foundations/foundations/github/contribute-to-pythia).
 
 ### Add a new Cookbook to Cookbooks Gallery
 
