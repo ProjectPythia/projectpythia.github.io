@@ -1,11 +1,11 @@
-# Contributing to the Project Pythia Portal
+# Development and infrastructure guide
 
 This document contains information specific to contributing to the
 Project Pythia Portal. Please first refer to [Guide for Contributing to Project Pythia](https://projectpythia.org/contributing) for overall
 contribution guidelines (such as detailed description of Project
 Pythia structure, forking, repository cloning, branching, etc.).
 
-## Instructions for adding a blog post
+## Add a blog post
 Within the `portal/posts/[YEAR]` folder add your `.md` blog file with the following heading:
 
 ```
@@ -19,79 +19,59 @@ tags: [sample-tag]
 
 To display the post, you need to add the file path in the `myst.yml` configuration file under `toc:` -> `- title: Blog` -> `children:`. Please add the newest blog post at the top of the blog file list. This is temporary until we have better blog infrastructure.
 
-## Instructions for building the portal site
+## Build the documentation / portal website
 
 The portal site is built with [MyST-MD](https://mystmd.org/).
 
-When testing new content it is important to build and view the site. Read the Docs automatically builds the site for you when each Pull Request is checked. However, you can also build it locally on your machine following the instructions
-below.
+When testing new content it helps to build and view the site. GitHub Actions automatically builds a preview when you open a pull request and posts the link in the PR. You can also build it locally, as described below.
 
 ### Building the site
 
-After checking out a local copy of the site, in your favorite terminal, navigate to the `portal` directory of the source repository
+The simplest build uses [`nox`](https://nox.thea.codes/), which creates its own environment with MyST. You don't need conda or the `pythia` environment to build or preview the site. This builds every page except the metrics page (see [Building the metrics page](#building-the-metrics-page) below for that).
+
+Install nox once (for example `pip install nox`), then run from the repository root:
 
 ```bash
-cd projectpythia.github.io/portal
+nox -s docs-live   # serve with live reload at localhost:3000
+nox -s docs        # build the static HTML once
 ```
 
-Use [conda](https://docs.conda.io/) to set up a build environment:
-
-```bash
-conda env update -f ../environment.yml
-```
-
-This will create the dev environment (`pythia`). If you have previously created the environment, running this command will add any new packages that have since been added to the `environment.yml` file.
-
-It's a good idea to also keep the *versions* of each package in the `pythia` environment up to date by doing:
-
-```bash
-conda activate pythia
-conda update --all
-```
+A link to [localhost:3000](http://localhost:3000) should appear in your terminal when serving. More information on setting up a [local test server is available here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
 
 #### Install `pre-commit` hooks
 
 This repository includes `pre-commit` hooks (defined in
-`.pre-commit-config.yaml`). To activate/install these pre-commit
-hooks, run:
+`.pre-commit-config.yaml`). The `pre-commit` package comes with the `pythia` conda environment described below, or you can `pip install pre-commit`. Install the hooks once with:
 
 ```bash
-conda activate pythia
 pre-commit install
 ```
 
-Setting up the environment is typically a one-time step.
+#### Building the metrics page
 
-_NOTE_: The `pre-commit` package is already installed via the `pythia` conda environment.
+The metrics page runs live queries against the Google Analytics API, so it needs more than the simple build:
 
-#### Building the book locally
+- The `pythia` conda environment, which has the required packages.
+- Google Analytics credentials (see [Setting up Credentials](#setting-up-credentials) below).
+- MyST run with `--execute`, so the page's code actually runs.
 
-Build the site locally using Sphinx (which you just installed in the `pythia` environment, along with all necessary dependencies):
-
-```bash
-myst start --execute
-```
-
-If this step fails and you may not have updated your conda environment recently, try updating with `conda env update -f ../environment.yml` and `conda update --all` as described above.
-
-The newly rendered site is now available at [localhost:3000](http://localhost:3000). A link should appear in your terminal.
-
-More information on setting up a local test server is available from [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
-
-When you're done, you can deactivate the dedicated build environment with
+From the `portal` directory, use [conda](https://docs.conda.io/) to set up the environment:
 
 ```bash
-conda deactivate
+cd projectpythia.github.io/portal
+conda env update -f ../environment.yml
 ```
 
-You can re-activate the `pythia` conda environment at any time with `conda activate pythia`. You may also want to update each package in the activated environment to their latest versions by doing
+This creates the `pythia` environment, or adds any new packages if you already have it. Then activate it and build with execution turned on:
 
 ```bash
 conda activate pythia
-conda update --all
+myst build --html --execute
 ```
 
-## Instructions for intacting with the Google Analytics API
+It's a good idea to keep the environment's packages up to date with `conda update --all` while it's active.
+
+## Instructions for interacting with the Google Analytics API
 
 ### Setting up the Virtual Environment
 
@@ -113,7 +93,7 @@ To interact with the Google Analytics API locally you need to download the crede
 
 The credentials file will have a name similar to `cisl-vast-pythia-{letters and numbers}.json`. This file may be replaced intermittently with a slightly different alphanumeric string for additional security.
 
-One way to ensure that your Python script is using the correct credentials file is to read it as a dictionary and pass that into your API client at the begging of your script.
+One way to ensure that your Python script is using the correct credentials file is to read it as a dictionary and pass that into your API client at the beginning of your script.
 
 ```
 from google.analytics.data_v1beta import BetaAnalyticsDataClient

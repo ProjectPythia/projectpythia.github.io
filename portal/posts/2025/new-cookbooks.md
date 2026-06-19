@@ -1,6 +1,7 @@
 ---
 date: 2025-01-10
 author: brian-rose
+description: Announcing new community-contributed Cookbooks from the 2024 Pythia Cook-Off hackathon.
 tags: [cook-off]
 ---
 
