@@ -1,6 +1,7 @@
 ---
 date: 2023-06-28
 author: jukent
+description: One year after introducing Cookbooks, NCAR hosted Project Pythia's first Cookbook Cook-Off hackathon.
 tags: [cook-off]
 ---
 

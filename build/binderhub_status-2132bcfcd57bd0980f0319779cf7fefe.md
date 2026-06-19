@@ -1,6 +1,7 @@
 ---
 date: 2025-01-20
 author: ktyle
+description: Our BinderHub will be offline for maintenance on 20 Jan 2025; an alternate BinderHub stays available during the window.
 tags: ["binderhub", "maintenance"]
 ---
 

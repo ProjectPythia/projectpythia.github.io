@@ -1,6 +1,7 @@
 ---
 date: 2023-06-28
 author: jukent
+description: Donating to Project Pythia invests in an open, community-owned educational resource for the entire geoscience community.
 tags: [fundraiser]
 ---
 
