@@ -41,6 +41,9 @@
     <loc>http://localhost:3000/contributing</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/developing</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/cookbook-guide</loc>
   </url>
   <url>
