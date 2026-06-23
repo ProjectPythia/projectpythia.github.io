@@ -11,6 +11,9 @@
     <loc>http://localhost:3000/blog</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/posts/2026/gallery-listing</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/posts/2026/gh-actions</loc>
   </url>
   <url>
