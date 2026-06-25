@@ -1,7 +1,7 @@
 ---
 date: 2026-06-26
 author: brian-rose
-title: A great week of hacking on Cookbooks
+title: Another great week of hacking on Cookbooks
 subtitle: Celebrating the 2026 Pythia Cook-off hackathon at NSF NCAR
 description: Celebrating the 2026 Pythia Cook-off hackathon at NSF NCAR, June 15-18 2026.
 tags: ["cook-off", "cookbooks"]
@@ -33,9 +33,17 @@ The other main goal of our Cook-offs is to build cool new content for the [Pythi
 
 ### Breakout group topics
 
-## Infrastructure challenges and solutions
+*Shout out titles and content leaders, link to cookbook repos.*
+
+## Challenges and solutions
+
+### Infrastructure
 
 *Shout out to 2i2c and Angus. Discuss challenges around provisioning computational resources, collaboration through GitHub, etc.*
+
+### Breakout group logistics
+
+*Talk about separating content leadership from technical facilitation, and embedding a tech facilitator in each group. Shout out all facilitators*
 
 ## Cook-off 2026 by the numbers
 
@@ -57,4 +65,4 @@ Finally, a special shout-out to the gang from the University at Albany's [Depart
 Cook-off 2026 participants from [UAlbany DAES](https://www.albany.edu/daes)
 ```
 
-UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders and two technical facilitators. Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)! 
+UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders (Kevin Tyle, Juan Diego Mantilla, and Matt Lynne) and two technical facilitators (Brian Rose and Rob Ford). Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)! 
