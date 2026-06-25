@@ -65,4 +65,4 @@ Finally, a special shout-out to the gang from the University at Albany's [Depart
 Cook-off 2026 participants from [UAlbany DAES](https://www.albany.edu/daes)
 ```
 
-UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders (Kevin Tyle, Juan Diego Mantilla, and Matt Lynne) and two technical facilitators (Brian Rose and Rob Ford). Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)! 
+UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders (Kevin Tyle, Juan Diego Mantilla, and Matt Lynne) and two technical facilitators (Brian Rose and Rob Ford). Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)!
