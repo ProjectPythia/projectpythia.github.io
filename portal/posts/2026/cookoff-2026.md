@@ -9,7 +9,7 @@ tags: ["cook-off", "cookbooks"]
 
 ## Another Pythia hackathon: cooked, served, and shared
 
-For the past several years, Project Pythia has been hosting annual "Cook-off" hackathon events at the [NSF NCAR Mesa Lab](https://scied.ucar.edu/visit) in Boulder, CO, with funding from the National Science Foundation {cite:p}`https://doi.org/10.5281/zenodo.8184298`. 
+For the past several years, Project Pythia has been hosting annual "Cook-off" hackathon events at the [NSF NCAR Mesa Lab](https://scied.ucar.edu/visit) in Boulder, CO, with funding from the National Science Foundation {cite:p}`https://doi.org/10.5281/zenodo.8184298`.
 
 The [Pythia Cook-off 2026](https://projectpythia.org/pythia-cookoff-2026/) was held June 15-18 as a 100% in-person event. We just wrapped a great week of Cookbook hacking with a great group of open geoscience enthusiasts:
 
@@ -23,7 +23,7 @@ Photo credit: Samantha Scalice (with [Juan Diego Mantilla](https://github.com/jd
 
 ## Growing the community
 
-One of the main goals of the Pythia Cook-off is to disseminate skills and enthusiasm for open knowledge-sharing in the space of computational geoscience workflows. This year, we welcomed about 50 participants with a good mix of science backgrounds, career stages, and prior hacking experience.  
+One of the main goals of the Pythia Cook-off is to disseminate skills and enthusiasm for open knowledge-sharing in the space of computational geoscience workflows. This year, we welcomed about 50 participants with a good mix of science backgrounds, career stages, and prior hacking experience.
 
 
 
@@ -49,7 +49,7 @@ First timers
 
 ## The Albany gang
 
-Finally, a special shout-out to the gang from the University at Albany's [Department of Atmospheric & Environmental Sciences](https://www.albany.edu/daes) who were well-presented at this year's Cook-off! 
+Finally, a special shout-out to the gang from the University at Albany's [Department of Atmospheric & Environmental Sciences](https://www.albany.edu/daes) who were well-presented at this year's Cook-off!
 
 ```{figure} images/Pythia-2026-UAlbany.jpeg
 :alt: Pythia Cook-off 2026 participants from the University at Albany in front of the Mesa Lab main entrance
@@ -57,4 +57,4 @@ Finally, a special shout-out to the gang from the University at Albany's [Depart
 Cook-off 2026 participants from [UAlbany DAES](https://www.albany.edu/daes)
 ```
 
-UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders and two technical facilitators. Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)! 
+UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders and two technical facilitators. Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)!
