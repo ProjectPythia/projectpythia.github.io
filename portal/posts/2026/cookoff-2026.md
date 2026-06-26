@@ -23,7 +23,7 @@ Photo credit: Samantha Scalice (with [Juan Diego Mantilla](https://github.com/jd
 
 ### Community growth
 
-One of the main goals of the Pythia Cook-off is to disseminate skills and enthusiasm for open knowledge-sharing in the space of computational geoscience workflows. This year, we welcomed about 50 participants with a good mix of science backgrounds, career stages, and prior hacking experience. 
+One of the main goals of the Pythia Cook-off is to disseminate skills and enthusiasm for open knowledge-sharing in the space of computational geoscience workflows. This year, we welcomed about 50 participants with a good mix of science backgrounds, career stages, and prior hacking experience.
 
 There are now 153 total members of the [ProjectPythia GitHub organization](https://github.com/orgs/ProjectPythia/people), many of whom have participated in one or more of our hackathons over the past few years.
 
@@ -58,7 +58,7 @@ Photo credits: Juan Diego Mantilla
 
 ### Expanding the Cookbook gallery
 
-The other main goal of our Cook-offs is to build cool and useful new content for the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org). 
+The other main goal of our Cook-offs is to build cool and useful new content for the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org).
 
 Each year we welcome proposals for new Cookbooks. People bring ideas (and often some prexisting code) from their own work, and pitch their Cookbook projects to the whole community. Breakout groups are formed under the guidance of the individual topic leaders.
 
