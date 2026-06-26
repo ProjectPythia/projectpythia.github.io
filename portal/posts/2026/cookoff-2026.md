@@ -19,21 +19,50 @@ The [Pythia Cook-off 2026](https://projectpythia.org/pythia-cookoff-2026/) was h
 Photo credit: Samantha Scalice (with [Juan Diego Mantilla](https://github.com/jdmantillaq)'s nice camera!)
 ```
 
+## More cooks, more Cookbooks
+
+### Community growth
+
+One of the main goals of the Pythia Cook-off is to disseminate skills and enthusiasm for open knowledge-sharing in the space of computational geoscience workflows. This year, we welcomed about 50 participants with a good mix of science backgrounds, career stages, and prior hacking experience. 
+
+There are now 153 total members of the [ProjectPythia GitHub organization](https://github.com/orgs/ProjectPythia/people), many of whom have participated in one or more of our hackathons over the past few years.
 
 
-## Growing the community
+:::::{figure}
+:alt: Photos of breakout groups at work
 
-One of the main goals of the Pythia Cook-off is to disseminate skills and enthusiasm for open knowledge-sharing in the space of computational geoscience workflows. This year, we welcomed about 50 participants with a good mix of science backgrounds, career stages, and prior hacking experience.
+::::{grid} 3 3 3 3
+:::{grid-item}
+![](images/hacker1.jpg)
+:::
+:::{grid-item}
+![](images/hacker2.jpg)
+:::
+:::{grid-item}
+![](images/hacker3.jpg)
+:::
+:::{grid-item}
+![](images/hacker4.jpg)
+:::
+:::{grid-item}
+![](images/hacker5.jpg)
+:::
+:::{grid-item}
+![](images/hacker6.jpg)
+:::
+::::
+
+Photo credits: Juan Diego Mantilla
+:::::
 
 
+### Expanding the Cookbook gallery
 
-## Growing the Cookbook gallery
+The other main goal of our Cook-offs is to build cool and useful new content for the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org). 
 
-The other main goal of our Cook-offs is to build cool new content for the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org).
+Each year we welcome proposals for new Cookbooks. People bring ideas (and often some prexisting code) from their own work, and pitch their Cookbook projects to the whole community. Breakout groups are formed under the guidance of the individual topic leaders.
 
-### Breakout group topics
-
-*Shout out titles and content leaders, link to cookbook repos.*
+This year we had eight breakout groups including seven Cookbook-focussed groups:
 
 - [Meteorological feature tracking](https://github.com/ProjectPythia/feature-tracking-cookbook) with group leader [Matthew Lynne](https://github.com/mattsl21)
 - [Aerosol cloud interaction](https://github.com/ProjectPythia/Aerosol-Cloud-Interactions-cookbook) with group leader [Weiyi Wang](https://github.com/wwy8828)
@@ -44,7 +73,27 @@ The other main goal of our Cook-offs is to build cool new content for the [Pythi
 - [NSF NCAR's Geoscience Data Exchange (GDEX)](https://github.com/ProjectPythia/gdex-cookbook) with group leader [Harsha Hampapura](https://github.com/hrhampapura)
 - Pythia core infrastructure with group leader [Chris Holdgraf](https://github.com/choldgraf)
 
-*Point out new group leaders who are returning Cook-off participants*
+:::::{figure}
+:alt: Photos of breakout groups at work
+
+::::{grid} 3 3 3 3
+:::{grid-item}
+![](images/breakout1.jpeg)
+:::
+
+:::{grid-item}
+![](images/breakout2.jpeg)
+:::
+
+:::{grid-item}
+![](images/breakout3.jpeg)
+:::
+::::
+:::::
+
+About half of our group leaders are returning Cook-off participants, while the other half are brand-new contributors to Project Pythia! We are grateful to the whole group for bringing so many ideas, enthusiasm, and leadership to their groups.
+
+Leaders will be working remotely with their groups over the coming weeks to put some finishing touches on their Cookbook projects before they appear in the [gallery](https://cookbooks.projectpythia.org). Watch this space!
 
 ## Challenges and solutions
 
