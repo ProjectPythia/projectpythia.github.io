@@ -35,6 +35,17 @@ The other main goal of our Cook-offs is to build cool new content for the [Pythi
 
 *Shout out titles and content leaders, link to cookbook repos.*
 
+- [Meteorological feature tracking](https://github.com/ProjectPythia/feature-tracking-cookbook) with group leader [Matthew Lynne](https://github.com/mattsl21)
+- [Aerosol cloud interaction](https://github.com/ProjectPythia/Aerosol-Cloud-Interactions-cookbook) with group leader [Weiyi Wang](https://github.com/wwy8828)
+- [Geomorphology](https://github.com/ProjectPythia/geomorphology-cookbook) with group leader [Thomas Guilment](https://github.com/tguilment)
+- [Cloud-based METAR observations archive](https://github.com/ProjectPythia/METAR_archive-cookbook) with group leader [Kevin Tyle](https://github.com/ktyle)
+- [MPAS viewer](https://github.com/ProjectPythia/mpasviewer-cookbook) with group leader [Jorge Bravo](https://github.com/jhbravo)
+- [Spectral analysis for geophysical date](https://github.com/ProjectPythia/spectral-analysis-cookbook) with group leader [Juan Diego Mantilla](https://github.com/jdmantillaq)
+- [NSF NCAR's Geoscience Data Exchange (GDEX)](https://github.com/ProjectPythia/gdex-cookbook) with group leader [Harsha Hampapura](https://github.com/hrhampapura)
+- Pythia core infrastructure with group leader [Chris Holdgraf](https://github.com/choldgraf)
+
+*Point out new group leaders who are returning Cook-off participants*
+
 ## Challenges and solutions
 
 ### Infrastructure
@@ -47,22 +58,23 @@ The other main goal of our Cook-offs is to build cool new content for the [Pythi
 
 ## Cook-off 2026 by the numbers
 
-Participants
-
-Travel awards
-
-First timers
+- Registered participants: 49
+- Travel awards: 27
+- First timers: 34
+- Breakout groups: 8
+- Technical facilitators: 11
+- Total commits to repositories in the [ProjectPythia GitHub organization](https://github.com/ProjectPythia): 842
 
 
 
 ## The Albany gang
 
-Finally, a special shout-out to the gang from the University at Albany's [Department of Atmospheric & Environmental Sciences](https://www.albany.edu/daes) who were well-presented at this year's Cook-off!
+Finally, a special shout-out to the gang from the University at Albany's [Department of Atmospheric & Environmental Sciences](https://www.albany.edu/daes) who were well-represented at this year's Cook-off!
 
 ```{figure} images/Pythia-2026-UAlbany.jpeg
 :alt: Pythia Cook-off 2026 participants from the University at Albany in front of the Mesa Lab main entrance
 
-Cook-off 2026 participants from [UAlbany DAES](https://www.albany.edu/daes)
+Cook-off 2026 participants from [UAlbany DAES](https://www.albany.edu/daes). From left to right: Kevin Tyle, Juan Diego Mantilla, Kathryn Rooney, Bella Condo, Brian Rose, Robert Ford, Matthew Lynne, Alex Blackmer, Jacob Vile.
 ```
 
-UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event. We were also well-represented in leadership roles, with three breakout group leaders (Kevin Tyle, Juan Diego Mantilla, and Matt Lynne) and two technical facilitators (Brian Rose and Rob Ford). Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)!
+UAlbany is a lead partner with NSF NCAR on Project Pythia. This year we had a record-breaking nine participants travel from Albany to Boulder for the event, including three breakout group leaders and two technical facilitators. Go [Great Danes](https://en.wikipedia.org/wiki/Albany_Great_Danes)!
