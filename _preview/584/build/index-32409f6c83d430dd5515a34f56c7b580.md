@@ -32,6 +32,8 @@ Donate to support Project Pythia!
 
 {button}`About Pangeo →<https://pangeo.io>`
 
+{button}`Pangeo Discourse →<https://discourse.pangeo.io/c/education/project-pythia/>`
+
 [Project Pythia](./about.md) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
 Together these initiatives are helping geoscientists make sense of huge volumes of
@@ -42,7 +44,22 @@ around these goals.
 Project Pythia is a home for Python-justified learning resources that are _open-source_,
 _community-owned_, _geoscience-focused_, and _high-quality_.
 
++++ { "kind": "justified"}
+
+## Latest from the blog
+
+{button}`Visit the blog →<./blog.md>`
+
+:::{listing}
+:path: posts/*/*.md
+:display: summary
+:limit: 3
+:::
+
+[Read the blog →](./blog.md)
+
 <br><br>
+
 ## Start Learning
 
 Project Pythia has several resources for you to use to start learning how to use Python
@@ -51,7 +68,7 @@ and the technology in the Python ecosystem for the geosciences.
 ::::{grid} 1 2 2 3
 :::{card}
 :url: https://foundations.projectpythia.org
-:header: The Foundations Book
+:header: Pythia Foundations
 :footer: Visit the Foundations Book »
 
 The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
@@ -86,21 +103,7 @@ your own pace.
 
 <br><br>
 
-## Latest from the blog
-
-:::{listing}
-:path: posts/*/*.md
-:display: summary
-:limit: 3
-:::
-
-[Read the blog →](./blog.md)
-
-<br><br>
-
 ## Join us!
-
-{button}`Pangeo Discourse →<https://discourse.pangeo.io/c/education/project-pythia/>`
 
 If you have questions or want to share anything with the Project
 Pythia Team, please reach out to us through the [Project Pythia
