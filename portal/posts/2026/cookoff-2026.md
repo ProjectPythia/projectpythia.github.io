@@ -109,7 +109,6 @@ Special thanks and gratitude go to [Angus Hollands](https://2i2c.org/author/angu
 
 ### Breakout group logistics
 
-
 Breakout groups benefit from two different types of leadership: the _disciplinary knowledge_, vision, and mentorship skills necessary to organize the team and formulate good content, and technical navigation through the challenges of git, GitHub, and the Cookbook infrastructure.
 
 Building off our experience and feedback from previous events, this year we tried to keep a clear separation between these two roles, and embed a dedicated technical facilitator within each group.
