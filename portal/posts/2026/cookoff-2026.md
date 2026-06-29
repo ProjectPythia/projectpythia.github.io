@@ -111,13 +111,13 @@ Special thanks and gratitude go to [Angus Hollands](https://2i2c.org/author/angu
 
 *Talk about separating content leadership from technical facilitation, and embedding a tech facilitator in each group. Shout out all facilitators*
 
-Breakout groups benefit from two different types of leadership: the _disciplinary knowledge_, vision, and mentorship skills necessary to organize the team and formulate good content, and technical navigation through the challenges of git, GitHub, and the Cookbook infrastructure. 
+Breakout groups benefit from two different types of leadership: the _disciplinary knowledge_, vision, and mentorship skills necessary to organize the team and formulate good content, and technical navigation through the challenges of git, GitHub, and the Cookbook infrastructure.
 
-Building off our experience and feedback from previous events, this year we tried to keep a clear separation between these two roles, and embed a dedicated technical facilitator within each group. 
+Building off our experience and feedback from previous events, this year we tried to keep a clear separation between these two roles, and embed a dedicated technical facilitator within each group.
 
 :::{figure} ./images/hacker7.jpeg
 
-Group collaboration with embedded technical support. Photo credit: John Clyne.  
+Group collaboration with embedded technical support. Photo credit: John Clyne.
 :::
 
 The qualitative impression of the hackathon organizers is that this arrangement worked pretty well. Most groups were able to stay focussed on content creation for a good fraction of the week. Some survey comments bear this out:
@@ -130,7 +130,7 @@ The qualitative impression of the hackathon organizers is that this arrangement 
 
 > I especially appreciated the "live tech support."
 
-> From my perspective, getting a bunch of strangers to be able to work together in a short period of time is miraculous and arguably, one of the key benefits of this hackathon. 
+> From my perspective, getting a bunch of strangers to be able to work together in a short period of time is miraculous and arguably, one of the key benefits of this hackathon.
 
 ### Thanks to our tech helpers!
 
