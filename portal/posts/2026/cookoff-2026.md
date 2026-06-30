@@ -101,7 +101,7 @@ Leaders will be working remotely with their groups over the coming weeks to put 
 
 ### Infrastructure
 
-We want to get our heterogenous breakout groups up and running on Cookbook development as quickly as possible on day 1 of the event, with a minimum of configuration. A cloud-based JupyterHub provisioned by our partners at [2i2c](https://2i2c.org) meant not losing any time to managing Python environments or struggling with data access on individual laptops.
+We want to get our heterogenous breakout groups up and running on Cookbook development as quickly as possible on day 1 of the event, with a minimum of configuration. A cloud-based JupyterHub provisioned by our partners at [2i2c](https://2i2c.org) meant not losing any time to managing Python environments or struggling with data access on individual laptops. You can [find our hub configuration here](https://github.com/2i2c-org/infrastructure/blob/189e605be1251d95e8280c64750c873a0f55489c/config/clusters/projectpythia/common.values.yaml).
 
 Because every Cookbook defines a bespoke computational environment with a unique set of packages and dependencies, we could not use a single shared for every group. Instead, 2i2c provided a flexible tool based on [repo2docker](https://repo2docker.readthedocs.io/en/latest/) for building and deploying a unique hub environment for each breakout group. Groups could then tailor their environemnt to the needs of their Cookbook but still work in a common shared space.
 
