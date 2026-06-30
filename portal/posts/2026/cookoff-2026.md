@@ -142,6 +142,7 @@ A huge thanks to our volunteer team of technical facilitators:
 - Orhan Eroglu
 - Rudy Klucik
 - Brian Rose
+- Chris Holdgraf
 
 
 ## Cook-off 2026 by the numbers
