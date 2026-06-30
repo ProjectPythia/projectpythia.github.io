@@ -1,13 +1,11 @@
 ---
 date: 2026-06-26
 author: brian-rose
-title: Another great week of hacking on Cookbooks
+title: "Another Pythia hackathon: cooked, served, and shared"
 subtitle: Celebrating the 2026 Pythia Cook-off hackathon at NSF NCAR
 description: Celebrating the 2026 Pythia Cook-off hackathon at NSF NCAR, June 15-18 2026.
 tags: ["cook-off", "cookbooks"]
 ---
-
-## Another Pythia hackathon: cooked, served, and shared
 
 For the past several years, Project Pythia has been hosting annual "Cook-off" hackathon events at the [NSF NCAR Mesa Lab](https://scied.ucar.edu/visit) in Boulder, CO, with funding from the National Science Foundation {cite:p}`https://doi.org/10.5281/zenodo.8184298`.
 
