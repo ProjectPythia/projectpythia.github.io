@@ -174,11 +174,25 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 
 ### In pictures
 
-<img src="../../_static/images/posts/IMG_5686.jpeg" alt="2024 Cookoff group photo" width=900>
-<br>
-<img src="../../_static/images/posts/IMG_5854.jpeg" alt="Breakout group" width=250>
-<img src="../../_static/images/posts/IMG_6546.jpg" alt="Cookoff attendees at Mesa Lab" width=250>
-<img src="../../_static/images/posts/IMG_6055.jpeg" alt="Virtual presentation" width=250>
+```{image} ../../_static/images/posts/IMG_5686.jpeg
+:alt: 2024 Cookoff group photo
+```
+
+:::::{figure}
+::::{grid} 3 3 3 3
+:::{grid-item}
+![](../../_static/images/posts/IMG_5854.jpeg)
+:::
+
+:::{grid-item}
+![](../../_static/images/posts/IMG_6546.jpg)
+:::
+
+:::{grid-item}
+![](../../_static/images/posts/IMG_6055.jpeg)
+:::
+::::
+:::::
 
 ### By the numbers
 
@@ -199,9 +213,7 @@ This Cookbook covers how to work with wavelets in Python. Wavelets are a powerfu
 
 ## Want to get involved?
 
-<a href="https://projectpythia.org/pythia-cookoff-2025/" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
-          SAVE THE DATE! Project Pythia is hosting our next Cookbook Cook-off hackathon event at the NSF NCAR's Mesa Lab, August 5-8 2025.
-  </a>
+SAVE THE DATE! Project Pythia is hosting our [next Cookbook Cook-off hackathon event](https://projectpythia.org/pythia-cookoff-2025/) at the NSF NCAR's Mesa Lab, August 5-8 2025.
 
 Do you have some feedback or ideaa for a new Cookbook project? Unsure how to get started? We'd love to hear from you at any of our [open meetings](https://projectpythia.org/#monthly-pythia-meetings), through the [Pangeo Discourse](https://discourse.pangeo.io/c/education/project-pythia/), or via any of our social media. Join us at our next Cook-off 2025!
 
