@@ -39,4 +39,3 @@ to high-quality, open educational resources for Earth system science.
 We look forward to collaborating with the many outstanding projects
 in the NumFOCUS community and continuing to build an inclusive,
 sustainable future for geoscience education.
-
