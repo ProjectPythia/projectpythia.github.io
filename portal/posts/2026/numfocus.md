@@ -3,8 +3,7 @@ date: 2026-07-06
 author: clyne
 title: "Project Pythia Joins the NumFOCUS Community as an Affiliated Project"
 subtitle: ""
-description: We are excited to announce that Project Pythia has been accepted
-as a NumFOCUS Affiliated Project!
+description: We are excited to announce that Project Pythia has been accepted as a NumFOCUS Affiliated Project!
 tags: []
 ---
 
