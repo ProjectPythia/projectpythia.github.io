@@ -13,7 +13,7 @@ milestone for our community and reflects Project Pythia's growing
 impact as an open, community-driven resource for geoscience education
 and scientific Python.
 
-Becoming a NumFOCUS Affiliated Project recognizes Project Pythia's
+Becoming a [NumFOCUS Affiliated Project](https://numfocus.org/sponsored-projects/affiliated-projects) recognizes Project Pythia's
 commitment to open science, community governance, and scientific
 computing. NumFOCUS affiliation provides opportunities to engage
 with a broader network of open-source scientific projects, participate
